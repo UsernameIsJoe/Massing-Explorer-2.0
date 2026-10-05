@@ -14,11 +14,11 @@ Design a school with three masses, three floors maximum, gym and dining together
 
 ### A. How an LLM might approach it
 
-An LLM doesn't normally enumerate architectural alternatives internally and rank them systematically.
+At a basic level, a GPT-style language model generates text autoregressively: it predicts each next token from the preceding context. A standard response therefore does not provide an explicit, inspectable architectural enumeration-and-ranking procedure comparable to Massing Explorer's candidate database ([Brown et al., 2020](https://arxiv.org/abs/2005.14165)).
 
-Instead, it generates an answer conditioned on the brief, its learned representations, instructions, and the conversation context.
+This does not mean an LLM cannot search or deliberate. Chain-of-thought prompting can elicit intermediate reasoning ([Wei et al., 2022](https://arxiv.org/abs/2201.11903)); reasoning models can revise strategies while solving a problem ([OpenAI, 2024](https://openai.com/index/learning-to-reason-with-llms/)); and agent frameworks can interleave reasoning with tool use and environmental feedback ([Yao et al., 2022](https://arxiv.org/abs/2210.03629)). Whether the model systematically explores architectural alternatives depends on the model, prompt, sampling procedure, tools, and external controller.
 
-A simplified conceptual example:
+A simplified interaction-level example follows. It is a conceptual model of observable behavior, not a literal trace of hidden internal computation:
 
 ```mermaid
 flowchart TD
@@ -27,7 +27,7 @@ flowchart TD
     C --> D["Critique and revision — If explicitly requested, or driven by agent tools"]
 ```
 
-An important distinction: an LLM can perform deliberative reasoning, propose alternatives, use external tools, and revise its own results. But its hidden internal reasoning is not a directly inspectable, reproducible architectural search history. The project can study its observable outputs and tool actions without claiming to know every internal step.
+An important distinction: an LLM can perform deliberative reasoning, propose alternatives, use external tools, and revise its own results. However, a generated chain of thought is not guaranteed to be a faithful explanation of the internal process that produced the answer; controlled studies find substantial variation in chain-of-thought faithfulness across models and tasks ([Lanham et al., 2023](https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning); [Anthropic, 2025](https://www.anthropic.com/research/reasoning-models-dont-say-think)). The project should therefore study observable proposals, outputs, and tool actions rather than treat verbalized reasoning as a complete internal search history.
 
 ### B. The Massing Explorer pipeline works differently
 
@@ -43,7 +43,7 @@ Massing Explorer explicitly maintains a population of candidates, records their 
 
 The fundamental difference:
 
-- An LLM tends to construct proposals from learned knowledge and contextual reasoning, unless explicitly equipped with search.
+- A standard LLM interaction generates proposals from its learned parameters and supplied context; prompts, repeated sampling, reasoning methods, or agent controllers can add explicit search behavior.
 - Massing Explorer constructs proposals by exploring a defined representational space using explicit search and evaluation procedures.
 
 Neither is inherently better.
