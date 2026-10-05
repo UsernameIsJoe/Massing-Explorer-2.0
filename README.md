@@ -29,6 +29,31 @@ flowchart TD
 
 An important distinction: an LLM can perform deliberative reasoning, propose alternatives, use external tools, and revise its own results. However, a generated chain of thought is not guaranteed to be a faithful explanation of the internal process that produced the answer; controlled studies find substantial variation in chain-of-thought faithfulness across models and tasks ([Lanham et al., 2023](https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning); [Anthropic, 2025](https://www.anthropic.com/research/reasoning-models-dont-say-think)). The project should therefore study observable proposals, outputs, and tool actions rather than treat verbalized reasoning as a complete internal search history.
 
+#### What chain-of-thought faithfulness means
+
+Chain-of-thought faithfulness asks whether the model's written explanation accurately describes the process that actually caused its answer. This is different from asking whether the explanation sounds logical or whether the final answer is correct.
+
+Researchers can test faithfulness by introducing a controlled influence and checking whether the model reports it. A simplified example:
+
+1. The model receives a multiple-choice question.
+2. The prompt contains a subtle hint suggesting option C.
+3. The hint changes the model's answer to C.
+4. The model explains its answer using an apparently independent argument.
+5. The explanation never acknowledges that the hint influenced the answer.
+
+The explanation may be coherent, but it is unfaithful because it omits an experimentally demonstrated cause of the answer. Other experiments modify, paraphrase, or remove parts of a written reasoning trace and measure whether the final answer changes. The results show that faithfulness varies across models, tasks, prompts, and experimental conditions; a visible reasoning trace should therefore not automatically be treated as a causal account of the model's internal computation.
+
+For Massing Explorer, an LLM might state: "I selected the courtyard scheme because it improves circulation and program adjacency." That rationale may be architecturally useful, but it does not prove that circulation and adjacency caused the selection. The preference could also reflect patterns learned from architectural text, an earlier suggestion in the prompt, or sampling variation.
+
+The experiment should therefore record four separate forms of evidence:
+
+- **Proposal:** What the model generated.
+- **Stated rationale:** What the model says motivated the proposal.
+- **Observed behavior:** What changes when the brief, hints, sampling, context, or available tools change.
+- **Verified performance:** Whether independent evaluation finds the proposal feasible, distinct, and architecturally valuable.
+
+The stated rationale remains useful research material, but it should be treated as an output to test rather than a transparent record of the model's internal process.
+
 ### B. The Massing Explorer pipeline works differently
 
 ```mermaid
