@@ -1,12 +1,12 @@
 # Massing Explorer 2.0
 
-Before changing direction, I want to separate three questions:
+This project investigates three questions:
 
 1. How does an LLM actually develop architectural proposals? Is it reasoning, sampling, or searching?
-2. Which parts of my pipeline genuinely outperform an LLM? Especially COVER, CSP, LEARN, and FOCUS.
-3. What should I build? A standalone engine, a collection of tools for ChatGPT/Claude, or a hybrid?
+2. Which parts of the Massing Explorer pipeline genuinely outperform an LLM? Especially COVER, CSP, LEARN, and FOCUS.
+3. What should Massing Explorer become: a standalone engine, a collection of tools for ChatGPT/Claude, or a hybrid?
 
-## 1. How LLM proposals differ from my pipeline
+## 1. How LLM proposals differ from the Massing Explorer pipeline
 
 Imagine the brief:
 
@@ -27,9 +27,9 @@ flowchart TD
     C --> D["Critique and revision — If explicitly requested, or driven by agent tools"]
 ```
 
-An important distinction: an LLM can perform deliberative reasoning, propose alternatives, use external tools, and revise its own results. But its hidden internal reasoning is not a directly inspectable, reproducible architectural search history. I can study its observable outputs and tool actions, not claim to know every internal step.
+An important distinction: an LLM can perform deliberative reasoning, propose alternatives, use external tools, and revise its own results. But its hidden internal reasoning is not a directly inspectable, reproducible architectural search history. The project can study its observable outputs and tool actions without claiming to know every internal step.
 
-### B. My pipeline works differently
+### B. The Massing Explorer pipeline works differently
 
 ```mermaid
 flowchart TD
@@ -39,7 +39,7 @@ flowchart TD
     D --> E["Evidence-backed shortlist"]
 ```
 
-My pipeline explicitly maintains a population of candidates, records their characteristics, and uses those results to allocate further computational effort.
+Massing Explorer explicitly maintains a population of candidates, records their characteristics, and uses those results to allocate further computational effort.
 
 The fundamental difference:
 
@@ -48,13 +48,13 @@ The fundamental difference:
 
 Neither is inherently better.
 
-An LLM might propose a brilliant arrangement my representation excludes. My program might discover an excellent but unintuitive arrangement the LLM repeatedly overlooks.
+An LLM might propose a brilliant arrangement that the current representation excludes. Massing Explorer might discover an excellent but unintuitive arrangement the LLM repeatedly overlooks.
 
-And that's exactly what I should investigate.
+This is the central question the project should investigate.
 
-## 2. The experiment I will run
+## 2. Proposed experiment
 
-I propose four experimental groups, not three. The fourth is important because I want to distinguish the value of my tools from the value of my search intelligence.
+The experiment uses four groups rather than three. The fourth distinguishes the value of the computational tools from the value of the search intelligence.
 
 ### The four competitors
 
@@ -72,13 +72,13 @@ Tests what happens when an LLM controls the exploration.
 
 #### C — Current Massing Explorer
 
-My structured sampling, CSP shortlisting, realization, and exploration/refinement.
+Massing Explorer's structured sampling, CSP shortlisting, realization, and exploration/refinement.
 
 Tests the existing algorithmic pipeline.
 
 #### D — Hybrid LLM + Massing Explorer
 
-LLM proposes new strategies, critiques the design space, and requests targeted exploration. My engine handles systematic coverage, realization, validation, and comparison.
+LLM proposes new strategies, critiques the design space, and requests targeted exploration. Massing Explorer handles systematic coverage, realization, validation, and comparison.
 
 Tests whether the two systems actually complement each other.
 
@@ -86,7 +86,7 @@ Tests whether the two systems actually complement each other.
 
 ### Stage 1 — Understand how LLMs explore
 
-Start with the exact school brief I'm already using.
+Start with the existing school brief.
 
 Ask ChatGPT and Claude independently to develop 20 substantially different architectural organizations.
 
@@ -98,16 +98,16 @@ But instead of simply requesting a list, use a structured experimental protocol:
 - Identify requirements it may violate.
 - Choose what kind of strategy to investigate next.
 
-I would record the observable sequence of proposals, explanations, revisions, and tool calls.
+Record the observable sequence of proposals, explanations, revisions, and tool calls.
 
-Then I would map all proposals to my nine strategy axes, where possible.
+Then map all proposals to the nine strategy axes, where possible.
 
-What I'd want to discover:
+Questions to investigate:
 
 - Do LLMs repeatedly gravitate toward certain program organizations?
 - Do they proactively explore substantially different families?
 - Do they recognize gaps in their own proposals?
-- Do they invent organizational principles missing from my CSP taxonomy?
+- Do they invent organizational principles missing from the current CSP taxonomy?
 - How often do they confidently propose infeasible solutions?
 
 One especially important technique: repeat the experiment across independent runs. A single conversation doesn't establish the model's exploration tendencies.
@@ -116,13 +116,13 @@ One especially important technique: repeat the experiment across independent run
 
 Run A, B, C, and D on the same briefs.
 
-For a useful pilot, I'd choose three briefs:
+The pilot uses three briefs:
 
 | Brief | Purpose |
 | --- | --- |
-| 1. Existing Prompt B | Baseline; I already know where my pipeline struggles |
+| 1. Existing Prompt B | Baseline with known pipeline weaknesses |
 | 2. Tight constraints | Test constraint reasoning and feasible-region discovery |
-| 3. Unusual spatial requirements | Test whether my representation limits creativity |
+| 3. Unusual spatial requirements | Test whether the current representation limits creativity |
 
 Control the experiment carefully:
 
@@ -139,7 +139,7 @@ A should be treated as a text-only baseline, with the same external validator ap
 
 ### Stage 3 — Evaluate independently
 
-I would not let the participating LLM grade its own proposals.
+The participating LLM should not grade its own proposals.
 
 | Metric | Measurement |
 | --- | --- |
@@ -149,31 +149,31 @@ I would not let the participating LLM grade its own proposals.
 | Architectural quality | Blinded expert review |
 | Best-design quality | Highest-rated final proposal |
 | Search efficiency | Cost and time to discover useful valid strategies |
-| Unexpected discoveries | Valuable proposals outside my current encoding |
+| Unexpected discoveries | Valuable proposals outside the current encoding |
 
-I would also add coverage confidence: how much of the known or estimated feasible space did each system investigate?
+The evaluation should also include coverage confidence: how much of the known or estimated feasible space did each system investigate?
 
-This is tricky because I don't know the entire design space. For a limited benchmark, I can exhaustively enumerate a reduced CSP space and use that as ground truth. For the full brief, use a pooled reference set and report coverage as an estimate, not a completeness guarantee.
+This is difficult because the entire design space is unknown. For a limited benchmark, exhaustively enumerate a reduced CSP space and use it as ground truth. For the full brief, use a pooled reference set and report coverage as an estimate, not a completeness guarantee.
 
-### What would convince me?
+### Interpretation criteria
 
-If B approaches C's performance, my elaborate search controller may not justify its complexity.
+If B approaches C's performance, the elaborate search controller may not justify its complexity.
 
 If D substantially beats B and C, that supports a hybrid.
 
-If A produces consistently better architectural ideas than all the structured approaches, my representation or evaluation criteria may be restricting design intelligence.
+If A produces consistently better architectural ideas than all the structured approaches, the representation or evaluation criteria may be restricting design intelligence.
 
-A negative result would be valuable. I should design the experiment to potentially invalidate the project rather than merely demonstrate that my pipeline works.
+A negative result would be valuable. The experiment should be capable of invalidating the project rather than merely demonstrating that the pipeline works.
 
-## 3. What should I build for ChatGPT and Claude?
+## 3. What to build for ChatGPT and Claude
 
-I would strongly favor modular tools over a monolithic plugin.
+The proposed direction favors modular tools over a monolithic plugin.
 
-I can make a library of small architectural capabilities, accessible through the Model Context Protocol (MCP).
+Massing Explorer can provide a library of small architectural capabilities through the Model Context Protocol (MCP).
 
 This is technically realistic today. OpenAI supports MCP-powered ChatGPT plugins with optional interfaces; Claude supports custom remote MCP connectors, and Claude Desktop also supports local MCP servers. 
 
-Here's the architecture I'd investigate.
+The architecture to investigate is:
 
 ```mermaid
 flowchart TD
@@ -195,7 +195,7 @@ flowchart TD
 
 Not all these tools need to exist initially.
 
-I'd start with just four.
+Start with four tools.
 
 | Initial tool | Why |
 | --- | --- |
@@ -206,17 +206,17 @@ I'd start with just four.
 
 This creates a crucial separation.
 
-The LLM owns the architectural reasoning. My programs provide evidence and computational capabilities.
+The LLM owns the architectural reasoning. Massing Explorer provides evidence and computational capabilities.
 
-And unlike a giant agent-specific workflow, the same code can serve ChatGPT, Claude, a future interface, or my independent engine.
+The same code can serve ChatGPT, Claude, a future interface, or the independent Massing Explorer engine.
 
-## 4. The more interesting idea: let the LLM challenge my search space
+## 4. Let the LLM challenge the search space
 
-I think this is where the research could become genuinely novel.
+This is where the research could become genuinely novel.
 
-Currently, my CSP space is largely predetermined. I intelligently explore combinations within that space.
+The current CSP space is largely predetermined. Massing Explorer intelligently explores combinations within that space.
 
-But suppose Claude proposes a school organization that cannot be expressed using my existing partition or topology representation.
+Suppose Claude proposes a school organization that cannot be expressed using the existing partition or topology representation.
 
 Instead of rejecting it, the system could identify the mismatch.
 
@@ -233,17 +233,17 @@ flowchart TD
 This suggests two levels of exploration:
 
 - Within-space search: Finding better configurations inside a known architectural strategy space.
-- Space-expanding search: Discovering architectural strategies my current representation cannot express.
+- Space-expanding search: Discovering architectural strategies the current representation cannot express.
 
 The second is arguably closer to architectural creativity.
 
-It would also give my three-axis system a much stronger purpose: not just evaluating candidates, but helping assess where the current search space is incomplete.
+It would also give the three-axis system a much stronger purpose: not just evaluating candidates, but helping assess where the current search space is incomplete.
 
-There's one caveat. Automatically changing the strategy representation risks destroying consistency. I would require explicit schema versioning and human approval before new organizational types enter the main search.
+There is one caveat. Automatically changing the strategy representation risks destroying consistency. Explicit schema versioning and human approval should be required before new organizational types enter the main search.
 
-## 5. My recommended development sequence
+## 5. Recommended development sequence
 
-I would not immediately invest in a polished ChatGPT or Claude plugin. First, I should establish whether the individual tools produce measurable value.
+Do not immediately invest in a polished ChatGPT or Claude plugin. First, establish whether the individual tools produce measurable value.
 
 ### 01 — Build a shared benchmark
 
@@ -251,7 +251,7 @@ Freeze the existing version of Massing Explorer. Establish inputs, evaluation cr
 
 ### 02 — Run pure LLM experiments
 
-I will let ChatGPT and Claude independently explore the same briefs. Analyze their observed strategies, repetitions, blind spots, validity, and discoveries outside my representation.
+Let ChatGPT and Claude independently explore the same briefs. Analyze their observed strategies, repetitions, blind spots, validity, and discoveries outside the current representation.
 
 ### 03 — Extract a small computational toolkit
 
@@ -265,4 +265,4 @@ Connect it to Claude and ChatGPT where the account and developer capabilities pe
 
 Determine which tools help, which orchestration policies help, and whether anything in the existing pipeline should be abandoned.
 
-A practical consideration: ChatGPT and Claude offer somewhat different integration and permission models, so the MCP adapter should remain thin and host-independent. I should not tie the research to features exclusive to one chat interface
+A practical consideration: ChatGPT and Claude offer somewhat different integration and permission models, so the MCP adapter should remain thin and host-independent. The research should not depend on features exclusive to one chat interface.
