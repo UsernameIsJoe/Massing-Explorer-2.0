@@ -69,8 +69,23 @@ The evaluator adds:
 
 The universal proposal format describes architectural relationships. Mapping into Massing Explorer's internal variables happens during independent evaluation. A proposal must not be rejected solely because the current representation cannot encode it.
 
+## Pilot evaluation metrics — version 0.1
+
+The first experiments use a deliberately simple metric set. The metrics may evolve as the experiments reveal better questions, but every experimental batch must record and retain one frozen metric version so that results within that batch remain comparable.
+
+| Metric | Pilot calculation |
+| --- | --- |
+| Feasibility | Hard pass/fail, number of violations, and the existing Massing Explorer feasibility distance |
+| Distinctness | Number of unique normalized strategies in the submitted set |
+| Coverage | Number of occupied strategy families or cells |
+| Quality | Existing coherence, alignment, efficiency, and robustness calculations, without retuning their current formulas |
+| Search efficiency | Wall-clock time, number of proposals generated, and number of model/tool calls |
+| Representation expansion | Number of proposals classified as partially or fully outside the current encoding |
+| Expert review | Deferred until the pilot produces sufficiently comparable visual outputs |
+
+Metric changes must create a new version and apply only to a new experimental batch. Previous results remain attached to the metric version under which they were produced.
+
 ## Remaining Step 01 decisions
 
-- Define each evaluation metric and its calculation.
 - Define the run-level metadata and logging schema.
 - Run and archive the frozen Massing Explorer baseline.
