@@ -8,9 +8,11 @@ This document records the locked and unresolved decisions for Step 01 of the Mas
 
 The benchmark uses the existing default project material from `UsernameIsJoe/massing-explorer`:
 
-- `examples/Underwood_Elementary_Space_Summary_GSF_Tweaked.xlsx`
-- `examples/underwood_3mass_brief.txt`
+- `test-elementary-space-summary.xlsx` (display alias for frozen source workbook)
+- `test-elementary-brief.txt` (display alias for frozen source brief)
 - `config/project.example.yaml`
+
+The original frozen inputs are identified by Git blob hashes `dfd6fe15516702a8de269ebb105dd689d1cb3478` (program), `8294bb8833825de7ea97149b3ce96254ef070a7a` (brief), and `5d0133ddd7a71791dd78fac1957991cd4efaa5ac` (config). Display aliases do not change source bytes, evaluation values, or preserved SHA-256 checksums.
 
 The current Massing Explorer reference implementation is pinned to commit `751ba24b0d2bcaeae5274eaffa589060c95ec0f9`. This commit identifies the reproducible baseline; the complete original repository does not need to be copied into Massing Explorer 2.0.
 
@@ -103,10 +105,10 @@ The original Massing Explorer regression runner was executed twice from the pinn
 | Wall time | 22.282 s and 24.750 s |
 | Deterministic repeat | Identical output |
 
-The archived run manifest and report are in [`benchmarks/underwood-v0.1/baseline/`](../benchmarks/underwood-v0.1/baseline/).
+The archived run manifest and report are in [`benchmarks/test-elementary-v0.1/baseline/`](../benchmarks/test-elementary-v0.1/baseline/).
 
 The legacy runner provides aggregate results but does not retain the complete candidate-level exploration log or a final set normalized to the new proposal schema. This limitation is recorded in the manifest. All new experimental runners must emit both artifacts.
 
 ## Step 01 status
 
-The shared inputs, output contract, pilot metrics, run-log schema, and frozen baseline report are complete for benchmark version `underwood-v0.1`.
+The shared inputs, output contract, pilot metrics, run-log schema, and frozen baseline report are complete for benchmark version `test-elementary-v0.1`.

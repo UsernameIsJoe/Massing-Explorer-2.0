@@ -1,6 +1,6 @@
 # Step 02 — Pure LLM pilot operator protocol
 
-Benchmark ID: `underwood-v0.1` | Metrics: `0.1` | Condition: `A/pure-LLM`.
+Benchmark ID: `test-elementary-v0.1` | Metrics: `0.1` | Condition: `A/pure-LLM`.
 
 ## Frozen model-facing inputs
 

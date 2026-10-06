@@ -2,7 +2,7 @@
 
 ## Scope
 
-Design architectural organizations for the Underwood Elementary School using **only** the supplied brief, complete space-program schedule, and project planning assumptions. No coding, search, external validators, CAD, CSP, geometry tools, other agents, or existing Massing Explorer documentation. Do not inspect benchmark/evaluation materials. This test concerns the proposals you can develop independently.
+Design architectural organizations for the a test elementary school using **only** the supplied brief, complete space-program schedule, and project planning assumptions. No coding, search, external validators, CAD, CSP, geometry tools, other agents, or existing Massing Explorer documentation. Do not inspect benchmark/evaluation materials. This test concerns the proposals you can develop independently.
 
 ## Task
 

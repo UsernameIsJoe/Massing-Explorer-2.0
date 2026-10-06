@@ -1,11 +1,11 @@
-# Model input — Underwood v0.1 (Step 02)
+# Model input — test-elementary v0.1 (Step 02)
 Source: original Massing Explorer commit `751ba24b0d2bcaeae5274eaffa589060c95ec0f9`.
 
 ## Verbatim brief
 3 masses, max 3 floors. length max 60 meters. gym and dining together and double height. art and music prefer on ground floor. media prefer on top floor above admin. admin have to be on ground floor. core academic and special ed width has to be 80 feet. mass ratio have to be between 2:5 and 5:8. prefer 3 floors.
 
 ## Program schedule (net square feet)
-The full source workbook is `examples/Underwood_Elementary_Space_Summary_GSF_Tweaked.xlsx` in the pinned original repository. Retain room names, quantities and NFA. Zero-quantity line items remain zero. Source department totals:
+The complete source workbook is identified by its original Git blob SHA `dfd6fe15516702a8de269ebb105dd689d1cb3478` and the display alias `test-elementary-space-summary.xlsx`. Retain room names, quantities and NFA. Zero-quantity line items remain zero. Source department totals:
 
 | Department | NFA (SF) |
 |---|---:|
@@ -28,6 +28,6 @@ Base dimensions in feet; areas in SF. Double-loaded classroom bar: 30-ft depth, 
 No site footprint, frontage, neighbors, or topography are provided; do not invent site facts. The verbatim brief takes precedence over generic configuration preferences. Generic example program-grouping and floor-allocation hints must not be presented as user design requirements.
 
 ## Primary source links
-- [Frozen program workbook](https://github.com/UsernameIsJoe/Massing-Explorer/blob/751ba24b0d2bcaeae5274eaffa589060c95ec0f9/examples/Underwood_Elementary_Space_Summary_GSF_Tweaked.xlsx)
-- [Frozen brief](https://github.com/UsernameIsJoe/Massing-Explorer/blob/751ba24b0d2bcaeae5274eaffa589060c95ec0f9/examples/underwood_3mass_brief.txt)
+- [Frozen program workbook](https://api.github.com/repos/UsernameIsJoe/Massing-Explorer/git/blobs/dfd6fe15516702a8de269ebb105dd689d1cb3478)
+- [Frozen brief](https://api.github.com/repos/UsernameIsJoe/Massing-Explorer/git/blobs/8294bb8833825de7ea97149b3ce96254ef070a7a)
 - [Frozen config](https://github.com/UsernameIsJoe/Massing-Explorer/blob/751ba24b0d2bcaeae5274eaffa589060c95ec0f9/config/project.example.yaml)
