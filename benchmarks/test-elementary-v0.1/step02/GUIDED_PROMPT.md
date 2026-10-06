@@ -1,24 +1,11 @@
-# Step 02 — Guided architectural exploration prompt (A1, v0.1)
+# Step 02 — Self-structured exploration prompt (A1, v0.2)
 
-You are designing **a test elementary school**. Use the supplied design brief, space program, and planning assumptions. No external tools or additional information will be provided.
+You are designing **a test elementary school**. Use the supplied design brief, space program, and planning assumptions.
 
-**Goal: Find the strongest architectural proposals you can**, while deliberately examining a broad range of substantially different program and massing organizations.
+**Goal: Find the strongest architectural proposal you can** that meets the requirements and makes sound architectural decisions.
 
-Develop **20 distinct architectural proposals sequentially**, one per response. Consider alternative program groupings, spatial relationships, stacking patterns, massing forms, circulation, and feasible dimensional arrangements rather than producing superficial variants. Do not change room quantities or floor areas; flag any uncertainty rather than claiming unverified compliance.
+Before selecting your recommendation, **design and carry out a systematic exploration of architectural alternatives**. You decide how to structure that exploration: what possibilities to consider, what to vary, what deserves deeper investigation, how to assess and compare alternatives, and when you have explored enough. No particular sampling method, proposal count, or search sequence is required.
 
-For each proposal P01–P20, report:
-- `proposal_id` (P01 to P20)
-- `concept_name` and `strategy_summary`
-- `program_grouping`: distribute the nine departments across three masses, noting any split department
-- `spatial_relationships` and `circulation_logic`
-- `vertical_organization`: levels and double-height spaces
-- `massing_organization`: the three masses, their arrangement, and approximate dimensions if justified
-- `requirement_response`: hard constraints versus preferences; what has and has not been demonstrated
-- `known_risks`
-- `stated_rationale`: your stated design justification, not a claimed transcript of hidden reasoning
-- `difference_from_previous`: why this differs materially from earlier proposals
-- `next_exploration_direction`: which alternative organizational principle you plan to test next
+Present your recommended design clearly enough for another architect to review the program distribution, the three masses, the floor-by-floor organization, circulation and major dimensions or space implications. Distinguish satisfied requirements from assumptions or unresolved feasibility questions. Briefly explain the architectural merits and trade-offs of the recommendation.
 
-Return **P01 only** now. On each subsequent `NEXT` message, return the next proposal without revising or repeating earlier proposals or requesting feedback.
-
-After P20, await the operator's `SELECT` message. Select **no more than 10** of the P01–P20 proposals, rank your strongest recommendation first, identify it as the single **best proposal**, explain trade-offs and any important design alternatives you left unexplored. The complete transcript preserves all intermediate proposals.
+Also provide a concise, truthful account of **the exploration structure you chose**, any alternatives or comparisons you can substantiate from your work, and why the recommendation prevailed. This is a report of decisions and outputs, **not** a request to disclose private internal reasoning or claim knowledge of hidden deliberation.

@@ -109,18 +109,16 @@ Tests whether the two systems actually complement each other.
 
 ### Three stages of testing
 
-### Stage 1 — Understand how LLMs approach architectural design
+### Stage 1 — Observe natural and self-structured LLM design
 
-Start with the same three-mass test-elementary brief and program. Split pure LLM testing into **two prompt conditions** to avoid presupposing the behavior being studied.
+On the same frozen three-mass test-elementary brief, run two **one-response pure-LLM conditions**:
 
-- **A0 — Natural goal:** Ask each model to find the strongest architectural proposal. Do **not** request alternative counts, systematic exploration, a particular search strategy, or explanations of hidden chain of thought. Record any proposals, comparisons, and revisions it **voluntarily** reveals. Absence of visible search cannot establish absence of internal search.
-- **A1 — Guided exploration:** Explicitly ask each model to produce 20 substantially different architectural strategies sequentially, describing organizational differences, possible violations, and the next avenue to investigate; then select no more than 10 and one best design. This probes the model's ability to explore **when asked**.
+- **A0 — Natural objective:** Ask ChatGPT and Claude independently to find the strongest architectural proposal. Do not instruct either how to explore, whether to compare, or how many alternatives to generate. Observe what is **voluntarily visible**.
+- **A1 — Self-structured exploration:** Ask the models to invent and execute **their own structured approach** for exploring architectural alternatives before recommending the strongest design. Specify **no** search policy, sampling axes, candidate count, turn-by-turn protocol, shortlist quota, or externally prescribed strategy vocabulary. Capture the method and comparisons the model chooses to report.
 
-Test **ChatGPT and Claude independently under both conditions**, in fresh runs with identical model-facing program/brief inputs but condition-specific instructions. No Massing Explorer taxonomy, benchmark scores, or search-policy references may enter either model-facing prompt.
+Keep the program inputs, a single final recommendation, one model response, host settings and available output-token cap **matched within each host**. Use separate fresh runs without model memory, tools, feedback or prior candidates. Archive complete outputs and actual token/time/cost data before independent evaluation. A common endpoint is the best final design; exploratory structure and visibly investigated alternatives are secondary, observational evidence. The LLM's description of its process is **not** a verified internal search trace.
 
-Compare the quality of the **single best proposal** and describe visible diversity, feasible solutions, missed constraints, and representation-expanding designs; score proposals independently. Because the 20-step guided condition intentionally uses more opportunities and computation, raw number of ideas, speed and solution quality must not be interpreted as a controlled matched-budget difference. Log actual resource use, and plan a matched-budget comparison before causal efficiency claims.
-
-Preserve transcripts verbatim and treat stated rationale as observable output rather than a verified internal reasoning trace. Repeat independent runs after the pilot to assess stability. The pilot's canonical instructions and inputs are in `benchmarks/test-elementary-v0.1/step02/`.
+Run both conditions with ChatGPT and Claude; repeat independent sessions after the first pilot. No prompt should reveal Massing Explorer's taxonomy, existing design proposals, validators, benchmark metrics, or outcomes. Preserve the original baseline data, and do not conflate this one-response pilot with a future longer-budget agentic search test.
 
 ### Stage 2 — Compare search performance
 

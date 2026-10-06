@@ -1,43 +1,38 @@
-# Step 02 — Pure-LLM pilot operator protocol (v0.2)
+# Step 02 — Pure-LLM pilot operator protocol (v0.3)
 
-Benchmark: `test-elementary-v0.1` | Pilot metrics: `0.1` | Overall comparison group **A (pure LLM)** contains two **prompt conditions**, not two new groups of software:
+Benchmark: `test-elementary-v0.1` | Metrics: `0.1` | Group **A (pure LLM)** is split into two distinct prompt conditions:
 
-- **A0 — Natural goal**: `NATURAL_PROMPT.md`. Does the model independently choose visible comparison, revision or exploration when simply asked for the strongest proposal?
-- **A1 — Guided exploration**: `GUIDED_PROMPT.md`. How well can the same model explore alternatives when explicitly instructed to do so?
+- **A0 — Natural objective:** `NATURAL_PROMPT.md` asks for the best proposal, leaving the design approach entirely up to the model.
+- **A1 — Self-structured exploration:** `GUIDED_PROMPT.md` asks the model to invent **and carry out its own exploration structure**, without supplying sampling axes, strategies, a candidate count, search steps, or a shortlist quota.
 
-The main research distinction is between **unprompted behavior** and **capability under explicit prompting**. Neither is inherently superior. A1 is a legitimate and useful way to use an LLM, not an artificial advantage.
+A1 does not test whether an LLM can follow an experimenter's search instructions; it tests whether it can choose an effective approach when explicitly asked to explore. A0 tests what it does when exploration is **not** requested.
 
-## Fixed model-facing data
+## Identical inputs and limits
 
-Use exactly `MODEL_INPUT.md` and `ROOM_PROGRAM.csv` for both conditions, in the same order and format. Both are a neutral presentation of the three inputs pinned in `docs/BENCHMARK.md` (original version of the program workbook, brief, and project config at `751ba24b0d2bcaeae5274eaffa589060c95ec0f9`). Source hashes and historical source paths are recorded in the *operator's* benchmark files, not shown to the models.
+Supply only `MODEL_INPUT.md` and `ROOM_PROGRAM.csv` to each model, in the same order and format. They neutrally reproduce the frozen three-mass school program, brief and planning assumptions. Audit provenance, source aliases and hashes remain in `docs/BENCHMARK.md`, **not** in model-facing prompts.
 
-Do not give either model repository/benchmark documents, Massing Explorer's search/strategy axes, examples of candidate designs, validation scores, or results from other runs. No web search, code, massing tools, CSP, CAD, independent validators, or agents. Reading the two provided input files is allowed. Avoid prior memory, project context, or app-specific user instructions that contain Massing Explorer background where the host allows a clean session.
+For **both A0 and A1**:
+1. Start an independent **fresh chat** with no earlier architectural project context, memory or host instructions if the host permits disabling them.
+2. Send the respective prompt with both files; do not provide Massing Explorer documentation, strategy taxonomies, prior proposals, reference solutions, benchmark rubrics, or evaluation results.
+3. Allow **one initial model response only** and require **one best final recommendation**, not an externally determined number of alternatives. No operator follow-ups, feedback, revisions, `NEXT`, `SELECT`, or model-directed extra turns.
+4. Use the same model/host configuration, reasoning effort, sampling settings and **maximum output-token cap** for both conditions within each host wherever controls permit. Record the configured cap; if one cannot be set, mark it `null` and report actual token usage separately. A0 and A1 use the same maximum calls/turns; this does **not** guarantee identical realized inference cost or invisible reasoning effort.
+5. No browser, coding, CAD, validators, CSP, specialized massing tools, external agents, web resources or feedback. Ordinary reading of the provided inputs is allowed.
 
-## A0 natural-goal pilot
+## Output handling
 
-1. Begin an independent new session. Provide `NATURAL_PROMPT.md` and the fixed inputs. Ask for **one strongest recommendation**. Do not request an option count, intermediate alternatives, a search plan, a table of explored regions, a self-critique, an internal reasoning trace, or 20 iterations.
-2. Let the model decide its own process and presentation. Record its **entire visible response** without intervention or follow-up. No operator-issued `NEXT` or selection turn.
-3. Extract the final recommended design (typically one); retain voluntarily supplied alternatives, comparisons, refinements and omissions as **observations** rather than mandating them.
-4. Do not infer the absence of internal exploration from an absence of visible alternatives; hidden reasoning is **not observable**. Report spontaneous *visible* systematic exploration only, not the model's internal cognitive mechanism.
+- Both conditions share the same deliverable: **one recommended design** supported by program allocation, three-mass layout, floor organization, circulation, major dimensional implications, requirement responses and trade-offs. Do not impose benchmark field names or an internal strategy ontology on the generating model.
+- **A0:** Record any visible alternatives, comparisons, exploratory choices and revisions voluntarily included. Do not penalize silence about process or infer absence of internal exploration.
+- **A1:** Record the model's **self-chosen exploration framework** (e.g. what was considered, how it chose to compare or prioritize) and any observable evidence it actually performed such exploration. A claimed process can be a post-hoc explanation; never equate a plausible narrative with verified internal search.
+- Preserve the exact complete input, generated output, failed/partial output and host metadata as produced, **before** normalizing. Do not repair infeasible ideas interactively.
+- Populate `schemas/run-log.schema.json`: prompt condition/version, input provenance, run id, host/model/version, settings, dates, elapsed wall time, output length, token and tool usage and costs when actually available; unavailable values remain `null`.
+- An independent evaluator later maps claims to Layer 1 and Layer 2 of `docs/BENCHMARK.md`, tagging which statements were **explicit**, which were **inferred**, and which are **unknown**. Outside-representation concepts are retained for separate assessment.
+- Primary outcome: feasibility and architectural quality of the **single best recommended design**. Secondary exploratory analysis: visible variation, method/coverage, novelty, repetitions, and missing constraints **only where observable**. Do not treat a missing alternative list from A0 as a failure.
+- Keep A0 and A1 results separate. With one response and matched caps, opportunity is more comparable than the previous 20-turn setup, but prompts differ in length and actual output/tokens/compute may still differ. Report actual costs and do not make stronger causal claims without repetitions and controls.
 
-## A1 guided pilot
+## Pilot
 
-1. Begin a **separate fresh** session with `GUIDED_PROMPT.md` and the exact same fixed inputs.
-2. Record P01 and send precisely `NEXT` after each proposal, through P20; provide no critique, corrections, feedback, examples or custom instructions.
-3. After P20, send precisely: `SELECT: Choose no more than 10 of your 20 proposals. Rank the set with your strongest proposal first, clearly identify the single best proposal, explain your choices and important directions not explored.`
-4. Retain the full sequence and final shortlist as originally returned. Failed, incomplete, repeated, or infeasible designs are evidence, not grounds for on-the-fly repairs.
+Run **ChatGPT A0, ChatGPT A1, Claude A0, Claude A1**, one fresh trial per cell, with exactly the frozen input pack. Afterward repeat each cell across multiple independent runs. Do not revise one condition's prompt based on the other condition's results without changing the prompt version and rerunning both.
 
-## Logging and evaluation
+Record ambiguities, without coaching models to one interpretation: `mass ratio` meaning; 60-m length scope; spreadsheet 66,405 SF GFA versus separately configured adjustment 1.15 and grossing factor 1.50. Preserve the old engine's frozen C-baseline scores, metrics and input hashes.
 
-- Run each condition independently on ChatGPT and Claude, starting with **one run per model per condition**. Keep exact host, model identifier/version, available reasoning setting, system instructions (if known), prompt version, run start/end timestamps, wall time, output length, model call count, token usage and cost (nullable if not reported), status, and complete transcript.
-- Save run metadata consistent with `schemas/run-log.schema.json`; unknown fields are `null`. Preserve original unedited outputs and note any missing fields without fabricating answers.
-- The **common quality endpoint is the single best final recommendation** per run, evaluated independently; the secondary guided endpoint is the selected set of **up to 10**. Treat spontaneous alternatives and number of candidates as descriptive, not as mandatory A0 failures.
-- The benchmark's Layer 1 fields are normalized or annotated **after generation** by the evaluator if a model did not supply them. Distinguish an explicit claim, evaluator inference, and missing information. Do **not** force A0 to use Massing Explorer's schema during generation.
-- After transcript capture, score feasibility, distinctness, occupied families, evaluation composites, representation gaps, time and resource cost using `docs/BENCHMARK.md`; only then compare results.
-- A0 is not given 20 calls, while A1 is explicitly allowed 20 candidate turns. Their **raw search counts, elapsed times and total costs are not controlled comparisons**; report these costs and do not infer an inherent quality advantage from an unequal budget. For controlled **later** comparisons, pre-register equal token/inference budget and matching final-output scope or analyze quality per cost.
-- Keep results separated by prompt condition. Do not pool A0 and A1 into one pure-LLM score or modify the frozen C-baseline values.
-- **Pilot ambiguities**: meaning of 'mass ratio' and length cap scope; displayed program GFA versus independent area adjustment. Record interpretations without coaching or retroactively changing constraints. If model-facing instructions change materially, version the prompts and rerun both hosts under the changed version.
-
-## Interpretation
-
-A0 primarily tests **how the model visibly responds to the objective alone**. A1 tests **performance when asked to explore deliberately**. Explanations, visible drafts, and plans are model outputs, not privileged access to internal deliberation. Both are meaningful when assessing whether a standalone Massing Explorer search policy is worth its complexity.
+**Future extension, not part of A0/A1:** A separately labeled longer-horizon agent experiment could grant both conditions equal multistep/tool-call budgets. Do not confuse that with the matched one-response pure-LLM pilot.

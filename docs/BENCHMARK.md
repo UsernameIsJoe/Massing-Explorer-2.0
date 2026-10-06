@@ -18,14 +18,14 @@ The current Massing Explorer reference implementation is pinned to commit `751ba
 
 ## Step 02 prompt conditions (pilot)
 
-The pure-LLM comparison includes **A0 (natural-goal)** and **A1 (guided-exploration)**. Both use the same frozen test-elementary program, brief, and planning assumptions.
+The pure-LLM group contains **A0 (natural objective)** and **A1 (self-structured exploration)**. These are paired **one-response** trials, with the same frozen test-elementary program/brief, matching model settings where possible, a matching output-token ceiling, and **one best recommended proposal** in both conditions.
 
-- **A0:** Request the best proposal, without imposing a search procedure, number of alternatives, or intermediate explanation format. Preserve whatever design process is *voluntarily visible*. Evaluate the single recommendation without penalizing a missing list of alternatives or absent schema fields.
-- **A1:** Request 20 sequential, substantively different proposals and a shortlist of up to 10, identifying one best proposal. Record all intermediates.
-- The **common endpoint** is the strongest final proposal from each condition, assessed by the independent evaluator. Additional A1 shortlist and exploration coverage metrics are condition-specific and must not be misconstrued as comparable A0 failure metrics.
-- A0 and A1 have unequal opportunity/inference budgets in the exploratory pilot. Log time/tokens/calls/cost, and reserve controlled search-efficiency conclusions for later matched-budget experiments.
-- Do not leak benchmark metrics, nine-axis encoding, systematic search objectives, reference output fields or source-repository identities into **A0**. For A1, only instructions to explore, compare and self-direct are given, not the benchmark's strategy taxonomy.
-- Normalize output against the Layer 1 schema **after** collection. Explicit claims, evaluator interpretation, and unknown facts must remain distinguishable. Absence of visible intermediate alternatives is not evidence that no hidden deliberation occurred.
+- **A0:** Request the best proposal, with **no search instructions** or required count of alternatives. Voluntary visible alternatives or revision count as observations; their absence proves nothing about internal reasoning.
+- **A1:** Request that the LLM **choose and carry out its own exploration structure** and report the approach and evidence of alternatives considered. Do not prescribe axes, enumeration/sampling/search methods, candidate counts, predefined steps, or a shortlist. It must still recommend a single strongest proposal.
+- Common evaluation measures independent feasibility and quality of the final recommended design. Comparative descriptions of visible exploration methods, breadth, novelty and limitations are **secondary**. A model's claimed approach is not conclusive evidence of internal exploration.
+- The same **one model call and output-token cap** applies within each host/condition, where setting that cap is supported. Note differences in actual tokens, hidden reasoning effort, time, and cost; equal limits do not guarantee identical consumed resources.
+- No benchmark taxonomy, scores, prior cases, run schema or repository links enter **either** generating model's inputs. Extract the two-layer benchmark fields **after** generation, marking model-provided, evaluator-inferred, and missing information separately.
+- Repeated fresh runs are required to test stable tendencies. Longer-horizon guided experiments, if useful, must be registered as a **separate protocol** rather than quietly added to A1.
 
 ## Required experimental record
 
