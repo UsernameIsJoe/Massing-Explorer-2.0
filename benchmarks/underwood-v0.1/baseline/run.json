@@ -1,0 +1,75 @@
+{
+  "schema_version": "0.1",
+  "run_id": "underwood-v0.1-massing-explorer-751ba24",
+  "benchmark_id": "underwood-v0.1",
+  "metric_version": "0.1",
+  "created_at_utc": "2026-10-06T18:41:55Z",
+  "system": {
+    "name": "Massing Explorer",
+    "version": "frozen baseline",
+    "source_repository": "https://github.com/UsernameIsJoe/massing-explorer",
+    "source_commit": "751ba24b0d2bcaeae5274eaffa589060c95ec0f9",
+    "model": null,
+    "tool_access": []
+  },
+  "inputs": [
+    {
+      "path": "examples/Underwood_Elementary_Space_Summary_GSF_Tweaked.xlsx",
+      "sha256": "e5230c86f9906a69a07fc485aa557151bc13860c5bd047549699bd0d4f2fd308"
+    },
+    {
+      "path": "examples/underwood_3mass_brief.txt",
+      "sha256": "50577813a9b7bd59659aaedba28b7f2dec1836bb67363f66191e5288670e9b94"
+    },
+    {
+      "path": "config/project.example.yaml",
+      "sha256": "d22074a1406be37fb2706751e4b1ad4890e8524dbd181687a3cff2d730957191"
+    },
+    {
+      "path": "_run_underwood_3mass_regress.py",
+      "sha256": "1fc5031c52926f0058e513b69d83be42b0746a42d918f2a274d5a310f2135cbf"
+    }
+  ],
+  "conditions": {
+    "prompt": "3 masses, max 3 floors. length max 60 meters. gym and dining together and double height. art and music prefer on ground floor. media prefer on top floor above admin. admin have to be on ground floor. core academic and special ed width has to be 80 feet. mass ratio have to be between 2:5 and 5:8. prefer 3 floors.",
+    "seed": "deterministic from implementation and inputs",
+    "budgets": {
+      "cover": { "start": 40, "step_small": 10, "step_large": 20, "max": 100 },
+      "explore": { "mcts_sims": 64, "mcts_depth": 4, "mcts_roots": 4, "bo": 12, "refine": 14, "repair": 14 }
+    },
+    "environment": {
+      "python": "3.12.14",
+      "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+      "machine": "x86_64"
+    }
+  },
+  "timing": {
+    "wall_seconds": 22.282,
+    "repeat_wall_seconds": [22.282, 24.750]
+  },
+  "status": {
+    "state": "completed",
+    "error": null,
+    "deterministic_repeat_match": true
+  },
+  "usage": {
+    "model_calls": 0,
+    "tool_calls": 0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "estimated_cost_usd": 0.0
+  },
+  "artifacts": {
+    "exploration_log": null,
+    "final_proposals": null,
+    "evaluation_report": "report.json"
+  },
+  "summary": {
+    "attempts": 209,
+    "cells": 159,
+    "legal": 37,
+    "legal_three_mass": 37,
+    "p_pool_size": 41,
+    "known_limitation": "The legacy regression runner emits an aggregate report rather than the complete candidate-level exploration log required for new benchmark runs."
+  }
+}
