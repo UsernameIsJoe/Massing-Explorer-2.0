@@ -26,14 +26,15 @@ For each of proposals **01–20**, produce exactly these fields:
 
 Only emit **one proposal at a time**. After each proposal, the experiment operator sends the fixed message `NEXT` until all 20 are complete. Do not use operator feedback or revise earlier proposals. If some requirement cannot be verified from available evidence, mark it **unverified** rather than assert compliance.
 
-After P20, select **at most 10** proposals and return the selected proposals with the fields required in `docs/BENCHMARK.md` (plus `difference_from_previous` and `next_exploration_direction` in the exploration log only). Explain why you selected them, and mention missing directions or limitations you noticed. Do not claim exhaustive coverage.
+After P20, await an instruction to select **at most 10** proposals. For each selected proposal, report all fields listed above through `stated_rationale`, plus `representation_gap` (an organizational idea you could not describe with your own current terms, if any). Explain why you selected them, and mention missing directions or limitations you noticed. Do not claim exhaustive coverage.
 
 ## Project inputs
 
-Read only the three attachments/inputs supplied with this prompt:
-1. `Underwood_Elementary_Space_Summary_GSF_Tweaked.xlsx` (original room schedule; use the supplied plain-text transcription as an accessibility aid, not a replacement)
-2. `underwood_3mass_brief.txt` (verbatim requirements)
-3. `project.example.yaml` (planning assumptions, dimensions, tolerances)
+Read only these two model-facing input files, supplied identically to each tested model:
+1. `MODEL_INPUT.md` (verbatim design brief, background and neutral numeric planning assumptions)
+2. `ROOM_PROGRAM.csv` (complete 41-row net area and quantity schedule)
+
+The source Excel workbook and source config are retained by the experiment operator for independent audit; they are not additional model input.
 
 Source room names, counts, and areas must be preserved. The prompt's explicit brief requirements override generic configuration hints. The spreadsheet's displayed NFA/GFA and independent configuration's area adjustment are both source facts; note any conflict rather than silently reinterpreting the data.
 
