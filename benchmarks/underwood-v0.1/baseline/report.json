@@ -1,0 +1,49 @@
+{
+  "ok": true,
+  "attempts": 209,
+  "cells": 159,
+  "legal": 37,
+  "legal_three_mass": 37,
+  "phases": {
+    "COVER": 100,
+    "mcts": 33,
+    "bayes": 21,
+    "refine": 5
+  },
+  "p_pool": {
+    "unresolved": 35,
+    "feasible": 6
+  },
+  "p_pool_size": 41,
+  "note": "COVER: 37 legal cell(s), 122 infeasible, 209 attempt(s). Infeasible cells do not count as coverage. 12 near-feasible on the frontier. Unsupported (not drawable): courtyard, podium, perpendicular_wings. 26 program organization(s) in the archive. A length cap was a filter, not a target. Adaptive COVER used 100 attempt(s) across 2 legal region(s) (map incomplete at cap). COVER searched 31 of ~966 fea",
+  "constraints": {
+    "mass_count": 3,
+    "max_edge_ft": 196.8504,
+    "max_stories": 3,
+    "ratio_band": [0.4, 0.625],
+    "department_widths": {
+      "CORE ACADEMIC": 80.0,
+      "SPECIAL EDUCATION": 80.0
+    }
+  },
+  "legal_reasons": [
+    "COVER start: P4+S2+Tindependent+Ldouble+Gbalanced+PLuniform",
+    "COVER start: P4+S2+Tindependent+Ldouble+Gbalanced+PLuniform: SET_STORIES 2",
+    "COVER start: P4+S2+Tindependent+Ldouble+Gbalanced+PLuniform: SET_STORIES 2",
+    "COVER start: P4+S2+Tindependent+Ldouble+Gbalanced+PLuniform: SET_LOADING single",
+    "COVER start: P4+S2+Tindependent+Ldouble+Gbalanced+PLuniform: SET_ENVELOPE compact",
+    "COVER start: P4+S2+Tindependent+Ldouble+Gbalanced+PLuniform: SET_ENVELOPE elongated",
+    "COVER start: P10+S2+Tindependent+Ldouble+Gbalanced+PLuniform",
+    "COVER start: P10+S2+Tindependent+Ldouble+Gbalanced+PLuniform: SET_STORIES 2"
+  ],
+  "legal_stories": [
+    { "arts_support": 1, "academic_support": 3, "athletics_dining": 1 },
+    { "arts_support": 2, "academic_support": 3, "athletics_dining": 1 },
+    { "arts_support": 1, "academic_support": 3, "athletics_dining": 2 },
+    { "arts_support": 1, "academic_support": 3, "athletics_dining": 1 },
+    { "arts_support": 1, "academic_support": 3, "athletics_dining": 1 },
+    { "arts_support": 1, "academic_support": 3, "athletics_dining": 1 },
+    { "arts_support": 1, "academic_support": 3, "athletics_dining": 1 },
+    { "arts_support": 1, "academic_support": 3, "athletics_dining": 2 }
+  ]
+}
