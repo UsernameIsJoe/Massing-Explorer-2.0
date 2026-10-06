@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/UsernameIsJoe/Massing-Explorer-2.0/schemas/run-log.schema.json",
+  "title": "Massing Explorer benchmark run log",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "run_id",
+    "benchmark_id",
+    "metric_version",
+    "system",
+    "inputs",
+    "conditions",
+    "timing",
+    "status",
+    "artifacts"
+  ],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "run_id": { "type": "string" },
+    "benchmark_id": { "type": "string" },
+    "metric_version": { "type": "string" },
+    "created_at_utc": { "type": "string", "format": "date-time" },
+    "system": {
+      "type": "object",
+      "required": ["name", "version"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "source_repository": { "type": ["string", "null"] },
+        "source_commit": { "type": ["string", "null"] },
+        "model": { "type": ["string", "null"] },
+        "tool_access": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": { "type": "string" },
+          "sha256": { "type": "string" }
+        }
+      }
+    },
+    "conditions": {
+      "type": "object",
+      "properties": {
+        "prompt": { "type": ["string", "null"] },
+        "seed": { "type": ["integer", "string", "null"] },
+        "budgets": { "type": "object" },
+        "environment": { "type": "object" }
+      },
+      "additionalProperties": true
+    },
+    "timing": {
+      "type": "object",
+      "properties": {
+        "wall_seconds": { "type": ["number", "null"] },
+        "repeat_wall_seconds": { "type": "array", "items": { "type": "number" } }
+      },
+      "additionalProperties": true
+    },
+    "status": {
+      "type": "object",
+      "required": ["state"],
+      "properties": {
+        "state": { "enum": ["completed", "failed", "partial"] },
+        "error": { "type": ["string", "null"] },
+        "deterministic_repeat_match": { "type": ["boolean", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "usage": {
+      "type": "object",
+      "properties": {
+        "model_calls": { "type": ["integer", "null"] },
+        "tool_calls": { "type": ["integer", "null"] },
+        "input_tokens": { "type": ["integer", "null"] },
+        "output_tokens": { "type": ["integer", "null"] },
+        "estimated_cost_usd": { "type": ["number", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "artifacts": {
+      "type": "object",
+      "properties": {
+        "exploration_log": { "type": ["string", "null"] },
+        "final_proposals": { "type": ["string", "null"] },
+        "evaluation_report": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+    "summary": { "type": "object" }
+  },
+  "additionalProperties": true
+}
