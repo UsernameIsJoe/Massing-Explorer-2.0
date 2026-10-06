@@ -109,33 +109,18 @@ Tests whether the two systems actually complement each other.
 
 ### Three stages of testing
 
-### Stage 1 — Understand how LLMs explore
+### Stage 1 — Understand how LLMs approach architectural design
 
-Start with the existing school brief.
+Start with the same three-mass test-elementary brief and program. Split pure LLM testing into **two prompt conditions** to avoid presupposing the behavior being studied.
 
-Ask ChatGPT and Claude independently to develop 20 substantially different architectural organizations.
+- **A0 — Natural goal:** Ask each model to find the strongest architectural proposal. Do **not** request alternative counts, systematic exploration, a particular search strategy, or explanations of hidden chain of thought. Record any proposals, comparisons, and revisions it **voluntarily** reveals. Absence of visible search cannot establish absence of internal search.
+- **A1 — Guided exploration:** Explicitly ask each model to produce 20 substantially different architectural strategies sequentially, describing organizational differences, possible violations, and the next avenue to investigate; then select no more than 10 and one best design. This probes the model's ability to explore **when asked**.
 
-But instead of simply requesting a list, use a structured experimental protocol:
+Test **ChatGPT and Claude independently under both conditions**, in fresh runs with identical model-facing program/brief inputs but condition-specific instructions. No Massing Explorer taxonomy, benchmark scores, or search-policy references may enter either model-facing prompt.
 
-- Propose one strategy at a time.
-- Explain its architectural rationale.
-- State what makes it different from earlier proposals.
-- Identify requirements it may violate.
-- Choose what kind of strategy to investigate next.
+Compare the quality of the **single best proposal** and describe visible diversity, feasible solutions, missed constraints, and representation-expanding designs; score proposals independently. Because the 20-step guided condition intentionally uses more opportunities and computation, raw number of ideas, speed and solution quality must not be interpreted as a controlled matched-budget difference. Log actual resource use, and plan a matched-budget comparison before causal efficiency claims.
 
-Record the observable sequence of proposals, explanations, revisions, and tool calls.
-
-Then map all proposals to the nine strategy axes, where possible.
-
-Questions to investigate:
-
-- Do LLMs repeatedly gravitate toward certain program organizations?
-- Do they proactively explore substantially different families?
-- Do they recognize gaps in their own proposals?
-- Do they invent organizational principles missing from the current CSP taxonomy?
-- How often do they confidently propose infeasible solutions?
-
-One especially important technique: repeat the experiment across independent runs. A single conversation doesn't establish the model's exploration tendencies.
+Preserve transcripts verbatim and treat stated rationale as observable output rather than a verified internal reasoning trace. Repeat independent runs after the pilot to assess stability. The pilot's canonical instructions and inputs are in `benchmarks/test-elementary-v0.1/step02/`.
 
 ### Stage 2 — Compare search performance
 

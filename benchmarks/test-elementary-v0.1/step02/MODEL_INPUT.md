@@ -1,11 +1,12 @@
-# Model input — test-elementary v0.1 (Step 02)
-Source: original Massing Explorer commit `751ba24b0d2bcaeae5274eaffa589060c95ec0f9`.
+# A test elementary school — design information
 
-## Verbatim brief
+## Design brief
+
 3 masses, max 3 floors. length max 60 meters. gym and dining together and double height. art and music prefer on ground floor. media prefer on top floor above admin. admin have to be on ground floor. core academic and special ed width has to be 80 feet. mass ratio have to be between 2:5 and 5:8. prefer 3 floors.
 
 ## Program schedule (net square feet)
-The complete source workbook is identified by its original Git blob SHA `dfd6fe15516702a8de269ebb105dd689d1cb3478` and the display alias `test-elementary-space-summary.xlsx`. Retain room names, quantities and NFA. Zero-quantity line items remain zero. Source department totals:
+
+The supplied `ROOM_PROGRAM.csv` contains the **complete 41-line room program**. Preserve the given quantities, room types, and net areas, including any room with quantity zero. Department net areas:
 
 | Department | NFA (SF) |
 |---|---:|
@@ -20,14 +21,17 @@ The complete source workbook is identified by its original Git blob SHA `dfd6fe1
 | Custodial & maintenance | 2,200 |
 | **Total** | **44,270** |
 
-The workbook displays a 1.50 grossing factor and 66,405 SF GFA. Its complete room schedule must also be supplied to each model; these subtotals alone are insufficient.
+## Planning assumptions
 
-## Numeric planning assumptions
-Base dimensions in feet; areas in SF. Double-loaded classroom bar: 30-ft depth, 8-ft corridor. Story extrusion height: 14 ft. Gym clear minimum 60 x 100 ft and double height. Cafeteria clear minimum 40 x 60 ft; the brief additionally calls for gym and dining together and double height. Minimum L-shaped residual arm depth: 20 ft. Daylight preference: 90-ft maximum depth. Configured GSF tolerance: ±3%. Separately, config lists area adjustment 1.15 and grossing factor 1.50: preserve the discrepancy with the workbook rather than resolving it without documentation.
+- Dimensions in feet unless otherwise stated; areas in square feet.
+- School program workbook: 44,270 SF net floor area; 1.50 grossing factor; 66,405 SF displayed gross floor area.
+- Separate project planning parameters: area adjustment 1.15; grossing factor 1.50; gross area tolerance ±3%.
+- Default classroom configuration: double-loaded bar, 30-ft classroom depth and 8-ft corridor.
+- Typical floor-to-floor height used for mass extrusion: 14 ft.
+- Gym: clear dimensions at least 60 × 100 ft; double height.
+- Cafeteria: clear dimensions at least 40 × 60 ft; the brief separately specifies that gym and dining are together and double height.
+- Daylight planning: preferred maximum **width** 90 ft for departments with instructional/daylit rooms.
+- If a footprint uses a residual L-shaped floor arm, minimum arm depth is 20 ft.
+- No specific site boundary, adjacent buildings, orientation, terrain, or access road geometry is supplied.
 
-No site footprint, frontage, neighbors, or topography are provided; do not invent site facts. The verbatim brief takes precedence over generic configuration preferences. Generic example program-grouping and floor-allocation hints must not be presented as user design requirements.
-
-## Primary source links
-- [Frozen program workbook](https://api.github.com/repos/UsernameIsJoe/Massing-Explorer/git/blobs/dfd6fe15516702a8de269ebb105dd689d1cb3478)
-- [Frozen brief](https://api.github.com/repos/UsernameIsJoe/Massing-Explorer/git/blobs/8294bb8833825de7ea97149b3ce96254ef070a7a)
-- [Frozen config](https://github.com/UsernameIsJoe/Massing-Explorer/blob/751ba24b0d2bcaeae5274eaffa589060c95ec0f9/config/project.example.yaml)
+The brief specifies design requirements and preferences. If a project assumption and an explicit brief item conflict, prioritize the brief and explain material uncertainties. The workbook's displayed gross floor area and the separately supplied adjustment/factor are stated as separate source values.
