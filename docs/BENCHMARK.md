@@ -23,6 +23,8 @@ Every experimental run must retain:
 
 The exploration log supports analysis of how each system searched. The final set supports comparison of what each system ultimately recommended.
 
+Run-level metadata follows [`schemas/run-log.schema.json`](../schemas/run-log.schema.json). It records the system and version, input hashes, prompt and conditions, budgets, execution environment, timing, status, usage, artifact paths, and summary results. Fields that do not apply to a system are recorded as `null` rather than estimated.
+
 ## Two-layer output format
 
 The benchmark separates the system's submitted proposal from the independent evaluation applied afterward. This avoids forcing every system to use Massing Explorer's current internal representation and preserves the possibility of discovering strategies outside that representation.
@@ -85,7 +87,26 @@ The first experiments use a deliberately simple metric set. The metrics may evol
 
 Metric changes must create a new version and apply only to a new experimental batch. Previous results remain attached to the metric version under which they were produced.
 
-## Remaining Step 01 decisions
+## Frozen baseline result
 
-- Define the run-level metadata and logging schema.
-- Run and archive the frozen Massing Explorer baseline.
+The original Massing Explorer regression runner was executed twice from the pinned commit. Both runs produced identical JSON results.
+
+| Result | Value |
+| --- | ---: |
+| Attempts | 209 |
+| Archived cells | 159 |
+| Legal cells | 37 |
+| Legal three-mass cells | 37 |
+| P-pool size | 41 |
+| Feasible P entries | 6 |
+| Unresolved P entries | 35 |
+| Wall time | 22.282 s and 24.750 s |
+| Deterministic repeat | Identical output |
+
+The archived run manifest and report are in [`benchmarks/underwood-v0.1/baseline/`](../benchmarks/underwood-v0.1/baseline/).
+
+The legacy runner provides aggregate results but does not retain the complete candidate-level exploration log or a final set normalized to the new proposal schema. This limitation is recorded in the manifest. All new experimental runners must emit both artifacts.
+
+## Step 01 status
+
+The shared inputs, output contract, pilot metrics, run-log schema, and frozen baseline report are complete for benchmark version `underwood-v0.1`.
