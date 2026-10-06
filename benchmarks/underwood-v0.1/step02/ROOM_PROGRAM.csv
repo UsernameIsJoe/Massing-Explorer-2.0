@@ -1,0 +1,42 @@
+department,room,nfa_sf,quantity
+CORE ACADEMIC,Kindergarten Classroom with Toilet,1120,3
+CORE ACADEMIC,General Classroom (Grades 1-6),910,12
+SPECIAL EDUCATION,Self-Contained Special Education Classroom,1150,3
+SPECIAL EDUCATION,Self-Contained Special Education Toilet Room,70,3
+SPECIAL EDUCATION,Resource Room,650,2
+SPECIAL EDUCATION,Small Group Room,650,1
+ART & MUSIC,Art Classroom (25 seats),1200,1
+ART & MUSIC,Art Workroom with Storage and Kiln,200,1
+ART & MUSIC,Music Classroom / Large Group (25-50 seats),1400,1
+ART & MUSIC,Music Practice / Ensemble,120,2
+HEALTH & PHYSICAL EDUCATION,Gymnasium,6500,1
+HEALTH & PHYSICAL EDUCATION,Gym Storeroom,250,1
+HEALTH & PHYSICAL EDUCATION,Health Instructor's Office with Shower and Toilet,200,1
+MEDIA CENTER,Media Center / Reading Room,2800,1
+DINING & FOOD SERVICE,Cafeteria / Dining,2800,1
+DINING & FOOD SERVICE,Stage,900,1
+DINING & FOOD SERVICE,Chair / Table / Equipment Storage,400,1
+DINING & FOOD SERVICE,Kitchen,1800,1
+DINING & FOOD SERVICE,Staff Lunch Room,250,1
+MEDICAL,Medical Suite Toilet,80,1
+MEDICAL,Nurses' Office / Waiting Room,350,1
+MEDICAL,Examination Room / Resting,150,2
+ADMINISTRATION & GUIDANCE,General Office / Waiting Room with Toilet,400,1
+ADMINISTRATION & GUIDANCE,Teachers' Mail and Time Room,140,1
+ADMINISTRATION & GUIDANCE,Copy Room,180,1
+ADMINISTRATION & GUIDANCE,Records Room,140,1
+ADMINISTRATION & GUIDANCE,Principal's Office with Conference Area,420,1
+ADMINISTRATION & GUIDANCE,Principal's Secretary / Waiting,150,1
+ADMINISTRATION & GUIDANCE,Assistant Principal's Office,120,0
+ADMINISTRATION & GUIDANCE,Supervisory / Spare Office,150,1
+ADMINISTRATION & GUIDANCE,Conference Room,300,1
+ADMINISTRATION & GUIDANCE,Guidance Office,180,1
+ADMINISTRATION & GUIDANCE,Guidance Storeroom,50,1
+ADMINISTRATION & GUIDANCE,Teachers' Work Room,400,1
+CUSTODIAL & MAINTENANCE,Custodian's Office,180,1
+CUSTODIAL & MAINTENANCE,Custodian's Workshop,420,1
+CUSTODIAL & MAINTENANCE,Custodian's Storage,420,1
+CUSTODIAL & MAINTENANCE,Recycling Room / Trash,450,1
+CUSTODIAL & MAINTENANCE,Receiving and General Supply,240,1
+CUSTODIAL & MAINTENANCE,Storeroom,240,1
+CUSTODIAL & MAINTENANCE,Network / Telecom Room,250,1
