@@ -33,7 +33,7 @@ than three parallel bars or a fully closed courtyard.
 The central hinge is the principal student/visitor junction. Administration occupies the ground floor of
 Mass B immediately at this hinge so staff can supervise the public entrance. Mass A is the quieter
 learning wing. Mass B combines the civic/arts functions with additional academic rooms and the media
-center above. Mass C contains the large-volume gym and dining program and receives a separate after￾hours/community entrance and service edge.
+center above. Mass C contains the large-volume gym and dining program and receives a separate after-hours/community entrance and service edge.
 Because no site orientation, roads, boundaries, or terrain are supplied, compass orientation remains
 deliberately unresolved; the pinwheel can be rotated or mirrored when actual site information becomes
 available.
@@ -148,7 +148,7 @@ Mass C can be locked off from the academic school after hours, allowing independ
 cafeteria and stage without opening classroom wings. The service entrance is kept on the opposite/back
 edge from the public entrance.
 7. Complete program accounting
-The following mapping retains every supplied CSV program line, including the zero-quantity assistant￾principal office.
+The following mapping retains every supplied CSV program line, including the zero-quantity assistant-principal office.
 Department / room Unit NFA × quantity Proposed location
 Core — Kindergarten Classroom with Toilet 1,120 × 3 = 3,360 A1
 Core — General Classroom (Grades 1–6) 910 × 4 = 3,640 A2
@@ -232,7 +232,7 @@ Gross area using 1.15 × 1.50 ±3% basis Satisfied
 Workbook 66,405-SF gross Not satisfied; source conflict unresolved
 “Mass ratio” 2:5–5:8 Conditionally satisfied; definition unresolved
 For the last item, I have interpreted “mass ratio” primarily as short-side aspect ratio. Masses A and B are
-80:128 = 0.625 (5:8) and Mass C is 90:188 = 0.479, all between 0.40 and 0.625. Interestingly, the smaller￾to-larger footprint-area ratio is also about 0.605, and the smaller-to-larger gross-floor-area ratio is about
+80:128 = 0.625 (5:8) and Mass C is 90:188 = 0.479, all between 0.40 and 0.625. Interestingly, the smaller-to-larger footprint-area ratio is also about 0.605, and the smaller-to-larger gross-floor-area ratio is about
 0.551, both inside the same numerical interval. The source still needs to specify which ratio was
 intended; volume ratio could produce a different result.
 10. Exploration undertaken
@@ -349,7 +349,7 @@ Scheduled
 NFA
 Level
 1
-3 Kindergarten Classrooms with Toilet @ 1,120; 2 General Classrooms @ 910; 1 Self￾Contained Special Education Classroom @ 1,150; 1 Self-Contained Special Education
+3 Kindergarten Classrooms with Toilet @ 1,120; 2 General Classrooms @ 910; 1 Self-Contained Special Education Classroom @ 1,150; 1 Self-Contained Special Education
 Toilet @ 70; Art Classroom @ 1,200; Art Workroom with Storage and Kiln @ 200;
 Music Classroom / Large Group @ 1,400; 2 Music Practice / Ensemble @ 120
 9,440 SF
@@ -455,7 +455,7 @@ Architectural merits and trade-offs
 The strongest feature of this scheme is that the constraints reinforce the architecture rather than merely
 being fitted into it. The 80-ft academic bar becomes a clear three-story learning wing; the 90-ft commons
 bar solves the gym/cafeteria dimensions while remaining within the daylight-width preference; and the
-stepped administration/media mass gives the school a recognizable front door and satisfies the media￾over-admin relationship.
+stepped administration/media mass gives the school a recognizable front door and satisfies the media-over-admin relationship.
 It also creates good operational separation: kindergarten and arts have ground access, noisy/event
 functions sit next to one another, public and after-hours access can stop at the commons/admin zone,
 and academic circulation remains secure.
@@ -680,7 +680,7 @@ Test Elementary School: Recommended Scheme
 I recommend an L-shaped grouping of three rectangular masses around a small south-facing
 court:
 - Mass A, the Learning Bar. An 80 × 178 ft, three-storey double-loaded bar. It holds all of
-core academic and special education, plus administration and medical at the ground￾floor east end and the media center on the third floor directly above them.
+core academic and special education, plus administration and medical at the ground-floor east end and the media center on the third floor directly above them.
 - Mass B, the Commons. A 112 × 180 ft double-height volume east of A. The gym and
 cafeteria sit back to back with the stage between them. Kitchen and custodial share a
 service edge.
@@ -933,7 +933,7 @@ A1
 special-ed toilet; 1 resource room; 1 small-group room
 5,880
 A2
-4 general classrooms; 2 self-contained special-ed classrooms; 2 special￾ed toilets; 1 resource room
+4 general classrooms; 2 self-contained special-ed classrooms; 2 special-ed toilets; 1 resource room
 6,730
 A3 8 general classrooms 7,280
 B1 Complete health/PE and dining/food-service programs 13,100
@@ -991,7 +991,7 @@ represented in the room schedule at its supplied quantity of zero; no physical r
 it.
 The complete 3,040 SF art and music program also sits on Level 1. Art receives an
 exterior/service edge for the kiln and workroom; music is separated acoustically from the
-administrative suite and can face the internal court. This satisfies the preference for ground￾floor art and music.
+administrative suite and can face the internal court. This satisfies the preference for ground-floor art and music.
 The active portion of custodial/service operations also sits here adjacent to the B/C service
 court: the 180 SF custodian's office, 420 SF workshop, 450 SF recycling/trash room, and 240 SF
 receiving/general-supply room.
@@ -1032,11 +1032,11 @@ floors and creates potential roof terraces over portions of the Level-1 plinth.
 Requirements satisfied and remaining questions
 The proposal satisfies the three-mass requirement; three-floor maximum and three-floor
 preference; 60 m length limit; 80-ft academic/special-ed width; the stated mass-ratio range
-under the short-side/long-side interpretation; ground-floor administration; preferred ground￾floor art/music; top-floor media above administration; combined double-height gym/dining;
-minimum gym and cafeteria clear dimensions; and the department floor-contiguity/minimum￾area rule. The 90-ft preferred daylight width is also maintained for the academic and commons
+under the short-side/long-side interpretation; ground-floor administration; preferred ground-floor art/music; top-floor media above administration; combined double-height gym/dining;
+minimum gym and cafeteria clear dimensions; and the department floor-contiguity/minimum-area rule. The 90-ft preferred daylight width is also maintained for the academic and commons
 masses.
 Three items should remain explicit during the next design phase. First, the source does not
-define exactly how the 2:5–5:8 mass ratio is measured, so the proposal assumes plan short￾side/long-side ratio. Second, the 66,405 GSF workbook value and the separately supplied 1.15 ×
+define exactly how the 2:5–5:8 mass ratio is measured, so the proposal assumes plan short-side/long-side ratio. Second, the 66,405 GSF workbook value and the separately supplied 1.15 ×
 1.50 project calculation produce different gross targets; this proposal follows the latter because
 it is the only interpretation that uses all stated project-planning parameters and the ±3%
 tolerance. Third, the project has no site geometry, orientation, access, structural criteria, or
@@ -1249,7 +1249,7 @@ ratio meaning, the 60-m scope, and the 80-ft section.
   - An 80-ft mass must be 128–197 ft long.
   - A 3-storey 80-ft mass is therefore at least 30,720 GSF.
 - A single-storey hall is capped at about 24,200 SF per floor.
-3. Screened program-to-mass allocation families against both area bands, the ground￾floor requirements, and the top-floor media requirement.
+3. Screened program-to-mass allocation families against both area bands, the ground-floor requirements, and the top-floor media requirement.
 4. Developed the survivor. I checked room frontage and net-to-gross per floor, compared
 two site arrangements, and tuned lengths to the target.
 Alternative GFA Result
@@ -1275,7 +1275,7 @@ E3. Recommended scheme 76,264 Selected.
 E4. 3-storey front house with special
 education on L2 + 3-storey core bar
 ≥ ~80,000
-Rejected. Over the band, and self￾contained special education goes
+Rejected. Over the band, and self-contained special education goes
 upstairs.
 E5. Program stacked over the hall —
 Rejected at screening. Media would
@@ -1333,9 +1333,9 @@ major rooms
 17,100 SF
 Total 78,540 SF
 The two 80 × 128 ft learning bars project from the 190-ft long side of Mass C. Their combined widths are
-160 ft, leaving a 30-ft-wide open court/light slot between them. Mass C closes the south side of this U￾shaped composition and becomes the shared public/after-hours zone.
+160 ft, leaving a 30-ft-wide open court/light slot between them. Mass C closes the south side of this U-shaped composition and becomes the shared public/after-hours zone.
 The brief requires three masses, no more than three floors, an 80-ft width for core academic and special
-education, co-located double-height gym and dining, ground-floor administration, preferred ground￾floor art/music, and preferred top-floor media above administration. This scheme meets those
+education, co-located double-height gym and dining, ground-floor administration, preferred ground-floor art/music, and preferred top-floor media above administration. This scheme meets those
 requirements or preferences as described below.
 Mass proportion assumption
 I interpret “mass ratio between 2:5 and 5:8” as the short-side : long-side plan aspect ratio. Under that
@@ -1515,7 +1515,7 @@ Provides generous planning depth but is about 16.7% above
 the adjusted target and creates unnecessary corridor length
 and excess building area
 The recommended scheme prevailed because 128 ft is effectively the shortest rectangular learning-bar
-length compatible with an 80-ft width and a maximum 5:8 width ratio. That minimizes the two three￾story instructional masses. The 90 × 190 ft commons then supplies enough dimensional relief for the
+length compatible with an 80-ft width and a maximum 5:8 width ratio. That minimizes the two three-story instructional masses. The 90 × 190 ft commons then supplies enough dimensional relief for the
 gym/dining program while simultaneously producing the useful 30-ft court between the two 80-ft bars.
 8. Requirements status
 Requirement / preference Status
@@ -1563,11 +1563,11 @@ separations, kitchen service logistics and actual wall thicknesses require subse
 Conclusion
 The recommended 80 × 128 / 80 × 128 / 90 × 190 ft U-shaped scheme is the strongest of the explored
 configurations because it converts several constraints into useful architectural order rather than treating
-them independently: the mandatory 80-ft widths become efficient daylighted learning bars; the mass￾ratio limit determines a compact 128-ft academic length; the two bars create a 30-ft outdoor court; the
+them independently: the mandatory 80-ft widths become efficient daylighted learning bars; the mass-ratio limit determines a compact 128-ft academic length; the two bars create a 30-ft outdoor court; the
 commons becomes the shared civic/after-hours face of the school; administration controls the main
 entry; media forms a recognizable top-floor destination above it; and the gym/dining mass remains
 directly accessible without opening the academic wings after hours.
-Its principal trade-off is area: it intentionally favors the separately stated adjusted gross target and three￾floor preference over the smaller 66,405 SF workbook gross figure. That choice should be confirmed
+Its principal trade-off is area: it intentionally favors the separately stated adjusted gross target and three-floor preference over the smaller 66,405 SF workbook gross figure. That choice should be confirmed
 before the scheme advances.
 I can also convert this recommendation into a compact adjacency/block diagram or a floor-by-floor area
 matrix if that would be useful for the next design step.
@@ -1642,7 +1642,7 @@ On Level 2 there are six Grades 1–6 classrooms, plus the two resource rooms an
 stacked over the SpEd cluster. This gives SpEd a short vertical connection by the west stair.
 On Level 3 there are six classrooms, plus the media center filling the north band over the admin
 footprint. Being on the top floor lets the media center take roof monitors or clerestories.
-Levels 2 and 3 each have about 1,500–2,400 SF of unassigned band. I'd use it as breakout or extended￾learning alcoves off the corridor, and I've counted it as gross area rather than program.
+Levels 2 and 3 each have about 1,500–2,400 SF of unassigned band. I'd use it as breakout or extended-learning alcoves off the corridor, and I've counted it as gross area rather than program.
 Mass B: gym and dining hall
 From north to south, the hall is divided into four zones along its 186-ft length. The gym zone is 68 ft and
 gives a clear court of 65 × 100 ft (at least 60 × 100 is required). The roof trusses span the 65-ft direction,
@@ -1651,7 +1651,7 @@ health instructor's office, and a cross passage. The stage sits between the gym 
 either one, or both together, can serve as the audience space. The 48-ft dining zone holds a 48 × 62
 dining room (at least 40 × 60 is required) beside a 40 × 46 kitchen. The 40-ft service zone holds the
 community entry, public toilets, staff lunch room, and custodial rooms, with receiving and recycling at a
-loading dock on the far side from the courts. The gym and dining room are together in one double￾height volume, as the brief asks.
+loading dock on the far side from the courts. The gym and dining room are together in one double-height volume, as the brief asks.
 Mass C: entry and arts link
 The link has a 10-ft glazed gallery along the play court and rooms about 46 ft deep along the entry-court
 side. From west to east, it contains the lobby with a secure vestibule (the A corridor axis runs straight
@@ -2295,7 +2295,7 @@ Academic
 commons 90×192
 76,848
 Excellent total-area fit, but the support ground floor
-is only 8,496 SF against about 8,480 SF of ground￾preferred/ground-required programmed NFA if
+is only 8,496 SF against about 8,480 SF of ground-preferred/ground-required programmed NFA if
 custodial functions remain at grade. Virtually no
 room remains for walls or circulation. Rejected.
 Narrow 80-ft
@@ -2450,7 +2450,7 @@ is therefore above the stated ~753-SF minimum for a department that spans floors
 The three volumes should meet as a compact three-bar T/pinwheel, not as three detached buildings.
 Mass B is the arrival hinge. The short end of Mass A connects to one long side of B, giving a direct
 academic-to-administration/media junction on all three levels. Mass C attaches to the opposite side of B
-at grade. This keeps gym/dining accessible to the school while allowing it to have a separate after￾hours/community entrance.
+at grade. This keeps gym/dining accessible to the school while allowing it to have a separate after-hours/community entrance.
 The principal student circulation is therefore an 8-ft double-loaded academic spine in Mass A, a broader
 arrival/cross-circulation spine through Mass B, and a side gallery along Mass C that reaches gym, dining
 and their support spaces without routing normal circulation through either large room.
@@ -2471,7 +2471,7 @@ Recommended total 75,860 SF
 Against the separate adjusted planning target of 76,365.75 SF, the proposal is approximately 506 SF low,
 or −0.66%, comfortably inside the stated ±3% tolerance.
 It does not match the workbook's separately stated 66,405-SF displayed gross area; it is approximately
-14.2% larger than that figure. The source explicitly distinguishes those two sets of values, so which gross￾area basis is contractual must be resolved before schematic design is frozen.
+14.2% larger than that figure. The source explicitly distinguishes those two sets of values, so which gross-area basis is contractual must be resolved before schematic design is frozen.
 7. Requirement status
 Requirement / preference Status Response
 Three masses Satisfied Academic, arrival/arts/media, commons/PE
@@ -2510,7 +2510,7 @@ hinge, and a long-span community commons. Kindergarten remains at grade; older c
 vertically; special education stays contiguous through the academic stack; administration controls the
 entrance; media becomes a visible destination at the top; and noisy/community uses remain
 concentrated away from the principal classroom bar.
-The 90-ft-wide commons is deliberately long rather than broad. That choice keeps it within the daylight￾width preference and preserves the aspect-ratio interpretation, but at 194 ft it comes comparatively
+The 90-ft-wide commons is deliberately long rather than broad. That choice keeps it within the daylight-width preference and preserves the aspect-ratio interpretation, but at 194 ft it comes comparatively
 close to the 60 m length limit. Detailed wall build-ups and exterior projections therefore should not be
 allowed to push the controlling dimension beyond 60 m.
 The stepped Mass B is preferable to a full three-story rectangle because its ground floor needs
@@ -2518,7 +2518,7 @@ substantially more area than its upper programmed floors. Its principal unresolv
 room schedule itself does not supply enough program to occupy that plate. I would treat it as the first
 place to absorb the separate area-adjustment allowance and later-programmed shared/flexible space,
 rather than invent rooms that are absent from the source.
-The other significant unresolved item is the meaning of “mass ratio.” If it does not mean short-side/long￾side plan aspect ratio, the massing needs to be rechecked against the intended definition before
+The other significant unresolved item is the meaning of “mass ratio.” If it does not mean short-side/long-side plan aspect ratio, the massing needs to be rechecked against the intended definition before
 proceeding.
 Recommendation
 Advance the 80×150 three-story academic bar + stepped 80×130/60×100 three-story arrival bar +
@@ -2615,7 +2615,7 @@ conference room, guidance and its storeroom, records, copy, mail, and the teache
 - The Assistant Principal's Office is kept in the schedule at quantity 0 and 0 SF.
 Hub (C), level 2, NFA 2,800
 The 2,800-SF media reading room sits directly above administration. The remaining area is stair, elevator,
-toilets, and open reading space. This level connects at grade to floor 2 of the bar, because every floor-to￾floor height is 14 ft.
+toilets, and open reading space. This level connects at grade to floor 2 of the bar, because every floor-to-floor height is 14 ft.
 Learning Bar (A)
 The section is a 30-ft classroom on each side of a 20-ft "learning street." That street is 8 ft of clear egress
 plus 12 ft of breakout space. Each floor has 336 ft of room frontage.
