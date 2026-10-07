@@ -57,3 +57,11 @@ The existing audited Fable scores are locked without numeric changes and analyze
 The original Word hashes above describe archived source versions, including the original identity-bearing after-shuffle file. They are not hashes of its later sanitized replacement. The masked evaluator inputs, unmasked archives and post-scoring results have different roles.
 
 The untouched evaluator DOCX files remain in the existing user-supplied artifacts. Their original hashes are recorded in `evaluator/AUDIT.json`; full DOCX uploads were blocked by automatic approval review. Verified score transcriptions and descriptive derivatives are published here.
+
+
+## Interactive massing gallery
+
+- [`gallery/massing-comparison.html`](gallery/massing-comparison.html): standalone interactive HTML with 12 LLM final proposals and 37 frozen-pipeline archive candidates. Download the HTML and open it in a browser; GitHub's file viewer displays source.
+- [`gallery/README.md`](gallery/README.md): reconstruction assumptions, frozen rerun provenance and evidence limits.
+
+The rerun reproduces 209 attempts, 159 cells and 37 legal cells. Candidate ground dimensions match archived plates within 0.02 ft rounding; recovered solver validation checks pass. LLM placement and unspecified heights/upper-floor offsets are explicitly approximate. Pipeline candidates have not received Fable quality ratings. This is a post-scoring unmasked comparison gallery, not a blinded evaluator packet.
