@@ -32,6 +32,7 @@ The supplied `ROOM_PROGRAM.csv` contains the **complete 41-line room program**. 
 - Cafeteria: clear dimensions at least 40 × 60 ft; the brief separately specifies that gym and dining are together and double height.
 - Daylight planning: preferred maximum **width** 90 ft for departments with instructional/daylit rooms.
 - If a footprint uses a residual L-shaped floor arm, minimum arm depth is 20 ft.
+- If a department spans multiple floors, those floors must be contiguous, and each floor portion of that department must contain at least **70 m² (~753 SF)**.
 - No specific site boundary, adjacent buildings, orientation, terrain, or access road geometry is supplied.
 
 The brief specifies design requirements and preferences. If a project assumption and an explicit brief item conflict, prioritize the brief and explain material uncertainties. The workbook's displayed gross floor area and the separately supplied adjustment/factor are stated as separate source values.
