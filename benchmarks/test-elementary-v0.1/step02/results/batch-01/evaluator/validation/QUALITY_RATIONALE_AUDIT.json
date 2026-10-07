@@ -1,0 +1,354 @@
+[
+  {
+    "case": "R01",
+    "axis": "Program coherence",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R01",
+    "axis": "Preference alignment",
+    "original_score": 4,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R01",
+    "axis": "Performance efficiency",
+    "original_score": 1,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R01",
+    "axis": "Robustness / flexibility",
+    "original_score": 1,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R02",
+    "axis": "Program coherence",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R02",
+    "axis": "Preference alignment",
+    "original_score": 4,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R02",
+    "axis": "Performance efficiency",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R02",
+    "axis": "Robustness / flexibility",
+    "original_score": 2,
+    "issue_ids": [
+      "Q02"
+    ],
+    "review_status": "factual qualification required"
+  },
+  {
+    "case": "R03",
+    "axis": "Program coherence",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R03",
+    "axis": "Preference alignment",
+    "original_score": 4,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R03",
+    "axis": "Performance efficiency",
+    "original_score": 1,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R03",
+    "axis": "Robustness / flexibility",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R04",
+    "axis": "Program coherence",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R04",
+    "axis": "Preference alignment",
+    "original_score": 3,
+    "issue_ids": [
+      "Q01"
+    ],
+    "review_status": "factual qualification required"
+  },
+  {
+    "case": "R04",
+    "axis": "Performance efficiency",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R04",
+    "axis": "Robustness / flexibility",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R05",
+    "axis": "Program coherence",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R05",
+    "axis": "Preference alignment",
+    "original_score": 4,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R05",
+    "axis": "Performance efficiency",
+    "original_score": 2,
+    "issue_ids": [
+      "Q03"
+    ],
+    "review_status": "factual qualification required"
+  },
+  {
+    "case": "R05",
+    "axis": "Robustness / flexibility",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R06",
+    "axis": "Program coherence",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R06",
+    "axis": "Preference alignment",
+    "original_score": 3,
+    "issue_ids": [
+      "Q01"
+    ],
+    "review_status": "factual qualification required"
+  },
+  {
+    "case": "R06",
+    "axis": "Performance efficiency",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R06",
+    "axis": "Robustness / flexibility",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R07",
+    "axis": "Program coherence",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R07",
+    "axis": "Preference alignment",
+    "original_score": 4,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R07",
+    "axis": "Performance efficiency",
+    "original_score": 1,
+    "issue_ids": [
+      "Q04"
+    ],
+    "review_status": "factual qualification required"
+  },
+  {
+    "case": "R07",
+    "axis": "Robustness / flexibility",
+    "original_score": 1,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R08",
+    "axis": "Program coherence",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R08",
+    "axis": "Preference alignment",
+    "original_score": 3,
+    "issue_ids": [
+      "Q01"
+    ],
+    "review_status": "factual qualification required"
+  },
+  {
+    "case": "R08",
+    "axis": "Performance efficiency",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R08",
+    "axis": "Robustness / flexibility",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R09",
+    "axis": "Program coherence",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R09",
+    "axis": "Preference alignment",
+    "original_score": 3,
+    "issue_ids": [
+      "Q01"
+    ],
+    "review_status": "factual qualification required"
+  },
+  {
+    "case": "R09",
+    "axis": "Performance efficiency",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R09",
+    "axis": "Robustness / flexibility",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R10",
+    "axis": "Program coherence",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R10",
+    "axis": "Preference alignment",
+    "original_score": 3,
+    "issue_ids": [
+      "Q01"
+    ],
+    "review_status": "factual qualification required"
+  },
+  {
+    "case": "R10",
+    "axis": "Performance efficiency",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R10",
+    "axis": "Robustness / flexibility",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R11",
+    "axis": "Program coherence",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R11",
+    "axis": "Preference alignment",
+    "original_score": 4,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R11",
+    "axis": "Performance efficiency",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R11",
+    "axis": "Robustness / flexibility",
+    "original_score": 3,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R12",
+    "axis": "Program coherence",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R12",
+    "axis": "Preference alignment",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R12",
+    "axis": "Performance efficiency",
+    "original_score": 2,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  },
+  {
+    "case": "R12",
+    "axis": "Robustness / flexibility",
+    "original_score": 1,
+    "issue_ids": [],
+    "review_status": "no additional factual issue identified in this review; subjective rating not independently validated"
+  }
+]

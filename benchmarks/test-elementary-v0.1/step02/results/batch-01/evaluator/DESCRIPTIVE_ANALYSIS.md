@@ -49,3 +49,8 @@ Visible revision occurs only in R03 and R09, both Opus A1. Only R09 has a stated
 `MASTER_RESULTS.json` contains all 12 run identities, unchanged score families, evaluator-reported feasibility, representation status, observable evidence and displayed duration metadata. Numeric alternative totals are not invented where the evaluator uses different staged or organizational units.
 Layer 2 remains pending: normalized strategy, nine-axis mapping, actual ME encoding/realization status, feasibility distance, ME 0–1 metrics, distinctness and coverage. These fields are null with an explicit pending status.
 The next substantive step is to normalize the twelve proposals against the frozen ME representation and independently test realizability and feasibility. Only then compare LLM outcomes and observable capabilities with the ME pipeline.
+
+
+## Evidence validation qualification
+
+The separate [validation report](validation/VALIDATION_REPORT.md) reconciles all 12 gross/net totals and declared principal ratios, but does not certify realized room fit. It identifies five daylight-preference applicability questions, limited anchor evidence in R05/R10, and three factual wording/rounding qualifications. Original scores remain unchanged. Group differences are descriptive; the quality identity exposure, n=3 per cell, single evaluator, and differing permitted gross-area bases prevent causal or general model-quality conclusions. Higher A1 behavior ratings do not establish that its search improves or worsens architecture.

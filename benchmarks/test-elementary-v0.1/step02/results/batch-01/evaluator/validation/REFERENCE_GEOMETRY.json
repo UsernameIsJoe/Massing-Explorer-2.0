@@ -1,0 +1,1060 @@
+{
+  "R01": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            128
+          ],
+          [
+            80,
+            128
+          ],
+          [
+            80,
+            128
+          ]
+        ],
+        "nfa": [
+          5230,
+          3640,
+          3640
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            80,
+            128
+          ],
+          [
+            80,
+            128
+          ],
+          [
+            80,
+            128
+          ]
+        ],
+        "nfa": [
+          7790,
+          5560,
+          4620
+        ],
+        "daylight": true
+      },
+      "C": {
+        "plates": [
+          [
+            90,
+            188
+          ]
+        ],
+        "nfa": [
+          13790
+        ],
+        "daylight": false
+      }
+    },
+    "reported_gfa": 78360,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      3360,
+      5460,
+      5460
+    ],
+    "sped_floor_nfa": [
+      1870,
+      3740,
+      0
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": [
+      65,
+      100
+    ],
+    "cafeteria": [
+      40,
+      70
+    ],
+    "anchor_mass": "C",
+    "admin_mass": "B",
+    "media_mass": "B",
+    "arts_mass": "B",
+    "ratio_basis": "each mass footprint",
+    "room_inventory": "explicit 41-line table"
+  },
+  "R02": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            169
+          ],
+          [
+            80,
+            169
+          ],
+          [
+            80,
+            169
+          ]
+        ],
+        "nfa": [
+          9440,
+          7070,
+          6420
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            90,
+            194
+          ]
+        ],
+        "nfa": [
+          13100
+        ],
+        "daylight": false
+      },
+      "C": {
+        "plates": [
+          [
+            72,
+            120
+          ],
+          [
+            48,
+            80
+          ],
+          [
+            48,
+            80
+          ]
+        ],
+        "nfa": [
+          4350,
+          1090,
+          2800
+        ],
+        "daylight": false
+      }
+    },
+    "reported_gfa": 74340,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      5180,
+      4550,
+      4550
+    ],
+    "sped_floor_nfa": [
+      1220,
+      2520,
+      1870
+    ],
+    "custodial_floor_nfa": [
+      1110,
+      1090,
+      0
+    ],
+    "gym": [
+      60,
+      100
+    ],
+    "gym_area_scope": "clear court subset, not necessarily total scheduled gym room",
+    "cafeteria": [
+      40,
+      70
+    ],
+    "anchor_mass": "B",
+    "admin_mass": "C",
+    "media_mass": "C",
+    "arts_mass": "A",
+    "ratio_basis": "each primary rectangle",
+    "room_inventory": "room quantities itemized within floor/program tables"
+  },
+  "R03": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            130
+          ],
+          [
+            80,
+            130
+          ],
+          [
+            80,
+            130
+          ]
+        ],
+        "nfa": [
+          7510,
+          8340,
+          5460
+        ],
+        "daylight": true
+      },
+      "C": {
+        "plates": [
+          [
+            80,
+            130
+          ],
+          [
+            80,
+            130
+          ],
+          [
+            80,
+            130
+          ]
+        ],
+        "nfa": [
+          4330,
+          2730,
+          2800
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            80,
+            190
+          ]
+        ],
+        "nfa": [
+          13100
+        ],
+        "daylight": false
+      }
+    },
+    "reported_gfa": 77600,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      3360,
+      5460,
+      5460
+    ],
+    "sped_floor_nfa": [
+      0,
+      5610,
+      0
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": [
+      65,
+      100
+    ],
+    "cafeteria": [
+      40,
+      70
+    ],
+    "anchor_mass": "B",
+    "admin_mass": "C",
+    "media_mass": "C",
+    "arts_mass": "A",
+    "ratio_basis": "each mass footprint",
+    "room_inventory": "department/floor schedule plus 41-line preservation statement"
+  },
+  "R04": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            178
+          ],
+          [
+            80,
+            178
+          ],
+          [
+            80,
+            178
+          ]
+        ],
+        "nfa": [
+          7820,
+          8940,
+          9170
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            112,
+            180
+          ]
+        ],
+        "nfa": [
+          15300
+        ],
+        "daylight": false
+      },
+      "C": {
+        "plates": [
+          [
+            50,
+            84
+          ]
+        ],
+        "nfa": [
+          3040
+        ],
+        "daylight": true
+      }
+    },
+    "reported_gfa": 67080,
+    "gross_basis": 66405,
+    "core_floor_nfa": [
+      3360,
+      4550,
+      6370
+    ],
+    "sped_floor_nfa": [
+      1220,
+      4390,
+      0
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": [
+      65,
+      100
+    ],
+    "cafeteria": [
+      44,
+      64
+    ],
+    "anchor_mass": "B",
+    "admin_mass": "A",
+    "media_mass": "A",
+    "arts_mass": "C",
+    "ratio_basis": "each mass footprint",
+    "room_inventory": "department/floor totals plus 41-line preservation statement"
+  },
+  "R05": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            156
+          ],
+          [
+            80,
+            156
+          ],
+          [
+            80,
+            156
+          ]
+        ],
+        "nfa": [
+          5880,
+          6730,
+          7280
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            90,
+            190
+          ]
+        ],
+        "nfa": [
+          13100
+        ],
+        "daylight": false
+      },
+      "C": {
+        "plates": [
+          [
+            80,
+            128
+          ],
+          [
+            60,
+            96
+          ],
+          [
+            60,
+            96
+          ]
+        ],
+        "nfa": [
+          7570,
+          910,
+          2800
+        ],
+        "daylight": true
+      }
+    },
+    "reported_gfa": 76300,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      3360,
+      3640,
+      7280
+    ],
+    "sped_floor_nfa": [
+      2520,
+      3090,
+      0
+    ],
+    "custodial_floor_nfa": [
+      1290,
+      910,
+      0
+    ],
+    "gym": null,
+    "gym_reservation": [
+      60,
+      100
+    ],
+    "cafeteria": [
+      40,
+      70
+    ],
+    "anchor_mass": "B",
+    "admin_mass": "C",
+    "media_mass": "C",
+    "arts_mass": "C",
+    "ratio_basis": "each primary rectangle",
+    "room_inventory": "named room/floor allocations plus preservation statement"
+  },
+  "R06": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            132
+          ],
+          [
+            80,
+            132
+          ]
+        ],
+        "nfa": [
+          7020,
+          5590
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            116,
+            194
+          ]
+        ],
+        "nfa": [
+          15050
+        ],
+        "daylight": false
+      },
+      "C": {
+        "plates": [
+          [
+            80,
+            136
+          ],
+          [
+            80,
+            136
+          ],
+          [
+            80,
+            136
+          ]
+        ],
+        "nfa": [
+          6530,
+          3640,
+          6440
+        ],
+        "daylight": true
+      }
+    },
+    "reported_gfa": 76264,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      3360,
+      7280,
+      3640
+    ],
+    "sped_floor_nfa": [
+      3660,
+      1950,
+      0
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": [
+      65,
+      100
+    ],
+    "cafeteria": [
+      43,
+      65
+    ],
+    "anchor_mass": "B",
+    "admin_mass": "C",
+    "media_mass": "C",
+    "arts_mass": "C",
+    "ratio_basis": "each mass footprint",
+    "room_inventory": "department/floor totals plus 41-line preservation statement"
+  },
+  "R07": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            128
+          ],
+          [
+            80,
+            128
+          ],
+          [
+            80,
+            128
+          ]
+        ],
+        "nfa": [
+          6600,
+          4550,
+          6440
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            80,
+            128
+          ],
+          [
+            80,
+            128
+          ],
+          [
+            80,
+            128
+          ]
+        ],
+        "nfa": [
+          5240,
+          4570,
+          3770
+        ],
+        "daylight": true
+      },
+      "C": {
+        "plates": [
+          [
+            90,
+            190
+          ]
+        ],
+        "nfa": [
+          13100
+        ],
+        "daylight": false
+      }
+    },
+    "reported_gfa": 78540,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      3360,
+      5460,
+      5460
+    ],
+    "sped_floor_nfa": [
+      0,
+      3660,
+      1950
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": [
+      60,
+      108.33333333333333
+    ],
+    "gym_dimension_approximate": true,
+    "cafeteria": [
+      40,
+      70
+    ],
+    "anchor_mass": "C",
+    "admin_mass": "A",
+    "media_mass": "A",
+    "arts_mass": "B",
+    "ratio_basis": "each mass footprint",
+    "room_inventory": "department/floor totals plus 41-line preservation statement"
+  },
+  "R08": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            170
+          ],
+          [
+            80,
+            170
+          ],
+          [
+            80,
+            170
+          ]
+        ],
+        "nfa": [
+          9530,
+          7410,
+          8260
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            108,
+            186
+          ]
+        ],
+        "nfa": [
+          15050
+        ],
+        "daylight": false
+      },
+      "C": {
+        "plates": [
+          [
+            56,
+            116
+          ]
+        ],
+        "nfa": [
+          4020
+        ],
+        "daylight": true
+      }
+    },
+    "reported_gfa": 67384,
+    "gross_basis": 66405,
+    "core_floor_nfa": [
+      3360,
+      5460,
+      5460
+    ],
+    "sped_floor_nfa": [
+      3660,
+      1950,
+      0
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": [
+      65,
+      100
+    ],
+    "cafeteria": [
+      48,
+      62
+    ],
+    "anchor_mass": "B",
+    "admin_mass": "A",
+    "media_mass": "A",
+    "arts_mass": "C",
+    "ratio_basis": "each mass footprint",
+    "room_inventory": "department/floor totals plus 41-line preservation statement"
+  },
+  "R09": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            190
+          ],
+          [
+            80,
+            190
+          ],
+          [
+            80,
+            190
+          ]
+        ],
+        "nfa": [
+          10260,
+          7410,
+          8260
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            118,
+            190
+          ]
+        ],
+        "nfa": [
+          15300
+        ],
+        "daylight": false
+      },
+      "C": {
+        "plates": [
+          [
+            60,
+            110
+          ]
+        ],
+        "nfa": [
+          3040
+        ],
+        "daylight": true
+      }
+    },
+    "reported_gfa": 74620,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      3360,
+      5460,
+      5460
+    ],
+    "sped_floor_nfa": [
+      3660,
+      1950,
+      0
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": [
+      66,
+      100
+    ],
+    "cafeteria": [
+      48,
+      66
+    ],
+    "anchor_mass": "B",
+    "admin_mass": "A",
+    "media_mass": "A",
+    "arts_mass": "C",
+    "ratio_basis": "each mass footprint",
+    "room_inventory": "department/floor totals plus 41-line preservation statement"
+  },
+  "R10": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            129
+          ],
+          [
+            80,
+            129
+          ],
+          [
+            80,
+            129
+          ]
+        ],
+        "nfa": [
+          6450,
+          6160,
+          3640
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            80,
+            129
+          ],
+          [
+            80,
+            84
+          ],
+          [
+            80,
+            70
+          ]
+        ],
+        "nfa": [
+          6280,
+          3640,
+          2800
+        ],
+        "daylight": true
+      },
+      "C": {
+        "plates": [
+          [
+            118,
+            193
+          ]
+        ],
+        "nfa": [
+          15300
+        ],
+        "daylight": false
+      }
+    },
+    "reported_gfa": 76374,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      3360,
+      7280,
+      3640
+    ],
+    "sped_floor_nfa": [
+      3090,
+      2520,
+      0
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": null,
+    "gym_reservation": [
+      60,
+      100
+    ],
+    "cafeteria": null,
+    "cafeteria_reservation": [
+      40,
+      60
+    ],
+    "anchor_mass": "C",
+    "admin_mass": "B",
+    "media_mass": "B",
+    "arts_mass": "B",
+    "ratio_basis": "principal-mass envelope; upper plates not separately constrained",
+    "room_inventory": "explicit 41-line table"
+  },
+  "R11": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            150
+          ],
+          [
+            80,
+            150
+          ],
+          [
+            80,
+            150
+          ]
+        ],
+        "nfa": [
+          5880,
+          7330,
+          6680
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            80,
+            130
+          ],
+          [
+            60,
+            100
+          ],
+          [
+            60,
+            100
+          ]
+        ],
+        "nfa": [
+          8480,
+          0,
+          2800
+        ],
+        "daylight": true
+      },
+      "C": {
+        "plates": [
+          [
+            90,
+            194
+          ]
+        ],
+        "nfa": [
+          13100
+        ],
+        "daylight": false
+      }
+    },
+    "reported_gfa": 75860,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      3360,
+      5460,
+      5460
+    ],
+    "sped_floor_nfa": [
+      2520,
+      1870,
+      1220
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": [
+      65,
+      100
+    ],
+    "cafeteria": [
+      40,
+      70
+    ],
+    "anchor_mass": "C",
+    "admin_mass": "B",
+    "media_mass": "B",
+    "arts_mass": "B",
+    "ratio_basis": "each primary rectangle",
+    "room_inventory": "department/floor totals plus 41-line preservation statement"
+  },
+  "R12": {
+    "masses": {
+      "A": {
+        "plates": [
+          [
+            80,
+            168
+          ],
+          [
+            80,
+            168
+          ],
+          [
+            80,
+            168
+          ]
+        ],
+        "nfa": [
+          7020,
+          7410,
+          5460
+        ],
+        "daylight": true
+      },
+      "B": {
+        "plates": [
+          [
+            120,
+            194
+          ]
+        ],
+        "nfa": [
+          18090
+        ],
+        "daylight": true
+      },
+      "C": {
+        "plates": [
+          [
+            60,
+            100
+          ],
+          [
+            60,
+            100
+          ]
+        ],
+        "nfa": [
+          3490,
+          2800
+        ],
+        "daylight": false
+      }
+    },
+    "reported_gfa": 75600,
+    "gross_basis": 76365.75,
+    "core_floor_nfa": [
+      3360,
+      5460,
+      5460
+    ],
+    "sped_floor_nfa": [
+      3660,
+      1950,
+      0
+    ],
+    "custodial_floor_nfa": [
+      2200,
+      0,
+      0
+    ],
+    "gym": [
+      65,
+      100
+    ],
+    "cafeteria": [
+      46,
+      68
+    ],
+    "anchor_mass": "B",
+    "admin_mass": "C",
+    "media_mass": "C",
+    "arts_mass": "B",
+    "ratio_basis": "each mass footprint",
+    "room_inventory": "department/floor totals plus preservation statement; drawn room sizes and nurse location unresolved"
+  }
+}
+
