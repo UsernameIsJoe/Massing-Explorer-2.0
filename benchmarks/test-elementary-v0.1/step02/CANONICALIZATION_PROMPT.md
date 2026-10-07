@@ -1,4 +1,10 @@
-# Step 02 — Canonicalization prompt (v0.1)
+# Step 02 — Sonnet canonicalization prompt (v0.2)
+
+## Batch 01 use
+
+This is the canonicalization prompt used for the Step 02 Batch 01 normalization stage. The canonicalizer was run in a fresh incognito Sonnet session on the separate A0 and A1 raw-result bundles. Canonicalization was intentionally **unmasked**: source labels and run metadata could be visible because this stage performs extraction only, not scoring or comparison.
+
+The canonicalizer was not supplied the benchmark/evaluation documents or Massing Explorer search/evaluation documentation. Those materials are reserved for the later evaluation/analysis stages.
 
 You are the **canonicalization stage** of an architectural benchmark.
 
