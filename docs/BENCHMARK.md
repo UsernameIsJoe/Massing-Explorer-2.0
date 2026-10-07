@@ -84,7 +84,7 @@ The evaluator adds:
 
 The universal proposal format describes architectural relationships. Mapping into Massing Explorer's internal variables happens during independent evaluation. A proposal must not be rejected solely because the current representation cannot encode it.
 
-For A0/A1, the canonical post-generation normalization, label-masking, score-lock, unmasking, and separate behavior-analysis procedure is frozen in [`EVALUATION_PROTOCOL.md`](../benchmarks/test-elementary-v0.1/step02/EVALUATION_PROTOCOL.md). This is a **label-masked and style-normalized** evaluation, not a claim of perfect blinding.
+For A0/A1, the post-generation procedure is frozen in [`EVALUATION_PROTOCOL.md`](../benchmarks/test-elementary-v0.1/step02/EVALUATION_PROTOCOL.md): raw records may be canonicalized **unmasked** by a non-evaluative extractor; only the resulting architectural records are then stripped of metadata/process cues, randomized, and supplied for masked scoring. Scores are locked before identities are restored and behavior is analyzed separately. This is a **label-masked and style-normalized evaluation stage**, not a claim of perfect blinding.
 
 ## Pilot evaluation metrics — version 0.1
 
