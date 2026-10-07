@@ -1,4 +1,4 @@
-# Step 02 — Evaluation protocol (v0.1)
+# Step 02 — Evaluation protocol (v0.2)
 
 Benchmark: `test-elementary-v0.1` | Applies to the A0/A1 pure-LLM batch after raw runs have been captured.
 
@@ -6,9 +6,11 @@ Benchmark: `test-elementary-v0.1` | Applies to the A0/A1 pure-LLM batch after ra
 
 Evaluate architectural performance without letting model identity, prompt condition, prose style, or process narration unnecessarily influence the design score. Then analyze A0/A1 exploration behavior separately.
 
-This procedure is **label-masked and style-normalized, not fully blinded**. An evaluator may still infer a model or condition from architectural content or level of detail. Do not claim double-blind evaluation.
+This procedure separates **generation**, **canonicalization**, and **evaluation**. Canonicalization is deliberately non-evaluative and does not need to be blinded. The later design-scoring stage is **label-masked and style-normalized, not fully blinded**. An evaluator may still infer a model or condition from architectural content or level of detail. Do not claim double-blind evaluation.
 
 ## 0. Freeze and archive the raw batch
+
+Generation validity depends on what the generating model could see before and during the run. Host/operator metadata such as model name, reasoning setting, elapsed work time, screenshots, timestamps, or later A0/A1 file grouping does **not** contaminate an already completed run unless it was supplied back to the generator as additional design input.
 
 Before normalization or scoring:
 
@@ -19,11 +21,13 @@ Before normalization or scoring:
 
 The raw output remains the authoritative source. Normalized records are derived evaluation artifacts, not replacements.
 
-## 1. Canonicalize the final design
+## 1. Canonicalize the final design — masking not required
 
-Convert the **single recommended design** from each run into the same terse canonical representation. Strip prose style, rhetorical framing, model-specific headings, exploration narration, and decorative concept naming.
+Canonicalization is a **non-evaluative extraction task**. The canonicalizer may see the original A0/A1 grouping, model metadata, screenshots, source ordering, and other run metadata. This is acceptable because no scoring or comparison occurs at this stage.
 
-Use a randomized evaluation ID such as `R01`–`R12`. The canonical record should contain:
+Convert the **single recommended design** from each run into the same terse canonical representation. Strip prose style, rhetorical framing, model-specific headings, exploration narration, and decorative concept naming from the architectural record. Keep run metadata in a separate metadata block if useful for audit.
+
+Use the source case identifier during canonicalization. Randomized evaluation IDs are assigned only afterward. The canonical record should contain:
 
 - `evaluation_id`
 - `strategy_summary`
@@ -49,18 +53,24 @@ For every material statement, preserve provenance using one of three statuses:
 2. Do **not** improve a design, solve a missing dimension, repair a constraint violation, invent a room allocation, or reconcile conflicting statements.
 3. If the response contradicts itself, retain the contradiction and flag it.
 4. If a proposal uses a concept outside the Massing Explorer representation, describe it neutrally rather than forcing it into an existing category.
-5. Remove model/host names, A0/A1 labels, elapsed time, prompt references, search-process narration, stylistic language, and statements whose only purpose is to describe how the model explored.
+5. Keep model/host names, A0/A1 labels, elapsed time, screenshots, and other execution metadata **outside the architectural record** in a separate metadata block. Remove prompt references, search-process narration, stylistic language, and statements whose only purpose is to describe how the model explored from the architectural record.
 6. Neutralize proposal names if they reveal writing style; the strategy itself must still be described factually.
 7. Keep a traceable link from each normalized field to the corresponding raw passage so the transformation can be audited.
 
 ## 2. Mask and randomize before design scoring
 
-The scoring set should expose only the randomized `Rxx` IDs and canonical design records.
+This is the **principal masking boundary**. Build a new evaluation package from the completed canonical records.
 
-- Withhold the model identity and A0/A1 condition from the design evaluator.
-- Randomize proposal order.
-- Do not show raw prose, screenshots, process summaries, or run metadata during design scoring.
-- The mapping key is revealed only after design scores are locked.
+For each case:
+
+- remove the separate run-metadata block;
+- remove model/host names, reasoning settings, A0/A1 labels, source-PDF names, elapsed time, screenshots, and process/status information;
+- do not include the raw response or exploration narration;
+- assign a newly randomized `Rxx` evaluation ID;
+- randomize proposal order;
+- keep the source-case ↔ randomized-ID mapping in a separate key.
+
+The design evaluator receives only the randomized canonical architectural records and the frozen evaluation rules. The mapping key is revealed only after design scores are locked.
 
 If the evaluator helped canonicalize the raw responses and may recognize them, record this as a limitation. The masking still reduces obvious stylistic and condition cues but does not make the evaluation fully blind.
 
@@ -176,4 +186,4 @@ For the batch, retain:
 - cross-cell comparison;
 - documented limitations.
 
-The raw generation experiment, canonical design evaluation, and behavior analysis are three separate artifacts and should remain separately auditable.
+The raw generation experiment, unmasked canonicalization record, masked design evaluation, and unblinded behavior analysis are separate artifacts and should remain separately auditable.
