@@ -38,3 +38,22 @@ This folder archives the first 12-run A0/A1 pure-LLM batch and the transformatio
 `raw A0/A1 → unmasked canonical source order → shuffle + new evaluation IDs → remove run metadata → masked evaluation set`
 
 The repository copies are UTF-8 text exports for auditability and diffability. Embedded screenshots/diagrams in the Word sources are not serialized into the Markdown exports.
+
+## Audited evaluator scores and unmasked analysis
+
+The existing audited Fable scores are locked without numeric changes and analyzed descriptively. Quality input identity exposure is confirmed; behavior exposure is not established, and actual delivery correspondence remains unverified. See `evaluator/LOCK.md` and `evaluator/AUDIT.json` for the precise status.
+
+| Path | Role |
+| --- | --- |
+| `behavior/MASKED_SHUFFLED_RAW_RESPONSES.md` | Archived label-masked raw packet for observable behavior coding |
+| `evaluator/QUALITY_FABLE_LOCKED.csv` | Verified unchanged quality score transcription |
+| `evaluator/BEHAVIOR_FABLE_LOCKED.csv` | Verified unchanged behavior score transcription |
+| `evaluator/MASTER_RESULTS.json` | Twelve unmasked run records with separate score families, evidence, metadata and pending Layer-2 fields |
+| `evaluator/MASTER_RESULTS.md` | Readable quality run table |
+| `evaluator/GROUP_SUMMARIES.json` | Per-axis medians and ranges for four three-run cells |
+| `evaluator/PRIMARY_COMPARISONS.json` | Four descriptive differences of group medians; independent runs |
+| `evaluator/DESCRIPTIVE_ANALYSIS.md` | Descriptive interpretation and next computational work |
+
+The original Word hashes above describe archived source versions, including the original identity-bearing after-shuffle file. They are not hashes of its later sanitized replacement. The masked evaluator inputs, unmasked archives and post-scoring results have different roles.
+
+The untouched evaluator DOCX files remain in the existing user-supplied artifacts. Their original hashes are recorded in `evaluator/AUDIT.json`; full DOCX uploads were blocked by automatic approval review. Verified score transcriptions and descriptive derivatives are published here.

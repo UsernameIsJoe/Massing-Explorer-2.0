@@ -1,0 +1,25 @@
+{
+  "repository": "UsernameIsJoe/Massing-Explorer-2.0",
+  "case_completeness": "12 unique IDs R01–R12 in both sources",
+  "quality_csv_summary_and_detail_reconciliation": "PASS: 48 axis scores plus 12 feasibility summary rows",
+  "behavior_csv_summary_and_detail_reconciliation": "PASS: 132 axis entries, including 12 unknown representation entries",
+  "shuffle_mapping_reconciled_to_original_metadata": "PASS: 12/12",
+  "cell_completeness": "4 cells with 3 unique independent runs each",
+  "score_changes": 0,
+  "quality_input_identity_exposure": "Confirmed for original after shuffle.docx supplied for evaluation",
+  "behavior_input_identity_exposure": "Not established; current archived raw packet contains no direct per-case identity labels; actual delivered file correspondence unverified",
+  "hard_feasibility_basis": "Fable evaluator judgments only; deterministic Massing Explorer checks pending",
+  "source_hashes": {
+    "Canonicalization Scoring.docx": "6d56612840fffab2cc9a44371dd3062a4b80060d0a81d8900118c64d872ec6bf",
+    "Behavior Scoring.docx": "3f628dd40116a54b1f9a938e5e2a149c796337ea3fe2e7a768f3024c49c4fed3"
+  },
+  "analysis_limits": [
+    "n=3 per cell",
+    "No significance or causal claims",
+    "No combined quality/behavior score",
+    "Observable alternative counts are preserved as text because units and stages differ",
+    "Displayed Worked/Thought durations are different host labels, not equivalent measured compute budgets"
+  ],
+  "original_source_storage": "Original user-supplied DOCX files unchanged; not published in repository",
+  "original_docx_repository_upload": "blocked_by_automatic_approval_review"
+}

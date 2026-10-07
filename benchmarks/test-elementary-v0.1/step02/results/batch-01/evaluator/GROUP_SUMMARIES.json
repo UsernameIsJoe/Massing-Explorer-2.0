@@ -1,0 +1,422 @@
+[
+  {
+    "model": "ChatGPT",
+    "condition": "A0",
+    "n": 3,
+    "cases": [
+      "R02",
+      "R05",
+      "R10"
+    ],
+    "quality": {
+      "program_coherence": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "preference_alignment": {
+        "n_scored": 3,
+        "median": 4,
+        "min": 3,
+        "max": 4
+      },
+      "performance_efficiency": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 2
+      },
+      "robustness_flexibility": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    "behavior": {
+      "problem_structuring": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 2
+      },
+      "search_space_framing": {
+        "n_scored": 3,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "exploration_breadth": {
+        "n_scored": 3,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "exploration_diversity": {
+        "n_scored": 3,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "comparative_evaluation": {
+        "n_scored": 3,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "constraint_verification": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 2
+      },
+      "revision_backtracking": {
+        "n_scored": 3,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "tradeoff_reasoning": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "selection_stopping_logic": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "representation_expansion": {
+        "n_scored": 0,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "uncertainty_handling": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 2
+      }
+    },
+    "evaluator_reported_hard_passes": 3
+  },
+  {
+    "model": "ChatGPT",
+    "condition": "A1",
+    "n": 3,
+    "cases": [
+      "R01",
+      "R07",
+      "R11"
+    ],
+    "quality": {
+      "program_coherence": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 3
+      },
+      "preference_alignment": {
+        "n_scored": 3,
+        "median": 4,
+        "min": 4,
+        "max": 4
+      },
+      "performance_efficiency": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 2
+      },
+      "robustness_flexibility": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 3
+      }
+    },
+    "behavior": {
+      "problem_structuring": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "search_space_framing": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 2
+      },
+      "exploration_breadth": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 2
+      },
+      "exploration_diversity": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 2
+      },
+      "comparative_evaluation": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 1,
+        "max": 2
+      },
+      "constraint_verification": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "revision_backtracking": {
+        "n_scored": 3,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "tradeoff_reasoning": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 2,
+        "max": 3
+      },
+      "selection_stopping_logic": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 2
+      },
+      "representation_expansion": {
+        "n_scored": 0,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "uncertainty_handling": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 2,
+        "max": 3
+      }
+    },
+    "evaluator_reported_hard_passes": 3
+  },
+  {
+    "model": "Opus 5.5",
+    "condition": "A0",
+    "n": 3,
+    "cases": [
+      "R04",
+      "R08",
+      "R12"
+    ],
+    "quality": {
+      "program_coherence": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 2,
+        "max": 3
+      },
+      "preference_alignment": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 2,
+        "max": 3
+      },
+      "performance_efficiency": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 2,
+        "max": 3
+      },
+      "robustness_flexibility": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 1,
+        "max": 3
+      }
+    },
+    "behavior": {
+      "problem_structuring": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 2,
+        "max": 3
+      },
+      "search_space_framing": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "exploration_breadth": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "exploration_diversity": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "comparative_evaluation": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "constraint_verification": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "revision_backtracking": {
+        "n_scored": 3,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "tradeoff_reasoning": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 2
+      },
+      "selection_stopping_logic": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 1,
+        "max": 1
+      },
+      "representation_expansion": {
+        "n_scored": 0,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "uncertainty_handling": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      }
+    },
+    "evaluator_reported_hard_passes": 3
+  },
+  {
+    "model": "Opus 5.5",
+    "condition": "A1",
+    "n": 3,
+    "cases": [
+      "R03",
+      "R06",
+      "R09"
+    ],
+    "quality": {
+      "program_coherence": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "preference_alignment": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 4
+      },
+      "performance_efficiency": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 1,
+        "max": 2
+      },
+      "robustness_flexibility": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 3
+      }
+    },
+    "behavior": {
+      "problem_structuring": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "search_space_framing": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "exploration_breadth": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "exploration_diversity": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "comparative_evaluation": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "constraint_verification": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "revision_backtracking": {
+        "n_scored": 3,
+        "median": 1,
+        "min": 0,
+        "max": 2
+      },
+      "tradeoff_reasoning": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      },
+      "selection_stopping_logic": {
+        "n_scored": 3,
+        "median": 2,
+        "min": 2,
+        "max": 3
+      },
+      "representation_expansion": {
+        "n_scored": 0,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "uncertainty_handling": {
+        "n_scored": 3,
+        "median": 3,
+        "min": 3,
+        "max": 3
+      }
+    },
+    "evaluator_reported_hard_passes": 3
+  }
+]

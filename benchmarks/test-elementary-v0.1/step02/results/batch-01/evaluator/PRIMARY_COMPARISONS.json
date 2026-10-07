@@ -1,0 +1,94 @@
+[
+  {
+    "comparison": "ChatGPT A0 to A1",
+    "interpretation": "Difference of group medians; independent runs, not paired-run differences.",
+    "quality": {
+      "program_coherence": -1,
+      "preference_alignment": 0,
+      "performance_efficiency": -1,
+      "robustness_flexibility": -1
+    },
+    "behavior": {
+      "problem_structuring": 1,
+      "search_space_framing": 2,
+      "exploration_breadth": 2,
+      "exploration_diversity": 1,
+      "comparative_evaluation": 2,
+      "constraint_verification": 1,
+      "revision_backtracking": 0,
+      "tradeoff_reasoning": 2,
+      "selection_stopping_logic": 1,
+      "representation_expansion": null,
+      "uncertainty_handling": 1
+    }
+  },
+  {
+    "comparison": "Opus A0 to A1",
+    "interpretation": "Difference of group medians; independent runs, not paired-run differences.",
+    "quality": {
+      "program_coherence": 0,
+      "preference_alignment": 0,
+      "performance_efficiency": -1,
+      "robustness_flexibility": 0
+    },
+    "behavior": {
+      "problem_structuring": 0,
+      "search_space_framing": 2,
+      "exploration_breadth": 2,
+      "exploration_diversity": 2,
+      "comparative_evaluation": 2,
+      "constraint_verification": 0,
+      "revision_backtracking": 1,
+      "tradeoff_reasoning": 1,
+      "selection_stopping_logic": 1,
+      "representation_expansion": null,
+      "uncertainty_handling": 0
+    }
+  },
+  {
+    "comparison": "ChatGPT to Opus under A0",
+    "interpretation": "Difference of group medians; independent runs, not paired-run differences.",
+    "quality": {
+      "program_coherence": 0,
+      "preference_alignment": -1,
+      "performance_efficiency": 1,
+      "robustness_flexibility": 0
+    },
+    "behavior": {
+      "problem_structuring": 1,
+      "search_space_framing": 1,
+      "exploration_breadth": 1,
+      "exploration_diversity": 1,
+      "comparative_evaluation": 1,
+      "constraint_verification": 1,
+      "revision_backtracking": 0,
+      "tradeoff_reasoning": 1,
+      "selection_stopping_logic": 0,
+      "representation_expansion": null,
+      "uncertainty_handling": 1
+    }
+  },
+  {
+    "comparison": "ChatGPT to Opus under A1",
+    "interpretation": "Difference of group medians; independent runs, not paired-run differences.",
+    "quality": {
+      "program_coherence": 1,
+      "preference_alignment": -1,
+      "performance_efficiency": 1,
+      "robustness_flexibility": 1
+    },
+    "behavior": {
+      "problem_structuring": 0,
+      "search_space_framing": 1,
+      "exploration_breadth": 1,
+      "exploration_diversity": 2,
+      "comparative_evaluation": 1,
+      "constraint_verification": 0,
+      "revision_backtracking": 1,
+      "tradeoff_reasoning": 0,
+      "selection_stopping_logic": 0,
+      "representation_expansion": null,
+      "uncertainty_handling": 0
+    }
+  }
+]
