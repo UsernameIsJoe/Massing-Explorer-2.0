@@ -29,12 +29,12 @@ The pure-LLM group contains **A0 (natural objective)** and **A1 (self-structured
 
 ## Required experimental record
 
-Every experimental run must retain:
+Every experimental run must retain the **complete unedited observable record** produced under its registered protocol, plus the final recommendation(s) used for comparison.
 
-1. The complete exploration log, including intermediate proposals, revisions, tool calls, rejections, and failures.
-2. A final selected set containing no more than 10 proposals.
+- **A0 / A1 pure-LLM pilot:** retain the complete single model response as the exploration record and exactly **one best recommended proposal** as the primary final output. Any alternatives, comparisons, revisions, or search structure voluntarily visible inside that response remain part of the raw record but are not required.
+- **Later multi-candidate or agentic conditions (including systems B/C/D where applicable):** retain all observable intermediate proposals, revisions, tool calls, rejections and failures, plus a final selected set containing no more than 10 proposals.
 
-The exploration log supports analysis of how each system searched. The final set supports comparison of what each system ultimately recommended.
+This preserves protocol neutrality: a system is evaluated on the outputs it was actually asked to produce, while all observable search evidence remains available for later analysis.
 
 Run-level metadata follows [`schemas/run-log.schema.json`](../schemas/run-log.schema.json). It records the system and version, input hashes, prompt and conditions, budgets, execution environment, timing, status, usage, artifact paths, and summary results. Fields that do not apply to a system are recorded as `null` rather than estimated.
 
@@ -91,8 +91,8 @@ The first experiments use a deliberately simple metric set. The metrics may evol
 | Metric | Pilot calculation |
 | --- | --- |
 | Feasibility | Hard pass/fail, number of violations, and the existing Massing Explorer feasibility distance |
-| Distinctness | Number of unique normalized strategies in the submitted set |
-| Coverage | Number of occupied strategy families or cells |
+| Distinctness | Number of unique normalized strategies in the submitted set; for A0/A1's single required recommendation, within-run distinctness is **not a primary metric** and applies only to voluntarily visible alternatives |
+| Coverage | Number of occupied strategy families or cells; for A0/A1's single-response pilot, treat coverage as **descriptive only where multiple alternatives are visibly present**, not as a required success criterion |
 | Quality | Existing coherence, alignment, efficiency, and robustness calculations, without retuning their current formulas |
 | Search efficiency | Wall-clock time, number of proposals generated, and number of model/tool calls |
 | Representation expansion | Number of proposals classified as partially or fully outside the current encoding |
