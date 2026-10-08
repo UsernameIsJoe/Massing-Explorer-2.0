@@ -11,3 +11,8 @@ Pipeline bars use arbitrary 24 ft presentation gaps. Heights follow the same 14 
 Open: download `massing-comparison.html` and open it in a browser. Geometry and source program summaries are embedded in the HTML. No server or API connection is required. GitHub's file viewer displays source rather than running HTML.
 
 The separate model download contains 49 OBJ envelopes, data.json, recovered archive snapshots, solver results and export scripts. This repository directory contains the HTML gallery and these notes. Original scorer documents and hidden model reasoning are not included.
+
+
+## Display consistency
+
+Colors identify Mass A, B and C consistently; they do not classify program roles. All main and overview panels use one shared pixels-per-foot scale computed from every candidate and layout. Changing selection, rotation, elevation or view mode does not refit or resize schemes. View controls remain in a sticky dock during page scrolling. A 50 ft ruler appears in every view.
