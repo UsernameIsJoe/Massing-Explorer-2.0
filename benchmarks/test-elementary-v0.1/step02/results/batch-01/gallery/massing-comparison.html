@@ -1801,8 +1801,8 @@ html>body{padding:0}</style>
 <style>
 #massing-gallery .mg-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 #massing-gallery svg{display:block;width:100%;height:360px;touch-action:none}
-#massing-gallery .mg-dock{position:sticky;top:0;z-index:20;background:var(--card);color:var(--card-foreground);margin-bottom:16px}
-#massing-gallery{min-width:0;max-width:100%;overflow-wrap:anywhere}
+#massing-gallery .mg-dock{position:sticky;top:16px;z-index:20;background:var(--card);color:var(--card-foreground);margin-bottom:16px}
+#massing-gallery{box-sizing:border-box;width:100%;min-width:0;max-width:1480px;margin:0 auto;padding:24px;overflow-wrap:anywhere}
 #massing-gallery .mg-dock-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:16px}
 #massing-gallery .mg-field,#massing-gallery .mg-pair>section{min-width:0}
 #massing-gallery .mg-source{white-space:pre-wrap;overflow-wrap:anywhere;margin-top:12px}
@@ -1816,7 +1816,7 @@ html>body{padding:0}</style>
 #massing-gallery svg text{fill:var(--foreground);font-size:12px}
 @media(max-width:800px){#massing-gallery #mg-overview{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){#massing-gallery .mg-pair{grid-template-columns:1fr}#massing-gallery .mg-dock-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#massing-gallery .mg-view-field{grid-column:1/-1}}
-@media(max-width:450px){#massing-gallery #mg-overview{grid-template-columns:1fr}}
+@media(max-width:450px){#massing-gallery{padding:16px}#massing-gallery .mg-dock{top:8px}#massing-gallery #mg-overview{grid-template-columns:1fr}}
 </style>
 <script>
 (()=>{
