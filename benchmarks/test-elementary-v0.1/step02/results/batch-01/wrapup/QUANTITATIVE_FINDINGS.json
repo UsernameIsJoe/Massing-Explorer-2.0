@@ -1,0 +1,554 @@
+{
+  "groups": {
+    "ChatGPT A0": {
+      "cases": [
+        "R02",
+        "R05",
+        "R10"
+      ],
+      "quality_median": {
+        "program_coherence": 3,
+        "preference_alignment": 4,
+        "performance_efficiency": 2,
+        "robustness_flexibility": 2
+      },
+      "quality_mean": {
+        "program_coherence": 3,
+        "preference_alignment": 3.6666666666666665,
+        "performance_efficiency": 2,
+        "robustness_flexibility": 2
+      },
+      "behavior_median": {
+        "exploration_breadth": 0,
+        "exploration_diversity": 0,
+        "comparative_evaluation": 0,
+        "constraint_verification": 2,
+        "revision_backtracking": 0,
+        "tradeoff_reasoning": 1,
+        "selection_stopping_logic": 1
+      },
+      "gfa_mean": 75671.33333333333,
+      "net_gross_mean": 0.5851214506634194
+    },
+    "ChatGPT A1": {
+      "cases": [
+        "R01",
+        "R07",
+        "R11"
+      ],
+      "quality_median": {
+        "program_coherence": 2,
+        "preference_alignment": 4,
+        "performance_efficiency": 1,
+        "robustness_flexibility": 1
+      },
+      "quality_mean": {
+        "program_coherence": 2.3333333333333335,
+        "preference_alignment": 4,
+        "performance_efficiency": 1.3333333333333333,
+        "robustness_flexibility": 1.6666666666666667
+      },
+      "behavior_median": {
+        "exploration_breadth": 2,
+        "exploration_diversity": 1,
+        "comparative_evaluation": 2,
+        "constraint_verification": 3,
+        "revision_backtracking": 0,
+        "tradeoff_reasoning": 3,
+        "selection_stopping_logic": 2
+      },
+      "gfa_mean": 77586.66666666667,
+      "net_gross_mean": 0.5707311484914562
+    },
+    "Opus 5.5 A0": {
+      "cases": [
+        "R04",
+        "R08",
+        "R12"
+      ],
+      "quality_median": {
+        "program_coherence": 3,
+        "preference_alignment": 3,
+        "performance_efficiency": 3,
+        "robustness_flexibility": 2
+      },
+      "quality_mean": {
+        "program_coherence": 2.6666666666666665,
+        "preference_alignment": 2.6666666666666665,
+        "performance_efficiency": 2.6666666666666665,
+        "robustness_flexibility": 2
+      },
+      "behavior_median": {
+        "exploration_breadth": 1,
+        "exploration_diversity": 1,
+        "comparative_evaluation": 1,
+        "constraint_verification": 3,
+        "revision_backtracking": 0,
+        "tradeoff_reasoning": 2,
+        "selection_stopping_logic": 1
+      },
+      "gfa_mean": 70021.33333333333,
+      "net_gross_mean": 0.6341737183492224
+    },
+    "Opus 5.5 A1": {
+      "cases": [
+        "R03",
+        "R06",
+        "R09"
+      ],
+      "quality_median": {
+        "program_coherence": 3,
+        "preference_alignment": 3,
+        "performance_efficiency": 2,
+        "robustness_flexibility": 2
+      },
+      "quality_mean": {
+        "program_coherence": 3,
+        "preference_alignment": 3.3333333333333335,
+        "performance_efficiency": 1.6666666666666667,
+        "robustness_flexibility": 2.3333333333333335
+      },
+      "behavior_median": {
+        "exploration_breadth": 3,
+        "exploration_diversity": 3,
+        "comparative_evaluation": 3,
+        "constraint_verification": 3,
+        "revision_backtracking": 1,
+        "tradeoff_reasoning": 3,
+        "selection_stopping_logic": 2
+      },
+      "gfa_mean": 76161.33333333333,
+      "net_gross_mean": 0.5814152850470612
+    }
+  },
+  "correlations": {
+    "exploration_breadth": {
+      "program_coherence": -0.0861,
+      "preference_alignment": 0.036,
+      "performance_efficiency": -0.4138,
+      "robustness_flexibility": 0.1054
+    },
+    "exploration_diversity": {
+      "program_coherence": -0.088,
+      "preference_alignment": -0.1229,
+      "performance_efficiency": -0.3071,
+      "robustness_flexibility": 0.0719
+    },
+    "comparative_evaluation": {
+      "program_coherence": 0.0,
+      "preference_alignment": -0.0423,
+      "performance_efficiency": -0.2978,
+      "robustness_flexibility": 0.1943
+    },
+    "constraint_verification": {
+      "program_coherence": -0.3333,
+      "preference_alignment": -0.2171,
+      "performance_efficiency": -0.0943,
+      "robustness_flexibility": 0.0
+    },
+    "revision_backtracking": {
+      "program_coherence": 0.2571,
+      "preference_alignment": 0.0688,
+      "performance_efficiency": -0.3212,
+      "robustness_flexibility": 0.0
+    },
+    "selection_stopping_logic": {
+      "program_coherence": -0.1241,
+      "preference_alignment": 0.2684,
+      "performance_efficiency": -0.5658,
+      "robustness_flexibility": 0.0
+    },
+    "all_12_GFA_efficiency": -0.887,
+    "common_area_basis_10_GFA_efficiency": -0.7977
+  },
+  "cases": [
+    {
+      "case": "R01",
+      "model": "ChatGPT",
+      "condition": "A1",
+      "quality": [
+        2,
+        4,
+        1,
+        1
+      ],
+      "GFA": 78360,
+      "basis": 76365.75,
+      "net_gross": 0.5649566105155691,
+      "plates_below_40_percent": [
+        {
+          "mass": "A",
+          "floor": 2,
+          "fraction": 0.35546875
+        },
+        {
+          "mass": "A",
+          "floor": 3,
+          "fraction": 0.35546875
+        }
+      ]
+    },
+    {
+      "case": "R02",
+      "model": "ChatGPT",
+      "condition": "A0",
+      "quality": [
+        3,
+        4,
+        2,
+        2
+      ],
+      "GFA": 74340,
+      "basis": 76365.75,
+      "net_gross": 0.5955071294054345,
+      "plates_below_40_percent": [
+        {
+          "mass": "C",
+          "floor": 2,
+          "fraction": 0.2838541666666667
+        }
+      ]
+    },
+    {
+      "case": "R03",
+      "model": "Opus 5.5",
+      "condition": "A1",
+      "quality": [
+        3,
+        4,
+        1,
+        2
+      ],
+      "GFA": 77600,
+      "basis": 76365.75,
+      "net_gross": 0.5704896907216495,
+      "plates_below_40_percent": [
+        {
+          "mass": "C",
+          "floor": 2,
+          "fraction": 0.2625
+        },
+        {
+          "mass": "C",
+          "floor": 3,
+          "fraction": 0.2692307692307692
+        }
+      ]
+    },
+    {
+      "case": "R04",
+      "model": "Opus 5.5",
+      "condition": "A0",
+      "quality": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "GFA": 67080,
+      "basis": 66405,
+      "net_gross": 0.6599582587954681,
+      "plates_below_40_percent": []
+    },
+    {
+      "case": "R05",
+      "model": "ChatGPT",
+      "condition": "A0",
+      "quality": [
+        3,
+        4,
+        2,
+        2
+      ],
+      "GFA": 76300,
+      "basis": 76365.75,
+      "net_gross": 0.5802096985583224,
+      "plates_below_40_percent": [
+        {
+          "mass": "C",
+          "floor": 2,
+          "fraction": 0.1579861111111111
+        }
+      ]
+    },
+    {
+      "case": "R06",
+      "model": "Opus 5.5",
+      "condition": "A1",
+      "quality": [
+        3,
+        3,
+        2,
+        3
+      ],
+      "GFA": 76264,
+      "basis": 76365.75,
+      "net_gross": 0.580483583342075,
+      "plates_below_40_percent": [
+        {
+          "mass": "C",
+          "floor": 2,
+          "fraction": 0.33455882352941174
+        }
+      ]
+    },
+    {
+      "case": "R07",
+      "model": "ChatGPT",
+      "condition": "A1",
+      "quality": [
+        2,
+        4,
+        1,
+        1
+      ],
+      "GFA": 78540,
+      "basis": 76365.75,
+      "net_gross": 0.5636618283677107,
+      "plates_below_40_percent": [
+        {
+          "mass": "B",
+          "floor": 3,
+          "fraction": 0.3681640625
+        }
+      ]
+    },
+    {
+      "case": "R08",
+      "model": "Opus 5.5",
+      "condition": "A0",
+      "quality": [
+        3,
+        3,
+        3,
+        2
+      ],
+      "GFA": 67384,
+      "basis": 66405,
+      "net_gross": 0.6569808856701888,
+      "plates_below_40_percent": []
+    },
+    {
+      "case": "R09",
+      "model": "Opus 5.5",
+      "condition": "A1",
+      "quality": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "GFA": 74620,
+      "basis": 76365.75,
+      "net_gross": 0.5932725810774592,
+      "plates_below_40_percent": []
+    },
+    {
+      "case": "R10",
+      "model": "ChatGPT",
+      "condition": "A0",
+      "quality": [
+        3,
+        3,
+        2,
+        2
+      ],
+      "GFA": 76374,
+      "basis": 76365.75,
+      "net_gross": 0.5796475240265012,
+      "plates_below_40_percent": [
+        {
+          "mass": "A",
+          "floor": 3,
+          "fraction": 0.35271317829457366
+        }
+      ]
+    },
+    {
+      "case": "R11",
+      "model": "ChatGPT",
+      "condition": "A1",
+      "quality": [
+        3,
+        4,
+        2,
+        3
+      ],
+      "GFA": 75860,
+      "basis": 76365.75,
+      "net_gross": 0.5835750065910889,
+      "plates_below_40_percent": [
+        {
+          "mass": "B",
+          "floor": 2,
+          "fraction": 0.0
+        }
+      ]
+    },
+    {
+      "case": "R12",
+      "model": "Opus 5.5",
+      "condition": "A0",
+      "quality": [
+        2,
+        2,
+        2,
+        1
+      ],
+      "GFA": 75600,
+      "basis": 76365.75,
+      "net_gross": 0.5855820105820105,
+      "plates_below_40_percent": []
+    }
+  ],
+  "ME": {
+    "attempts": 209,
+    "distinct_cells": 159,
+    "legal_cells": 37,
+    "legal_cell_fraction": 0.23270440251572327,
+    "legal_cells_per_attempt": 0.17703349282296652,
+    "archive_partitions": 26,
+    "legal_partitions": {
+      "ADMINISTRATION & GUIDANCE+ART & MUSIC+CUSTODIAL & MAINTENANCE+MEDICAL / CORE ACADEMIC+MEDIA CENTER+SPECIAL EDUCATION / DINING & FOOD SERVICE+HEALTH & PHYSICAL EDUCATION": 6,
+      "ADMINISTRATION & GUIDANCE+ART & MUSIC+CUSTODIAL & MAINTENANCE+MEDIA CENTER / CORE ACADEMIC+MEDICAL+SPECIAL EDUCATION / DINING & FOOD SERVICE+HEALTH & PHYSICAL EDUCATION": 9,
+      "ADMINISTRATION & GUIDANCE+ART & MUSIC+MEDIA CENTER+SPECIAL EDUCATION / CORE ACADEMIC+CUSTODIAL & MAINTENANCE+MEDICAL / DINING & FOOD SERVICE+HEALTH & PHYSICAL EDUCATION": 5,
+      "ADMINISTRATION & GUIDANCE+CORE ACADEMIC / ART & MUSIC+CUSTODIAL & MAINTENANCE+MEDIA CENTER+SPECIAL EDUCATION / DINING & FOOD SERVICE+HEALTH & PHYSICAL EDUCATION+MEDICAL": 4,
+      "ADMINISTRATION & GUIDANCE+CUSTODIAL & MAINTENANCE+MEDIA CENTER / ART & MUSIC+CORE ACADEMIC+MEDICAL+SPECIAL EDUCATION / DINING & FOOD SERVICE+HEALTH & PHYSICAL EDUCATION": 7,
+      "ADMINISTRATION & GUIDANCE+MEDIA CENTER / ART & MUSIC+CORE ACADEMIC+CUSTODIAL & MAINTENANCE+MEDICAL+SPECIAL EDUCATION / DINING & FOOD SERVICE+HEALTH & PHYSICAL EDUCATION": 6
+    },
+    "topologies": {
+      "independent_bars": 37
+    },
+    "gross_area_range": [
+      76365.75,
+      76365.75
+    ],
+    "metrics": {
+      "program_coherence": {
+        "min": 0.908,
+        "max": 1.0,
+        "median": 1.0
+      },
+      "preference_alignment": {
+        "min": 0.7284,
+        "max": 0.8132,
+        "median": 0.7739
+      },
+      "performance_efficiency": {
+        "min": 0.7577,
+        "max": 0.9732,
+        "median": 0.9564
+      },
+      "robustness": {
+        "min": 0.3333,
+        "max": 0.75,
+        "median": 0.75
+      }
+    },
+    "robustness_probe": {
+      "ran": true,
+      "status": "probed",
+      "survived": 2,
+      "collapsed": 4,
+      "score": 0.3333,
+      "note": "Robustness: 2 survive, 4 collapse on the same strategy. Program area moved; grouping/stories fixed; dimensions may adapt via solve.",
+      "probes": [
+        {
+          "department": "CORE ACADEMIC",
+          "factor": 0.85,
+          "delta_pct": -15,
+          "outcome": "survive",
+          "why": "Same strategy still fits after the area change.",
+          "fits_limitations": true,
+          "failed_kinds": [],
+          "same_partition": true
+        },
+        {
+          "department": "CORE ACADEMIC",
+          "factor": 1.15,
+          "delta_pct": 15,
+          "outcome": "collapse",
+          "why": "The same strategy missed a site cap after the area change.",
+          "fits_limitations": false,
+          "failed_kinds": [
+            "site_length"
+          ],
+          "same_partition": true
+        },
+        {
+          "department": "HEALTH & PHYSICAL EDUCATION",
+          "factor": 0.85,
+          "delta_pct": -15,
+          "outcome": "collapse",
+          "why": "The same strategy still misses a limitation after the area change.",
+          "fits_limitations": false,
+          "failed_kinds": [
+            "ratio_band"
+          ],
+          "same_partition": true
+        },
+        {
+          "department": "HEALTH & PHYSICAL EDUCATION",
+          "factor": 1.15,
+          "delta_pct": 15,
+          "outcome": "collapse",
+          "why": "The same strategy missed a site cap after the area change.",
+          "fits_limitations": false,
+          "failed_kinds": [
+            "site_length"
+          ],
+          "same_partition": true
+        },
+        {
+          "department": "DINING & FOOD SERVICE",
+          "factor": 0.85,
+          "delta_pct": -15,
+          "outcome": "survive",
+          "why": "Same strategy still fits after the area change.",
+          "fits_limitations": true,
+          "failed_kinds": [],
+          "same_partition": true
+        },
+        {
+          "department": "DINING & FOOD SERVICE",
+          "factor": 1.15,
+          "delta_pct": 15,
+          "outcome": "collapse",
+          "why": "The same strategy missed a site cap after the area change.",
+          "fits_limitations": false,
+          "failed_kinds": [
+            "site_length"
+          ],
+          "same_partition": true
+        }
+      ],
+      "departments": [
+        "CORE ACADEMIC",
+        "HEALTH & PHYSICAL EDUCATION",
+        "DINING & FOOD SERVICE"
+      ]
+    },
+    "refine": {
+      "tries": 8,
+      "improved": false
+    },
+    "repair": {
+      "ran": true,
+      "candidates": 8,
+      "tried": 14,
+      "legalized": 0,
+      "note": "REPAIR: 14 projection(s) on 8 idea(s), 0 became legal, distance improved by 0.000.",
+      "moves": [
+        "realize \u0394+0.000",
+        "realize \u0394+0.000",
+        "realize \u0394+0.000",
+        "realize \u0394+0.000",
+        "realize \u0394+0.000",
+        "realize \u0394+0.000",
+        "realize \u0394+0.000"
+      ]
+    },
+    "cover_incomplete": true,
+    "learning_comparisons": 0
+  }
+}
