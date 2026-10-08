@@ -16,3 +16,8 @@ The separate model download contains 49 OBJ envelopes, data.json, recovered arch
 ## Display consistency
 
 Colors identify Mass A, B and C consistently; they do not classify program roles. All main and overview panels use one shared pixels-per-foot scale computed from every candidate and layout. Changing selection, rotation, elevation or view mode does not refit or resize schemes. View controls remain in a sticky dock during page scrolling. A 50 ft ruler appears in every view.
+
+
+## Program split display
+
+Choose **Display → Program split** for all 12 LLM proposals and all 37 ME candidates. The same nine department colors apply throughout. For LLM cases, equal-width bands encode documented mass/floor membership only; they do not encode area shares or exact room placement. For ME candidates, colored pieces use the recovered solver's department footprints and gross allocations. The camera and scale are unchanged by this switch. R11 B L2 has no scheduled program; R12's medical department is shown in C L1 following area accounting, with its contradictory narrative location explicitly marked.
