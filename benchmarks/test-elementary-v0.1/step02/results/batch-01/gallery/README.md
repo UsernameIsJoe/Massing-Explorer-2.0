@@ -18,6 +18,11 @@ The separate model download contains 49 OBJ envelopes, data.json, recovered arch
 Colors identify Mass A, B and C consistently; they do not classify program roles. All main and overview panels use one shared pixels-per-foot scale computed from every candidate and layout. Changing selection, rotation, elevation or view mode does not refit or resize schemes. View controls remain in a sticky dock during page scrolling. A 50 ft ruler appears in every view.
 
 
+
 ## Program split display
 
-Choose **Display → Program split** for all 12 LLM proposals and all 37 ME candidates. The same nine department colors apply throughout. For LLM cases, equal-width bands encode documented mass/floor membership only; they do not encode area shares or exact room placement. For ME candidates, colored pieces use the recovered solver's department footprints and gross allocations. The camera and scale are unchanged by this switch. R11 B L2 has no scheduled program; R12's medical department is shown in C L1 following area accounting, with its contradictory narrative location explicitly marked.
+Display → Program split shows balanced schematic department blocks. LLM blocks indicate reported mass/floor membership; their sizes do not represent area shares. ME department areas are preserved, but positions can be reblocked for display. These are display adjustments, not revised solver results. The old Source program split option has been removed. Mass geometry, program assignments and original scores are unchanged.
+
+## Fable rating radars
+
+Every LLM case shows two separate radar graphs: four quality axes on 0–4 and eleven behavior axes on 0–3. Values are the unchanged locked Fable transcriptions. Unknown representation expansion (B10) is shown as a gap, never zero; the behavior plot remains unfilled with no line across that gap. Axis names and exact values are available in the UI. ME candidates are explicitly unrated by Fable; no engine scores are substituted. Quality identity exposure remains an audit limitation. The two score families are not combined.
