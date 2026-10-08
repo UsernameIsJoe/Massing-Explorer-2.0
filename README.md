@@ -280,3 +280,9 @@ A practical consideration: ChatGPT and Claude offer somewhat different integrati
 ## Step 02 pilot correction
 
 The intended no-cross-mass department-split hard rule was omitted from the Batch 01 model/evaluator inputs. Seven proposals violate that intended rule, but it was not supplied to their generators. The pilot remains useful as an observable-response record; matched-constraints LLM-versus-ME performance conclusions are withdrawn. Current prompt/protocol revisions apply to future runs only; original instructions and locked scores are preserved. [Constraint and leakage audit](benchmarks/test-elementary-v0.1/step02/CONSTRAINT_ALIGNMENT_AUDIT.md).
+
+## Step 03 concept research
+
+[Critical research review: an evolving semantic strategy map](docs/STEP03_RESEARCH_REVIEW.md) assesses the proposed pseudo sample space against the original Massing Explorer pipeline and primary literature. It covers close precedents, limits of semantic abstraction, conditional breadth/depth mathematics, failure modes, and controlled experiments for changing user intent.
+
+The direction is a research hypothesis, not an implemented capability or demonstrated performance improvement. Its potential contribution is executable semantic relationships and representation revision beyond diverse memory, retrieval and context-conditioned scheduling.
