@@ -1,4 +1,4 @@
-# A test elementary school — design information (v0.2)
+# A test elementary school — design information
 
 ## Design brief
 
@@ -21,15 +21,11 @@ The supplied `ROOM_PROGRAM.csv` contains the **complete 41-line room program**. 
 | Custodial & maintenance | 2,200 |
 | **Total** | **44,270** |
 
-## Mandatory department assignment
-
-Each of the nine departments must be assigned entirely to exactly one principal mass. Splitting any department across masses is prohibited, including custodial/maintenance and individual support rooms. A department may span floors only within its assigned mass, on contiguous occupied floors with at least 70 m² (approximately 753 SF) of scheduled department NFA on each occupied floor.
-
 ## Planning assumptions
 
 - Dimensions in feet unless otherwise stated; areas in square feet.
-- Historical workbook display: 66,405 SF. This is reference information, not the governing design target for this study.
-- Governing GFA target: 44,270 × 1.15 × 1.50 = 76,365.75 SF, with ±3% tolerance (74,074.7775–78,656.7225 SF). Double-height voids are not additional occupied floor area.
+- School program workbook: 44,270 SF net floor area; 1.50 grossing factor; 66,405 SF displayed gross floor area.
+- Separate project planning parameters: area adjustment 1.15; grossing factor 1.50; gross area tolerance ±3%.
 - Default classroom configuration: double-loaded bar, 30-ft classroom depth and 8-ft corridor.
 - Typical floor-to-floor height used for mass extrusion: 14 ft.
 - Gym: clear dimensions at least 60 × 100 ft; double height.
@@ -39,5 +35,5 @@ Each of the nine departments must be assigned entirely to exactly one principal 
 - If a department spans multiple floors, those floors must be contiguous, and each floor portion of that department must contain at least **70 m² (~753 SF)**.
 - No specific site boundary, adjacent buildings, orientation, terrain, or access road geometry is supplied.
 
-The brief specifies design requirements and preferences. If a project assumption and an explicit brief item conflict, prioritize the brief and explain material uncertainties. For this study the adjusted target governs; do not substitute the workbook display. The 60-m cap applies to the long principal dimension of each mass, not the combined building extent. The ratio applies to each mass's ground footprint, short side divided by long side, nominally 0.40–0.625. The shared validator uses an absolute ratio tolerance of 0.00675, disclosed equally for all systems. Academic/special-education width means the containing bar depth, not a separate room width.
+The brief specifies design requirements and preferences. If a project assumption and an explicit brief item conflict, prioritize the brief and explain material uncertainties. The workbook's displayed gross floor area and the separately supplied adjustment/factor are stated as separate source values.
 

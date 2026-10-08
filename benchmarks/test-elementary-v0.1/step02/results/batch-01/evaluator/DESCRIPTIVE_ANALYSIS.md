@@ -1,5 +1,10 @@
 # Batch 01 descriptive score analysis
 
+## Correction — intended constraint mismatch (2026-10-08)
+
+Batch 01 generation and scoring omitted the intended hard prohibition on splitting a department across masses. The original evaluator additionally allowed academic/special education in “a mass or masses.” Under the user-confirmed intended rule, R01, R03, R06, R07, R08, R10 and R12 violate cross-mass assignment; R02, R04, R05, R09 and R11 pass this check only. These are retrospective intended-rule annotations, not evidence that generators disobeyed a supplied instruction. Original scores/PASS labels remain historical judgments, not verified compliance with the intended benchmark. Matched-constraints LLM-versus-ME feasibility and quality conclusions are withdrawn. See [constraint audit](../../../CONSTRAINT_ALIGNMENT_AUDIT.md).
+
+
 These results use the original audited Fable scores, with no score changes. The quality evaluator input was identity-exposed. The archived behavior input is label-masked, but correspondence to the file actually supplied to Fable is not independently established. These are exploratory comparisons of twelve independent runs, three in each cell.
 
 ## Quality scores
@@ -54,3 +59,4 @@ The next substantive step is to normalize the twelve proposals against the froze
 ## Evidence validation qualification
 
 The separate [validation report](validation/VALIDATION_REPORT.md) reconciles all 12 gross/net totals and declared principal ratios, but does not certify realized room fit. It identifies five daylight-preference applicability questions, limited anchor evidence in R05/R10, and three factual wording/rounding qualifications. Original scores remain unchanged. Group differences are descriptive; the quality identity exposure, n=3 per cell, single evaluator, and differing permitted gross-area bases prevent causal or general model-quality conclusions. Higher A1 behavior ratings do not establish that its search improves or worsens architecture.
+

@@ -1,4 +1,4 @@
-# Step 02 — Self-structured exploration prompt (A1, v0.3)
+# Step 02 — Self-structured exploration prompt (A1, v0.2)
 
 You are designing **a test elementary school**. Use the supplied design brief, space program, and planning assumptions.
 
@@ -10,8 +10,3 @@ Present your recommended design clearly enough for another architect to review t
 
 Also provide a concise, truthful account of **the exploration structure you chose**, any alternatives or comparisons you can substantiate from your work, and why the recommendation prevailed. This is a report of decisions and outputs, **not** a request to disclose private internal reasoning or claim knowledge of hidden deliberation.
 
-## Mandatory common constraint
-
-Each of the nine departments must be assigned entirely to exactly one principal mass. Splitting any department across masses is prohibited, including custodial/maintenance and individual support rooms. A department may span floors only within its assigned mass, on contiguous occupied floors with at least 70 m² (approximately 753 SF) of scheduled department NFA on each occupied floor.
-
-Use the governing area and interpretation policies in the supplied v0.2 design information. These constraints apply before preference optimization.

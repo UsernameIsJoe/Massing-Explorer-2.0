@@ -1,5 +1,7 @@
 # Shared Benchmark
 
+> **Audit correction:** Batch 01 did not receive the intended no-cross-mass department-split rule. Matched-constraints performance conclusions are withdrawn; see the correction section and constraint audit.
+
 ## Status
 
 This document records the locked and unresolved decisions for Step 01 of the Massing Explorer 2.0 development sequence.
@@ -125,3 +127,7 @@ The legacy runner provides aggregate results but does not retain the complete ca
 ## Step 01 status
 
 The shared inputs, output contract, pilot metrics, run-log schema, and frozen baseline report are complete for benchmark version `test-elementary-v0.1`.
+
+## Constraint correction and batch validity (2026-10-08)
+
+The user confirmed that every department must remain entirely within one mass. This is a hard requirement, separate from within-mass contiguous-floor/minimum-portion rules. Batch 01 did not supply it to generators or its quality evaluator, while ME's partition representation assigns each whole department to one mass. Therefore the claimed identical hard-constraint contract was incomplete. Historical input/protocol bytes are preserved in step02/historical; current revisions apply only to future runs. Invalid cross-mass splitting must never be counted as valid representation expansion. Arbitrary unsupported but hard-legal topology remains a separate category. The original quality PASS labels are not independent physical feasibility certifications. Reviewer 0–4 quality, 0–3 behavior and ME 0–1 proxies are separate measures, not interchangeable calculations. See [alignment audit](../benchmarks/test-elementary-v0.1/step02/CONSTRAINT_ALIGNMENT_AUDIT.md).

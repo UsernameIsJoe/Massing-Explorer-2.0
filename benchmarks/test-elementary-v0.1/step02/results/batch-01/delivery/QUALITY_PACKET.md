@@ -1,11 +1,3 @@
-# Masked evaluation set
-
-Source artifact: `Masked evaluation.docx`.
-
-Evaluator-facing canonical set. It preserves the shuffled R01–R12 architectural records while withholding run metadata and direct model/condition/timing/process identifiers.
-
-Do not combine this file with `../SHUFFLE_KEY.md` until design scores are locked.
-
 R01
 strategy_summary
 - value: A loose pinwheel of two 80 ft wide, 3-story learning/civic bars (A, B) connected at

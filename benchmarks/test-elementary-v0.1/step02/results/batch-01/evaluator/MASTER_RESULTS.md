@@ -1,5 +1,10 @@
 # Batch 01 master run table
 
+## Correction — intended constraint mismatch (2026-10-08)
+
+Batch 01 generation and scoring omitted the intended hard prohibition on splitting a department across masses. The original evaluator additionally allowed academic/special education in “a mass or masses.” Under the user-confirmed intended rule, R01, R03, R06, R07, R08, R10 and R12 violate cross-mass assignment; R02, R04, R05, R09 and R11 pass this check only. These are retrospective intended-rule annotations, not evidence that generators disobeyed a supplied instruction. Original scores/PASS labels remain historical judgments, not verified compliance with the intended benchmark. Matched-constraints LLM-versus-ME feasibility and quality conclusions are withdrawn. See [constraint audit](../../../CONSTRAINT_ALIGNMENT_AUDIT.md).
+
+
 Fable quality scores: 0–4. Quality input identity exposure is confirmed; behavior delivery verification remains unresolved. Feasibility shown below is evaluator-reported. All actual ME computational fields remain pending.
 
 | Case | Model | Condition | Run | Coherence | Alignment | Efficiency | Robustness | Fable feasibility | Displayed duration |
@@ -18,3 +23,4 @@ Fable quality scores: 0–4. Quality input identity exposure is confirmed; behav
 | R12 | Opus 5.5 | A0 | 2 | 2 | 2 | 2 | 1 | PASS | Thought for 5m 35s |
 
 The full eleven-axis behavior scores and per-case observable evidence are retained separately within `MASTER_RESULTS.json`. Displayed Worked/Thought durations have different host meanings and are not used to rank compute efficiency.
+

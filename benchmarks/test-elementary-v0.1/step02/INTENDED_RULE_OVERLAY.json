@@ -1,0 +1,346 @@
+{
+  "status": "retrospective intended-rule check; original scores unchanged",
+  "cases": [
+    {
+      "case": "R01",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION"
+        ],
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION",
+          "ART & MUSIC",
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "CUSTODIAL & MAINTENANCE",
+          "MEDIA CENTER"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE",
+          "CUSTODIAL & MAINTENANCE"
+        ]
+      ],
+      "split_departments": [
+        "CORE ACADEMIC",
+        "SPECIAL EDUCATION",
+        "CUSTODIAL & MAINTENANCE"
+      ],
+      "pool": null,
+      "archive_cells": null,
+      "legal_cells": null,
+      "intended_no_cross_mass_rule": "FAIL",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R02",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION",
+          "ART & MUSIC"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE"
+        ],
+        [
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "CUSTODIAL & MAINTENANCE",
+          "MEDIA CENTER"
+        ]
+      ],
+      "split_departments": [],
+      "pool": "initial",
+      "archive_cells": 16,
+      "legal_cells": 0,
+      "intended_no_cross_mass_rule": "PASS_THIS_CHECK_ONLY",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R03",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION",
+          "ART & MUSIC",
+          "CUSTODIAL & MAINTENANCE"
+        ],
+        [
+          "CORE ACADEMIC",
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "CUSTODIAL & MAINTENANCE",
+          "MEDIA CENTER"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE"
+        ]
+      ],
+      "split_departments": [
+        "CORE ACADEMIC",
+        "CUSTODIAL & MAINTENANCE"
+      ],
+      "pool": null,
+      "archive_cells": null,
+      "legal_cells": null,
+      "intended_no_cross_mass_rule": "FAIL",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R04",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION",
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "MEDIA CENTER"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE",
+          "CUSTODIAL & MAINTENANCE"
+        ],
+        [
+          "ART & MUSIC"
+        ]
+      ],
+      "split_departments": [],
+      "pool": null,
+      "archive_cells": 0,
+      "legal_cells": 0,
+      "intended_no_cross_mass_rule": "PASS_THIS_CHECK_ONLY",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R05",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE"
+        ],
+        [
+          "ART & MUSIC",
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "CUSTODIAL & MAINTENANCE",
+          "MEDIA CENTER"
+        ]
+      ],
+      "split_departments": [],
+      "pool": null,
+      "archive_cells": 0,
+      "legal_cells": 0,
+      "intended_no_cross_mass_rule": "PASS_THIS_CHECK_ONLY",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R06",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE",
+          "CUSTODIAL & MAINTENANCE"
+        ],
+        [
+          "CORE ACADEMIC",
+          "ART & MUSIC",
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "CUSTODIAL & MAINTENANCE",
+          "MEDIA CENTER"
+        ]
+      ],
+      "split_departments": [
+        "CORE ACADEMIC",
+        "CUSTODIAL & MAINTENANCE"
+      ],
+      "pool": null,
+      "archive_cells": null,
+      "legal_cells": null,
+      "intended_no_cross_mass_rule": "FAIL",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R07",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "MEDIA CENTER"
+        ],
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION",
+          "ART & MUSIC",
+          "CUSTODIAL & MAINTENANCE"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE"
+        ]
+      ],
+      "split_departments": [
+        "CORE ACADEMIC"
+      ],
+      "pool": null,
+      "archive_cells": null,
+      "legal_cells": null,
+      "intended_no_cross_mass_rule": "FAIL",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R08",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION",
+          "ADMINISTRATION & GUIDANCE",
+          "MEDIA CENTER"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE",
+          "CUSTODIAL & MAINTENANCE"
+        ],
+        [
+          "ART & MUSIC",
+          "MEDICAL",
+          "CUSTODIAL & MAINTENANCE"
+        ]
+      ],
+      "split_departments": [
+        "CUSTODIAL & MAINTENANCE"
+      ],
+      "pool": null,
+      "archive_cells": null,
+      "legal_cells": null,
+      "intended_no_cross_mass_rule": "FAIL",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R09",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION",
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "MEDIA CENTER"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE",
+          "CUSTODIAL & MAINTENANCE"
+        ],
+        [
+          "ART & MUSIC"
+        ]
+      ],
+      "split_departments": [],
+      "pool": null,
+      "archive_cells": 0,
+      "legal_cells": 0,
+      "intended_no_cross_mass_rule": "PASS_THIS_CHECK_ONLY",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R10",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION"
+        ],
+        [
+          "CORE ACADEMIC",
+          "ART & MUSIC",
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "MEDIA CENTER"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE",
+          "CUSTODIAL & MAINTENANCE"
+        ]
+      ],
+      "split_departments": [
+        "CORE ACADEMIC"
+      ],
+      "pool": null,
+      "archive_cells": null,
+      "legal_cells": null,
+      "intended_no_cross_mass_rule": "FAIL",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R11",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION"
+        ],
+        [
+          "ART & MUSIC",
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "CUSTODIAL & MAINTENANCE",
+          "MEDIA CENTER"
+        ],
+        [
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE"
+        ]
+      ],
+      "split_departments": [],
+      "pool": null,
+      "archive_cells": 0,
+      "legal_cells": 0,
+      "intended_no_cross_mass_rule": "PASS_THIS_CHECK_ONLY",
+      "historical_generation_rule_supplied": false
+    },
+    {
+      "case": "R12",
+      "groups": [
+        [
+          "CORE ACADEMIC",
+          "SPECIAL EDUCATION"
+        ],
+        [
+          "ART & MUSIC",
+          "HEALTH & PHYSICAL EDUCATION",
+          "DINING & FOOD SERVICE",
+          "CUSTODIAL & MAINTENANCE"
+        ],
+        [
+          "MEDICAL",
+          "ADMINISTRATION & GUIDANCE",
+          "CUSTODIAL & MAINTENANCE",
+          "MEDIA CENTER"
+        ]
+      ],
+      "split_departments": [
+        "CUSTODIAL & MAINTENANCE"
+      ],
+      "pool": null,
+      "archive_cells": null,
+      "legal_cells": null,
+      "intended_no_cross_mass_rule": "FAIL",
+      "historical_generation_rule_supplied": false
+    }
+  ]
+}

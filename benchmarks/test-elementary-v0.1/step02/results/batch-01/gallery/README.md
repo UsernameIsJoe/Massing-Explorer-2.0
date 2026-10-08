@@ -1,5 +1,10 @@
 # Massing gallery geometry
 
+## Correction — intended constraint mismatch (2026-10-08)
+
+Batch 01 generation and scoring omitted the intended hard prohibition on splitting a department across masses. The original evaluator additionally allowed academic/special education in “a mass or masses.” Under the user-confirmed intended rule, R01, R03, R06, R07, R08, R10 and R12 violate cross-mass assignment; R02, R04, R05, R09 and R11 pass this check only. These are retrospective intended-rule annotations, not evidence that generators disobeyed a supplied instruction. Original scores/PASS labels remain historical judgments, not verified compliance with the intended benchmark. Matched-constraints LLM-versus-ME feasibility and quality conclusions are withdrawn. See [constraint audit](../../../CONSTRAINT_ALIGNMENT_AUDIT.md).
+
+
 12 LLM final proposals and all 37 legal archive candidates from the frozen pipeline rerun. These are massing envelopes, not independently verified room layouts. OBJ units: feet; Z up. No Fable quality scores have been assigned to pipeline candidates.
 
 LLM: envelope dimensions and program text from the original proposals. Placement is a diagrammatic reconstruction of narrative relationships. Exact rotation, joints and coordinates are not supplied for all schemes. Stepped upper floors are centered where their offset is unspecified. Heights use 14 ft per occupied floor and 28 ft hall volumes; missing heights are visualization assumptions. R09 contains an unresolved diagram/text interface conflict. No rooms or connection masses are invented.
@@ -26,3 +31,4 @@ Display → Program split shows balanced schematic department blocks. LLM blocks
 ## Fable rating radars
 
 Every LLM case shows two separate radar graphs: four quality axes on 0–4 and eleven behavior axes on 0–3. Values are the unchanged locked Fable transcriptions. Unknown representation expansion (B10) is shown as a gap, never zero; the behavior plot remains unfilled with no line across that gap. Axis names and exact values are available in the UI. ME candidates are explicitly unrated by Fable; no engine scores are substituted. Quality identity exposure remains an audit limitation. The two score families are not combined.
+

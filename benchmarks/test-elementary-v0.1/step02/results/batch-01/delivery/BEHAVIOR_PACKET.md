@@ -1,17 +1,3 @@
-# Batch 01 — masked shuffled behavior-analysis input
-
-This file is derived from the archived raw A0/A1 responses for **observable search/reasoning behavior analysis**.
-
-- Cases use the **same randomized R01–R12 IDs and order** as the masked design-evaluation set.
-- Direct model names, condition labels, source-run headers, source-document page markers, and prompt-file-name tokens are omitted.
-- Architectural content, visible alternatives, comparisons, calculations, revisions, trade-offs, uncertainty statements, and selection rationale are otherwise preserved from the raw text export.
-- Embedded screenshots/diagrams from the original Word sources are not included in this repository text export.
-- This is **label-masked, not fully blind**: writing style and the behavior itself may still make a source or condition guessable.
-- Do not combine with `../SHUFFLE_KEY.md` until behavior scores are locked.
-
-
----
-
 # R01
 
 I read the supplied inputs. The

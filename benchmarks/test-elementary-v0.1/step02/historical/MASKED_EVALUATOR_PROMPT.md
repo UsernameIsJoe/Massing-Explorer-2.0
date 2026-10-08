@@ -1,4 +1,4 @@
-# Step 02 — Masked design evaluator prompt (v0.2)
+# Step 02 — Masked design evaluator prompt (v0.1)
 
 You are the **masked architectural design evaluator** for a benchmark. You will receive one document containing 12 canonicalized architectural proposals identified only as R01–R12.
 
@@ -51,7 +51,7 @@ Two gross-area references are intentionally preserved and must **not** be silent
 1. workbook display: 44,270 × 1.50 = **66,405 GSF**;
 2. separate project planning parameters: area adjustment 1.15 × grossing factor 1.50 = **76,365.75 GSF**, with **±3% tolerance**.
 
-For revised v0.2 runs, the adjusted 76,365.75-SF target governs. Record any alternative interpretation, but evaluate against the same adjusted band for all systems. Historical Batch 01 used v0.1, which permitted alternative readings; do not retroactively apply this revised rubric as though it was supplied then.
+If a proposal explicitly chooses one gross-area basis, report that choice and whether its arithmetic is consistent with that basis. The source conflict itself is **not** a hard failure.
 
 ## Stage 1 — hard feasibility
 
@@ -69,16 +69,14 @@ Hard requirements:
 4. gym and dining are together;
 5. gym and principal dining space are double height;
 6. administration is on the ground floor;
-7. core academic is housed entirely in one 80-ft-wide mass;
-8. special education is housed entirely in one 80-ft-wide mass;
-9. each mass's ground footprint satisfies the nominal short-side/long-side ratio 0.40–0.625, using the shared validator's disclosed absolute tolerance 0.00675; do not silently apply it to every upper plate or to ratios between different masses;
+7. core academic is housed in an 80-ft-wide mass or masses;
+8. special education is housed in an 80-ft-wide mass or masses;
+9. the stated mass-ratio requirement 2:5–5:8 is satisfied **under the proposal's stated interpretation if that interpretation is explicit and internally consistent**; if the proposal does not establish enough information to judge the ambiguous source phrase, use `UNVERIFIED` rather than inventing an interpretation;
 10. gym clear dimensions are at least 60 × 100 ft;
 11. cafeteria clear dimensions are at least 40 × 60 ft;
 12. any department spanning multiple floors uses contiguous floors and at least ~753 SF on every occupied floor portion;
 13. the complete 44,270 SF scheduled net program is preserved without omitted or invented scheduled program;
 14. any residual L-shaped floor arm, if used and dimensioned, is at least 20 ft deep.
-15. Each of the nine departments must be assigned entirely to exactly one principal mass. Splitting any department across masses is prohibited, including custodial/maintenance and individual support rooms. A department may span floors only within its assigned mass, on contiguous occupied floors with at least 70 m² (approximately 753 SF) of scheduled department NFA on each occupied floor.
-16. GFA is within 74,074.7775–78,656.7225 SF; the 66,405-SF display is not an alternative governing target.
 
 Preferences — **never convert these into hard failures**:
 
@@ -201,9 +199,7 @@ For every case use exactly this structure:
 | Mass ratio 2:5–5:8 | | |
 | Gym ≥60 × 100 ft | | |
 | Cafeteria ≥40 × 60 ft | | |
-| Within-mass department floor split rule | | |
-| Each department wholly in one mass | | |
-| Governing adjusted GFA band | | |
+| Department split rule | | |
 | 44,270 SF program conservation | | |
 | L-arm ≥20 ft if applicable | | |
 

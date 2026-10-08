@@ -1,5 +1,10 @@
 # Step 02 — Batch 01 artifact manifest
 
+## Correction — intended constraint mismatch (2026-10-08)
+
+Batch 01 generation and scoring omitted the intended hard prohibition on splitting a department across masses. The original evaluator additionally allowed academic/special education in “a mass or masses.” Under the user-confirmed intended rule, R01, R03, R06, R07, R08, R10 and R12 violate cross-mass assignment; R02, R04, R05, R09 and R11 pass this check only. These are retrospective intended-rule annotations, not evidence that generators disobeyed a supplied instruction. Original scores/PASS labels remain historical judgments, not verified compliance with the intended benchmark. Matched-constraints LLM-versus-ME feasibility and quality conclusions are withdrawn. See [constraint audit](../../CONSTRAINT_ALIGNMENT_AUDIT.md).
+
+
 Benchmark: `test-elementary-v0.1`
 
 This folder archives the first 12-run A0/A1 pure-LLM batch and the transformation artifacts used for masked design evaluation.
@@ -65,3 +70,4 @@ The untouched evaluator DOCX files remain in the existing user-supplied artifact
 - [`gallery/README.md`](gallery/README.md): reconstruction assumptions, frozen rerun provenance and evidence limits.
 
 The rerun reproduces 209 attempts, 159 cells and 37 legal cells. Candidate ground dimensions match archived plates within 0.02 ft rounding; recovered solver validation checks pass. LLM placement and unspecified heights/upper-floor offsets are explicitly approximate. Pipeline candidates have not received Fable quality ratings. This is a post-scoring unmasked comparison gallery, not a blinded evaluator packet.
+

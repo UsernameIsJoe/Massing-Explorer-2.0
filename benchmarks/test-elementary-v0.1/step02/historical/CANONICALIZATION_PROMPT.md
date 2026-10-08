@@ -1,8 +1,8 @@
-# Step 02 — Sonnet canonicalization prompt (v0.3)
+# Step 02 — Sonnet canonicalization prompt (v0.2)
 
-## Historical Batch 01 use
+## Batch 01 use
 
-The archived v0.2 in historical/CANONICALIZATION_PROMPT.md is the canonicalization prompt used for the Step 02 Batch 01 normalization stage. The canonicalizer was run in a fresh incognito Sonnet session on the separate A0 and A1 raw-result bundles. Canonicalization was intentionally **unmasked**: source labels and run metadata could be visible because this stage performs extraction only, not scoring or comparison.
+This is the canonicalization prompt used for the Step 02 Batch 01 normalization stage. The canonicalizer was run in a fresh incognito Sonnet session on the separate A0 and A1 raw-result bundles. Canonicalization was intentionally **unmasked**: source labels and run metadata could be visible because this stage performs extraction only, not scoring or comparison.
 
 The canonicalizer was not supplied the benchmark/evaluation documents or Massing Explorer search/evaluation documentation. Those materials are reserved for the later evaluation/analysis stages.
 
@@ -47,7 +47,7 @@ Use terse, neutral architectural language. Remove stylistic adjectives and persu
 - evidence:
 
 ## program_grouping
-Record how the nine departments are distributed across the three masses. Explicitly list every department assigned to more than one mass, including room-level support exceptions. Do not repair the assignment or evaluate it.
+Record how the nine departments are distributed across the three masses.
 - value:
 - provenance:
 - evidence:
@@ -95,8 +95,7 @@ Include:
 - gym minimum 60 × 100 ft
 - cafeteria minimum 40 × 60 ft
 - daylight preferred maximum width 90 ft
-- each complete department assigned to exactly one mass; report any cross-mass split
-- within-mass department floor split rule: contiguous floors and at least 70 m² / ~753 SF per floor portion
+- department split rule: contiguous floors and at least 70 m² / ~753 SF per floor portion
 - program-area conservation
 - gross-area / tolerance interpretation if stated
 
@@ -150,6 +149,3 @@ This metadata is for archiving only and will be removed before masked evaluation
 - Process every run with exactly the same standard.
 - Output only the canonicalized case records and optional run-metadata blocks. No cross-run interpretation or conclusions.
 
-## Delivery separation
-
-Never put run_metadata into the quality-delivery file. Store metadata only in a separate operator archive. Keep full evidence links separately for audit; evaluator-facing text must omit source page/export markers, model/host/tool-session labels, timings and comparisons to rejected alternatives. Architectural facts and contradictions remain unchanged.

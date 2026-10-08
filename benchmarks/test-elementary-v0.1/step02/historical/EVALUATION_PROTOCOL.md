@@ -1,4 +1,4 @@
-# Step 02 — Evaluation protocol (v0.3)
+# Step 02 — Evaluation protocol (v0.2)
 
 Benchmark: `test-elementary-v0.1` | Applies to the A0/A1 pure-LLM batch after raw runs have been captured.
 
@@ -89,7 +89,7 @@ Record:
 For this benchmark, checks include at minimum the frozen requirements concerning:
 
 - exactly three masses;
-- maximum three floors (hard); three-floor preference evaluated separately;
+- maximum three floors and three-floor preference;
 - 60 m length cap according to the benchmark's recorded interpretation;
 - gym and dining together and double height;
 - art/music ground-floor preference;
@@ -113,7 +113,7 @@ After hard feasibility is recorded, evaluate the canonical proposal under the fr
 - **robustness / flexibility**
 - **encoding status / representation gap**
 
-Use the reviewer rubric for reviewer scores and the frozen computational formulas for ME metrics. Report them separately: they do not measure identical constructs and must not be merged or converted into one another. If a metric cannot be computed because required geometry or evidence is absent, mark it unavailable/unknown rather than estimating a convenient value.
+Use the existing metric definitions without retuning them after seeing the batch. If a metric cannot be computed because required geometry or evidence is absent, mark it unavailable/unknown rather than estimating a convenient value.
 
 For the A0/A1 one-proposal runs, within-run distinctness and coverage are not primary design-quality metrics.
 
@@ -188,8 +188,3 @@ For the batch, retain:
 
 The raw generation experiment, unmasked canonicalization record, masked design evaluation, and unblinded behavior analysis are separate artifacts and should remain separately auditable.
 
-## v0.3 correction: explicit common hard gate
-
-For new runs apply the revised shared contract before quality review: Each of the nine departments must be assigned entirely to exactly one principal mass. Splitting any department across masses is prohibited, including custodial/maintenance and individual support rooms. A department may span floors only within its assigned mass, on contiguous occupied floors with at least 70 m² (approximately 753 SF) of scheduled department NFA on each occupied floor.
-
-Use the fixed adjusted GFA band and the per-mass/ground-footprint interpretations in MODEL_INPUT.md. Keep reviewer quality axes distinct from ME computational proxies. Historical Batch 01 PASS judgments belong to the old rubric; preserve them and put intended-rule checks in a separate overlay. Do not describe the 12 LLM final recommendations and the full ME search archive as comparable pass-rate denominators. Audit metadata, process cues and packet hashes before delivery; record the exact delivered file and version, not merely a later clean copy. Quality delivery must exclude rejected-alternative comparisons and operator source markers. Raw/unmasked files, the shuffle key and the gallery never accompany that delivery.

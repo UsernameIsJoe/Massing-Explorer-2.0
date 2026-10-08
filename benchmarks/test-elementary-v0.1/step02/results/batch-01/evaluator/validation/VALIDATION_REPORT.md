@@ -1,5 +1,10 @@
 # Validation of batch-01 scoring evidence
 
+## Correction — intended constraint mismatch (2026-10-08)
+
+Batch 01 generation and scoring omitted the intended hard prohibition on splitting a department across masses. The original evaluator additionally allowed academic/special education in “a mass or masses.” Under the user-confirmed intended rule, R01, R03, R06, R07, R08, R10 and R12 violate cross-mass assignment; R02, R04, R05, R09 and R11 pass this check only. These are retrospective intended-rule annotations, not evidence that generators disobeyed a supplied instruction. Original scores/PASS labels remain historical judgments, not verified compliance with the intended benchmark. Matched-constraints LLM-versus-ME feasibility and quality conclusions are withdrawn. See [constraint audit](../../../../CONSTRAINT_ALIGNMENT_AUDIT.md).
+
+
 The archived scores remain unchanged. This validation supports using them as descriptive ratings of these 12 proposals, with the qualifications below. It does not establish that all 12 designs are physically feasible, that the ratings were blinded, or that one model or condition produces better architecture.
 
 ## Scope and provenance
@@ -55,3 +60,4 @@ Quality identity exposure remains an audit limitation; later metadata removal ca
 With three runs per cell, a single evaluator, no independent room-fit certification, and the applicability questions above, the scores support exploratory descriptions only. Two Opus A0 proposals choose the 66,405 SF reference while the others choose 76,365.75 SF; efficiency comparisons therefore also reflect a permitted choice of gross-area basis. Higher visible process ratings in A1 and unchanged/lower quality medians do not establish that search is ineffective or that A1 worsens design.
 
 The next substantive validation is to reconcile room schedules and realize layouts under a common declared area/ratio policy, then obtain independent masked ratings from verified clean packets. Until then, retain original ratings and these annotations separately; ME coverage, legality and runtime measurements remain pending.
+

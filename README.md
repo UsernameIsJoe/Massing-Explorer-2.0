@@ -1,5 +1,7 @@
 # Massing Explorer 2.0
 
+> **Audit correction:** Batch 01 did not receive the intended no-cross-mass department-split rule. Matched-constraints performance conclusions are withdrawn; see the correction section and constraint audit.
+
 This project investigates three questions:
 
 1. How does an LLM actually develop architectural proposals? Is it reasoning, sampling, or searching?
@@ -274,3 +276,7 @@ Connect it to Claude and ChatGPT where the account and developer capabilities pe
 Determine which tools help, which orchestration policies help, and whether anything in the existing pipeline should be abandoned.
 
 A practical consideration: ChatGPT and Claude offer somewhat different integration and permission models, so the MCP adapter should remain thin and host-independent. The research should not depend on features exclusive to one chat interface.
+
+## Step 02 pilot correction
+
+The intended no-cross-mass department-split hard rule was omitted from the Batch 01 model/evaluator inputs. Seven proposals violate that intended rule, but it was not supplied to their generators. The pilot remains useful as an observable-response record; matched-constraints LLM-versus-ME performance conclusions are withdrawn. Current prompt/protocol revisions apply to future runs only; original instructions and locked scores are preserved. [Constraint and leakage audit](benchmarks/test-elementary-v0.1/step02/CONSTRAINT_ALIGNMENT_AUDIT.md).

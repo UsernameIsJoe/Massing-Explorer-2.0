@@ -1,4 +1,4 @@
-# Step 02 — Natural-goal LLM prompt (A0, v0.2)
+# Step 02 — Natural-goal LLM prompt (A0, v0.1)
 
 You are designing **a test elementary school**. Use the supplied design brief, space program, and planning assumptions.
 
@@ -8,8 +8,3 @@ Present your recommended design clearly enough for another architect to review t
 
 Use the design approach you consider appropriate.
 
-## Mandatory common constraint
-
-Each of the nine departments must be assigned entirely to exactly one principal mass. Splitting any department across masses is prohibited, including custodial/maintenance and individual support rooms. A department may span floors only within its assigned mass, on contiguous occupied floors with at least 70 m² (approximately 753 SF) of scheduled department NFA on each occupied floor.
-
-Use the governing area and interpretation policies in the supplied v0.2 design information. These constraints apply before preference optimization.

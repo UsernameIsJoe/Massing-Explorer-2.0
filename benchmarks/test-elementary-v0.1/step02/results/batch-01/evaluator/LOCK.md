@@ -1,5 +1,10 @@
 # Batch 01 evaluator score lock
 
+## Correction — intended constraint mismatch (2026-10-08)
+
+Batch 01 generation and scoring omitted the intended hard prohibition on splitting a department across masses. The original evaluator additionally allowed academic/special education in “a mass or masses.” Under the user-confirmed intended rule, R01, R03, R06, R07, R08, R10 and R12 violate cross-mass assignment; R02, R04, R05, R09 and R11 pass this check only. These are retrospective intended-rule annotations, not evidence that generators disobeyed a supplied instruction. Original scores/PASS labels remain historical judgments, not verified compliance with the intended benchmark. Matched-constraints LLM-versus-ME feasibility and quality conclusions are withdrawn. See [constraint audit](../../../CONSTRAINT_ALIGNMENT_AUDIT.md).
+
+
 Scores are preserved exactly as supplied by Fable. No score is changed by unmasking or by the descriptive analysis.
 
 ## Quality provenance
@@ -23,3 +28,4 @@ The current archived behavior/MASKED_SHUFFLED_RAW_RESPONSES.md contains no direc
 - Score families remain separate. Unknown representation fields remain unknown.
 - No score changes are permitted after unmasking except documented extraction or factual-reading errors, with before/after values and reasons.
 - Fable feasibility judgments are not substitutes for pending deterministic ME verification.
+

@@ -1,4 +1,4 @@
-# Step 02 — Observable search / reasoning behavior protocol (v0.2)
+# Step 02 — Observable search / reasoning behavior protocol (v0.1)
 
 Benchmark: `test-elementary-v0.1`
 
@@ -262,6 +262,3 @@ Useful analogues include:
 
 The goal is not to make the LLM and pipeline look artificially identical. The goal is to compare **which search capabilities each system actually possesses, how reliably they are executed, and what design outcomes result**.
 
-## v0.2 correction and scale policy
-
-Batch 01 behavior ratings remain locked on their original 0–3 scale; quality remains on 0–4. Do not rescale stored ratings or imply the two measures share anchors. Verification scores describe checks against the supplied historical inputs, not full compliance with the intended no-cross-mass rule. For future coding explicitly distinguish cross-mass assignment from within-mass floor splits. A hard-invalid idea is not evidence of valid representation expansion. Preserve raw host/tool offers in the operator archive, but remove session-availability remarks from a label-masked delivery derivative and log each removal. Style and requested exploration remain indirect condition cues; this is not perfect blinding.

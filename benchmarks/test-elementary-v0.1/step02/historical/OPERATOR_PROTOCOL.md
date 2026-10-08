@@ -1,4 +1,4 @@
-# Step 02 — Pure-LLM pilot operator protocol (v0.5)
+# Step 02 — Pure-LLM pilot operator protocol (v0.4)
 
 Benchmark: `test-elementary-v0.1` | Metrics: `0.1` | Group **A (pure LLM)** is split into two distinct prompt conditions:
 
@@ -38,6 +38,3 @@ Record ambiguities, without coaching models to one interpretation: `mass ratio` 
 
 **Future extension, not part of A0/A1:** A separately labeled longer-horizon agent experiment could grant both conditions equal multistep/tool-call budgets. Do not confuse that with the matched one-response pure-LLM pilot.
 
-## v0.5 alignment gate — required before another run
-
-Batch 01 used the archived v0.4 operator instructions. The current files are forward-only revisions. Supply the same v0.2 MODEL_INPUT.md and program CSV to both conditions; use updated A0/A1 prompts. Confirm no-cross-mass department splitting, adjusted GFA band, per-mass length scope, ground-footprint ratio policy/tolerance, width interpretation and preference scope against the backend. Preserve input hashes and the exact sent payload; fail the run-preparation gate if a requirement is absent from either input or rubric. No topology taxonomy, prior designs, model identities, score tables or source keys enter generation. Record unavailable costs/settings as null. Visible references to available host tools do not prove use; verify actual tool logs. Batch 01 is not a matched-constraints LLM-versus-ME feasibility experiment. See CONSTRAINT_ALIGNMENT_AUDIT.md.
