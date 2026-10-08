@@ -1785,11 +1785,11 @@ html>body{padding:0}</style>
 </script>
 <div id="massing-gallery">
 <h2>Final massing schemes</h2>
-<div class="viz-controls card mg-dock" role="region" aria-label="Floating view controls">
-<label class="form-label">View <select class="form-select" id="mg-view"><option value="orbit">3D massing</option><option value="plan">Plan</option><option value="separate">Separate masses</option></select></label>
-<label class="form-label">Rotation <input class="form-range" id="mg-angle" type="range" min="0" max="360" value="35"></label>
-<label class="form-label">Elevation <input class="form-range" id="mg-elevation" type="range" min="10" max="80" value="35"></label>
-</div>
+<div class="mg-dock" role="region" aria-label="Floating view controls"><div class="card"><div class="mg-dock-grid">
+<div class="mg-field mg-view-field"><label class="form-label" for="mg-view">View</label><select class="form-select" id="mg-view"><option value="orbit">3D massing</option><option value="plan">Plan</option><option value="separate">Separate masses</option></select></div>
+<div class="mg-field"><label class="form-label" for="mg-angle">Rotation</label><input class="form-range" id="mg-angle" type="range" min="0" max="360" value="35"></div>
+<div class="mg-field"><label class="form-label" for="mg-elevation">Elevation</label><input class="form-range" id="mg-elevation" type="range" min="10" max="80" value="35"></div>
+</div></div></div>
 <div class="mg-pair">
 <section><label class="form-label">LLM final proposal <select id="mg-llm" class="form-select"></select></label><div id="mg-left-meta" class="text-small"></div><svg id="mg-left" role="img" aria-label="Selected LLM massing reconstruction"></svg><div id="mg-left-dims" class="text-small"></div><div id="mg-left-caveat" class="text-small text-muted"></div><details><summary>Program allocation and source relationships</summary><div id="mg-left-program" class="mg-source text-small"></div><div id="mg-left-spatial" class="mg-source text-small"></div></details></section>
 <section><label class="form-label">Pipeline candidate <select id="mg-me" class="form-select"></select></label><div id="mg-right-meta" class="text-small"></div><svg id="mg-right" role="img" aria-label="Selected frozen pipeline candidate massing"></svg><div id="mg-right-dims" class="text-small"></div><div id="mg-right-caveat" class="text-small text-muted"></div><details><summary>Program allocation and source relationships</summary><div id="mg-right-program" class="mg-source text-small"></div><div id="mg-right-spatial" class="mg-source text-small"></div></details></section>
@@ -1802,17 +1802,21 @@ html>body{padding:0}</style>
 #massing-gallery .mg-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
 #massing-gallery svg{display:block;width:100%;height:360px;touch-action:none}
 #massing-gallery .mg-dock{position:sticky;top:0;z-index:20;background:var(--card);color:var(--card-foreground);margin-bottom:16px}
+#massing-gallery{min-width:0;max-width:100%;overflow-wrap:anywhere}
+#massing-gallery .mg-dock-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:16px}
+#massing-gallery .mg-field,#massing-gallery .mg-pair>section{min-width:0}
 #massing-gallery .mg-source{white-space:pre-wrap;overflow-wrap:anywhere;margin-top:12px}
 #massing-gallery .mg-legend{margin:18px 0 10px}
 #massing-gallery .mg-legend i{display:inline-block;width:12px;height:12px;margin-right:5px}
-#massing-gallery #mg-overview{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+#massing-gallery #mg-overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 #massing-gallery #mg-overview svg{height:360px}
 #massing-gallery .mg-thumb{min-width:0}
 #massing-gallery .mg-thumb .btn{margin-top:4px}
 #massing-gallery .mg-dimline{overflow-wrap:anywhere}
 #massing-gallery svg text{fill:var(--foreground);font-size:12px}
-@media(max-width:650px){#massing-gallery .mg-pair{grid-template-columns:1fr}#massing-gallery #mg-overview{grid-template-columns:1fr}}
-@media(max-width:380px){#massing-gallery #mg-overview{grid-template-columns:1fr}}
+@media(max-width:800px){#massing-gallery #mg-overview{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){#massing-gallery .mg-pair{grid-template-columns:1fr}#massing-gallery .mg-dock-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#massing-gallery .mg-view-field{grid-column:1/-1}}
+@media(max-width:450px){#massing-gallery #mg-overview{grid-template-columns:1fr}}
 </style>
 <script>
 (()=>{
