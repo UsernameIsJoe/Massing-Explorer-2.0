@@ -2,6 +2,18 @@
 
 > **Audit correction:** Batch 01 did not receive the intended no-cross-mass department-split rule. Matched-constraints performance conclusions are withdrawn; see the correction section and constraint audit.
 
+## Current project direction — 2026-10-13
+
+[Project memo](docs/PROJECT_MEMO.md) records the latest agreed direction:
+
+1. **Research a method/pipeline to construct a semantic space of architectural possibilities**, including untested possibilities. The construction method is open; it is not assigned to an LLM by default.
+2. **Test LLM navigation, candidate generation and user-driven iteration** within that space. ME axes and explicit search algorithms are optional components to evaluate.
+3. **Learn, refine, archive and present**, continuously feeding evidence back into the space and exploration.
+
+CSP is no longer required as the main sampler/shortlist gate in the proposed architecture; independent constraint enforcement remains essential. MCTS and BO are explicit optional algorithms, not assumed to operate inside the LLM. This is an agreed research direction, not a claim that a new pipeline has been implemented.
+
+The earlier comparison framework and development sequence below document the initial research plan. For the immediate Step 03 priority, follow the project memo and the [research review](docs/STEP03_RESEARCH_REVIEW.md).
+
 This project investigates three questions:
 
 1. How does an LLM actually develop architectural proposals? Is it reasoning, sampling, or searching?
@@ -222,7 +234,7 @@ The same code can serve ChatGPT, Claude, a future interface, or the independent 
 
 ## 4. Let the LLM challenge the search space
 
-This is where the research could become genuinely novel.
+This is a research question whose novelty must be assessed against semantic ideation, design-space exploration and adaptive-representation precedents; see the current project memo.
 
 The current CSP space is largely predetermined. Massing Explorer intelligently explores combinations within that space.
 
@@ -251,7 +263,7 @@ It would also give the three-axis system a much stronger purpose: not just evalu
 
 There is one caveat. Automatically changing the strategy representation risks destroying consistency. Explicit schema versioning and human approval should be required before new organizational types enter the main search.
 
-## 5. Recommended development sequence
+## 5. Initial development sequence — superseded for Step 03
 
 Do not immediately invest in a polished ChatGPT or Claude plugin. First, establish whether the individual tools produce measurable value.
 
@@ -282,6 +294,9 @@ A practical consideration: ChatGPT and Claude offer somewhat different integrati
 The intended no-cross-mass department-split hard rule was omitted from the Batch 01 model/evaluator inputs. Seven proposals violate that intended rule, but it was not supplied to their generators. The pilot remains useful as an observable-response record; matched-constraints LLM-versus-ME performance conclusions are withdrawn. Current prompt/protocol revisions apply to future runs only; original instructions and locked scores are preserved. [Constraint and leakage audit](benchmarks/test-elementary-v0.1/step02/CONSTRAINT_ALIGNMENT_AUDIT.md).
 
 ## Step 03 concept research
+
+[Current project memo — October 13](docs/PROJECT_MEMO.md) clarifies that constructing the space is a method-development research task, with the constructor's role and representation still open.
+
 
 [Critical research review: an evolving semantic strategy map](docs/STEP03_RESEARCH_REVIEW.md) assesses the proposed pseudo sample space against the original Massing Explorer pipeline and primary literature. It covers close precedents, limits of semantic abstraction, conditional breadth/depth mathematics, failure modes, and controlled experiments for changing user intent.
 
