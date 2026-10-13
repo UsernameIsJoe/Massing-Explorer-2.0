@@ -112,3 +112,9 @@ The untested-semantic-space principle has precedents. The potential architectura
 - The [October 8 research review](STEP03_RESEARCH_REVIEW.md) remains a literature/code assessment. The clarification above governs how its illustrative proposals should be interpreted.
 - The [constraint alignment audit](../benchmarks/test-elementary-v0.1/step02/CONSTRAINT_ALIGNMENT_AUDIT.md) governs the scope of claims from the earlier pilot.
 - This update does not rerun experiments, revise locked scores or modify the original ME engine.
+
+## 9. Step 1 clarification — research session 2026-10-13
+
+The user selected **concepts and relationships**, **relational navigation**, and **a reusable core with a contextual project layer**. A link should primarily carry **conditional reasoning**: why concepts may support or conflict with one another, leaving the LLM to devise the particular case. These preferences do not select a graph schema or construction algorithm, and executable recipes are not required as the primary semantic content.
+
+[Construction research — pass 1](STEP03_SPACE_CONSTRUCTION_RESEARCH.md) compares expert-structured, source-grounded, evidence-induced and hybrid acquisition methods. The next clarification should use a concrete navigation example to distinguish what the core knows, what the LLM infers and what realization tests. No new implementation or architectural performance result is claimed.

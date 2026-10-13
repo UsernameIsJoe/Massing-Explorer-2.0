@@ -301,3 +301,7 @@ The intended no-cross-mass department-split hard rule was omitted from the Batch
 [Critical research review: an evolving semantic strategy map](docs/STEP03_RESEARCH_REVIEW.md) assesses the proposed pseudo sample space against the original Massing Explorer pipeline and primary literature. It covers close precedents, limits of semantic abstraction, conditional breadth/depth mathematics, failure modes, and controlled experiments for changing user intent.
 
 The direction is a research hypothesis, not an implemented capability or demonstrated performance improvement. Its potential contribution is executable semantic relationships and representation revision beyond diverse memory, retrieval and context-conditioned scheduling.
+
+### Step 1: constructing the semantic space
+
+[Construction-method research — pass 1](docs/STEP03_SPACE_CONSTRUCTION_RESEARCH.md) reviews cross-domain precedents and candidate acquisition pipelines. The current target is a relational map of concepts and conditional reasoning, with a reusable core and project-specific layer; the construction algorithm remains open.
