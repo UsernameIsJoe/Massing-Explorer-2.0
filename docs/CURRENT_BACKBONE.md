@@ -12,9 +12,19 @@ The core contribution is the methodology for constructing a smart semantic archi
 
 The space should let architectural strategies exist robustly yet abstractly, with meanings and relationships useful before expensive realization. It may reference concepts, families, partial strategies, hypotheses and concrete cases; these are not interchangeable validated designs. Keep the prior reusable-core/project-layer preference and conditional reasoning in view. Graph, tree, embedding, latent and hybrid representations remain open.
 
+## Selected starting approach — seed-first construction
+
+The user has chosen to start with [seed-first space construction](STEP03_SEED_FIRST_SPACE.md): generate a small set of distinct strategies against the brief, reconstruct an initial semantic space from them, and research how it expands beyond those seeds. Five is an initial example, not a locked count. This supersedes space-before-cases as the immediate starting route while preserving the broader backbone.
+
+The rationale is immediate LLM reasoning, semantic connections originating in the proposals, reduced need for comprehensive upfront enumeration/case-format design, and brief-conditioned focus. Connections still need to become persistent and testable, and a minimal comparable account of commitments is necessary.
+
+The priority is **dynamic boundary expansion**, including recovery from narrow/different seed sets. Developing existing seeds, connecting them, and introducing absent distinctions are candidate expansion modes; no algorithm or taxonomy is frozen.
+
+The user has chat-only access for this work and cannot automatically invoke advanced LLMs from the pipeline. Begin with manual chat/script exchanges, recording user intervention and transfer cost; API integration is optional later work.
+
 ## Current workflow
 
-1. **Smart semantic sample space.** Support meaningful initial strategic reasoning before detailed dimensional realization.
+1. **Seed strategies and initial semantic space.** Generate brief-responsive strategic proposals with an existing LLM, reconstruct their meaningful relationships, and keep the space expandable before detailed dimensional realization.
 2. **Exploration with iterative briefs.** The LLM obtains or composes strategies, navigates and searches the space, and responds to repeated user input.
 3. **Strategy shortlist.** Choose directions worth developing. The required level of strategic certainty and useful cheap checks remain to be established.
 4. **Realization.** The LLM develops selected strategies into real dimensions and arrangements, using relevant computational tools and checks.
@@ -61,6 +71,6 @@ A finite/exhaustive space requires a declared bounded domain, not a claim to cov
 
 ## Current priorities and boundaries
 
-The [research assessment](STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. Investigate the multiple-tree hypothesis, strategic certainty/budget allocation, prioritized revisiting and conversation aging through small discriminating experiments.
+The [research assessment](STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. Start with the [seed-first comparison](STEP03_SEED_FIRST_SPACE.md), including different/narrow seed sets and manual interaction. Investigate dynamic expansion, the multiple-tree hypothesis, strategic certainty/budget allocation, prioritized revisiting and conversation aging through small discriminating experiments.
 
 Preserve the benchmark's whole-department/no-cross-mass-split constraint, independent checks, frozen results and audit qualifications. Representation, construction, search policy and stopping criteria remain open.

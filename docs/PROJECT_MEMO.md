@@ -1,10 +1,22 @@
 # ME 2.0 project memo — semantic possibility space
 
 Updated: 2026-10-26 (America/New_York).
-Status: agreed research direction; construction method and performance benefits remain open.
+Status: seed-first construction selected as the starting approach; representation, expansion mechanisms and performance benefits remain open.
 Sources: October 26 user directions, backbone and research responses; October 13 project discussion; October 8 research review.
 
 This memo records the current working direction for future project work. It supersedes the assumption that Step 1 is simply asking an LLM to build a sample space, and the earlier development sequence that made toolkit/MCP extraction the immediate Step 03 task. It does not change historical experiments or claim a new pipeline has been implemented.
+
+## Latest decision — seed-first entry, October 26
+
+The user chose to start with [LLM-generated strategic seeds and progressive space construction](STEP03_SEED_FIRST_SPACE.md). Generate a small set of distinct proposals against the active brief (five initially suggested), derive an initial semantic account, and research how to extend its boundary as new briefs and evidence arrive.
+
+This uses LLM reasoning immediately, retains semantic connections originating in the proposals, avoids comprehensive upfront enumeration/new case-format design, and establishes brief-specific focus. A minimal comparable record and grounded relationships are still needed. Initial outputs are seeds, not the limits of the design space.
+
+The research priority shifts to **expansion beyond shared seed assumptions and robustness across different initial sets**. The proposed first test compares the same seeds with ordinary chat/history versus a reconstructed semantic space, repeated with different and deliberately narrow seed sets. It is not yet executed.
+
+First experiments must work through **manual chat/script exchanges** because the user cannot automatically call advanced LLMs from the pipeline. Preserve user direction and record transfers/interventions. API integration is not required to investigate the method.
+
+This selects the entry route without freezing a representation, space-expansion algorithm or initial count. Earlier concepts-before-cases and source/expert/hybrid constructors remain research alternatives rather than current starting requirements.
 
 ## Current authority — October 26
 
@@ -93,7 +105,7 @@ Preserve the explicit no-cross-mass department-split hard requirement in the sch
 5. **Revision:** How can evidence or a new user concern change the representation without erasing alternatives or making comparisons misleading?
 6. **Evaluation:** Does the construction method improve actual navigation and valid candidate generation beyond useful descriptions, diverse memory and contextual retrieval?
 
-No construction approach is selected yet. The immediate deliverable is a comparison of candidate methods and a small discriminating experiment before full-system implementation.
+Seed-first construction is now the selected starting route; its representation and expansion mechanisms are unresolved. The next methodological deliverable is a small discriminating experiment, including different seed sets, before full-system implementation.
 
 ## 6. Research guardrails and comparisons
 
@@ -129,6 +141,6 @@ The untested-semantic-space principle has precedents. The potential architectura
 
 ## 9. Step 1 clarification — research session 2026-10-13
 
-The user selected **concepts and relationships**, **relational navigation**, and **a reusable core with a contextual project layer**. A link should primarily carry **conditional reasoning**: why concepts may support or conflict with one another, leaving the LLM to devise the particular case. These preferences do not select a graph schema or construction algorithm, and executable recipes are not required as the primary semantic content.
+The user selected **concepts and relationships**, **relational navigation**, and **a reusable core with a contextual project layer**. A link should primarily carry **conditional reasoning**: why concepts may support or conflict with one another, leaving the LLM to devise the particular case. These historical preferences did not select a graph schema or construction algorithm, and executable recipes were not required as the primary semantic content. The later seed-first decision now governs the order of construction: derive an initial account from strategic proposals, then expand it.
 
 [Construction research — pass 1](STEP03_SPACE_CONSTRUCTION_RESEARCH.md) compares expert-structured, source-grounded, evidence-induced and hybrid acquisition methods. The next clarification should use a concrete navigation example to distinguish what the core knows, what the LLM infers and what realization tests. No new implementation or architectural performance result is claimed.

@@ -1,5 +1,8 @@
 # Step 03: construction of a semantic possibility space — research pass 1
 
+> **Later decision — seed-first starting route, 2026-10-26:** The user selected [generation of strategic seeds followed by progressive semantic-space construction](STEP03_SEED_FIRST_SPACE.md). The October 13 concepts-before-cases preference below is historical and no longer governs the immediate entry route. Preserve this review as construction-method background. Expansion beyond the seeds and robustness across initial sets are now central; first experiments must support manual chat interaction.
+
+
 > **Current status — 2026-10-26:** This October 13 review remains construction-method background. Follow the [current backbone](CURRENT_BACKBONE.md) and [user assessment](STEP03_COGNITION_AND_LLM_ASSESSMENT.md). Multiple weighted trees are a new hypothesis, not a fixed representation. Earlier relational preferences do not settle graph/embedding/latent choices. Prioritize strategic certainty, realization-budget evidence and long-iteration LLM behavior. Feedback revision remains part of interaction/prompting; no new representation-learning subsystem is selected.
 
 

@@ -6,7 +6,9 @@
 
 Follow the [current backbone](docs/CURRENT_BACKBONE.md) and [project memo](docs/PROJECT_MEMO.md). Preserve prior ME/ME 2.0 work while focusing the contribution on **constructing a smart semantic architectural possibility space and enabling an existing LLM to navigate it intelligently**.
 
-1. Explore abstract strategies in the space while iterative user briefs guide navigation.
+**Selected starting approach:** [seed-first space construction](docs/STEP03_SEED_FIRST_SPACE.md). Ask an existing LLM for a small set of distinct, brief-responsive strategies (five initially suggested), reconstruct an initial semantic space from them, and investigate how its boundary can expand beyond those seeds. First experiments use manual chat/script exchanges; advanced-LLM API access is not required.
+
+1. Generate strategic seeds against the brief, build their initial semantic relationships, and extend exploration under iterative user briefs.
 2. Shortlist strategies, then develop selected ones into real dimensions and arrangements.
 3. Use further selections/briefs to revise, archive and focus existing cases, or re-search the broader space for a better strategic landing.
 4. Evolve, realize and test again toward a local optimum under the current brief and preferences.
@@ -15,7 +17,7 @@ This is a revisable research backbone. Develop a script/method and supporting to
 
 The [October 26 research assessment](docs/STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. Multiple weighted strategy trees selected through ongoing briefs are a candidate structure. Semantic control is supporting theory; adaptive revision remains an interaction/prompting concern; prioritized replay is retained. Strategic certainty/realization budgets and long-chat degradation are high priorities. No tree algorithm, confidence formula or context-reset policy is selected.
 
-CSP is no longer required as the main sampler/shortlist gate; independent constraint enforcement remains essential. ME axes, MCTS and BO are optional components to evaluate. Representation and construction remain open.
+CSP is no longer required as the main sampler/shortlist gate; independent constraint enforcement remains essential. ME axes, MCTS and BO are optional components to evaluate. Seed-first construction is the selected entry point; representation and expansion mechanisms remain open.
 
 The earlier framework and experiments below remain foundations. Current priorities follow the backbone and user assessment; the audit correction still governs pilot performance claims.
 
