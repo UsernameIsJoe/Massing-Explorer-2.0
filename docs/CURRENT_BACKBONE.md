@@ -39,6 +39,16 @@ Accepted: 2026-10-26. This is the current baseline to develop and test, and rema
 
 Narrowing is reversible. Realization and user feedback can return the process to strategic search and boundary revision. A meaningful boundary update introduces an architectural option, consequence or distinction that could affect a decision; labels or subdivisions alone do not establish useful expansion.
 
+## Current focus — analytical axes for Steps 02 and 03
+
+The user approved the [axis-based evaluation and expansion research plan](STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Treat Step 01's confirmed brief as available; resolve Steps 02 and 03 before developing Step 04 onward in detail.
+
+Step 02 will compare prompt style and initial count using mixed-type **descriptive strategic axes**, separate quality/compliance checks, and deterministic separation, redundancy, reference/combination coverage, stability and cost measurements. Gower-style dissimilarity is the starting candidate; exact axes, encodings, weights, prompts, counts and thresholds remain to be specified. Coordinates are conditional on explicit modelling choices, not interpretation-free architectural truth.
+
+Step 03 continues those axes: populate relevant within-axis alternatives, coupled changes and opposing commitments around each seed, retaining semantic meanings, dependencies and transformation history. Preserve reframing beyond shared seed assumptions. Seeds and related cases anchor an explored region; they do not certify all intermediate combinations or architectural completeness. A node/link account and constraint-based construction are candidate supports; the exact implicit boundary/membership rule is unresolved.
+
+Freeze evaluation axes across compared runs while versioning working-space extensions. Begin with a controlled independent reference benchmark, then test transfer; preserve the existing program, whole-department rule and audit qualifications. Quality-diversity, In-context QD, mixed-data distance, combinatorial coverage, morphological analysis and attribute exploration supply component precedents, not proof of the full method. Manual chat remains the operating constraint. No implementation or experiment has been executed for this plan.
+
 ## Multiple strategy trees — proposal to investigate
 
 The user proposed multiple trees operating with weights suggesting promise. Continued briefs help decide which trees to include, exclude or revisit. The answer is not a median or average across all trees.
@@ -75,6 +85,6 @@ A finite/exhaustive space requires a declared bounded domain, not a claim to cov
 
 ## Current priorities and boundaries
 
-The [research assessment](STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. Start with the [seed-first comparison](STEP03_SEED_FIRST_SPACE.md), including different/narrow seed sets and manual interaction. Investigate dynamic expansion, the multiple-tree hypothesis, strategic certainty/budget allocation, prioritized revisiting and conversation aging through small discriminating experiments.
+The [research assessment](STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. The immediate focus is the [Steps 02–03 axis-based research plan](STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Retain the [seed-first comparison](STEP03_SEED_FIRST_SPACE.md) as the broader validation context, including different/narrow seed sets and manual interaction. Investigate dynamic expansion, the multiple-tree hypothesis, strategic certainty/budget allocation, prioritized revisiting and conversation aging through small discriminating experiments.
 
 Preserve the benchmark's whole-department/no-cross-mass-split constraint, independent checks, frozen results and audit qualifications. Representation, construction, search policy and stopping criteria remain open.

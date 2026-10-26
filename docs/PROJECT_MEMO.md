@@ -6,6 +6,16 @@ Sources: October 26 user directions, backbone and research responses; October 13
 
 This memo records the current working direction for future project work. It supersedes the assumption that Step 1 is simply asking an LLM to build a sample space, and the earlier development sequence that made toolkit/MCP extraction the immediate Step 03 task. It does not change historical experiments or claim a new pipeline has been implemented.
 
+## Current focus — analytical axes for Steps 02 and 03
+
+The user approved the [axis-based evaluation and expansion research plan](STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Treat Step 01's confirmed brief as available; resolve Steps 02 and 03 before developing Step 04 onward in detail.
+
+Step 02 will compare prompt style and initial count using mixed-type **descriptive strategic axes**, separate quality/compliance checks, and deterministic separation, redundancy, reference/combination coverage, stability and cost measurements. Gower-style dissimilarity is the starting candidate; exact axes, encodings, weights, prompts, counts and thresholds remain to be specified. Coordinates are conditional on explicit modelling choices, not interpretation-free architectural truth.
+
+Step 03 continues those axes: populate relevant within-axis alternatives, coupled changes and opposing commitments around each seed, retaining semantic meanings, dependencies and transformation history. Preserve reframing beyond shared seed assumptions. Seeds and related cases anchor an explored region; they do not certify all intermediate combinations or architectural completeness. A node/link account and constraint-based construction are candidate supports; the exact implicit boundary/membership rule is unresolved.
+
+Freeze evaluation axes across compared runs while versioning working-space extensions. Begin with a controlled independent reference benchmark, then test transfer; preserve the existing program, whole-department rule and audit qualifications. Quality-diversity, In-context QD, mixed-data distance, combinatorial coverage, morphological analysis and attribute exploration supply component precedents, not proof of the full method. Manual chat remains the operating constraint. No implementation or experiment has been executed for this plan.
+
 ## Latest acceptance — eight-step pipeline baseline, October 26
 
 The user accepted the [eight-step pipeline](CURRENT_BACKBONE.md#accepted-eight-step-pipeline-baseline) as the baseline to work from. It develops the seed-first decision below into: confirmed brief; distinctive strategic seeds; semantic space/boundary construction; iterative exploration and expansion; maturity assessment before narrowing; realization/testing; revise/focus/archive or re-search; and final case presentation.

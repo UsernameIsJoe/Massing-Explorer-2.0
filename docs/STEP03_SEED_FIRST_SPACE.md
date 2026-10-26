@@ -36,6 +36,16 @@ Record lineage, brief changes, boundary updates, checks and decisions throughout
 
 Seeds are hypotheses, not automatically compliant designs. Preserve the active school's whole-department/no-cross-mass-split rule. Cheap feasibility probes and strategic confidence before full realization remain important research topics.
 
+## Current focus — analytical axes for Steps 02 and 03
+
+The user approved the [axis-based evaluation and expansion research plan](STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Treat Step 01's confirmed brief as available; resolve Steps 02 and 03 before developing Step 04 onward in detail.
+
+Step 02 will compare prompt style and initial count using mixed-type **descriptive strategic axes**, separate quality/compliance checks, and deterministic separation, redundancy, reference/combination coverage, stability and cost measurements. Gower-style dissimilarity is the starting candidate; exact axes, encodings, weights, prompts, counts and thresholds remain to be specified. Coordinates are conditional on explicit modelling choices, not interpretation-free architectural truth.
+
+Step 03 continues those axes: populate relevant within-axis alternatives, coupled changes and opposing commitments around each seed, retaining semantic meanings, dependencies and transformation history. Preserve reframing beyond shared seed assumptions. Seeds and related cases anchor an explored region; they do not certify all intermediate combinations or architectural completeness. A node/link account and constraint-based construction are candidate supports; the exact implicit boundary/membership rule is unresolved.
+
+Freeze evaluation axes across compared runs while versioning working-space extensions. Begin with a controlled independent reference benchmark, then test transfer; preserve the existing program, whole-department rule and audit qualifications. Quality-diversity, In-context QD, mixed-data distance, combinatorial coverage, morphological analysis and attribute exploration supply component precedents, not proof of the full method. Manual chat remains the operating constraint. No implementation or experiment has been executed for this plan.
+
 ## Central research problem: moving beyond the seeds
 
 The core question is:

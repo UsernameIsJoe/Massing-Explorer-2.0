@@ -21,6 +21,8 @@ The [accepted eight-step pipeline baseline](docs/CURRENT_BACKBONE.md#accepted-ei
 
 Record case lineage, brief changes, boundary revisions, checks and decisions throughout. Manual chat/script exchanges remain the initial operating mode.
 
+**Immediate research focus:** [Steps 02–03: axis-based evaluation and seed expansion](docs/STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Compare initial counts and prompt styles using explicit strategic coordinates and analytical diversity/coverage measurements; investigate related-case expansion into a provisional semantic space. Exact axes and boundary rules still need specification and validation. Defer detailed Step 04 onward development until these foundations are resolved.
+
 This is a revisable research backbone. Develop a script/method and supporting tools for existing LLMs. Detailed realization follows shortlisting; cheap probes and the strategic certainty needed beforehand are important open questions.
 
 The [October 26 research assessment](docs/STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. Multiple weighted strategy trees selected through ongoing briefs are a candidate structure. Semantic control is supporting theory; adaptive revision remains an interaction/prompting concern; prioritized replay is retained. Strategic certainty/realization budgets and long-chat degradation are high priorities. No tree algorithm, confidence formula or context-reset policy is selected.
