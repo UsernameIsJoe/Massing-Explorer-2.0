@@ -1,5 +1,8 @@
 # Step 03 research review: an evolving strategy map for LLM–ME design
 
+> **Current status — 2026-10-26:** Preserve this earlier research/code assessment. The [current backbone](CURRENT_BACKBONE.md) and [six user responses](STEP03_COGNITION_AND_LLM_ASSESSMENT.md) govern current priorities. The core remains the semantic initial space and smart interaction with an existing LLM. October 26 is not a project reset; earlier representation/update proposals are not approved implementation requirements.
+
+
 > **Direction clarification — 2026-10-13:** Step 1 is research into a method/pipeline for constructing the semantic possibility space; construction is not assigned to an LLM by default. The space can reference untested possibilities, and the LLM's navigation/generation is evaluated separately from its construction. The updated three-part structure, optional roles of CSP/axes/MCTS/BO, and newer direct precedents are recorded in the [project memo](PROJECT_MEMO.md). Interpret illustrative construction suggestions in this October 8 review as candidate approaches, not selected architecture.
 
 Research date: 2026-10-08. Original repository: [UsernameIsJoe/Massing-Explorer](https://github.com/UsernameIsJoe/Massing-Explorer), pinned at [cd4113fc642e81531f3a52908f5b3b390022dd86](https://github.com/UsernameIsJoe/Massing-Explorer/tree/cd4113fc642e81531f3a52908f5b3b390022dd86). Repository access confirmed; the head remained unchanged at the final repository check. This review uses the original implementation and primary research literature, not ME 2.0 as an architectural template or its pilot scores as evidence.

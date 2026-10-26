@@ -1,10 +1,24 @@
 # ME 2.0 project memo — semantic possibility space
 
-Updated: 2026-10-13 (America/New_York).
+Updated: 2026-10-26 (America/New_York).
 Status: agreed research direction; construction method and performance benefits remain open.
-Source: the October 13 project discussion and the October 8 research review.
+Sources: October 26 user directions, backbone and research responses; October 13 project discussion; October 8 research review.
 
 This memo records the current working direction for future project work. It supersedes the assumption that Step 1 is simply asking an LLM to build a sample space, and the earlier development sequence that made toolkit/MCP extraction the immediate Step 03 task. It does not change historical experiments or claim a new pipeline has been implemented.
+
+## Current authority — October 26
+
+The [current backbone](CURRENT_BACKBONE.md) records the latest workflow and nine governing directions. The [cognition/ML assessment](STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records the subsequent six user responses. They govern current priorities where earlier proposals differ.
+
+Preserve prior ME/ME 2.0 work. The core is the semantic initial sample space and smart interaction with an existing LLM through a script/method and supporting tools. A new LLM is not the deliverable.
+
+The active workflow is **semantic strategy search under iterative briefs → shortlist → dimensional realization → user selection/brief → revise/archive/focus existing cases and/or re-search the broader space → evolve and test → contextual local optimum**. It remains revisable.
+
+The user proposes multiple trees weighted by promise and selected through ongoing briefs, not an average/median across trees. This is a candidate mechanism, not a chosen schema, MCTS policy or model ensemble.
+
+Retain semantic control as supporting theory and prioritized replay as a useful concept. Adaptive language-guided revision remains interaction/prompting background, not a selected structural addition. Prioritize **strategic certainty before realization, realization effort associated with confidence and interest, and degradation/anchoring during long LLM interactions**. Evidence, thresholds, budget policies and context-renewal mechanisms require discussion/testing.
+
+The three-part structure below remains compatible background. Its October 13 proposed next clarification is historical; the October 26 notes now set priorities. Construction and representation remain open; neuroscience/ML analogies are not architectural validation.
 
 ## 1. What the pseudo sample space means
 

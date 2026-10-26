@@ -2,17 +2,22 @@
 
 > **Audit correction:** Batch 01 did not receive the intended no-cross-mass department-split rule. Matched-constraints performance conclusions are withdrawn; see the correction section and constraint audit.
 
-## Current project direction — 2026-10-13
+## Current project direction — 2026-10-26
 
-[Project memo](docs/PROJECT_MEMO.md) records the latest agreed direction:
+Follow the [current backbone](docs/CURRENT_BACKBONE.md) and [project memo](docs/PROJECT_MEMO.md). Preserve prior ME/ME 2.0 work while focusing the contribution on **constructing a smart semantic architectural possibility space and enabling an existing LLM to navigate it intelligently**.
 
-1. **Research a method/pipeline to construct a semantic space of architectural possibilities**, including untested possibilities. The construction method is open; it is not assigned to an LLM by default.
-2. **Test LLM navigation, candidate generation and user-driven iteration** within that space. ME axes and explicit search algorithms are optional components to evaluate.
-3. **Learn, refine, archive and present**, continuously feeding evidence back into the space and exploration.
+1. Explore abstract strategies in the space while iterative user briefs guide navigation.
+2. Shortlist strategies, then develop selected ones into real dimensions and arrangements.
+3. Use further selections/briefs to revise, archive and focus existing cases, or re-search the broader space for a better strategic landing.
+4. Evolve, realize and test again toward a local optimum under the current brief and preferences.
 
-CSP is no longer required as the main sampler/shortlist gate in the proposed architecture; independent constraint enforcement remains essential. MCTS and BO are explicit optional algorithms, not assumed to operate inside the LLM. This is an agreed research direction, not a claim that a new pipeline has been implemented.
+This is a revisable research backbone. Develop a script/method and supporting tools for existing LLMs. Detailed realization follows shortlisting; cheap probes and the strategic certainty needed beforehand are important open questions.
 
-The earlier comparison framework and development sequence below document the initial research plan. For the immediate Step 03 priority, follow the project memo and the [research review](docs/STEP03_RESEARCH_REVIEW.md).
+The [October 26 research assessment](docs/STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. Multiple weighted strategy trees selected through ongoing briefs are a candidate structure. Semantic control is supporting theory; adaptive revision remains an interaction/prompting concern; prioritized replay is retained. Strategic certainty/realization budgets and long-chat degradation are high priorities. No tree algorithm, confidence formula or context-reset policy is selected.
+
+CSP is no longer required as the main sampler/shortlist gate; independent constraint enforcement remains essential. ME axes, MCTS and BO are optional components to evaluate. Representation and construction remain open.
+
+The earlier framework and experiments below remain foundations. Current priorities follow the backbone and user assessment; the audit correction still governs pilot performance claims.
 
 This project investigates three questions:
 
@@ -295,7 +300,7 @@ The intended no-cross-mass department-split hard rule was omitted from the Batch
 
 ## Step 03 concept research
 
-[Current project memo — October 13](docs/PROJECT_MEMO.md) clarifies that constructing the space is a method-development research task, with the constructor's role and representation still open.
+[Current project memo — October 26](docs/PROJECT_MEMO.md) clarifies that constructing the space is a method-development research task, with the constructor's role and representation still open.
 
 
 [Critical research review: an evolving semantic strategy map](docs/STEP03_RESEARCH_REVIEW.md) assesses the proposed pseudo sample space against the original Massing Explorer pipeline and primary literature. It covers close precedents, limits of semantic abstraction, conditional breadth/depth mathematics, failure modes, and controlled experiments for changing user intent.

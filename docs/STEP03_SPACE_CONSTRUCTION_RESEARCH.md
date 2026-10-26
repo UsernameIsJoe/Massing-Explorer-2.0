@@ -1,5 +1,8 @@
 # Step 03: construction of a semantic possibility space — research pass 1
 
+> **Current status — 2026-10-26:** This October 13 review remains construction-method background. Follow the [current backbone](CURRENT_BACKBONE.md) and [user assessment](STEP03_COGNITION_AND_LLM_ASSESSMENT.md). Multiple weighted trees are a new hypothesis, not a fixed representation. Earlier relational preferences do not settle graph/embedding/latent choices. Prioritize strategic certainty, realization-budget evidence and long-iteration LLM behavior. Feedback revision remains part of interaction/prompting; no new representation-learning subsystem is selected.
+
+
 Research date: 2026-10-13. Status: exploratory synthesis, not a selected construction algorithm or implemented capability.
 
 ## 1. User clarifications obtained in this session
