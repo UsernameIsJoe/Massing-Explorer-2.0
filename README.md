@@ -8,10 +8,18 @@ Follow the [current backbone](docs/CURRENT_BACKBONE.md) and [project memo](docs/
 
 **Selected starting approach:** [seed-first space construction](docs/STEP03_SEED_FIRST_SPACE.md). Ask an existing LLM for a small set of distinct, brief-responsive strategies (five initially suggested), reconstruct an initial semantic space from them, and investigate how its boundary can expand beyond those seeds. First experiments use manual chat/script exchanges; advanced-LLM API access is not required.
 
-1. Generate strategic seeds against the brief, build their initial semantic relationships, and extend exploration under iterative user briefs.
-2. Shortlist strategies, then develop selected ones into real dimensions and arrangements.
-3. Use further selections/briefs to revise, archive and focus existing cases, or re-search the broader space for a better strategic landing.
-4. Evolve, realize and test again toward a local optimum under the current brief and preferences.
+The [accepted eight-step pipeline baseline](docs/CURRENT_BACKBONE.md#accepted-eight-step-pipeline-baseline) is:
+
+1. Interpret and confirm the brief.
+2. Generate X distinctive strategic cases with stable coverage of meaningful differences.
+3. Construct their initial semantic space and boundary.
+4. Explore and update the boundary through user input, including probes beyond shared seed assumptions.
+5. Assess exploration maturity before narrowing; boundary stability alone is insufficient.
+6. Realize and test shortlisted strategies, with cheap earlier feasibility probes when needed.
+7. Revise, focus, archive, or re-search; narrowing remains reversible.
+8. Present the selected case, trade-offs and uncertainty.
+
+Record case lineage, brief changes, boundary revisions, checks and decisions throughout. Manual chat/script exchanges remain the initial operating mode.
 
 This is a revisable research backbone. Develop a script/method and supporting tools for existing LLMs. Detailed realization follows shortlisting; cheap probes and the strategic certainty needed beforehand are important open questions.
 

@@ -22,18 +22,22 @@ The priority is **dynamic boundary expansion**, including recovery from narrow/d
 
 The user has chat-only access for this work and cannot automatically invoke advanced LLMs from the pipeline. Begin with manual chat/script exchanges, recording user intervention and transfer cost; API integration is optional later work.
 
-## Current workflow
+## Accepted eight-step pipeline baseline
 
-1. **Seed strategies and initial semantic space.** Generate brief-responsive strategic proposals with an existing LLM, reconstruct their meaningful relationships, and keep the space expandable before detailed dimensional realization.
-2. **Exploration with iterative briefs.** The LLM obtains or composes strategies, navigates and searches the space, and responds to repeated user input.
-3. **Strategy shortlist.** Choose directions worth developing. The required level of strategic certainty and useful cheap checks remain to be established.
-4. **Realization.** The LLM develops selected strategies into real dimensions and arrangements, using relevant computational tools and checks.
-5. **Further user input.** Selections and/or updated briefs guide subsequent work.
-6. **Revise/archive/focus.** Develop existing listed cases while preserving useful alternatives and evidence.
-7. **Re-search.** Reopen the broader sample space to seek a better strategic landing; work is not confined to variants of the current favorite.
-8. **Evolve and test again.** Iterate development, realization, feedback and search toward a contextual local optimum.
+Accepted: 2026-10-26. This is the current baseline to develop and test, and remains revisable as research progresses. It specifies the workflow, not a finished algorithm or demonstrated performance result.
 
-Feedback can occur throughout. The endpoint depends on current intent, constraints, explored alternatives and budget; a stopping rule and evidence of local optimality remain research questions. Cheap targeted probes can inform shortlisting without fully realizing every possibility.
+1. **Interpret and confirm the brief.** Separate requirements, limitations, preferences and unresolved questions. Keep this understanding updated throughout.
+2. **Generate X initial strategic cases.** Each expresses a clear strategy; together they cover meaningful differences and tensions in the brief. Across runs, seek stable strategic coverage rather than identical cases. Five remains an example, not a fixed count or a claim of exhaustive coverage.
+3. **Construct the initial semantic space and boundary.** Identify shared commitments, differences, conditional relationships and possible transformations. Include uninstantiated possibilities suggested by the seeds.
+4. **Explore through repeated user input.** Use selections and revised briefs to develop cases, investigate alternatives and update the boundary. Deliberately probe beyond the seeds' shared assumptions.
+5. **Check whether exploration is mature enough to narrow.** Consider boundary stability, diminishing useful discoveries, results of expansion attempts and whether user concerns are addressed. Narrow to a shortlist when further exploration offers limited expected value. Stability alone is insufficient; it can also indicate stagnation. Exact criteria and thresholds remain to be researched.
+6. **Realize and test shortlisted strategies.** Develop actual dimensions and arrangements, evaluate constraints and consequences, and obtain further user feedback. Allow cheap feasibility probes before this stage when needed.
+7. **Revise, focus, archive—or re-search.** Improve promising cases and retain alternatives. Reopen strategic exploration when realization or feedback exposes a better direction or an inadequate boundary. Repeat toward a local optimum under the current brief.
+8. **Present the selected case and its trade-offs.** Explain the basis for selection and remaining uncertainty.
+
+**Throughout:** record case lineage, brief changes, boundary updates, checks and decisions as they happen. Final output draws on this accumulated history. Keep the process workable through manual chat/script exchanges with existing LLMs.
+
+Narrowing is reversible. Realization and user feedback can return the process to strategic search and boundary revision. A meaningful boundary update introduces an architectural option, consequence or distinction that could affect a decision; labels or subdivisions alone do not establish useful expansion.
 
 ## Multiple strategy trees — proposal to investigate
 

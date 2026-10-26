@@ -6,6 +6,14 @@ Sources: October 26 user directions, backbone and research responses; October 13
 
 This memo records the current working direction for future project work. It supersedes the assumption that Step 1 is simply asking an LLM to build a sample space, and the earlier development sequence that made toolkit/MCP extraction the immediate Step 03 task. It does not change historical experiments or claim a new pipeline has been implemented.
 
+## Latest acceptance — eight-step pipeline baseline, October 26
+
+The user accepted the [eight-step pipeline](CURRENT_BACKBONE.md#accepted-eight-step-pipeline-baseline) as the baseline to work from. It develops the seed-first decision below into: confirmed brief; distinctive strategic seeds; semantic space/boundary construction; iterative exploration and expansion; maturity assessment before narrowing; realization/testing; revise/focus/archive or re-search; and final case presentation.
+
+Boundary stability is one maturity signal, not sufficient evidence to stop. Deliberate expansion attempts, useful discoveries and current user concerns also matter. Cheap feasibility probes may precede detailed realization. Realization or feedback can reopen the boundary and strategic search. Record history throughout rather than only at output.
+
+This workflow is now accepted; representation, seed count, boundary construction/update mechanisms, maturity thresholds, confidence/budget policies and stopping criteria still require development and testing. Manual chat/script interaction remains the practical constraint. No implementation or experimental result is claimed.
+
 ## Latest decision — seed-first entry, October 26
 
 The user chose to start with [LLM-generated strategic seeds and progressive space construction](STEP03_SEED_FIRST_SPACE.md). Generate a small set of distinct proposals against the active brief (five initially suggested), derive an initial semantic account, and research how to extend its boundary as new briefs and evidence arrive.

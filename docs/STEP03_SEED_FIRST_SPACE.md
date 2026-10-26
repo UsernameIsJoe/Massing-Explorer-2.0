@@ -19,15 +19,20 @@ This is the current candidate construction method within ME 2.0. It changes the 
 
 Qualifications: potentially meaningful relationships still need to be made explicit enough to preserve and test. A minimal comparable account of strategic commitments will be needed for reliable exchanges. Neither a new comprehensive schema nor universal causal rules follow from five examples. The initial brief can focus exploration while also creating framing bias.
 
-## Working sequence
+## Accepted pipeline baseline
 
-1. Supply the active brief and request a small set of strategically distinct proposals, with enough organizational detail to compare commitments. Full dimensional realization can wait.
-2. Identify shared assumptions, important differences, conditional relationships and unresolved questions across the proposals.
-3. Construct an initial semantic account in which the seeds, their relationships and uninstantiated directions are referenceable.
-4. Use it to guide further strategy exploration under repeated user briefs and selections.
-5. Shortlist selected strategies, then realize their dimensions and arrangements using appropriate tools and checks.
-6. Continue revise/archive/focus among listed cases and re-search the broader space for a better landing.
-7. Evolve, test and revise both strategies and the semantic account, toward a local optimum under the current brief, constraints and budget.
+The user accepted the [eight-step pipeline in the current backbone](CURRENT_BACKBONE.md#accepted-eight-step-pipeline-baseline) as the baseline to develop. It refines the initial working sequence here without changing the seed-first entry.
+
+1. Interpret and confirm the brief.
+2. Generate X clear, strategically distinctive cases; seek stable coverage across runs.
+3. Construct their initial semantic space and boundary.
+4. Explore with repeated user input and deliberate boundary-expansion probes.
+5. Assess maturity using stability, diminishing useful discoveries, expansion attempts and user concerns before narrowing.
+6. Realize and test shortlisted strategies, with cheap earlier probes where useful.
+7. Revise, focus, archive or re-search; return to strategic exploration when realization or feedback warrants it.
+8. Present the selected case with trade-offs and uncertainty.
+
+Record lineage, brief changes, boundary updates, checks and decisions throughout. Boundary stability alone cannot distinguish maturity from stagnation. Narrowing stays reversible. The detailed mechanisms and thresholds remain research questions.
 
 Seeds are hypotheses, not automatically compliant designs. Preserve the active school's whole-department/no-cross-mass-split rule. Cheap feasibility probes and strategic confidence before full realization remain important research topics.
 
