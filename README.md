@@ -2,7 +2,7 @@
 
 > **Audit correction:** Batch 01 did not receive the intended no-cross-mass department-split rule. Matched-constraints performance conclusions are withdrawn; see the correction section and constraint audit.
 
-## Current project direction — 2026-10-26
+## Current project direction — 2026-10-27
 
 Follow the [current backbone](docs/CURRENT_BACKBONE.md) and [project memo](docs/PROJECT_MEMO.md). Preserve prior ME/ME 2.0 work while focusing the contribution on **constructing a smart semantic architectural possibility space and enabling an existing LLM to navigate it intelligently**.
 
@@ -21,7 +21,7 @@ The [accepted eight-step pipeline baseline](docs/CURRENT_BACKBONE.md#accepted-ei
 
 Record case lineage, brief changes, boundary revisions, checks and decisions throughout. Manual chat/script exchanges remain the initial operating mode.
 
-**Immediate research focus:** [Steps 02–03: axis-based evaluation and seed expansion](docs/STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Compare initial counts and prompt styles using explicit strategic coordinates and analytical diversity/coverage measurements; investigate related-case expansion into a provisional semantic space. Exact axes and boundary rules still need specification and validation. Defer detailed Step 04 onward development until these foundations are resolved.
+**Immediate research focus:** [Steps 02–03: analytical seed evaluation and broad initial scope construction](docs/STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Compare prompt styles/counts using explicit strategic coordinates. Expand toward brief-relevant diversity across dimensions, rather than similarity or local clusters. Covering-array extension and maximum coverage are experimental tools, not a chosen conceptual spine. Compare ordinary LLM broadening, algorithmic coverage and hybrid expansion; investigate local-model automation and occasional advanced-model batches. No new implementation or results. Defer detailed Step 04 onward work.
 
 This is a revisable research backbone. Develop a script/method and supporting tools for existing LLMs. Detailed realization follows shortlisting; cheap probes and the strategic certainty needed beforehand are important open questions.
 

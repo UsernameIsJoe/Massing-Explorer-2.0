@@ -1,20 +1,30 @@
 # ME 2.0 project memo — semantic possibility space
 
-Updated: 2026-10-26 (America/New_York).
+Updated: 2026-10-27 (America/New_York).
 Status: seed-first construction selected as the starting approach; representation, expansion mechanisms and performance benefits remain open.
-Sources: October 26 user directions, backbone and research responses; October 13 project discussion; October 8 research review.
+Sources: October 27 scope/cost clarification and method/progress review; October 26 directions and research responses; October 13 discussion; October 8 research review.
 
 This memo records the current working direction for future project work. It supersedes the assumption that Step 1 is simply asking an LLM to build a sample space, and the earlier development sequence that made toolkit/MCP extraction the immediate Step 03 task. It does not change historical experiments or claim a new pipeline has been implemented.
 
-## Current focus — analytical axes for Steps 02 and 03
+## Current focus — Steps 02 and 03, October 27
 
-The user approved the [axis-based evaluation and expansion research plan](STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Treat Step 01's confirmed brief as available; resolve Steps 02 and 03 before developing Step 04 onward in detail.
+Follow the [updated axis-based evaluation and scope-construction plan](STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Step 01's confirmed brief is available; defer detailed Step 04 onward development.
 
-Step 02 will compare prompt style and initial count using mixed-type **descriptive strategic axes**, separate quality/compliance checks, and deterministic separation, redundancy, reference/combination coverage, stability and cost measurements. Gower-style dissimilarity is the starting candidate; exact axes, encodings, weights, prompts, counts and thresholds remain to be specified. Coordinates are conditional on explicit modelling choices, not interpretation-free architectural truth.
+**Step 02:** compare prompt styles and seed counts through mixed-type descriptive axes, separate compliance/quality assessment, and analytical separation, redundancy, coverage, stability and cost measurements. A minimal encoding is the next prerequisite. More seeds usually bring more coverage; assess marginal gain and cost, and downstream usefulness. No optimal count, axis list, weights or thresholds have been established.
 
-Step 03 continues those axes: populate relevant within-axis alternatives, coupled changes and opposing commitments around each seed, retaining semantic meanings, dependencies and transformation history. Preserve reframing beyond shared seed assumptions. Seeds and related cases anchor an explored region; they do not certify all intermediate combinations or architectural completeness. A node/link account and constraint-based construction are candidate supports; the exact implicit boundary/membership rule is unresolved.
+**Step 03 clarification:** build sufficient initial strategic scope across dimensions. Added cases need a substantive brief/strategic connection on some dimension or level, but can be far from all seeds. Similarity retrieval, clustering and local variants are not the goal. Later boundary changes are expected to be mainly refinements; retain substantial reopening if evidence exposes major omissions.
 
-Freeze evaluation axes across compared runs while versioning working-space extensions. Begin with a controlled independent reference benchmark, then test transfer; preserve the existing program, whole-department rule and audit qualifications. Quality-diversity, In-context QD, mixed-data distance, combinatorial coverage, morphological analysis and attribute exploration supply component precedents, not proof of the full method. Manual chat remains the operating constraint. No implementation or experiment has been executed for this plan.
+Constrained covering-array extension (IPOG/ACTS) and weighted maximum coverage are candidate generation/selection tools. They expose gaps within declared vocabulary, not missing architectural principles. Retain independent semantic challenges beyond shared seed assumptions. Neither algorithm is adopted as the conceptual spine; a useful boundary/membership rule and sufficient scope remain unvalidated.
+
+Prefer ordinary algorithms for encoded variation, checks and measurements. Test local models through Ollama for routine language work, reserving advanced-model chat batches for difficult synthesis or missing concepts. No per-case advanced call requirement or proven routing policy. Record manual time and semantic errors.
+
+The proposed next comparison uses the existing school brief and repeated seed sets: ordinary LLM broadening, algorithmic coverage, and hybrid gap-guided expansion at comparable budgets. Check valid new strategies, missing distinctions, encoding failures and total effort. Preserve the whole-department rule and audit qualifications. This is research progress, not implementation or demonstrated benefit.
+
+## Progress review — October 27
+
+The assistant's candid assessment is that Step 02 is ready for a small prototype once minimally encoded; Step 03 remains the likely contribution and largest uncertainty. Numerical diversity may measure minor distinctions, and a coverage plateau may reflect a narrow vocabulary. Combining strategic labels does not establish coherent architecture.
+
+Do not rebuild the original restricted-space limitation through a comprehensive fixed ontology and rules before testing. Axes support comparison, algorithms detect gaps/manage collections, and architectural reasoning can introduce possibilities outside the encoding. Compare against simply asking the same LLM for more distinct schemes. No empirical superiority or completeness is claimed.
 
 ## Latest acceptance — eight-step pipeline baseline, October 26
 

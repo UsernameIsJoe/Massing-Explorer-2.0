@@ -1,17 +1,27 @@
 # Steps 02–03 — axis-based evaluation and seed expansion
 
-Date: 2026-10-26 (America/New_York).
-Status: user-approved research plan; no implementation, experiment, calibrated thresholds or performance result.
-Authority: the user's discussion of analytical evaluation, shared axes, and expansion from initial cases into related alternatives; subsequent acceptance of the researched plan.
+Created: 2026-10-26. Updated: 2026-10-27 (America/New_York).
+Status: user-approved research direction, with subsequent scope clarification and candidate-method review; no implementation, experiment, calibrated thresholds or performance result.
+Authority: the user's analytical-axis plan and acceptance, October 27 clarification of cross-dimensional scope, model-cost discussion and requested progress review. Method recommendations below remain proposals to test.
 Workflow authority: [current backbone](CURRENT_BACKBONE.md#accepted-eight-step-pipeline-baseline).
 Continuity: [seed-first construction](STEP03_SEED_FIRST_SPACE.md).
+
+## Latest clarification and progress assessment — October 27
+
+**Step 03 is scope construction, not similarity retrieval, clustering, or primarily local neighbourhood expansion.** Related cases can be distant in the overall coordinate system: they need a substantive connection to the brief or a seed on some strategic dimension/level, while adding missing distinctions and combinations. A shared trivial attribute alone is insufficient. Initial scope should be broad enough that later brief-guided changes are ordinarily refinements, not repeated reconstruction. This is a design expectation, not a proven stability result; retain recovery from major omissions.
+
+Step 02 is clearer and ready for a small evaluation prototype once a minimal encoding is specified. Its measurements remain conditional on that encoding. Increasing count usually increases coverage, so evaluate marginal benefit and cost; there is no demonstrated optimal count. Seed usefulness must also be tested through Step 03.
+
+Step 03 remains the main methodological uncertainty. Covering arrays and maximum coverage are useful experimental components, not a selected conceptual spine. Coherent architectural strategies must not be reduced to combinations of labels. Coverage saturation may reflect an impoverished vocabulary rather than sufficient scope.
+
+The principal risk is recreating the original restricted-space problem: a comprehensive fixed axis vocabulary plus compatibility rules could defeat the reason for starting from LLM reasoning. Use axes for comparison, algorithms for gap detection and collection management, and semantic reasoning to introduce possibilities outside the encoding.
 
 ## 1. Scope and decision
 
 For now, concentrate on pipeline Steps 02 and 03. Treat Step 01's confirmed brief as available. Defer detailed development of Step 04 onward until seed evaluation and initial-space construction are resolved; retain the accepted eight-step backbone.
 
 - **Step 02:** compare prompt styles and initial case counts using reproducible measurements of strategic diversity, coverage, compliance, stability and cost.
-- **Step 03:** continue with the same strategic axes; generate relevant alternatives around seeds, retain their semantic relationships, and investigate a provisional sample-space boundary.
+- **Step 03:** use the strategic axes to assemble a broad, brief-relevant collection across dimensions, retain semantic relationships, and investigate a sufficient provisional initial scope. Added cases need not be close to any seed.
 - Initial count X is an experimental variable. Five was an example; 3/5/8 are possible pilot levels, not selected settings or a universal optimum.
 - Use existing advanced LLMs through manual chat/script exchanges. No model training or automated advanced-model API access is required for the first tests.
 
@@ -97,63 +107,128 @@ Freeze the evaluation axes/reference across conditions. The evolving working spa
 
 A controlled benchmark enables exact conditional evaluation but limits generality. Later test transfer on the existing school program and real constraints. Preserve the whole-department/no-cross-mass-split rule. A pooled real-project reference offers estimated coverage, not an exhaustive ground truth.
 
-## 6. Step 03 — proposed expansion mechanism
+## 6. Step 03 — broad scope construction
 
-Generate semantically justified candidates through:
+The October 27 clarification supersedes neighbourhood expansion as the primary framing. Seeds are starting anchors, not centres whose immediate surroundings define the target.
 
-1. **Within-axis variation:** change one commitment while preserving others where coherent.
-2. **Coupled variation:** change multiple commitments together when dependencies require it.
-3. **Commitment reversal:** challenge a defining strategic assumption and identify consequential changes. An opponent is not automatically a numerical negative.
-4. **Reframing:** introduce a missing decision/value or shared-assumption challenge when the current coordinates cannot express it.
+### Candidate generation and collection selection are separate
 
-The first three refine the user's alternatives/families/opponents proposal. Reframing preserves the earlier requirement to escape shared seed omissions. These operations remain hypotheses, not implemented or validated architectural operators.
+- **Generation:** obtain coherent cases expressing missing strategic commitments and combinations, including directions absent from all seeds.
+- **Selection:** choose which cases add useful scope to the collection under a declared effort budget.
+- **Boundary account:** distinguish the current vocabulary, explicit constraints, represented possibilities, and unknown directions. A selected collection alone does not establish all valid architecture within a continuous region.
 
-Record parent seed(s), intended change, actual changed coordinates, dependencies, semantic rationale, expected trade-offs, and check status. An attempted one-axis change that necessarily changes other axes should be recorded as coupled rather than silently treated as independent.
+Retain within-axis changes, coupled changes and commitment reversals as optional generation operations, but do not constrain expansion to small coordinate moves or descendants of individual seeds. Cross-seed recombination and independent reframing can introduce distant but substantively relevant cases. Preserve semantic intent, conditional trade-offs and dependencies alongside coordinates.
 
-A provisional representation can use:
-- **Nodes:** seeds and generated alternatives, coordinates, semantic accounts and validation status.
-- **Links:** recorded transformations and conditional relationships.
-- **Unresolved directions:** proposed alternatives, missing combinations or distinctions awaiting investigation.
+### Relevance is distinct from proximity and preference
 
-This is a candidate operational account, not a frozen graph database/schema. Retain families as explicit hypotheses until their membership and distinguishing commitments are defined.
+A candidate must have an explicit substantive connection to the brief, such as an organizational question, intention or trade-off. Respect applicable hard requirements independently. A compliant but less-preferred strategy can still be important for defining scope.
 
-## 7. Meaning and limits of the initial boundary
+Do not use global seed similarity as an admission gate. A brief connection on one dimension can coexist with significant differences elsewhere; it does not automatically excuse hard violations or establish useful relevance. Operationalizing semantic relevance remains unresolved and may require reviewed interpretation. Unsupported backend capabilities remain separate from architectural impossibility.
 
-Seeds and checked related cases anchor an **explored region**. They do not prove that all points between them are viable or that possibilities outside them are impossible.
+### Candidate algorithm A — constrained covering-array extension
+
+IPOG-family algorithms, implemented in ACTS, construct t-way covering arrays over declared dimensions and values. ACTS documents extension of existing test sets, constraints and mixed-strength relations [10].
+
+Proposed transfer:
+1. Encode the initial seeds using a provisional vocabulary.
+2. Identify combinations of declared values not yet represented.
+3. Generate additional configurations that cover missing valid combinations; use stronger coverage for selected important interactions.
+4. Complete/interpret configurations as architectural cases where the representation is insufficient, and verify actual commitments and encoded constraints.
+5. Count coverage from the resulting case, not from the requested target coordinates.
+
+For example, centralized/vertical and distributed/horizontal seeds cover both values on both axes but omit centralized/horizontal and distributed/vertical. Missing combinations can be far from existing cases. These are illustrative labels, not adopted axes or validated architectural possibilities.
+
+**Strength:** systematic cross-dimensional breadth, with no LLM needed to manipulate already formalized decisions.
+**Limit:** known vocabulary only; pairwise coverage does not cover every higher-order strategy, establish feasibility beyond encoded rules, or guarantee semantic coherence. Numeric axes need justified discretization. ACTS is a software-testing precedent, not an architectural validation result. Do not assume every feature combination works in every tool mode/version.
+
+### Candidate algorithm B — weighted maximum coverage
+
+For candidate pool V and declared coverage targets U, let C(x) be the targets actually represented by candidate x. Targets may include individual values, valid value combinations, or explicitly defined strategic commitments.
+
+F(S) = sum_(u in U) w_u * indicator[u in union_(x in S) C(x)]
+
+Starting with the initial seeds, greedily add the candidate with the greatest remaining coverage gain under a declared case budget. A separate minimum-set-cover formulation can ask for the fewest additions meeting a target; do not conflate these objectives. Cost-sensitive selection and its guarantees require separate specification.
+
+This is an established monotone submodular coverage objective with available implementations [11]. It selects from a supplied pool; it does not invent missing cases or concepts. Its target universe and case-to-target mapping determine what the optimization means. Start with transparent/equal weights and examine sensitivity; preference weights must not silently remove useful contrasting strategies. No coverage target list or weights are locked.
+
+### Other methods assessed
+
+| Method | Position after review |
+|---|---|
+| MMR [12] | Cheap baseline balancing relevance and redundancy; not an explicit guarantee of cross-dimensional scope. |
+| DPP / k-DPP [13] | Diversity-oriented subset selection; representation/kernel design adds complexity before encoding is validated. Keep as a later comparison. |
+| Facility location [14] | Represents a supplied pool; common families can dominate a density-weighted objective. Not the primary scope criterion. |
+| MAP-Elites / In-context QD [7,8] | Useful archive/generation precedents; predefined descriptors and automated repeated calls do not directly resolve initial scope or the manual-chat budget. |
+| Novelty search [15] | Distance-based archive novelty is an optional diagnostic; sparse or distant points are not by themselves evidence of useful scope. |
+
+An initial experiment may combine covering-array extension for known dimensions, a separate batch challenging shared assumptions, and coverage-based selection. This is a research candidate, not adopted production architecture. Independent proposals must be able to introduce new values, axes or relationships rather than being forced into the initial vocabulary.
+
+## 7. Execution cost and model allocation
+
+An advanced LLM call per seed/axis/variation could create excessive manual work. The user can use advanced models through chat, and suggested automatic local-model work through Ollama. Compare ordinary algorithms before adding LLM calls.
+
+| Responsibility | Candidate allocation | Qualification |
+|---|---|---|
+| Coordinate extraction from explicit structured fields; canonicalization | Code | Ambiguous meaning must not be silently inferred |
+| Distances, coverage, deduplication and missing combinations | Code | Conditional on declared encoding |
+| Formalized variation, compatible completion and constraint checks | Code/solver such as CP-SAT [16] | Only encoded requirements and expressible cases; formulation/search cost still matters |
+| Prose extraction, routine labeling, readable explanations | Local model through Ollama [17], if tested | Model/hardware dependent; schema validity is not semantic correctness |
+| Initial coherent strategies, difficult trade-offs, missing concepts and shared-assumption challenges | Advanced LLM/user in consolidated batches | Proposed allocation, not a demonstrated requirement for the strongest available model |
+
+Keep raw structured cases as authoritative. A local model should not invent explanations that alter their commitments. Validate extracted values and audit semantic fidelity. Ollama is a runtime, not one fixed model or a guaranteed speed/capability level.
+
+A candidate economical loop is: advanced-model seed batch; automatic formalized generation/filtering/selection; optional tested local interpretation; one consolidated advanced-model review of unresolved gaps or missing concepts. No fixed call count or time saving is established. Local inference can still be slow, and preparation, repairs and manual transfer cost count.
+
+Model-cascade research supplies a cost-allocation precedent [18], not an established routing policy or performance claim for ME2. The previously proposed continuous advanced-LLM archive loop is a comparison candidate rather than the default.
+
+## 8. Boundary meaning, precedents and limits
+
+The goal is sufficient initial strategic scope, not merely an increasingly dense archive. The user's expectation is that later changes are usually modest, but evidence of a major omission must allow substantial reopening.
 
 Distinguish:
 - the currently expressible domain under the axis vocabulary;
-- generated cases and their known relationships;
-- combinations admitted or excluded by recorded constraints;
-- unresolved candidates, gaps and outside-vocabulary directions.
+- actual cases and their semantic relationships;
+- combinations admitted/excluded by explicit constraints;
+- unresolved candidates, omitted distinctions and outside-vocabulary directions.
 
-No convex-fill rule, neighbourhood radius, density threshold, learned manifold or continuous boundary estimator is selected. Research must determine which implicit membership/expansion rule is useful and testable. The node/link record alone is not a complete boundary algorithm.
+Anchors do not certify every intermediate configuration. No convex-fill rule, neighbourhood radius, learned manifold, density threshold or continuous boundary estimator is selected. A case/link record is not itself a complete membership algorithm. A scalar diversity score cannot certify boundary sufficiency.
 
-General Morphological Analysis provides an established parameter/value and cross-consistency construction precedent [5]. Pairwise checks can expose exclusions, but higher-order dependencies still need representation. Formal Concept Analysis's attribute exploration provides a precedent for testing proposed implications with confirmation/counterexamples [6]; an implication observed in a few seeds is not a universal architectural rule. LLM confirmation without independent evidence stays hypothetical.
+General Morphological Analysis [5] supports parameter/value spaces and explicit compatibility judgments. Higher-order dependencies may require more than pairwise checks. Formal Concept Analysis's attribute exploration [6] supports testing proposed implications with confirmation/counterexamples. Implications observed in a few seeds and unsupported LLM confirmations remain hypotheses.
 
-## 8. Closest ML precedents and transfer limits
+In-context QD [8] supports generation from organized examples with existing pretrained models, but uses defined features/evaluators in numerical and robotics benchmarks. QDAIF [19] demonstrates archive-based LLM variation and AI evaluation in creative writing; its subjective evaluator does not satisfy independent analytical assessment by itself. DiCE [9] supports constrained diverse alternatives but originally targets classifier-output changes and proximity; it is less directly aligned with broad initial-scope construction.
 
-- **MAP-Elites / quality-diversity [7]:** maintain alternatives located by descriptive features, with quality assessed separately. Supports the archive/axis distinction. Its fixed descriptor structure does not solve dynamic architectural axis discovery or boundary inference.
-- **In-context QD [8]:** pretrained LLMs generate candidates using organized archive examples. Supports retaining LLM capabilities while supplying external state. Benchmarks use defined descriptors/evaluators; architectural semantic transfer and manual-chat efficiency remain untested.
-- **Diverse counterfactual explanations / DiCE [9]:** generate diverse constrained alternatives around an instance. Supports principles of proximity, diversity and feasible changes. It originally changes classifier outcomes; ME2 has not chosen a classifier or adopted DiCE unchanged.
+These are component precedents. The complete seed-to-semantic-boundary method and any neuroscience correspondence remain unvalidated.
 
-The complete seed-to-semantic-boundary method is a project hypothesis assembled from supported components, not an existing proven architecture and not a claim about literal brain mechanisms.
+## 9. Proposed next experiment and progress review
 
-## 9. Validation and outstanding work
+**Current assessment:** meaningful progress in specifying the problem; Step 02 is more tractable than Step 03. No evidence yet shows that the constructed space improves architectural reasoning beyond asking for additional distinct schemes. This is the assistant's candid assessment recorded at the user's request, not an empirical result.
 
-On the controlled benchmark, hold out valid strategies from the seeds and test recovery. Measure invalid admissions, mistaken exclusions where a membership rule is available, unresolved cases, expansion cost and sensitivity to different/narrow seed sets. Compare seeds alone, ordinary additional generation, and targeted expansion under matched budgets. Do not let larger seed sets gain an uncontrolled expansion allowance per seed.
+Use the existing school program and active brief for a small discriminating comparison, preserving the whole-department/no-cross-mass-split rule. Do not repeat the earlier matched-constraints audit error.
 
-Preserve the broader same-seeds ordinary-chat/history versus semantic-space comparison in the seed-first document. Subsequent user-brief navigation is retained for later work, not developed now.
+Across multiple independent seed sets, compare equal-budget expansion conditions:
+1. **Ordinary LLM broadening:** ask for additional distinct, brief-relevant strategies.
+2. **Algorithmic coverage:** fill missing combinations within the provisional vocabulary.
+3. **Hybrid:** algorithmic gap detection plus targeted LLM generation and challenges beyond the vocabulary.
 
-Before implementation, resolve:
-1. Minimum comparable strategic encoding and the axis list/types.
-2. Deterministic mapping, canonicalization, unknown handling and semantic fidelity checks.
-3. Distance rules, scales/weights and reference-set construction.
-4. Frozen prompt variants, count levels, repeats, budgets and decision criteria.
-5. Expansion operator definitions and how recorded cases support an implicit boundary/membership rule.
-6. Independent tests showing useful recovery rather than numerical spread alone.
+Keep seed inputs and comparable information consistent within each comparison. An auxiliary algorithms-only / algorithms-plus-local-model / occasional-advanced-review ablation can investigate model allocation; it is not necessary to run every cross-product initially.
 
-The user directs the conceptual spine. Explain the mechanism and mathematics before building it. No new tests or scores are reported by this documentation update.
+Measure:
+- independently checkable valid strategic additions and semantic coherence;
+- new target/combinational coverage and marginal gain per case;
+- important distinctions omitted or collapsed by the encoding;
+- recovery from different or narrow seed sets;
+- interpretation errors and unresolved feasibility;
+- total machine cost, output length, human review, repairs and manual exchanges.
+
+A controlled reduced reference benchmark remains useful for exact conditional evaluation, held-out recovery and invalid-admission/exclusion tests. Real-brief transfer must not be confused with exhaustive ground truth. Preserve the broader same-seeds ordinary-chat/history versus semantic-space navigation comparison for later work. Do not develop Step 04 onward in detail now.
+
+### Sufficiency and stopping
+
+Coverage saturation is only evidence within the declared target vocabulary. Also test whether independent challenge proposals reveal substantive missing directions, whether the encoding distinguishes valuable alternatives, and how results change with plausible axis/weight choices. An LLM's failure to suggest anything new is not a completeness certificate.
+
+Before implementation, specify a minimal encoding and reproducible mapping, provisional target universe, distance rules, exact prompts, budgets, repeats and decision criteria. Avoid requiring a comprehensive ontology before any test. Explain mathematics and mechanisms so the user retains authorship of the conceptual spine.
+
+No algorithms, local-model setup, experiments or new performance scores were implemented by this documentation update.
 
 ## Sources checked in the discussion
 
@@ -176,3 +251,24 @@ The user directs the conceptual spine. Explain the mechanism and mathematics bef
 [9] Mothilal, Sharma and Tan (2020), [Explaining Machine Learning Classifiers through Diverse Counterfactual Examples](https://www.microsoft.com/en-us/research/publication/explaining-machine-learning-classifiers-through-diverse-counterfactual-examples/).
 
 Related foundation: Shah, Vargas-Hernandez and Smith (2003), [Metrics for Measuring Ideation Effectiveness](https://people.tamu.edu/~stevesmith/SmithCreativity/ShahVargas-HernandezSmith2002.pdf), separates quantity, quality, novelty and variety. Its design-feature choices still require explicit modelling.
+
+
+[10] NIST, [ACTS user guide](https://csrc.nist.gov/csrc/media/projects/automated-combinatorial-testing-for-software/documents/acts_user_guide_2_92.pdf): IPOG-family algorithms, extend mode, mixed strength and constraints. Version-specific documentation, not a claim about every current combination of features.
+
+[11] [submodlib set-cover objective documentation](https://submodlib.readthedocs.io/en/latest/functions/setCover.html): weighted coverage and marginal-gain selection.
+
+[12] Goldstein and Carbonell (1998), [Summarization: Using MMR for Diversity-Based Reranking and Evaluating Summaries](https://aclanthology.org/X98-1025/).
+
+[13] Kulesza and Taskar (2012), [Determinantal Point Processes for Machine Learning](https://www.alexkulesza.com/pubs/dpps_fnt12.pdf).
+
+[14] [submodlib facility-location documentation](https://submodlib.readthedocs.io/en/latest/functions/facilityLocation.html).
+
+[15] Lehman and Stanley (2011), [Abandoning Objectives: Evolution through the Search for Novelty Alone](https://www.cs.swarthmore.edu/~meeden/DevelopmentalRobotics/lehman_ecj11.pdf).
+
+[16] Google OR-Tools, [CP-SAT solver documentation](https://developers.google.com/optimization/cp/cp_solver).
+
+[17] Ollama, [structured outputs documentation](https://docs.ollama.com/capabilities/structured-outputs).
+
+[18] Chen, Zaharia and Zou, [FrugalGPT](https://arxiv.org/abs/2305.05176).
+
+[19] Bradley et al., ICLR 2024, [Quality-Diversity through AI Feedback](https://qdaif.github.io/).
