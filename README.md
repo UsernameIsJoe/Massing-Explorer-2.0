@@ -21,7 +21,9 @@ The [accepted eight-step pipeline baseline](docs/CURRENT_BACKBONE.md#accepted-ei
 
 Record case lineage, brief changes, boundary revisions, checks and decisions throughout. Manual chat/script exchanges remain the initial operating mode.
 
-**Immediate research focus:** [Steps 02–03: analytical seed evaluation and broad initial scope construction](docs/STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Compare prompt styles/counts using explicit strategic coordinates. Expand toward brief-relevant diversity across dimensions, rather than similarity or local clusters. Covering-array extension and maximum coverage are experimental tools, not a chosen conceptual spine. Compare ordinary LLM broadening, algorithmic coverage and hybrid expansion; investigate local-model automation and occasional advanced-model batches. No new implementation or results. Defer detailed Step 04 onward work.
+**Latest findings:** [Seed-count and A/B expansion proof checks, with corrected scope audit](docs/STEP02_03_PROOF_CHECK_FINDINGS.md). Eight seeds showed greater recorded breadth in one run; both A and B expanded the options observed in their five parents. A led pair-token counts; B hit all six code-selected gaps. B still used LLM generation: code-only expansion was not tested. Broader architectural boundary, quality, repeatability and cost remain unresolved. The full case records and reproducible calculations remain in the completed project handoff; this update publishes findings only.
+
+**Immediate research focus:** [Steps 02–03](docs/STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md): distinguish useful strategic scope from descriptor variety; complete the broader axis specification; investigate algorithmic expansion without repeated advanced-model calls. These proof checks did not finish the broader research program. Defer detailed Step 04 onward work.
 
 This is a revisable research backbone. Develop a script/method and supporting tools for existing LLMs. Detailed realization follows shortlisting; cheap probes and the strategic certainty needed beforehand are important open questions.
 
@@ -322,3 +324,4 @@ The direction is a research hypothesis, not an implemented capability or demonst
 ### Step 1: constructing the semantic space
 
 [Construction-method research — pass 1](docs/STEP03_SPACE_CONSTRUCTION_RESEARCH.md) reviews cross-domain precedents and candidate acquisition pipelines. The current target is a relational map of concepts and conditional reasoning, with a reusable core and project-specific layer; the construction algorithm remains open.
+

@@ -2,7 +2,7 @@
 
 Updated: 2026-10-27 (America/New_York).
 Authority: user's October 26 directions and October 27 scope/cost clarifications and research discussion.
-Status: current, revisable research backbone; not an implemented system or frozen algorithm.
+Status: current, revisable research backbone. Experimental measurements are archived; no production space constructor or frozen expansion algorithm is claimed.
 
 ## Continuity and contribution
 
@@ -38,6 +38,24 @@ Accepted: 2026-10-26. This is the current baseline to develop and test, and rema
 **Throughout:** record case lineage, brief changes, boundary updates, checks and decisions as they happen. Final output draws on this accumulated history. Keep the process workable through manual chat/script exchanges with existing LLMs.
 
 Narrowing is reversible. Realization and user feedback can return the process to strategic search and boundary revision. A meaningful boundary update introduces an architectural option, consequence or distinction that could affect a decision; labels or subdivisions alone do not establish useful expansion.
+
+## Latest evidence — seed and expansion proof checks, October 27
+
+The [findings and retrospective scope audit](STEP02_03_PROOF_CHECK_FINDINGS.md) now supersede the pre-test status below. The completed handoff preserves frozen prompts, inputs, fixtures, all 26 records, original reports and reproducible measurements. This repository update publishes analytical findings and status corrections only; it does not upload the underlying raw-response archive.
+
+- Generation rounds finished; the broader Step 02–03 research program is not complete. Only one fixed prompt protocol and one response per 3/5/8 count were checked; repeatability, prompt competition, timing/cost and a best count remain untested.
+- The actual encoding was G36 co-location, V9 occupied-floor sets and C36 direct inter-mass connections: three descriptive blocks, 81 coordinates, not the full nine-axis ME framework. Five legacy axes were not captured; the revised broader list/extraction rules were never fully frozen. No silent default-filling or geometry inference.
+- A and B each generated five additions from the same original five parents. A used ordinary LLM broadening. B used code-selected missing combinations followed by LLM generation. Code-only case expansion, full IPOG/ACTS and maximum-coverage construction were NOT tested; the broader relevant-case strategy was not disproved.
+- Eight seeds showed more recorded breadth than three/five in these single runs. Eight is a provisional breadth-oriented option, not an optimum or demonstrated efficiency improvement.
+- A added more new cross-block pair tokens (GV 246 vs 227; GC 931 vs 865; VC 152 vs 141). B represented all six supplied targets, A three. The targets recombined individually observed values; target completion and outward scope differ.
+- The retrospective audit finds all five additions in each arm outside the five seeds' observed marginal-value envelope. New coordinate/value options: A G15/V3/C2, B G14/V2/C2. Mean nearest-seed grouping distance is identical at 0.2333. Against the pooled 16 initial seeds, outside counts fall to A3/B2. These are reference-dependent scope diagnostics, not a validated architectural boundary.
+- Concrete operational alternatives and their trade-offs are documented. Neither usefulness, dimensional feasibility, a superior boundary nor architectural quality was established. Retrospective semantic checks are disclosed judgments, not objective preference scores or preregistered measures.
+
+Keep conflicts/unknowns as annotations rather than automatic seed rejection gates. Preserve the strategy-first backbone and prioritize formal algorithmic expansion without repeated advanced-model calls. Do not announce all intended tests complete or infer that relevant-case expansion failed. Further experimentation is separate work; no more generation rounds are needed to recover this archive.
+
+## Earlier research plan — before the October 27 proof checks
+
+The following planning snapshot is retained for continuity. Its proposed experiments and "no results" status do not describe the completed narrow proof checks above.
 
 ## Current focus — Steps 02 and 03, October 27
 
@@ -92,3 +110,4 @@ A finite/exhaustive space requires a declared bounded domain, not a claim to cov
 The [research assessment](STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. The immediate focus is the [Steps 02–03 axis-based research plan](STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Retain the [seed-first comparison](STEP03_SEED_FIRST_SPACE.md) as the broader validation context, including different/narrow seed sets and manual interaction. Investigate dynamic expansion, the multiple-tree hypothesis, strategic certainty/budget allocation, prioritized revisiting and conversation aging through small discriminating experiments.
 
 Preserve the benchmark's whole-department/no-cross-mass-split constraint, independent checks, frozen results and audit qualifications. Representation, construction, search policy and stopping criteria remain open.
+

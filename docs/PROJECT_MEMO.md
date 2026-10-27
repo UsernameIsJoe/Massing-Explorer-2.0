@@ -1,10 +1,28 @@
 # ME 2.0 project memo — semantic possibility space
 
 Updated: 2026-10-27 (America/New_York).
-Status: seed-first construction selected as the starting approach; representation, expansion mechanisms and performance benefits remain open.
+Status: seed-first construction selected; narrow proof checks and a retrospective audit are archived. Representation, algorithmic expansion, useful boundary construction and performance benefits remain open.
 Sources: October 27 scope/cost clarification and method/progress review; October 26 directions and research responses; October 13 discussion; October 8 research review.
 
 This memo records the current working direction for future project work. It supersedes the assumption that Step 1 is simply asking an LLM to build a sample space, and the earlier development sequence that made toolkit/MCP extraction the immediate Step 03 task. It does not change historical experiments or claim a new pipeline has been implemented.
+
+## Latest evidence — seed and expansion proof checks, October 27
+
+The [findings and retrospective scope audit](STEP02_03_PROOF_CHECK_FINDINGS.md) now supersede the pre-test status below. The completed handoff preserves frozen prompts, inputs, fixtures, all 26 records, original reports and reproducible measurements. This repository update publishes analytical findings and status corrections only; it does not upload the underlying raw-response archive.
+
+- Generation rounds finished; the broader Step 02–03 research program is not complete. Only one fixed prompt protocol and one response per 3/5/8 count were checked; repeatability, prompt competition, timing/cost and a best count remain untested.
+- The actual encoding was G36 co-location, V9 occupied-floor sets and C36 direct inter-mass connections: three descriptive blocks, 81 coordinates, not the full nine-axis ME framework. Five legacy axes were not captured; the revised broader list/extraction rules were never fully frozen. No silent default-filling or geometry inference.
+- A and B each generated five additions from the same original five parents. A used ordinary LLM broadening. B used code-selected missing combinations followed by LLM generation. Code-only case expansion, full IPOG/ACTS and maximum-coverage construction were NOT tested; the broader relevant-case strategy was not disproved.
+- Eight seeds showed more recorded breadth than three/five in these single runs. Eight is a provisional breadth-oriented option, not an optimum or demonstrated efficiency improvement.
+- A added more new cross-block pair tokens (GV 246 vs 227; GC 931 vs 865; VC 152 vs 141). B represented all six supplied targets, A three. The targets recombined individually observed values; target completion and outward scope differ.
+- The retrospective audit finds all five additions in each arm outside the five seeds' observed marginal-value envelope. New coordinate/value options: A G15/V3/C2, B G14/V2/C2. Mean nearest-seed grouping distance is identical at 0.2333. Against the pooled 16 initial seeds, outside counts fall to A3/B2. These are reference-dependent scope diagnostics, not a validated architectural boundary.
+- Concrete operational alternatives and their trade-offs are documented. Neither usefulness, dimensional feasibility, a superior boundary nor architectural quality was established. Retrospective semantic checks are disclosed judgments, not objective preference scores or preregistered measures.
+
+Keep conflicts/unknowns as annotations rather than automatic seed rejection gates. Preserve the strategy-first backbone and prioritize formal algorithmic expansion without repeated advanced-model calls. Do not announce all intended tests complete or infer that relevant-case expansion failed. Further experimentation is separate work; no more generation rounds are needed to recover this archive.
+
+## Earlier research plan — before the October 27 proof checks
+
+The following planning snapshot is retained for continuity. Its proposed experiments and "no results" status do not describe the completed narrow proof checks above.
 
 ## Current focus — Steps 02 and 03, October 27
 
@@ -172,3 +190,4 @@ The untested-semantic-space principle has precedents. The potential architectura
 The user selected **concepts and relationships**, **relational navigation**, and **a reusable core with a contextual project layer**. A link should primarily carry **conditional reasoning**: why concepts may support or conflict with one another, leaving the LLM to devise the particular case. These historical preferences did not select a graph schema or construction algorithm, and executable recipes were not required as the primary semantic content. The later seed-first decision now governs the order of construction: derive an initial account from strategic proposals, then expand it.
 
 [Construction research — pass 1](STEP03_SPACE_CONSTRUCTION_RESEARCH.md) compares expert-structured, source-grounded, evidence-induced and hybrid acquisition methods. The next clarification should use a concrete navigation example to distinguish what the core knows, what the LLM infers and what realization tests. No new implementation or architectural performance result is claimed.
+

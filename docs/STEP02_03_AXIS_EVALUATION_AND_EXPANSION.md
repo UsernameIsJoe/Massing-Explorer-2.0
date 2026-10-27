@@ -1,10 +1,28 @@
 # Steps 02–03 — axis-based evaluation and seed expansion
 
 Created: 2026-10-26. Updated: 2026-10-27 (America/New_York).
-Status: user-approved research direction, with subsequent scope clarification and candidate-method review; no implementation, experiment, calibrated thresholds or performance result.
+Status: user-approved direction; narrow proof-check results and retrospective scope audit now available. No validated boundary, production expansion method or calibrated thresholds.
 Authority: the user's analytical-axis plan and acceptance, October 27 clarification of cross-dimensional scope, model-cost discussion and requested progress review. Method recommendations below remain proposals to test.
 Workflow authority: [current backbone](CURRENT_BACKBONE.md#accepted-eight-step-pipeline-baseline).
 Continuity: [seed-first construction](STEP03_SEED_FIRST_SPACE.md).
+
+## Latest evidence — seed and expansion proof checks, October 27
+
+The [findings and retrospective scope audit](STEP02_03_PROOF_CHECK_FINDINGS.md) now supersede the pre-test status below. The completed handoff preserves frozen prompts, inputs, fixtures, all 26 records, original reports and reproducible measurements. This repository update publishes analytical findings and status corrections only; it does not upload the underlying raw-response archive.
+
+- Generation rounds finished; the broader Step 02–03 research program is not complete. Only one fixed prompt protocol and one response per 3/5/8 count were checked; repeatability, prompt competition, timing/cost and a best count remain untested.
+- The actual encoding was G36 co-location, V9 occupied-floor sets and C36 direct inter-mass connections: three descriptive blocks, 81 coordinates, not the full nine-axis ME framework. Five legacy axes were not captured; the revised broader list/extraction rules were never fully frozen. No silent default-filling or geometry inference.
+- A and B each generated five additions from the same original five parents. A used ordinary LLM broadening. B used code-selected missing combinations followed by LLM generation. Code-only case expansion, full IPOG/ACTS and maximum-coverage construction were NOT tested; the broader relevant-case strategy was not disproved.
+- Eight seeds showed more recorded breadth than three/five in these single runs. Eight is a provisional breadth-oriented option, not an optimum or demonstrated efficiency improvement.
+- A added more new cross-block pair tokens (GV 246 vs 227; GC 931 vs 865; VC 152 vs 141). B represented all six supplied targets, A three. The targets recombined individually observed values; target completion and outward scope differ.
+- The retrospective audit finds all five additions in each arm outside the five seeds' observed marginal-value envelope. New coordinate/value options: A G15/V3/C2, B G14/V2/C2. Mean nearest-seed grouping distance is identical at 0.2333. Against the pooled 16 initial seeds, outside counts fall to A3/B2. These are reference-dependent scope diagnostics, not a validated architectural boundary.
+- Concrete operational alternatives and their trade-offs are documented. Neither usefulness, dimensional feasibility, a superior boundary nor architectural quality was established. Retrospective semantic checks are disclosed judgments, not objective preference scores or preregistered measures.
+
+Keep conflicts/unknowns as annotations rather than automatic seed rejection gates. Preserve the strategy-first backbone and prioritize formal algorithmic expansion without repeated advanced-model calls. Do not announce all intended tests complete or infer that relevant-case expansion failed. Further experimentation is separate work; no more generation rounds are needed to recover this archive.
+
+## Historical planning and research review — before the proof checks
+
+Sections below retain the original research plan; proposed factorial/repeated and algorithmic experiments were not all executed. Follow the latest evidence above when interpreting status.
 
 ## Latest clarification and progress assessment — October 27
 
@@ -272,3 +290,4 @@ Related foundation: Shah, Vargas-Hernandez and Smith (2003), [Metrics for Measur
 [18] Chen, Zaharia and Zou, [FrugalGPT](https://arxiv.org/abs/2305.05176).
 
 [19] Bradley et al., ICLR 2024, [Quality-Diversity through AI Feedback](https://qdaif.github.io/).
+
