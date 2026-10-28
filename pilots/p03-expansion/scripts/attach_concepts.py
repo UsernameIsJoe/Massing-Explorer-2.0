@@ -23,7 +23,7 @@ def main(path):
     raw = json.loads(Path(path).read_text(encoding="utf-8"))
     key = json.loads((HERE / "data/concept_key_SEALED.json").read_text(encoding="utf-8"))
     sealed = {it["expansion_id"]: it for it in json.loads((HERE / "data/expansion_SEALED.json").read_text(encoding="utf-8"))["items"]}
-    region_p = HERE / "region/region_v1.json"
+    region_p = HERE / "region/region_candidate_structural.json"
     region = json.loads(region_p.read_text(encoding="utf-8"))
     by_group = {g["group"]: g for g in region["expansion_groups"]}
     out, checks = {}, []

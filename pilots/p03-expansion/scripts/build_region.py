@@ -53,7 +53,7 @@ def main():
                        "status": status, "reviewed_as": r["expansion_id"] if r else None,
                        "size": g["size"], "members": [m["key"] for m in g["members"]], "representative": g["rep"]["key"]})
     region = {
-        "version": "region-v1",
+        "version": "region-candidate-structural",
         "date": "2026-10-28",
         "membership": "weighted change from the nearest seed < 1.0 (architect's weights, pilots/p02-region/data/decision_weights.json)",
         "hard_rules": "MODEL_INPUT v0.2 representable rules + core academic and gym in different masses + custodial not a mass of its own",
@@ -62,7 +62,7 @@ def main():
         "expansion_groups": groups,
     }
     (HERE / "region").mkdir(exist_ok=True)
-    (HERE / "region/region_v1.json").write_text(json.dumps(region, indent=1), encoding="utf-8")
+    (HERE / "region/region_candidate_structural.json").write_text(json.dumps(region, indent=1), encoding="utf-8")
     tally = collections.Counter()
     for g in groups:
         tally[g["status"]] += g["size"]

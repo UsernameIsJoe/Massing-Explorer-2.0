@@ -1,6 +1,8 @@
 # Pilot 3 findings: expansion and region v1
 
-Date: 2026-10-28. Protocol: p03-v1.1. Decisions: `labels/user_expansion.json`. Region: `region/region_v1.json` (built by `scripts/build_region.py`).
+Date: 2026-10-28. Protocol: p03-v1.1. Decisions: `labels/user_expansion.json`. Region: `region/region_candidate_structural.json` (built by `scripts/build_region.py`).
+
+> **Status (2026-10-28, later):** the architect's decisions, the custodial rule, the generator and the pool stand as evidence. The inside/outside split, the region file and the inferred statuses are a **structure-only candidate**, not the region: backbone tasks 1-4 (nine-axis records, embedding role, intention-decision-axis links, joint membership) are unresolved. "Region v1" below means this candidate.
 
 ## Result in one line
 
@@ -50,12 +52,11 @@ Architect's notes:
 
 ## Next
 
-- An outside model writes concepts for the 15 added and maybe representatives (`prompts/DESCRIBE_EXPANSIONS.txt`). Then every reviewed member of the region is described the same way as the seeds.
-- Then Step 04: exploration within region v1 under the brief, starting with a shortlist for realization.
+- Superseded. No shortlisting until the region is defined: first the membership decision (structural vs semantic basis), then nine-axis records, intention-decision-axis links and a joint membership test.
 
 ## Addendum: concepts for the 15 added and maybe representatives
 
-Source: ChatGPT temporary chat, thinking effort medium (model name not shown to the user), prompt `prompts/DESCRIBE_EXPANSIONS.txt`. The raw reply is in `responses/raw/`. The concepts are attached to their groups in `region/region_v1.json`, and the checks are in `responses/describe_expansions.json`.
+Source: ChatGPT temporary chat, thinking effort medium (model name not shown to the user), prompt `prompts/DESCRIBE_EXPANSIONS.txt`. The raw reply is in `responses/raw/`. The concepts are attached to their groups in `region/region_candidate_structural.json`, and the checks are in `responses/describe_expansions.json`.
 
 - **Length rule followed:** all 15 are 55–61 words.
 - **Naming rule broken:** every one names 4–7 program groups, using paraphrases (for example "specialized learning", "creative", "institutional"), and walks through each mass. They are placement inventories, which is the same problem the architect found in the Pilot 1 intent text.
