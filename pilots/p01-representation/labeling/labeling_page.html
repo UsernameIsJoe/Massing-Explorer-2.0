@@ -27,6 +27,7 @@ h1{font-size:1.3rem;margin:0;text-wrap:balance}
 .bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
 .bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
 .q{font-weight:600;margin:0}
+.note{margin:0;padding:8px 12px;border-left:3px solid var(--accent);background:var(--accent-soft);color:var(--fg);font-size:.9rem;max-width:75ch}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:8px;min-width:0}
 .card.anchor{background:var(--anchor);border-color:var(--anchor-line)}
 .tag{font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
@@ -76,6 +77,7 @@ details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.75rem var(--mono);
   <div class="legend" id="legend" aria-label="Diagram key"></div>
 
   <p class="q" id="qline"></p>
+  <p class="note" id="textonly" hidden>Text-only item, no diagrams by design. These items test whether the words alone carry the strategy, so judge the strategy each description describes.</p>
   <section class="card anchor" id="anchor"></section>
   <div class="opts">
     <section class="card" id="opt1"></section>
@@ -171,7 +173,9 @@ function esc(t){ const d=document.createElement("div"); d.textContent=t; return 
 
 function render(){
   const it = items[i], lab = labels[it.triplet_id] || {};
+  const textOnly = !it.anchor.structure && !it.option_1.structure && !it.option_2.structure;
   $("qline").textContent = `Item ${it.item} of ${items.length}. ${SET.question}`;
+  $("textonly").hidden = !textOnly;
   $("anchor").innerHTML = cardHTML("Anchor", it.anchor);
   $("opt1").innerHTML = cardHTML("Option 1", it.option_1);
   $("opt2").innerHTML = cardHTML("Option 2", it.option_2);
