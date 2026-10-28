@@ -1,0 +1,121 @@
+{
+ "protocol": "p01-v1.3",
+ "excluded_unstable": [
+  "T01",
+  "T02"
+ ],
+ "labels_file": "labels/user_labels.json",
+ "label_distribution": {
+  "about_equal": 4,
+  "option_1": 6,
+  "option_2": 5
+ },
+ "probe_review_distribution": {
+  "missing": 13
+ },
+ "decisive": 23,
+ "consistency": [
+  {
+   "item": "T01",
+   "repeat": "T29",
+   "first": null,
+   "second": "B-E01",
+   "consistent": false
+  },
+  {
+   "item": "T02",
+   "repeat": "T30",
+   "first": "A-E04",
+   "second": "05-S04",
+   "consistent": false
+  }
+ ],
+ "agreement": {
+  "proxy:structure": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 6,
+    "n": 8,
+    "rate": 0.75
+   },
+   "ALL_REAL": {
+    "agree": 8,
+    "n": 10,
+    "rate": 0.8
+   },
+   "ALL": {
+    "agree": 8,
+    "n": 10,
+    "rate": 0.8
+   }
+  },
+  "proxy:wording_tfidf": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 2,
+    "n": 8,
+    "rate": 0.25
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   }
+  },
+  "llm_baseline": {
+   "generic": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "intent_vs_wording": {
+    "agree": 3,
+    "n": 3,
+    "rate": 1.0
+   },
+   "lexical_trap": {
+    "agree": 4,
+    "n": 4,
+    "rate": 1.0
+   },
+   "paraphrase": {
+    "agree": 4,
+    "n": 4,
+    "rate": 1.0
+   },
+   "real_control": {
+    "agree": 1,
+    "n": 2,
+    "rate": 0.5
+   },
+   "real_disagree": {
+    "agree": 3,
+    "n": 6,
+    "rate": 0.5
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 8,
+    "rate": 0.5
+   },
+   "ALL": {
+    "agree": 17,
+    "n": 21,
+    "rate": 0.81
+   }
+  }
+ }
+}
