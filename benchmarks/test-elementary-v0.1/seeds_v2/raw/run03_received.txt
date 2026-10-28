@@ -1,0 +1,452 @@
+{
+  "cases": [
+    {
+      "case_id": "S01",
+      "name": "Civic Hinge Between Learning and Hall",
+      "concept": "A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school.",
+      "intent": "Aims to give visitors one supervised arrival point at the middle of the school, buffer classrooms from hall noise, and let arts and library programs anchor community use next to the hall.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Stack the cultural hinge",
+          "serves": "Makes the middle mass the front door and cultural core, with arts and library stacked over the office.",
+          "decisions": [
+            {"type": "placement", "department_id": "D08", "mass_id": "M2", "floors": [1]},
+            {"type": "placement", "department_id": "D07", "mass_id": "M2", "floors": [1]},
+            {"type": "placement", "department_id": "D03", "mass_id": "M2", "floors": [1, 2]},
+            {"type": "placement", "department_id": "D05", "mass_id": "M2", "floors": [3]}
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Linear sequence linked only through the hinge",
+          "serves": "Places the hall and the learning bar at opposite ends so all movement between them passes through the hinge.",
+          "decisions": [
+            {"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": true},
+            {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": true},
+            {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": false},
+            {"type": "placement", "department_id": "D04", "mass_id": "M3", "floors": [1]},
+            {"type": "placement", "department_id": "D06", "mass_id": "M3", "floors": [1]}
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Consolidate all classrooms in one bar",
+          "serves": "Creates the quiet learning end, with general and special education together and building service at its base.",
+          "decisions": [
+            {"type": "placement", "department_id": "D01", "mass_id": "M1", "floors": [1, 2, 3]},
+            {"type": "placement", "department_id": "D02", "mass_id": "M1", "floors": [1, 2, 3]},
+            {"type": "placement", "department_id": "D09", "mass_id": "M1", "floors": [1]}
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {"mass_id": "M1", "role": "quiet learning bar"},
+          {"mass_id": "M2", "role": "civic and cultural hinge"},
+          {"mass_id": "M3", "role": "assembly hall"}
+        ],
+        "departments": [
+          {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+          {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+          {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [1, 2]},
+          {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D05", "mass_ids": ["M2"], "occupied_floors": [3]},
+          {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D07", "mass_ids": ["M2"], "occupied_floors": [1]},
+          {"department_id": "D08", "mass_ids": ["M2"], "occupied_floors": [1]},
+          {"department_id": "D09", "mass_ids": ["M1"], "occupied_floors": [1]}
+        ],
+        "connections": [
+          {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+          {"mass_a": "M1", "mass_b": "M3", "direct_link": false},
+          {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+        ]
+      },
+      "commitments": {
+        "core": [
+          {"statement": "The civic hinge sits between the learning bar and the hall and is the only built connection between them.", "protects": ["K2"]},
+          {"statement": "Administration, arts and the library stay together in the hinge, with the library on its top floor above the office.", "protects": ["K1"]},
+          {"statement": "All general and special education classrooms remain in the single learning bar.", "protects": ["K3"]}
+        ],
+        "flexible": [
+          "Which arts rooms occupy the hinge's second floor",
+          "Position of medical within the hinge ground floor",
+          "Distribution of grades across the learning bar floors",
+          "Whether each link is a passage or a shared enclosed edge"
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "The hall stays a two-level double-height volume, giving up three floors in that mass, and every trip to lunch or PE crosses the public hinge.",
+        "preferences_given_up": ["three_floors"]
+      },
+      "unresolved": [
+        "Hinge floor portions are uneven (full ground floor, small arts level, library-only top level); stacking needs checking at dimensional realization.",
+        "Learning bar capacity for general and special education plus custodial within the 80-ft width and 60-m length is unverified.",
+        "Custodial receiving in the learning bar is remote from the kitchen; service access is undefined because no site access is supplied."
+      ]
+    },
+    {
+      "case_id": "S02",
+      "name": "Shared Hall as Central Heart",
+      "concept": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly.",
+      "intent": "Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Hall as the only connector",
+          "serves": "Makes the hall the central heart through which the two wings meet.",
+          "decisions": [
+            {"type": "placement", "department_id": "D04", "mass_id": "M1", "floors": [1]},
+            {"type": "placement", "department_id": "D06", "mass_id": "M1", "floors": [1]},
+            {"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": true},
+            {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": true},
+            {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": false}
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Self-contained learning house",
+          "serves": "Carries the learning wing as a complete teaching building with classrooms, special education and arts together.",
+          "decisions": [
+            {"type": "placement", "department_id": "D01", "mass_id": "M2", "floors": [1, 2, 3]},
+            {"type": "placement", "department_id": "D02", "mass_id": "M2", "floors": [1, 2, 3]},
+            {"type": "placement", "department_id": "D03", "mass_id": "M2", "floors": [1]}
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Compact front-of-house wing",
+          "serves": "Gives the opposite wing a small public role with the office, support and service, and the library above.",
+          "decisions": [
+            {"type": "placement", "department_id": "D08", "mass_id": "M3", "floors": [1]},
+            {"type": "placement", "department_id": "D07", "mass_id": "M3", "floors": [1]},
+            {"type": "placement", "department_id": "D09", "mass_id": "M3", "floors": [1]},
+            {"type": "placement", "department_id": "D05", "mass_id": "M3", "floors": [2]}
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {"mass_id": "M1", "role": "central shared heart"},
+          {"mass_id": "M2", "role": "learning house wing"},
+          {"mass_id": "M3", "role": "front-of-house wing"}
+        ],
+        "departments": [
+          {"department_id": "D01", "mass_ids": ["M2"], "occupied_floors": [1, 2, 3]},
+          {"department_id": "D02", "mass_ids": ["M2"], "occupied_floors": [1, 2, 3]},
+          {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [1]},
+          {"department_id": "D04", "mass_ids": ["M1"], "occupied_floors": [1]},
+          {"department_id": "D05", "mass_ids": ["M3"], "occupied_floors": [2]},
+          {"department_id": "D06", "mass_ids": ["M1"], "occupied_floors": [1]},
+          {"department_id": "D07", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D08", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+        ],
+        "connections": [
+          {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+          {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+          {"mass_a": "M2", "mass_b": "M3", "direct_link": false}
+        ]
+      },
+      "commitments": {
+        "core": [
+          {"statement": "The hall stays between the two wings and is their only built connection.", "protects": ["K1"]},
+          {"statement": "Classrooms, special education and arts remain together in the learning house.", "protects": ["K2"]},
+          {"statement": "Office and library share the front wing, with the library directly above the office.", "protects": ["K3"]}
+        ],
+        "flexible": [
+          "Which side of the hall each wing attaches to",
+          "Distribution of grades across learning-house floors",
+          "Position of medical and custodial within the front wing ground floor",
+          "Whether arts face the hall side or the far end of the learning house"
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "Every trip between office and classrooms passes the hall, so lunch and PE affect circulation and supervision; the hall and front wing stay below three floors.",
+        "preferences_given_up": ["three_floors"]
+      },
+      "unresolved": [
+        "Routing daily circulation through the hall may conflict with gym and dining use; a bypass inside the hall mass is undecided.",
+        "Learning house ground floor carries arts with classrooms; capacity within the 80-ft width and 60-m length needs checking.",
+        "Front wing upper floor is library only; the partial second floor needs checking at dimensional realization.",
+        "No site access is supplied, so the front wing's arrival role is assumed, not tested."
+      ]
+    },
+    {
+      "case_id": "S03",
+      "name": "Courtyard Cluster with Arts Loft",
+      "concept": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse.",
+      "intent": "Aims to bring every mass to three floors, allow indoor movement between any two parts, and join arts with the hall into one performance and community venue.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Arts loft over the hall",
+          "serves": "Turns the hall into a full-height performance block with arts above its service side.",
+          "decisions": [
+            {"type": "placement", "department_id": "D04", "mass_id": "M1", "floors": [1]},
+            {"type": "placement", "department_id": "D06", "mass_id": "M1", "floors": [1]},
+            {"type": "placement", "department_id": "D03", "mass_id": "M1", "floors": [2, 3]}
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Close the ring",
+          "serves": "Links all three masses to each other to form the compact cluster around the courtyard.",
+          "decisions": [
+            {"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": true},
+            {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": true},
+            {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": true}
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Civic house with supported learning",
+          "serves": "Keeps special education beside the office and nurse, with the library crowning the civic house.",
+          "decisions": [
+            {"type": "placement", "department_id": "D08", "mass_id": "M3", "floors": [1]},
+            {"type": "placement", "department_id": "D07", "mass_id": "M3", "floors": [1]},
+            {"type": "placement", "department_id": "D02", "mass_id": "M3", "floors": [1, 2]},
+            {"type": "placement", "department_id": "D05", "mass_id": "M3", "floors": [3]}
+          ]
+        },
+        {
+          "move_id": "K4",
+          "move": "Dedicated classroom bar",
+          "serves": "Completes the ring with a bar for general classrooms and building service.",
+          "decisions": [
+            {"type": "placement", "department_id": "D01", "mass_id": "M2", "floors": [1, 2, 3]},
+            {"type": "placement", "department_id": "D09", "mass_id": "M2", "floors": [1]}
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {"mass_id": "M1", "role": "performance hall block"},
+          {"mass_id": "M2", "role": "classroom bar"},
+          {"mass_id": "M3", "role": "civic house"}
+        ],
+        "departments": [
+          {"department_id": "D01", "mass_ids": ["M2"], "occupied_floors": [1, 2, 3]},
+          {"department_id": "D02", "mass_ids": ["M3"], "occupied_floors": [1, 2]},
+          {"department_id": "D03", "mass_ids": ["M1"], "occupied_floors": [2, 3]},
+          {"department_id": "D04", "mass_ids": ["M1"], "occupied_floors": [1]},
+          {"department_id": "D05", "mass_ids": ["M3"], "occupied_floors": [3]},
+          {"department_id": "D06", "mass_ids": ["M1"], "occupied_floors": [1]},
+          {"department_id": "D07", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D08", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D09", "mass_ids": ["M2"], "occupied_floors": [1]}
+        ],
+        "connections": [
+          {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+          {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+          {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+        ]
+      },
+      "commitments": {
+        "core": [
+          {"statement": "Art and music occupy upper levels of the hall mass, joined to the stage and gym.", "protects": ["K1"]},
+          {"statement": "Every pair of masses has a built connection.", "protects": ["K2"]},
+          {"statement": "Special education sits with administration and medical in the civic house, with the library on its top floor.", "protects": ["K3"]}
+        ],
+        "flexible": [
+          "Which arts rooms occupy each loft level",
+          "Position of custodial within the classroom bar ground floor",
+          "Link type (bridge, passage or shared edge) for each pair",
+          "Distribution of grades across the classroom bar"
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "Art and music leave the ground floor and depend on stairs and lift above the hall's service side, and special education is separated from general classrooms by a link.",
+        "preferences_given_up": ["arts_ground_floor"]
+      },
+      "unresolved": [
+        "Whether the hall's non-double-height service side can carry two loft levels of arts is unverified.",
+        "Kitchen and arts stacked in one mass may need acoustic, odor and kiln-exhaust separation.",
+        "Three mutual links may be hard to realize within mass length and ratio limits.",
+        "Civic house floor portions are uneven, with a library-only top floor; stacking needs checking."
+      ]
+    },
+    {
+      "case_id": "S04",
+      "name": "Twin Bars and Freestanding Hall",
+      "concept": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning.",
+      "intent": "Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Detach the hall",
+          "serves": "Makes the hall a freestanding community building without built links to the school bars.",
+          "decisions": [
+            {"type": "placement", "department_id": "D04", "mass_id": "M3", "floors": [1]},
+            {"type": "placement", "department_id": "D06", "mass_id": "M3", "floors": [1]},
+            {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": false},
+            {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": false}
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Join the twin bars",
+          "serves": "Forms the school proper from two linked parallel bars.",
+          "decisions": [
+            {"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": true}
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Library crown on the classroom bar",
+          "serves": "Places the library at the top of the classroom house, with building service at its base.",
+          "decisions": [
+            {"type": "placement", "department_id": "D01", "mass_id": "M1", "floors": [1, 2, 3]},
+            {"type": "placement", "department_id": "D05", "mass_id": "M1", "floors": [3]},
+            {"type": "placement", "department_id": "D09", "mass_id": "M1", "floors": [1]}
+          ]
+        },
+        {
+          "move_id": "K4",
+          "move": "Front and inclusion house",
+          "serves": "Pairs the office with specialized learning in the second bar, with nurse and arts at ground.",
+          "decisions": [
+            {"type": "placement", "department_id": "D08", "mass_id": "M2", "floors": [1]},
+            {"type": "placement", "department_id": "D07", "mass_id": "M2", "floors": [1]},
+            {"type": "placement", "department_id": "D02", "mass_id": "M2", "floors": [1, 2, 3]},
+            {"type": "placement", "department_id": "D03", "mass_id": "M2", "floors": [1]}
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {"mass_id": "M1", "role": "classroom house bar"},
+          {"mass_id": "M2", "role": "front and inclusion bar"},
+          {"mass_id": "M3", "role": "freestanding community hall"}
+        ],
+        "departments": [
+          {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+          {"department_id": "D02", "mass_ids": ["M2"], "occupied_floors": [1, 2, 3]},
+          {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [1]},
+          {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [3]},
+          {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D07", "mass_ids": ["M2"], "occupied_floors": [1]},
+          {"department_id": "D08", "mass_ids": ["M2"], "occupied_floors": [1]},
+          {"department_id": "D09", "mass_ids": ["M1"], "occupied_floors": [1]}
+        ],
+        "connections": [
+          {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+          {"mass_a": "M1", "mass_b": "M3", "direct_link": false},
+          {"mass_a": "M2", "mass_b": "M3", "direct_link": false}
+        ]
+      },
+      "commitments": {
+        "core": [
+          {"statement": "The hall has no built connection to either bar.", "protects": ["K1"]},
+          {"statement": "The two bars are built-linked and together form the secured school.", "protects": ["K2", "K4"]},
+          {"statement": "The library sits on the classroom bar's top floor rather than with administration.", "protects": ["K3"]}
+        ],
+        "flexible": [
+          "Position of custodial within the classroom bar ground floor",
+          "Type of link between the two bars",
+          "Distribution of grades across classroom bar floors",
+          "Arrangement of medical, office and arts on the front bar ground floor"
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "Students walk outdoors to lunch and PE, kitchen and custodial service are separated, and the library gives up its preferred position above administration.",
+        "preferences_given_up": ["media_top_above_admin", "three_floors"]
+      },
+      "unresolved": [
+        "Outdoor travel to the hall may conflict with elementary routines and weather; covered walkways would not count as direct links.",
+        "Custodial receiving in the classroom bar is remote from the kitchen in the detached hall.",
+        "Front bar upper floors hold only special education portions; uneven stacking needs checking.",
+        "No site access is supplied, so separate community entry to the hall is assumed."
+      ]
+    },
+    {
+      "case_id": "S05",
+      "name": "One Learning Block, Workshop Link",
+      "concept": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+      "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Concentrate the school day in one block",
+          "serves": "Carries the single learning block with front door at the base and library at the crown.",
+          "decisions": [
+            {"type": "placement", "department_id": "D01", "mass_id": "M1", "floors": [1, 2, 3]},
+            {"type": "placement", "department_id": "D02", "mass_id": "M1", "floors": [1, 2, 3]},
+            {"type": "placement", "department_id": "D08", "mass_id": "M1", "floors": [1]},
+            {"type": "placement", "department_id": "D07", "mass_id": "M1", "floors": [1]},
+            {"type": "placement", "department_id": "D05", "mass_id": "M1", "floors": [3]}
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Low workshop pavilion",
+          "serves": "Gives arts and building service their own single-storey ground-level pavilion.",
+          "decisions": [
+            {"type": "placement", "department_id": "D03", "mass_id": "M2", "floors": [1]},
+            {"type": "placement", "department_id": "D09", "mass_id": "M2", "floors": [1]}
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Hall reached through the workshop",
+          "serves": "Makes the workshop pavilion the hinge between the learning block and the hall.",
+          "decisions": [
+            {"type": "placement", "department_id": "D04", "mass_id": "M3", "floors": [1]},
+            {"type": "placement", "department_id": "D06", "mass_id": "M3", "floors": [1]},
+            {"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": true},
+            {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": true},
+            {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": false}
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {"mass_id": "M1", "role": "consolidated learning block"},
+          {"mass_id": "M2", "role": "low workshop hinge"},
+          {"mass_id": "M3", "role": "assembly hall"}
+        ],
+        "departments": [
+          {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+          {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+          {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [1]},
+          {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [3]},
+          {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+          {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]},
+          {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]},
+          {"department_id": "D09", "mass_ids": ["M2"], "occupied_floors": [1]}
+        ],
+        "connections": [
+          {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+          {"mass_a": "M1", "mass_b": "M3", "direct_link": false},
+          {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+        ]
+      },
+      "commitments": {
+        "core": [
+          {"statement": "Classrooms, special education, administration and the library remain in one block, with the library on its top floor.", "protects": ["K1"]},
+          {"statement": "Arts and custodial form a single-storey ground-level pavilion.", "protects": ["K2"]},
+          {"statement": "The workshop pavilion is the only built connection between the learning block and the hall.", "protects": ["K3"]}
+        ],
+        "flexible": [
+          "Position of medical on the learning block ground floor",
+          "Which grades occupy the ground floor",
+          "Arrangement of art and music within the pavilion",
+          "Link type for each hinge connection"
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "The learning block is packed close to single-bar capacity on each floor, the hall and pavilion give up three floors, and lunch traffic passes the arts rooms.",
+        "preferences_given_up": ["three_floors"]
+      },
+      "unresolved": [
+        "Fitting classrooms, special education, office, medical and library within an 80-ft bar under the 60-m length is unverified and may be near capacity.",
+        "Lunch and PE traffic through the workshop pavilion may disrupt art and music classes.",
+        "Whether a single-storey pavilion footprint can meet the 2:5 to 5:8 ratio needs checking."
+      ]
+    }
+  ],
+  "collection_differences": "Conceptually, S01 puts a civic and cultural hinge at the centre; S02 makes the hall the heart between two wings; S03 forms a compact mutually linked cluster and lifts arts into a loft over the hall; S04 detaches the hall as a freestanding community building beside two joined bars; S05 concentrates the school day in one block, with a low workshop pavilion as the hinge to the hall. Structurally they differ in link topology (three different chain middles, a full triangle, one link only), in where special education, arts, library and custodial sit, and in which preferences they give up: arts on ground (S03), library above admin (S04), three floors (all except S03)."
+}

@@ -13,3 +13,11 @@
 - Reply: `run02_received.txt` (SHA-256 `be3274f5f7a442babdc4bdab8e1d2944f38b40e8b0b304fef5b249a132e9511c`); parsed to `cases/run02_seeds.json`.
 - Schema valid; checker 0 errors, 0 warnings.
 - Repetition: four of five run-02 cases are structurally closer to a run-01 case (distance 0.07–0.20) than run-01 cases are to each other (0.18–0.33): civic gateway ≈ civic hinge, shared heart with arts loft ≈ arts loft over commons, freestanding pavilions ≈ detached campus, courtyard loop ≈ linked loop. Run-02 S05 (low classrooms beside a civic tower) is the only clearly new organization.
+
+## Run 03 (evaluation pool)
+
+- Same message, model and mode, fresh incognito chat, as reported by the user.
+- Reply: `run03_received.txt` (SHA-256 `46b39d22adb2f0b498ed07a7cbe67e30fb7300078f1bf0f2fadedecdd6c28fd4`); parsed to `cases/run03_seeds.json`.
+- Schema valid; checker 0 errors, 0 warnings.
+- Repetition against runs 01–02: civic hinge chain again (0.07), shared hall heart ≈ run-01 commons heart (0.01), courtyard cluster with arts loft ≈ run-01 arts loft over commons (0.02). Twin bars with a freestanding hall (0.20) and one learning block with a workshop hinge (0.14) are new or mostly new.
+- Across the 15 seeds, roughly eight distinct organizing ideas; the civic hinge chain appears in all three runs.

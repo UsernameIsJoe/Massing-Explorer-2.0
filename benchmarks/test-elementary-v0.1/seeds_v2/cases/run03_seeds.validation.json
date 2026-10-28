@@ -1,0 +1,52 @@
+{
+ "file": "run03_seeds.json",
+ "commitments_module": true,
+ "cases": [
+  {
+   "case_id": "S01",
+   "name": "Civic Hinge Between Learning and Hall",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "S02",
+   "name": "Shared Hall as Central Heart",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "S03",
+   "name": "Courtyard Cluster with Arts Loft",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor"
+   ]
+  },
+  {
+   "case_id": "S04",
+   "name": "Twin Bars and Freestanding Hall",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "media_top_above_admin",
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "S05",
+   "name": "One Learning Block, Workshop Link",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  }
+ ]
+}
