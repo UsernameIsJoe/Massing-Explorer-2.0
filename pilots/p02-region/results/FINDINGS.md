@@ -54,7 +54,7 @@ A fresh sample of about 20 candidates not seen before, enriched for the cases th
 
 ## Update — decision weights stated by the architect (2026-10-28)
 
-Instead of a confirmation round, the labeler stated which decisions matter: core academic, special education, administration, dining and gym move the strategy most; media and art and music are mild; custodial barely matters. Recorded in `data/decision_weights.json` (medical, floor-only and link weights are defaults pending confirmation).
+Instead of a confirmation round, the labeler stated which decisions matter: core academic, special education, administration, dining and gym move the strategy most; media and art and music are mild; custodial barely matters. Recorded in `data/decision_weights.json` (medical mild, floor-only changes at half weight, links mild except a hub link, which is defining: proposed as defaults and confirmed by the labeler).
 
 Against the ratings already collected (a consistency check, not a fit; the weights were stated after the labeler had seen these items):
 
