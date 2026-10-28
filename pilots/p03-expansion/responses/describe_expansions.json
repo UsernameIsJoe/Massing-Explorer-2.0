@@ -1,0 +1,273 @@
+{
+ "concepts": {
+  "X19": {
+   "concept": "A tightly interconnected three-part campus forms a triangular cluster, with a civic and administrative house, a dedicated shared-activity volume, and a vertically organized learning block. The media center occupies the upper level of the civic house, while the learning block rises across three stories. Direct connections between all three masses establish a compact, interwoven organization.",
+   "prompt_id": "N01",
+   "group": "R1-S05|D01:M1->M3"
+  },
+  "X17": {
+   "concept": "Three interconnected masses form a compact academic and community cluster. A tall core academic block combines the school's main institutional presence with an elevated media center, while a second block layers specialized learning over shared activity spaces. A smaller service and creative arts house completes the cluster, with direct links binding all three parts into one network.",
+   "prompt_id": "N02",
+   "group": "R1-S05|D02:M3->M2"
+  },
+  "X14": {
+   "concept": "A central civic and communal house acts as the connecting hinge between two otherwise separate wings. One wing forms the vertically layered learning territory, while the other combines an elevated media center with ground-level support functions. The organization creates a two-armed arrangement in which both wings connect through the shared central mass rather than to each other.",
+   "prompt_id": "N03",
+   "group": "R1-S04|D08:M1->M2"
+  },
+  "X01": {
+   "concept": "A vertically layered cultural and administrative spine occupies the middle of a linear three-mass composition. Its uppermost level holds the media center, above creative and institutional functions. A core academic tower attaches on one side, while a specialized learning and communal volume attaches on the other. The outer masses remain separate, making the central block the sole physical connector.",
+   "prompt_id": "N04",
+   "group": "R1-S01|D02:M1->M3"
+  },
+  "X13": {
+   "concept": "A shared-activity house forms the connecting center of a three-part chain. On one side stands a vertically layered academic and creative learning block; on the other sits an institutional support house crowned by the media center. The two outer masses remain unconnected, giving the middle volume the spatial role of a hinge between learning and schoolwide functions.",
+   "prompt_id": "N05",
+   "group": "R1-S04|D02:M3->M2"
+  },
+  "X10": {
+   "concept": "Three detached pavilions organize the campus as separate programmatic territories rather than a connected building. A three-story core academic house forms the principal learning volume, a lower specialized learning and communal pavilion establishes a second territory, and a cultural and administrative house forms the third. Their independent footprints define a dispersed campus composition without direct building-to-building links.",
+   "prompt_id": "N06",
+   "group": "R1-S03|D02:M1->M2"
+  },
+  "X18": {
+   "concept": "A three-way connected cluster separates the school into a tall academic house, a vertically layered specialized learning house, and a civic communal house. The media center crowns the academic volume, concentrating learning and reference functions within one vertical element. All three masses touch directly, creating a triangular spatial network rather than a single dominant connecting spine.",
+   "prompt_id": "N07",
+   "group": "R1-S05|D08:M1->M2"
+  },
+  "X09": {
+   "concept": "Three independent buildings establish a dispersed pavilion campus. The main institutional and core academic house rises three stories, layering the media center within its central level. A smaller specialized learning and support house occupies a separate territory, while a dedicated communal activity pavilion stands apart from both. The arrangement is defined by programmatic separation and the absence of direct interbuilding connections.",
+   "prompt_id": "N08",
+   "group": "R1-S03|D01:M1->M3"
+  },
+  "X15": {
+   "concept": "A communal activity volume becomes the central link in a three-mass chain. On one side, a vertically consolidated core academic and institutional house integrates the media center at its middle level. On the other, a lower specialized learning and creative arts wing forms a distinct territory. Both wings connect to the shared middle volume but remain physically separate from each other.",
+   "prompt_id": "N09",
+   "group": "R1-S04|D01:M3->M1"
+  },
+  "X02": {
+   "concept": "A cultural and resource house operates as the central hinge between a three-story learning block and a dedicated communal pavilion. The learning block combines general and specialized instruction with administration at its base. Across the central house, creative functions rise toward an upper-level media center. Direct connections follow this linear sequence, leaving the two outer volumes unlinked.",
+   "prompt_id": "N10",
+   "group": "R1-S01|D08:M2->M1"
+  },
+  "X05": {
+   "concept": "Three directly connected masses form a compact triangular campus organized around distinct vertical program identities. A tall core academic house anchors one corner, a communal and civic house stacks creative activity above shared spaces, and a specialized learning house rises toward a top-floor media center. The complete network of links creates a clustered organization with no single connecting mass.",
+   "prompt_id": "N11",
+   "group": "R1-S02|D08:M2->M1"
+  },
+  "X11": {
+   "concept": "A dispersed arrangement of three detached programmatic houses establishes a campus without enclosed interbuilding links. A consolidated three-story academic and institutional block forms the principal volume, integrating specialized learning within its lower levels. A separate communal activity pavilion defines one adjacent territory, while a third cultural and resource house places the media center above its creative base.",
+   "prompt_id": "N12",
+   "group": "R1-S03|D08:M3->M1"
+  },
+  "X08": {
+   "concept": "A fully interconnected triangular cluster brings together three contrasting vertical territories. A tall core academic house establishes the main instructional volume, a specialized learning and creative house forms a second stacked element, and a civic communal house places the media center at its uppermost level. Direct links between every pair of masses create a continuous three-part organization.",
+   "prompt_id": "N13",
+   "group": "R1-S02|D02:M2->M1,D04:M1->M2"
+  },
+  "X07": {
+   "concept": "A three-way connected cluster is organized around a specialized learning and communal house, with creative functions stacked above the shared base. A separate institutional house places the media center over administrative and care functions, while a taller core academic block forms the third element. All three masses connect directly, producing an interlinked composition of distinct educational, civic, and shared territories.",
+   "prompt_id": "N14",
+   "group": "R1-S02|D02:M2->M1"
+  },
+  "X03": {
+   "concept": "A dominant three-story academic and institutional house serves as the central organizing mass, concentrating most school functions within one vertically layered volume. The media center crowns this main building above the teaching and creative levels. Two smaller satellites attach independently: a specialized learning wing and a communal activity pavilion. Both connect to the main house but not to each other.",
+   "prompt_id": "N15",
+   "group": "R1-S01|D01:M1->M2"
+  }
+ },
+ "checks": [
+  {
+   "expansion_id": "X19",
+   "words": 55,
+   "program_groups_named": 5,
+   "named": [
+    "core academic",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration"
+   ]
+  },
+  {
+   "expansion_id": "X17",
+   "words": 57,
+   "program_groups_named": 7,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration",
+    "custodial"
+   ]
+  },
+  {
+   "expansion_id": "X14",
+   "words": 57,
+   "program_groups_named": 4,
+   "named": [
+    "gym/dining",
+    "media center",
+    "administration",
+    "custodial"
+   ]
+  },
+  {
+   "expansion_id": "X01",
+   "words": 59,
+   "program_groups_named": 6,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration"
+   ]
+  },
+  {
+   "expansion_id": "X13",
+   "words": 57,
+   "program_groups_named": 6,
+   "named": [
+    "core academic",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration",
+    "custodial"
+   ]
+  },
+  {
+   "expansion_id": "X10",
+   "words": 57,
+   "program_groups_named": 4,
+   "named": [
+    "core academic",
+    "special education",
+    "gym/dining",
+    "administration"
+   ]
+  },
+  {
+   "expansion_id": "X18",
+   "words": 56,
+   "program_groups_named": 5,
+   "named": [
+    "core academic",
+    "special education",
+    "gym/dining",
+    "media center",
+    "administration"
+   ]
+  },
+  {
+   "expansion_id": "X09",
+   "words": 61,
+   "program_groups_named": 7,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration",
+    "custodial"
+   ]
+  },
+  {
+   "expansion_id": "X15",
+   "words": 61,
+   "program_groups_named": 6,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration"
+   ]
+  },
+  {
+   "expansion_id": "X02",
+   "words": 57,
+   "program_groups_named": 6,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration"
+   ]
+  },
+  {
+   "expansion_id": "X05",
+   "words": 59,
+   "program_groups_named": 6,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration"
+   ]
+  },
+  {
+   "expansion_id": "X11",
+   "words": 57,
+   "program_groups_named": 6,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration"
+   ]
+  },
+  {
+   "expansion_id": "X08",
+   "words": 57,
+   "program_groups_named": 6,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration"
+   ]
+  },
+  {
+   "expansion_id": "X07",
+   "words": 60,
+   "program_groups_named": 7,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration",
+    "medical"
+   ]
+  },
+  {
+   "expansion_id": "X03",
+   "words": 60,
+   "program_groups_named": 6,
+   "named": [
+    "core academic",
+    "special education",
+    "art and music",
+    "gym/dining",
+    "media center",
+    "administration"
+   ]
+  }
+ ]
+}

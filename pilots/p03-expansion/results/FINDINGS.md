@@ -52,3 +52,13 @@ Architect's notes:
 
 - An outside model writes concepts for the 15 added and maybe representatives (`prompts/DESCRIBE_EXPANSIONS.txt`). Then every reviewed member of the region is described the same way as the seeds.
 - Then Step 04: exploration within region v1 under the brief, starting with a shortlist for realization.
+
+## Addendum: concepts for the 15 added and maybe representatives
+
+Source: ChatGPT temporary chat, medium effort, prompt `prompts/DESCRIBE_EXPANSIONS.txt`. The raw reply is in `responses/raw/`. The concepts are attached to their groups in `region/region_v1.json`, and the checks are in `responses/describe_expansions.json`.
+
+- **Length rule followed:** all 15 are 55–61 words.
+- **Naming rule broken:** every one names 4–7 program groups, using paraphrases (for example "specialized learning", "creative", "institutional"), and walks through each mass. They are placement inventories, which is the same problem the architect found in the Pilot 1 intent text.
+- **The real concept content is the link pattern:** "triangular cluster" (all three linked, 6 cases), "hinge or chain" (two links, 6 cases), "detached pavilions" (no links, 3 cases). The wording follows the links exactly. Nothing in it comes from intent, because a model given only structure has no intent to report.
+
+**Decision.** These are stored as `derived` descriptions, not concepts. Seed concepts come with generation and carry intent. A description written after the fact from structure only does not. Region members therefore carry the same diagram and structure as the seeds, but only seeds carry an authored concept. When an expansion needs a concept (for example when it is shortlisted), it gets one by regeneration: the LLM is given the structure as a commitment and asked to propose it as a strategy, under the same seed format.

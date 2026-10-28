@@ -102,7 +102,9 @@
     "[[\"a\", \"b\", \"c\", \"c\", \"b\", \"c\", \"c\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [3], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
     "[[\"a\", \"b\", \"c\", \"c\", \"c\", \"c\", \"b\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [3], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"c\", \"c\", \"b\", \"c\", \"b\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [3], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"b\", \"c\", \"c\", \"b\", \"c\", \"b\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [3], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
+   "derived_description": "Three directly connected masses form a compact triangular campus organized around distinct vertical program identities. A tall core academic house anchors one corner, a communal and civic house stacks creative activity above shared spaces, and a specialized learning house rises toward a top-floor media center. The complete network of links creates a clustered organization with no single connecting mass.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S03|D01:M1->M3",
@@ -131,7 +133,9 @@
     "[[\"a\", \"b\", \"b\", \"c\", \"a\", \"c\", \"b\", \"a\", \"b\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]",
     "[[\"a\", \"b\", \"c\", \"c\", \"a\", \"c\", \"b\", \"a\", \"b\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"a\", \"c\", \"a\", \"c\", \"b\", \"a\", \"b\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]"
+   "representative": "[[\"a\", \"b\", \"a\", \"c\", \"a\", \"c\", \"b\", \"a\", \"b\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]",
+   "derived_description": "Three independent buildings establish a dispersed pavilion campus. The main institutional and core academic house rises three stories, layering the media center within its central level. A smaller specialized learning and support house occupies a separate territory, while a dedicated communal activity pavilion stands apart from both. The arrangement is defined by programmatic separation and the absence of direct interbuilding connections.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S03|D02:M1->M2",
@@ -160,7 +164,9 @@
     "[[\"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"b\", \"c\", \"b\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]",
     "[[\"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"a\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]"
+   "representative": "[[\"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"a\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]",
+   "derived_description": "Three detached pavilions organize the campus as separate programmatic territories rather than a connected building. A three-story core academic house forms the principal learning volume, a lower specialized learning and communal pavilion establishes a second territory, and a cultural and administrative house forms the third. Their independent footprints define a dispersed campus composition without direct building-to-building links.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S03|D02:M1->M3",
@@ -216,7 +222,9 @@
     "[[\"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [1, 2], [2, 3], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
     "[[\"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [2, 3], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
+   "derived_description": "A vertically layered cultural and administrative spine occupies the middle of a linear three-mass composition. Its uppermost level holds the media center, above creative and institutional functions. A core academic tower attaches on one side, while a specialized learning and communal volume attaches on the other. The outer masses remain separate, making the central block the sole physical connector.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S01|D08:M2->M1",
@@ -243,7 +251,9 @@
     "[[\"a\", \"a\", \"b\", \"c\", \"b\", \"c\", \"c\", \"a\", \"b\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]",
     "[[\"a\", \"a\", \"b\", \"c\", \"c\", \"c\", \"b\", \"a\", \"b\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"a\", \"b\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"a\", \"b\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]",
+   "derived_description": "A cultural and resource house operates as the central hinge between a three-story learning block and a dedicated communal pavilion. The learning block combines general and specialized instruction with administration at its base. Across the central house, creative functions rise toward an upper-level media center. Direct connections follow this linear sequence, leaving the two outer volumes unlinked.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S01|D08:M2->M3",
@@ -297,7 +307,9 @@
     "[[\"a\", \"b\", \"b\", \"c\", \"c\", \"c\", \"b\", \"c\", \"b\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
     "[[\"a\", \"b\", \"c\", \"c\", \"a\", \"c\", \"b\", \"c\", \"b\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"b\", \"c\", \"a\", \"c\", \"b\", \"c\", \"b\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"b\", \"b\", \"c\", \"a\", \"c\", \"b\", \"c\", \"b\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
+   "derived_description": "A three-way connected cluster separates the school into a tall academic house, a vertically layered specialized learning house, and a civic communal house. The media center crowns the academic volume, concentrating learning and reference functions within one vertical element. All three masses touch directly, creating a triangular spatial network rather than a single dominant connecting spine.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S04|D02:M3->M2",
@@ -323,7 +335,9 @@
     "[[\"a\", \"b\", \"b\", \"b\", \"c\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]",
     "[[\"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"a\", \"b\", \"c\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"b\", \"a\", \"b\", \"c\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]",
+   "derived_description": "A shared-activity house forms the connecting center of a three-part chain. On one side stands a vertically layered academic and creative learning block; on the other sits an institutional support house crowned by the media center. The two outer masses remain unconnected, giving the middle volume the spatial role of a hinge between learning and schoolwide functions.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S04|D08:M1->M2",
@@ -349,7 +363,9 @@
     "[[\"a\", \"a\", \"b\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]",
     "[[\"a\", \"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\", \"b\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"a\", \"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"a\", \"a\", \"b\", \"c\", \"b\", \"c\", \"b\", \"c\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], false], [[\"b\", \"c\"], true]]]",
+   "derived_description": "A central civic and communal house acts as the connecting hinge between two otherwise separate wings. One wing forms the vertically layered learning territory, while the other combines an elevated media center with ground-level support functions. The organization creates a two-armed arrangement in which both wings connect through the shared central mass rather than to each other.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S04|D08:M1->M3",
@@ -427,7 +443,9 @@
     "[[\"a\", \"b\", \"c\", \"b\", \"a\", \"b\", \"c\", \"a\", \"c\"], [[1, 2, 3], [1, 2, 3], [2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
     "[[\"a\", \"b\", \"c\", \"b\", \"b\", \"b\", \"c\", \"a\", \"c\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"c\", \"b\", \"a\", \"b\", \"c\", \"a\", \"c\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"b\", \"c\", \"b\", \"a\", \"b\", \"c\", \"a\", \"c\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
+   "derived_description": "Three interconnected masses form a compact academic and community cluster. A tall core academic block combines the school's main institutional presence with an elevated media center, while a second block layers specialized learning over shared activity spaces. A smaller service and creative arts house completes the cluster, with direct links binding all three parts into one network.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S01|D01:M1->M2",
@@ -452,7 +470,9 @@
     "[[\"a\", \"b\", \"b\", \"c\", \"a\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], false]]]",
     "[[\"a\", \"b\", \"c\", \"c\", \"a\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], false]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"a\", \"c\", \"a\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], false]]]"
+   "representative": "[[\"a\", \"b\", \"a\", \"c\", \"a\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1, 2], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], false]]]",
+   "derived_description": "A dominant three-story academic and institutional house serves as the central organizing mass, concentrating most school functions within one vertically layered volume. The media center crowns this main building above the teaching and creative levels. Two smaller satellites attach independently: a specialized learning wing and a communal activity pavilion. Both connect to the main house but not to each other.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S03|D08:M3->M1",
@@ -477,7 +497,9 @@
     "[[\"a\", \"a\", \"b\", \"c\", \"b\", \"c\", \"c\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]",
     "[[\"a\", \"a\", \"b\", \"c\", \"c\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]"
    ],
-   "representative": "[[\"a\", \"a\", \"b\", \"c\", \"b\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]"
+   "representative": "[[\"a\", \"a\", \"b\", \"c\", \"b\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], false], [[\"b\", \"c\"], false]]]",
+   "derived_description": "A dispersed arrangement of three detached programmatic houses establishes a campus without enclosed interbuilding links. A consolidated three-story academic and institutional block forms the principal volume, integrating specialized learning within its lower levels. A separate communal activity pavilion defines one adjacent territory, while a third cultural and resource house places the media center above its creative base.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S04|D01:M3->M1",
@@ -502,7 +524,9 @@
     "[[\"a\", \"b\", \"b\", \"c\", \"c\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
     "[[\"a\", \"b\", \"c\", \"c\", \"a\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"b\", \"c\", \"a\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"b\", \"b\", \"c\", \"a\", \"c\", \"a\", \"a\", \"a\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], false], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
+   "derived_description": "A communal activity volume becomes the central link in a three-mass chain. On one side, a vertically consolidated core academic and institutional house integrates the media center at its middle level. On the other, a lower specialized learning and creative arts wing forms a distinct territory. Both wings connect to the shared middle volume but remain physically separate from each other.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S03|D08:M3->M2",
@@ -634,7 +658,9 @@
     "[[\"a\", \"b\", \"b\", \"b\", \"c\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [1, 2], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], false]]]",
     "[[\"a\", \"b\", \"c\", \"b\", \"a\", \"b\", \"c\", \"c\", \"c\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"b\", \"b\", \"c\", \"b\", \"c\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [3], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"b\", \"b\", \"b\", \"c\", \"b\", \"c\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [3], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
+   "derived_description": "A three-way connected cluster is organized around a specialized learning and communal house, with creative functions stacked above the shared base. A separate institutional house places the media center over administrative and care functions, while a taller core academic block forms the third element. All three masses connect directly, producing an interlinked composition of distinct educational, civic, and shared territories.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S04|D02:M3->M1",
@@ -679,7 +705,9 @@
     "[[\"a\", \"a\", \"a\", \"b\", \"b\", \"b\", \"a\", \"c\", \"a\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
     "[[\"a\", \"a\", \"a\", \"b\", \"c\", \"b\", \"a\", \"c\", \"a\"], [[1, 2, 3], [1, 2, 3], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"a\", \"a\", \"b\", \"c\", \"b\", \"a\", \"c\", \"a\"], [[1, 2, 3], [1, 2, 3], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"a\", \"a\", \"b\", \"c\", \"b\", \"a\", \"c\", \"a\"], [[1, 2, 3], [1, 2, 3], [1], [1], [2], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
+   "derived_description": "A tightly interconnected three-part campus forms a triangular cluster, with a civic and administrative house, a dedicated shared-activity volume, and a vertically organized learning block. The media center occupies the upper level of the civic house, while the learning block rises across three stories. Direct connections between all three masses establish a compact, interwoven organization.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S01|D04:M3->M2",
@@ -815,7 +843,9 @@
    "members": [
     "[[\"a\", \"b\", \"b\", \"c\", \"c\", \"c\", \"c\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [3], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
    ],
-   "representative": "[[\"a\", \"b\", \"b\", \"c\", \"c\", \"c\", \"c\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [3], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
+   "representative": "[[\"a\", \"b\", \"b\", \"c\", \"c\", \"c\", \"c\", \"c\", \"a\"], [[1, 2, 3], [1, 2], [3], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]",
+   "derived_description": "A fully interconnected triangular cluster brings together three contrasting vertical territories. A tall core academic house establishes the main instructional volume, a specialized learning and creative house forms a second stacked element, and a civic communal house places the media center at its uppermost level. Direct links between every pair of masses create a continuous three-part organization.",
+   "derived_description_source": "ChatGPT temporary chat, prompts/DESCRIBE_EXPANSIONS.txt"
   },
   {
    "group": "R1-S03|D01:M1->M2,D04:M2->M3",
@@ -1117,5 +1147,6 @@
    ],
    "representative": "[[\"a\", \"b\", \"b\", \"b\", \"a\", \"b\", \"b\", \"c\", \"b\"], [[1, 2, 3], [1, 2, 3], [1], [1], [3], [1], [1], [1], [1]], [[[\"a\", \"b\"], true], [[\"a\", \"c\"], true], [[\"b\", \"c\"], true]]]"
   }
- ]
+ ],
+ "note_descriptions": "derived_description is written by an outside model from structure only; it is not an authored concept (see results/FINDINGS.md addendum)"
 }
