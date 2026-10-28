@@ -28,6 +28,11 @@ h1{font-size:1.3rem;margin:0;text-wrap:balance}
 .bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
 .q{font-weight:600;margin:0}
 .note{margin:0;padding:8px 12px;border-left:3px solid var(--accent);background:var(--accent-soft);color:var(--fg);font-size:.9rem;max-width:75ch}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.view{display:grid;gap:18px}
+.probe{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:18px}
+.intended{margin:0;padding:8px 12px;background:var(--anchor);border:1px solid var(--anchor-line);border-radius:5px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:8px;min-width:0}
 .card.anchor{background:var(--anchor);border-color:var(--anchor-line)}
 .tag{font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
@@ -73,11 +78,15 @@ details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.75rem var(--mono);
     </div>
     <div class="status" id="status">0 / 0 labeled</div>
   </header>
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-label" aria-selected="true">1 · Label real cases</button>
+    <button role="tab" id="tab-probe" aria-selected="false">2 · Check probes</button>
+  </div>
   <div class="bar"><i id="prog"></i></div>
+  <section class="view" id="labelView">
   <div class="legend" id="legend" aria-label="Diagram key"></div>
 
   <p class="q" id="qline"></p>
-  <p class="note" id="textonly" hidden>Text-only item, no diagrams by design. These items test whether the words alone carry the strategy, so judge the strategy each description describes.</p>
   <section class="card anchor" id="anchor"></section>
   <div class="opts">
     <section class="card" id="opt1"></section>
@@ -100,6 +109,12 @@ details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.75rem var(--mono);
   </div>
 
   <div class="grid" id="grid" aria-label="Jump to item"></div>
+  </section>
+
+  <section class="view" id="probeView" hidden>
+    <p class="note">These probes were written by Claude to test known weaknesses of embeddings. Their answers are set by design, so you are not asked to label them blind. For each one, check the intended answer and the reason. Mark <strong>Agree</strong> if the reasoning holds architecturally, <strong>Disagree</strong> if it does not, or <strong>Unsure</strong>. Only probes you agree with are used to score the models.</p>
+    <div id="probeList"></div>
+  </section>
 
   <details>
     <summary>Backup: copy all labels</summary>
@@ -112,6 +127,7 @@ details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.75rem var(--mono);
 <script>
 const SET = __DATA__;
 const DIAGRAMS = __DIAGRAMS__;
+const PROBES = __PROBES__;
 const KIND = {D01:["d01","Academic","Acad"],D02:["d02","Special ed","SPED"],D03:["d03","Art and music","Arts"],
   D46:["d46","Gym + dining (double height)","Gym+Din"],D05:["d05","Media","Media"],D07:["d07","Medical","Med"],
   D08:["d08","Admin","Admin"],D09:["d09","Custodial","Cust"]};
@@ -157,12 +173,15 @@ function diagramSVG(spec){
   [0,1,2].forEach(i=>{ s+=`<circle cx="${cx(i)+CW/2}" cy="${y}" r="4" fill="var(--link)"/>`; });
   return s+"</svg>";
 }
-const items = SET.items;
+const items = SET.items.filter(x=>x.anchor.structure);
+const reviews = {};
+let view = "label";
 const labels = {};
 let i = 0, db = null;
 const $ = id => document.getElementById(id);
 const LS = "me2-p01-labels";
 try { Object.assign(labels, JSON.parse(localStorage.getItem(LS) || "{}")); } catch (e) {}
+try { Object.assign(reviews, JSON.parse(localStorage.getItem(LS+"-probes") || "{}")); } catch (e) {}
 
 function cardHTML(tag, o){
   const s = o.structure ? `<div class="struct">${esc(o.structure)}</div>` : "";
@@ -173,9 +192,7 @@ function esc(t){ const d=document.createElement("div"); d.textContent=t; return 
 
 function render(){
   const it = items[i], lab = labels[it.triplet_id] || {};
-  const textOnly = !it.anchor.structure && !it.option_1.structure && !it.option_2.structure;
-  $("qline").textContent = `Item ${it.item} of ${items.length}. ${SET.question}`;
-  $("textonly").hidden = !textOnly;
+  $("qline").textContent = `Item ${i+1} of ${items.length}. ${SET.question}`;
   $("anchor").innerHTML = cardHTML("Anchor", it.anchor);
   $("opt1").innerHTML = cardHTML("Option 1", it.option_1);
   $("opt2").innerHTML = cardHTML("Option 2", it.option_2);
@@ -186,10 +203,11 @@ function render(){
   $("prev").disabled = i===0;
   $("next").textContent = i===items.length-1 ? "Finish" : "Next →";
   const n = items.filter(x=>labels[x.triplet_id]?.answer).length;
-  $("status").textContent = `${n} / ${items.length} labeled`;
-  $("prog").style.width = (100*n/items.length)+"%";
-  $("grid").innerHTML = items.map((x,k)=>`<button data-k="${k}" class="${labels[x.triplet_id]?.answer?'done':''} ${k===i?'cur':''}">${x.item}</button>`).join("");
-  $("dump").textContent = JSON.stringify(labels, null, 1);
+  const m = PROBES.items.filter(x=>reviews[x.triplet_id]?.verdict).length;
+  $("status").textContent = `${n} / ${items.length} labeled · ${m} / ${PROBES.items.length} probes checked`;
+  $("prog").style.width = (view==="label" ? 100*n/items.length : 100*m/PROBES.items.length)+"%";
+  $("grid").innerHTML = items.map((x,k)=>`<button data-k="${k}" class="${labels[x.triplet_id]?.answer?'done':''} ${k===i?'cur':''}">${k+1}</button>`).join("");
+  $("dump").textContent = JSON.stringify({labels, probe_review:reviews}, null, 1);
   if (n===items.length && i===items.length-1) $("save").textContent = $("save").textContent || "All items labeled.";
 }
 
@@ -199,8 +217,8 @@ async function persist(tid){
   if (!db){ $("save").textContent = "Saved in this browser only"; $("save").className="save"; return; }
   const it = items.find(x=>x.triplet_id===tid), lab = labels[tid];
   try {
-    await db.collection("labels").doc(tid).set({triplet_id:tid, item:it.item, answer:lab.answer||null, note:lab.note||"", saved_at:new Date().toISOString(), labeling_set:"p01-v1"});
-    $("save").textContent = `Saved item ${it.item}`; $("save").className="save ok";
+    await db.collection("labels").doc(tid).set({triplet_id:tid, item:it.item, answer:lab.answer||null, note:lab.note||"", saved_at:new Date().toISOString(), labeling_set:"p01-v1.2"});
+    $("save").textContent = `Saved item ${items.indexOf(it)+1}`; $("save").className="save ok";
   } catch (e) {
     $("save").textContent = "Could not save to the shared record. Use the backup copy below."; $("save").className="save";
   }
@@ -222,13 +240,57 @@ $("prev").onclick=()=>go(i-1);
 $("next").onclick=()=>{ if(i===items.length-1){ const left=items.findIndex(x=>!labels[x.triplet_id]?.answer); if(left>=0) go(left); else $("save").textContent="All items labeled. Thank you."; } else go(i+1); };
 $("grid").addEventListener("click", e=>{ const b=e.target.closest("button"); if(b) go(+b.dataset.k); });
 document.addEventListener("keydown", e=>{
-  if (e.target.tagName==="TEXTAREA") return;
+  if (e.target.tagName==="TEXTAREA" || view!=="label") return;
   const m={"1":"option_1","2":"option_2","e":"about_equal","x":"cannot_judge"}[e.key.toLowerCase()];
   if (m) answer(m);
   if (e.key==="ArrowRight") $("next").click();
   if (e.key==="ArrowLeft") go(i-1);
 });
-$("copy").onclick=async()=>{ const t=JSON.stringify(labels,null,1); try{ await navigator.clipboard.writeText(t); $("copy").textContent="Copied"; }catch(e){ const r=document.createRange(); r.selectNodeContents($("dump")); const s=getSelection(); s.removeAllRanges(); s.addRange(r); } };
+$("copy").onclick=async()=>{ const t=JSON.stringify({labels, probe_review:reviews},null,1); try{ await navigator.clipboard.writeText(t); $("copy").textContent="Copied"; }catch(e){ const r=document.createRange(); r.selectNodeContents($("dump")); const s=getSelection(); s.removeAllRanges(); s.addRange(r); } };
+
+function renderProbes(){
+  $("probeList").innerHTML = PROBES.items.map((p,k)=>{
+    const r = reviews[p.triplet_id] || {};
+    const vb = (v,l)=>`<button data-tid="${p.triplet_id}" data-v="${v}" class="${r.verdict===v?'on':''}">${l}</button>`;
+    return `<article class="probe">
+      <span class="tag">Probe ${k+1} of ${PROBES.items.length}</span>
+      <section class="card anchor"><span class="tag">Anchor</span><p class="text">${esc(p.anchor)}</p></section>
+      <div class="opts">
+        <section class="card ${p.intended==='option_1'?'pick':''}"><span class="tag">Option 1</span><p class="text">${esc(p.option_1)}</p></section>
+        <section class="card ${p.intended==='option_2'?'pick':''}"><span class="tag">Option 2</span><p class="text">${esc(p.option_2)}</p></section>
+      </div>
+      <p class="intended"><strong>Intended: ${p.intended==='option_1'?'Option 1':'Option 2'} is the closer strategy.</strong> ${esc(p.reason)}</p>
+      <div class="answers">${vb("agree","Agree")}${vb("disagree","Disagree")}${vb("unsure","Unsure")}</div>
+      <textarea id="pn-${p.triplet_id}" data-ptid="${p.triplet_id}" placeholder="Note (optional)">${esc(r.note||"")}</textarea>
+    </article>`;
+  }).join("");
+}
+async function persistProbe(tid){
+  try { localStorage.setItem(LS+"-probes", JSON.stringify(reviews)); } catch (e) {}
+  if (!db) return;
+  const r = reviews[tid];
+  try { await db.collection("probe_review").doc(tid).set({triplet_id:tid, verdict:r.verdict||null, note:r.note||"", saved_at:new Date().toISOString(), labeling_set:"p01-v1.2"}); } catch (e) {}
+}
+$("probeList").addEventListener("click", e=>{
+  const b=e.target.closest("button[data-v]"); if(!b) return;
+  const tid=b.dataset.tid; reviews[tid]={...(reviews[tid]||{}), verdict:b.dataset.v};
+  b.parentElement.querySelectorAll("button").forEach(x=>x.classList.toggle("on", x===b));
+  render(); persistProbe(tid);
+});
+const probeTimers={};
+$("probeList").addEventListener("input", e=>{
+  const tid=e.target.dataset.ptid; if(!tid) return;
+  reviews[tid]={...(reviews[tid]||{}), note:e.target.value};
+  clearTimeout(probeTimers[tid]); probeTimers[tid]=setTimeout(()=>persistProbe(tid),700);
+});
+function setView(v){
+  view=v; $("labelView").hidden = v!=="label"; $("probeView").hidden = v!=="probe";
+  $("tab-label").setAttribute("aria-selected", v==="label"); $("tab-probe").setAttribute("aria-selected", v==="probe");
+  if (v==="probe") renderProbes();
+  render(); window.scrollTo({top:0});
+}
+$("tab-label").onclick=()=>setView("label");
+$("tab-probe").onclick=()=>setView("probe");
 
 $("legend").innerHTML = "<strong>Diagram key</strong>" + Object.values(KIND).map(k=>`<span><i style="background:var(--${k[0]})"></i>${k[1]}</span>`).join("") + `<span><i style="background:var(--link);height:3px"></i>direct link</span><span>Floors 1–3 · no dimensions · position on screen means nothing</span>`;
 render();
@@ -238,6 +300,9 @@ render();
   try {
     const snap = await db.collection("labels").get();
     snap.docs.forEach(d=>{ const v=d.data(); if(v && v.triplet_id) labels[v.triplet_id]={answer:v.answer||undefined, note:v.note||""}; });
+    const ps = await db.collection("probe_review").get();
+    ps.docs.forEach(d=>{ const v=d.data(); if(v && v.triplet_id) reviews[v.triplet_id]={verdict:v.verdict||undefined, note:v.note||""}; });
+    if (view==="probe") renderProbes();
     render();
   } catch(e) {}
 })();

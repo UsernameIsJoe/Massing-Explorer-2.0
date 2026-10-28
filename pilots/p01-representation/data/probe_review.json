@@ -1,0 +1,121 @@
+{
+ "items": [
+  {
+   "triplet_id": "T16",
+   "kind": "paraphrase",
+   "anchor": "A single academic bar holds all classrooms, with art and music on its ground floor. A compact civic hub of administration, medical and custodial, topped by media, sits between the bar and a double-height commons. All movement between classrooms and commons passes through the civic hub. This centralizes supervision but lengthens daily lunch and gym routes. The hub and commons give up the three-floor preference.",
+   "option_1": "Core academic stacks over a ground-floor civic front, with media on the bar's top floor. Special education and art and music share an accessible one-story wing. The commons is the third mass, and all three masses are linked to each other. Special education gets ground-level access and sits next to the arts, but is separated from general classrooms, which weakens inclusion. Two single-story masses give up the three-floor preference.",
+   "option_2": "Every classroom is in one teaching bar whose ground level houses the art and music rooms. Between this bar and the tall gym-and-dining hall stands a small front-office block containing the principal's office, nurse and maintenance, with the library on its upper level. Students reach lunch and gym only by passing through that office block, which makes oversight easy but daily trips longer. Neither the office block nor the hall reaches three stories.",
+   "intended": "option_2",
+   "reason": "Same organization and intentions as the anchor, in different words. The other option is a different real scheme."
+  },
+  {
+   "triplet_id": "T17",
+   "kind": "paraphrase",
+   "anchor": "One consolidated learning house holds administration, medical, special education, classrooms and media. The commons and an arts-and-service pavilion stand apart. They are linked to each other and reached from the house across open ground. Detaching the commons and arts makes after-hours use and phasing simpler. Students must cross open ground every day for lunch, gym and arts, which weakens supervision, weather protection and single-entry control.",
+   "option_1": "Nearly everything a student or visitor needs during the day, including classrooms, special education, the front office, the nurse and the library, sits in one large school building. The gym-and-cafeteria hall and a separate studio-and-maintenance building are free-standing, joined only to each other, and children walk outdoors to reach them. Keeping them separate makes evening community use and building in stages easier, but daily outdoor crossings cost supervision, shelter and a single controlled entrance.",
+   "option_2": "A single academic bar holds all classrooms, with art and music on its ground floor. A compact civic hub of administration, medical and custodial, topped by media, sits between the bar and a double-height commons. All movement between classrooms and commons passes through the civic hub. This centralizes supervision but lengthens daily lunch and gym routes. The hub and commons give up the three-floor preference.",
+   "intended": "option_1",
+   "reason": "Same organization and intentions as the anchor, in different words. The other option is a different real scheme."
+  },
+  {
+   "triplet_id": "T18",
+   "kind": "paraphrase",
+   "anchor": "Both non-commons masses rise three floors. A support tower stacks administration, medical and custodial at grade, special education on floor 2 and media on top. Art and music occupy the academic bar's ground floor beneath classrooms on all three floors. This meets the three-floor, ground-floor arts and media-above-admin preferences together. In exchange, special education loses ground access, depends on elevators and protected egress, and is separated from grade-level classmates.",
+   "option_1": "Apart from the gym-dining hall, both buildings are three stories tall. One is a vertical support building: front office, nurse and maintenance at street level, the special-education suite one level up, and the library at the top. The other is the teaching bar, with art and music studios at grade and classrooms on every level. Every stated floor preference is satisfied, but students in special education have no ground-level access, rely on lifts and protected stairs, and are apart from their general-education peers.",
+   "option_2": "Core academic stacks over a ground-floor civic front, with media on the bar's top floor. Special education and art and music share an accessible one-story wing. The commons is the third mass, and all three masses are linked to each other. Special education gets ground-level access and sits next to the arts, but is separated from general classrooms, which weakens inclusion. Two single-story masses give up the three-floor preference.",
+   "intended": "option_1",
+   "reason": "Same organization and intentions as the anchor, in different words. The other option is a different real scheme."
+  },
+  {
+   "triplet_id": "T19",
+   "kind": "paraphrase",
+   "anchor": "Media moves to the middle floor of the learning bar as a shared daily heart for every grade, above ground-floor special education. A one-story civic-arts front pairs administration and medical with art and music for community use. This case gives up the media-above-administration preference to make media reachable daily from classrooms. The civic-arts front also gives up the three-floor preference.",
+   "option_1": "Special education, the nurse and administration share an accessible ground-floor welcome house, with media above. Classrooms fill two bar floors, topped by a third-floor art and music studio. Custodial serves the kitchen from inside the commons. Special education gets grade access beside the nurse and office but sits apart from grade-level classrooms. Art and music give up the ground floor for a top-lit roof studio over classrooms.",
+   "option_2": "The library is placed on the second level of the classroom building, so every grade passes it daily; special education sits directly beneath it at grade. A single-story front building combines the office and nurse with the art and music rooms, open to community use. Putting the library among the classrooms means it is not above the office, and the front building stays one level.",
+   "intended": "option_2",
+   "reason": "Same organization and intentions as the anchor, in different words. The other option is a different real scheme."
+  },
+  {
+   "triplet_id": "T20",
+   "kind": "lexical_trap",
+   "anchor": "A single academic bar holds all classrooms, with art and music on its ground floor. A compact civic hub of administration, medical and custodial, topped by media, sits between the bar and a double-height commons. All movement between classrooms and commons passes through the civic hub. This centralizes supervision but lengthens daily lunch and gym routes. The hub and commons give up the three-floor preference.",
+   "option_1": "Every classroom is in one teaching bar whose ground level houses the art and music rooms. Between this bar and the tall gym-and-dining hall stands a small front-office block containing the principal's office, nurse and maintenance, with the library on its upper level. Students reach lunch and gym only by passing through that office block, which makes oversight easy but daily trips longer. Neither the office block nor the hall reaches three stories.",
+   "option_2": "A single academic bar holds all classrooms, with art and music on its ground floor. A compact civic hub of administration, medical and custodial, topped by media, sits at the far end of the double-height commons, away from the bar. All movement between classrooms and the civic hub passes through the commons. This centralizes social life in the commons but lengthens daily routes to the office and nurse. The hub and commons give up the three-floor preference.",
+   "intended": "option_1",
+   "reason": "Reuses the anchor's words but makes the commons, not the civic hub, the mass every route passes through."
+  },
+  {
+   "triplet_id": "T21",
+   "kind": "lexical_trap",
+   "anchor": "One consolidated learning house holds administration, medical, special education, classrooms and media. The commons and an arts-and-service pavilion stand apart. They are linked to each other and reached from the house across open ground. Detaching the commons and arts makes after-hours use and phasing simpler. Students must cross open ground every day for lunch, gym and arts, which weakens supervision, weather protection and single-entry control.",
+   "option_1": "Nearly everything a student or visitor needs during the day, including classrooms, special education, the front office, the nurse and the library, sits in one large school building. The gym-and-cafeteria hall and a separate studio-and-maintenance building are free-standing, joined only to each other, and children walk outdoors to reach them. Keeping them separate makes evening community use and building in stages easier, but daily outdoor crossings cost supervision, shelter and a single controlled entrance.",
+   "option_2": "One consolidated learning house holds administration, medical, special education, classrooms and media. The commons and an arts-and-service pavilion are attached to it. They are linked to each other and reached from the house through enclosed corridors. Attaching the commons and arts makes daily supervision simpler. Students never cross open ground for lunch, gym and arts, which strengthens supervision, weather protection and single-entry control, but complicates after-hours use and phasing.",
+   "intended": "option_1",
+   "reason": "Reuses the anchor's words but attaches the pavilions, reversing the detached-campus idea and its trade-off."
+  },
+  {
+   "triplet_id": "T22",
+   "kind": "lexical_trap",
+   "anchor": "Both non-commons masses rise three floors. A support tower stacks administration, medical and custodial at grade, special education on floor 2 and media on top. Art and music occupy the academic bar's ground floor beneath classrooms on all three floors. This meets the three-floor, ground-floor arts and media-above-admin preferences together. In exchange, special education loses ground access, depends on elevators and protected egress, and is separated from grade-level classmates.",
+   "option_1": "Both non-commons masses rise three floors. A support tower stacks administration, medical and custodial at grade, media on floor 2 and art and music on top. Special education occupies the academic bar's ground floor beneath classrooms on all three floors. This meets the three-floor and media-above-admin preferences but gives up ground-floor arts. In exchange, special education keeps ground access and stays beside grade-level classmates.",
+   "option_2": "Apart from the gym-dining hall, both buildings are three stories tall. One is a vertical support building: front office, nurse and maintenance at street level, the special-education suite one level up, and the library at the top. The other is the teaching bar, with art and music studios at grade and classrooms on every level. Every stated floor preference is satisfied, but students in special education have no ground-level access, rely on lifts and protected stairs, and are apart from their general-education peers.",
+   "intended": "option_2",
+   "reason": "Reuses the anchor's words but puts special education at grade beside classrooms and moves the arts up, reversing the anchor's main trade-off."
+  },
+  {
+   "triplet_id": "T23",
+   "kind": "lexical_trap",
+   "anchor": "Media moves to the middle floor of the learning bar as a shared daily heart for every grade, above ground-floor special education. A one-story civic-arts front pairs administration and medical with art and music for community use. This case gives up the media-above-administration preference to make media reachable daily from classrooms. The civic-arts front also gives up the three-floor preference.",
+   "option_1": "Media moves out of the learning bar to the top floor of a two-story civic-arts front, above administration, as a community library rather than a daily heart for every grade. Special education stays on the ground floor of the learning bar. This case keeps the media-above-administration preference but makes media less reachable daily from classrooms. The civic-arts front gives up the three-floor preference.",
+   "option_2": "The library is placed on the second level of the classroom building, so every grade passes it daily; special education sits directly beneath it at grade. A single-story front building combines the office and nurse with the art and music rooms, open to community use. Putting the library among the classrooms means it is not above the office, and the front building stays one level.",
+   "intended": "option_2",
+   "reason": "Reuses the anchor's words but moves media out of the learning bar to sit above administration, the opposite of the anchor's library-heart move."
+  },
+  {
+   "triplet_id": "T24",
+   "kind": "generic",
+   "anchor": "Gym and dining fill a double-height ground volume, with art and music raised onto a top-floor loft overlooking it. The classroom bar keeps special education at grade. A civic mass puts media above administration. Raising the arts over the commons gives that mass a third level and links music to the stage. It gives up the ground-floor arts preference and adds long-span structure and acoustic separation demands.",
+   "option_1": "A three-floor civic tower stacks administration and medical at grade, art and music above, and media on top. Classrooms and special education share one learning bar. Custodial joins the commons to serve the kitchen directly. Moving art and music to floor 2 gives up their ground-floor preference. In return the civic stack is balanced across three floors and has a community culture front. Event visitors reach the commons only through the learning bar.",
+   "option_2": "A welcoming, well-organized elementary school designed around student learning. Flexible classrooms, a vibrant commons and supportive spaces work together to create a safe, inclusive and inspiring environment for children, staff and the wider community, with careful attention to circulation, daylight and efficiency.",
+   "intended": "option_1",
+   "reason": "The generic text commits to no strategy, so the real scheme is closer."
+  },
+  {
+   "triplet_id": "T25",
+   "kind": "generic",
+   "anchor": "Gym and dining form a double-height hall on floors 2–3 above a ground-floor civic plinth of administration, medical and custodial. The classroom bar keeps special education at grade, and art, music and media share a small pavilion. Lifting assembly frees the ground for a controlled civic front and puts kitchen receiving directly below. It needs long-span transfer structure and upper-level assembly egress, and gives up media above admin.",
+   "option_1": "The design balances the program across three masses and respects the brief's requirements and preferences. Departments are carefully allocated to support learning, community use and operations, while unresolved dimensional checks remain for later stages.",
+   "option_2": "Gym and dining fill a double-height ground volume, with art and music raised onto a top-floor loft overlooking it. The classroom bar keeps special education at grade. A civic mass puts media above administration. Raising the arts over the commons gives that mass a third level and links music to the stage. It gives up the ground-floor arts preference and adds long-span structure and acoustic separation demands.",
+   "intended": "option_2",
+   "reason": "The generic text commits to no strategy, so the real scheme is closer."
+  },
+  {
+   "triplet_id": "T26",
+   "kind": "intent_vs_wording",
+   "anchor": "Special education sits on the ground floor of the classroom bar, directly beside the grade-level classrooms it serves, so students share corridors, lunch routes and daily routines with their peers while keeping step-free access.",
+   "option_1": "Special education sits on the ground floor of a separate support wing, beside the nurse and guidance offices it relies on, so students share therapy, medical and family-meeting routines with specialists while keeping step-free access.",
+   "option_2": "To keep students with disabilities part of everyday school life, their suite is placed on the second floor of the teaching bar, interleaved with same-grade classrooms, with an elevator and refuge stair next to it.",
+   "intended": "option_2",
+   "reason": "Same intention (special education among grade-level classrooms) on a different floor. The other uses similar words but separates special education into a support wing."
+  },
+  {
+   "triplet_id": "T27",
+   "kind": "intent_vs_wording",
+   "anchor": "Gym, dining and the front office form one civic mass at the main entrance, so evening community events use a single controlled door while the classroom bar can be locked off behind it.",
+   "option_1": "For evening and weekend use, the hall and its lobby are placed in a free-standing pavilion with its own entrance and toilets; the teaching building is never opened, and staff close one gate between them.",
+   "option_2": "Gym, dining and the front office are spread along the classroom bar at the main entrance, so evening community events pass along the main corridor and the classroom areas cannot be locked off separately.",
+   "intended": "option_1",
+   "reason": "Same intention (community use while classrooms stay closed off) by a different arrangement. The other uses similar words but loses that separation."
+  },
+  {
+   "triplet_id": "T28",
+   "kind": "intent_vs_wording",
+   "anchor": "Custodial and kitchen receiving share the commons mass, so deliveries, waste and maintenance reach food service directly without crossing student circulation.",
+   "option_1": "Maintenance staff work from a small service yard beside the dining hall's back wall; the loading dock, bins and kitchen door are grouped there, out of sight of pupils.",
+   "option_2": "Custodial and kitchen receiving sit in the civic hub, so deliveries, waste and maintenance reach food service by crossing the student link between hub and commons.",
+   "intended": "option_1",
+   "reason": "Same intention (service reaches the kitchen without crossing students) by a service yard. The other uses similar words but routes service across the student link."
+  }
+ ]
+}

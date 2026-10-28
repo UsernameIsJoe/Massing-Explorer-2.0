@@ -1,6 +1,6 @@
 # Pilot 01 — Can text embeddings represent strategic similarity?
 
-Status: **locked 2026-10-28**. Change nothing below mid-run. Any change creates `p01-v2` and applies only to new runs.
+Status: **locked 2026-10-28, revision p01-v1.2**. Change nothing below mid-run. Any change creates `p01-v2` and applies only to new runs.
 
 ## Question
 
@@ -31,9 +31,12 @@ Every sentence is either rendered from the structured record (department → mas
 
 Known limitation: aspect views select sentences by keyword, so an unrelated sentence that mentions a keyword can be included (e.g. A-E04 inclusion picks up a ratio note).
 
-## Ground truth: blind triplets
+## Ground truth
 
-Each item shows an anchor and two options. The labeler (Joe) picks which option is the closer **architectural strategy**, or "about equal" / "can't judge". Labels are entered in the labeling page and are authoritative.
+Two kinds of ground truth, set in revision p01-v1.2:
+
+- **Real-case items (17, including 2 repeats): blind labels.** The labeler (Joe) picks which option is the closer **architectural strategy**, or "about equal" / "can't judge", with a diagram for every scheme. These labels are authoritative.
+- **Probe items (13): construction review, not blind labels.** Each probe's answer is fixed by how it was written. The labeler checks the intended answer and its reason and marks agree / disagree / unsure. A probe is scored only if the labeler agrees.
 
 | Kind | n | What it probes |
 |---|---:|---|
@@ -43,13 +46,13 @@ Each item shows an anchor and two options. The labeler (Joe) picks which option 
 | `lexical_trap` | 4 | same words with changed relationships vs. a paraphrase of the anchor |
 | `generic` | 2 | generic school text vs. a real case |
 | `intent_vs_wording` | 3 | same intention / different implementation vs. similar words / opposite intention |
-| repeats | 3 | items shown twice with options swapped (labeler consistency only) |
+| repeats | 3 | items shown twice with options swapped (labeler consistency only); the probe repeat is retired in v1.2 |
 
 Real-case display: a schematic massing diagram, the intent text and a compact structure line. Probe items: text only, because a diagram would either not apply or reveal the answer (a paraphrase has the same diagram as its anchor).
 
 **Revision p01-v1.1 (2026-10-28, before any label was saved):** diagrams added at the labeler's request, as an aid to reading the text, not a replacement. Each diagram is drawn only from the structured record (`data/diagram_data.json`, keyed by the structure line it illustrates): three masses in a fixed left-to-right order (classroom, third, commons), departments as blocks on their floors, gym + dining always drawn as one double-height block, and direct links as lines. Screen position, block width and plate width carry no meaning; there are no dimensions. Items, order and the labeling-set hash are unchanged.
 
-Probe expectations were written by Claude when constructing the probes. If the labeler disagrees with one, the label stands and the probe is reviewed.
+**Revision p01-v1.2 (2026-10-28, before any label was saved):** the labeler judged that blind labels on text-only probes would be unreliable. Probes moved from blind labeling to construction review (see Ground truth). Items, order, texts and all locked hashes are unchanged; only the role of the probe items changed. The review payload is `data/probe_review.json`, built by `scripts/build_probe_review.py`.
 
 ## Encoders (frozen config `p01-enc-v1`)
 
@@ -65,19 +68,19 @@ On `real_disagree` items the two proxies always answer opposite ways by construc
 
 ## Procedure
 
-1. Joe labels all 31 items in the labeling page. Do not look at embedding results first.
+1. Joe labels the 17 real-case items, then checks the 13 probes, in the labeling page. Do not look at embedding results first.
 2. Run `python scripts/run_embeddings.py` on the PC with Ollama.
 3. Run the LLM baseline in a fresh chat; save its answers as `labels/llm_labels.json`.
-4. Export labels from the page to `labels/user_labels.json` (Claude reads the page's record).
-5. Run `python scripts/score_triplets.py labels/user_labels.json --llm labels/llm_labels.json`.
+4. Export the page's record to `labels/user_labels.json` and `labels/probe_review.json` (Claude reads it).
+5. Run `python scripts/score_triplets.py labels/user_labels.json --probes labels/probe_review.json --llm labels/llm_labels.json`.
 6. Write `results/FINDINGS.md`, then apply the gate.
 
 ## Decision gate
 
 Scored on decisive labels only. "Best" means the best encoder × variant on `ALL_REAL`.
 
-- **Precondition:** at least 2 of 3 repeats consistent. If not, review the inconsistent items with Joe before deciding; label noise would otherwise decide the gate.
-- **PASS — embeddings carry the semantic boundary into Pilot 2:** best ≥ 70% on `ALL_REAL`; that encoder on `intent` gets ≥ 3/4 paraphrase, ≥ 3/4 lexical traps and ≥ 2/3 intent-vs-wording; and the LLM baseline is no more than 2 items ahead overall.
+- **Precondition:** both real-case repeats consistent. If not, review the inconsistent items with Joe before deciding; label noise would otherwise decide the gate.
+- **PASS — embeddings carry the semantic boundary into Pilot 2:** best ≥ 70% on `ALL_REAL`; that encoder on `intent` passes at least 3/4 of the agreed paraphrase probes, 3/4 of the agreed lexical traps and 2/3 of the agreed intent-vs-wording probes (each fraction scaled to the probes agreed in that kind, rounded up); and the LLM baseline is no more than 2 items ahead overall.
 - **PARTIAL — embeddings need structural support:** best ≥ 60% on `ALL_REAL` but fails the lexical-trap or intent-vs-wording checks. Pilot 2 uses embedding neighbourhoods gated by explicit decision/axis checks, and favours the variant that scored best.
 - **FAIL — embeddings do not define the boundary:** no encoder ≥ 60% on `ALL_REAL`, or the LLM baseline is 3 or more items ahead overall. Pilot 2 uses LLM judgment plus axes for membership; embeddings are kept for retrieval only.
 

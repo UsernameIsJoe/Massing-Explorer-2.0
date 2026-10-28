@@ -1,15 +1,18 @@
 """Score encoders (and an optional LLM baseline) against the user's blind labels.
 
 Usage (from pilots/p01-representation):
-    python scripts/score_triplets.py labels/user_labels.json [--llm labels/llm_labels.json]
+    python scripts/score_triplets.py labels/user_labels.json --probes labels/probe_review.json [--llm labels/llm_labels.json]
 
 Labels file: {"T01": {"answer": "option_1"|"option_2"|"about_equal"|"cannot_judge"}, ...}
 keyed by triplet_id, as exported from the labeling page.
 
 Reads data/triplets_SEALED.json and every runs/<encoder>/embeddings.jsonl.
 Writes results/scores.json and prints a summary table.
-Only decisive user labels (option_1/option_2) are scored; repeats are used only
-for the labeler-consistency check, never double counted.
+Protocol p01-v1.2: real-case items are scored against the user's decisive blind
+labels (option_1/option_2). Probe items are scored against their construction
+expectation, only where the user's probe review verdict is "agree".
+Probe review file: {"T16": {"verdict": "agree"|"disagree"|"unsure"}, ...}.
+Repeats are used only for the labeler-consistency check, never double counted.
 """
 import collections
 import json
@@ -51,6 +54,10 @@ def ref_id(ref, variant, probes):
 def main(argv):
     labels = load_labels(argv[0])
     llm = load_labels(argv[argv.index("--llm") + 1]) if "--llm" in argv else None
+    review = {}
+    if "--probes" in argv:
+        raw = json.loads(Path(argv[argv.index("--probes") + 1]).read_text(encoding="utf-8"))
+        review = {k: (v.get("verdict") if isinstance(v, dict) else v) for k, v in raw.items()}
     sealed = json.loads((HERE / "data" / "triplets_SEALED.json").read_text(encoding="utf-8"))
     probes = json.loads((HERE / "data" / "probes.json").read_text(encoding="utf-8"))["texts"]
     trip = {t["triplet_id"]: t for t in sealed["triplets"]}
@@ -61,12 +68,19 @@ def main(argv):
     for t in sealed["triplets"]:
         if "repeat_of" in t:
             a, b = resolve(trip[t["repeat_of"]], labels.get(t["repeat_of"])), resolve(t, labels.get(t["triplet_id"]))
-            consistency.append({"item": t["repeat_of"], "repeat": t["triplet_id"], "first": a, "second": b,
-                                "consistent": a == b})
+            if t["kind"] in REAL:
+                consistency.append({"item": t["repeat_of"], "repeat": t["triplet_id"], "first": a, "second": b,
+                                    "consistent": a == b})
 
-    truth = {t["triplet_id"]: resolve(t, labels.get(t["triplet_id"])) for t in originals}
+    truth = {}
+    for t in originals:
+        if t["kind"] in REAL:
+            truth[t["triplet_id"]] = resolve(t, labels.get(t["triplet_id"]))
+        else:
+            truth[t["triplet_id"]] = t["construction_expectation"] if review.get(t["triplet_id"]) == "agree" else None
     decisive = [t for t in originals if truth[t["triplet_id"]]]
-    label_dist = collections.Counter(labels.get(t["triplet_id"], "missing") for t in originals)
+    label_dist = collections.Counter(labels.get(t["triplet_id"], "missing") for t in originals if t["kind"] in REAL)
+    review_dist = collections.Counter(review.get(t["triplet_id"], "missing") for t in originals if t["kind"] not in REAL)
 
     predictors = {}
     # Reference proxies (real triplets only).
@@ -79,8 +93,6 @@ def main(argv):
                 for t in originals if t["kind"] in REAL}
     predictors["proxy:structure"] = proxy(lambda a, o: struct_distance(cases[a], cases[o]))
     predictors["proxy:wording_tfidf"] = proxy(lambda a, o: -cos_lex(a, o))
-    predictors["construction_expectation"] = {t["triplet_id"]: t["construction_expectation"]
-                                              for t in originals if "construction_expectation" in t}
     if llm:
         predictors["llm_baseline"] = {t["triplet_id"]: resolve(t, llm.get(t["triplet_id"])) for t in originals}
 
@@ -113,13 +125,14 @@ def main(argv):
                 row[k] = {"agree": ok, "n": len(sel), "rate": round(ok / len(sel), 3)}
         table[name] = row
 
-    out = {"labels_file": str(argv[0]), "label_distribution": dict(label_dist),
+    out = {"protocol": "p01-v1.2", "labels_file": str(argv[0]), "label_distribution": dict(label_dist),
+           "probe_review_distribution": dict(review_dist),
            "decisive": len(decisive), "consistency": consistency, "agreement": table}
     (HERE / "results").mkdir(exist_ok=True)
     (HERE / "results" / "scores.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
 
     cols = ["ALL_REAL", "paraphrase", "lexical_trap", "generic", "intent_vs_wording", "ALL"]
-    print(f"labels: {dict(label_dist)}  decisive: {len(decisive)}  "
+    print(f"real-case labels: {dict(label_dist)}  probe review: {dict(review_dist)}  scored items: {len(decisive)}  "
           f"consistency: {sum(c['consistent'] for c in consistency)}/{len(consistency)}")
     print(f"{'predictor':42}" + "".join(f"{c:>18}" for c in cols))
     for name, row in table.items():

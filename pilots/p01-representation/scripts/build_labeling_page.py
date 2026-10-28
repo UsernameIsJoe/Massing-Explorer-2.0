@@ -17,7 +17,8 @@ def embed(path):
 
 def main():
     t = (HERE / "labeling" / "labeling_page.template.html").read_text(encoding="utf-8")
-    for key, path in (("__DATA__", "data/labeling_set.json"), ("__DIAGRAMS__", "data/diagram_data.json")):
+    for key, path in (("__DATA__", "data/labeling_set.json"), ("__DIAGRAMS__", "data/diagram_data.json"),
+                      ("__PROBES__", "data/probe_review.json")):
         if t.count(key) != 1:
             raise SystemExit(f"template must contain {key} exactly once")
         t = t.replace(key, embed(path))
