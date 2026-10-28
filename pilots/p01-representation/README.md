@@ -37,3 +37,7 @@ python scripts\run_embeddings.py
 ```
 
 Do not open `data/triplets_SEALED.json` before labeling is complete.
+
+## One-click run (Windows)
+
+Double-click `RUN_PILOT_01.bat`. It checks for Ollama and Python, pulls the four models, runs the embeddings and writes `runs/` plus `runs_console.txt`.
