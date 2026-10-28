@@ -1,0 +1,93 @@
+{
+ "paraphrase": {
+  "tfidf_wording": {
+   "own_top1": 5,
+   "own_or_twin_top1": 6,
+   "n": 15
+  },
+  "bge-m3": {
+   "own_top1": 10,
+   "own_or_twin_top1": 12,
+   "n": 15
+  },
+  "mxbai-embed-large": {
+   "own_top1": 8,
+   "own_or_twin_top1": 9,
+   "n": 15
+  },
+  "nomic-embed-text": {
+   "own_top1": 7,
+   "own_or_twin_top1": 8,
+   "n": 15
+  },
+  "qwen3-embedding_0.6b": {
+   "own_top1": 6,
+   "own_or_twin_top1": 7,
+   "n": 15
+  }
+ },
+ "edits": {
+  "bge-m3": {
+   "mean_spearman": 0.478,
+   "per_base": [
+    0.0,
+    0.717,
+    0.0,
+    0.956,
+    0.717
+   ],
+   "bases_level3_farther_than_level1": 4,
+   "bases": 5
+  },
+  "mxbai-embed-large": {
+   "mean_spearman": 0.12,
+   "per_base": [
+    0.0,
+    0.598,
+    -0.717,
+    0.598,
+    0.12
+   ],
+   "bases_level3_farther_than_level1": 4,
+   "bases": 5
+  },
+  "nomic-embed-text": {
+   "mean_spearman": 0.311,
+   "per_base": [
+    0.0,
+    0.598,
+    -0.239,
+    0.478,
+    0.717
+   ],
+   "bases_level3_farther_than_level1": 4,
+   "bases": 5
+  },
+  "qwen3-embedding_0.6b": {
+   "mean_spearman": 0.311,
+   "per_base": [
+    0.0,
+    0.359,
+    -0.359,
+    0.837,
+    0.717
+   ],
+   "bases_level3_farther_than_level1": 4,
+   "bases": 5
+  }
+ },
+ "judge": {
+  "3a_judge": {
+   "agree_with_labeler": 8,
+   "decisive_overlap": 11
+  },
+  "3b_judge": {
+   "agree_with_labeler": 9,
+   "decisive_overlap": 11
+  },
+  "3c_judge": {
+   "agree_with_labeler": 9,
+   "decisive_overlap": 11
+  }
+ }
+}

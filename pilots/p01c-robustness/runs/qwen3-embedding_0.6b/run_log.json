@@ -1,0 +1,16 @@
+{
+  "config_version": "p01-enc-v1",
+  "encoder": "qwen3-embedding:0.6b",
+  "model_digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+  "prefix": "",
+  "similarity": "cosine",
+  "texts": 65,
+  "dimensions": 1024,
+  "seconds": 18.76,
+  "created_at_utc": "2026-10-28T18:50:44.076230+00:00",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10"
+  },
+  "inputs_sha256": "ddbf34b7e153ebe597424df0935bbb4fbd258ff87516e6d8266cbef907c1a9df"
+}
