@@ -1,0 +1,206 @@
+{
+ "version": "carrying-v2-derived",
+ "source": "derived from carrying-v1.1 by the architect's stated rules; no second survey",
+ "rules": "Derive idea / important marks from the architect's round-1 ticks (carrying-v1.1) and\nthe architect's own stated rules, without a second survey.\n\nArchitect's rules:\n  - round 1 mixed two things: program importance and fit to the intent (2026-10-28)\n  - importance: core academic, special education, administration, gym, dining matter most;\n    media and art mild; custodial almost not (decision weights, Pilot 2)\n  - floors are kept as relations, not exact floors (2026-10-28)\n\nSplit of each round-1 tick:\n  link tick                                   -> idea (links carry no importance weight)\n  department named in the seed's concept      -> idea\n  department not named, importance weight 1.0 -> important\n  department not named, mild or low weight    -> idea (ticked despite low importance)\n\nUsage (from seeds_v2):\n    python scripts/derive_carrying_v2.py\n",
+ "answers": {
+  "R1-S01": {
+   "mass": {
+    "D01": "idea",
+    "D02": "important",
+    "D04": "idea",
+    "D08": "idea"
+   },
+   "floors": {
+    "D01": {
+     "kind": "idea",
+     "relation": [
+      "ground",
+      "top"
+     ]
+    },
+    "D02": {
+     "kind": "important",
+     "relation": [
+      "ground"
+     ]
+    },
+    "D04": {
+     "kind": "idea",
+     "relation": [
+      "ground"
+     ]
+    },
+    "D08": {
+     "kind": "idea",
+     "relation": [
+      "ground"
+     ]
+    }
+   },
+   "links": {
+    "CT": "idea",
+    "GT": "idea"
+   }
+  },
+  "R1-S02": {
+   "mass": {
+    "D03": "idea",
+    "D01": "idea",
+    "D08": "idea"
+   },
+   "floors": {
+    "D01": {
+     "kind": "idea",
+     "relation": [
+      "ground",
+      "top"
+     ]
+    },
+    "D02": {
+     "kind": "important",
+     "relation": [
+      "ground"
+     ]
+    },
+    "D03": {
+     "kind": "idea",
+     "relation": [
+      "above_ground",
+      "top"
+     ]
+    },
+    "D05": {
+     "kind": "idea",
+     "relation": [
+      "above_ground",
+      "top"
+     ]
+    }
+   },
+   "links": {
+    "CT": "idea",
+    "CG": "idea",
+    "GT": "idea"
+   }
+  },
+  "R1-S03": {
+   "mass": {
+    "D01": "idea",
+    "D02": "important",
+    "D03": "idea",
+    "D04": "idea",
+    "D05": "idea",
+    "D08": "idea"
+   },
+   "floors": {
+    "D01": {
+     "kind": "idea",
+     "relation": [
+      "ground",
+      "top"
+     ]
+    },
+    "D02": {
+     "kind": "important",
+     "relation": [
+      "ground"
+     ]
+    },
+    "D04": {
+     "kind": "idea",
+     "relation": [
+      "ground"
+     ]
+    },
+    "D08": {
+     "kind": "idea",
+     "relation": [
+      "ground"
+     ]
+    }
+   },
+   "links": {
+    "CG": "idea",
+    "GT": "idea",
+    "CT": "idea"
+   }
+  },
+  "R1-S04": {
+   "mass": {
+    "D01": "idea",
+    "D02": "important",
+    "D04": "idea",
+    "D08": "idea",
+    "D05": "idea"
+   },
+   "floors": {
+    "D01": {
+     "kind": "idea",
+     "relation": [
+      "ground",
+      "top"
+     ]
+    },
+    "D02": {
+     "kind": "important",
+     "relation": [
+      "ground"
+     ]
+    },
+    "D03": {
+     "kind": "idea",
+     "relation": [
+      "ground"
+     ]
+    },
+    "D04": {
+     "kind": "idea",
+     "relation": [
+      "ground"
+     ]
+    }
+   },
+   "links": {
+    "CG": "idea",
+    "CT": "idea",
+    "GT": "idea"
+   }
+  },
+  "R1-S05": {
+   "mass": {
+    "D01": "idea",
+    "D07": "idea",
+    "D05": "idea",
+    "D03": "idea"
+   },
+   "floors": {
+    "D08": {
+     "kind": "idea",
+     "relation": [
+      "ground"
+     ]
+    },
+    "D07": {
+     "kind": "idea",
+     "relation": [
+      "ground"
+     ]
+    },
+    "D05": {
+     "kind": "idea",
+     "relation": [
+      "above_ground",
+      "top"
+     ]
+    },
+    "D03": {
+     "kind": "idea",
+     "relation": [
+      "ground"
+     ]
+    }
+   },
+   "links": {}
+  }
+ }
+}
