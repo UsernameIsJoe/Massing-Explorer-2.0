@@ -1,0 +1,188 @@
+<title>ME2 Idea or Importance</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one candidate at a time; seed and candidate diagrams stacked for direct comparison, the changes listed between them, three answer buttons. */
+:root{
+  --bg:#f3f4f2; --surface:#ffffff; --line:#d5d9d4; --fg:#1d2420; --muted:#5f6a63;
+  --accent:#2f5d50; --accent-soft:#e2ece7; --anchor:#e9edf3; --anchor-line:#b9c4d4; --done:#3f7a4a;
+  --d01:#9dbfe0; --d02:#e8bd7a; --d03:#cfa6dc; --d46:#a7cfa4; --d05:#eca596; --d07:#efd77a; --d08:#b3c1ca; --d09:#cfbea6; --plate:#eef0ed; --link:#2f5d50;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151917; --surface:#1d2320; --line:#333c37; --fg:#e4e8e5; --muted:#9aa59e;
+  --accent:#86c2ad; --accent-soft:#24352f; --anchor:#1c2430; --anchor-line:#3a4a60; --done:#7fc28b;
+  --d01:#3f6286; --d02:#80602b; --d03:#6a4e79; --d46:#416d40; --d05:#83463b; --d07:#7a6b27; --d08:#4f5e68; --d09:#665642; --plate:#252c29; --link:#86c2ad; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151917; --surface:#1d2320; --line:#333c37; --fg:#e4e8e5; --muted:#9aa59e;
+  --accent:#86c2ad; --accent-soft:#24352f; --anchor:#1c2430; --anchor-line:#3a4a60; --done:#7fc28b;
+  --d01:#3f6286; --d02:#80602b; --d03:#6a4e79; --d46:#416d40; --d05:#83463b; --d07:#7a6b27; --d08:#4f5e68; --d09:#665642; --plate:#252c29; --link:#86c2ad; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--sans)}
+.wrap{max-width:900px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:16px}
+h1{font-size:1.3rem;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;max-width:70ch}
+.status{font:500 .8rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.card.seed{background:var(--anchor);border-color:var(--anchor-line)}
+.tag{font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.concept{margin:0;color:var(--muted);font-size:.9rem;max-width:75ch}
+.diag{width:100%;max-width:640px}
+.diag svg{display:block;width:100%;height:auto}
+.diag text{font:500 10px var(--sans);fill:var(--fg)}
+.diag .ax{fill:var(--muted);font:500 9px var(--mono)}
+.diag .mt{fill:var(--muted);font:600 9.5px var(--sans)}
+.changes{margin:0;padding:10px 14px 10px 30px;border-left:3px solid var(--accent);background:var(--accent-soft);display:grid;gap:4px}
+.scale{margin:8px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.85rem;color:var(--muted)}
+.scale b{color:var(--fg);font-family:var(--mono)}
+.prefs{margin:0;font-size:.85rem;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted);align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
+.answers{display:flex;flex-wrap:wrap;gap:8px}
+button{font:600 .9rem var(--sans);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:5px;padding:10px 16px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.on{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+button.ghost{background:transparent}
+kbd{font:500 .72rem var(--mono);color:var(--muted);margin-left:6px}
+button.on kbd{color:inherit}
+textarea{width:100%;box-sizing:border-box;min-height:44px;font:.9rem var(--sans);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:5px;padding:8px}
+.nav{display:flex;gap:8px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.save{font:.8rem var(--mono);color:var(--muted)}
+.grid{display:flex;flex-wrap:wrap;gap:4px}
+.grid button{padding:4px 0;width:34px;font:500 .75rem var(--mono)}
+.grid button.done{background:var(--accent-soft);border-color:var(--accent)}
+.grid button.cur{outline:2px solid var(--fg)}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+.list{display:grid;gap:4px;margin:0;padding:0;list-style:none}
+.list li{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;justify-content:space-between;padding:7px 10px;border:1px solid var(--line);border-radius:5px;background:var(--surface)}
+.list li.idea{border-color:var(--accent);background:var(--accent-soft)}
+.list li.important{border-color:var(--muted)}
+.list li span{flex:1 1 220px;min-width:0}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden;flex:none}
+.seg button{border:0;border-radius:0;padding:6px 10px;font:500 .8rem var(--sans)}
+.seg button+button{border-left:1px solid var(--line)}
+.moves{margin:0;padding-left:20px;font-size:.88rem;color:var(--muted);display:grid;gap:2px}
+.moves b{color:var(--fg);font-weight:600}
+h2{font-size:.95rem;margin:6px 0 0}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Idea or importance · 5 seeds</h1>
+    <p class="sub">Mark each decision as one of two kinds, or leave it at <strong>–</strong>. <strong>Idea</strong>: without it, this is no longer the seed's idea; it is locked. <strong>Important</strong>: it matters for this school, but a variation without it could still be the same idea; it is weighted, not locked. About a minute per seed.</p>
+    <p class="sub">Mass: the department stays with (or apart from) the other departments you marked in this seed. Floor: the relation is kept (for example still on the ground floor), not the exact floors. Link: that pair stays linked or unlinked.</p>
+  </header>
+  <div class="status" id="status"></div>
+  <div class="bar"><i id="prog"></i></div>
+  <div class="legend" id="legend" aria-label="Diagram key"></div>
+  <p class="tag" id="qline"></p>
+  <section class="card seed" id="seed"></section>
+  <h2>Which mass it is in</h2>
+  <ul class="list" id="mass"></ul>
+  <h2>Its floor relation</h2>
+  <ul class="list" id="floors"></ul>
+  <h2>Links between masses</h2>
+  <ul class="list" id="links"></ul>
+  <textarea id="note" placeholder="Note (optional)"></textarea>
+  <div class="nav">
+    <button class="ghost" id="prev">← Previous seed</button>
+    <span class="save" id="save"></span>
+    <button id="done">Done with this seed →</button>
+  </div>
+</div>
+
+<script>
+const SET = {"seeds": [{"seed_id": "R1-S01", "name": "Civic Hinge Linear Chain", "concept": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.", "intent": "Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.", "moves": [{"move": "Civic hinge as front door", "serves": "Makes the middle mass the public face that holds arrival, the office, care and the library."}, {"move": "Serial links through the hinge", "serves": "Ensures every passage between learning and commons crosses the hinge."}, {"move": "Arts at the hinge base", "serves": "Puts the arts in the public face of the school, starting at ground level."}, {"move": "Single learning bar at the end", "serves": "Keeps all classroom departments together at the quiet end of the chain."}], "diagram": {"masses": [{"role": "C", "label": "learning bar at chain end", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2]}]}, {"role": "T", "label": "civic hinge", "departments": [{"dept": "D03", "floors": [1, 2]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "label": "community commons at chain end", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CT", "GT"]}, "mass": [{"id": "D01", "text": "Core academic in the learning bar at chain end (with special education)"}, {"id": "D02", "text": "Special education in the learning bar at chain end (with core academic)"}, {"id": "D03", "text": "Art and music in the civic hinge (with media center, medical, administration, custodial)"}, {"id": "D04", "text": "Gym and dining in the community commons at chain end (alone)"}, {"id": "D05", "text": "Media center in the civic hinge (with art and music, medical, administration, custodial)"}, {"id": "D07", "text": "Medical in the civic hinge (with art and music, media center, administration, custodial)"}, {"id": "D08", "text": "Administration in the civic hinge (with art and music, media center, medical, custodial)"}, {"id": "D09", "text": "Custodial in the civic hinge (with art and music, media center, medical, administration)"}], "floors": [{"id": "D01", "relation": ["ground", "top"], "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"}, {"id": "D02", "relation": ["ground"], "text": "Special education on the ground floor (now floors 1–2)"}, {"id": "D03", "relation": ["ground"], "text": "Art and music on the ground floor (now floors 1–2)"}, {"id": "D04", "relation": ["ground"], "text": "Gym and dining on the ground floor (now floor 1)"}, {"id": "D05", "relation": ["above_ground", "top"], "text": "Media center above the ground floor and at the top of its mass (now floor 3)"}, {"id": "D07", "relation": ["ground"], "text": "Medical on the ground floor (now floor 1)"}, {"id": "D08", "relation": ["ground"], "text": "Administration on the ground floor (now floor 1)"}, {"id": "D09", "relation": ["ground"], "text": "Custodial on the ground floor (now floor 1)"}], "links": [{"id": "CT", "text": "The learning bar at chain end and the civic hinge are directly linked"}, {"id": "GT", "text": "The civic hinge and the community commons at chain end are directly linked"}, {"id": "CG", "text": "The learning bar at chain end and the community commons at chain end are not linked"}]}, {"seed_id": "R1-S02", "name": "Arts Loft Over the Commons", "concept": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.", "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.", "moves": [{"move": "Arts loft on the commons roof", "serves": "Forms the single cultural block by stacking the arts over the commons volume."}, {"move": "Civic block with library crown", "serves": "Crowns the civic block with the library over the office and keeps specialized learning beside care and leadership."}, {"move": "Closed triangle of links", "serves": "Joins each mass to both others so the cluster works as one indoor building."}, {"move": "Plain academic bar", "serves": "Completes the triangle with a dedicated three-floor classroom bar."}], "diagram": {"masses": [{"role": "C", "label": "academic bar", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "label": "civic block with library crown", "departments": [{"dept": "D02", "floors": [1, 2]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "label": "commons with arts loft", "departments": [{"dept": "D03", "floors": [3]}, {"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["GT", "CT", "CG"]}, "mass": [{"id": "D01", "text": "Core academic in the academic bar (with custodial)"}, {"id": "D02", "text": "Special education in the civic block with library crown (with media center, medical, administration)"}, {"id": "D03", "text": "Art and music in the commons with arts loft (with gym and dining)"}, {"id": "D04", "text": "Gym and dining in the commons with arts loft (with art and music)"}, {"id": "D05", "text": "Media center in the civic block with library crown (with special education, medical, administration)"}, {"id": "D07", "text": "Medical in the civic block with library crown (with special education, media center, administration)"}, {"id": "D08", "text": "Administration in the civic block with library crown (with special education, media center, medical)"}, {"id": "D09", "text": "Custodial in the academic bar (with core academic)"}], "floors": [{"id": "D01", "relation": ["ground", "top"], "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"}, {"id": "D02", "relation": ["ground"], "text": "Special education on the ground floor (now floors 1–2)"}, {"id": "D03", "relation": ["above_ground", "top"], "text": "Art and music above the ground floor and at the top of its mass (now floor 3)"}, {"id": "D04", "relation": ["ground"], "text": "Gym and dining on the ground floor (now floor 1)"}, {"id": "D05", "relation": ["above_ground", "top"], "text": "Media center above the ground floor and at the top of its mass (now floor 3)"}, {"id": "D07", "relation": ["ground"], "text": "Medical on the ground floor (now floor 1)"}, {"id": "D08", "relation": ["ground"], "text": "Administration on the ground floor (now floor 1)"}, {"id": "D09", "relation": ["ground"], "text": "Custodial on the ground floor (now floor 1)"}], "links": [{"id": "GT", "text": "The commons with arts loft and the civic block with library crown are directly linked"}, {"id": "CT", "text": "The civic block with library crown and the academic bar are directly linked"}, {"id": "CG", "text": "The commons with arts loft and the academic bar are directly linked"}]}, {"seed_id": "R1-S03", "name": "Detached Campus Pavilions", "concept": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.", "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.", "moves": [{"move": "No built links", "serves": "Keeps the three pavilions free-standing on shared grounds."}, {"move": "Self-sufficient learning pavilion", "serves": "Keeps classrooms, the nurse and building service together so students rarely need to leave."}, {"move": "Independent community pavilion", "serves": "Isolates athletics and dining so they can open on their own."}, {"move": "Low civic-arts pavilion", "serves": "Forms the arrival pavilion with the library directly above the office."}], "diagram": {"masses": [{"role": "C", "label": "self-sufficient learning pavilion", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2]}, {"dept": "D07", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "label": "low civic-arts pavilion", "departments": [{"dept": "D03", "floors": [1]}, {"dept": "D05", "floors": [2]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "label": "independent community pavilion", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": []}, "mass": [{"id": "D01", "text": "Core academic in the self-sufficient learning pavilion (with special education, medical, custodial)"}, {"id": "D02", "text": "Special education in the self-sufficient learning pavilion (with core academic, medical, custodial)"}, {"id": "D03", "text": "Art and music in the low civic-arts pavilion (with media center, administration)"}, {"id": "D04", "text": "Gym and dining in the independent community pavilion (alone)"}, {"id": "D05", "text": "Media center in the low civic-arts pavilion (with art and music, administration)"}, {"id": "D07", "text": "Medical in the self-sufficient learning pavilion (with core academic, special education, custodial)"}, {"id": "D08", "text": "Administration in the low civic-arts pavilion (with art and music, media center)"}, {"id": "D09", "text": "Custodial in the self-sufficient learning pavilion (with core academic, special education, medical)"}], "floors": [{"id": "D01", "relation": ["ground", "top"], "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"}, {"id": "D02", "relation": ["ground"], "text": "Special education on the ground floor (now floors 1–2)"}, {"id": "D03", "relation": ["ground"], "text": "Art and music on the ground floor (now floor 1)"}, {"id": "D04", "relation": ["ground"], "text": "Gym and dining on the ground floor (now floor 1)"}, {"id": "D05", "relation": ["above_ground", "top"], "text": "Media center above the ground floor and at the top of its mass (now floor 2)"}, {"id": "D07", "relation": ["ground"], "text": "Medical on the ground floor (now floor 1)"}, {"id": "D08", "relation": ["ground"], "text": "Administration on the ground floor (now floor 1)"}, {"id": "D09", "relation": ["ground"], "text": "Custodial on the ground floor (now floor 1)"}], "links": [{"id": "CG", "text": "The self-sufficient learning pavilion and the independent community pavilion are not linked"}, {"id": "GT", "text": "The independent community pavilion and the low civic-arts pavilion are not linked"}, {"id": "CT", "text": "The self-sufficient learning pavilion and the low civic-arts pavilion are not linked"}]}, {"seed_id": "R1-S04", "name": "Commons Heart Between Front and Learning", "concept": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.", "intent": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.", "moves": [{"move": "Heart links front and wing", "serves": "Makes the commons the only connection between the civic front and the learning wing."}, {"move": "Arts within the learning wing", "serves": "Folds the arts into daily teaching beyond the heart, at ground level."}, {"move": "Two-floor civic front", "serves": "Gives arrival a compact front with the library over the office."}, {"move": "Commons as central heart", "serves": "Places the shared volume at the centre of the three-part sequence."}], "diagram": {"masses": [{"role": "C", "label": "learning wing beyond heart", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2]}, {"dept": "D03", "floors": [1]}]}, {"role": "T", "label": "civic front", "departments": [{"dept": "D05", "floors": [2]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "label": "central commons heart", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["GT", "CG"]}, "mass": [{"id": "D01", "text": "Core academic in the learning wing beyond heart (with special education, art and music)"}, {"id": "D02", "text": "Special education in the learning wing beyond heart (with core academic, art and music)"}, {"id": "D03", "text": "Art and music in the learning wing beyond heart (with core academic, special education)"}, {"id": "D04", "text": "Gym and dining in the central commons heart (alone)"}, {"id": "D05", "text": "Media center in the civic front (with medical, administration, custodial)"}, {"id": "D07", "text": "Medical in the civic front (with media center, administration, custodial)"}, {"id": "D08", "text": "Administration in the civic front (with media center, medical, custodial)"}, {"id": "D09", "text": "Custodial in the civic front (with media center, medical, administration)"}], "floors": [{"id": "D01", "relation": ["ground", "top"], "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"}, {"id": "D02", "relation": ["ground"], "text": "Special education on the ground floor (now floors 1–2)"}, {"id": "D03", "relation": ["ground"], "text": "Art and music on the ground floor (now floor 1)"}, {"id": "D04", "relation": ["ground"], "text": "Gym and dining on the ground floor (now floor 1)"}, {"id": "D05", "relation": ["above_ground", "top"], "text": "Media center above the ground floor and at the top of its mass (now floor 2)"}, {"id": "D07", "relation": ["ground"], "text": "Medical on the ground floor (now floor 1)"}, {"id": "D08", "relation": ["ground"], "text": "Administration on the ground floor (now floor 1)"}, {"id": "D09", "relation": ["ground"], "text": "Custodial on the ground floor (now floor 1)"}], "links": [{"id": "GT", "text": "The civic front and the central commons heart are directly linked"}, {"id": "CG", "text": "The central commons heart and the learning wing beyond heart are directly linked"}, {"id": "CT", "text": "The civic front and the learning wing beyond heart are not linked"}]}, {"seed_id": "R1-S05", "name": "Academy Tower With Care House", "concept": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.", "intent": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.", "moves": [{"move": "Office and library in the academy", "serves": "Stacks classrooms over the office in the academy, with the library at its crown."}, {"move": "Care-and-making house", "serves": "Pairs specialized learning with the nurse and arts in their own house."}, {"move": "Closed loop of links", "serves": "Joins each mass to the other two so the loop around the court is continuous."}], "diagram": {"masses": [{"role": "C", "label": "academy with library crown", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D05", "floors": [3]}, {"dept": "D08", "floors": [1]}]}, {"role": "T", "label": "care-and-making house", "departments": [{"dept": "D02", "floors": [1, 2, 3]}, {"dept": "D03", "floors": [1]}, {"dept": "D07", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "label": "commons", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "GT", "CT"]}, "mass": [{"id": "D01", "text": "Core academic in the academy with library crown (with media center, administration)"}, {"id": "D02", "text": "Special education in the care-and-making house (with art and music, medical, custodial)"}, {"id": "D03", "text": "Art and music in the care-and-making house (with special education, medical, custodial)"}, {"id": "D04", "text": "Gym and dining in the commons (alone)"}, {"id": "D05", "text": "Media center in the academy with library crown (with core academic, administration)"}, {"id": "D07", "text": "Medical in the care-and-making house (with special education, art and music, custodial)"}, {"id": "D08", "text": "Administration in the academy with library crown (with core academic, media center)"}, {"id": "D09", "text": "Custodial in the care-and-making house (with special education, art and music, medical)"}], "floors": [{"id": "D01", "relation": ["ground", "top"], "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"}, {"id": "D02", "relation": ["ground", "top"], "text": "Special education on the ground floor and at the top of its mass (now floors 1–3)"}, {"id": "D03", "relation": ["ground"], "text": "Art and music on the ground floor (now floor 1)"}, {"id": "D04", "relation": ["ground"], "text": "Gym and dining on the ground floor (now floor 1)"}, {"id": "D05", "relation": ["above_ground", "top"], "text": "Media center above the ground floor and at the top of its mass (now floor 3)"}, {"id": "D07", "relation": ["ground"], "text": "Medical on the ground floor (now floor 1)"}, {"id": "D08", "relation": ["ground"], "text": "Administration on the ground floor (now floor 1)"}, {"id": "D09", "relation": ["ground"], "text": "Custodial on the ground floor (now floor 1)"}], "links": [{"id": "CG", "text": "The academy with library crown and the commons are directly linked"}, {"id": "GT", "text": "The commons and the care-and-making house are directly linked"}, {"id": "CT", "text": "The academy with library crown and the care-and-making house are directly linked"}]}]};
+const KIND = {D01:["d01","Academic","Acad"],D02:["d02","Special ed","SPED"],D03:["d03","Art and music","Arts"],
+  D46:["d46","Gym + dining (double height)","Gym+Din"],D05:["d05","Media","Media"],D07:["d07","Medical","Med"],
+  D08:["d08","Admin","Admin"],D09:["d09","Custodial","Cust"]};
+const ROLE = {C:"Classroom mass",T:"Third mass",G:"Commons mass"};
+
+function escx(t){ return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function diagramSVG(spec){
+  // Blocks: each department spans its floors; gym + dining merge into one double-height block.
+  const RH=30, LW=4, CW=176, GAP=34, X0=18, TOP=8;
+  const cols = spec.masses.map(m=>{
+    const blocks=[]; let gd=null;
+    m.departments.forEach(d=>{
+      if(d.dept==="D04"||d.dept==="D06"){ gd = gd||{k:"D46",fl:new Set()}; d.floors.forEach(f=>gd.fl.add(f)); }
+      else blocks.push({k:d.dept,a:Math.min(...d.floors),b:Math.max(...d.floors)});
+    });
+    if(gd){ const f=[...gd.fl]; const a=Math.min(...f); blocks.push({k:"D46",a,b:Math.max(Math.max(...f),a+1)}); }
+    blocks.sort((p,q)=>p.a-q.a || (q.b-q.a)-(p.b-p.a) || p.k.localeCompare(q.k));
+    const lanes=[];
+    blocks.forEach(bl=>{ let i=lanes.findIndex(l=>l.every(o=>o.b<bl.a||o.a>bl.b)); if(i<0){lanes.push([]);i=lanes.length-1;} lanes[i].push(bl); bl.lane=i; });
+    return {role:m.role, label:m.label||ROLE[m.role], blocks, nl:Math.max(1,lanes.length), top:Math.max(...blocks.map(b=>b.b))};
+  });
+  const H = Math.max(...cols.map(c=>c.top));
+  const base = TOP + H*RH, W = X0 + 3*CW + 2*GAP + 4;
+  const cx = i => X0 + i*(CW+GAP);
+  let s = `<svg viewBox="0 0 ${W} ${base+64}" role="img" aria-label="Schematic massing diagram">`;
+  for(let f=1; f<=H; f++) s+=`<text class="ax" x="2" y="${base-(f-1)*RH-RH/2+3}">${f}</text>`;
+  cols.forEach((c,i)=>{
+    const x=cx(i), lw=(CW-(c.nl-1)*LW)/c.nl;
+    for(let f=1; f<=c.top; f++) s+=`<rect x="${x}" y="${base-f*RH}" width="${CW}" height="${RH}" fill="var(--plate)" stroke="var(--line)"/>`;
+    c.blocks.forEach(bl=>{
+      const bx=x+bl.lane*(lw+LW), by=base-bl.b*RH+2, bh=(bl.b-bl.a+1)*RH-4, kd=KIND[bl.k];
+      const label = lw>=74 ? kd[1].replace(" (double height)","") : kd[2];
+      s+=`<rect x="${bx+1}" y="${by}" width="${lw-2}" height="${bh}" rx="2" fill="var(--${kd[0]})"/>`;
+      s+=`<text x="${bx+lw/2}" y="${by+bh/2+3.5}" text-anchor="middle">${label}</text>`;
+    });
+    s+=`<text class="mt" x="${x+CW/2}" y="${base+16}" text-anchor="middle">${escx(c.label)}</text>`;
+  });
+  // Links: adjacent columns joined at grade; classroom-commons drawn as an arc beneath.
+  const L=new Set(spec.links), y=base+30;
+  const has=(a,b)=>L.has(a+b)||L.has(b+a);
+  if(has("C","T")) s+=`<line x1="${cx(0)+CW/2}" y1="${y}" x2="${cx(1)+CW/2}" y2="${y}" stroke="var(--link)" stroke-width="3"/>`;
+  if(has("T","G")) s+=`<line x1="${cx(1)+CW/2}" y1="${y}" x2="${cx(2)+CW/2}" y2="${y}" stroke="var(--link)" stroke-width="3"/>`;
+  if(has("C","G")) s+=`<path d="M${cx(0)+CW/2} ${y} C ${cx(0)+CW/2} ${y+26}, ${cx(2)+CW/2} ${y+26}, ${cx(2)+CW/2} ${y}" fill="none" stroke="var(--link)" stroke-width="3"/>`;
+  [0,1,2].forEach(i=>{ s+=`<circle cx="${cx(i)+CW/2}" cy="${y}" r="4" fill="var(--link)"/>`; });
+  return s+"</svg>";
+}
+
+const seeds = SET.seeds; const ans = {}; let i = 0, db = null;
+const $ = id => document.getElementById(id);
+const LS = "me2-carrying-v2";
+const KINDS = [["","–"],["important","Important"],["idea","Idea"]];
+try { Object.assign(ans, JSON.parse(localStorage.getItem(LS)||"{}")); } catch(e) {}
+function cur(){ const s=seeds[i]; return ans[s.seed_id] || (ans[s.seed_id]={mass:{},floors:{},links:{},note:"",done:false}); }
+function list(el, items, key){
+  const a = cur();
+  $(el).innerHTML = items.map(x=>{ const v=a[key][x.id]||""; return `<li class="${v}"><span>${escx(x.text)}</span><span class="seg" role="group" aria-label="Kind">${KINDS.map(([k,l])=>`<button type="button" data-key="${key}" data-id="${x.id}" data-v="${k}" class="${v===k?"on":""}" aria-pressed="${v===k}">${l}</button>`).join("")}</span></li>`; }).join("");
+}
+function render(){
+  const s = seeds[i];
+  $("qline").textContent = `Seed ${i+1} of ${seeds.length}`;
+  $("seed").innerHTML = `<span class="tag">${escx(s.name)}</span><div class="diag">${diagramSVG(s.diagram)}</div><p class="concept"><strong>Concept.</strong> ${escx(s.concept)}</p><p class="concept"><strong>Intent.</strong> ${escx(s.intent)}</p><ol class="moves">${s.moves.map(m=>`<li><b>${escx(m.move)}</b>: ${escx(m.serves)}</li>`).join("")}</ol>`;
+  list("mass", s.mass, "mass"); list("floors", s.floors, "floors"); list("links", s.links, "links");
+  $("note").value = cur().note||"";
+  const n = seeds.filter(x=>ans[x.seed_id]?.done).length;
+  $("status").textContent = `${n} / ${seeds.length} seeds done`;
+  $("prog").style.width = (100*n/seeds.length)+"%";
+  $("prev").disabled = i===0;
+  $("done").textContent = i===seeds.length-1 ? "Done" : "Done with this seed →";
+}
+let timer=null;
+async function persist(){
+  const s=seeds[i], a=cur();
+  try { localStorage.setItem(LS, JSON.stringify(ans)); } catch(e) {}
+  if (!db){ $("save").textContent="Saved in this browser only"; return; }
+  try { await db.collection("carrying2").doc(s.seed_id).set({seed_id:s.seed_id, mass:a.mass, floors:a.floors, links:a.links, note:a.note||"", done:!!a.done, saved_at:new Date().toISOString(), set:"carrying-v2"}); $("save").textContent="Saved"; }
+  catch(e){ $("save").textContent="Could not save to the shared record."; }
+}
+document.addEventListener("click", e=>{ const b=e.target.closest(".seg button"); if(!b) return; const a=cur(); if(b.dataset.v) a[b.dataset.key][b.dataset.id]=b.dataset.v; else delete a[b.dataset.key][b.dataset.id]; const y=window.scrollY; render(); window.scrollTo({top:y}); persist(); });
+$("note").addEventListener("input", ()=>{ cur().note=$("note").value; clearTimeout(timer); timer=setTimeout(persist,700); });
+$("prev").onclick=()=>{ if(i>0){i--; render(); window.scrollTo({top:0});} };
+$("done").onclick=async()=>{ cur().done=true; cur().note=$("note").value; await persist(); if(i<seeds.length-1){ i++; } render(); window.scrollTo({top:0}); };
+$("legend").innerHTML = "<strong>Diagram key</strong>" + Object.values(KIND).map(k=>`<span><i style="background:var(--${k[0]})"></i>${k[1]}</span>`).join("") + `<span><i style="background:var(--link);height:3px"></i>direct link</span><span>Floors 1–3 · block width and position mean nothing</span>`;
+render();
+(async()=>{
+  db = window.claude ? await window.claude.use("db") : null;
+  if (!db){ render(); return; }
+  try { const snap = await db.collection("carrying2").get(); snap.docs.forEach(d=>{ const v=d.data(); if(v&&v.seed_id) ans[v.seed_id]={mass:v.mass||{},floors:v.floors||{},links:v.links||{},note:v.note||"",done:!!v.done}; }); render(); } catch(e) {}
+})();
+</script>

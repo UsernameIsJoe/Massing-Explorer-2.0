@@ -1,0 +1,1078 @@
+{
+ "seeds": [
+  {
+   "seed_id": "R1-S01",
+   "name": "Civic Hinge Linear Chain",
+   "concept": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.",
+   "intent": "Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.",
+   "moves": [
+    {
+     "move": "Civic hinge as front door",
+     "serves": "Makes the middle mass the public face that holds arrival, the office, care and the library."
+    },
+    {
+     "move": "Serial links through the hinge",
+     "serves": "Ensures every passage between learning and commons crosses the hinge."
+    },
+    {
+     "move": "Arts at the hinge base",
+     "serves": "Puts the arts in the public face of the school, starting at ground level."
+    },
+    {
+     "move": "Single learning bar at the end",
+     "serves": "Keeps all classroom departments together at the quiet end of the chain."
+    }
+   ],
+   "diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning bar at chain end",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic hinge",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "community commons at chain end",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CT",
+     "GT"
+    ]
+   },
+   "mass": [
+    {
+     "id": "D01",
+     "text": "Core academic in the learning bar at chain end (with special education)"
+    },
+    {
+     "id": "D02",
+     "text": "Special education in the learning bar at chain end (with core academic)"
+    },
+    {
+     "id": "D03",
+     "text": "Art and music in the civic hinge (with media center, medical, administration, custodial)"
+    },
+    {
+     "id": "D04",
+     "text": "Gym and dining in the community commons at chain end (alone)"
+    },
+    {
+     "id": "D05",
+     "text": "Media center in the civic hinge (with art and music, medical, administration, custodial)"
+    },
+    {
+     "id": "D07",
+     "text": "Medical in the civic hinge (with art and music, media center, administration, custodial)"
+    },
+    {
+     "id": "D08",
+     "text": "Administration in the civic hinge (with art and music, media center, medical, custodial)"
+    },
+    {
+     "id": "D09",
+     "text": "Custodial in the civic hinge (with art and music, media center, medical, administration)"
+    }
+   ],
+   "floors": [
+    {
+     "id": "D01",
+     "relation": [
+      "ground",
+      "top"
+     ],
+     "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"
+    },
+    {
+     "id": "D02",
+     "relation": [
+      "ground"
+     ],
+     "text": "Special education on the ground floor (now floors 1–2)"
+    },
+    {
+     "id": "D03",
+     "relation": [
+      "ground"
+     ],
+     "text": "Art and music on the ground floor (now floors 1–2)"
+    },
+    {
+     "id": "D04",
+     "relation": [
+      "ground"
+     ],
+     "text": "Gym and dining on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D05",
+     "relation": [
+      "above_ground",
+      "top"
+     ],
+     "text": "Media center above the ground floor and at the top of its mass (now floor 3)"
+    },
+    {
+     "id": "D07",
+     "relation": [
+      "ground"
+     ],
+     "text": "Medical on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D08",
+     "relation": [
+      "ground"
+     ],
+     "text": "Administration on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D09",
+     "relation": [
+      "ground"
+     ],
+     "text": "Custodial on the ground floor (now floor 1)"
+    }
+   ],
+   "links": [
+    {
+     "id": "CT",
+     "text": "The learning bar at chain end and the civic hinge are directly linked"
+    },
+    {
+     "id": "GT",
+     "text": "The civic hinge and the community commons at chain end are directly linked"
+    },
+    {
+     "id": "CG",
+     "text": "The learning bar at chain end and the community commons at chain end are not linked"
+    }
+   ]
+  },
+  {
+   "seed_id": "R1-S02",
+   "name": "Arts Loft Over the Commons",
+   "concept": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+   "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.",
+   "moves": [
+    {
+     "move": "Arts loft on the commons roof",
+     "serves": "Forms the single cultural block by stacking the arts over the commons volume."
+    },
+    {
+     "move": "Civic block with library crown",
+     "serves": "Crowns the civic block with the library over the office and keeps specialized learning beside care and leadership."
+    },
+    {
+     "move": "Closed triangle of links",
+     "serves": "Joins each mass to both others so the cluster works as one indoor building."
+    },
+    {
+     "move": "Plain academic bar",
+     "serves": "Completes the triangle with a dedicated three-floor classroom bar."
+    }
+   ],
+   "diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academic bar",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic block with library crown",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons with arts loft",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CT",
+     "CG"
+    ]
+   },
+   "mass": [
+    {
+     "id": "D01",
+     "text": "Core academic in the academic bar (with custodial)"
+    },
+    {
+     "id": "D02",
+     "text": "Special education in the civic block with library crown (with media center, medical, administration)"
+    },
+    {
+     "id": "D03",
+     "text": "Art and music in the commons with arts loft (with gym and dining)"
+    },
+    {
+     "id": "D04",
+     "text": "Gym and dining in the commons with arts loft (with art and music)"
+    },
+    {
+     "id": "D05",
+     "text": "Media center in the civic block with library crown (with special education, medical, administration)"
+    },
+    {
+     "id": "D07",
+     "text": "Medical in the civic block with library crown (with special education, media center, administration)"
+    },
+    {
+     "id": "D08",
+     "text": "Administration in the civic block with library crown (with special education, media center, medical)"
+    },
+    {
+     "id": "D09",
+     "text": "Custodial in the academic bar (with core academic)"
+    }
+   ],
+   "floors": [
+    {
+     "id": "D01",
+     "relation": [
+      "ground",
+      "top"
+     ],
+     "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"
+    },
+    {
+     "id": "D02",
+     "relation": [
+      "ground"
+     ],
+     "text": "Special education on the ground floor (now floors 1–2)"
+    },
+    {
+     "id": "D03",
+     "relation": [
+      "above_ground",
+      "top"
+     ],
+     "text": "Art and music above the ground floor and at the top of its mass (now floor 3)"
+    },
+    {
+     "id": "D04",
+     "relation": [
+      "ground"
+     ],
+     "text": "Gym and dining on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D05",
+     "relation": [
+      "above_ground",
+      "top"
+     ],
+     "text": "Media center above the ground floor and at the top of its mass (now floor 3)"
+    },
+    {
+     "id": "D07",
+     "relation": [
+      "ground"
+     ],
+     "text": "Medical on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D08",
+     "relation": [
+      "ground"
+     ],
+     "text": "Administration on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D09",
+     "relation": [
+      "ground"
+     ],
+     "text": "Custodial on the ground floor (now floor 1)"
+    }
+   ],
+   "links": [
+    {
+     "id": "GT",
+     "text": "The commons with arts loft and the civic block with library crown are directly linked"
+    },
+    {
+     "id": "CT",
+     "text": "The civic block with library crown and the academic bar are directly linked"
+    },
+    {
+     "id": "CG",
+     "text": "The commons with arts loft and the academic bar are directly linked"
+    }
+   ]
+  },
+  {
+   "seed_id": "R1-S03",
+   "name": "Detached Campus Pavilions",
+   "concept": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+   "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.",
+   "moves": [
+    {
+     "move": "No built links",
+     "serves": "Keeps the three pavilions free-standing on shared grounds."
+    },
+    {
+     "move": "Self-sufficient learning pavilion",
+     "serves": "Keeps classrooms, the nurse and building service together so students rarely need to leave."
+    },
+    {
+     "move": "Independent community pavilion",
+     "serves": "Isolates athletics and dining so they can open on their own."
+    },
+    {
+     "move": "Low civic-arts pavilion",
+     "serves": "Forms the arrival pavilion with the library directly above the office."
+    }
+   ],
+   "diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "self-sufficient learning pavilion",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "low civic-arts pavilion",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "independent community pavilion",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": []
+   },
+   "mass": [
+    {
+     "id": "D01",
+     "text": "Core academic in the self-sufficient learning pavilion (with special education, medical, custodial)"
+    },
+    {
+     "id": "D02",
+     "text": "Special education in the self-sufficient learning pavilion (with core academic, medical, custodial)"
+    },
+    {
+     "id": "D03",
+     "text": "Art and music in the low civic-arts pavilion (with media center, administration)"
+    },
+    {
+     "id": "D04",
+     "text": "Gym and dining in the independent community pavilion (alone)"
+    },
+    {
+     "id": "D05",
+     "text": "Media center in the low civic-arts pavilion (with art and music, administration)"
+    },
+    {
+     "id": "D07",
+     "text": "Medical in the self-sufficient learning pavilion (with core academic, special education, custodial)"
+    },
+    {
+     "id": "D08",
+     "text": "Administration in the low civic-arts pavilion (with art and music, media center)"
+    },
+    {
+     "id": "D09",
+     "text": "Custodial in the self-sufficient learning pavilion (with core academic, special education, medical)"
+    }
+   ],
+   "floors": [
+    {
+     "id": "D01",
+     "relation": [
+      "ground",
+      "top"
+     ],
+     "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"
+    },
+    {
+     "id": "D02",
+     "relation": [
+      "ground"
+     ],
+     "text": "Special education on the ground floor (now floors 1–2)"
+    },
+    {
+     "id": "D03",
+     "relation": [
+      "ground"
+     ],
+     "text": "Art and music on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D04",
+     "relation": [
+      "ground"
+     ],
+     "text": "Gym and dining on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D05",
+     "relation": [
+      "above_ground",
+      "top"
+     ],
+     "text": "Media center above the ground floor and at the top of its mass (now floor 2)"
+    },
+    {
+     "id": "D07",
+     "relation": [
+      "ground"
+     ],
+     "text": "Medical on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D08",
+     "relation": [
+      "ground"
+     ],
+     "text": "Administration on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D09",
+     "relation": [
+      "ground"
+     ],
+     "text": "Custodial on the ground floor (now floor 1)"
+    }
+   ],
+   "links": [
+    {
+     "id": "CG",
+     "text": "The self-sufficient learning pavilion and the independent community pavilion are not linked"
+    },
+    {
+     "id": "GT",
+     "text": "The independent community pavilion and the low civic-arts pavilion are not linked"
+    },
+    {
+     "id": "CT",
+     "text": "The self-sufficient learning pavilion and the low civic-arts pavilion are not linked"
+    }
+   ]
+  },
+  {
+   "seed_id": "R1-S04",
+   "name": "Commons Heart Between Front and Learning",
+   "concept": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.",
+   "intent": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.",
+   "moves": [
+    {
+     "move": "Heart links front and wing",
+     "serves": "Makes the commons the only connection between the civic front and the learning wing."
+    },
+    {
+     "move": "Arts within the learning wing",
+     "serves": "Folds the arts into daily teaching beyond the heart, at ground level."
+    },
+    {
+     "move": "Two-floor civic front",
+     "serves": "Gives arrival a compact front with the library over the office."
+    },
+    {
+     "move": "Commons as central heart",
+     "serves": "Places the shared volume at the centre of the three-part sequence."
+    }
+   ],
+   "diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning wing beyond heart",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic front",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "central commons heart",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CG"
+    ]
+   },
+   "mass": [
+    {
+     "id": "D01",
+     "text": "Core academic in the learning wing beyond heart (with special education, art and music)"
+    },
+    {
+     "id": "D02",
+     "text": "Special education in the learning wing beyond heart (with core academic, art and music)"
+    },
+    {
+     "id": "D03",
+     "text": "Art and music in the learning wing beyond heart (with core academic, special education)"
+    },
+    {
+     "id": "D04",
+     "text": "Gym and dining in the central commons heart (alone)"
+    },
+    {
+     "id": "D05",
+     "text": "Media center in the civic front (with medical, administration, custodial)"
+    },
+    {
+     "id": "D07",
+     "text": "Medical in the civic front (with media center, administration, custodial)"
+    },
+    {
+     "id": "D08",
+     "text": "Administration in the civic front (with media center, medical, custodial)"
+    },
+    {
+     "id": "D09",
+     "text": "Custodial in the civic front (with media center, medical, administration)"
+    }
+   ],
+   "floors": [
+    {
+     "id": "D01",
+     "relation": [
+      "ground",
+      "top"
+     ],
+     "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"
+    },
+    {
+     "id": "D02",
+     "relation": [
+      "ground"
+     ],
+     "text": "Special education on the ground floor (now floors 1–2)"
+    },
+    {
+     "id": "D03",
+     "relation": [
+      "ground"
+     ],
+     "text": "Art and music on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D04",
+     "relation": [
+      "ground"
+     ],
+     "text": "Gym and dining on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D05",
+     "relation": [
+      "above_ground",
+      "top"
+     ],
+     "text": "Media center above the ground floor and at the top of its mass (now floor 2)"
+    },
+    {
+     "id": "D07",
+     "relation": [
+      "ground"
+     ],
+     "text": "Medical on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D08",
+     "relation": [
+      "ground"
+     ],
+     "text": "Administration on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D09",
+     "relation": [
+      "ground"
+     ],
+     "text": "Custodial on the ground floor (now floor 1)"
+    }
+   ],
+   "links": [
+    {
+     "id": "GT",
+     "text": "The civic front and the central commons heart are directly linked"
+    },
+    {
+     "id": "CG",
+     "text": "The central commons heart and the learning wing beyond heart are directly linked"
+    },
+    {
+     "id": "CT",
+     "text": "The civic front and the learning wing beyond heart are not linked"
+    }
+   ]
+  },
+  {
+   "seed_id": "R1-S05",
+   "name": "Academy Tower With Care House",
+   "concept": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+   "intent": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.",
+   "moves": [
+    {
+     "move": "Office and library in the academy",
+     "serves": "Stacks classrooms over the office in the academy, with the library at its crown."
+    },
+    {
+     "move": "Care-and-making house",
+     "serves": "Pairs specialized learning with the nurse and arts in their own house."
+    },
+    {
+     "move": "Closed loop of links",
+     "serves": "Joins each mass to the other two so the loop around the court is continuous."
+    }
+   ],
+   "diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academy with library crown",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "care-and-making house",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "GT",
+     "CT"
+    ]
+   },
+   "mass": [
+    {
+     "id": "D01",
+     "text": "Core academic in the academy with library crown (with media center, administration)"
+    },
+    {
+     "id": "D02",
+     "text": "Special education in the care-and-making house (with art and music, medical, custodial)"
+    },
+    {
+     "id": "D03",
+     "text": "Art and music in the care-and-making house (with special education, medical, custodial)"
+    },
+    {
+     "id": "D04",
+     "text": "Gym and dining in the commons (alone)"
+    },
+    {
+     "id": "D05",
+     "text": "Media center in the academy with library crown (with core academic, administration)"
+    },
+    {
+     "id": "D07",
+     "text": "Medical in the care-and-making house (with special education, art and music, custodial)"
+    },
+    {
+     "id": "D08",
+     "text": "Administration in the academy with library crown (with core academic, media center)"
+    },
+    {
+     "id": "D09",
+     "text": "Custodial in the care-and-making house (with special education, art and music, medical)"
+    }
+   ],
+   "floors": [
+    {
+     "id": "D01",
+     "relation": [
+      "ground",
+      "top"
+     ],
+     "text": "Core academic on the ground floor and at the top of its mass (now floors 1–3)"
+    },
+    {
+     "id": "D02",
+     "relation": [
+      "ground",
+      "top"
+     ],
+     "text": "Special education on the ground floor and at the top of its mass (now floors 1–3)"
+    },
+    {
+     "id": "D03",
+     "relation": [
+      "ground"
+     ],
+     "text": "Art and music on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D04",
+     "relation": [
+      "ground"
+     ],
+     "text": "Gym and dining on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D05",
+     "relation": [
+      "above_ground",
+      "top"
+     ],
+     "text": "Media center above the ground floor and at the top of its mass (now floor 3)"
+    },
+    {
+     "id": "D07",
+     "relation": [
+      "ground"
+     ],
+     "text": "Medical on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D08",
+     "relation": [
+      "ground"
+     ],
+     "text": "Administration on the ground floor (now floor 1)"
+    },
+    {
+     "id": "D09",
+     "relation": [
+      "ground"
+     ],
+     "text": "Custodial on the ground floor (now floor 1)"
+    }
+   ],
+   "links": [
+    {
+     "id": "CG",
+     "text": "The academy with library crown and the commons are directly linked"
+    },
+    {
+     "id": "GT",
+     "text": "The commons and the care-and-making house are directly linked"
+    },
+    {
+     "id": "CT",
+     "text": "The academy with library crown and the care-and-making house are directly linked"
+    }
+   ]
+  }
+ ]
+}
