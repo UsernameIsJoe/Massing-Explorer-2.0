@@ -1,0 +1,16 @@
+{
+  "config_version": "p01-enc-v1",
+  "encoder": "bge-m3",
+  "model_digest": "7907646426070047a77226ac3e684fbbe8410524f7b4a74d02837e43f2146bab",
+  "prefix": "",
+  "similarity": "cosine",
+  "texts": 109,
+  "dimensions": 1024,
+  "seconds": 20.11,
+  "created_at_utc": "2026-10-28T16:06:52.457343+00:00",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10"
+  },
+  "inputs_sha256": "523dce768465091c4fcd3598ec12181c49172f4b95d03d2790d2ad7f45ef3d91"
+}

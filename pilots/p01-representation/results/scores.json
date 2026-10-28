@@ -116,6 +116,614 @@
     "n": 21,
     "rate": 0.81
    }
+  },
+  "bge-m3:struct": {
+   "real_control": {
+    "agree": 0,
+    "n": 2,
+    "rate": 0.0
+   },
+   "real_disagree": {
+    "agree": 7,
+    "n": 8,
+    "rate": 0.875
+   },
+   "ALL_REAL": {
+    "agree": 7,
+    "n": 10,
+    "rate": 0.7
+   },
+   "ALL": {
+    "agree": 7,
+    "n": 10,
+    "rate": 0.7
+   }
+  },
+  "bge-m3:intent": {
+   "generic": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "intent_vs_wording": {
+    "agree": 0,
+    "n": 3,
+    "rate": 0.0
+   },
+   "lexical_trap": {
+    "agree": 0,
+    "n": 4,
+    "rate": 0.0
+   },
+   "paraphrase": {
+    "agree": 1,
+    "n": 4,
+    "rate": 0.25
+   },
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 2,
+    "n": 8,
+    "rate": 0.25
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 7,
+    "n": 23,
+    "rate": 0.304
+   }
+  },
+  "bge-m3:full": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 2,
+    "n": 8,
+    "rate": 0.25
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   }
+  },
+  "bge-m3:aspect_inclusion": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 4,
+    "n": 8,
+    "rate": 0.5
+   },
+   "ALL_REAL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   },
+   "ALL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   }
+  },
+  "bge-m3:aspect_civic_access": {
+   "real_control": {
+    "agree": 1,
+    "n": 2,
+    "rate": 0.5
+   },
+   "real_disagree": {
+    "agree": 3,
+    "n": 8,
+    "rate": 0.375
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   }
+  },
+  "bge-m3:aspect_service": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 3,
+    "n": 8,
+    "rate": 0.375
+   },
+   "ALL_REAL": {
+    "agree": 5,
+    "n": 10,
+    "rate": 0.5
+   },
+   "ALL": {
+    "agree": 5,
+    "n": 10,
+    "rate": 0.5
+   }
+  },
+  "mxbai-embed-large:struct": {
+   "real_control": {
+    "agree": 0,
+    "n": 2,
+    "rate": 0.0
+   },
+   "real_disagree": {
+    "agree": 7,
+    "n": 8,
+    "rate": 0.875
+   },
+   "ALL_REAL": {
+    "agree": 7,
+    "n": 10,
+    "rate": 0.7
+   },
+   "ALL": {
+    "agree": 7,
+    "n": 10,
+    "rate": 0.7
+   }
+  },
+  "mxbai-embed-large:intent": {
+   "generic": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "intent_vs_wording": {
+    "agree": 0,
+    "n": 3,
+    "rate": 0.0
+   },
+   "lexical_trap": {
+    "agree": 0,
+    "n": 4,
+    "rate": 0.0
+   },
+   "paraphrase": {
+    "agree": 2,
+    "n": 4,
+    "rate": 0.5
+   },
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 1,
+    "n": 8,
+    "rate": 0.125
+   },
+   "ALL_REAL": {
+    "agree": 3,
+    "n": 10,
+    "rate": 0.3
+   },
+   "ALL": {
+    "agree": 7,
+    "n": 23,
+    "rate": 0.304
+   }
+  },
+  "mxbai-embed-large:full": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 2,
+    "n": 8,
+    "rate": 0.25
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   }
+  },
+  "mxbai-embed-large:aspect_inclusion": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 4,
+    "n": 8,
+    "rate": 0.5
+   },
+   "ALL_REAL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   },
+   "ALL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   }
+  },
+  "mxbai-embed-large:aspect_civic_access": {
+   "real_control": {
+    "agree": 1,
+    "n": 2,
+    "rate": 0.5
+   },
+   "real_disagree": {
+    "agree": 3,
+    "n": 8,
+    "rate": 0.375
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   }
+  },
+  "mxbai-embed-large:aspect_service": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 3,
+    "n": 8,
+    "rate": 0.375
+   },
+   "ALL_REAL": {
+    "agree": 5,
+    "n": 10,
+    "rate": 0.5
+   },
+   "ALL": {
+    "agree": 5,
+    "n": 10,
+    "rate": 0.5
+   }
+  },
+  "nomic-embed-text:struct": {
+   "real_control": {
+    "agree": 0,
+    "n": 2,
+    "rate": 0.0
+   },
+   "real_disagree": {
+    "agree": 6,
+    "n": 8,
+    "rate": 0.75
+   },
+   "ALL_REAL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   },
+   "ALL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   }
+  },
+  "nomic-embed-text:intent": {
+   "generic": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "intent_vs_wording": {
+    "agree": 0,
+    "n": 3,
+    "rate": 0.0
+   },
+   "lexical_trap": {
+    "agree": 0,
+    "n": 4,
+    "rate": 0.0
+   },
+   "paraphrase": {
+    "agree": 2,
+    "n": 4,
+    "rate": 0.5
+   },
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 2,
+    "n": 8,
+    "rate": 0.25
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 8,
+    "n": 23,
+    "rate": 0.348
+   }
+  },
+  "nomic-embed-text:full": {
+   "real_control": {
+    "agree": 1,
+    "n": 2,
+    "rate": 0.5
+   },
+   "real_disagree": {
+    "agree": 2,
+    "n": 8,
+    "rate": 0.25
+   },
+   "ALL_REAL": {
+    "agree": 3,
+    "n": 10,
+    "rate": 0.3
+   },
+   "ALL": {
+    "agree": 3,
+    "n": 10,
+    "rate": 0.3
+   }
+  },
+  "nomic-embed-text:aspect_inclusion": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 4,
+    "n": 8,
+    "rate": 0.5
+   },
+   "ALL_REAL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   },
+   "ALL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   }
+  },
+  "nomic-embed-text:aspect_civic_access": {
+   "real_control": {
+    "agree": 1,
+    "n": 2,
+    "rate": 0.5
+   },
+   "real_disagree": {
+    "agree": 1,
+    "n": 8,
+    "rate": 0.125
+   },
+   "ALL_REAL": {
+    "agree": 2,
+    "n": 10,
+    "rate": 0.2
+   },
+   "ALL": {
+    "agree": 2,
+    "n": 10,
+    "rate": 0.2
+   }
+  },
+  "nomic-embed-text:aspect_service": {
+   "real_control": {
+    "agree": 1,
+    "n": 2,
+    "rate": 0.5
+   },
+   "real_disagree": {
+    "agree": 3,
+    "n": 8,
+    "rate": 0.375
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   }
+  },
+  "qwen3-embedding_0.6b:struct": {
+   "real_control": {
+    "agree": 0,
+    "n": 2,
+    "rate": 0.0
+   },
+   "real_disagree": {
+    "agree": 6,
+    "n": 8,
+    "rate": 0.75
+   },
+   "ALL_REAL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   },
+   "ALL": {
+    "agree": 6,
+    "n": 10,
+    "rate": 0.6
+   }
+  },
+  "qwen3-embedding_0.6b:intent": {
+   "generic": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "intent_vs_wording": {
+    "agree": 0,
+    "n": 3,
+    "rate": 0.0
+   },
+   "lexical_trap": {
+    "agree": 0,
+    "n": 4,
+    "rate": 0.0
+   },
+   "paraphrase": {
+    "agree": 2,
+    "n": 4,
+    "rate": 0.5
+   },
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 2,
+    "n": 8,
+    "rate": 0.25
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 8,
+    "n": 23,
+    "rate": 0.348
+   }
+  },
+  "qwen3-embedding_0.6b:full": {
+   "real_control": {
+    "agree": 1,
+    "n": 2,
+    "rate": 0.5
+   },
+   "real_disagree": {
+    "agree": 1,
+    "n": 8,
+    "rate": 0.125
+   },
+   "ALL_REAL": {
+    "agree": 2,
+    "n": 10,
+    "rate": 0.2
+   },
+   "ALL": {
+    "agree": 2,
+    "n": 10,
+    "rate": 0.2
+   }
+  },
+  "qwen3-embedding_0.6b:aspect_inclusion": {
+   "real_control": {
+    "agree": 2,
+    "n": 2,
+    "rate": 1.0
+   },
+   "real_disagree": {
+    "agree": 3,
+    "n": 8,
+    "rate": 0.375
+   },
+   "ALL_REAL": {
+    "agree": 5,
+    "n": 10,
+    "rate": 0.5
+   },
+   "ALL": {
+    "agree": 5,
+    "n": 10,
+    "rate": 0.5
+   }
+  },
+  "qwen3-embedding_0.6b:aspect_civic_access": {
+   "real_control": {
+    "agree": 1,
+    "n": 2,
+    "rate": 0.5
+   },
+   "real_disagree": {
+    "agree": 3,
+    "n": 8,
+    "rate": 0.375
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   }
+  },
+  "qwen3-embedding_0.6b:aspect_service": {
+   "real_control": {
+    "agree": 1,
+    "n": 2,
+    "rate": 0.5
+   },
+   "real_disagree": {
+    "agree": 3,
+    "n": 8,
+    "rate": 0.375
+   },
+   "ALL_REAL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   },
+   "ALL": {
+    "agree": 4,
+    "n": 10,
+    "rate": 0.4
+   }
   }
  }
 }
