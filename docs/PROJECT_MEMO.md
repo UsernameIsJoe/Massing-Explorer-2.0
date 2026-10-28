@@ -1,5 +1,16 @@
 # ME 2.0 project memo — semantic possibility space
 
+## Current authority — semantic-first Steps 02–03, October 28
+
+The user's latest direction is to define the focused region primarily in **semantic embedding space**, with the established nine-axis framework providing grounding, explicit controls and cross-checks. Follow the [semantic-first Steps 02–03 development plan](STEP02_03_SEMANTIC_FIRST_PLAN.md); it supersedes axis-envelope-first construction as the immediate research direction. Embedding suitability and the constructor remain unvalidated.
+
+The five development tasks are: (1) consistent seed decisions, semantic descriptions and nine-axis records; (2) select and validate an existing embedding representation, considering training only if justified; (3) establish source-linked many-to-many semantic/axis relationships; (4) define joint membership and provisional expansion; (5) supply a minimal generator of unseen complete or partial strategies. An embedding boundary alone is not a generator.
+
+Keep the nine-axis framework consistent; defer evolution until a concrete failure. The user welcomed partial strategies/blanks as a promising direction and selected **provisional admission** of explainable brief-relevant outside alternatives without prior proof of superiority or dimensional feasibility. Investigate retained commitments and flexible alternatives/ranges; semantic versus implementation locks remain an unresolved distinction.
+
+Focus now on Steps 02–03. The later pipeline remains broad and revisable; do not freeze its details. Five seeds preserve test continuity, not an optimal count. Advanced-model exchanges remain manual and batched. The new plan distinguishes user decisions, research evidence and assistant proposals, and preserves earlier test limitations.
+
+
 Updated: 2026-10-27 (America/New_York).
 Status: seed-first construction selected; narrow proof checks and a retrospective audit are archived. Representation, algorithmic expansion, useful boundary construction and performance benefits remain open.
 Sources: October 27 scope/cost clarification and method/progress review; October 26 directions and research responses; October 13 discussion; October 8 research review.
@@ -132,7 +143,7 @@ A semantic layer can reduce evaluations needed for useful proposals if its guida
 |---|---|
 | **CSP sampling and initial shortlist** | No longer required as the main generator/admission gate in the proposed architecture. Actual removal or reuse is an implementation decision after method research. |
 | **Constraint checks / solvers** | Independent enforcement remains necessary. CSP or numerical/geometry solvers may assist completion or repair where useful; semantic descriptions are not feasibility certificates. |
-| **ME's nine axes** | Optional positioning/comparison support to test. Semantics can complement axes; no decision requires preserving or discarding the exact previous encoding. |
+| **ME's nine axes** | Keep the nine-axis framework consistent (October 28); semantic embeddings lead the proposed region definition, with axes as supporting evidence/control. Extraction rules and joint membership remain to be validated; defer axis evolution until a concrete failure. |
 | **MCTS** | Optional explicit mechanism for selecting exploration actions. Branch reasoning by an LLM is not automatically MCTS. |
 | **BO** | Optional explicit mechanism for allocating expensive evaluations. LLM guessing is not automatically a surrogate with calibrated uncertainty and an acquisition policy. |
 | **Learn/refine/archive** | Continuous evidence and memory functions, adapted to new representation and user updates; not automatically transferred unchanged. |

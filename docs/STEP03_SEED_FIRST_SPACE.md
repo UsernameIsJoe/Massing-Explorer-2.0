@@ -1,5 +1,16 @@
 # Step 03 — seed-first construction of a semantic possibility space
 
+## Current authority — semantic-first Steps 02–03, October 28
+
+The user's latest direction is to define the focused region primarily in **semantic embedding space**, with the established nine-axis framework providing grounding, explicit controls and cross-checks. Follow the [semantic-first Steps 02–03 development plan](STEP02_03_SEMANTIC_FIRST_PLAN.md); it supersedes axis-envelope-first construction as the immediate research direction. Embedding suitability and the constructor remain unvalidated.
+
+The five development tasks are: (1) consistent seed decisions, semantic descriptions and nine-axis records; (2) select and validate an existing embedding representation, considering training only if justified; (3) establish source-linked many-to-many semantic/axis relationships; (4) define joint membership and provisional expansion; (5) supply a minimal generator of unseen complete or partial strategies. An embedding boundary alone is not a generator.
+
+Keep the nine-axis framework consistent; defer evolution until a concrete failure. The user welcomed partial strategies/blanks as a promising direction and selected **provisional admission** of explainable brief-relevant outside alternatives without prior proof of superiority or dimensional feasibility. Investigate retained commitments and flexible alternatives/ranges; semantic versus implementation locks remain an unresolved distinction.
+
+Focus now on Steps 02–03. The later pipeline remains broad and revisable; do not freeze its details. Five seeds preserve test continuity, not an optimal count. Advanced-model exchanges remain manual and batched. The new plan distinguishes user decisions, research evidence and assistant proposals, and preserves earlier test limitations.
+
+
 Created: 2026-10-26. Updated: 2026-10-27 (America/New_York).
 Status: user-selected starting approach; construction/expansion mechanisms remain research questions. No new implementation or experiment is claimed.
 Authority: the user's proposal, four reasons, boundary-expansion clarification, and decision to start with this approach.

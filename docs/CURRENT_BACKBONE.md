@@ -1,6 +1,17 @@
 # ME 2.0 — current backbone and working principles
 
-Updated: 2026-10-27 (America/New_York).
+## Current authority — semantic-first Steps 02–03, October 28
+
+The user's latest direction is to define the focused region primarily in **semantic embedding space**, with the established nine-axis framework providing grounding, explicit controls and cross-checks. Follow the [semantic-first Steps 02–03 development plan](STEP02_03_SEMANTIC_FIRST_PLAN.md); it supersedes axis-envelope-first construction as the immediate research direction. Embedding suitability and the constructor remain unvalidated.
+
+The five development tasks are: (1) consistent seed decisions, semantic descriptions and nine-axis records; (2) select and validate an existing embedding representation, considering training only if justified; (3) establish source-linked many-to-many semantic/axis relationships; (4) define joint membership and provisional expansion; (5) supply a minimal generator of unseen complete or partial strategies. An embedding boundary alone is not a generator.
+
+Keep the nine-axis framework consistent; defer evolution until a concrete failure. The user welcomed partial strategies/blanks as a promising direction and selected **provisional admission** of explainable brief-relevant outside alternatives without prior proof of superiority or dimensional feasibility. Investigate retained commitments and flexible alternatives/ranges; semantic versus implementation locks remain an unresolved distinction.
+
+Focus now on Steps 02–03. The later pipeline remains broad and revisable; do not freeze its details. Five seeds preserve test continuity, not an optimal count. Advanced-model exchanges remain manual and batched. The new plan distinguishes user decisions, research evidence and assistant proposals, and preserves earlier test limitations.
+
+
+Updated: 2026-10-28 (America/New_York).
 Authority: user's October 26 directions and October 27 scope/cost clarifications and research discussion.
 Status: current, revisable research backbone. Experimental measurements are archived; no production space constructor or frozen expansion algorithm is claimed.
 
@@ -23,6 +34,8 @@ The priority is **dynamic boundary expansion**, including recovery from narrow/d
 The user has chat-only access for this work and cannot automatically invoke advanced LLMs from the pipeline. Begin with manual chat/script exchanges, recording user intervention and transfer cost; API integration is optional later work.
 
 ## Accepted eight-step pipeline baseline
+
+October 28 qualification: retain the broad sequence for continuity; only Steps 02–03 are being developed now. Later details are provisional and may change as earlier mechanisms develop.
 
 Accepted: 2026-10-26. This is the current baseline to develop and test, and remains revisable as research progresses. It specifies the workflow, not a finished algorithm or demonstrated performance result.
 

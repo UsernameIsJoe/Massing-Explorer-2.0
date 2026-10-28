@@ -2,7 +2,18 @@
 
 > **Audit correction:** Batch 01 did not receive the intended no-cross-mass department-split rule. Matched-constraints performance conclusions are withdrawn; see the correction section and constraint audit.
 
-## Current project direction — 2026-10-27
+## Current project direction — 2026-10-28
+
+## Current authority — semantic-first Steps 02–03, October 28
+
+The user's latest direction is to define the focused region primarily in **semantic embedding space**, with the established nine-axis framework providing grounding, explicit controls and cross-checks. Follow the [semantic-first Steps 02–03 development plan](docs/STEP02_03_SEMANTIC_FIRST_PLAN.md); it supersedes axis-envelope-first construction as the immediate research direction. Embedding suitability and the constructor remain unvalidated.
+
+The five development tasks are: (1) consistent seed decisions, semantic descriptions and nine-axis records; (2) select and validate an existing embedding representation, considering training only if justified; (3) establish source-linked many-to-many semantic/axis relationships; (4) define joint membership and provisional expansion; (5) supply a minimal generator of unseen complete or partial strategies. An embedding boundary alone is not a generator.
+
+Keep the nine-axis framework consistent; defer evolution until a concrete failure. The user welcomed partial strategies/blanks as a promising direction and selected **provisional admission** of explainable brief-relevant outside alternatives without prior proof of superiority or dimensional feasibility. Investigate retained commitments and flexible alternatives/ranges; semantic versus implementation locks remain an unresolved distinction.
+
+Focus now on Steps 02–03. The later pipeline remains broad and revisable; do not freeze its details. Five seeds preserve test continuity, not an optimal count. Advanced-model exchanges remain manual and batched. The new plan distinguishes user decisions, research evidence and assistant proposals, and preserves earlier test limitations.
+
 
 Follow the [current backbone](docs/CURRENT_BACKBONE.md) and [project memo](docs/PROJECT_MEMO.md). Preserve prior ME/ME 2.0 work while focusing the contribution on **constructing a smart semantic architectural possibility space and enabling an existing LLM to navigate it intelligently**.
 
@@ -29,7 +40,7 @@ This is a revisable research backbone. Develop a script/method and supporting to
 
 The [October 26 research assessment](docs/STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. Multiple weighted strategy trees selected through ongoing briefs are a candidate structure. Semantic control is supporting theory; adaptive revision remains an interaction/prompting concern; prioritized replay is retained. Strategic certainty/realization budgets and long-chat degradation are high priorities. No tree algorithm, confidence formula or context-reset policy is selected.
 
-CSP is no longer required as the main sampler/shortlist gate; independent constraint enforcement remains essential. ME axes, MCTS and BO are optional components to evaluate. Seed-first construction is the selected entry point; representation and expansion mechanisms remain open.
+CSP is no longer required as the main sampler/shortlist gate; independent constraint enforcement remains essential. Keep the nine-axis framework consistent as supporting representation; MCTS and BO remain optional later mechanisms. Seed-first construction is the selected entry point; representation and expansion mechanisms remain open.
 
 The earlier framework and experiments below remain foundations. Current priorities follow the backbone and user assessment; the audit correction still governs pilot performance claims.
 
