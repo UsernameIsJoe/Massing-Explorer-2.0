@@ -1,0 +1,15 @@
+{
+  "template_version": "p01-desc-v1",
+  "source_file": "all_15_cases.json",
+  "source_sha256": "7fc57c36e5b4fbdbe7ec7ffb745888ef53572cfbe15ff711698c2f09f6678e66",
+  "texts": 90,
+  "cases": 15,
+  "variants": [
+    "aspect_civic_access",
+    "aspect_inclusion",
+    "aspect_service",
+    "full",
+    "intent",
+    "struct"
+  ]
+}

@@ -1,0 +1,540 @@
+{
+ "seed": 20261028,
+ "presentation_order": [
+  "T10",
+  "T18",
+  "T16",
+  "T08",
+  "T19",
+  "T27",
+  "T15",
+  "T04",
+  "T01",
+  "T02",
+  "T06",
+  "T13",
+  "T12",
+  "T14",
+  "T25",
+  "T11",
+  "T20",
+  "T07",
+  "T22",
+  "T03",
+  "T26",
+  "T28",
+  "T30",
+  "T23",
+  "T05",
+  "T29",
+  "T31",
+  "T24",
+  "T21",
+  "T17",
+  "T09"
+ ],
+ "triplets": [
+  {
+   "kind": "real_disagree",
+   "anchor": "A-E04",
+   "options": [
+    "A-E05",
+    "B-E01"
+   ],
+   "selection": {
+    "struct_closer": "A-E05",
+    "lexical_closer": "B-E01",
+    "margin": 0.1235
+   },
+   "triplet_id": "T01",
+   "shown_order": [
+    "A-E05",
+    "B-E01"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "B-E04",
+   "options": [
+    "A-E04",
+    "05-S04"
+   ],
+   "selection": {
+    "struct_closer": "A-E04",
+    "lexical_closer": "05-S04",
+    "margin": 0.1233
+   },
+   "triplet_id": "T02",
+   "shown_order": [
+    "A-E04",
+    "05-S04"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "05-S02",
+   "options": [
+    "B-E04",
+    "05-S04"
+   ],
+   "selection": {
+    "struct_closer": "B-E04",
+    "lexical_closer": "05-S04",
+    "margin": 0.1217
+   },
+   "triplet_id": "T03",
+   "shown_order": [
+    "B-E04",
+    "05-S04"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "B-E05",
+   "options": [
+    "A-E05",
+    "B-E01"
+   ],
+   "selection": {
+    "struct_closer": "A-E05",
+    "lexical_closer": "B-E01",
+    "margin": 0.1111
+   },
+   "triplet_id": "T04",
+   "shown_order": [
+    "A-E05",
+    "B-E01"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "05-S05",
+   "options": [
+    "05-S03",
+    "05-S02"
+   ],
+   "selection": {
+    "struct_closer": "05-S03",
+    "lexical_closer": "05-S02",
+    "margin": 0.1111
+   },
+   "triplet_id": "T05",
+   "shown_order": [
+    "05-S03",
+    "05-S02"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "B-E01",
+   "options": [
+    "05-S05",
+    "A-E04"
+   ],
+   "selection": {
+    "struct_closer": "05-S05",
+    "lexical_closer": "A-E04",
+    "margin": 0.1111
+   },
+   "triplet_id": "T06",
+   "shown_order": [
+    "05-S05",
+    "A-E04"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "05-S04",
+   "options": [
+    "05-S01",
+    "B-E04"
+   ],
+   "selection": {
+    "struct_closer": "05-S01",
+    "lexical_closer": "B-E04",
+    "margin": 0.1049
+   },
+   "triplet_id": "T07",
+   "shown_order": [
+    "05-S01",
+    "B-E04"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "A-E05",
+   "options": [
+    "B-E01",
+    "A-E01"
+   ],
+   "selection": {
+    "struct_closer": "B-E01",
+    "lexical_closer": "A-E01",
+    "margin": 0.0904
+   },
+   "triplet_id": "T08",
+   "shown_order": [
+    "A-E01",
+    "B-E01"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "B-E02",
+   "options": [
+    "A-E03",
+    "05-S01"
+   ],
+   "selection": {
+    "struct_closer": "A-E03",
+    "lexical_closer": "05-S01",
+    "margin": 0.0864
+   },
+   "triplet_id": "T09",
+   "shown_order": [
+    "A-E03",
+    "05-S01"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "A-E01",
+   "options": [
+    "05-S05",
+    "A-E04"
+   ],
+   "selection": {
+    "struct_closer": "05-S05",
+    "lexical_closer": "A-E04",
+    "margin": 0.0843
+   },
+   "triplet_id": "T10",
+   "shown_order": [
+    "A-E04",
+    "05-S05"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "B-E03",
+   "options": [
+    "B-E05",
+    "05-S02"
+   ],
+   "selection": {
+    "struct_closer": "B-E05",
+    "lexical_closer": "05-S02",
+    "margin": 0.0833
+   },
+   "triplet_id": "T11",
+   "shown_order": [
+    "B-E05",
+    "05-S02"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "A-E03",
+   "options": [
+    "A-E05",
+    "A-E01"
+   ],
+   "selection": {
+    "struct_closer": "A-E05",
+    "lexical_closer": "A-E01",
+    "margin": 0.0775
+   },
+   "triplet_id": "T12",
+   "shown_order": [
+    "A-E05",
+    "A-E01"
+   ]
+  },
+  {
+   "kind": "real_control",
+   "anchor": "05-S03",
+   "options": [
+    "A-E01",
+    "05-S04"
+   ],
+   "selection": {
+    "struct_and_lexical_closer": "A-E01",
+    "margin": 0.2373
+   },
+   "triplet_id": "T13",
+   "shown_order": [
+    "05-S04",
+    "A-E01"
+   ]
+  },
+  {
+   "kind": "real_control",
+   "anchor": "05-S01",
+   "options": [
+    "B-E02",
+    "A-E01"
+   ],
+   "selection": {
+    "struct_and_lexical_closer": "B-E02",
+    "margin": 0.113
+   },
+   "triplet_id": "T14",
+   "shown_order": [
+    "A-E01",
+    "B-E02"
+   ]
+  },
+  {
+   "kind": "real_control",
+   "anchor": "A-E02",
+   "options": [
+    "B-E04",
+    "05-S05"
+   ],
+   "selection": {
+    "struct_and_lexical_closer": "B-E04",
+    "margin": 0.0926
+   },
+   "triplet_id": "T15",
+   "shown_order": [
+    "B-E04",
+    "05-S05"
+   ]
+  },
+  {
+   "kind": "paraphrase",
+   "anchor": "05-S01",
+   "options": [
+    "P-PARA-05-S01",
+    "05-S02"
+   ],
+   "construction_expectation": "P-PARA-05-S01",
+   "triplet_id": "T16",
+   "shown_order": [
+    "05-S02",
+    "P-PARA-05-S01"
+   ]
+  },
+  {
+   "kind": "paraphrase",
+   "anchor": "05-S04",
+   "options": [
+    "P-PARA-05-S04",
+    "05-S01"
+   ],
+   "construction_expectation": "P-PARA-05-S04",
+   "triplet_id": "T17",
+   "shown_order": [
+    "P-PARA-05-S04",
+    "05-S01"
+   ]
+  },
+  {
+   "kind": "paraphrase",
+   "anchor": "A-E04",
+   "options": [
+    "P-PARA-A-E04",
+    "05-S02"
+   ],
+   "construction_expectation": "P-PARA-A-E04",
+   "triplet_id": "T18",
+   "shown_order": [
+    "P-PARA-A-E04",
+    "05-S02"
+   ]
+  },
+  {
+   "kind": "paraphrase",
+   "anchor": "B-E05",
+   "options": [
+    "P-PARA-B-E05",
+    "B-E03"
+   ],
+   "construction_expectation": "P-PARA-B-E05",
+   "triplet_id": "T19",
+   "shown_order": [
+    "B-E03",
+    "P-PARA-B-E05"
+   ]
+  },
+  {
+   "kind": "lexical_trap",
+   "anchor": "05-S01",
+   "options": [
+    "P-FLIP-05-S01",
+    "P-PARA-05-S01"
+   ],
+   "construction_expectation": "P-PARA-05-S01",
+   "triplet_id": "T20",
+   "shown_order": [
+    "P-PARA-05-S01",
+    "P-FLIP-05-S01"
+   ]
+  },
+  {
+   "kind": "lexical_trap",
+   "anchor": "05-S04",
+   "options": [
+    "P-FLIP-05-S04",
+    "P-PARA-05-S04"
+   ],
+   "construction_expectation": "P-PARA-05-S04",
+   "triplet_id": "T21",
+   "shown_order": [
+    "P-PARA-05-S04",
+    "P-FLIP-05-S04"
+   ]
+  },
+  {
+   "kind": "lexical_trap",
+   "anchor": "A-E04",
+   "options": [
+    "P-FLIP-A-E04",
+    "P-PARA-A-E04"
+   ],
+   "construction_expectation": "P-PARA-A-E04",
+   "triplet_id": "T22",
+   "shown_order": [
+    "P-FLIP-A-E04",
+    "P-PARA-A-E04"
+   ]
+  },
+  {
+   "kind": "lexical_trap",
+   "anchor": "B-E05",
+   "options": [
+    "P-FLIP-B-E05",
+    "P-PARA-B-E05"
+   ],
+   "construction_expectation": "P-PARA-B-E05",
+   "triplet_id": "T23",
+   "shown_order": [
+    "P-FLIP-B-E05",
+    "P-PARA-B-E05"
+   ]
+  },
+  {
+   "kind": "generic",
+   "anchor": "05-S03",
+   "options": [
+    "P-GEN-1",
+    "B-E01"
+   ],
+   "construction_expectation": "B-E01",
+   "triplet_id": "T24",
+   "shown_order": [
+    "B-E01",
+    "P-GEN-1"
+   ]
+  },
+  {
+   "kind": "generic",
+   "anchor": "A-E01",
+   "options": [
+    "P-GEN-2",
+    "05-S03"
+   ],
+   "construction_expectation": "05-S03",
+   "triplet_id": "T25",
+   "shown_order": [
+    "P-GEN-2",
+    "05-S03"
+   ]
+  },
+  {
+   "kind": "intent_vs_wording",
+   "anchor": "P-INC-ANCHOR",
+   "options": [
+    "P-INC-SAMEINTENT",
+    "P-INC-SAMEWORDS"
+   ],
+   "construction_expectation": "P-INC-SAMEINTENT",
+   "triplet_id": "T26",
+   "shown_order": [
+    "P-INC-SAMEWORDS",
+    "P-INC-SAMEINTENT"
+   ]
+  },
+  {
+   "kind": "intent_vs_wording",
+   "anchor": "P-CIV-ANCHOR",
+   "options": [
+    "P-CIV-SAMEINTENT",
+    "P-CIV-SAMEWORDS"
+   ],
+   "construction_expectation": "P-CIV-SAMEINTENT",
+   "triplet_id": "T27",
+   "shown_order": [
+    "P-CIV-SAMEINTENT",
+    "P-CIV-SAMEWORDS"
+   ]
+  },
+  {
+   "kind": "intent_vs_wording",
+   "anchor": "P-SRV-ANCHOR",
+   "options": [
+    "P-SRV-SAMEINTENT",
+    "P-SRV-SAMEWORDS"
+   ],
+   "construction_expectation": "P-SRV-SAMEINTENT",
+   "triplet_id": "T28",
+   "shown_order": [
+    "P-SRV-SAMEINTENT",
+    "P-SRV-SAMEWORDS"
+   ]
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "A-E04",
+   "options": [
+    "A-E05",
+    "B-E01"
+   ],
+   "selection": {
+    "struct_closer": "A-E05",
+    "lexical_closer": "B-E01",
+    "margin": 0.1235
+   },
+   "triplet_id": "T29",
+   "shown_order": [
+    "B-E01",
+    "A-E05"
+   ],
+   "repeat_of": "T01"
+  },
+  {
+   "kind": "real_disagree",
+   "anchor": "B-E04",
+   "options": [
+    "A-E04",
+    "05-S04"
+   ],
+   "selection": {
+    "struct_closer": "A-E04",
+    "lexical_closer": "05-S04",
+    "margin": 0.1233
+   },
+   "triplet_id": "T30",
+   "shown_order": [
+    "05-S04",
+    "A-E04"
+   ],
+   "repeat_of": "T02"
+  },
+  {
+   "kind": "lexical_trap",
+   "anchor": "05-S01",
+   "options": [
+    "P-FLIP-05-S01",
+    "P-PARA-05-S01"
+   ],
+   "construction_expectation": "P-PARA-05-S01",
+   "triplet_id": "T31",
+   "shown_order": [
+    "P-FLIP-05-S01",
+    "P-PARA-05-S01"
+   ],
+   "repeat_of": "T20"
+  }
+ ]
+}

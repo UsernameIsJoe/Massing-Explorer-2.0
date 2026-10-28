@@ -1,0 +1,180 @@
+<title>ME2 Triplet Labeling</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one triplet per screen — anchor across the top, two options side by side, answer bar below. */
+:root{
+  --bg:#f3f4f2; --surface:#ffffff; --line:#d5d9d4; --fg:#1d2420; --muted:#5f6a63;
+  --accent:#2f5d50; --accent-soft:#e2ece7; --anchor:#e9edf3; --anchor-line:#b9c4d4; --done:#3f7a4a;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151917; --surface:#1d2320; --line:#333c37; --fg:#e4e8e5; --muted:#9aa59e;
+  --accent:#86c2ad; --accent-soft:#24352f; --anchor:#1c2430; --anchor-line:#3a4a60; --done:#7fc28b; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151917; --surface:#1d2320; --line:#333c37; --fg:#e4e8e5; --muted:#9aa59e;
+  --accent:#86c2ad; --accent-soft:#24352f; --anchor:#1c2430; --anchor-line:#3a4a60; --done:#7fc28b; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--sans)}
+.wrap{max-width:1100px;margin:0 auto;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:18px}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between}
+h1{font-size:1.3rem;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:2px 0 0;max-width:70ch}
+.status{font:500 .8rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
+.q{font-weight:600;margin:0}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.card.anchor{background:var(--anchor);border-color:var(--anchor-line)}
+.tag{font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.text{margin:0;max-width:75ch}
+.struct{font:.8rem/1.6 var(--mono);color:var(--muted);border-top:1px dashed var(--line);padding-top:8px;overflow-wrap:anywhere}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:720px){.opts{grid-template-columns:1fr}}
+.card.pick{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.answers{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:600 .9rem var(--sans);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:5px;padding:9px 14px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.on{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+button.ghost{background:transparent}
+kbd{font:500 .72rem var(--mono);color:var(--muted);margin-left:6px}
+button.on kbd{color:inherit}
+textarea{width:100%;box-sizing:border-box;min-height:56px;font:.9rem var(--sans);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:5px;padding:8px}
+.nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+.save{font:.8rem var(--mono);color:var(--muted)}
+.save.ok{color:var(--done)}
+.grid{display:flex;flex-wrap:wrap;gap:4px}
+.grid button{padding:4px 0;width:34px;font:500 .75rem var(--mono)}
+.grid button.done{background:var(--accent-soft);border-color:var(--accent)}
+.grid button.cur{outline:2px solid var(--fg)}
+details{color:var(--muted)}
+details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.75rem var(--mono);max-height:240px;overflow:auto;background:var(--surface);border:1px solid var(--line);padding:8px;border-radius:5px}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Pilot 01 · Strategy triplets</h1>
+      <p class="sub">For each item, judge which option is the closer <strong>architectural strategy</strong> to the anchor: organization, relationships and intentions, not wording. Go with your first professional read. "About equal" and "Can't judge" are valid answers.</p>
+    </div>
+    <div class="status" id="status">0 / 0 labeled</div>
+  </header>
+  <div class="bar"><i id="prog"></i></div>
+
+  <p class="q" id="qline"></p>
+  <section class="card anchor" id="anchor"></section>
+  <div class="opts">
+    <section class="card" id="opt1"></section>
+    <section class="card" id="opt2"></section>
+  </div>
+
+  <div class="answers" id="answers">
+    <button id="a-option_1" data-a="option_1">Option 1 closer<kbd>1</kbd></button>
+    <button id="a-option_2" data-a="option_2">Option 2 closer<kbd>2</kbd></button>
+    <button id="a-about_equal" data-a="about_equal">About equal<kbd>E</kbd></button>
+    <button id="a-cannot_judge" data-a="cannot_judge">Can't judge<kbd>X</kbd></button>
+  </div>
+  <label class="tag" for="note">Note (optional): what drove your choice</label>
+  <textarea id="note" placeholder="e.g. same SPED/classroom relationship; wording differs"></textarea>
+
+  <div class="nav">
+    <button class="ghost" id="prev">← Previous</button>
+    <span class="save" id="save"></span>
+    <button id="next">Next →</button>
+  </div>
+
+  <div class="grid" id="grid" aria-label="Jump to item"></div>
+
+  <details>
+    <summary>Backup: copy all labels</summary>
+    <p>Labels save automatically. If saving is unavailable in your view, copy this and paste it into the chat.</p>
+    <button id="copy">Copy labels</button>
+    <pre id="dump"></pre>
+  </details>
+</div>
+
+<script>
+const SET = __DATA__;
+const items = SET.items;
+const labels = {};
+let i = 0, db = null;
+const $ = id => document.getElementById(id);
+const LS = "me2-p01-labels";
+try { Object.assign(labels, JSON.parse(localStorage.getItem(LS) || "{}")); } catch (e) {}
+
+function cardHTML(tag, o){
+  const s = o.structure ? `<div class="struct">${esc(o.structure)}</div>` : "";
+  return `<span class="tag">${tag}</span><p class="text">${esc(o.text)}</p>${s}`;
+}
+function esc(t){ const d=document.createElement("div"); d.textContent=t; return d.innerHTML; }
+
+function render(){
+  const it = items[i], lab = labels[it.triplet_id] || {};
+  $("qline").textContent = `Item ${it.item} of ${items.length}. ${SET.question}`;
+  $("anchor").innerHTML = cardHTML("Anchor", it.anchor);
+  $("opt1").innerHTML = cardHTML("Option 1", it.option_1);
+  $("opt2").innerHTML = cardHTML("Option 2", it.option_2);
+  $("opt1").classList.toggle("pick", lab.answer==="option_1");
+  $("opt2").classList.toggle("pick", lab.answer==="option_2");
+  document.querySelectorAll("#answers button").forEach(b=>b.classList.toggle("on", b.dataset.a===lab.answer));
+  $("note").value = lab.note || "";
+  $("prev").disabled = i===0;
+  $("next").textContent = i===items.length-1 ? "Finish" : "Next →";
+  const n = items.filter(x=>labels[x.triplet_id]?.answer).length;
+  $("status").textContent = `${n} / ${items.length} labeled`;
+  $("prog").style.width = (100*n/items.length)+"%";
+  $("grid").innerHTML = items.map((x,k)=>`<button data-k="${k}" class="${labels[x.triplet_id]?.answer?'done':''} ${k===i?'cur':''}">${x.item}</button>`).join("");
+  $("dump").textContent = JSON.stringify(labels, null, 1);
+  if (n===items.length && i===items.length-1) $("save").textContent = $("save").textContent || "All items labeled.";
+}
+
+let saveTimer=null;
+async function persist(tid){
+  try { localStorage.setItem(LS, JSON.stringify(labels)); } catch (e) {}
+  if (!db){ $("save").textContent = "Saved in this browser only"; $("save").className="save"; return; }
+  const it = items.find(x=>x.triplet_id===tid), lab = labels[tid];
+  try {
+    await db.collection("labels").doc(tid).set({triplet_id:tid, item:it.item, answer:lab.answer||null, note:lab.note||"", saved_at:new Date().toISOString(), labeling_set:"p01-v1"});
+    $("save").textContent = `Saved item ${it.item}`; $("save").className="save ok";
+  } catch (e) {
+    $("save").textContent = "Could not save to the shared record. Use the backup copy below."; $("save").className="save";
+  }
+}
+
+function answer(a){
+  const tid = items[i].triplet_id;
+  labels[tid] = {...(labels[tid]||{}), answer:a, note:$("note").value};
+  render(); persist(tid);
+}
+$("answers").addEventListener("click", e=>{ const b=e.target.closest("button"); if(b) answer(b.dataset.a); });
+$("note").addEventListener("input", ()=>{
+  const tid = items[i].triplet_id;
+  labels[tid] = {...(labels[tid]||{}), note:$("note").value};
+  clearTimeout(saveTimer); saveTimer=setTimeout(()=>persist(tid), 700);
+});
+function go(k){ if(k<0||k>=items.length) return; clearTimeout(saveTimer); i=k; render(); window.scrollTo({top:0}); }
+$("prev").onclick=()=>go(i-1);
+$("next").onclick=()=>{ if(i===items.length-1){ const left=items.findIndex(x=>!labels[x.triplet_id]?.answer); if(left>=0) go(left); else $("save").textContent="All items labeled. Thank you."; } else go(i+1); };
+$("grid").addEventListener("click", e=>{ const b=e.target.closest("button"); if(b) go(+b.dataset.k); });
+document.addEventListener("keydown", e=>{
+  if (e.target.tagName==="TEXTAREA") return;
+  const m={"1":"option_1","2":"option_2","e":"about_equal","x":"cannot_judge"}[e.key.toLowerCase()];
+  if (m) answer(m);
+  if (e.key==="ArrowRight") $("next").click();
+  if (e.key==="ArrowLeft") go(i-1);
+});
+$("copy").onclick=async()=>{ const t=JSON.stringify(labels,null,1); try{ await navigator.clipboard.writeText(t); $("copy").textContent="Copied"; }catch(e){ const r=document.createRange(); r.selectNodeContents($("dump")); const s=getSelection(); s.removeAllRanges(); s.addRange(r); } };
+
+render();
+(async()=>{
+  db = window.claude ? await window.claude.use("db") : null;
+  if (!db){ render(); return; }
+  try {
+    const snap = await db.collection("labels").get();
+    snap.docs.forEach(d=>{ const v=d.data(); if(v && v.triplet_id) labels[v.triplet_id]={answer:v.answer||undefined, note:v.note||""}; });
+    render();
+  } catch(e) {}
+})();
+</script>
