@@ -1,6 +1,6 @@
 # Region v1: membership rule and result
 
-Date: 2026-10-28. Status: **awaiting the architect's approval**. Code: `membership_v1.py`. Result: `region_v1.json`.
+Date: 2026-10-28. Status: **withdrawn as the region (2026-10-28).** The rule uses one system (decisions) and replaces the semantic side with human marks, against [the core contribution](../docs/CORE_CONTRIBUTION.md). Kept as a structural reference. Code: `membership_v1.py`. Result: `region_v1.json`.
 
 This is Task 4 of the Steps 02–03 plan. It depends on Tasks 1 and 3, which are done. Task 2 is settled by this rule: embeddings are not used for membership.
 

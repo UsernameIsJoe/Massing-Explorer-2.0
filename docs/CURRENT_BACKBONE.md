@@ -2,6 +2,8 @@
 Updated: 2026-10-28 (America/New_York).
 Status: revisable research direction; no production space constructor or validated embedding boundary.
 
+**Core contribution:** [CORE_CONTRIBUTION.md](CORE_CONTRIBUTION.md). Read it before anything else.
+
 ## Purpose
 
 Architectural strategies should remain meaningful, referenceable and explorable before expensive dimensional realization. Begin with a small set of brief-responsive LLM seeds and construct a focused but flexible space containing additional, uninstantiated possibilities.

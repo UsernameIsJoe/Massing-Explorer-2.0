@@ -1,0 +1,54 @@
+{
+ "pairs": 105,
+ "encoder": "bge-m3",
+ "results": {
+  "concept|program_organization": {
+   "rho": 0.182,
+   "p": 0.063
+  },
+  "concept|distribution_balance": {
+   "rho": 0.178,
+   "p": 0.0694
+  },
+  "concept|topology": {
+   "rho": 0.408,
+   "p": 0.0
+  },
+  "concept|mean_height": {
+   "rho": 0.08,
+   "p": 0.4191
+  },
+  "concept|height_articulation": {
+   "rho": -0.001,
+   "p": 0.9889
+  },
+  "concept|vertical_organization": {
+   "rho": 0.079,
+   "p": 0.4258
+  },
+  "concept_intent|program_organization": {
+   "rho": 0.153,
+   "p": 0.1192
+  },
+  "concept_intent|distribution_balance": {
+   "rho": 0.191,
+   "p": 0.051
+  },
+  "concept_intent|topology": {
+   "rho": 0.403,
+   "p": 0.0
+  },
+  "concept_intent|mean_height": {
+   "rho": 0.122,
+   "p": 0.2148
+  },
+  "concept_intent|height_articulation": {
+   "rho": 0.006,
+   "p": 0.9524
+  },
+  "concept_intent|vertical_organization": {
+   "rho": 0.161,
+   "p": 0.1011
+  }
+ }
+}
