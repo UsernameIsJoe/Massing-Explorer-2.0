@@ -34,6 +34,8 @@ Finding before any answer: the generating LLM's core commitments protect 3–4 o
 | E | 2 | 2 | out |
 | F | reached from another seed | 3+ | mixed |
 
+Bar given to the labeler (on the page): "same strategy" means the same organizing idea, a version one would present as "Option 1b", not identical; "different strategy" means the change alters what the scheme is about, a new option. Added 2026-10-28 before any answer was saved.
+
 ## Scoring
 
 Each rule predicts "same" for candidates it admits and "different" otherwise. Agreement with the labeler on decisive, stable answers (an item whose repeat disagrees is dropped). Reported per stratum so it is visible where each rule fails.
