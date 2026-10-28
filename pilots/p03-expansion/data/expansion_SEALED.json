@@ -1,0 +1,4819 @@
+{
+ "items": [
+  {
+   "expansion_id": "X05",
+   "group": "R1-S02|D08:M2->M1",
+   "group_size": 18,
+   "seed": "R1-S02",
+   "seed_name": "Arts Loft Over the Commons",
+   "seed_concept": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academic bar",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic block with library crown",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons with arts loft",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CT",
+     "CG"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academic bar",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic block with library crown",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons with arts loft",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CT",
+     "CG"
+    ]
+   },
+   "defining_changes": [
+    "administration moves from the civic block with library crown to the commons with arts loft"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "art and music leave the ground floor",
+    "media is not above administration"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M3",
+     "D02": "M2",
+     "D03": "M1",
+     "D04": "M1",
+     "D05": "M2",
+     "D06": "M1",
+     "D07": "M2",
+     "D08": "M1",
+     "D09": "M3"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      3
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": true
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 1
+  },
+  {
+   "expansion_id": "X12",
+   "group": "R1-S03|D04:M2->M3",
+   "group_size": 3,
+   "seed": "R1-S03",
+   "seed_name": "Detached Campus Pavilions",
+   "seed_concept": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "self-sufficient learning pavilion",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "low civic-arts pavilion",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "independent community pavilion",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": []
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "self-sufficient learning pavilion",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "independent community pavilion",
+      "departments": [
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "low civic-arts pavilion",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": []
+   },
+   "defining_changes": [
+    "gym and dining moves from the independent community pavilion to the low civic-arts pavilion"
+   ],
+   "other_changes": [
+    "custodial moves from the self-sufficient learning pavilion to the independent community pavilion"
+   ],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.05,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M1",
+     "D02": "M1",
+     "D03": "M3",
+     "D04": "M3",
+     "D05": "M3",
+     "D06": "M3",
+     "D07": "M1",
+     "D08": "M3",
+     "D09": "M2"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": false,
+     "M2-M3": false,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 2
+  },
+  {
+   "expansion_id": "X07",
+   "group": "R1-S02|D02:M2->M1",
+   "group_size": 6,
+   "seed": "R1-S02",
+   "seed_name": "Arts Loft Over the Commons",
+   "seed_concept": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academic bar",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic block with library crown",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons with arts loft",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CT",
+     "CG"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academic bar",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic block with library crown",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons with arts loft",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CT",
+     "CG"
+    ]
+   },
+   "defining_changes": [
+    "special education moves from the civic block with library crown to the commons with arts loft"
+   ],
+   "other_changes": [
+    "media center moves from floor 3 to floor 2 in the civic block with library crown"
+   ],
+   "brief_preferences_given_up": [
+    "art and music leave the ground floor",
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.2,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M3",
+     "D02": "M1",
+     "D03": "M1",
+     "D04": "M1",
+     "D05": "M2",
+     "D06": "M1",
+     "D07": "M2",
+     "D08": "M2",
+     "D09": "M3"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      3
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": true
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 3
+  },
+  {
+   "expansion_id": "X06",
+   "group": "R1-S02|D01:M3->M2",
+   "group_size": 12,
+   "seed": "R1-S02",
+   "seed_name": "Arts Loft Over the Commons",
+   "seed_concept": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academic bar",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic block with library crown",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons with arts loft",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CT",
+     "CG"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "civic block with library crown",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "academic bar",
+      "departments": [
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons with arts loft",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "CT",
+     "GT"
+    ]
+   },
+   "defining_changes": [
+    "core academic moves from the academic bar to the civic block with library crown"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "art and music leave the ground floor",
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M2",
+     "D02": "M2",
+     "D03": "M1",
+     "D04": "M1",
+     "D05": "M2",
+     "D06": "M1",
+     "D07": "M2",
+     "D08": "M2",
+     "D09": "M3"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      3
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": true
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 4
+  },
+  {
+   "expansion_id": "X18",
+   "group": "R1-S05|D08:M1->M2",
+   "group_size": 16,
+   "seed": "R1-S05",
+   "seed_name": "Academy Tower With Care House",
+   "seed_concept": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academy with library crown",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "care-and-making house",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "GT",
+     "CT"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academy with library crown",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "care-and-making house",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "GT",
+     "CT"
+    ]
+   },
+   "defining_changes": [
+    "administration moves from the academy with library crown to the commons"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "media is not above administration",
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M1",
+     "D02": "M3",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M1",
+     "D06": "M2",
+     "D07": "M3",
+     "D08": "M2",
+     "D09": "M3"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2,
+      3
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": true
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 5
+  },
+  {
+   "expansion_id": "X09",
+   "group": "R1-S03|D01:M1->M3",
+   "group_size": 18,
+   "seed": "R1-S03",
+   "seed_name": "Detached Campus Pavilions",
+   "seed_concept": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "self-sufficient learning pavilion",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "low civic-arts pavilion",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "independent community pavilion",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": []
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "low civic-arts pavilion",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "self-sufficient learning pavilion",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "independent community pavilion",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": []
+   },
+   "defining_changes": [
+    "core academic moves from the self-sufficient learning pavilion to the low civic-arts pavilion"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "media is not above administration",
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M3",
+     "D02": "M1",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M3",
+     "D06": "M2",
+     "D07": "M1",
+     "D08": "M3",
+     "D09": "M1"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": false,
+     "M2-M3": false,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 6
+  },
+  {
+   "expansion_id": "X20",
+   "group": "R1-S05|D04:M2->M3",
+   "group_size": 3,
+   "seed": "R1-S05",
+   "seed_name": "Academy Tower With Care House",
+   "seed_concept": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academy with library crown",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "care-and-making house",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "GT",
+     "CT"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academy with library crown",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "commons",
+      "departments": [
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "care-and-making house",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CT",
+     "GT",
+     "CG"
+    ]
+   },
+   "defining_changes": [
+    "gym and dining moves from the commons to the care-and-making house"
+   ],
+   "other_changes": [
+    "custodial moves from the care-and-making house to the commons"
+   ],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.05,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M1",
+     "D02": "M3",
+     "D03": "M3",
+     "D04": "M3",
+     "D05": "M1",
+     "D06": "M3",
+     "D07": "M3",
+     "D08": "M1",
+     "D09": "M2"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2,
+      3
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": true
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 7
+  },
+  {
+   "expansion_id": "X01",
+   "group": "R1-S01|D02:M1->M3",
+   "group_size": 16,
+   "seed": "R1-S01",
+   "seed_name": "Civic Hinge Linear Chain",
+   "seed_concept": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning bar at chain end",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic hinge",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "community commons at chain end",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CT",
+     "GT"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning bar at chain end",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic hinge",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "community commons at chain end",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CT"
+    ]
+   },
+   "defining_changes": [
+    "special education moves from the learning bar at chain end to the community commons at chain end"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M3",
+     "D02": "M1",
+     "D03": "M2",
+     "D04": "M1",
+     "D05": "M2",
+     "D06": "M1",
+     "D07": "M2",
+     "D08": "M2",
+     "D09": "M2"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1,
+      2
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 8
+  },
+  {
+   "expansion_id": "X16",
+   "group": "R1-S04|hub:M1-M2:off",
+   "group_size": 10,
+   "seed": "R1-S04",
+   "seed_name": "Commons Heart Between Front and Learning",
+   "seed_concept": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning wing beyond heart",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic front",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "central commons heart",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CG"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning wing beyond heart",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic front",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "central commons heart",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG"
+    ]
+   },
+   "defining_changes": [
+    "the civic front and the central commons heart lose their direct link"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M3",
+     "D02": "M3",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M1",
+     "D06": "M2",
+     "D07": "M1",
+     "D08": "M1",
+     "D09": "M1"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": false,
+     "M2-M3": true,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 9
+  },
+  {
+   "expansion_id": "X17",
+   "group": "R1-S05|D02:M3->M2",
+   "group_size": 16,
+   "seed": "R1-S05",
+   "seed_name": "Academy Tower With Care House",
+   "seed_concept": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academy with library crown",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "care-and-making house",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "GT",
+     "CT"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academy with library crown",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "care-and-making house",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "GT",
+     "CT"
+    ]
+   },
+   "defining_changes": [
+    "special education moves from the care-and-making house to the commons"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M1",
+     "D02": "M2",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M1",
+     "D06": "M2",
+     "D07": "M3",
+     "D08": "M1",
+     "D09": "M3"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2,
+      3
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": true
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 10
+  },
+  {
+   "expansion_id": "X11",
+   "group": "R1-S03|D08:M3->M1",
+   "group_size": 14,
+   "seed": "R1-S03",
+   "seed_name": "Detached Campus Pavilions",
+   "seed_concept": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "self-sufficient learning pavilion",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "low civic-arts pavilion",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "independent community pavilion",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": []
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "self-sufficient learning pavilion",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "low civic-arts pavilion",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "independent community pavilion",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": []
+   },
+   "defining_changes": [
+    "administration moves from the low civic-arts pavilion to the self-sufficient learning pavilion"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "media is not above administration",
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M1",
+     "D02": "M1",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M3",
+     "D06": "M2",
+     "D07": "M1",
+     "D08": "M1",
+     "D09": "M1"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": false,
+     "M2-M3": false,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 11
+  },
+  {
+   "expansion_id": "X14",
+   "group": "R1-S04|D08:M1->M2",
+   "group_size": 15,
+   "seed": "R1-S04",
+   "seed_name": "Commons Heart Between Front and Learning",
+   "seed_concept": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning wing beyond heart",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic front",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "central commons heart",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CG"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning wing beyond heart",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic front",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "central commons heart",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CG"
+    ]
+   },
+   "defining_changes": [
+    "administration moves from the civic front to the central commons heart"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "media is not above administration",
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M3",
+     "D02": "M3",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M1",
+     "D06": "M2",
+     "D07": "M1",
+     "D08": "M2",
+     "D09": "M1"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 12
+  },
+  {
+   "expansion_id": "X19",
+   "group": "R1-S05|D01:M1->M3",
+   "group_size": 3,
+   "seed": "R1-S05",
+   "seed_name": "Academy Tower With Care House",
+   "seed_concept": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academy with library crown",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "care-and-making house",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "GT",
+     "CT"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "care-and-making house",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "academy with library crown",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CG",
+     "CT"
+    ]
+   },
+   "defining_changes": [
+    "core academic moves from the academy with library crown to the care-and-making house"
+   ],
+   "other_changes": [
+    "media center moves from floor 3 to floor 2 in the academy with library crown"
+   ],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.2,
+   "proposed_elsewhere_by_llm": true,
+   "state": {
+    "own": {
+     "D01": "M3",
+     "D02": "M3",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M1",
+     "D06": "M2",
+     "D07": "M3",
+     "D08": "M1",
+     "D09": "M3"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2,
+      3
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": true
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 13
+  },
+  {
+   "expansion_id": "X15",
+   "group": "R1-S04|D01:M3->M1",
+   "group_size": 14,
+   "seed": "R1-S04",
+   "seed_name": "Commons Heart Between Front and Learning",
+   "seed_concept": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning wing beyond heart",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic front",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "central commons heart",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CG"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "civic front",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "learning wing beyond heart",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "central commons heart",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "GT"
+    ]
+   },
+   "defining_changes": [
+    "core academic moves from the learning wing beyond heart to the civic front"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "media is not above administration",
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M1",
+     "D02": "M3",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M1",
+     "D06": "M2",
+     "D07": "M1",
+     "D08": "M1",
+     "D09": "M1"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 14
+  },
+  {
+   "expansion_id": "X04",
+   "group": "R1-S01|D04:M3->M2",
+   "group_size": 3,
+   "seed": "R1-S01",
+   "seed_name": "Civic Hinge Linear Chain",
+   "seed_concept": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning bar at chain end",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic hinge",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "community commons at chain end",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CT",
+     "GT"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning bar at chain end",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "community commons at chain end",
+      "departments": [
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "civic hinge",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CG",
+     "GT"
+    ]
+   },
+   "defining_changes": [
+    "gym and dining moves from the community commons at chain end to the civic hinge"
+   ],
+   "other_changes": [
+    "custodial moves from the civic hinge to the community commons at chain end"
+   ],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.05,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M1",
+     "D02": "M1",
+     "D03": "M2",
+     "D04": "M2",
+     "D05": "M2",
+     "D06": "M2",
+     "D07": "M2",
+     "D08": "M2",
+     "D09": "M3"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1,
+      2
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 15
+  },
+  {
+   "expansion_id": "X02",
+   "group": "R1-S01|D08:M2->M1",
+   "group_size": 16,
+   "seed": "R1-S01",
+   "seed_name": "Civic Hinge Linear Chain",
+   "seed_concept": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning bar at chain end",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic hinge",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "community commons at chain end",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CT",
+     "GT"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning bar at chain end",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic hinge",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "community commons at chain end",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CT",
+     "GT"
+    ]
+   },
+   "defining_changes": [
+    "administration moves from the civic hinge to the learning bar at chain end"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "media is not above administration",
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M1",
+     "D02": "M1",
+     "D03": "M2",
+     "D04": "M3",
+     "D05": "M2",
+     "D06": "M3",
+     "D07": "M2",
+     "D08": "M1",
+     "D09": "M2"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1,
+      2
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 16
+  },
+  {
+   "expansion_id": "X03",
+   "group": "R1-S01|D01:M1->M2",
+   "group_size": 14,
+   "seed": "R1-S01",
+   "seed_name": "Civic Hinge Linear Chain",
+   "seed_concept": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning bar at chain end",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic hinge",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "community commons at chain end",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CT",
+     "GT"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "civic hinge",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "learning bar at chain end",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "community commons at chain end",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "CT",
+     "CG"
+    ]
+   },
+   "defining_changes": [
+    "core academic moves from the learning bar at chain end to the civic hinge"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M2",
+     "D02": "M1",
+     "D03": "M2",
+     "D04": "M3",
+     "D05": "M2",
+     "D06": "M3",
+     "D07": "M2",
+     "D08": "M2",
+     "D09": "M2"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1,
+      2
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 17
+  },
+  {
+   "expansion_id": "X13",
+   "group": "R1-S04|D02:M3->M2",
+   "group_size": 15,
+   "seed": "R1-S04",
+   "seed_name": "Commons Heart Between Front and Learning",
+   "seed_concept": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning wing beyond heart",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic front",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "central commons heart",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CG"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "learning wing beyond heart",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic front",
+      "departments": [
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "central commons heart",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CG"
+    ]
+   },
+   "defining_changes": [
+    "special education moves from the learning wing beyond heart to the central commons heart"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M3",
+     "D02": "M2",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M1",
+     "D06": "M2",
+     "D07": "M1",
+     "D08": "M1",
+     "D09": "M1"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 18
+  },
+  {
+   "expansion_id": "X08",
+   "group": "R1-S02|D02:M2->M1,D04:M1->M2",
+   "group_size": 1,
+   "seed": "R1-S02",
+   "seed_name": "Arts Loft Over the Commons",
+   "seed_concept": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academic bar",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "civic block with library crown",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "commons with arts loft",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CT",
+     "CG"
+    ]
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "academic bar",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "commons with arts loft",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D03",
+        "floors": [
+         3
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "civic block with library crown",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         3
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": [
+     "GT",
+     "CG",
+     "CT"
+    ]
+   },
+   "defining_changes": [
+    "special education moves from the civic block with library crown to the commons with arts loft",
+    "gym and dining moves from the commons with arts loft to the civic block with library crown"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "art and music leave the ground floor"
+   ],
+   "weighted_change": 2.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M3",
+     "D02": "M1",
+     "D03": "M1",
+     "D04": "M2",
+     "D05": "M2",
+     "D06": "M2",
+     "D07": "M2",
+     "D08": "M2",
+     "D09": "M3"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      3
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": true,
+     "M2-M3": true,
+     "M1-M3": true
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 19
+  },
+  {
+   "expansion_id": "X10",
+   "group": "R1-S03|D02:M1->M2",
+   "group_size": 18,
+   "seed": "R1-S03",
+   "seed_name": "Detached Campus Pavilions",
+   "seed_concept": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+   "seed_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "self-sufficient learning pavilion",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "low civic-arts pavilion",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "independent community pavilion",
+      "departments": [
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": []
+   },
+   "cand_diagram": {
+    "masses": [
+     {
+      "role": "C",
+      "label": "self-sufficient learning pavilion",
+      "departments": [
+       {
+        "dept": "D01",
+        "floors": [
+         1,
+         2,
+         3
+        ]
+       },
+       {
+        "dept": "D07",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D09",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "T",
+      "label": "low civic-arts pavilion",
+      "departments": [
+       {
+        "dept": "D03",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D05",
+        "floors": [
+         2
+        ]
+       },
+       {
+        "dept": "D08",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     },
+     {
+      "role": "G",
+      "label": "independent community pavilion",
+      "departments": [
+       {
+        "dept": "D02",
+        "floors": [
+         1,
+         2
+        ]
+       },
+       {
+        "dept": "D04",
+        "floors": [
+         1
+        ]
+       },
+       {
+        "dept": "D06",
+        "floors": [
+         1
+        ]
+       }
+      ]
+     }
+    ],
+    "links": []
+   },
+   "defining_changes": [
+    "special education moves from the self-sufficient learning pavilion to the independent community pavilion"
+   ],
+   "other_changes": [],
+   "brief_preferences_given_up": [
+    "not every mass reaches three floors"
+   ],
+   "weighted_change": 1.0,
+   "proposed_elsewhere_by_llm": false,
+   "state": {
+    "own": {
+     "D01": "M1",
+     "D02": "M2",
+     "D03": "M3",
+     "D04": "M2",
+     "D05": "M3",
+     "D06": "M2",
+     "D07": "M1",
+     "D08": "M3",
+     "D09": "M1"
+    },
+    "floors": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "links": {
+     "M1-M2": false,
+     "M2-M3": false,
+     "M1-M3": false
+    },
+    "slots": [
+     "M1",
+     "M2",
+     "M3"
+    ]
+   },
+   "item": 20
+  }
+ ]
+}
