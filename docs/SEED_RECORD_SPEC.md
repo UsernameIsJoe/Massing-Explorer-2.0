@@ -1,6 +1,6 @@
 # Seed record specification — draft v2.0
 
-Status: **draft for review**, 2026-10-28. Replaces generator case format v1.0 for future Step 02 runs only. Existing seed records keep v1.0.
+Status: **adopted for seeds_v2**, 2026-10-28 (review decisions recorded below). Replaces generator case format v1.0 for future Step 02 runs only. Existing seed records keep v1.0.
 
 ## Why this revision
 
@@ -26,11 +26,12 @@ Order matters: the LLM writes the concept **before** the structure, so the struc
 3–7 words. A recognizable handle for people. Serves: navigation only; not embedded.
 
 ### 2. `concept` — the organizing idea (U1)
-40–70 words. The spatial idea of the scheme in architectural terms: the roles the parts play (civic front, learning wing, shared heart, service spine, campus pavilions), how they relate (centralized, linear, clustered, stacked, layered, detached), and the overall diagram a designer would sketch first.
+35–70 words. The spatial idea of the scheme in architectural terms: the roles the parts play (civic front, learning wing, shared heart, service spine, campus pavilions), how they relate (centralized, linear, clustered, stacked, layered, detached), and the overall diagram a designer would sketch first.
 
 - **May** name program groups when they carry the idea ("the public programs form an entrance mass").
 - **Must not** enumerate departments by mass or floor. That is the structure's job.
 - **Must not** argue benefits; that is `intent`.
+- **Must not** restate requirements every scheme shares (gym and dining together and double height, for example). Shared boilerplate pulls every embedding toward the others.
 
 Example register (not templates): "Public programs are isolated as an entrance mass, with focused academic wings attached to one side and a service yard behind." / "A central public space anchors the plan; every program has direct access to it and to each other through it."
 
@@ -41,22 +42,26 @@ Example register (not templates): "Public programs are isolated as an entrance m
 2–4 moves. Each move is:
 - `move`: one short phrase ("lift assembly above a civic plinth").
 - `serves`: which part of the concept or intent it carries.
-- `decisions`: the structural facts it consists of, as references (department IDs, mass labels, links), e.g. `["D04,D06 on floors 2-3 in M1", "D07,D08,D09 on floor 1 in M1"]`.
+- `decisions`: the structural facts it consists of, as strict references that code can check: `{"type": "placement", "department_id", "mass_id", "floors"}` (floors equal the department's full occupied floors) or `{"type": "link", "mass_a", "mass_b", "direct_link"}`.
+
+`move` and `serves` stay prose for people and for meaning; `decisions` stays strict for checking. This also separates the two kinds of lock from the Step 02–03 plan: a semantic lock keeps `serves`, an implementation lock keeps `decisions`.
 
 This is the explicit many-to-many link between meaning and structure. It is what lets a later variation keep a move's purpose while changing how it is implemented.
 
 ### 5. `structure` — explicit decisions (U2, U5)
 Unchanged from v1.0 in content: `masses` (`mass_id`, `role`, a short role label, not a placement list), `departments` (all nine: `department_id`, `mass_ids`, `occupied_floors`), `connections` (every pair: `direct_link` true/false/null). This is the supporting record that the grey structure line and diagrams are drawn from.
 
-### 6. `commitments` — what defines the scheme (U4)
+### 6. `commitments` — what defines the scheme (U4), optional module
 - `core`: 2–4 statements that must remain true for this to still be the same strategy. Each names the move it protects. Changing one yields a different strategy.
 - `flexible`: 2–4 aspects that could change without changing the strategy (e.g. "which floor media occupies", "whether medical sits with administration or the support house").
 
 This is the seed's own statement of its boundary. Step 03 membership and variation start from it instead of inventing it.
 
+It is a **detachable module**: no other field refers to it, the schema does not require it, and `validate_seeds.py --no-commitments` ignores it. It can be dropped later without regenerating seeds.
+
 ### 7. `brief_response` — trade-offs against the brief (U5)
 - `main_tradeoff`: 15–35 words, the consequential sacrifice or tension.
-- `preferences_given_up`: list of brief preferences the scheme does not meet (e.g. "three floors in every mass"), empty if none.
+- `preferences_given_up`: ids from a fixed list (`arts_ground_floor`, `media_top_above_admin`, `three_floors`), each defined in CASE_FORMAT v2.0 so code can derive it from the structure and compare.
 
 ### 8. `unresolved` — open questions (U5)
 Up to four items: unknowns, possible requirement conflicts, checks needed at realization. Unchanged from v1.0 `unresolved_notes`.
@@ -66,7 +71,11 @@ Up to four items: unknowns, possible requirement conflicts, checks needed at rea
 
 ## Rules that make the fields usable
 
-1. **Concept and structure must agree.** Every `key_moves.decisions` entry must match `structure`. A reviewer (or code, for the references) checks this; a mismatch is recorded, not silently fixed.
+1. **One scheme per record.** Every field must describe the same scheme. Checked in three layers:
+   - **Generator self-check:** the generation instruction makes the LLM check six coherence items before returning.
+   - **Code** (`seeds_v2/scripts/validate_seeds.py`): key-move references against structure, hard rules (one mass per department, admin at grade, gym with dining, floors 1–3, contiguity, 753 SF per floor portion), connections complete, commitments pointing at real moves, stated preferences against structure, concept length, enumeration, floor mentions and shared boilerplate.
+   - **Reviewer:** concept, intent and moves read against the diagram, for the semantic agreement code cannot judge.
+   A mismatch is recorded, never silently fixed.
 2. **No restating across fields.** `concept` does not list placements; `intent` does not describe the diagram; `structure` carries no prose rationale.
 3. **Intentions are hypotheses.** Nothing in `intent`, `key_moves` or `commitments` is treated as a demonstrated effect.
 4. **Nulls stay nulls.** Unresolved structural values remain `null` with a note; no defaults are filled in later.
@@ -78,9 +87,9 @@ Up to four items: unknowns, possible requirement conflicts, checks needed at rea
 - Concept-plus-intent embedding: `concept` + `intent`.
 - Not embedded as semantics: `structure` (it has its own distance), `name`, `unresolved`.
 
-## Open choices for review
+## Review decisions (2026-10-28)
 
-1. Is `commitments` (core vs flexible) worth asking for at generation, or should Step 03 derive it? It is the most useful field for membership but the hardest for the LLM to do well.
-2. Should `key_moves.decisions` reference structure strictly (IDs only), or allow short prose?
-3. Word ranges for `concept` (40–70) and `intent` (20–40).
-4. Seed count for the new generation round (five keeps continuity with Pilot 01).
+1. `commitments`: kept, as a detachable module.
+2. `key_moves`: prose `move`/`serves` plus strict `decisions` references.
+3. Lengths: concept 35–70 words, intent 20–40. About 55–95 tokens for a concept and about 150 for concept plus intent, within every Pilot 01 encoder's limit (the tightest, mxbai, takes 512 tokens). Shorter than about 30 words drifts toward generic school language; longer than about 100 averages several ideas into one vector. A full five-seed response is about 2,000 words, one ordinary chat response.
+4. Seeds: five fresh seeds under v2.0, generated by the user's advanced model from `seeds_v2/GENERATION_MESSAGE.txt`.
