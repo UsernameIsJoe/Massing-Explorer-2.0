@@ -1,0 +1,125 @@
+<title>ME2 Carrying Decisions</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one candidate at a time; seed and candidate diagrams stacked for direct comparison, the changes listed between them, three answer buttons. */
+/*__TOKENS__*/
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--sans)}
+.wrap{max-width:900px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:16px}
+h1{font-size:1.3rem;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;max-width:70ch}
+.status{font:500 .8rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.card.seed{background:var(--anchor);border-color:var(--anchor-line)}
+.tag{font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.concept{margin:0;color:var(--muted);font-size:.9rem;max-width:75ch}
+.diag{width:100%;max-width:640px}
+.diag svg{display:block;width:100%;height:auto}
+.diag text{font:500 10px var(--sans);fill:var(--fg)}
+.diag .ax{fill:var(--muted);font:500 9px var(--mono)}
+.diag .mt{fill:var(--muted);font:600 9.5px var(--sans)}
+.changes{margin:0;padding:10px 14px 10px 30px;border-left:3px solid var(--accent);background:var(--accent-soft);display:grid;gap:4px}
+.scale{margin:8px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.85rem;color:var(--muted)}
+.scale b{color:var(--fg);font-family:var(--mono)}
+.prefs{margin:0;font-size:.85rem;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted);align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
+.answers{display:flex;flex-wrap:wrap;gap:8px}
+button{font:600 .9rem var(--sans);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:5px;padding:10px 16px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.on{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+button.ghost{background:transparent}
+kbd{font:500 .72rem var(--mono);color:var(--muted);margin-left:6px}
+button.on kbd{color:inherit}
+textarea{width:100%;box-sizing:border-box;min-height:44px;font:.9rem var(--sans);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:5px;padding:8px}
+.nav{display:flex;gap:8px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.save{font:.8rem var(--mono);color:var(--muted)}
+.grid{display:flex;flex-wrap:wrap;gap:4px}
+.grid button{padding:4px 0;width:34px;font:500 .75rem var(--mono)}
+.grid button.done{background:var(--accent-soft);border-color:var(--accent)}
+.grid button.cur{outline:2px solid var(--fg)}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+.list{display:grid;gap:4px;margin:0;padding:0;list-style:none}
+.list label{display:flex;gap:10px;align-items:flex-start;padding:7px 10px;border:1px solid var(--line);border-radius:5px;background:var(--surface);cursor:pointer}
+.list label:has(input:checked){border-color:var(--accent);background:var(--accent-soft)}
+.list input{margin-top:3px;width:16px;height:16px;accent-color:var(--accent);flex:none}
+.moves{margin:0;padding-left:20px;font-size:.88rem;color:var(--muted);display:grid;gap:2px}
+.moves b{color:var(--fg);font-weight:600}
+h2{font-size:.95rem;margin:6px 0 0}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Carrying decisions · 5 seeds</h1>
+    <p class="sub">For each seed, tick only the decisions <strong>the idea cannot lose</strong>. If a variation changed an unticked decision, it would still be this seed's idea. Leave everything else unticked. There are no right answers. About a minute per seed.</p>
+    <p class="sub">A ticked mass means that department stays with the other ticked departments of that mass, and apart from ticked departments in other masses. A ticked floor means it keeps those floors. A ticked link means that pair stays linked (or unlinked).</p>
+  </header>
+  <div class="status" id="status"></div>
+  <div class="bar"><i id="prog"></i></div>
+  <div class="legend" id="legend" aria-label="Diagram key"></div>
+  <p class="tag" id="qline"></p>
+  <section class="card seed" id="seed"></section>
+  <h2>Which mass it is in</h2>
+  <ul class="list" id="mass"></ul>
+  <h2>Its floors</h2>
+  <ul class="list" id="floors"></ul>
+  <h2>Links between masses</h2>
+  <ul class="list" id="links"></ul>
+  <textarea id="note" placeholder="Note (optional)"></textarea>
+  <div class="nav">
+    <button class="ghost" id="prev">← Previous seed</button>
+    <span class="save" id="save"></span>
+    <button id="done">Done with this seed →</button>
+  </div>
+</div>
+
+<script>
+const SET = __DATA__;
+/*__KINDS__*/
+function escx(t){ return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+/*__DIAGRAM__*/
+const seeds = SET.seeds; const ans = {}; let i = 0, db = null;
+const $ = id => document.getElementById(id);
+const LS = "me2-carrying-v1";
+try { Object.assign(ans, JSON.parse(localStorage.getItem(LS)||"{}")); } catch(e) {}
+function cur(){ const s=seeds[i]; return ans[s.seed_id] || (ans[s.seed_id]={mass:[],floors:[],links:[],note:"",done:false}); }
+function list(el, items, key){
+  const a = cur();
+  $(el).innerHTML = items.map(x=>`<li><label><input type="checkbox" data-key="${key}" value="${x.id}" ${a[key].includes(x.id)?"checked":""}><span>${escx(x.text)}</span></label></li>`).join("");
+}
+function render(){
+  const s = seeds[i];
+  $("qline").textContent = `Seed ${i+1} of ${seeds.length}`;
+  $("seed").innerHTML = `<span class="tag">${escx(s.name)}</span><div class="diag">${diagramSVG(s.diagram)}</div><p class="concept"><strong>Concept.</strong> ${escx(s.concept)}</p><p class="concept"><strong>Intent.</strong> ${escx(s.intent)}</p><ol class="moves">${s.moves.map(m=>`<li><b>${escx(m.move)}</b>: ${escx(m.serves)}</li>`).join("")}</ol>`;
+  list("mass", s.mass, "mass"); list("floors", s.floors, "floors"); list("links", s.links, "links");
+  $("note").value = cur().note||"";
+  const n = seeds.filter(x=>ans[x.seed_id]?.done).length;
+  $("status").textContent = `${n} / ${seeds.length} seeds done`;
+  $("prog").style.width = (100*n/seeds.length)+"%";
+  $("prev").disabled = i===0;
+  $("done").textContent = i===seeds.length-1 ? "Done" : "Done with this seed →";
+}
+let timer=null;
+async function persist(){
+  const s=seeds[i], a=cur();
+  try { localStorage.setItem(LS, JSON.stringify(ans)); } catch(e) {}
+  if (!db){ $("save").textContent="Saved in this browser only"; return; }
+  try { await db.collection("carrying").doc(s.seed_id).set({seed_id:s.seed_id, mass:a.mass, floors:a.floors, links:a.links, note:a.note||"", done:!!a.done, saved_at:new Date().toISOString(), set:"carrying-v1"}); $("save").textContent="Saved"; }
+  catch(e){ $("save").textContent="Could not save to the shared record."; }
+}
+document.addEventListener("change", e=>{ const t=e.target; if(t.type!=="checkbox") return; const a=cur(), k=t.dataset.key; a[k]=a[k].filter(v=>v!==t.value); if(t.checked) a[k].push(t.value); persist(); });
+$("note").addEventListener("input", ()=>{ cur().note=$("note").value; clearTimeout(timer); timer=setTimeout(persist,700); });
+$("prev").onclick=()=>{ if(i>0){i--; render(); window.scrollTo({top:0});} };
+$("done").onclick=async()=>{ cur().done=true; cur().note=$("note").value; await persist(); if(i<seeds.length-1){ i++; } render(); window.scrollTo({top:0}); };
+$("legend").innerHTML = "<strong>Diagram key</strong>" + Object.values(KIND).map(k=>`<span><i style="background:var(--${k[0]})"></i>${k[1]}</span>`).join("") + `<span><i style="background:var(--link);height:3px"></i>direct link</span><span>Floors 1–3 · block width and position mean nothing</span>`;
+render();
+(async()=>{
+  db = window.claude ? await window.claude.use("db") : null;
+  if (!db){ render(); return; }
+  try { const snap = await db.collection("carrying").get(); snap.docs.forEach(d=>{ const v=d.data(); if(v&&v.seed_id) ans[v.seed_id]={mass:v.mass||[],floors:v.floors||[],links:v.links||[],note:v.note||"",done:!!v.done}; }); render(); } catch(e) {}
+})();
+</script>
