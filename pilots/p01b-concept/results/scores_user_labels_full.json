@@ -1,0 +1,198 @@
+{
+ "protocol": "p01b-v1",
+ "label_distribution": {
+  "option_1": 6,
+  "option_2": 6,
+  "about_equal": 2
+ },
+ "excluded_unstable": [
+  "C05"
+ ],
+ "consistency": [
+  {
+   "item": "C05",
+   "repeat": "C15",
+   "first": "R1-S03",
+   "second": "R2-S04",
+   "consistent": false
+  },
+  {
+   "item": "C01",
+   "repeat": "C16",
+   "first": "R3-S02",
+   "second": "R3-S02",
+   "consistent": true
+  }
+ ],
+ "decisive": 11,
+ "agreement": {
+  "proxy:structure": {
+   "cross_run": {
+    "agree": 4,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 3,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 8,
+    "n": 11
+   }
+  },
+  "proxy:concept_wording": {
+   "cross_run": {
+    "agree": 3,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 3,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 7,
+    "n": 11
+   }
+  },
+  "llm_baseline": {
+   "cross_run": {
+    "agree": 4,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 3,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 8,
+    "n": 11
+   }
+  }
+ },
+ "per_item": {
+  "C01": {
+   "kind": "cross_run",
+   "anchor": "R1-S04",
+   "truth": "R3-S02",
+   "proxy:structure": "R3-S02",
+   "proxy:concept_wording": "R3-S02",
+   "llm_baseline": "R3-S02"
+  },
+  "C02": {
+   "kind": "cross_run",
+   "anchor": "R1-S02",
+   "truth": "R3-S03",
+   "proxy:structure": "R3-S03",
+   "proxy:concept_wording": "R3-S03",
+   "llm_baseline": "R3-S03"
+  },
+  "C03": {
+   "kind": "cross_run",
+   "anchor": "R1-S01",
+   "truth": "R3-S01",
+   "proxy:structure": "R3-S01",
+   "proxy:concept_wording": "R3-S01",
+   "llm_baseline": "R3-S01"
+  },
+  "C04": {
+   "kind": "cross_run",
+   "anchor": "R2-S01",
+   "truth": "R1-S01",
+   "proxy:structure": "R1-S01",
+   "proxy:concept_wording": "R2-S05",
+   "llm_baseline": "R1-S01"
+  },
+  "C05": {
+   "kind": "disagree",
+   "anchor": "R3-S05",
+   "truth": null,
+   "proxy:structure": "R2-S04",
+   "proxy:concept_wording": "R1-S03",
+   "llm_baseline": "R2-S04"
+  },
+  "C06": {
+   "kind": "disagree",
+   "anchor": "R1-S05",
+   "truth": "R1-S02",
+   "proxy:structure": "R1-S02",
+   "proxy:concept_wording": "R3-S04",
+   "llm_baseline": "R3-S04"
+  },
+  "C07": {
+   "kind": "disagree",
+   "anchor": "R1-S03",
+   "truth": "R3-S05",
+   "proxy:structure": "R3-S04",
+   "proxy:concept_wording": "R3-S05",
+   "llm_baseline": "R3-S04"
+  },
+  "C08": {
+   "kind": "disagree",
+   "anchor": "R3-S04",
+   "truth": null,
+   "proxy:structure": "R3-S05",
+   "proxy:concept_wording": "R1-S05",
+   "llm_baseline": "R1-S05"
+  },
+  "C09": {
+   "kind": "disagree",
+   "anchor": "R3-S01",
+   "truth": "R2-S02",
+   "proxy:structure": "R3-S04",
+   "proxy:concept_wording": "R2-S02",
+   "llm_baseline": "R2-S02"
+  },
+  "C10": {
+   "kind": "disagree",
+   "anchor": "R2-S02",
+   "truth": "R1-S02",
+   "proxy:structure": "R1-S02",
+   "proxy:concept_wording": "R3-S02",
+   "llm_baseline": "R1-S02"
+  },
+  "C11": {
+   "kind": "disagree",
+   "anchor": "R3-S03",
+   "truth": "R2-S02",
+   "proxy:structure": "R2-S02",
+   "proxy:concept_wording": "R3-S05",
+   "llm_baseline": "R2-S02"
+  },
+  "C12": {
+   "kind": "disagree",
+   "anchor": "R3-S02",
+   "truth": "R3-S04",
+   "proxy:structure": "R2-S05",
+   "proxy:concept_wording": "R3-S04",
+   "llm_baseline": "R2-S05"
+  },
+  "C13": {
+   "kind": "control",
+   "anchor": "R2-S04",
+   "truth": null,
+   "proxy:structure": "R1-S05",
+   "proxy:concept_wording": "R1-S05",
+   "llm_baseline": "R1-S05"
+  },
+  "C14": {
+   "kind": "control",
+   "anchor": "R2-S03",
+   "truth": "R3-S05",
+   "proxy:structure": "R3-S05",
+   "proxy:concept_wording": "R3-S05",
+   "llm_baseline": "R3-S05"
+  }
+ }
+}

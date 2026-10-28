@@ -80,7 +80,7 @@ def main(argv):
            "excluded_unstable": sorted(unstable), "consistency": consistency, "decisive": len(decisive),
            "agreement": table, "per_item": per_item}
     (HERE / "results").mkdir(exist_ok=True)
-    (HERE / "results/scores.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
+    (HERE / f"results/scores_{Path(argv[0]).stem}.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     print(f"labels {out['label_distribution']}  decisive {len(decisive)}  consistency "
           f"{sum(c['consistent'] for c in consistency)}/{len(consistency)}  excluded {sorted(unstable)}")
     print(f"{'predictor':40}" + "".join(f"{k:>12}" for k in KINDS + ["ALL"]))
