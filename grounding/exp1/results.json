@@ -1,0 +1,196 @@
+{
+ "mantel": {
+  "bge-m3|concept|program_organization": {
+   "rho": 0.182,
+   "p_mantel": 0.0437
+  },
+  "bge-m3|concept|distribution_balance": {
+   "rho": 0.178,
+   "p_mantel": 0.0474
+  },
+  "bge-m3|concept|topology": {
+   "rho": 0.408,
+   "p_mantel": 0.0002
+  },
+  "bge-m3|concept|mean_height": {
+   "rho": 0.08,
+   "p_mantel": 0.1983
+  },
+  "bge-m3|concept|height_articulation": {
+   "rho": -0.001,
+   "p_mantel": 0.4931
+  },
+  "bge-m3|concept|vertical_organization": {
+   "rho": 0.079,
+   "p_mantel": 0.2428
+  },
+  "bge-m3|concept_intent|program_organization": {
+   "rho": 0.153,
+   "p_mantel": 0.0685
+  },
+  "bge-m3|concept_intent|distribution_balance": {
+   "rho": 0.191,
+   "p_mantel": 0.0344
+  },
+  "bge-m3|concept_intent|topology": {
+   "rho": 0.403,
+   "p_mantel": 0.0001
+  },
+  "bge-m3|concept_intent|mean_height": {
+   "rho": 0.122,
+   "p_mantel": 0.1073
+  },
+  "bge-m3|concept_intent|height_articulation": {
+   "rho": 0.006,
+   "p_mantel": 0.4684
+  },
+  "bge-m3|concept_intent|vertical_organization": {
+   "rho": 0.161,
+   "p_mantel": 0.0636
+  },
+  "mxbai-embed-large|concept|program_organization": {
+   "rho": 0.108,
+   "p_mantel": 0.1417
+  },
+  "mxbai-embed-large|concept|distribution_balance": {
+   "rho": 0.147,
+   "p_mantel": 0.1028
+  },
+  "mxbai-embed-large|concept|topology": {
+   "rho": 0.369,
+   "p_mantel": 0.0001
+  },
+  "mxbai-embed-large|concept|mean_height": {
+   "rho": -0.005,
+   "p_mantel": 0.4992
+  },
+  "mxbai-embed-large|concept|height_articulation": {
+   "rho": 0.21,
+   "p_mantel": 0.1075
+  },
+  "mxbai-embed-large|concept|vertical_organization": {
+   "rho": 0.191,
+   "p_mantel": 0.0891
+  },
+  "mxbai-embed-large|concept_intent|program_organization": {
+   "rho": 0.167,
+   "p_mantel": 0.0532
+  },
+  "mxbai-embed-large|concept_intent|distribution_balance": {
+   "rho": 0.141,
+   "p_mantel": 0.1284
+  },
+  "mxbai-embed-large|concept_intent|topology": {
+   "rho": 0.259,
+   "p_mantel": 0.0035
+  },
+  "mxbai-embed-large|concept_intent|mean_height": {
+   "rho": 0.166,
+   "p_mantel": 0.0596
+  },
+  "mxbai-embed-large|concept_intent|height_articulation": {
+   "rho": 0.432,
+   "p_mantel": 0.0074
+  },
+  "mxbai-embed-large|concept_intent|vertical_organization": {
+   "rho": 0.131,
+   "p_mantel": 0.1824
+  },
+  "nomic-embed-text|concept|program_organization": {
+   "rho": 0.044,
+   "p_mantel": 0.3186
+  },
+  "nomic-embed-text|concept|distribution_balance": {
+   "rho": -0.005,
+   "p_mantel": 0.5
+  },
+  "nomic-embed-text|concept|topology": {
+   "rho": 0.285,
+   "p_mantel": 0.0025
+  },
+  "nomic-embed-text|concept|mean_height": {
+   "rho": 0.049,
+   "p_mantel": 0.2951
+  },
+  "nomic-embed-text|concept|height_articulation": {
+   "rho": 0.178,
+   "p_mantel": 0.1425
+  },
+  "nomic-embed-text|concept|vertical_organization": {
+   "rho": 0.023,
+   "p_mantel": 0.422
+  },
+  "nomic-embed-text|concept_intent|program_organization": {
+   "rho": 0.084,
+   "p_mantel": 0.2029
+  },
+  "nomic-embed-text|concept_intent|distribution_balance": {
+   "rho": 0.041,
+   "p_mantel": 0.3384
+  },
+  "nomic-embed-text|concept_intent|topology": {
+   "rho": 0.192,
+   "p_mantel": 0.025
+  },
+  "nomic-embed-text|concept_intent|mean_height": {
+   "rho": 0.222,
+   "p_mantel": 0.0235
+  },
+  "nomic-embed-text|concept_intent|height_articulation": {
+   "rho": 0.373,
+   "p_mantel": 0.0163
+  },
+  "nomic-embed-text|concept_intent|vertical_organization": {
+   "rho": 0.08,
+   "p_mantel": 0.2872
+  },
+  "qwen3-embedding_0.6b|concept|program_organization": {
+   "rho": 0.013,
+   "p_mantel": 0.4349
+  },
+  "qwen3-embedding_0.6b|concept|distribution_balance": {
+   "rho": 0.11,
+   "p_mantel": 0.148
+  },
+  "qwen3-embedding_0.6b|concept|topology": {
+   "rho": 0.47,
+   "p_mantel": 0.0001
+  },
+  "qwen3-embedding_0.6b|concept|mean_height": {
+   "rho": 0.033,
+   "p_mantel": 0.3499
+  },
+  "qwen3-embedding_0.6b|concept|height_articulation": {
+   "rho": 0.115,
+   "p_mantel": 0.2005
+  },
+  "qwen3-embedding_0.6b|concept|vertical_organization": {
+   "rho": 0.117,
+   "p_mantel": 0.1779
+  },
+  "qwen3-embedding_0.6b|concept_intent|program_organization": {
+   "rho": 0.082,
+   "p_mantel": 0.2006
+  },
+  "qwen3-embedding_0.6b|concept_intent|distribution_balance": {
+   "rho": 0.105,
+   "p_mantel": 0.1694
+  },
+  "qwen3-embedding_0.6b|concept_intent|topology": {
+   "rho": 0.282,
+   "p_mantel": 0.0027
+  },
+  "qwen3-embedding_0.6b|concept_intent|mean_height": {
+   "rho": 0.14,
+   "p_mantel": 0.0924
+  },
+  "qwen3-embedding_0.6b|concept_intent|height_articulation": {
+   "rho": 0.243,
+   "p_mantel": 0.0563
+  },
+  "qwen3-embedding_0.6b|concept_intent|vertical_organization": {
+   "rho": 0.159,
+   "p_mantel": 0.1113
+  }
+ }
+}
