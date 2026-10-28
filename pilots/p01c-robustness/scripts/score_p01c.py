@@ -119,7 +119,7 @@ def score():
     sealed = {t["triplet_id"]: t for t in json.loads((p01b / "data/triplets_SEALED.json").read_text(encoding="utf-8"))["triplets"]}
     res = lambda t, a: {"option_1": t["shown_order"][0], "option_2": t["shown_order"][1]}.get(a)
     runs = {}
-    for tag in ("3a_judge", "3b_judge"):
+    for tag in ("3a_judge", "3b_judge", "3c_judge"):
         p = HERE / f"responses/{tag}.json"
         if p.exists():
             raw = json.loads(p.read_text(encoding="utf-8"))
