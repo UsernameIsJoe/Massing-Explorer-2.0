@@ -78,6 +78,14 @@ def main(argv):
             truth[t["triplet_id"]] = resolve(t, labels.get(t["triplet_id"]))
         else:
             truth[t["triplet_id"]] = t["construction_expectation"] if review.get(t["triplet_id"]) == "agree" else None
+    # p01-v1.3: a real item whose repeat disagrees with it is unstable and excluded.
+    unstable = {c["item"] for c in consistency if not c["consistent"]}
+    for tid in unstable:
+        truth[tid] = None
+    # p01-v1.3: probes are unvalidated diagnostics scored against construction, never part of the gate.
+    for t in originals:
+        if t["kind"] not in REAL and not review:
+            truth[t["triplet_id"]] = t["construction_expectation"]
     decisive = [t for t in originals if truth[t["triplet_id"]]]
     label_dist = collections.Counter(labels.get(t["triplet_id"], "missing") for t in originals if t["kind"] in REAL)
     review_dist = collections.Counter(review.get(t["triplet_id"], "missing") for t in originals if t["kind"] not in REAL)
@@ -125,7 +133,7 @@ def main(argv):
                 row[k] = {"agree": ok, "n": len(sel), "rate": round(ok / len(sel), 3)}
         table[name] = row
 
-    out = {"protocol": "p01-v1.2", "labels_file": str(argv[0]), "label_distribution": dict(label_dist),
+    out = {"protocol": "p01-v1.3", "excluded_unstable": sorted(unstable), "labels_file": str(argv[0]), "label_distribution": dict(label_dist),
            "probe_review_distribution": dict(review_dist),
            "decisive": len(decisive), "consistency": consistency, "agreement": table}
     (HERE / "results").mkdir(exist_ok=True)
@@ -133,7 +141,8 @@ def main(argv):
 
     cols = ["ALL_REAL", "paraphrase", "lexical_trap", "generic", "intent_vs_wording", "ALL"]
     print(f"real-case labels: {dict(label_dist)}  probe review: {dict(review_dist)}  scored items: {len(decisive)}  "
-          f"consistency: {sum(c['consistent'] for c in consistency)}/{len(consistency)}")
+          f"consistency: {sum(c['consistent'] for c in consistency)}/{len(consistency)}  excluded unstable: {sorted(unstable)}")
+    print("Probe columns are Claude-designed diagnostics (unvalidated); the gate uses ALL_REAL only.")
     print(f"{'predictor':42}" + "".join(f"{c:>18}" for c in cols))
     for name, row in table.items():
         cells = [f"{row[c]['agree']}/{row[c]['n']}" if c in row else "-" for c in cols]

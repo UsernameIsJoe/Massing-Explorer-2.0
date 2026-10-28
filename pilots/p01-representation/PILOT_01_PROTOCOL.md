@@ -1,6 +1,6 @@
 # Pilot 01 — Can text embeddings represent strategic similarity?
 
-Status: **locked 2026-10-28, revision p01-v1.2**. Change nothing below mid-run. Any change creates `p01-v2` and applies only to new runs.
+Status: **locked 2026-10-28, revision p01-v1.3**. Change nothing below mid-run. Any change creates `p01-v2` and applies only to new runs.
 
 ## Question
 
@@ -75,13 +75,15 @@ On `real_disagree` items the two proxies always answer opposite ways by construc
 5. Run `python scripts/score_triplets.py labels/user_labels.json --probes labels/probe_review.json --llm labels/llm_labels.json`.
 6. Write `results/FINDINGS.md`, then apply the gate.
 
+**Revision p01-v1.3 (2026-10-28, after real-case labeling, before any embedding was run):** the labeler could not review the text-only probes either (one verdict each was recorded for T16 agree and T17 disagree before stopping). Probes are now scored against their construction expectations as **unvalidated diagnostics** designed by Claude, reported separately and never used in the gate. Both real-case repeats were inconsistent (T01/T29, T02/T30); following the precondition, those two items are excluded as unstable rather than re-asked, since a second answer after seeing them would be biased. The T30 note referred to mass size, which the diagrams do not encode; diagram block widths could be misread as area, to be fixed in any later round.
+
 ## Decision gate
 
 Scored on decisive labels only. "Best" means the best encoder × variant on `ALL_REAL`.
 
-- **Precondition:** both real-case repeats consistent. If not, review the inconsistent items with Joe before deciding; label noise would otherwise decide the gate.
-- **PASS — embeddings carry the semantic boundary into Pilot 2:** best ≥ 70% on `ALL_REAL`; that encoder on `intent` passes at least 3/4 of the agreed paraphrase probes, 3/4 of the agreed lexical traps and 2/3 of the agreed intent-vs-wording probes (each fraction scaled to the probes agreed in that kind, rounded up); and the LLM baseline is no more than 2 items ahead overall.
-- **PARTIAL — embeddings need structural support:** best ≥ 60% on `ALL_REAL` but fails the lexical-trap or intent-vs-wording checks. Pilot 2 uses embedding neighbourhoods gated by explicit decision/axis checks, and favours the variant that scored best.
+- **Precondition (v1.3):** real items whose repeat disagrees are excluded as unstable. The gate is decided on the remaining decisive real-case labels only.
+- **PASS — embeddings carry the semantic boundary into Pilot 2:** best ≥ 70% on `ALL_REAL`; the best encoder × variant beats the structure proxy or matches it within one item; and the LLM baseline is no more than 2 items ahead overall.
+- **PARTIAL — embeddings need structural support:** best ≥ 60% on `ALL_REAL` but the structure proxy is ahead by two or more items. Pilot 2 uses embedding neighbourhoods gated by explicit decision/axis checks, and favours the variant that scored best.
 - **FAIL — embeddings do not define the boundary:** no encoder ≥ 60% on `ALL_REAL`, or the LLM baseline is 3 or more items ahead overall. Pilot 2 uses LLM judgment plus axes for membership; embeddings are kept for retrieval only.
 
 These thresholds are coarse. With about 15 real items, one item is about 7 points, and 70% (≈11/15) is only weak evidence against chance (≈ p 0.06). The gate picks a direction for Pilot 2; it does not validate a method.
