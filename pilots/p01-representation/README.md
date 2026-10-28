@@ -8,6 +8,8 @@ Tests whether embeddings of strategy descriptions rank strategic similarity the 
 - `scripts/build_triplets.py` — builds `data/triplets_SEALED.json` and the blind `data/labeling_set.json`.
 - `scripts/run_embeddings.py` — embeds all texts with local Ollama encoders into `runs/`.
 - `scripts/score_triplets.py` — scores encoders, proxies and the LLM baseline against the labels into `results/scores.json`.
+- `scripts/build_diagram_data.py` — builds `data/diagram_data.json`, the schematic diagram specs for real cases.
+- `scripts/build_labeling_page.py` — assembles `labeling/labeling_page.html` from the template and data files.
 - `labeling/` — the labeling page (published as a private artifact).
 - `llm_baseline/PROMPT.md` — the one-batch LLM comparison.
 

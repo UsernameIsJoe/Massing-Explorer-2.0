@@ -45,7 +45,9 @@ Each item shows an anchor and two options. The labeler (Joe) picks which option 
 | `intent_vs_wording` | 3 | same intention / different implementation vs. similar words / opposite intention |
 | repeats | 3 | items shown twice with options swapped (labeler consistency only) |
 
-Real-case display: intent text plus a compact structure line. Probe items: text only.
+Real-case display: a schematic massing diagram, the intent text and a compact structure line. Probe items: text only, because a diagram would either not apply or reveal the answer (a paraphrase has the same diagram as its anchor).
+
+**Revision p01-v1.1 (2026-10-28, before any label was saved):** diagrams added at the labeler's request, as an aid to reading the text, not a replacement. Each diagram is drawn only from the structured record (`data/diagram_data.json`, keyed by the structure line it illustrates): three masses in a fixed left-to-right order (classroom, third, commons), departments as blocks on their floors, gym + dining always drawn as one double-height block, and direct links as lines. Screen position, block width and plate width carry no meaning; there are no dimensions. Items, order and the labeling-set hash are unchanged.
 
 Probe expectations were written by Claude when constructing the probes. If the labeler disagrees with one, the label stands and the probe is reviewed.
 
