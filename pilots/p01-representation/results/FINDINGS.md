@@ -4,7 +4,7 @@ Date: 2026-10-28. Protocol: p01-v1.3. Scores: `results/scores.json` (from `scrip
 
 ## Result in one line
 
-Embeddings agreed with the architect only when they were fed **code-rendered structure**; on the LLM's own strategic language they were at chance and failed every wording trap. A plain structural distance matched the architect better than any embedding and better than an LLM asked directly.
+Embeddings agreed with the architect only when they were fed **code-rendered structure**; on the seeds' placement-style rationale text they were at chance and failed every wording trap. A plain structural distance matched the architect better than any embedding and better than an LLM asked directly.
 
 ## Agreement with the architect (10 decisive real-case items)
 
@@ -39,7 +39,9 @@ The substantive reading is narrower, and it is the one that should guide Pilot 2
 
 ## Implication for Steps 02–03
 
-The backbone currently proposes a boundary that is "primarily semantic, with the nine axes supplying grounding". This pilot supports the reverse as the working hypothesis: **explicit strategic decisions (which program sits with which, on which floors, linked how) should be the primary space for membership and distance**, with text embeddings at most a secondary aid, for example retrieval, or detecting near-duplicate descriptions. That is a direction choice for the user, not a settled result.
+**Correction (2026-10-28, after review with the labeler):** the `intent` text tested here is the v1.0 `organizing_principle` and `main_tradeoff`, which mostly restate placements. It is not a concept-level description of the scheme. Pilot 01 therefore shows only that embeddings of literal placement prose follow wording rather than strategy. It does **not** test, and does not refute, a semantic space built from concept descriptions written by the generating LLM.
+
+Next: the seed record specification v2.0 (`docs/SEED_RECORD_SPEC.md`) asks the generating LLM for concept, intent, key moves and commitments at generation time. Pilot 01b will test embeddings of those concept fields against the same kind of labels.
 
 ## Limits
 
@@ -51,4 +53,4 @@ The backbone currently proposes a boundary that is "primarily semantic, with the
 
 ## Suggested next step
 
-Before Pilot 2, decide which space carries membership: the explicit decision space (supported here) or a semantic space (not supported here). If decisions, Pilot 2 can test membership and expansion rules directly on decision records, using the Pilot 01 labels as a first check of any distance it proposes.
+Regenerate seeds under spec v2.0, then run Pilot 01b on their concept fields before deciding which space carries membership in Pilot 2.
