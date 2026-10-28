@@ -1,0 +1,20 @@
+{
+  "done": true,
+  "floors": [
+    "D08",
+    "D07",
+    "D05",
+    "D03"
+  ],
+  "links": [],
+  "mass": [
+    "D01",
+    "D07",
+    "D05",
+    "D03"
+  ],
+  "note": "",
+  "saved_at": "2026-10-28T19:57:53.020Z",
+  "seed_id": "R1-S05",
+  "set": "carrying-v1"
+}

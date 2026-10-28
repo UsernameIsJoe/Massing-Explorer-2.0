@@ -1,0 +1,23 @@
+{
+  "done": true,
+  "floors": [
+    "D01",
+    "D02",
+    "D03",
+    "D05"
+  ],
+  "links": [
+    "CT",
+    "CG",
+    "GT"
+  ],
+  "mass": [
+    "D03",
+    "D01",
+    "D08"
+  ],
+  "note": "",
+  "saved_at": "2026-10-28T19:54:36.722Z",
+  "seed_id": "R1-S02",
+  "set": "carrying-v1"
+}

@@ -1,0 +1,105 @@
+{
+ "source": "architect, carrying-decisions page 2026-10-28",
+ "caveat": "architect: 'I was also almost rating by how important the programs are and how their placement fits the intent'",
+ "answers": {
+  "R1-S01": {
+   "mass": [
+    "D01",
+    "D02",
+    "D04"
+   ],
+   "floors": [
+    "D01",
+    "D02",
+    "D04",
+    "D08"
+   ],
+   "links": [
+    "CT",
+    "GT"
+   ],
+   "note": "",
+   "saved_at": "2026-10-28T19:51:40.047Z"
+  },
+  "R1-S02": {
+   "mass": [
+    "D03",
+    "D01",
+    "D08"
+   ],
+   "floors": [
+    "D01",
+    "D02",
+    "D03",
+    "D05"
+   ],
+   "links": [
+    "CT",
+    "CG",
+    "GT"
+   ],
+   "note": "",
+   "saved_at": "2026-10-28T19:54:36.722Z"
+  },
+  "R1-S03": {
+   "mass": [
+    "D01",
+    "D02",
+    "D03",
+    "D04",
+    "D05",
+    "D08"
+   ],
+   "floors": [
+    "D01",
+    "D02",
+    "D04",
+    "D08"
+   ],
+   "links": [
+    "CG",
+    "GT",
+    "CT"
+   ],
+   "note": "",
+   "saved_at": "2026-10-28T19:55:13.208Z"
+  },
+  "R1-S04": {
+   "mass": [
+    "D01",
+    "D02",
+    "D04",
+    "D08",
+    "D05"
+   ],
+   "floors": [
+    "D01",
+    "D02",
+    "D03",
+    "D04"
+   ],
+   "links": [
+    "GT"
+   ],
+   "note": "",
+   "saved_at": "2026-10-28T19:56:06.675Z"
+  },
+  "R1-S05": {
+   "mass": [
+    "D01",
+    "D07",
+    "D05",
+    "D03"
+   ],
+   "floors": [
+    "D08",
+    "D07",
+    "D05",
+    "D03"
+   ],
+   "links": [],
+   "note": "",
+   "saved_at": "2026-10-28T19:57:53.020Z"
+  }
+ }
+}

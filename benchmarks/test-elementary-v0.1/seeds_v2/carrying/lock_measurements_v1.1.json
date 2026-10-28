@@ -1,0 +1,67 @@
+{
+ "organizations_total": 5064,
+ "locks": {
+  "R1-S01": {
+   "organizations_admitted": 162,
+   "share": 0.032,
+   "seeds_admitted": [
+    "R1-S01"
+   ],
+   "seeds_admitted_ignoring_floors": [
+    "R1-S01",
+    "R2-S01",
+    "R2-S04",
+    "R3-S01"
+   ],
+   "pilot3_pool_admitted": 97
+  },
+  "R1-S02": {
+   "organizations_admitted": 162,
+   "share": 0.032,
+   "seeds_admitted": [
+    "R1-S02"
+   ],
+   "seeds_admitted_ignoring_floors": [
+    "R1-S02",
+    "R3-S03"
+   ],
+   "pilot3_pool_admitted": 44
+  },
+  "R1-S03": {
+   "organizations_admitted": 9,
+   "share": 0.0018,
+   "seeds_admitted": [
+    "R1-S03"
+   ],
+   "seeds_admitted_ignoring_floors": [
+    "R1-S03"
+   ],
+   "pilot3_pool_admitted": 39
+  },
+  "R1-S04": {
+   "organizations_admitted": 27,
+   "share": 0.0053,
+   "seeds_admitted": [
+    "R1-S04"
+   ],
+   "seeds_admitted_ignoring_floors": [
+    "R1-S04",
+    "R3-S02"
+   ],
+   "pilot3_pool_admitted": 47
+  },
+  "R1-S05": {
+   "organizations_admitted": 336,
+   "share": 0.0664,
+   "seeds_admitted": [
+    "R1-S05",
+    "R3-S04"
+   ],
+   "seeds_admitted_ignoring_floors": [
+    "R1-S05",
+    "R3-S04"
+   ],
+   "pilot3_pool_admitted": 56
+  }
+ }
+}
