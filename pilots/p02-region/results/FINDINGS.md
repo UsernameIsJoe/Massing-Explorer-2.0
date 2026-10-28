@@ -51,3 +51,14 @@ Under this rule, 780 of the 962 candidates stay inside the region of their neare
 ## Next — Pilot 2b (confirmation, about 6 minutes)
 
 A fresh sample of about 20 candidates not seen before, enriched for the cases this round under-tested: special education moving mass versus only floors, link changes in hub schemes (hinge, heart) versus others, and administration moves. Pre-registered rule: **different iff special education changes mass, or the scheme's hub link is cut** (hub link: a link whose loss removes the only route through the mass the concept names as the connector). It is adopted for Pilot 3 if it agrees on ≥ 75% of decisive items.
+
+## Update — decision weights stated by the architect (2026-10-28)
+
+Instead of a confirmation round, the labeler stated which decisions matter: core academic, special education, administration, dining and gym move the strategy most; media and art and music are mild; custodial barely matters. Recorded in `data/decision_weights.json` (medical, floor-only and link weights are defaults pending confirmation).
+
+Against the ratings already collected (a consistency check, not a fit; the weights were stated after the labeler had seen these items):
+
+- Spearman of weighted change with the 1–5 rating: **0.85** (structure distance 0.38, locks broken 0.55).
+- "Different if weighted change ≥ 1.0", i.e. one defining change: **19/20** decisive.
+
+This replaces the post-hoc special-education rule and the planned confirmation round. The weighted change is the Pilot 3 membership measure.

@@ -1,0 +1,9 @@
+{
+ "source": "Stated by the labeler (architect) on 2026-10-28, after rating the Pilot 2 items; medical, floor-only and link weights are Claude's defaults pending confirmation.",
+ "department_mass_change": {"D01": 1.0, "D02": 1.0, "D08": 1.0, "D04": 1.0, "D06": 1.0, "D05": 0.4, "D03": 0.4, "D07": 0.4, "D09": 0.05},
+ "floor_only_change_factor": 0.5,
+ "link_change": 0.4,
+ "hub_link_change": 1.0,
+ "different_strategy_threshold": 1.0,
+ "status": {"stated": ["D01", "D02", "D08", "D04", "D06", "D05", "D03", "D09"], "default_pending_confirmation": ["D07", "floor_only_change_factor", "link_change", "hub_link_change"]}
+}
