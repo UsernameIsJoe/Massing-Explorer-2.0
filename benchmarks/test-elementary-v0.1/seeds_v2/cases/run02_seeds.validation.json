@@ -1,0 +1,52 @@
+{
+ "file": "run02_seeds.json",
+ "commitments_module": true,
+ "cases": [
+  {
+   "case_id": "S01",
+   "name": "Civic gateway between learning and hall",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "S02",
+   "name": "Shared heart with two wings",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor"
+   ]
+  },
+  {
+   "case_id": "S03",
+   "name": "Self-contained school bar, freestanding pavilions",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "S04",
+   "name": "Courtyard ring with reading loft",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "media_top_above_admin",
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "S05",
+   "name": "Low classrooms beside civic tower",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  }
+ ]
+}
