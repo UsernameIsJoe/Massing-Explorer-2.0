@@ -55,7 +55,7 @@ Architect's notes:
 
 ## Addendum: concepts for the 15 added and maybe representatives
 
-Source: ChatGPT temporary chat, medium effort, prompt `prompts/DESCRIBE_EXPANSIONS.txt`. The raw reply is in `responses/raw/`. The concepts are attached to their groups in `region/region_v1.json`, and the checks are in `responses/describe_expansions.json`.
+Source: ChatGPT temporary chat, thinking effort medium (model name not shown to the user), prompt `prompts/DESCRIBE_EXPANSIONS.txt`. The raw reply is in `responses/raw/`. The concepts are attached to their groups in `region/region_v1.json`, and the checks are in `responses/describe_expansions.json`.
 
 - **Length rule followed:** all 15 are 55–61 words.
 - **Naming rule broken:** every one names 4–7 program groups, using paraphrases (for example "specialized learning", "creative", "institutional"), and walks through each mass. They are placement inventories, which is the same problem the architect found in the Pilot 1 intent text.
