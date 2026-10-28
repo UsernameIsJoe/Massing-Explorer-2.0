@@ -35,6 +35,8 @@ The gate below is decided on Pass B. Pass A diagnoses a failure: an encoder that
 
 The 4 labels saved under v1 (partial view) are kept in `labels/v1_partial_view_labels.json` and not scored. The labeler judged prior exposure to those diagrams negligible for this check. The LLM baseline is re-run on the Pass B set; the v1 baseline is kept as `labels/llm_labels_v1_partial.json`.
 
+**Labeler note on Pass A (2026-10-28, after both passes, before any embedding was run):** the labeler judges Pass B much more reliable than Pass A; when reading concepts alone, a single key word sometimes decided the answer quickly. Pass A is therefore reported as a diagnostic only, not as a fidelity truth. The gate rests on Pass B alone.
+
 ## Predictors
 
 - Structure proxy (grouping, floors, links distance).
