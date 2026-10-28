@@ -1,4 +1,4 @@
-<title>ME2 Membership Check</title>
+<title>ME2 Membership Ratings</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -35,6 +35,8 @@ h1{font-size:1.3rem;margin:0;text-wrap:balance}
 .diag .ax{fill:var(--muted);font:500 9px var(--mono)}
 .diag .mt{fill:var(--muted);font:600 9.5px var(--sans)}
 .changes{margin:0;padding:10px 14px 10px 30px;border-left:3px solid var(--accent);background:var(--accent-soft);display:grid;gap:4px}
+.scale{margin:8px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.85rem;color:var(--muted)}
+.scale b{color:var(--fg);font-family:var(--mono)}
 .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted);align-items:center}
 .legend span{display:inline-flex;align-items:center;gap:6px}
 .legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
@@ -59,7 +61,8 @@ textarea{width:100%;box-sizing:border-box;min-height:44px;font:.9rem var(--sans)
 <div class="wrap">
   <header>
     <h1>Pilot 2 · Membership check</h1>
-    <p class="sub">Each item shows one of your seeds and an unseen candidate made by changing it. <strong>Same strategy</strong> does not mean identical: it means the same organizing idea, a version you would present as "Option 1b". <strong>Different strategy</strong> means the change alters what the scheme is about, so you would present it as a new option. Ask: does the change touch a defining relationship, or only something around it? Use Unsure when it is half and half. About 15 seconds each.</p>
+    <p class="sub">Each item shows one of your seeds and an unseen candidate made by changing it. Rate <strong>how different the candidate's strategy is from the seed's</strong>, not how many things changed. Ask: does the change touch a defining relationship, or only something around it? About 15 seconds each; go with your first read.</p>
+    <ol class="scale"><li><b>1</b> Practically the same scheme</li><li><b>2</b> Same strategy, small variation ("Option 1b")</li><li><b>3</b> Borderline: stretches the idea</li><li><b>4</b> Different strategy (a new option)</li><li><b>5</b> Very different strategy</li></ol>
   </header>
   <div class="status" id="status"></div>
   <div class="bar"><i id="prog"></i></div>
@@ -69,9 +72,12 @@ textarea{width:100%;box-sizing:border-box;min-height:44px;font:.9rem var(--sans)
   <ol class="changes" id="changes"></ol>
   <section class="card" id="cand"></section>
   <div class="answers" id="answers">
-    <button data-a="same">Same strategy<kbd>S</kbd></button>
-    <button data-a="different">Different strategy<kbd>D</kbd></button>
-    <button data-a="unsure">Unsure<kbd>U</kbd></button>
+    <button data-a="1">1 · Practically same<kbd>1</kbd></button>
+    <button data-a="2">2 · Small variation<kbd>2</kbd></button>
+    <button data-a="3">3 · Borderline<kbd>3</kbd></button>
+    <button data-a="4">4 · Different<kbd>4</kbd></button>
+    <button data-a="5">5 · Very different<kbd>5</kbd></button>
+    <button data-a="x" class="ghost">Can't tell<kbd>X</kbd></button>
   </div>
   <textarea id="note" placeholder="Note (optional)"></textarea>
   <div class="nav">
@@ -153,7 +159,7 @@ let timer=null;
 async function persist(id){
   try { localStorage.setItem(LS, JSON.stringify(ans)); } catch(e) {}
   if (!db){ $("save").textContent="Saved in this browser only"; return; }
-  try { await db.collection("membership").doc(id).set({candidate_id:id, answer:ans[id].answer||null, note:ans[id].note||"", saved_at:new Date().toISOString(), set:"p02-v1"}); $("save").textContent="Saved"; }
+  try { await db.collection("membership").doc(id).set({candidate_id:id, answer:ans[id].answer||null, note:ans[id].note||"", saved_at:new Date().toISOString(), set:"p02-v1.1"}); $("save").textContent="Saved"; }
   catch(e){ $("save").textContent="Could not save to the shared record."; }
 }
 function answer(a){ const id=items[i].candidate_id; ans[id]={...(ans[id]||{}), answer:a, note:$("note").value}; persist(id); if(i<items.length-1){ i++; } render(); window.scrollTo({top:0}); }
@@ -162,7 +168,7 @@ $("note").addEventListener("input", ()=>{ const id=items[i].candidate_id; ans[id
 $("prev").onclick=()=>{ if(i>0){i--; render();} };
 $("next").onclick=()=>{ if(i<items.length-1){i++; render(); window.scrollTo({top:0});} };
 $("grid").addEventListener("click", e=>{ const b=e.target.closest("button"); if(b){ i=+b.dataset.k; render(); } });
-document.addEventListener("keydown", e=>{ if(e.target.tagName==="TEXTAREA") return; const m={s:"same",d:"different",u:"unsure"}[e.key.toLowerCase()]; if(m) answer(m); });
+document.addEventListener("keydown", e=>{ if(e.target.tagName==="TEXTAREA") return; const k=e.key.toLowerCase(); if(["1","2","3","4","5","x"].includes(k)) answer(k); });
 $("legend").innerHTML = "<strong>Diagram key</strong>" + Object.values(KIND).map(k=>`<span><i style="background:var(--${k[0]})"></i>${k[1]}</span>`).join("") + `<span><i style="background:var(--link);height:3px"></i>direct link</span><span>Floors 1–3 · block width and position mean nothing</span>`;
 render();
 (async()=>{

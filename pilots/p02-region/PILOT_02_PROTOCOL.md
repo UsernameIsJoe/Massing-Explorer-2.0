@@ -1,6 +1,6 @@
 # Pilot 2 — Which membership rule defines the region?
 
-Status: **locked 2026-10-28** before any answer.
+Status: **locked 2026-10-28** before any answer; **revision p02-v1.1** (graded rating) made before any answer was saved.
 
 ## Question
 
@@ -23,7 +23,7 @@ Finding before any answer: the generating LLM's core commitments protect 3–4 o
 
 ## Light check (human, about 8 minutes)
 
-26 items (`data/review_set.json`, page `review/review_page.html`, record `membership`): 24 candidates sampled 4 per stratum, plus 2 repeats. Each shows the nearest seed (diagram, concept), the changes in plain words, and the candidate's diagram. Answer: **same strategy / different strategy / unsure**.
+26 items (`data/review_set.json`, page `review/review_page.html`, record `membership`): 24 candidates sampled 4 per stratum, plus 2 repeats. Each shows the nearest seed (diagram, concept), the changes in plain words, and the candidate's diagram. Answer (v1.1, at the labeler's request): a **1–5 rating of how different the candidate's strategy is** from the seed's: 1 practically the same scheme, 2 same strategy with a small variation, 3 borderline, 4 different strategy, 5 very different; or can't tell.
 
 | Stratum | Edits from nearest seed | Locked decisions broken | Radius |
 |---|---|---|---|
@@ -38,13 +38,16 @@ Bar given to the labeler (on the page): "same strategy" means the same organizin
 
 ## Scoring
 
-Each rule predicts "same" for candidates it admits and "different" otherwise. Agreement with the labeler on decisive, stable answers (an item whose repeat disagrees is dropped). Reported per stratum so it is visible where each rule fails.
+- **Binary agreement:** ratings 1–2 count as same, 4–5 as different; 3 and can't tell are excluded. Each rule predicts same for candidates it admits. An item whose repeat lands on the other side (same vs different) is dropped. Reported per stratum.
+- **Graded agreement:** Spearman correlation between the rating and each rule's continuous score (structure distance for radius; number of locked decisions broken for the lock rules). Shows which measure rises the way the labeler's sense of difference does, and where on it a threshold should sit.
+- **Borderline share:** how many ratings are 3, by stratum, as a direct reading of where the boundary is fuzzy.
 
 Optionally, the same 26 items go to the qualified ChatGPT judge; it is structure-biased, which here is not a defect because the rules are structural, but it is reported separately and never replaces the labeler.
 
 ## Gate
 
-- The rule with the highest agreement becomes the Pilot 3 membership rule, **if** it agrees on ≥ 75% of decisive items. Ties go to the stricter rule.
+- The rule with the highest binary agreement becomes the Pilot 3 membership rule, **if** it agrees on ≥ 75% of decisive items. Ties go to the rule with the higher graded correlation, then to the stricter rule.
+- If the best continuous measure correlates with the ratings (Spearman ≥ 0.5) but the fixed thresholds misplace the boundary, the threshold is re-set from the ratings and confirmed on a fresh sample.
 - If no rule reaches 75%, the answers are used to fit a better rule (for example, which kinds of edit change the strategy), and that rule must be confirmed on a fresh sample before use.
 - Concept similarity (bge-m3) is not used here; it enters only if Pilot 3 needs a tie-breaker among structural rules.
 
