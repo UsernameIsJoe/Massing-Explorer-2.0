@@ -48,6 +48,6 @@ Research neuroscience and ML independently of illustrative suggestions. Distingu
 
 ## Evidence and navigation
 
-[Proof-check findings](STEP02_03_PROOF_CHECK_FINDINGS.md) govern existing seed-count/A/B claims. They do not establish an embedding boundary, code-only generation, repeatability, optimal count or architectural superiority.
+[Task status and process rule](STEP02_03_STATUS.md) must be checked before proposing any step. [Proof-check findings](STEP02_03_PROOF_CHECK_FINDINGS.md) govern existing seed-count/A/B claims. They do not establish an embedding boundary, code-only generation, repeatability, optimal count or architectural superiority.
 
 [Project memo](PROJECT_MEMO.md) records decisions and deferred topics. [Archive index](archive/2026-10-28/INDEX.md) preserves superseded plans, detailed earlier pipeline proposals and research context. Those historical instructions do not govern current work.
