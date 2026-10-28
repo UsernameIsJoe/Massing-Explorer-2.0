@@ -1,8 +1,10 @@
+> **Archived on October 28, 2026.** Historical snapshot, not current instructions. See the [archive index](../INDEX.md) and [current Step 02–03 plan](../../../STEP02_03_SEMANTIC_FIRST_PLAN.md). Original source: [b3fa3e8](https://github.com/UsernameIsJoe/Massing-Explorer-2.0/blob/b3fa3e8d4e8d37d4c4e39812f8b0efc30734044a/docs/STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md). Relative navigation links have been adjusted for the archive location.
+
 # Steps 02–03 — axis evaluation and expansion research history
 
 ## Current authority — semantic-first Steps 02–03, October 28
 
-The user's latest direction is to define the focused region primarily in **semantic embedding space**, with the established nine-axis framework providing grounding, explicit controls and cross-checks. Follow the [semantic-first Steps 02–03 development plan](STEP02_03_SEMANTIC_FIRST_PLAN.md); it supersedes axis-envelope-first construction as the immediate research direction. Embedding suitability and the constructor remain unvalidated.
+The user's latest direction is to define the focused region primarily in **semantic embedding space**, with the established nine-axis framework providing grounding, explicit controls and cross-checks. Follow the [semantic-first Steps 02–03 development plan](../../../STEP02_03_SEMANTIC_FIRST_PLAN.md); it supersedes axis-envelope-first construction as the immediate research direction. Embedding suitability and the constructor remain unvalidated.
 
 The five development tasks are: (1) consistent seed decisions, semantic descriptions and nine-axis records; (2) select and validate an existing embedding representation, considering training only if justified; (3) establish source-linked many-to-many semantic/axis relationships; (4) define joint membership and provisional expansion; (5) supply a minimal generator of unseen complete or partial strategies. An embedding boundary alone is not a generator.
 
@@ -19,7 +21,7 @@ Continuity: [seed-first construction](STEP03_SEED_FIRST_SPACE.md).
 
 ## Latest evidence — seed and expansion proof checks, October 27
 
-The [findings and retrospective scope audit](STEP02_03_PROOF_CHECK_FINDINGS.md) now supersede the pre-test status below. The completed handoff preserves frozen prompts, inputs, fixtures, all 26 records, original reports and reproducible measurements. This repository update publishes analytical findings and status corrections only; it does not upload the underlying raw-response archive.
+The [findings and retrospective scope audit](../../../STEP02_03_PROOF_CHECK_FINDINGS.md) now supersede the pre-test status below. The completed handoff preserves frozen prompts, inputs, fixtures, all 26 records, original reports and reproducible measurements. This repository update publishes analytical findings and status corrections only; it does not upload the underlying raw-response archive.
 
 - Generation rounds finished; the broader Step 02–03 research program is not complete. Only one fixed prompt protocol and one response per 3/5/8 count were checked; repeatability, prompt competition, timing/cost and a best count remain untested.
 - The actual encoding was G36 co-location, V9 occupied-floor sets and C36 direct inter-mass connections: three descriptive blocks, 81 coordinates, not the full nine-axis ME framework. Five legacy axes were not captured; the revised broader list/extraction rules were never fully frozen. No silent default-filling or geometry inference.

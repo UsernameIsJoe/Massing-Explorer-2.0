@@ -1,3 +1,5 @@
+> **Archived on October 28, 2026.** Historical snapshot, not current instructions. See the [archive index](../INDEX.md) and [current Step 02–03 plan](../../../STEP02_03_SEMANTIC_FIRST_PLAN.md). Original source: [b3fa3e8](https://github.com/UsernameIsJoe/Massing-Explorer-2.0/blob/b3fa3e8d4e8d37d4c4e39812f8b0efc30734044a/docs/STEP03_SPACE_CONSTRUCTION_RESEARCH.md). Relative navigation links have been adjusted for the archive location.
+
 # Step 03: construction of a semantic possibility space — research pass 1
 
 > **Later decision — seed-first starting route, 2026-10-26:** The user selected [generation of strategic seeds followed by progressive semantic-space construction](STEP03_SEED_FIRST_SPACE.md). The October 13 concepts-before-cases preference below is historical and no longer governs the immediate entry route. Preserve this review as construction-method background. Expansion beyond the seeds and robustness across initial sets are now central; first experiments must support manual chat interaction.

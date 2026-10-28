@@ -1,0 +1,340 @@
+> **Archived on October 28, 2026.** Historical snapshot, not current instructions. See the [archive index](INDEX.md) and [current Step 02–03 plan](../../STEP02_03_SEMANTIC_FIRST_PLAN.md). Original source: [b3fa3e8](https://github.com/UsernameIsJoe/Massing-Explorer-2.0/blob/b3fa3e8d4e8d37d4c4e39812f8b0efc30734044a/README.md). Relative navigation links have been adjusted for the archive location.
+
+# Massing Explorer 2.0
+
+> **Audit correction:** Batch 01 did not receive the intended no-cross-mass department-split rule. Matched-constraints performance conclusions are withdrawn; see the correction section and constraint audit.
+
+## Current project direction — 2026-10-28
+
+## Current authority — semantic-first Steps 02–03, October 28
+
+The user's latest direction is to define the focused region primarily in **semantic embedding space**, with the established nine-axis framework providing grounding, explicit controls and cross-checks. Follow the [semantic-first Steps 02–03 development plan](../../STEP02_03_SEMANTIC_FIRST_PLAN.md); it supersedes axis-envelope-first construction as the immediate research direction. Embedding suitability and the constructor remain unvalidated.
+
+The five development tasks are: (1) consistent seed decisions, semantic descriptions and nine-axis records; (2) select and validate an existing embedding representation, considering training only if justified; (3) establish source-linked many-to-many semantic/axis relationships; (4) define joint membership and provisional expansion; (5) supply a minimal generator of unseen complete or partial strategies. An embedding boundary alone is not a generator.
+
+Keep the nine-axis framework consistent; defer evolution until a concrete failure. The user welcomed partial strategies/blanks as a promising direction and selected **provisional admission** of explainable brief-relevant outside alternatives without prior proof of superiority or dimensional feasibility. Investigate retained commitments and flexible alternatives/ranges; semantic versus implementation locks remain an unresolved distinction.
+
+Focus now on Steps 02–03. The later pipeline remains broad and revisable; do not freeze its details. Five seeds preserve test continuity, not an optimal count. Advanced-model exchanges remain manual and batched. The new plan distinguishes user decisions, research evidence and assistant proposals, and preserves earlier test limitations.
+
+
+Follow the [current backbone](docs/CURRENT_BACKBONE.md) and [project memo](docs/PROJECT_MEMO.md). Preserve prior ME/ME 2.0 work while focusing the contribution on **constructing a smart semantic architectural possibility space and enabling an existing LLM to navigate it intelligently**.
+
+**Selected starting approach:** [seed-first space construction](docs/STEP03_SEED_FIRST_SPACE.md). Ask an existing LLM for a small set of distinct, brief-responsive strategies (five initially suggested), reconstruct an initial semantic space from them, and investigate how its boundary can expand beyond those seeds. First experiments use manual chat/script exchanges; advanced-LLM API access is not required.
+
+The [accepted eight-step pipeline baseline](docs/CURRENT_BACKBONE.md#accepted-eight-step-pipeline-baseline) is:
+
+1. Interpret and confirm the brief.
+2. Generate X distinctive strategic cases with stable coverage of meaningful differences.
+3. Construct their initial semantic space and boundary.
+4. Explore and update the boundary through user input, including probes beyond shared seed assumptions.
+5. Assess exploration maturity before narrowing; boundary stability alone is insufficient.
+6. Realize and test shortlisted strategies, with cheap earlier feasibility probes when needed.
+7. Revise, focus, archive, or re-search; narrowing remains reversible.
+8. Present the selected case, trade-offs and uncertainty.
+
+Record case lineage, brief changes, boundary revisions, checks and decisions throughout. Manual chat/script exchanges remain the initial operating mode.
+
+**Latest findings:** [Seed-count and A/B expansion proof checks, with corrected scope audit](../../STEP02_03_PROOF_CHECK_FINDINGS.md). Eight seeds showed greater recorded breadth in one run; both A and B expanded the options observed in their five parents. A led pair-token counts; B hit all six code-selected gaps. B still used LLM generation: code-only expansion was not tested. Broader architectural boundary, quality, repeatability and cost remain unresolved. The full case records and reproducible calculations remain in the completed project handoff; this update publishes findings only.
+
+**Immediate research focus:** [Steps 02–03](docs/STEP02_03_AXIS_EVALUATION_AND_EXPANSION.md): distinguish useful strategic scope from descriptor variety; complete the broader axis specification; investigate algorithmic expansion without repeated advanced-model calls. These proof checks did not finish the broader research program. Defer detailed Step 04 onward work.
+
+This is a revisable research backbone. Develop a script/method and supporting tools for existing LLMs. Detailed realization follows shortlisting; cheap probes and the strategic certainty needed beforehand are important open questions.
+
+The [October 26 research assessment](docs/STEP03_COGNITION_AND_LLM_ASSESSMENT.md) records all six user responses. Multiple weighted strategy trees selected through ongoing briefs are a candidate structure. Semantic control is supporting theory; adaptive revision remains an interaction/prompting concern; prioritized replay is retained. Strategic certainty/realization budgets and long-chat degradation are high priorities. No tree algorithm, confidence formula or context-reset policy is selected.
+
+CSP is no longer required as the main sampler/shortlist gate; independent constraint enforcement remains essential. Keep the nine-axis framework consistent as supporting representation; MCTS and BO remain optional later mechanisms. Seed-first construction is the selected entry point; representation and expansion mechanisms remain open.
+
+The earlier framework and experiments below remain foundations. Current priorities follow the backbone and user assessment; the audit correction still governs pilot performance claims.
+
+This project investigates three questions:
+
+1. How does an LLM actually develop architectural proposals? Is it reasoning, sampling, or searching?
+2. Which parts of the Massing Explorer pipeline genuinely outperform an LLM? Especially COVER, CSP, LEARN, and FOCUS.
+3. What should Massing Explorer become: a standalone engine, a collection of tools for ChatGPT/Claude, or a hybrid?
+
+## 1. How LLM proposals differ from the Massing Explorer pipeline
+
+Imagine the brief:
+
+Design a school with three masses, three floors maximum, gym and dining together, and admin on the ground floor.
+
+### A. How an LLM might approach it
+
+At a basic level, a GPT-style language model generates text autoregressively: it predicts each next token from the preceding context. A standard response therefore does not provide an explicit, inspectable architectural enumeration-and-ranking procedure comparable to Massing Explorer's candidate database ([Brown et al., 2020](https://arxiv.org/abs/2005.14165)).
+
+This does not mean an LLM cannot search or deliberate. Chain-of-thought prompting can elicit intermediate reasoning ([Wei et al., 2022](https://arxiv.org/abs/2201.11903)); reasoning models can revise strategies while solving a problem ([OpenAI, 2024](https://openai.com/index/learning-to-reason-with-llms/)); and agent frameworks can interleave reasoning with tool use and environmental feedback ([Yao et al., 2022](https://arxiv.org/abs/2210.03629)). Whether the model systematically explores architectural alternatives depends on the model, prompt, sampling procedure, tools, and external controller.
+
+A simplified interaction-level example follows. It is a conceptual model of observable behavior, not a literal trace of hidden internal computation:
+
+```mermaid
+flowchart TD
+    A["Architectural brief — Requirements, site, precedents, preferences"] --> B["LLM inference — Recognize relevant patterns and relationships, then construct a plausible organization. — Example: academic wings + shared central facilities"]
+    B --> C["Candidate proposal — Option 1: central commons with two classroom wings"]
+    C --> D["Critique and revision — If explicitly requested, or driven by agent tools"]
+```
+
+An important distinction: an LLM can perform deliberative reasoning, propose alternatives, use external tools, and revise its own results. However, a generated chain of thought is not guaranteed to be a faithful explanation of the internal process that produced the answer; controlled studies find substantial variation in chain-of-thought faithfulness across models and tasks ([Lanham et al., 2023](https://www.anthropic.com/research/measuring-faithfulness-in-chain-of-thought-reasoning); [Anthropic, 2025](https://www.anthropic.com/research/reasoning-models-dont-say-think)). The project should therefore study observable proposals, outputs, and tool actions rather than treat verbalized reasoning as a complete internal search history.
+
+#### What chain-of-thought faithfulness means
+
+Chain-of-thought faithfulness asks whether the model's written explanation accurately describes the process that actually caused its answer. This is different from asking whether the explanation sounds logical or whether the final answer is correct.
+
+Researchers can test faithfulness by introducing a controlled influence and checking whether the model reports it. A simplified example:
+
+1. The model receives a multiple-choice question.
+2. The prompt contains a subtle hint suggesting option C.
+3. The hint changes the model's answer to C.
+4. The model explains its answer using an apparently independent argument.
+5. The explanation never acknowledges that the hint influenced the answer.
+
+The explanation may be coherent, but it is unfaithful because it omits an experimentally demonstrated cause of the answer. Other experiments modify, paraphrase, or remove parts of a written reasoning trace and measure whether the final answer changes. The results show that faithfulness varies across models, tasks, prompts, and experimental conditions; a visible reasoning trace should therefore not automatically be treated as a causal account of the model's internal computation.
+
+For Massing Explorer, an LLM might state: "I selected the courtyard scheme because it improves circulation and program adjacency." That rationale may be architecturally useful, but it does not prove that circulation and adjacency caused the selection. The preference could also reflect patterns learned from architectural text, an earlier suggestion in the prompt, or sampling variation.
+
+The experiment should therefore record four separate forms of evidence:
+
+- **Proposal:** What the model generated.
+- **Stated rationale:** What the model says motivated the proposal.
+- **Observed behavior:** What changes when the brief, hints, sampling, context, or available tools change.
+- **Verified performance:** Whether independent evaluation finds the proposal feasible, distinct, and architecturally valuable.
+
+The stated rationale remains useful research material, but it should be treated as an output to test rather than a transparent record of the model's internal process.
+
+### B. The Massing Explorer pipeline works differently
+
+```mermaid
+flowchart TD
+    A["Architectural brief — LLM interpretation into structured requirements"] --> B["COVER / CSP — Enumerate, sample and test candidate organizations — Feasibility · Diversity · Coverage"]
+    B --> C["Shortlist / Realize — Select promising strategies and construct geometry"]
+    C --> D["LEARN / FOCUS — Evaluate outcomes and allocate more exploration"]
+    D --> E["Evidence-backed shortlist"]
+```
+
+Massing Explorer explicitly maintains a population of candidates, records their characteristics, and uses those results to allocate further computational effort.
+
+The fundamental difference:
+
+- A standard LLM interaction generates proposals from its learned parameters and supplied context; prompts, repeated sampling, reasoning methods, or agent controllers can add explicit search behavior.
+- Massing Explorer constructs proposals by exploring a defined representational space using explicit search and evaluation procedures.
+
+Neither is inherently better.
+
+An LLM might propose a brilliant arrangement that the current representation excludes. Massing Explorer might discover an excellent but unintuitive arrangement the LLM repeatedly overlooks.
+
+This is the central question the project should investigate.
+
+## 2. Proposed experiment
+
+The experiment uses four groups rather than three. The fourth distinguishes the value of the computational tools from the value of the search intelligence.
+
+### The four competitors
+
+#### A — Pure LLM
+
+Receives the brief and generates architectural strategies through conversation and reasoning. No specialized massing tools.
+
+Tests the baseline intelligence of the model.
+
+#### B — LLM + computational tools
+
+LLM can call CSP validators, generate geometry, inspect results, and query previous proposals. It decides what to explore next.
+
+Tests what happens when an LLM controls the exploration.
+
+#### C — Current Massing Explorer
+
+Massing Explorer's structured sampling, CSP shortlisting, realization, and exploration/refinement.
+
+Tests the existing algorithmic pipeline.
+
+#### D — Hybrid LLM + Massing Explorer
+
+LLM proposes new strategies, critiques the design space, and requests targeted exploration. Massing Explorer handles systematic coverage, realization, validation, and comparison.
+
+Tests whether the two systems actually complement each other.
+
+### Three stages of testing
+
+### Stage 1 — Observe natural and self-structured LLM design
+
+On the same frozen three-mass test-elementary brief, run two **one-response pure-LLM conditions**:
+
+- **A0 — Natural objective:** Ask ChatGPT and Claude independently to find the strongest architectural proposal. Do not instruct either how to explore, whether to compare, or how many alternatives to generate. Observe what is **voluntarily visible**.
+- **A1 — Self-structured exploration:** Ask the models to invent and execute **their own structured approach** for exploring architectural alternatives before recommending the strongest design. Specify **no** search policy, sampling axes, candidate count, turn-by-turn protocol, shortlist quota, or externally prescribed strategy vocabulary. Capture the method and comparisons the model chooses to report.
+
+Keep the program inputs, a single final recommendation, one model response, host settings and available output-token cap **matched within each host**. Use separate fresh runs without model memory, tools, feedback or prior candidates. Archive complete outputs and actual token/time/cost data before independent evaluation. A common endpoint is the best final design; exploratory structure and visibly investigated alternatives are secondary, observational evidence. The LLM's description of its process is **not** a verified internal search trace.
+
+Run both conditions with ChatGPT and Claude; repeat independent sessions after the first pilot. No prompt should reveal Massing Explorer's taxonomy, existing design proposals, validators, benchmark metrics, or outcomes. Preserve the original baseline data, and do not conflate this one-response pilot with a future longer-budget agentic search test.
+
+### Stage 2 — Compare search performance
+
+Run A, B, C, and D on the same briefs.
+
+The pilot uses three briefs:
+
+| Brief | Purpose |
+| --- | --- |
+| 1. Existing Prompt B | Baseline with known pipeline weaknesses |
+| 2. Tight constraints | Test constraint reasoning and feasible-region discovery |
+| 3. Unusual spatial requirements | Test whether the current representation limits creativity |
+
+Control the experiment carefully:
+
+- Same requirements and reference information.
+- Same geometry/evaluation backend for B, C, and D.
+- Equal budget, measured by both wall-clock time and actual computational cost.
+- Separate fresh runs with no shared exploration history.
+- Repeated trials: ideally 10 per system/brief, after a smaller pilot.
+- Same output format: at most 10 final candidate strategies.
+
+For fairness, B should have access to the same underlying solver primitives as C and D, but not the prepackaged COVER/LEARN/FOCUS controller. That isolates the value of the search policy.
+
+A should be treated as a text-only baseline, with the same external validator applied afterward.
+
+### Stage 3 — Evaluate independently
+
+The participating LLM should not grade its own proposals.
+
+| Metric | Measurement |
+| --- | --- |
+| Hard feasibility | Independent constraint verification |
+| Distinct strategies | Unique configurations and distances in strategy space |
+| Coverage | Breadth across feasible organizational families |
+| Architectural quality | Blinded expert review |
+| Best-design quality | Highest-rated final proposal |
+| Search efficiency | Cost and time to discover useful valid strategies |
+| Unexpected discoveries | Valuable proposals outside the current encoding |
+
+The evaluation should also include coverage confidence: how much of the known or estimated feasible space did each system investigate?
+
+This is difficult because the entire design space is unknown. For a limited benchmark, exhaustively enumerate a reduced CSP space and use it as ground truth. For the full brief, use a pooled reference set and report coverage as an estimate, not a completeness guarantee.
+
+### Interpretation criteria
+
+If B approaches C's performance, the elaborate search controller may not justify its complexity.
+
+If D substantially beats B and C, that supports a hybrid.
+
+If A produces consistently better architectural ideas than all the structured approaches, the representation or evaluation criteria may be restricting design intelligence.
+
+A negative result would be valuable. The experiment should be capable of invalidating the project rather than merely demonstrating that the pipeline works.
+
+## 3. What to build for ChatGPT and Claude
+
+The proposed direction favors modular tools over a monolithic plugin.
+
+Massing Explorer can provide a library of small architectural capabilities through the Model Context Protocol (MCP).
+
+This is technically realistic today. OpenAI supports MCP-powered ChatGPT plugins with optional interfaces; Claude supports custom remote MCP connectors, and Claude Desktop also supports local MCP servers. 
+
+The architecture to investigate is:
+
+```mermaid
+flowchart TD
+    H["LLM hosts — ChatGPT · Claude · Other MCP-compatible agents"] --> T["Massing Explorer — MCP tools — Shared service, structured inputs and outputs"]
+    subgraph tools ["Massing Explorer — MCP tools"]
+        direction TB
+        I["Interpret — Brief to constraints"]
+        N["Enumerate — Find possible organizations"]
+        V["Validate — Check hard requirements"]
+        R["Realize — Construct geometry"]
+        E["Evaluate — Measure performance"]
+        X["Explore — Coverage and novelty"]
+        C["Compare — Rank and trade-offs"]
+        Y["History — Retrieve previous trials"]
+    end
+    T --> tools
+    tools --> S["Shared computation and records — CSP · Geometry backend · Evaluation · Search logs"]
+```
+
+Not all these tools need to exist initially.
+
+Start with four tools.
+
+| Initial tool | Why |
+| --- | --- |
+| validate_strategy() | Check whether the LLM's proposal is actually feasible |
+| realize_strategy() | Convert it into measurable geometry |
+| explore_alternatives() | Return distinct, feasible alternatives or identify underexplored regions |
+| compare_strategies() | Report trade-offs using consistent criteria |
+
+This creates a crucial separation.
+
+The LLM owns the architectural reasoning. Massing Explorer provides evidence and computational capabilities.
+
+The same code can serve ChatGPT, Claude, a future interface, or the independent Massing Explorer engine.
+
+## 4. Let the LLM challenge the search space
+
+This is a research question whose novelty must be assessed against semantic ideation, design-space exploration and adaptive-representation precedents; see the current project memo.
+
+The current CSP space is largely predetermined. Massing Explorer intelligently explores combinations within that space.
+
+Suppose Claude proposes a school organization that cannot be expressed using the existing partition or topology representation.
+
+Instead of rejecting it, the system could identify the mismatch.
+
+For example:
+
+```mermaid
+flowchart TD
+    A["LLM: Proposes an interlocking, vertically shared academic and communal structure."] --> B["Massing Explorer: Cannot encode this strategy using its current topology vocabulary."]
+    B --> C["LLM: Identifies the missing design relationship and proposes an extension to the representation."]
+    C --> D["Search engine: Tests the new relationship with deterministic geometric and constraint checks."]
+    D --> E["System: Adds it to the searchable space only after validation."]
+```
+
+This suggests two levels of exploration:
+
+- Within-space search: Finding better configurations inside a known architectural strategy space.
+- Space-expanding search: Discovering architectural strategies the current representation cannot express.
+
+The second is arguably closer to architectural creativity.
+
+It would also give the three-axis system a much stronger purpose: not just evaluating candidates, but helping assess where the current search space is incomplete.
+
+There is one caveat. Automatically changing the strategy representation risks destroying consistency. Explicit schema versioning and human approval should be required before new organizational types enter the main search.
+
+## 5. Initial development sequence — superseded for Step 03
+
+Do not immediately invest in a polished ChatGPT or Claude plugin. First, establish whether the individual tools produce measurable value.
+
+### 01 — Build a shared benchmark
+
+Freeze the existing version of Massing Explorer. Establish inputs, evaluation criteria, output schemas, and detailed search logs. Record every candidate and why it was accepted, rejected, or revisited.
+
+### 02 — Run pure LLM experiments
+
+Let ChatGPT and Claude independently explore the same briefs. Analyze their observed strategies, repetitions, blind spots, validity, and discoveries outside the current representation.
+
+### 03 — Extract a small computational toolkit
+
+Make CSP validation, realization, alternative exploration, and comparison callable independently of the full pipeline.
+
+### 04 — Expose the toolkit through MCP
+
+Connect it to Claude and ChatGPT where the account and developer capabilities permit. Use the same backend for both to compare agent behavior fairly.
+
+### 05 — Run all four experimental groups
+
+Determine which tools help, which orchestration policies help, and whether anything in the existing pipeline should be abandoned.
+
+A practical consideration: ChatGPT and Claude offer somewhat different integration and permission models, so the MCP adapter should remain thin and host-independent. The research should not depend on features exclusive to one chat interface.
+
+## Step 02 pilot correction
+
+The intended no-cross-mass department-split hard rule was omitted from the Batch 01 model/evaluator inputs. Seven proposals violate that intended rule, but it was not supplied to their generators. The pilot remains useful as an observable-response record; matched-constraints LLM-versus-ME performance conclusions are withdrawn. Current prompt/protocol revisions apply to future runs only; original instructions and locked scores are preserved. [Constraint and leakage audit](../../../benchmarks/test-elementary-v0.1/step02/CONSTRAINT_ALIGNMENT_AUDIT.md).
+
+## Step 03 concept research
+
+[Current project memo — October 26](docs/PROJECT_MEMO.md) clarifies that constructing the space is a method-development research task, with the constructor's role and representation still open.
+
+
+[Critical research review: an evolving semantic strategy map](docs/STEP03_RESEARCH_REVIEW.md) assesses the proposed pseudo sample space against the original Massing Explorer pipeline and primary literature. It covers close precedents, limits of semantic abstraction, conditional breadth/depth mathematics, failure modes, and controlled experiments for changing user intent.
+
+The direction is a research hypothesis, not an implemented capability or demonstrated performance improvement. Its potential contribution is executable semantic relationships and representation revision beyond diverse memory, retrieval and context-conditioned scheduling.
+
+### Step 1: constructing the semantic space
+
+[Construction-method research — pass 1](docs/STEP03_SPACE_CONSTRUCTION_RESEARCH.md) reviews cross-domain precedents and candidate acquisition pipelines. The current target is a relational map of concepts and conditional reasoning, with a reusable core and project-specific layer; the construction algorithm remains open.
+

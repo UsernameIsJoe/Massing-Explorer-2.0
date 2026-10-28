@@ -1,3 +1,5 @@
+> **Archived on October 28, 2026.** Historical snapshot, not current instructions. See the [archive index](../INDEX.md) and [current Step 02–03 plan](../../../STEP02_03_SEMANTIC_FIRST_PLAN.md). Original source: [b3fa3e8](https://github.com/UsernameIsJoe/Massing-Explorer-2.0/blob/b3fa3e8d4e8d37d4c4e39812f8b0efc30734044a/docs/STEP03_RESEARCH_REVIEW.md). Relative navigation links have been adjusted for the archive location.
+
 # Step 03 research review: an evolving strategy map for LLM–ME design
 
 > **Current status — 2026-10-26:** Preserve this earlier research/code assessment. The [current backbone](CURRENT_BACKBONE.md) and [six user responses](STEP03_COGNITION_AND_LLM_ASSESSMENT.md) govern current priorities. The core remains the semantic initial space and smart interaction with an existing LLM. October 26 is not a project reset; earlier representation/update proposals are not approved implementation requirements.

@@ -1,8 +1,10 @@
+> **Archived on October 28, 2026.** Historical snapshot, not current instructions. See the [archive index](../INDEX.md) and [current Step 02–03 plan](../../../STEP02_03_SEMANTIC_FIRST_PLAN.md). Original source: [b3fa3e8](https://github.com/UsernameIsJoe/Massing-Explorer-2.0/blob/b3fa3e8d4e8d37d4c4e39812f8b0efc30734044a/docs/STEP03_SEED_FIRST_SPACE.md). Relative navigation links have been adjusted for the archive location.
+
 # Step 03 — seed-first construction of a semantic possibility space
 
 ## Current authority — semantic-first Steps 02–03, October 28
 
-The user's latest direction is to define the focused region primarily in **semantic embedding space**, with the established nine-axis framework providing grounding, explicit controls and cross-checks. Follow the [semantic-first Steps 02–03 development plan](STEP02_03_SEMANTIC_FIRST_PLAN.md); it supersedes axis-envelope-first construction as the immediate research direction. Embedding suitability and the constructor remain unvalidated.
+The user's latest direction is to define the focused region primarily in **semantic embedding space**, with the established nine-axis framework providing grounding, explicit controls and cross-checks. Follow the [semantic-first Steps 02–03 development plan](../../../STEP02_03_SEMANTIC_FIRST_PLAN.md); it supersedes axis-envelope-first construction as the immediate research direction. Embedding suitability and the constructor remain unvalidated.
 
 The five development tasks are: (1) consistent seed decisions, semantic descriptions and nine-axis records; (2) select and validate an existing embedding representation, considering training only if justified; (3) establish source-linked many-to-many semantic/axis relationships; (4) define joint membership and provisional expansion; (5) supply a minimal generator of unseen complete or partial strategies. An embedding boundary alone is not a generator.
 

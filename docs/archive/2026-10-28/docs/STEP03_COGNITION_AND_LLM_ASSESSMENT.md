@@ -1,3 +1,5 @@
+> **Archived on October 28, 2026.** Historical snapshot, not current instructions. See the [archive index](../INDEX.md) and [current Step 02–03 plan](../../../STEP02_03_SEMANTIC_FIRST_PLAN.md). Original source: [b3fa3e8](https://github.com/UsernameIsJoe/Massing-Explorer-2.0/blob/b3fa3e8d4e8d37d4c4e39812f8b0efc30734044a/docs/STEP03_COGNITION_AND_LLM_ASSESSMENT.md). Relative navigation links have been adjusted for the archive location.
+
 # Step 03 — cognition, ML and user assessment
 
 Date: 2026-10-26 (America/New_York).
