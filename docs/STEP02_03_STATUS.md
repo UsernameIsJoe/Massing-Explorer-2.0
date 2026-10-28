@@ -32,3 +32,13 @@ The architect's time and attention are the scarcest input; too many asks lower t
 | 5. Generator | Structural edit generator with hard rules, including the custodial rule; a pool of 1,050 valid strategies. | Introducing a new organizing concept needs an LLM or the architect. | Pilot 3 |
 
 Pilot 3's region file is a structure-only candidate, not the region. The Pilot 3 pool can be reused as the set of unseen test candidates for Task 4, once the region is frozen.
+
+## Options noted, not prioritized
+
+- **Larger seed set (architect, 2026-10-28).** Seeds are LLM-generated, so more runs could raise the paired text-and-structure data from 15 to 100 or more. That would make learned alignment testable. Conditions:
+  - count distinct ideas, not seeds, and push each run toward difference;
+  - use 2–3 different LLMs;
+  - split train and test by run or model;
+  - match the experiment design in `reports/Joint semantic axis search space.md`.
+
+  Priority is not decided; the architect has not yet reviewed the report.
