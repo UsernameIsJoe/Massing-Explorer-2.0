@@ -1,0 +1,16 @@
+{
+  "config_version": "p01-enc-v1",
+  "encoder": "mxbai-embed-large",
+  "model_digest": "468836162de7f81e041c43663fedbbba921dcea9b9fefea135685a39b2d83dd8",
+  "prefix": "",
+  "similarity": "cosine",
+  "texts": 45,
+  "dimensions": 1024,
+  "seconds": 8.48,
+  "created_at_utc": "2026-10-28T18:31:51.099863+00:00",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10"
+  },
+  "inputs_sha256": "b325e5528014dde37453f6d7971954bc3140a19042357d500cd1b0cdac1a9d04"
+}

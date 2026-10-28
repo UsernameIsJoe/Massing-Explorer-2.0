@@ -79,6 +79,222 @@
     "agree": 8,
     "n": 11
    }
+  },
+  "bge-m3:concept": {
+   "cross_run": {
+    "agree": 3,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 3,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 7,
+    "n": 11
+   }
+  },
+  "bge-m3:concept_intent": {
+   "cross_run": {
+    "agree": 2,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 5,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 8,
+    "n": 11
+   }
+  },
+  "bge-m3:struct": {
+   "cross_run": {
+    "agree": 4,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 4,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 9,
+    "n": 11
+   }
+  },
+  "mxbai-embed-large:concept": {
+   "cross_run": {
+    "agree": 4,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 2,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 7,
+    "n": 11
+   }
+  },
+  "mxbai-embed-large:concept_intent": {
+   "cross_run": {
+    "agree": 4,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 1,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 6,
+    "n": 11
+   }
+  },
+  "mxbai-embed-large:struct": {
+   "cross_run": {
+    "agree": 4,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 3,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 8,
+    "n": 11
+   }
+  },
+  "nomic-embed-text:concept": {
+   "cross_run": {
+    "agree": 2,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 2,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 5,
+    "n": 11
+   }
+  },
+  "nomic-embed-text:concept_intent": {
+   "cross_run": {
+    "agree": 3,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 2,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 6,
+    "n": 11
+   }
+  },
+  "nomic-embed-text:struct": {
+   "cross_run": {
+    "agree": 4,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 3,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 8,
+    "n": 11
+   }
+  },
+  "qwen3-embedding_0.6b:concept": {
+   "cross_run": {
+    "agree": 3,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 2,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 6,
+    "n": 11
+   }
+  },
+  "qwen3-embedding_0.6b:concept_intent": {
+   "cross_run": {
+    "agree": 3,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 2,
+    "n": 6
+   },
+   "control": {
+    "agree": 1,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 6,
+    "n": 11
+   }
+  },
+  "qwen3-embedding_0.6b:struct": {
+   "cross_run": {
+    "agree": 4,
+    "n": 4
+   },
+   "disagree": {
+    "agree": 5,
+    "n": 6
+   },
+   "control": {
+    "agree": 0,
+    "n": 1
+   },
+   "ALL": {
+    "agree": 9,
+    "n": 11
+   }
   }
  },
  "per_item": {
@@ -88,7 +304,19 @@
    "truth": "R3-S02",
    "proxy:structure": "R3-S02",
    "proxy:concept_wording": "R3-S02",
-   "llm_baseline": "R3-S02"
+   "llm_baseline": "R3-S02",
+   "bge-m3:concept": "R2-S02",
+   "bge-m3:concept_intent": "R2-S02",
+   "bge-m3:struct": "R3-S02",
+   "mxbai-embed-large:concept": "R3-S02",
+   "mxbai-embed-large:concept_intent": "R3-S02",
+   "mxbai-embed-large:struct": "R3-S02",
+   "nomic-embed-text:concept": "R2-S02",
+   "nomic-embed-text:concept_intent": "R3-S02",
+   "nomic-embed-text:struct": "R3-S02",
+   "qwen3-embedding_0.6b:concept": "R2-S02",
+   "qwen3-embedding_0.6b:concept_intent": "R2-S02",
+   "qwen3-embedding_0.6b:struct": "R3-S02"
   },
   "C02": {
    "kind": "cross_run",
@@ -96,7 +324,19 @@
    "truth": "R3-S03",
    "proxy:structure": "R3-S03",
    "proxy:concept_wording": "R3-S03",
-   "llm_baseline": "R3-S03"
+   "llm_baseline": "R3-S03",
+   "bge-m3:concept": "R3-S03",
+   "bge-m3:concept_intent": "R3-S03",
+   "bge-m3:struct": "R3-S03",
+   "mxbai-embed-large:concept": "R3-S03",
+   "mxbai-embed-large:concept_intent": "R3-S03",
+   "mxbai-embed-large:struct": "R3-S03",
+   "nomic-embed-text:concept": "R3-S03",
+   "nomic-embed-text:concept_intent": "R3-S03",
+   "nomic-embed-text:struct": "R3-S03",
+   "qwen3-embedding_0.6b:concept": "R3-S03",
+   "qwen3-embedding_0.6b:concept_intent": "R3-S03",
+   "qwen3-embedding_0.6b:struct": "R3-S03"
   },
   "C03": {
    "kind": "cross_run",
@@ -104,7 +344,19 @@
    "truth": "R3-S01",
    "proxy:structure": "R3-S01",
    "proxy:concept_wording": "R3-S01",
-   "llm_baseline": "R3-S01"
+   "llm_baseline": "R3-S01",
+   "bge-m3:concept": "R3-S01",
+   "bge-m3:concept_intent": "R3-S01",
+   "bge-m3:struct": "R3-S01",
+   "mxbai-embed-large:concept": "R3-S01",
+   "mxbai-embed-large:concept_intent": "R3-S01",
+   "mxbai-embed-large:struct": "R3-S01",
+   "nomic-embed-text:concept": "R3-S01",
+   "nomic-embed-text:concept_intent": "R3-S01",
+   "nomic-embed-text:struct": "R3-S01",
+   "qwen3-embedding_0.6b:concept": "R3-S01",
+   "qwen3-embedding_0.6b:concept_intent": "R3-S01",
+   "qwen3-embedding_0.6b:struct": "R3-S01"
   },
   "C04": {
    "kind": "cross_run",
@@ -112,7 +364,19 @@
    "truth": "R1-S01",
    "proxy:structure": "R1-S01",
    "proxy:concept_wording": "R2-S05",
-   "llm_baseline": "R1-S01"
+   "llm_baseline": "R1-S01",
+   "bge-m3:concept": "R1-S01",
+   "bge-m3:concept_intent": "R2-S05",
+   "bge-m3:struct": "R1-S01",
+   "mxbai-embed-large:concept": "R1-S01",
+   "mxbai-embed-large:concept_intent": "R1-S01",
+   "mxbai-embed-large:struct": "R1-S01",
+   "nomic-embed-text:concept": "R2-S05",
+   "nomic-embed-text:concept_intent": "R2-S05",
+   "nomic-embed-text:struct": "R1-S01",
+   "qwen3-embedding_0.6b:concept": "R1-S01",
+   "qwen3-embedding_0.6b:concept_intent": "R1-S01",
+   "qwen3-embedding_0.6b:struct": "R1-S01"
   },
   "C05": {
    "kind": "disagree",
@@ -120,7 +384,19 @@
    "truth": null,
    "proxy:structure": "R2-S04",
    "proxy:concept_wording": "R1-S03",
-   "llm_baseline": "R2-S04"
+   "llm_baseline": "R2-S04",
+   "bge-m3:concept": "R1-S03",
+   "bge-m3:concept_intent": "R1-S03",
+   "bge-m3:struct": "R2-S04",
+   "mxbai-embed-large:concept": "R2-S04",
+   "mxbai-embed-large:concept_intent": "R1-S03",
+   "mxbai-embed-large:struct": "R1-S03",
+   "nomic-embed-text:concept": "R1-S03",
+   "nomic-embed-text:concept_intent": "R2-S04",
+   "nomic-embed-text:struct": "R1-S03",
+   "qwen3-embedding_0.6b:concept": "R1-S03",
+   "qwen3-embedding_0.6b:concept_intent": "R1-S03",
+   "qwen3-embedding_0.6b:struct": "R2-S04"
   },
   "C06": {
    "kind": "disagree",
@@ -128,7 +404,19 @@
    "truth": "R1-S02",
    "proxy:structure": "R1-S02",
    "proxy:concept_wording": "R3-S04",
-   "llm_baseline": "R3-S04"
+   "llm_baseline": "R3-S04",
+   "bge-m3:concept": "R1-S02",
+   "bge-m3:concept_intent": "R1-S02",
+   "bge-m3:struct": "R1-S02",
+   "mxbai-embed-large:concept": "R3-S04",
+   "mxbai-embed-large:concept_intent": "R3-S04",
+   "mxbai-embed-large:struct": "R1-S02",
+   "nomic-embed-text:concept": "R3-S04",
+   "nomic-embed-text:concept_intent": "R3-S04",
+   "nomic-embed-text:struct": "R1-S02",
+   "qwen3-embedding_0.6b:concept": "R3-S04",
+   "qwen3-embedding_0.6b:concept_intent": "R3-S04",
+   "qwen3-embedding_0.6b:struct": "R1-S02"
   },
   "C07": {
    "kind": "disagree",
@@ -136,7 +424,19 @@
    "truth": "R3-S05",
    "proxy:structure": "R3-S04",
    "proxy:concept_wording": "R3-S05",
-   "llm_baseline": "R3-S04"
+   "llm_baseline": "R3-S04",
+   "bge-m3:concept": "R3-S04",
+   "bge-m3:concept_intent": "R3-S05",
+   "bge-m3:struct": "R3-S04",
+   "mxbai-embed-large:concept": "R3-S04",
+   "mxbai-embed-large:concept_intent": "R3-S04",
+   "mxbai-embed-large:struct": "R3-S04",
+   "nomic-embed-text:concept": "R3-S05",
+   "nomic-embed-text:concept_intent": "R3-S05",
+   "nomic-embed-text:struct": "R3-S04",
+   "qwen3-embedding_0.6b:concept": "R3-S04",
+   "qwen3-embedding_0.6b:concept_intent": "R3-S05",
+   "qwen3-embedding_0.6b:struct": "R3-S05"
   },
   "C08": {
    "kind": "disagree",
@@ -144,7 +444,19 @@
    "truth": null,
    "proxy:structure": "R3-S05",
    "proxy:concept_wording": "R1-S05",
-   "llm_baseline": "R1-S05"
+   "llm_baseline": "R1-S05",
+   "bge-m3:concept": "R3-S05",
+   "bge-m3:concept_intent": "R3-S05",
+   "bge-m3:struct": "R3-S05",
+   "mxbai-embed-large:concept": "R1-S05",
+   "mxbai-embed-large:concept_intent": "R3-S05",
+   "mxbai-embed-large:struct": "R3-S05",
+   "nomic-embed-text:concept": "R1-S05",
+   "nomic-embed-text:concept_intent": "R1-S05",
+   "nomic-embed-text:struct": "R3-S05",
+   "qwen3-embedding_0.6b:concept": "R1-S05",
+   "qwen3-embedding_0.6b:concept_intent": "R1-S05",
+   "qwen3-embedding_0.6b:struct": "R3-S05"
   },
   "C09": {
    "kind": "disagree",
@@ -152,7 +464,19 @@
    "truth": "R2-S02",
    "proxy:structure": "R3-S04",
    "proxy:concept_wording": "R2-S02",
-   "llm_baseline": "R2-S02"
+   "llm_baseline": "R2-S02",
+   "bge-m3:concept": "R3-S04",
+   "bge-m3:concept_intent": "R2-S02",
+   "bge-m3:struct": "R2-S02",
+   "mxbai-embed-large:concept": "R3-S04",
+   "mxbai-embed-large:concept_intent": "R3-S04",
+   "mxbai-embed-large:struct": "R2-S02",
+   "nomic-embed-text:concept": "R3-S04",
+   "nomic-embed-text:concept_intent": "R3-S04",
+   "nomic-embed-text:struct": "R3-S04",
+   "qwen3-embedding_0.6b:concept": "R2-S02",
+   "qwen3-embedding_0.6b:concept_intent": "R3-S04",
+   "qwen3-embedding_0.6b:struct": "R3-S04"
   },
   "C10": {
    "kind": "disagree",
@@ -160,7 +484,19 @@
    "truth": "R1-S02",
    "proxy:structure": "R1-S02",
    "proxy:concept_wording": "R3-S02",
-   "llm_baseline": "R1-S02"
+   "llm_baseline": "R1-S02",
+   "bge-m3:concept": "R3-S02",
+   "bge-m3:concept_intent": "R3-S02",
+   "bge-m3:struct": "R3-S02",
+   "mxbai-embed-large:concept": "R3-S02",
+   "mxbai-embed-large:concept_intent": "R3-S02",
+   "mxbai-embed-large:struct": "R3-S02",
+   "nomic-embed-text:concept": "R3-S02",
+   "nomic-embed-text:concept_intent": "R3-S02",
+   "nomic-embed-text:struct": "R3-S02",
+   "qwen3-embedding_0.6b:concept": "R3-S02",
+   "qwen3-embedding_0.6b:concept_intent": "R3-S02",
+   "qwen3-embedding_0.6b:struct": "R1-S02"
   },
   "C11": {
    "kind": "disagree",
@@ -168,7 +504,19 @@
    "truth": "R2-S02",
    "proxy:structure": "R2-S02",
    "proxy:concept_wording": "R3-S05",
-   "llm_baseline": "R2-S02"
+   "llm_baseline": "R2-S02",
+   "bge-m3:concept": "R2-S02",
+   "bge-m3:concept_intent": "R2-S02",
+   "bge-m3:struct": "R2-S02",
+   "mxbai-embed-large:concept": "R2-S02",
+   "mxbai-embed-large:concept_intent": "R3-S05",
+   "mxbai-embed-large:struct": "R2-S02",
+   "nomic-embed-text:concept": "R3-S05",
+   "nomic-embed-text:concept_intent": "R3-S05",
+   "nomic-embed-text:struct": "R2-S02",
+   "qwen3-embedding_0.6b:concept": "R3-S05",
+   "qwen3-embedding_0.6b:concept_intent": "R3-S05",
+   "qwen3-embedding_0.6b:struct": "R2-S02"
   },
   "C12": {
    "kind": "disagree",
@@ -176,7 +524,19 @@
    "truth": "R3-S04",
    "proxy:structure": "R2-S05",
    "proxy:concept_wording": "R3-S04",
-   "llm_baseline": "R2-S05"
+   "llm_baseline": "R2-S05",
+   "bge-m3:concept": "R3-S04",
+   "bge-m3:concept_intent": "R3-S04",
+   "bge-m3:struct": "R3-S04",
+   "mxbai-embed-large:concept": "R3-S04",
+   "mxbai-embed-large:concept_intent": "R3-S04",
+   "mxbai-embed-large:struct": "R2-S05",
+   "nomic-embed-text:concept": "R3-S04",
+   "nomic-embed-text:concept_intent": "R3-S04",
+   "nomic-embed-text:struct": "R3-S04",
+   "qwen3-embedding_0.6b:concept": "R3-S04",
+   "qwen3-embedding_0.6b:concept_intent": "R3-S04",
+   "qwen3-embedding_0.6b:struct": "R3-S04"
   },
   "C13": {
    "kind": "control",
@@ -184,7 +544,19 @@
    "truth": null,
    "proxy:structure": "R1-S05",
    "proxy:concept_wording": "R1-S05",
-   "llm_baseline": "R1-S05"
+   "llm_baseline": "R1-S05",
+   "bge-m3:concept": "R1-S05",
+   "bge-m3:concept_intent": "R1-S05",
+   "bge-m3:struct": "R1-S05",
+   "mxbai-embed-large:concept": "R1-S05",
+   "mxbai-embed-large:concept_intent": "R1-S05",
+   "mxbai-embed-large:struct": "R1-S05",
+   "nomic-embed-text:concept": "R1-S05",
+   "nomic-embed-text:concept_intent": "R1-S05",
+   "nomic-embed-text:struct": "R1-S05",
+   "qwen3-embedding_0.6b:concept": "R1-S05",
+   "qwen3-embedding_0.6b:concept_intent": "R1-S05",
+   "qwen3-embedding_0.6b:struct": "R1-S05"
   },
   "C14": {
    "kind": "control",
@@ -192,7 +564,19 @@
    "truth": "R3-S05",
    "proxy:structure": "R3-S05",
    "proxy:concept_wording": "R3-S05",
-   "llm_baseline": "R3-S05"
+   "llm_baseline": "R3-S05",
+   "bge-m3:concept": "R3-S05",
+   "bge-m3:concept_intent": "R3-S05",
+   "bge-m3:struct": "R3-S05",
+   "mxbai-embed-large:concept": "R3-S05",
+   "mxbai-embed-large:concept_intent": "R3-S05",
+   "mxbai-embed-large:struct": "R3-S05",
+   "nomic-embed-text:concept": "R3-S05",
+   "nomic-embed-text:concept_intent": "R3-S05",
+   "nomic-embed-text:struct": "R3-S05",
+   "qwen3-embedding_0.6b:concept": "R3-S05",
+   "qwen3-embedding_0.6b:concept_intent": "R3-S05",
+   "qwen3-embedding_0.6b:struct": "R3-S03"
   }
  }
 }

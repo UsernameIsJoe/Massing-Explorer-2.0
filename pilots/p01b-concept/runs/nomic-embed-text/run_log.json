@@ -1,0 +1,16 @@
+{
+  "config_version": "p01-enc-v1",
+  "encoder": "nomic-embed-text",
+  "model_digest": "0a109f422b47e3a30ba2b10eca18548e944e8a23073ee3f3e947efcf3c45e59f",
+  "prefix": "clustering: ",
+  "similarity": "cosine",
+  "texts": 45,
+  "dimensions": 768,
+  "seconds": 9.81,
+  "created_at_utc": "2026-10-28T18:31:40.253278+00:00",
+  "host": {
+    "os": "Windows-11-10.0.26200-SP0",
+    "python": "3.12.10"
+  },
+  "inputs_sha256": "b325e5528014dde37453f6d7971954bc3140a19042357d500cd1b0cdac1a9d04"
+}
