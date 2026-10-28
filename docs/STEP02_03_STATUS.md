@@ -21,6 +21,8 @@ Origin of the rule: after Pilot 3, a structure-only region was built and a short
 
 The architect's time and attention are the scarcest input; too many asks lower the quality of the answers. Ask only for input that changes a decision, batch the asks, state in one line why each matters, and settle anything that has a sensible default without asking.
 
+Before any committed run (downloads, long local runs, chat batches), tell the architect beforehand: what it is for, what it costs (time, downloads, their steps) and what it decides. Then wait for a go.
+
 ## Status
 
 | Task | Done | Open | Evidence |
