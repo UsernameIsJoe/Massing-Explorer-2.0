@@ -1,0 +1,201 @@
+<title>ME2 Seed Coherence Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long sheet, one seed per section; diagram first, then concept and the fields that must agree with it. */
+:root{
+  --bg:#f3f4f2; --surface:#ffffff; --line:#d5d9d4; --fg:#1d2420; --muted:#5f6a63;
+  --accent:#2f5d50; --accent-soft:#e2ece7; --anchor:#e9edf3; --anchor-line:#b9c4d4; --done:#3f7a4a;
+  --d01:#9dbfe0; --d02:#e8bd7a; --d03:#cfa6dc; --d46:#a7cfa4; --d05:#eca596; --d07:#efd77a; --d08:#b3c1ca; --d09:#cfbea6; --plate:#eef0ed; --link:#2f5d50;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151917; --surface:#1d2320; --line:#333c37; --fg:#e4e8e5; --muted:#9aa59e;
+  --accent:#86c2ad; --accent-soft:#24352f; --anchor:#1c2430; --anchor-line:#3a4a60; --done:#7fc28b;
+  --d01:#3f6286; --d02:#80602b; --d03:#6a4e79; --d46:#416d40; --d05:#83463b; --d07:#7a6b27; --d08:#4f5e68; --d09:#665642; --plate:#252c29; --link:#86c2ad; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151917; --surface:#1d2320; --line:#333c37; --fg:#e4e8e5; --muted:#9aa59e;
+  --accent:#86c2ad; --accent-soft:#24352f; --anchor:#1c2430; --anchor-line:#3a4a60; --done:#7fc28b;
+  --d01:#3f6286; --d02:#80602b; --d03:#6a4e79; --d46:#416d40; --d05:#83463b; --d07:#7a6b27; --d08:#4f5e68; --d09:#665642; --plate:#252c29; --link:#86c2ad; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--sans)}
+.wrap{max-width:1000px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+h1{font-size:1.3rem;margin:0;text-wrap:balance}
+h2{font-size:1.1rem;margin:0;text-wrap:balance}
+h3{font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+.sub{color:var(--muted);margin:4px 0 0;max-width:72ch}
+.status{font:500 .8rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips a{font:500 .8rem var(--mono);color:var(--fg);text-decoration:none;border:1px solid var(--line);border-radius:5px;padding:4px 9px;background:var(--surface)}
+.chips a.done{background:var(--accent-soft);border-color:var(--accent)}
+.seed{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px;display:grid;gap:14px;min-width:0}
+.diag{width:100%;max-width:620px}
+.diag svg{display:block;width:100%;height:auto}
+.diag text{font:500 10px var(--sans);fill:var(--fg)}
+.diag .ax{fill:var(--muted);font:500 9px var(--mono)}
+.diag .mt{fill:var(--muted);font:600 9.5px var(--sans)}
+.concept{font-size:1.02rem;margin:0;max-width:72ch;padding:10px 14px;background:var(--anchor);border:1px solid var(--anchor-line);border-radius:5px}
+p{margin:0;max-width:72ch}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:720px){.grid2{grid-template-columns:1fr}}
+.block{display:grid;gap:6px;min-width:0}
+ul{margin:0;padding-left:1.1em;display:grid;gap:6px}
+.move b{font-weight:600}
+.ref{display:inline-block;font:.74rem var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 5px;margin:2px 4px 0 0}
+.checks{font:.8rem var(--mono);color:var(--muted)}
+.checks .err{color:var(--fg);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted);align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
+.answers{display:flex;flex-wrap:wrap;gap:8px}
+button{font:600 .9rem var(--sans);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:5px;padding:9px 14px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,textarea:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.on{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+textarea{width:100%;box-sizing:border-box;min-height:56px;font:.9rem var(--sans);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:5px;padding:8px}
+details{color:var(--muted)}
+details[open]{color:var(--fg)}
+.verdict{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:14px}
+.save{font:.8rem var(--mono);color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Seeds v2.0 · Coherence review</h1>
+    <p class="sub">For each seed, read the concept against the diagram and the fields below it. You are checking one thing: <strong>do all parts describe the same scheme?</strong> Not whether the scheme is good. Mark <strong>Coherent</strong>, <strong>Minor issue</strong> (fixable wording or an omission) or <strong>Not coherent</strong> (the concept and the decisions describe different schemes).</p>
+  </header>
+  <div class="status" id="status"></div>
+  <nav class="chips" id="chips" aria-label="Jump to seed"></nav>
+  <div class="legend" id="legend" aria-label="Diagram key"></div>
+  <div id="seeds" style="display:grid;gap:22px"></div>
+  <section class="seed"><h3>Across the collection</h3><p id="coll"></p></section>
+</div>
+
+<script>
+const DATA = {"cases": [{"case": {"case_id": "S01", "name": "Civic Hinge Linear Chain", "concept": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.", "intent": "Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.", "key_moves": [{"move_id": "K1", "move": "Civic hinge as front door", "serves": "Makes the middle mass the public face that holds arrival, the office, care and the library.", "decisions": [{"type": "placement", "department_id": "D08", "mass_id": "M2", "floors": [1]}, {"type": "placement", "department_id": "D07", "mass_id": "M2", "floors": [1]}, {"type": "placement", "department_id": "D05", "mass_id": "M2", "floors": [3]}]}, {"move_id": "K2", "move": "Serial links through the hinge", "serves": "Ensures every passage between learning and commons crosses the hinge.", "decisions": [{"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": true}, {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": true}, {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": false}]}, {"move_id": "K3", "move": "Arts at the hinge base", "serves": "Puts the arts in the public face of the school, starting at ground level.", "decisions": [{"type": "placement", "department_id": "D03", "mass_id": "M2", "floors": [1, 2]}]}, {"move_id": "K4", "move": "Single learning bar at the end", "serves": "Keeps all classroom departments together at the quiet end of the chain.", "decisions": [{"type": "placement", "department_id": "D01", "mass_id": "M1", "floors": [1, 2, 3]}, {"type": "placement", "department_id": "D02", "mass_id": "M1", "floors": [1, 2]}]}], "structure": {"masses": [{"mass_id": "M1", "role": "learning bar at chain end"}, {"mass_id": "M2", "role": "civic hinge"}, {"mass_id": "M3", "role": "community commons at chain end"}], "departments": [{"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]}, {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1, 2]}, {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [1, 2]}, {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]}, {"department_id": "D05", "mass_ids": ["M2"], "occupied_floors": [3]}, {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]}, {"department_id": "D07", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D08", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D09", "mass_ids": ["M2"], "occupied_floors": [1]}], "connections": [{"mass_a": "M1", "mass_b": "M2", "direct_link": true}, {"mass_a": "M2", "mass_b": "M3", "direct_link": true}, {"mass_a": "M1", "mass_b": "M3", "direct_link": false}]}, "commitments": {"core": [{"statement": "Learning and commons connect only through the civic hinge.", "protects": ["K2"]}, {"statement": "Administration, arts and library share the hinge mass.", "protects": ["K1", "K3"]}, {"statement": "All classroom departments stay in the end bar.", "protects": ["K4"]}], "flexible": ["Placement of custodial and medical within the hinge ground floor", "Whether special education also reaches floor 3", "Enclosure type of the two links (bridge or passage)", "Distribution of core academic across its floors"]}, "brief_response": {"main_tradeoff": "The commons stays a two-level volume without a third floor, and daily lunch and gym traffic passes through the civic hinge, mixing student flow with the office and visitor zone.", "preferences_given_up": ["three_floors"]}, "unresolved": ["Hinge floor 2 holds only music, so the hinge's upper floors may be partial plates.", "Gym and dining are recorded as occupying floor 1 only; the double-height volume reaches level 2 without occupied area.", "Custodial in the hinge is separated from the kitchen in the commons; the service route cannot be checked without site access data."]}, "diagram": {"masses": [{"role": "C", "label": "M1 · learning bar at chain end", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2]}]}, {"role": "T", "label": "M2 · civic hinge", "departments": [{"dept": "D03", "floors": [1, 2]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "label": "M3 · community commons at chain end", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CT", "GT"]}, "checks": {"errors": [], "warnings": []}, "claude_notes": ["No conflicts found. The concept, links and placements all describe the hinge as the only crossing."]}, {"case": {"case_id": "S02", "name": "Arts Loft Over the Commons", "concept": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.", "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.", "key_moves": [{"move_id": "K1", "move": "Arts loft on the commons roof", "serves": "Forms the single cultural block by stacking the arts over the commons volume.", "decisions": [{"type": "placement", "department_id": "D03", "mass_id": "M1", "floors": [3]}, {"type": "placement", "department_id": "D04", "mass_id": "M1", "floors": [1]}, {"type": "placement", "department_id": "D06", "mass_id": "M1", "floors": [1]}]}, {"move_id": "K2", "move": "Civic block with library crown", "serves": "Crowns the civic block with the library over the office and keeps specialized learning beside care and leadership.", "decisions": [{"type": "placement", "department_id": "D08", "mass_id": "M2", "floors": [1]}, {"type": "placement", "department_id": "D07", "mass_id": "M2", "floors": [1]}, {"type": "placement", "department_id": "D02", "mass_id": "M2", "floors": [1, 2]}, {"type": "placement", "department_id": "D05", "mass_id": "M2", "floors": [3]}]}, {"move_id": "K3", "move": "Closed triangle of links", "serves": "Joins each mass to both others so the cluster works as one indoor building.", "decisions": [{"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": true}, {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": true}, {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": true}]}, {"move_id": "K4", "move": "Plain academic bar", "serves": "Completes the triangle with a dedicated three-floor classroom bar.", "decisions": [{"type": "placement", "department_id": "D01", "mass_id": "M3", "floors": [1, 2, 3]}, {"type": "placement", "department_id": "D09", "mass_id": "M3", "floors": [1]}]}], "structure": {"masses": [{"mass_id": "M1", "role": "commons with arts loft"}, {"mass_id": "M2", "role": "civic block with library crown"}, {"mass_id": "M3", "role": "academic bar"}], "departments": [{"department_id": "D01", "mass_ids": ["M3"], "occupied_floors": [1, 2, 3]}, {"department_id": "D02", "mass_ids": ["M2"], "occupied_floors": [1, 2]}, {"department_id": "D03", "mass_ids": ["M1"], "occupied_floors": [3]}, {"department_id": "D04", "mass_ids": ["M1"], "occupied_floors": [1]}, {"department_id": "D05", "mass_ids": ["M2"], "occupied_floors": [3]}, {"department_id": "D06", "mass_ids": ["M1"], "occupied_floors": [1]}, {"department_id": "D07", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D08", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}], "connections": [{"mass_a": "M1", "mass_b": "M2", "direct_link": true}, {"mass_a": "M2", "mass_b": "M3", "direct_link": true}, {"mass_a": "M1", "mass_b": "M3", "direct_link": true}]}, "commitments": {"core": [{"statement": "The arts sit above the commons volume in the same mass.", "protects": ["K1"]}, {"statement": "The library crowns the civic block over administration.", "protects": ["K2"]}, {"statement": "Every pair of masses has a direct built link.", "protects": ["K3"]}], "flexible": ["Custodial location among ground floors", "Whether special education also reaches floor 3", "Enclosure type of each link", "Distribution of core academic across its three floors"]}, "brief_response": {"main_tradeoff": "The arts give up the ground floor and depend on vertical access over a long-span volume, in exchange for a combined cultural block and three-floor massing throughout.", "preferences_given_up": ["arts_ground_floor"]}, "unresolved": ["Floor 3 over the gym and dining needs long-span transfer structure; floor 2 of that mass is void only.", "The civic block contains special education, so it inherits the 80-ft width requirement.", "An academic bar holding only core academic and custodial may fall below the minimum footprint implied by the 80-ft width and ratio limits.", "Gym and dining are recorded on floor 1 only beneath the double-height volume."]}, "diagram": {"masses": [{"role": "C", "label": "M3 · academic bar", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "label": "M2 · civic block with library crown", "departments": [{"dept": "D02", "floors": [1, 2]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "label": "M1 · commons with arts loft", "departments": [{"dept": "D03", "floors": [3]}, {"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["GT", "CT", "CG"]}, "checks": {"errors": [], "warnings": []}, "claude_notes": ["Special education sits in the civic block, apart from the classroom bar. This is a consequential inclusion decision, but the concept and main trade-off do not mention it; it appears only in key move K2."]}, {"case": {"case_id": "S03", "name": "Detached Campus Pavilions", "concept": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.", "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.", "key_moves": [{"move_id": "K1", "move": "No built links", "serves": "Keeps the three pavilions free-standing on shared grounds.", "decisions": [{"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": false}, {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": false}, {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": false}]}, {"move_id": "K2", "move": "Self-sufficient learning pavilion", "serves": "Keeps classrooms, the nurse and building service together so students rarely need to leave.", "decisions": [{"type": "placement", "department_id": "D01", "mass_id": "M1", "floors": [1, 2, 3]}, {"type": "placement", "department_id": "D02", "mass_id": "M1", "floors": [1, 2]}, {"type": "placement", "department_id": "D07", "mass_id": "M1", "floors": [1]}, {"type": "placement", "department_id": "D09", "mass_id": "M1", "floors": [1]}]}, {"move_id": "K3", "move": "Independent community pavilion", "serves": "Isolates athletics and dining so they can open on their own.", "decisions": [{"type": "placement", "department_id": "D04", "mass_id": "M2", "floors": [1]}, {"type": "placement", "department_id": "D06", "mass_id": "M2", "floors": [1]}]}, {"move_id": "K4", "move": "Low civic-arts pavilion", "serves": "Forms the arrival pavilion with the library directly above the office.", "decisions": [{"type": "placement", "department_id": "D08", "mass_id": "M3", "floors": [1]}, {"type": "placement", "department_id": "D03", "mass_id": "M3", "floors": [1]}, {"type": "placement", "department_id": "D05", "mass_id": "M3", "floors": [2]}]}], "structure": {"masses": [{"mass_id": "M1", "role": "self-sufficient learning pavilion"}, {"mass_id": "M2", "role": "independent community pavilion"}, {"mass_id": "M3", "role": "low civic-arts pavilion"}], "departments": [{"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]}, {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1, 2]}, {"department_id": "D03", "mass_ids": ["M3"], "occupied_floors": [1]}, {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D05", "mass_ids": ["M3"], "occupied_floors": [2]}, {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]}, {"department_id": "D08", "mass_ids": ["M3"], "occupied_floors": [1]}, {"department_id": "D09", "mass_ids": ["M1"], "occupied_floors": [1]}], "connections": [{"mass_a": "M1", "mass_b": "M2", "direct_link": false}, {"mass_a": "M2", "mass_b": "M3", "direct_link": false}, {"mass_a": "M1", "mass_b": "M3", "direct_link": false}]}, "commitments": {"core": [{"statement": "The masses remain separate, with no built connection between any pair.", "protects": ["K1", "K3"]}, {"statement": "Medical and custodial stay inside the learning pavilion.", "protects": ["K2"]}, {"statement": "The civic pavilion stays low, with the library over the office.", "protects": ["K4"]}], "flexible": ["Order of the pavilions on the grounds", "Number of floors special education occupies", "Covered but unenclosed outdoor walkways", "Distribution of core academic across its floors"]}, "brief_response": {"main_tradeoff": "Students walk outdoors to reach dining, the gym, the office and the library, trading weather protection and supervision for independent community operation; two pavilions stay below three floors.", "preferences_given_up": ["three_floors"]}, "unresolved": ["Without site and code context, it is unknown whether unlinked masses are acceptable for security, accessibility and weather.", "The community pavilion has no custodial or receiving of its own; the kitchen service route depends on unsupplied site access.", "Medical is separated from administration, so the visitor-to-nurse route crosses outdoor grounds.", "Gym and dining are recorded on floor 1 only beneath the double-height volume."]}, "diagram": {"masses": [{"role": "C", "label": "M1 · self-sufficient learning pavilion", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2]}, {"dept": "D07", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "label": "M3 · low civic-arts pavilion", "departments": [{"dept": "D03", "floors": [1]}, {"dept": "D05", "floors": [2]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "label": "M2 · independent community pavilion", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": []}, "checks": {"errors": [], "warnings": []}, "claude_notes": ["No conflicts found. Note that the office sits in a different pavilion from the nurse, which the record discloses."]}, {"case": {"case_id": "S04", "name": "Commons Heart Between Front and Learning", "concept": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.", "intent": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.", "key_moves": [{"move_id": "K1", "move": "Heart links front and wing", "serves": "Makes the commons the only connection between the civic front and the learning wing.", "decisions": [{"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": true}, {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": true}, {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": false}]}, {"move_id": "K2", "move": "Arts within the learning wing", "serves": "Folds the arts into daily teaching beyond the heart, at ground level.", "decisions": [{"type": "placement", "department_id": "D03", "mass_id": "M3", "floors": [1]}, {"type": "placement", "department_id": "D01", "mass_id": "M3", "floors": [1, 2, 3]}, {"type": "placement", "department_id": "D02", "mass_id": "M3", "floors": [1, 2]}]}, {"move_id": "K3", "move": "Two-floor civic front", "serves": "Gives arrival a compact front with the library over the office.", "decisions": [{"type": "placement", "department_id": "D08", "mass_id": "M1", "floors": [1]}, {"type": "placement", "department_id": "D07", "mass_id": "M1", "floors": [1]}, {"type": "placement", "department_id": "D09", "mass_id": "M1", "floors": [1]}, {"type": "placement", "department_id": "D05", "mass_id": "M1", "floors": [2]}]}, {"move_id": "K4", "move": "Commons as central heart", "serves": "Places the shared volume at the centre of the three-part sequence.", "decisions": [{"type": "placement", "department_id": "D04", "mass_id": "M2", "floors": [1]}, {"type": "placement", "department_id": "D06", "mass_id": "M2", "floors": [1]}]}], "structure": {"masses": [{"mass_id": "M1", "role": "civic front"}, {"mass_id": "M2", "role": "central commons heart"}, {"mass_id": "M3", "role": "learning wing beyond heart"}], "departments": [{"department_id": "D01", "mass_ids": ["M3"], "occupied_floors": [1, 2, 3]}, {"department_id": "D02", "mass_ids": ["M3"], "occupied_floors": [1, 2]}, {"department_id": "D03", "mass_ids": ["M3"], "occupied_floors": [1]}, {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [2]}, {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]}, {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]}, {"department_id": "D09", "mass_ids": ["M1"], "occupied_floors": [1]}], "connections": [{"mass_a": "M1", "mass_b": "M2", "direct_link": true}, {"mass_a": "M2", "mass_b": "M3", "direct_link": true}, {"mass_a": "M1", "mass_b": "M3", "direct_link": false}]}, "commitments": {"core": [{"statement": "The civic front and learning wing connect only through the commons.", "protects": ["K1", "K4"]}, {"statement": "The arts stay on the learning wing's ground floor.", "protects": ["K2"]}, {"statement": "The library sits over the office in the civic front.", "protects": ["K3"]}], "flexible": ["Custodial and medical arrangement within the civic front ground floor", "Number of floors special education occupies", "Enclosure type of the two links", "Arts room order along the learning wing ground floor"]}, "brief_response": {"main_tradeoff": "Every trip from the front to the classrooms crosses the commons, so lunch and assemblies interrupt circulation; the civic front and commons stay below three floors.", "preferences_given_up": ["three_floors"]}, "unresolved": ["A route through or alongside the commons must stay usable while the commons is in use; this cannot be resolved without dimensions.", "The learning wing carries core academic, special education and arts; its ground-floor load against the width and ratio limits needs checking.", "Custodial in the civic front is remote from the kitchen in the commons.", "Gym and dining are recorded on floor 1 only beneath the double-height volume."]}, "diagram": {"masses": [{"role": "C", "label": "M3 · learning wing beyond heart", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2]}, {"dept": "D03", "floors": [1]}]}, {"role": "T", "label": "M1 · civic front", "departments": [{"dept": "D05", "floors": [2]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "label": "M2 · central commons heart", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["GT", "CG"]}, "checks": {"errors": [], "warnings": []}, "claude_notes": ["No conflicts found. The commons is the only connection between front and learning, as the concept says."]}, {"case": {"case_id": "S05", "name": "Academy Tower With Care House", "concept": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.", "intent": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.", "key_moves": [{"move_id": "K1", "move": "Office and library in the academy", "serves": "Stacks classrooms over the office in the academy, with the library at its crown.", "decisions": [{"type": "placement", "department_id": "D08", "mass_id": "M1", "floors": [1]}, {"type": "placement", "department_id": "D01", "mass_id": "M1", "floors": [1, 2, 3]}, {"type": "placement", "department_id": "D05", "mass_id": "M1", "floors": [3]}]}, {"move_id": "K2", "move": "Care-and-making house", "serves": "Pairs specialized learning with the nurse and arts in their own house.", "decisions": [{"type": "placement", "department_id": "D02", "mass_id": "M3", "floors": [1, 2, 3]}, {"type": "placement", "department_id": "D07", "mass_id": "M3", "floors": [1]}, {"type": "placement", "department_id": "D03", "mass_id": "M3", "floors": [1]}]}, {"move_id": "K3", "move": "Closed loop of links", "serves": "Joins each mass to the other two so the loop around the court is continuous.", "decisions": [{"type": "link", "mass_a": "M1", "mass_b": "M2", "direct_link": true}, {"type": "link", "mass_a": "M2", "mass_b": "M3", "direct_link": true}, {"type": "link", "mass_a": "M1", "mass_b": "M3", "direct_link": true}]}], "structure": {"masses": [{"mass_id": "M1", "role": "academy with library crown"}, {"mass_id": "M2", "role": "commons"}, {"mass_id": "M3", "role": "care-and-making house"}], "departments": [{"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]}, {"department_id": "D02", "mass_ids": ["M3"], "occupied_floors": [1, 2, 3]}, {"department_id": "D03", "mass_ids": ["M3"], "occupied_floors": [1]}, {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [3]}, {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]}, {"department_id": "D07", "mass_ids": ["M3"], "occupied_floors": [1]}, {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]}, {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}], "connections": [{"mass_a": "M1", "mass_b": "M2", "direct_link": true}, {"mass_a": "M2", "mass_b": "M3", "direct_link": true}, {"mass_a": "M1", "mass_b": "M3", "direct_link": true}]}, "commitments": {"core": [{"statement": "Administration and the library share the academy with the core classrooms.", "protects": ["K1"]}, {"statement": "Special education, medical and arts share one house.", "protects": ["K2"]}, {"statement": "All three masses are directly linked to each other.", "protects": ["K3"]}], "flexible": ["Custodial placement within the care house ground floor", "Share of core academic on the academy ground floor", "Enclosure type of each link", "Order of arts rooms within the care house"]}, "brief_response": {"main_tradeoff": "Special education sits in its own house apart from general classrooms, which risks separating students, and the commons stays below three floors.", "preferences_given_up": ["three_floors"]}, "unresolved": ["The care house holds special education, so it must meet the 80-ft width while its ground floor also carries arts, medical and custodial.", "Separating special education from core academic may conflict with inclusion goals and needs review.", "The academy ground floor divides area between administration and classrooms; the balance cannot be checked at strategy level.", "Gym and dining are recorded on floor 1 only beneath the double-height volume."]}, "diagram": {"masses": [{"role": "C", "label": "M1 · academy with library crown", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D05", "floors": [3]}, {"dept": "D08", "floors": [1]}]}, {"role": "T", "label": "M3 · care-and-making house", "departments": [{"dept": "D02", "floors": [1, 2, 3]}, {"dept": "D03", "floors": [1]}, {"dept": "D07", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "label": "M2 · commons", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "GT", "CT"]}, "checks": {"errors": [], "warnings": ["concept names many departments ['art', 'classroom', 'library', 'nurse', 'office']; it may be enumerating placements"]}, "claude_notes": ["'Classrooms over the front office' is only partly true: core academic also occupies floor 1 beside administration.", "'A loop around a shared court' describes site geometry the brief does not supply; the structure only records that all three masses are linked."]}], "collection_differences": "The five cases differ in which part organizes the school and in how the masses relate. S01 makes a civic hinge the only crossing in a linear chain. S04 makes the commons the central heart between front and learning. S02 layers the arts over the commons in a fully linked compact cluster. S03 detaches all three pavilions for independent community operation. S05 stacks the office and library inside the academy and gives specialized learning, care and the arts their own house in a linked loop. Structurally, the cases differ in link topology (series through civic, series through commons, triangle, none), in where arts and medical sit, and in which preference each gives up: arts on the ground floor in S02, three floors elsewhere."};
+const KIND = {D01:["d01","Academic","Acad"],D02:["d02","Special ed","SPED"],D03:["d03","Art and music","Arts"],
+  D46:["d46","Gym + dining (double height)","Gym+Din"],D05:["d05","Media","Media"],D07:["d07","Medical","Med"],
+  D08:["d08","Admin","Admin"],D09:["d09","Custodial","Cust"]};
+const ROLE = {C:"Classroom mass",T:"Third mass",G:"Commons mass"};
+
+function escx(t){ return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+function diagramSVG(spec){
+  // Blocks: each department spans its floors; gym + dining merge into one double-height block.
+  const RH=30, LW=4, CW=176, GAP=34, X0=18, TOP=8;
+  const cols = spec.masses.map(m=>{
+    const blocks=[]; let gd=null;
+    m.departments.forEach(d=>{
+      if(d.dept==="D04"||d.dept==="D06"){ gd = gd||{k:"D46",fl:new Set()}; d.floors.forEach(f=>gd.fl.add(f)); }
+      else blocks.push({k:d.dept,a:Math.min(...d.floors),b:Math.max(...d.floors)});
+    });
+    if(gd){ const f=[...gd.fl]; const a=Math.min(...f); blocks.push({k:"D46",a,b:Math.max(Math.max(...f),a+1)}); }
+    blocks.sort((p,q)=>p.a-q.a || (q.b-q.a)-(p.b-p.a) || p.k.localeCompare(q.k));
+    const lanes=[];
+    blocks.forEach(bl=>{ let i=lanes.findIndex(l=>l.every(o=>o.b<bl.a||o.a>bl.b)); if(i<0){lanes.push([]);i=lanes.length-1;} lanes[i].push(bl); bl.lane=i; });
+    return {role:m.role, label:m.label||ROLE[m.role], blocks, nl:Math.max(1,lanes.length), top:Math.max(...blocks.map(b=>b.b))};
+  });
+  const H = Math.max(...cols.map(c=>c.top));
+  const base = TOP + H*RH, W = X0 + 3*CW + 2*GAP + 4;
+  const cx = i => X0 + i*(CW+GAP);
+  let s = `<svg viewBox="0 0 ${W} ${base+64}" role="img" aria-label="Schematic massing diagram">`;
+  for(let f=1; f<=H; f++) s+=`<text class="ax" x="2" y="${base-(f-1)*RH-RH/2+3}">${f}</text>`;
+  cols.forEach((c,i)=>{
+    const x=cx(i), lw=(CW-(c.nl-1)*LW)/c.nl;
+    for(let f=1; f<=c.top; f++) s+=`<rect x="${x}" y="${base-f*RH}" width="${CW}" height="${RH}" fill="var(--plate)" stroke="var(--line)"/>`;
+    c.blocks.forEach(bl=>{
+      const bx=x+bl.lane*(lw+LW), by=base-bl.b*RH+2, bh=(bl.b-bl.a+1)*RH-4, kd=KIND[bl.k];
+      const label = lw>=74 ? kd[1].replace(" (double height)","") : kd[2];
+      s+=`<rect x="${bx+1}" y="${by}" width="${lw-2}" height="${bh}" rx="2" fill="var(--${kd[0]})"/>`;
+      s+=`<text x="${bx+lw/2}" y="${by+bh/2+3.5}" text-anchor="middle">${label}</text>`;
+    });
+    s+=`<text class="mt" x="${x+CW/2}" y="${base+16}" text-anchor="middle">${escx(c.label)}</text>`;
+  });
+  // Links: adjacent columns joined at grade; classroom-commons drawn as an arc beneath.
+  const L=new Set(spec.links), y=base+30;
+  const has=(a,b)=>L.has(a+b)||L.has(b+a);
+  if(has("C","T")) s+=`<line x1="${cx(0)+CW/2}" y1="${y}" x2="${cx(1)+CW/2}" y2="${y}" stroke="var(--link)" stroke-width="3"/>`;
+  if(has("T","G")) s+=`<line x1="${cx(1)+CW/2}" y1="${y}" x2="${cx(2)+CW/2}" y2="${y}" stroke="var(--link)" stroke-width="3"/>`;
+  if(has("C","G")) s+=`<path d="M${cx(0)+CW/2} ${y} C ${cx(0)+CW/2} ${y+26}, ${cx(2)+CW/2} ${y+26}, ${cx(2)+CW/2} ${y}" fill="none" stroke="var(--link)" stroke-width="3"/>`;
+  [0,1,2].forEach(i=>{ s+=`<circle cx="${cx(i)+CW/2}" cy="${y}" r="4" fill="var(--link)"/>`; });
+  return s+"</svg>";
+}
+
+const NAME = {D01:"Core academic",D02:"Special ed",D03:"Art & music",D04:"Gym",D05:"Media",D06:"Dining",D07:"Medical",D08:"Admin",D09:"Custodial"};
+const PREF = {arts_ground_floor:"art and music on the ground floor",media_top_above_admin:"media on top, above admin",three_floors:"three floors in every mass"};
+const $ = id => document.getElementById(id);
+const reviews = {}; let db = null;
+const LS = "me2-seeds-v2-review";
+try { Object.assign(reviews, JSON.parse(localStorage.getItem(LS)||"{}")); } catch(e) {}
+
+function refText(r){ return r.type==="placement" ? `${NAME[r.department_id]} · ${r.mass_id} · fl ${r.floors.join("–")}` : `${r.mass_a}–${r.mass_b} ${r.direct_link?"linked":"not linked"}`; }
+
+function seedHTML(x){
+  const c=x.case, v=reviews[c.case_id]||{};
+  const moves=c.key_moves.map(m=>`<li class="move"><b>${escx(m.move_id)} ${escx(m.move)}.</b> ${escx(m.serves)}<br>${m.decisions.map(r=>`<span class="ref">${escx(refText(r))}</span>`).join("")}</li>`).join("");
+  const core=(c.commitments?.core||[]).map(k=>`<li>${escx(k.statement)} <span class="ref">${k.protects.join(", ")}</span></li>`).join("");
+  const flex=(c.commitments?.flexible||[]).map(k=>`<li>${escx(k)}</li>`).join("");
+  const prefs=c.brief_response.preferences_given_up.map(p=>PREF[p]||p).join("; ")||"none";
+  const chk=[...x.checks.errors.map(e=>`<div class="err">ERROR ${escx(e)}</div>`),...x.checks.warnings.map(w=>`<div>WARN ${escx(w)}</div>`)].join("")||"<div>No errors or warnings.</div>";
+  const notes=x.claude_notes.map(n=>`<li>${escx(n)}</li>`).join("");
+  const btn=(k,l)=>`<button data-c="${c.case_id}" data-v="${k}" class="${v.verdict===k?"on":""}">${l}</button>`;
+  return `<section class="seed" id="${c.case_id}">
+    <h2>${escx(c.case_id)} · ${escx(c.name)}</h2>
+    <div class="diag">${diagramSVG(x.diagram)}</div>
+    <div class="block"><h3>Concept</h3><p class="concept">${escx(c.concept)}</p></div>
+    <div class="block"><h3>Intent</h3><p>${escx(c.intent)}</p></div>
+    <div class="block"><h3>Key moves</h3><ul>${moves}</ul></div>
+    <div class="grid2">
+      <div class="block"><h3>Core commitments</h3><ul>${core}</ul></div>
+      <div class="block"><h3>Flexible</h3><ul>${flex}</ul></div>
+    </div>
+    <div class="block"><h3>Trade-off</h3><p>${escx(c.brief_response.main_tradeoff)} <span class="ref">gives up: ${escx(prefs)}</span></p></div>
+    <div class="block"><h3>Unresolved</h3><ul>${c.unresolved.map(u=>`<li>${escx(u)}</li>`).join("")}</ul></div>
+    <div class="block"><h3>Automatic checks</h3><div class="checks">${chk}</div></div>
+    <div class="verdict">
+      <h3>Your verdict</h3>
+      <div class="answers">${btn("coherent","Coherent")}${btn("minor","Minor issue")}${btn("incoherent","Not coherent")}</div>
+      <textarea id="note-${c.case_id}" data-c="${c.case_id}" placeholder="What does not match? (optional)">${escx(v.note||"")}</textarea>
+      <details><summary>Claude's notes (open after you decide)</summary><ul>${notes}</ul></details>
+    </div>
+  </section>`;
+}
+function renderAll(){
+  $("seeds").innerHTML = DATA.cases.map(seedHTML).join("");
+  $("coll").textContent = DATA.collection_differences;
+  renderStatus();
+}
+function renderStatus(){
+  const n = DATA.cases.filter(x=>reviews[x.case.case_id]?.verdict).length;
+  $("status").textContent = `${n} / ${DATA.cases.length} seeds reviewed`;
+  $("chips").innerHTML = DATA.cases.map(x=>`<a href="#${x.case.case_id}" class="${reviews[x.case.case_id]?.verdict?"done":""}">${x.case.case_id}</a>`).join("");
+}
+async function persist(id){
+  try { localStorage.setItem(LS, JSON.stringify(reviews)); } catch(e) {}
+  if (!db) return;
+  const r = reviews[id];
+  try { await db.collection("coherence_review").doc(id).set({case_id:id, verdict:r.verdict||null, note:r.note||"", saved_at:new Date().toISOString(), seed_set:"seeds_v2"}); } catch(e) {}
+}
+$("seeds").addEventListener("click", e=>{
+  const b=e.target.closest("button[data-v]"); if(!b) return;
+  const id=b.dataset.c; reviews[id]={...(reviews[id]||{}), verdict:b.dataset.v};
+  b.parentElement.querySelectorAll("button").forEach(x=>x.classList.toggle("on", x===b));
+  renderStatus(); persist(id);
+});
+const timers={};
+$("seeds").addEventListener("input", e=>{
+  const id=e.target.dataset.c; if(!id) return;
+  reviews[id]={...(reviews[id]||{}), note:e.target.value};
+  clearTimeout(timers[id]); timers[id]=setTimeout(()=>persist(id),700);
+});
+$("legend").innerHTML = "<strong>Diagram key</strong>" + Object.values(KIND).map(k=>`<span><i style="background:var(--${k[0]})"></i>${k[1]}</span>`).join("") + `<span><i style="background:var(--link);height:3px"></i>direct link</span><span>Floors 1–3 · no dimensions · block width and position mean nothing</span>`;
+renderAll();
+(async()=>{
+  db = window.claude ? await window.claude.use("db") : null;
+  if (!db) return;
+  try {
+    const snap = await db.collection("coherence_review").get();
+    snap.docs.forEach(d=>{ const v=d.data(); if(v&&v.case_id) reviews[v.case_id]={verdict:v.verdict||undefined, note:v.note||""}; });
+    renderAll();
+  } catch(e) {}
+})();
+</script>

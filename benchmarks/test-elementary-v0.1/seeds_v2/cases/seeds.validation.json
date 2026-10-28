@@ -1,0 +1,53 @@
+{
+ "file": "seeds.json",
+ "commitments_module": true,
+ "cases": [
+  {
+   "case_id": "S01",
+   "name": "Civic Hinge Linear Chain",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "S02",
+   "name": "Arts Loft Over the Commons",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor"
+   ]
+  },
+  {
+   "case_id": "S03",
+   "name": "Detached Campus Pavilions",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "S04",
+   "name": "Commons Heart Between Front and Learning",
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "S05",
+   "name": "Academy Tower With Care House",
+   "errors": [],
+   "warnings": [
+    "concept names many departments ['art', 'classroom', 'library', 'nurse', 'office']; it may be enumerating placements"
+   ],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  }
+ ]
+}

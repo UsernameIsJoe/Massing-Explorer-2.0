@@ -1,0 +1,1396 @@
+{
+ "cases": [
+  {
+   "case_id": "S01",
+   "name": "Civic Hinge Linear Chain",
+   "concept": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.",
+   "intent": "Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.",
+   "key_moves": [
+    {
+     "move_id": "K1",
+     "move": "Civic hinge as front door",
+     "serves": "Makes the middle mass the public face that holds arrival, the office, care and the library.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D08",
+       "mass_id": "M2",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D07",
+       "mass_id": "M2",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D05",
+       "mass_id": "M2",
+       "floors": [
+        3
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K2",
+     "move": "Serial links through the hinge",
+     "serves": "Ensures every passage between learning and commons crosses the hinge.",
+     "decisions": [
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M2",
+       "direct_link": true
+      },
+      {
+       "type": "link",
+       "mass_a": "M2",
+       "mass_b": "M3",
+       "direct_link": true
+      },
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M3",
+       "direct_link": false
+      }
+     ]
+    },
+    {
+     "move_id": "K3",
+     "move": "Arts at the hinge base",
+     "serves": "Puts the arts in the public face of the school, starting at ground level.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D03",
+       "mass_id": "M2",
+       "floors": [
+        1,
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K4",
+     "move": "Single learning bar at the end",
+     "serves": "Keeps all classroom departments together at the quiet end of the chain.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D01",
+       "mass_id": "M1",
+       "floors": [
+        1,
+        2,
+        3
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D02",
+       "mass_id": "M1",
+       "floors": [
+        1,
+        2
+       ]
+      }
+     ]
+    }
+   ],
+   "structure": {
+    "masses": [
+     {
+      "mass_id": "M1",
+      "role": "learning bar at chain end"
+     },
+     {
+      "mass_id": "M2",
+      "role": "civic hinge"
+     },
+     {
+      "mass_id": "M3",
+      "role": "community commons at chain end"
+     }
+    ],
+    "departments": [
+     {
+      "department_id": "D01",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "department_id": "D02",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1,
+       2
+      ]
+     },
+     {
+      "department_id": "D03",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1,
+       2
+      ]
+     },
+     {
+      "department_id": "D04",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D05",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       3
+      ]
+     },
+     {
+      "department_id": "D06",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D07",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D08",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D09",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     }
+    ],
+    "connections": [
+     {
+      "mass_a": "M1",
+      "mass_b": "M2",
+      "direct_link": true
+     },
+     {
+      "mass_a": "M2",
+      "mass_b": "M3",
+      "direct_link": true
+     },
+     {
+      "mass_a": "M1",
+      "mass_b": "M3",
+      "direct_link": false
+     }
+    ]
+   },
+   "commitments": {
+    "core": [
+     {
+      "statement": "Learning and commons connect only through the civic hinge.",
+      "protects": [
+       "K2"
+      ]
+     },
+     {
+      "statement": "Administration, arts and library share the hinge mass.",
+      "protects": [
+       "K1",
+       "K3"
+      ]
+     },
+     {
+      "statement": "All classroom departments stay in the end bar.",
+      "protects": [
+       "K4"
+      ]
+     }
+    ],
+    "flexible": [
+     "Placement of custodial and medical within the hinge ground floor",
+     "Whether special education also reaches floor 3",
+     "Enclosure type of the two links (bridge or passage)",
+     "Distribution of core academic across its floors"
+    ]
+   },
+   "brief_response": {
+    "main_tradeoff": "The commons stays a two-level volume without a third floor, and daily lunch and gym traffic passes through the civic hinge, mixing student flow with the office and visitor zone.",
+    "preferences_given_up": [
+     "three_floors"
+    ]
+   },
+   "unresolved": [
+    "Hinge floor 2 holds only music, so the hinge's upper floors may be partial plates.",
+    "Gym and dining are recorded as occupying floor 1 only; the double-height volume reaches level 2 without occupied area.",
+    "Custodial in the hinge is separated from the kitchen in the commons; the service route cannot be checked without site access data."
+   ]
+  },
+  {
+   "case_id": "S02",
+   "name": "Arts Loft Over the Commons",
+   "concept": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+   "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.",
+   "key_moves": [
+    {
+     "move_id": "K1",
+     "move": "Arts loft on the commons roof",
+     "serves": "Forms the single cultural block by stacking the arts over the commons volume.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D03",
+       "mass_id": "M1",
+       "floors": [
+        3
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D04",
+       "mass_id": "M1",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D06",
+       "mass_id": "M1",
+       "floors": [
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K2",
+     "move": "Civic block with library crown",
+     "serves": "Crowns the civic block with the library over the office and keeps specialized learning beside care and leadership.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D08",
+       "mass_id": "M2",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D07",
+       "mass_id": "M2",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D02",
+       "mass_id": "M2",
+       "floors": [
+        1,
+        2
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D05",
+       "mass_id": "M2",
+       "floors": [
+        3
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K3",
+     "move": "Closed triangle of links",
+     "serves": "Joins each mass to both others so the cluster works as one indoor building.",
+     "decisions": [
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M2",
+       "direct_link": true
+      },
+      {
+       "type": "link",
+       "mass_a": "M2",
+       "mass_b": "M3",
+       "direct_link": true
+      },
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M3",
+       "direct_link": true
+      }
+     ]
+    },
+    {
+     "move_id": "K4",
+     "move": "Plain academic bar",
+     "serves": "Completes the triangle with a dedicated three-floor classroom bar.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D01",
+       "mass_id": "M3",
+       "floors": [
+        1,
+        2,
+        3
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D09",
+       "mass_id": "M3",
+       "floors": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "structure": {
+    "masses": [
+     {
+      "mass_id": "M1",
+      "role": "commons with arts loft"
+     },
+     {
+      "mass_id": "M2",
+      "role": "civic block with library crown"
+     },
+     {
+      "mass_id": "M3",
+      "role": "academic bar"
+     }
+    ],
+    "departments": [
+     {
+      "department_id": "D01",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "department_id": "D02",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1,
+       2
+      ]
+     },
+     {
+      "department_id": "D03",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       3
+      ]
+     },
+     {
+      "department_id": "D04",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D05",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       3
+      ]
+     },
+     {
+      "department_id": "D06",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D07",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D08",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D09",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     }
+    ],
+    "connections": [
+     {
+      "mass_a": "M1",
+      "mass_b": "M2",
+      "direct_link": true
+     },
+     {
+      "mass_a": "M2",
+      "mass_b": "M3",
+      "direct_link": true
+     },
+     {
+      "mass_a": "M1",
+      "mass_b": "M3",
+      "direct_link": true
+     }
+    ]
+   },
+   "commitments": {
+    "core": [
+     {
+      "statement": "The arts sit above the commons volume in the same mass.",
+      "protects": [
+       "K1"
+      ]
+     },
+     {
+      "statement": "The library crowns the civic block over administration.",
+      "protects": [
+       "K2"
+      ]
+     },
+     {
+      "statement": "Every pair of masses has a direct built link.",
+      "protects": [
+       "K3"
+      ]
+     }
+    ],
+    "flexible": [
+     "Custodial location among ground floors",
+     "Whether special education also reaches floor 3",
+     "Enclosure type of each link",
+     "Distribution of core academic across its three floors"
+    ]
+   },
+   "brief_response": {
+    "main_tradeoff": "The arts give up the ground floor and depend on vertical access over a long-span volume, in exchange for a combined cultural block and three-floor massing throughout.",
+    "preferences_given_up": [
+     "arts_ground_floor"
+    ]
+   },
+   "unresolved": [
+    "Floor 3 over the gym and dining needs long-span transfer structure; floor 2 of that mass is void only.",
+    "The civic block contains special education, so it inherits the 80-ft width requirement.",
+    "An academic bar holding only core academic and custodial may fall below the minimum footprint implied by the 80-ft width and ratio limits.",
+    "Gym and dining are recorded on floor 1 only beneath the double-height volume."
+   ]
+  },
+  {
+   "case_id": "S03",
+   "name": "Detached Campus Pavilions",
+   "concept": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+   "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.",
+   "key_moves": [
+    {
+     "move_id": "K1",
+     "move": "No built links",
+     "serves": "Keeps the three pavilions free-standing on shared grounds.",
+     "decisions": [
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M2",
+       "direct_link": false
+      },
+      {
+       "type": "link",
+       "mass_a": "M2",
+       "mass_b": "M3",
+       "direct_link": false
+      },
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M3",
+       "direct_link": false
+      }
+     ]
+    },
+    {
+     "move_id": "K2",
+     "move": "Self-sufficient learning pavilion",
+     "serves": "Keeps classrooms, the nurse and building service together so students rarely need to leave.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D01",
+       "mass_id": "M1",
+       "floors": [
+        1,
+        2,
+        3
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D02",
+       "mass_id": "M1",
+       "floors": [
+        1,
+        2
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D07",
+       "mass_id": "M1",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D09",
+       "mass_id": "M1",
+       "floors": [
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K3",
+     "move": "Independent community pavilion",
+     "serves": "Isolates athletics and dining so they can open on their own.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D04",
+       "mass_id": "M2",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D06",
+       "mass_id": "M2",
+       "floors": [
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K4",
+     "move": "Low civic-arts pavilion",
+     "serves": "Forms the arrival pavilion with the library directly above the office.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D08",
+       "mass_id": "M3",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D03",
+       "mass_id": "M3",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D05",
+       "mass_id": "M3",
+       "floors": [
+        2
+       ]
+      }
+     ]
+    }
+   ],
+   "structure": {
+    "masses": [
+     {
+      "mass_id": "M1",
+      "role": "self-sufficient learning pavilion"
+     },
+     {
+      "mass_id": "M2",
+      "role": "independent community pavilion"
+     },
+     {
+      "mass_id": "M3",
+      "role": "low civic-arts pavilion"
+     }
+    ],
+    "departments": [
+     {
+      "department_id": "D01",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "department_id": "D02",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1,
+       2
+      ]
+     },
+     {
+      "department_id": "D03",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D04",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D05",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       2
+      ]
+     },
+     {
+      "department_id": "D06",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D07",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D08",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D09",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     }
+    ],
+    "connections": [
+     {
+      "mass_a": "M1",
+      "mass_b": "M2",
+      "direct_link": false
+     },
+     {
+      "mass_a": "M2",
+      "mass_b": "M3",
+      "direct_link": false
+     },
+     {
+      "mass_a": "M1",
+      "mass_b": "M3",
+      "direct_link": false
+     }
+    ]
+   },
+   "commitments": {
+    "core": [
+     {
+      "statement": "The masses remain separate, with no built connection between any pair.",
+      "protects": [
+       "K1",
+       "K3"
+      ]
+     },
+     {
+      "statement": "Medical and custodial stay inside the learning pavilion.",
+      "protects": [
+       "K2"
+      ]
+     },
+     {
+      "statement": "The civic pavilion stays low, with the library over the office.",
+      "protects": [
+       "K4"
+      ]
+     }
+    ],
+    "flexible": [
+     "Order of the pavilions on the grounds",
+     "Number of floors special education occupies",
+     "Covered but unenclosed outdoor walkways",
+     "Distribution of core academic across its floors"
+    ]
+   },
+   "brief_response": {
+    "main_tradeoff": "Students walk outdoors to reach dining, the gym, the office and the library, trading weather protection and supervision for independent community operation; two pavilions stay below three floors.",
+    "preferences_given_up": [
+     "three_floors"
+    ]
+   },
+   "unresolved": [
+    "Without site and code context, it is unknown whether unlinked masses are acceptable for security, accessibility and weather.",
+    "The community pavilion has no custodial or receiving of its own; the kitchen service route depends on unsupplied site access.",
+    "Medical is separated from administration, so the visitor-to-nurse route crosses outdoor grounds.",
+    "Gym and dining are recorded on floor 1 only beneath the double-height volume."
+   ]
+  },
+  {
+   "case_id": "S04",
+   "name": "Commons Heart Between Front and Learning",
+   "concept": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.",
+   "intent": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.",
+   "key_moves": [
+    {
+     "move_id": "K1",
+     "move": "Heart links front and wing",
+     "serves": "Makes the commons the only connection between the civic front and the learning wing.",
+     "decisions": [
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M2",
+       "direct_link": true
+      },
+      {
+       "type": "link",
+       "mass_a": "M2",
+       "mass_b": "M3",
+       "direct_link": true
+      },
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M3",
+       "direct_link": false
+      }
+     ]
+    },
+    {
+     "move_id": "K2",
+     "move": "Arts within the learning wing",
+     "serves": "Folds the arts into daily teaching beyond the heart, at ground level.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D03",
+       "mass_id": "M3",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D01",
+       "mass_id": "M3",
+       "floors": [
+        1,
+        2,
+        3
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D02",
+       "mass_id": "M3",
+       "floors": [
+        1,
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K3",
+     "move": "Two-floor civic front",
+     "serves": "Gives arrival a compact front with the library over the office.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D08",
+       "mass_id": "M1",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D07",
+       "mass_id": "M1",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D09",
+       "mass_id": "M1",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D05",
+       "mass_id": "M1",
+       "floors": [
+        2
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K4",
+     "move": "Commons as central heart",
+     "serves": "Places the shared volume at the centre of the three-part sequence.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D04",
+       "mass_id": "M2",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D06",
+       "mass_id": "M2",
+       "floors": [
+        1
+       ]
+      }
+     ]
+    }
+   ],
+   "structure": {
+    "masses": [
+     {
+      "mass_id": "M1",
+      "role": "civic front"
+     },
+     {
+      "mass_id": "M2",
+      "role": "central commons heart"
+     },
+     {
+      "mass_id": "M3",
+      "role": "learning wing beyond heart"
+     }
+    ],
+    "departments": [
+     {
+      "department_id": "D01",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "department_id": "D02",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1,
+       2
+      ]
+     },
+     {
+      "department_id": "D03",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D04",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D05",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       2
+      ]
+     },
+     {
+      "department_id": "D06",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D07",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D08",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D09",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     }
+    ],
+    "connections": [
+     {
+      "mass_a": "M1",
+      "mass_b": "M2",
+      "direct_link": true
+     },
+     {
+      "mass_a": "M2",
+      "mass_b": "M3",
+      "direct_link": true
+     },
+     {
+      "mass_a": "M1",
+      "mass_b": "M3",
+      "direct_link": false
+     }
+    ]
+   },
+   "commitments": {
+    "core": [
+     {
+      "statement": "The civic front and learning wing connect only through the commons.",
+      "protects": [
+       "K1",
+       "K4"
+      ]
+     },
+     {
+      "statement": "The arts stay on the learning wing's ground floor.",
+      "protects": [
+       "K2"
+      ]
+     },
+     {
+      "statement": "The library sits over the office in the civic front.",
+      "protects": [
+       "K3"
+      ]
+     }
+    ],
+    "flexible": [
+     "Custodial and medical arrangement within the civic front ground floor",
+     "Number of floors special education occupies",
+     "Enclosure type of the two links",
+     "Arts room order along the learning wing ground floor"
+    ]
+   },
+   "brief_response": {
+    "main_tradeoff": "Every trip from the front to the classrooms crosses the commons, so lunch and assemblies interrupt circulation; the civic front and commons stay below three floors.",
+    "preferences_given_up": [
+     "three_floors"
+    ]
+   },
+   "unresolved": [
+    "A route through or alongside the commons must stay usable while the commons is in use; this cannot be resolved without dimensions.",
+    "The learning wing carries core academic, special education and arts; its ground-floor load against the width and ratio limits needs checking.",
+    "Custodial in the civic front is remote from the kitchen in the commons.",
+    "Gym and dining are recorded on floor 1 only beneath the double-height volume."
+   ]
+  },
+  {
+   "case_id": "S05",
+   "name": "Academy Tower With Care House",
+   "concept": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+   "intent": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.",
+   "key_moves": [
+    {
+     "move_id": "K1",
+     "move": "Office and library in the academy",
+     "serves": "Stacks classrooms over the office in the academy, with the library at its crown.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D08",
+       "mass_id": "M1",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D01",
+       "mass_id": "M1",
+       "floors": [
+        1,
+        2,
+        3
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D05",
+       "mass_id": "M1",
+       "floors": [
+        3
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K2",
+     "move": "Care-and-making house",
+     "serves": "Pairs specialized learning with the nurse and arts in their own house.",
+     "decisions": [
+      {
+       "type": "placement",
+       "department_id": "D02",
+       "mass_id": "M3",
+       "floors": [
+        1,
+        2,
+        3
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D07",
+       "mass_id": "M3",
+       "floors": [
+        1
+       ]
+      },
+      {
+       "type": "placement",
+       "department_id": "D03",
+       "mass_id": "M3",
+       "floors": [
+        1
+       ]
+      }
+     ]
+    },
+    {
+     "move_id": "K3",
+     "move": "Closed loop of links",
+     "serves": "Joins each mass to the other two so the loop around the court is continuous.",
+     "decisions": [
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M2",
+       "direct_link": true
+      },
+      {
+       "type": "link",
+       "mass_a": "M2",
+       "mass_b": "M3",
+       "direct_link": true
+      },
+      {
+       "type": "link",
+       "mass_a": "M1",
+       "mass_b": "M3",
+       "direct_link": true
+      }
+     ]
+    }
+   ],
+   "structure": {
+    "masses": [
+     {
+      "mass_id": "M1",
+      "role": "academy with library crown"
+     },
+     {
+      "mass_id": "M2",
+      "role": "commons"
+     },
+     {
+      "mass_id": "M3",
+      "role": "care-and-making house"
+     }
+    ],
+    "departments": [
+     {
+      "department_id": "D01",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "department_id": "D02",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1,
+       2,
+       3
+      ]
+     },
+     {
+      "department_id": "D03",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D04",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D05",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       3
+      ]
+     },
+     {
+      "department_id": "D06",
+      "mass_ids": [
+       "M2"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D07",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D08",
+      "mass_ids": [
+       "M1"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     },
+     {
+      "department_id": "D09",
+      "mass_ids": [
+       "M3"
+      ],
+      "occupied_floors": [
+       1
+      ]
+     }
+    ],
+    "connections": [
+     {
+      "mass_a": "M1",
+      "mass_b": "M2",
+      "direct_link": true
+     },
+     {
+      "mass_a": "M2",
+      "mass_b": "M3",
+      "direct_link": true
+     },
+     {
+      "mass_a": "M1",
+      "mass_b": "M3",
+      "direct_link": true
+     }
+    ]
+   },
+   "commitments": {
+    "core": [
+     {
+      "statement": "Administration and the library share the academy with the core classrooms.",
+      "protects": [
+       "K1"
+      ]
+     },
+     {
+      "statement": "Special education, medical and arts share one house.",
+      "protects": [
+       "K2"
+      ]
+     },
+     {
+      "statement": "All three masses are directly linked to each other.",
+      "protects": [
+       "K3"
+      ]
+     }
+    ],
+    "flexible": [
+     "Custodial placement within the care house ground floor",
+     "Share of core academic on the academy ground floor",
+     "Enclosure type of each link",
+     "Order of arts rooms within the care house"
+    ]
+   },
+   "brief_response": {
+    "main_tradeoff": "Special education sits in its own house apart from general classrooms, which risks separating students, and the commons stays below three floors.",
+    "preferences_given_up": [
+     "three_floors"
+    ]
+   },
+   "unresolved": [
+    "The care house holds special education, so it must meet the 80-ft width while its ground floor also carries arts, medical and custodial.",
+    "Separating special education from core academic may conflict with inclusion goals and needs review.",
+    "The academy ground floor divides area between administration and classrooms; the balance cannot be checked at strategy level.",
+    "Gym and dining are recorded on floor 1 only beneath the double-height volume."
+   ]
+  }
+ ],
+ "collection_differences": "The five cases differ in which part organizes the school and in how the masses relate. S01 makes a civic hinge the only crossing in a linear chain. S04 makes the commons the central heart between front and learning. S02 layers the arts over the commons in a fully linked compact cluster. S03 detaches all three pavilions for independent community operation. S05 stacks the office and library inside the academy and gives specialized learning, care and the arts their own house in a linked loop. Structurally, the cases differ in link topology (series through civic, series through commons, triangle, none), in where arts and medical sit, and in which preference each gives up: arts on the ground floor in S02, three floors elsewhere."
+}

@@ -1,0 +1,143 @@
+<title>ME2 Seed Coherence Review</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long sheet, one seed per section; diagram first, then concept and the fields that must agree with it. */
+/*__TOKENS__*/
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--sans)}
+.wrap{max-width:1000px;margin:0 auto;padding-block:20px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:22px}
+h1{font-size:1.3rem;margin:0;text-wrap:balance}
+h2{font-size:1.1rem;margin:0;text-wrap:balance}
+h3{font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0}
+.sub{color:var(--muted);margin:4px 0 0;max-width:72ch}
+.status{font:500 .8rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips a{font:500 .8rem var(--mono);color:var(--fg);text-decoration:none;border:1px solid var(--line);border-radius:5px;padding:4px 9px;background:var(--surface)}
+.chips a.done{background:var(--accent-soft);border-color:var(--accent)}
+.seed{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px;display:grid;gap:14px;min-width:0}
+.diag{width:100%;max-width:620px}
+.diag svg{display:block;width:100%;height:auto}
+.diag text{font:500 10px var(--sans);fill:var(--fg)}
+.diag .ax{fill:var(--muted);font:500 9px var(--mono)}
+.diag .mt{fill:var(--muted);font:600 9.5px var(--sans)}
+.concept{font-size:1.02rem;margin:0;max-width:72ch;padding:10px 14px;background:var(--anchor);border:1px solid var(--anchor-line);border-radius:5px}
+p{margin:0;max-width:72ch}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:720px){.grid2{grid-template-columns:1fr}}
+.block{display:grid;gap:6px;min-width:0}
+ul{margin:0;padding-left:1.1em;display:grid;gap:6px}
+.move b{font-weight:600}
+.ref{display:inline-block;font:.74rem var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 5px;margin:2px 4px 0 0}
+.checks{font:.8rem var(--mono);color:var(--muted)}
+.checks .err{color:var(--fg);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted);align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
+.answers{display:flex;flex-wrap:wrap;gap:8px}
+button{font:600 .9rem var(--sans);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:5px;padding:9px 14px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,textarea:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.on{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+textarea{width:100%;box-sizing:border-box;min-height:56px;font:.9rem var(--sans);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:5px;padding:8px}
+details{color:var(--muted)}
+details[open]{color:var(--fg)}
+.verdict{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:14px}
+.save{font:.8rem var(--mono);color:var(--muted)}
+</style>
+
+<div class="wrap">
+  <header>
+    <h1>Seeds v2.0 · Coherence review</h1>
+    <p class="sub">For each seed, read the concept against the diagram and the fields below it. You are checking one thing: <strong>do all parts describe the same scheme?</strong> Not whether the scheme is good. Mark <strong>Coherent</strong>, <strong>Minor issue</strong> (fixable wording or an omission) or <strong>Not coherent</strong> (the concept and the decisions describe different schemes).</p>
+  </header>
+  <div class="status" id="status"></div>
+  <nav class="chips" id="chips" aria-label="Jump to seed"></nav>
+  <div class="legend" id="legend" aria-label="Diagram key"></div>
+  <div id="seeds" style="display:grid;gap:22px"></div>
+  <section class="seed"><h3>Across the collection</h3><p id="coll"></p></section>
+</div>
+
+<script>
+const DATA = __SEEDS__;
+/*__KINDS__*/
+function escx(t){ return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+/*__DIAGRAM__*/
+const NAME = {D01:"Core academic",D02:"Special ed",D03:"Art & music",D04:"Gym",D05:"Media",D06:"Dining",D07:"Medical",D08:"Admin",D09:"Custodial"};
+const PREF = {arts_ground_floor:"art and music on the ground floor",media_top_above_admin:"media on top, above admin",three_floors:"three floors in every mass"};
+const $ = id => document.getElementById(id);
+const reviews = {}; let db = null;
+const LS = "me2-seeds-v2-review";
+try { Object.assign(reviews, JSON.parse(localStorage.getItem(LS)||"{}")); } catch(e) {}
+
+function refText(r){ return r.type==="placement" ? `${NAME[r.department_id]} · ${r.mass_id} · fl ${r.floors.join("–")}` : `${r.mass_a}–${r.mass_b} ${r.direct_link?"linked":"not linked"}`; }
+
+function seedHTML(x){
+  const c=x.case, v=reviews[c.case_id]||{};
+  const moves=c.key_moves.map(m=>`<li class="move"><b>${escx(m.move_id)} ${escx(m.move)}.</b> ${escx(m.serves)}<br>${m.decisions.map(r=>`<span class="ref">${escx(refText(r))}</span>`).join("")}</li>`).join("");
+  const core=(c.commitments?.core||[]).map(k=>`<li>${escx(k.statement)} <span class="ref">${k.protects.join(", ")}</span></li>`).join("");
+  const flex=(c.commitments?.flexible||[]).map(k=>`<li>${escx(k)}</li>`).join("");
+  const prefs=c.brief_response.preferences_given_up.map(p=>PREF[p]||p).join("; ")||"none";
+  const chk=[...x.checks.errors.map(e=>`<div class="err">ERROR ${escx(e)}</div>`),...x.checks.warnings.map(w=>`<div>WARN ${escx(w)}</div>`)].join("")||"<div>No errors or warnings.</div>";
+  const notes=x.claude_notes.map(n=>`<li>${escx(n)}</li>`).join("");
+  const btn=(k,l)=>`<button data-c="${c.case_id}" data-v="${k}" class="${v.verdict===k?"on":""}">${l}</button>`;
+  return `<section class="seed" id="${c.case_id}">
+    <h2>${escx(c.case_id)} · ${escx(c.name)}</h2>
+    <div class="diag">${diagramSVG(x.diagram)}</div>
+    <div class="block"><h3>Concept</h3><p class="concept">${escx(c.concept)}</p></div>
+    <div class="block"><h3>Intent</h3><p>${escx(c.intent)}</p></div>
+    <div class="block"><h3>Key moves</h3><ul>${moves}</ul></div>
+    <div class="grid2">
+      <div class="block"><h3>Core commitments</h3><ul>${core}</ul></div>
+      <div class="block"><h3>Flexible</h3><ul>${flex}</ul></div>
+    </div>
+    <div class="block"><h3>Trade-off</h3><p>${escx(c.brief_response.main_tradeoff)} <span class="ref">gives up: ${escx(prefs)}</span></p></div>
+    <div class="block"><h3>Unresolved</h3><ul>${c.unresolved.map(u=>`<li>${escx(u)}</li>`).join("")}</ul></div>
+    <div class="block"><h3>Automatic checks</h3><div class="checks">${chk}</div></div>
+    <div class="verdict">
+      <h3>Your verdict</h3>
+      <div class="answers">${btn("coherent","Coherent")}${btn("minor","Minor issue")}${btn("incoherent","Not coherent")}</div>
+      <textarea id="note-${c.case_id}" data-c="${c.case_id}" placeholder="What does not match? (optional)">${escx(v.note||"")}</textarea>
+      <details><summary>Claude's notes (open after you decide)</summary><ul>${notes}</ul></details>
+    </div>
+  </section>`;
+}
+function renderAll(){
+  $("seeds").innerHTML = DATA.cases.map(seedHTML).join("");
+  $("coll").textContent = DATA.collection_differences;
+  renderStatus();
+}
+function renderStatus(){
+  const n = DATA.cases.filter(x=>reviews[x.case.case_id]?.verdict).length;
+  $("status").textContent = `${n} / ${DATA.cases.length} seeds reviewed`;
+  $("chips").innerHTML = DATA.cases.map(x=>`<a href="#${x.case.case_id}" class="${reviews[x.case.case_id]?.verdict?"done":""}">${x.case.case_id}</a>`).join("");
+}
+async function persist(id){
+  try { localStorage.setItem(LS, JSON.stringify(reviews)); } catch(e) {}
+  if (!db) return;
+  const r = reviews[id];
+  try { await db.collection("coherence_review").doc(id).set({case_id:id, verdict:r.verdict||null, note:r.note||"", saved_at:new Date().toISOString(), seed_set:"seeds_v2"}); } catch(e) {}
+}
+$("seeds").addEventListener("click", e=>{
+  const b=e.target.closest("button[data-v]"); if(!b) return;
+  const id=b.dataset.c; reviews[id]={...(reviews[id]||{}), verdict:b.dataset.v};
+  b.parentElement.querySelectorAll("button").forEach(x=>x.classList.toggle("on", x===b));
+  renderStatus(); persist(id);
+});
+const timers={};
+$("seeds").addEventListener("input", e=>{
+  const id=e.target.dataset.c; if(!id) return;
+  reviews[id]={...(reviews[id]||{}), note:e.target.value};
+  clearTimeout(timers[id]); timers[id]=setTimeout(()=>persist(id),700);
+});
+$("legend").innerHTML = "<strong>Diagram key</strong>" + Object.values(KIND).map(k=>`<span><i style="background:var(--${k[0]})"></i>${k[1]}</span>`).join("") + `<span><i style="background:var(--link);height:3px"></i>direct link</span><span>Floors 1–3 · no dimensions · block width and position mean nothing</span>`;
+renderAll();
+(async()=>{
+  db = window.claude ? await window.claude.use("db") : null;
+  if (!db) return;
+  try {
+    const snap = await db.collection("coherence_review").get();
+    snap.docs.forEach(d=>{ const v=d.data(); if(v&&v.case_id) reviews[v.case_id]={verdict:v.verdict||undefined, note:v.note||""}; });
+    renderAll();
+  } catch(e) {}
+})();
+</script>
