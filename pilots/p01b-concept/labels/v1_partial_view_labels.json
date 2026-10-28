@@ -1,0 +1,25 @@
+{
+ "note": "p01b-v1 partial-view labels (diagram, concept, intent, structure line). Set aside in v1.1; not scored.",
+ "labels": {
+  "C03": {
+   "answer": "option_1",
+   "note": "",
+   "saved_at": "2026-10-28T18:07:44.015Z"
+  },
+  "C12": {
+   "answer": "option_1",
+   "note": "",
+   "saved_at": "2026-10-28T18:09:28.441Z"
+  },
+  "C15": {
+   "answer": "option_2",
+   "note": "",
+   "saved_at": "2026-10-28T18:07:33.280Z"
+  },
+  "C16": {
+   "answer": "option_2",
+   "note": "option 2 is exactly the same with anchor in diagram",
+   "saved_at": "2026-10-28T18:08:21.988Z"
+  }
+ }
+}

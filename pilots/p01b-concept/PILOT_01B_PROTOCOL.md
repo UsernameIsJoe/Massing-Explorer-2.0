@@ -1,6 +1,6 @@
 # Pilot 01b — Do concept embeddings represent strategic similarity?
 
-Status: **locked 2026-10-28** before any label or embedding. Changes create `p01b-v2` and apply to new runs only.
+Status: **locked 2026-10-28** before any label or embedding; **revision p01b-v1.1** recorded below. Changes create `p01b-v2` and apply to new runs only.
 
 ## Question
 
@@ -23,6 +23,17 @@ Selection rule, fixed before embeddings (`build_p01b.py`):
 - `cross_run`: anchor plus its nearest structural twin from a different run (structure distance ≤ 0.10), against the most concept-wording-similar case that is not a twin. These are independently written versions of the same idea, the natural paraphrase test.
 - `disagree`: structure distance and concept wording (TF-IDF) disagree about the closer option; one per anchor, largest margin first.
 - `control`: both agree by a wide margin.
+
+## Revision p01b-v1.1 (2026-10-28, after 4 of 16 labels, before any embedding)
+
+The labeler noted that items showed only part of each record. Labeling is now two passes over the same 16 items in the same order:
+
+- **Pass A — concepts only** (`data/labeling_set_concept.json`, page `labeling_page_concept.html`, record `labels_concept`): each scheme shown by its concept alone. Question: which option's concept describes the closer organizing idea. Truth for **fidelity**: does an embedding capture what the concept means?
+- **Pass B — whole scheme** (`data/labeling_set_full.json`, page `labeling_page.html`, record `labels_full`): diagram, concept, intent, key moves with their structural references, trade-off, structure line; commitments collapsed; unresolved notes omitted. Truth for **usefulness**: does concept meaning predict overall strategic closeness?
+
+The gate below is decided on Pass B. Pass A diagnoses a failure: an encoder that fails Pass A cannot read the concepts; one that passes A but fails B shows that concepts alone do not carry the strategy. Agreement between the labeler's own A and B answers shows how much the concept drives the overall judgment.
+
+The 4 labels saved under v1 (partial view) are kept in `labels/v1_partial_view_labels.json` and not scored. The labeler judged prior exposure to those diagrams negligible for this check. The LLM baseline is re-run on the Pass B set; the v1 baseline is kept as `labels/llm_labels_v1_partial.json`.
 
 ## Predictors
 

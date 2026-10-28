@@ -1,4 +1,4 @@
-<title>ME2 Concept Triplets</title>
+<title>__TITLE__</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
@@ -39,6 +39,8 @@ h1{font-size:1.3rem;margin:0;text-wrap:balance}
 .text{margin:0;max-width:75ch}
 .text.concept{font-weight:500}
 .text.intent{color:var(--muted);font-size:.92rem}
+.more ul,details ul{margin:4px 0 0;padding-left:1.1em;display:grid;gap:5px;font-size:.9rem}
+.ref{display:inline-block;font:.72rem var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 5px;margin:2px 4px 0 0}
 .struct{font:.8rem/1.6 var(--mono);color:var(--muted);border-top:1px dashed var(--line);padding-top:8px;overflow-wrap:anywhere}
 .opts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media (max-width:720px){.opts{grid-template-columns:1fr}}
@@ -75,8 +77,8 @@ details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.75rem var(--mono);
 <div class="wrap">
   <header>
     <div>
-      <h1>Pilot 01b · Concept triplets</h1>
-      <p class="sub">Pick the option that is <strong>more like the same strategy</strong> as the anchor: the one you would call a variation of that scheme rather than a different idea. Weigh what is grouped together, how the masses relate, what is raised or stacked, and what the scheme is trying to achieve. Ignore wording, brief compliance and which design is better. If one option shares the structure and the other shares the intention, choose what you think defines the strategy and say why in the note. Use "About equal" only when you truly cannot separate them.</p>
+      <h1>__H1__</h1>
+      <p class="sub">__SUB__</p>
     </div>
     <div class="status" id="status">0 / 0 labeled</div>
   </header>
@@ -128,6 +130,7 @@ details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.75rem var(--mono);
 
 <script>
 const SET = __DATA__;
+const MODE = __MODE__;
 const DIAGRAMS = __DIAGRAMS__;
 const PROBES = __PROBES__;
 const KIND = {D01:["d01","Academic","Acad"],D02:["d02","Special ed","SPED"],D03:["d03","Art and music","Arts"],
@@ -175,21 +178,29 @@ function diagramSVG(spec){
   [0,1,2].forEach(i=>{ s+=`<circle cx="${cx(i)+CW/2}" cy="${y}" r="4" fill="var(--link)"/>`; });
   return s+"</svg>";
 }
-const items = SET.items.filter(x=>x.anchor.structure);
+const items = SET.items;
 const reviews = {};
 let view = "label";
 const labels = {};
 let i = 0, db = null;
 const $ = id => document.getElementById(id);
-const LS = "me2-p01b-labels";
+const LS = "me2-p01b-labels-" + MODE;
 try { Object.assign(labels, JSON.parse(localStorage.getItem(LS) || "{}")); } catch (e) {}
 try { Object.assign(reviews, JSON.parse(localStorage.getItem(LS+"-probes") || "{}")); } catch (e) {}
 
 function cardHTML(tag, o){
-  const s = o.structure ? `<div class="struct">${esc(o.structure)}</div>` : "";
+  if (MODE==="concept") return `<span class="tag">${tag}</span><p class="text concept">${esc(o.text)}</p>`;
   const d = o.structure && DIAGRAMS[o.structure] ? `<div class="diag">${diagramSVG(DIAGRAMS[o.structure])}</div>` : "";
-  const it = o.intent ? `<p class="text intent"><span class="tag">Intent</span> ${esc(o.intent)}</p>` : "";
-  return `<span class="tag">${tag}</span>${d}<p class="text concept">${esc(o.text)}</p>${it}${s}`;
+  const moves = (o.moves||[]).map(m=>`<li><b>${esc(m.move)}.</b> ${esc(m.serves)}<br>${m.refs.map(r=>`<span class="ref">${esc(r)}</span>`).join("")}</li>`).join("");
+  const core = (o.commitments?.core||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+  const flex = (o.commitments?.flexible||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+  return `<span class="tag">${tag}</span>${d}
+    <p class="text concept">${esc(o.text)}</p>
+    <p class="text intent"><span class="tag">Intent</span> ${esc(o.intent)}</p>
+    <div class="more"><span class="tag">Key moves</span><ul>${moves}</ul></div>
+    <p class="text intent"><span class="tag">Trade-off</span> ${esc(o.tradeoff)}</p>
+    <details><summary>Commitments</summary><span class="tag">Core</span><ul>${core}</ul><span class="tag">Flexible</span><ul>${flex}</ul></details>
+    <div class="struct">${esc(o.structure)}<br>${esc(o.masses)}</div>`;
 }
 function esc(t){ const d=document.createElement("div"); d.textContent=t; return d.innerHTML; }
 
@@ -220,7 +231,7 @@ async function persist(tid){
   if (!db){ $("save").textContent = "Saved in this browser only"; $("save").className="save"; return; }
   const it = items.find(x=>x.triplet_id===tid), lab = labels[tid];
   try {
-    await db.collection("labels").doc(tid).set({triplet_id:tid, item:it.item, answer:lab.answer||null, note:lab.note||"", saved_at:new Date().toISOString(), labeling_set:"p01b-v1"});
+    await db.collection(MODE==="concept" ? "labels_concept" : "labels_full").doc(tid).set({triplet_id:tid, item:it.item, answer:lab.answer||null, note:lab.note||"", saved_at:new Date().toISOString(), labeling_set:"p01b-v1.1-"+MODE});
     $("save").textContent = `Saved item ${items.indexOf(it)+1}`; $("save").className="save ok";
   } catch (e) {
     $("save").textContent = "Could not save to the shared record. Use the backup copy below."; $("save").className="save";
@@ -272,7 +283,7 @@ async function persistProbe(tid){
   try { localStorage.setItem(LS+"-probes", JSON.stringify(reviews)); } catch (e) {}
   if (!db) return;
   const r = reviews[tid];
-  try { await db.collection("probe_review").doc(tid).set({triplet_id:tid, verdict:r.verdict||null, note:r.note||"", saved_at:new Date().toISOString(), labeling_set:"p01b-v1"}); } catch (e) {}
+  try { await db.collection("probe_review").doc(tid).set({triplet_id:tid, verdict:r.verdict||null, note:r.note||"", saved_at:new Date().toISOString(), labeling_set:"p01b-v1.1-"+MODE}); } catch (e) {}
 }
 $("probeList").addEventListener("click", e=>{
   const b=e.target.closest("button[data-v]"); if(!b) return;
@@ -295,13 +306,14 @@ function setView(v){
 $("tab-label").onclick=()=>setView("label");
 $("tab-probe").onclick=()=>setView("probe");
 
+$("legend").hidden = MODE==="concept";
 $("legend").innerHTML = "<strong>Diagram key</strong>" + Object.values(KIND).map(k=>`<span><i style="background:var(--${k[0]})"></i>${k[1]}</span>`).join("") + `<span><i style="background:var(--link);height:3px"></i>direct link</span><span>Floors 1–3 · no dimensions · position on screen means nothing</span>`;
 render();
 (async()=>{
   db = window.claude ? await window.claude.use("db") : null;
   if (!db){ render(); return; }
   try {
-    const snap = await db.collection("labels").get();
+    const snap = await db.collection(MODE==="concept" ? "labels_concept" : "labels_full").get();
     snap.docs.forEach(d=>{ const v=d.data(); if(v && v.triplet_id) labels[v.triplet_id]={answer:v.answer||undefined, note:v.note||""}; });
     const ps = await db.collection("probe_review").get();
     ps.docs.forEach(d=>{ const v=d.data(); if(v && v.triplet_id) reviews[v.triplet_id]={verdict:v.verdict||undefined, note:v.note||""}; });

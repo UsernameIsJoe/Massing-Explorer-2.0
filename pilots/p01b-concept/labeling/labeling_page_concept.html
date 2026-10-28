@@ -1,0 +1,324 @@
+<title>ME2 Concept Pass</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one triplet per screen — anchor across the top, two options side by side, answer bar below. */
+:root{
+  --bg:#f3f4f2; --surface:#ffffff; --line:#d5d9d4; --fg:#1d2420; --muted:#5f6a63;
+  --accent:#2f5d50; --accent-soft:#e2ece7; --anchor:#e9edf3; --anchor-line:#b9c4d4; --done:#3f7a4a;
+  --d01:#9dbfe0; --d02:#e8bd7a; --d03:#cfa6dc; --d46:#a7cfa4; --d05:#eca596; --d07:#efd77a; --d08:#b3c1ca; --d09:#cfbea6; --plate:#eef0ed; --link:#2f5d50;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#151917; --surface:#1d2320; --line:#333c37; --fg:#e4e8e5; --muted:#9aa59e;
+  --accent:#86c2ad; --accent-soft:#24352f; --anchor:#1c2430; --anchor-line:#3a4a60; --done:#7fc28b;
+  --d01:#3f6286; --d02:#80602b; --d03:#6a4e79; --d46:#416d40; --d05:#83463b; --d07:#7a6b27; --d08:#4f5e68; --d09:#665642; --plate:#252c29; --link:#86c2ad; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#151917; --surface:#1d2320; --line:#333c37; --fg:#e4e8e5; --muted:#9aa59e;
+  --accent:#86c2ad; --accent-soft:#24352f; --anchor:#1c2430; --anchor-line:#3a4a60; --done:#7fc28b;
+  --d01:#3f6286; --d02:#80602b; --d03:#6a4e79; --d46:#416d40; --d05:#83463b; --d07:#7a6b27; --d08:#4f5e68; --d09:#665642; --plate:#252c29; --link:#86c2ad; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--sans)}
+.wrap{max-width:1100px;margin:0 auto;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:18px}
+header{display:flex;flex-wrap:wrap;gap:12px 24px;align-items:end;justify-content:space-between}
+h1{font-size:1.3rem;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:2px 0 0;max-width:70ch}
+.status{font:500 .8rem var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent);width:0;transition:width .2s}
+.q{font-weight:600;margin:0}
+.note{margin:0;padding:8px 12px;border-left:3px solid var(--accent);background:var(--accent-soft);color:var(--fg);font-size:.9rem;max-width:75ch}
+.tabs{display:none}
+.tabs button[aria-selected="true"]{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+.view{display:grid;gap:18px}
+.probe{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:18px}
+.intended{margin:0;padding:8px 12px;background:var(--anchor);border:1px solid var(--anchor-line);border-radius:5px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;display:grid;gap:8px;min-width:0}
+.card.anchor{background:var(--anchor);border-color:var(--anchor-line)}
+.tag{font:600 .72rem var(--sans);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.text{margin:0;max-width:75ch}
+.text.concept{font-weight:500}
+.text.intent{color:var(--muted);font-size:.92rem}
+.more ul,details ul{margin:4px 0 0;padding-left:1.1em;display:grid;gap:5px;font-size:.9rem}
+.ref{display:inline-block;font:.72rem var(--mono);color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:0 5px;margin:2px 4px 0 0}
+.struct{font:.8rem/1.6 var(--mono);color:var(--muted);border-top:1px dashed var(--line);padding-top:8px;overflow-wrap:anywhere}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:720px){.opts{grid-template-columns:1fr}}
+.card.pick{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent) inset}
+.answers{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+button{font:600 .9rem var(--sans);border:1px solid var(--line);background:var(--surface);color:var(--fg);border-radius:5px;padding:9px 14px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.on{background:var(--accent);color:var(--surface);border-color:var(--accent)}
+button.ghost{background:transparent}
+kbd{font:500 .72rem var(--mono);color:var(--muted);margin-left:6px}
+button.on kbd{color:inherit}
+textarea{width:100%;box-sizing:border-box;min-height:56px;font:.9rem var(--sans);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:5px;padding:8px}
+.nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;align-items:center}
+.save{font:.8rem var(--mono);color:var(--muted)}
+.save.ok{color:var(--done)}
+.grid{display:flex;flex-wrap:wrap;gap:4px}
+.grid button{padding:4px 0;width:34px;font:500 .75rem var(--mono)}
+.grid button.done{background:var(--accent-soft);border-color:var(--accent)}
+.grid button.cur{outline:2px solid var(--fg)}
+details{color:var(--muted)}
+details pre{white-space:pre-wrap;overflow-wrap:anywhere;font:.75rem var(--mono);max-height:240px;overflow:auto;background:var(--surface);border:1px solid var(--line);padding:8px;border-radius:5px}
+.diag{width:100%;max-width:560px}
+.diag svg{display:block;width:100%;height:auto}
+.diag text{font:500 10px var(--sans);fill:var(--fg)}
+.diag .ax{fill:var(--muted);font:500 9px var(--mono)}
+.diag .mt{fill:var(--muted);font:600 9.5px var(--sans);letter-spacing:.06em;text-transform:uppercase}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.8rem;color:var(--muted);align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
+@media (prefers-reduced-motion:reduce){.bar i{transition:none}}
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Pilot 01b · Pass A · Concepts only</h1>
+      <p class="sub">Each scheme is shown only by its <strong>concept</strong>. Pick the option whose concept describes the <strong>closer organizing idea</strong> to the anchor's concept. Judge the idea, not the wording. Use "Can't judge" whenever the text alone is not enough.</p>
+    </div>
+    <div class="status" id="status">0 / 0 labeled</div>
+  </header>
+  <div class="tabs" role="tablist">
+    <button role="tab" id="tab-label" aria-selected="true">1 · Label real cases</button>
+    <button role="tab" id="tab-probe" aria-selected="false">2 · Check probes</button>
+  </div>
+  <div class="bar"><i id="prog"></i></div>
+  <section class="view" id="labelView">
+  <div class="legend" id="legend" aria-label="Diagram key"></div>
+
+  <p class="q" id="qline"></p>
+  <section class="card anchor" id="anchor"></section>
+  <div class="opts">
+    <section class="card" id="opt1"></section>
+    <section class="card" id="opt2"></section>
+  </div>
+
+  <div class="answers" id="answers">
+    <button id="a-option_1" data-a="option_1">Option 1 closer<kbd>1</kbd></button>
+    <button id="a-option_2" data-a="option_2">Option 2 closer<kbd>2</kbd></button>
+    <button id="a-about_equal" data-a="about_equal">About equal<kbd>E</kbd></button>
+    <button id="a-cannot_judge" data-a="cannot_judge">Can't judge<kbd>X</kbd></button>
+  </div>
+  <label class="tag" for="note">Note (optional): what drove your choice</label>
+  <textarea id="note" placeholder="e.g. same SPED/classroom relationship; wording differs"></textarea>
+
+  <div class="nav">
+    <button class="ghost" id="prev">← Previous</button>
+    <span class="save" id="save"></span>
+    <button id="next">Next →</button>
+  </div>
+
+  <div class="grid" id="grid" aria-label="Jump to item"></div>
+  </section>
+
+  <section class="view" id="probeView" hidden>
+    <p class="note">These probes were written by Claude to test known weaknesses of embeddings. Their answers are set by design, so you are not asked to label them blind. For each one, check the intended answer and the reason. Mark <strong>Agree</strong> if the reasoning holds architecturally, <strong>Disagree</strong> if it does not, or <strong>Unsure</strong>. Only probes you agree with are used to score the models.</p>
+    <div id="probeList"></div>
+  </section>
+
+  <details>
+    <summary>Backup: copy all labels</summary>
+    <p>Labels save automatically. If saving is unavailable in your view, copy this and paste it into the chat.</p>
+    <button id="copy">Copy labels</button>
+    <pre id="dump"></pre>
+  </details>
+</div>
+
+<script>
+const SET = {"mode": "concept", "question": "Which option's concept describes the closer organizing idea to the anchor's concept?", "answers": ["option_1", "option_2", "about_equal", "cannot_judge"], "items": [{"item": 1, "triplet_id": "C15", "anchor": {"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."}, "option_1": {"text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors."}, "option_2": {"text": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court."}}, {"item": 2, "triplet_id": "C03", "anchor": {"text": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it."}, "option_1": {"text": "A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school."}, "option_2": {"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."}}, {"item": 3, "triplet_id": "C16", "anchor": {"text": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching."}, "option_1": {"text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it."}, "option_2": {"text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly."}}, {"item": 4, "triplet_id": "C12", "anchor": {"text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly."}, "option_1": {"text": "Classrooms stay low and close to the ground in a two-storey learning bar, flanked by the hall on one side and, on the other, a compact three-storey civic tower that stacks the school's front, its specialist support and a library crown as the building's vertical marker."}, "option_2": {"text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning."}}, {"item": 5, "triplet_id": "C06", "anchor": {"text": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two."}, "option_1": {"text": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others."}, "option_2": {"text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning."}}, {"item": 6, "triplet_id": "C02", "anchor": {"text": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others."}, "option_1": {"text": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse."}, "option_2": {"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."}}, {"item": 7, "triplet_id": "C11", "anchor": {"text": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse."}, "option_1": {"text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it."}, "option_2": {"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."}}, {"item": 8, "triplet_id": "C09", "anchor": {"text": "A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school."}, "option_1": {"text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning."}, "option_2": {"text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it."}}, {"item": 9, "triplet_id": "C04", "anchor": {"text": "A low civic gateway stands between a three-storey learning bar and a community hall and forms the only enclosed passage between them. Everyone arrives through the gateway, where the school's front and its making and reading spaces meet visitors; classrooms extend behind it on one side and the shared hall on the other."}, "option_1": {"text": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it."}, "option_2": {"text": "Classrooms stay low and close to the ground in a two-storey learning bar, flanked by the hall on one side and, on the other, a compact three-storey civic tower that stacks the school's front, its specialist support and a library crown as the building's vertical marker."}}, {"item": 10, "triplet_id": "C13", "anchor": {"text": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court."}, "option_1": {"text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors."}, "option_2": {"text": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two."}}, {"item": 11, "triplet_id": "C07", "anchor": {"text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors."}, "option_1": {"text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning."}, "option_2": {"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."}}, {"item": 12, "triplet_id": "C14", "anchor": {"text": "One self-contained school bar carries the whole teaching day, rising from the front office and specialist support at its foot through classrooms to a reading crown. Two freestanding pavilions, a community hall and a making-and-maintenance workshop, stand apart on shared grounds and are reached outdoors."}, "option_1": {"text": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse."}, "option_2": {"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."}}, {"item": 13, "triplet_id": "C08", "anchor": {"text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning."}, "option_1": {"text": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two."}, "option_2": {"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."}}, {"item": 14, "triplet_id": "C01", "anchor": {"text": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching."}, "option_1": {"text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly."}, "option_2": {"text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it."}}, {"item": 15, "triplet_id": "C05", "anchor": {"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."}, "option_1": {"text": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court."}, "option_2": {"text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors."}}, {"item": 16, "triplet_id": "C10", "anchor": {"text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it."}, "option_1": {"text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly."}, "option_2": {"text": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others."}}]};
+const MODE = "concept";
+const DIAGRAMS = {"Classroom mass: academic 1-3, SPED 1-2 | Commons mass: gym 1, dining 1 | Third mass: art/music 1-2, media 3, medical 1, admin 1, custodial 1 | Direct links: classroom-third, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2]}]}, {"role": "T", "departments": [{"dept": "D03", "floors": [1, 2]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CT", "GT"]}, "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D02", "floors": [1, 2]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D03", "floors": [3]}, {"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "CT", "GT"]}, "Classroom mass: academic 1-3, SPED 1-2, medical 1, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, media 2, admin 1 | Direct links: none": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2]}, {"dept": "D07", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D03", "floors": [1]}, {"dept": "D05", "floors": [2]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": []}, "Classroom mass: academic 1-3, SPED 1-2, art/music 1 | Commons mass: gym 1, dining 1 | Third mass: media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2]}, {"dept": "D03", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D05", "floors": [2]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "GT"]}, "Classroom mass: academic 1-3, media 3, admin 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, custodial 1 | Direct links: classroom-commons, classroom-third, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D05", "floors": [3]}, {"dept": "D08", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D02", "floors": [1, 2, 3]}, {"dept": "D03", "floors": [1]}, {"dept": "D07", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "CT", "GT"]}, "Classroom mass: academic 1-3, SPED 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-third, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D03", "floors": [1]}, {"dept": "D05", "floors": [2]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CT", "GT"]}, "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D02", "floors": [1, 2]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D03", "floors": [3]}, {"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "GT"]}, "Classroom mass: academic 2-3, SPED 1, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1-2, custodial 1 | Direct links: none": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [2, 3]}, {"dept": "D02", "floors": [1]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D03", "floors": [1, 2]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": []}, "Classroom mass: academic 1-3, SPED 1 | Commons mass: gym 1, media 3, dining 1 | Third mass: art/music 1, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, classroom-third, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D03", "floors": [1]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D05", "floors": [3]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "CT", "GT"]}, "Classroom mass: academic 1-2, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 2, art/music 1, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D02", "floors": [2]}, {"dept": "D03", "floors": [1]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "CT"]}, "Classroom mass: academic 1-3, SPED 1-3, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1-2, media 3, medical 1, admin 1 | Direct links: classroom-third, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2, 3]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D03", "floors": [1, 2]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CT", "GT"]}, "Classroom mass: academic 1-3, SPED 1-3, art/music 1 | Commons mass: gym 1, dining 1 | Third mass: media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2, 3]}, {"dept": "D03", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D05", "floors": [2]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "GT"]}, "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 2-3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D02", "floors": [1, 2]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D03", "floors": [2, 3]}, {"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CG", "CT", "GT"]}, "Classroom mass: academic 1-3, media 3, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, admin 1 | Direct links: classroom-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D05", "floors": [3]}, {"dept": "D09", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D02", "floors": [1, 2, 3]}, {"dept": "D03", "floors": [1]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CT"]}, "Classroom mass: academic 1-3, SPED 1-3, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, custodial 1 | Direct links: classroom-third, commons-third": {"masses": [{"role": "C", "departments": [{"dept": "D01", "floors": [1, 2, 3]}, {"dept": "D02", "floors": [1, 2, 3]}, {"dept": "D05", "floors": [3]}, {"dept": "D07", "floors": [1]}, {"dept": "D08", "floors": [1]}]}, {"role": "T", "departments": [{"dept": "D03", "floors": [1]}, {"dept": "D09", "floors": [1]}]}, {"role": "G", "departments": [{"dept": "D04", "floors": [1]}, {"dept": "D06", "floors": [1]}]}], "links": ["CT", "GT"]}};
+const PROBES = {"items": []};
+const KIND = {D01:["d01","Academic","Acad"],D02:["d02","Special ed","SPED"],D03:["d03","Art and music","Arts"],
+  D46:["d46","Gym + dining (double height)","Gym+Din"],D05:["d05","Media","Media"],D07:["d07","Medical","Med"],
+  D08:["d08","Admin","Admin"],D09:["d09","Custodial","Cust"]};
+const ROLE = {C:"Classroom mass",T:"Third mass",G:"Commons mass"};
+
+function diagramSVG(spec){
+  // Blocks: each department spans its floors; gym + dining merge into one double-height block.
+  const RH=30, LW=4, CW=176, GAP=34, X0=18, TOP=8;
+  const cols = spec.masses.map(m=>{
+    const blocks=[]; let gd=null;
+    m.departments.forEach(d=>{
+      if(d.dept==="D04"||d.dept==="D06"){ gd = gd||{k:"D46",fl:new Set()}; d.floors.forEach(f=>gd.fl.add(f)); }
+      else blocks.push({k:d.dept,a:Math.min(...d.floors),b:Math.max(...d.floors)});
+    });
+    if(gd){ const f=[...gd.fl]; const a=Math.min(...f); blocks.push({k:"D46",a,b:Math.max(Math.max(...f),a+1)}); }
+    blocks.sort((p,q)=>p.a-q.a || (q.b-q.a)-(p.b-p.a) || p.k.localeCompare(q.k));
+    const lanes=[];
+    blocks.forEach(bl=>{ let i=lanes.findIndex(l=>l.every(o=>o.b<bl.a||o.a>bl.b)); if(i<0){lanes.push([]);i=lanes.length-1;} lanes[i].push(bl); bl.lane=i; });
+    return {role:m.role, blocks, nl:Math.max(1,lanes.length), top:Math.max(...blocks.map(b=>b.b))};
+  });
+  const H = Math.max(...cols.map(c=>c.top));
+  const base = TOP + H*RH, W = X0 + 3*CW + 2*GAP + 4;
+  const cx = i => X0 + i*(CW+GAP);
+  let s = `<svg viewBox="0 0 ${W} ${base+64}" role="img" aria-label="Schematic massing diagram">`;
+  for(let f=1; f<=H; f++) s+=`<text class="ax" x="2" y="${base-(f-1)*RH-RH/2+3}">${f}</text>`;
+  cols.forEach((c,i)=>{
+    const x=cx(i), lw=(CW-(c.nl-1)*LW)/c.nl;
+    for(let f=1; f<=c.top; f++) s+=`<rect x="${x}" y="${base-f*RH}" width="${CW}" height="${RH}" fill="var(--plate)" stroke="var(--line)"/>`;
+    c.blocks.forEach(bl=>{
+      const bx=x+bl.lane*(lw+LW), by=base-bl.b*RH+2, bh=(bl.b-bl.a+1)*RH-4, kd=KIND[bl.k];
+      const label = lw>=74 ? kd[1].replace(" (double height)","") : kd[2];
+      s+=`<rect x="${bx+1}" y="${by}" width="${lw-2}" height="${bh}" rx="2" fill="var(--${kd[0]})"/>`;
+      s+=`<text x="${bx+lw/2}" y="${by+bh/2+3.5}" text-anchor="middle">${label}</text>`;
+    });
+    s+=`<text class="mt" x="${x+CW/2}" y="${base+16}" text-anchor="middle">${ROLE[c.role]}</text>`;
+  });
+  // Links: adjacent columns joined at grade; classroom-commons drawn as an arc beneath.
+  const L=new Set(spec.links), y=base+30;
+  const has=(a,b)=>L.has(a+b)||L.has(b+a);
+  if(has("C","T")) s+=`<line x1="${cx(0)+CW/2}" y1="${y}" x2="${cx(1)+CW/2}" y2="${y}" stroke="var(--link)" stroke-width="3"/>`;
+  if(has("T","G")) s+=`<line x1="${cx(1)+CW/2}" y1="${y}" x2="${cx(2)+CW/2}" y2="${y}" stroke="var(--link)" stroke-width="3"/>`;
+  if(has("C","G")) s+=`<path d="M${cx(0)+CW/2} ${y} C ${cx(0)+CW/2} ${y+26}, ${cx(2)+CW/2} ${y+26}, ${cx(2)+CW/2} ${y}" fill="none" stroke="var(--link)" stroke-width="3"/>`;
+  [0,1,2].forEach(i=>{ s+=`<circle cx="${cx(i)+CW/2}" cy="${y}" r="4" fill="var(--link)"/>`; });
+  return s+"</svg>";
+}
+const items = SET.items;
+const reviews = {};
+let view = "label";
+const labels = {};
+let i = 0, db = null;
+const $ = id => document.getElementById(id);
+const LS = "me2-p01b-labels-" + MODE;
+try { Object.assign(labels, JSON.parse(localStorage.getItem(LS) || "{}")); } catch (e) {}
+try { Object.assign(reviews, JSON.parse(localStorage.getItem(LS+"-probes") || "{}")); } catch (e) {}
+
+function cardHTML(tag, o){
+  if (MODE==="concept") return `<span class="tag">${tag}</span><p class="text concept">${esc(o.text)}</p>`;
+  const d = o.structure && DIAGRAMS[o.structure] ? `<div class="diag">${diagramSVG(DIAGRAMS[o.structure])}</div>` : "";
+  const moves = (o.moves||[]).map(m=>`<li><b>${esc(m.move)}.</b> ${esc(m.serves)}<br>${m.refs.map(r=>`<span class="ref">${esc(r)}</span>`).join("")}</li>`).join("");
+  const core = (o.commitments?.core||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+  const flex = (o.commitments?.flexible||[]).map(x=>`<li>${esc(x)}</li>`).join("");
+  return `<span class="tag">${tag}</span>${d}
+    <p class="text concept">${esc(o.text)}</p>
+    <p class="text intent"><span class="tag">Intent</span> ${esc(o.intent)}</p>
+    <div class="more"><span class="tag">Key moves</span><ul>${moves}</ul></div>
+    <p class="text intent"><span class="tag">Trade-off</span> ${esc(o.tradeoff)}</p>
+    <details><summary>Commitments</summary><span class="tag">Core</span><ul>${core}</ul><span class="tag">Flexible</span><ul>${flex}</ul></details>
+    <div class="struct">${esc(o.structure)}<br>${esc(o.masses)}</div>`;
+}
+function esc(t){ const d=document.createElement("div"); d.textContent=t; return d.innerHTML; }
+
+function render(){
+  const it = items[i], lab = labels[it.triplet_id] || {};
+  $("qline").textContent = `Item ${i+1} of ${items.length}. ${SET.question}`;
+  $("anchor").innerHTML = cardHTML("Anchor", it.anchor);
+  $("opt1").innerHTML = cardHTML("Option 1", it.option_1);
+  $("opt2").innerHTML = cardHTML("Option 2", it.option_2);
+  $("opt1").classList.toggle("pick", lab.answer==="option_1");
+  $("opt2").classList.toggle("pick", lab.answer==="option_2");
+  document.querySelectorAll("#answers button").forEach(b=>b.classList.toggle("on", b.dataset.a===lab.answer));
+  $("note").value = lab.note || "";
+  $("prev").disabled = i===0;
+  $("next").textContent = i===items.length-1 ? "Finish" : "Next →";
+  const n = items.filter(x=>labels[x.triplet_id]?.answer).length;
+  const m = PROBES.items.filter(x=>reviews[x.triplet_id]?.verdict).length;
+  $("status").textContent = `${n} / ${items.length} labeled`;
+  $("prog").style.width = (view==="label" ? 100*n/items.length : 100*m/PROBES.items.length)+"%";
+  $("grid").innerHTML = items.map((x,k)=>`<button data-k="${k}" class="${labels[x.triplet_id]?.answer?'done':''} ${k===i?'cur':''}">${k+1}</button>`).join("");
+  $("dump").textContent = JSON.stringify({labels, probe_review:reviews}, null, 1);
+  if (n===items.length && i===items.length-1) $("save").textContent = $("save").textContent || "All items labeled.";
+}
+
+let saveTimer=null;
+async function persist(tid){
+  try { localStorage.setItem(LS, JSON.stringify(labels)); } catch (e) {}
+  if (!db){ $("save").textContent = "Saved in this browser only"; $("save").className="save"; return; }
+  const it = items.find(x=>x.triplet_id===tid), lab = labels[tid];
+  try {
+    await db.collection(MODE==="concept" ? "labels_concept" : "labels_full").doc(tid).set({triplet_id:tid, item:it.item, answer:lab.answer||null, note:lab.note||"", saved_at:new Date().toISOString(), labeling_set:"p01b-v1.1-"+MODE});
+    $("save").textContent = `Saved item ${items.indexOf(it)+1}`; $("save").className="save ok";
+  } catch (e) {
+    $("save").textContent = "Could not save to the shared record. Use the backup copy below."; $("save").className="save";
+  }
+}
+
+function answer(a){
+  const tid = items[i].triplet_id;
+  labels[tid] = {...(labels[tid]||{}), answer:a, note:$("note").value};
+  render(); persist(tid);
+}
+$("answers").addEventListener("click", e=>{ const b=e.target.closest("button"); if(b) answer(b.dataset.a); });
+$("note").addEventListener("input", ()=>{
+  const tid = items[i].triplet_id;
+  labels[tid] = {...(labels[tid]||{}), note:$("note").value};
+  clearTimeout(saveTimer); saveTimer=setTimeout(()=>persist(tid), 700);
+});
+function go(k){ if(k<0||k>=items.length) return; clearTimeout(saveTimer); i=k; render(); window.scrollTo({top:0}); }
+$("prev").onclick=()=>go(i-1);
+$("next").onclick=()=>{ if(i===items.length-1){ const left=items.findIndex(x=>!labels[x.triplet_id]?.answer); if(left>=0) go(left); else $("save").textContent="All items labeled. Thank you."; } else go(i+1); };
+$("grid").addEventListener("click", e=>{ const b=e.target.closest("button"); if(b) go(+b.dataset.k); });
+document.addEventListener("keydown", e=>{
+  if (e.target.tagName==="TEXTAREA" || view!=="label") return;
+  const m={"1":"option_1","2":"option_2","e":"about_equal","x":"cannot_judge"}[e.key.toLowerCase()];
+  if (m) answer(m);
+  if (e.key==="ArrowRight") $("next").click();
+  if (e.key==="ArrowLeft") go(i-1);
+});
+$("copy").onclick=async()=>{ const t=JSON.stringify({labels, probe_review:reviews},null,1); try{ await navigator.clipboard.writeText(t); $("copy").textContent="Copied"; }catch(e){ const r=document.createRange(); r.selectNodeContents($("dump")); const s=getSelection(); s.removeAllRanges(); s.addRange(r); } };
+
+function renderProbes(){
+  $("probeList").innerHTML = PROBES.items.map((p,k)=>{
+    const r = reviews[p.triplet_id] || {};
+    const vb = (v,l)=>`<button data-tid="${p.triplet_id}" data-v="${v}" class="${r.verdict===v?'on':''}">${l}</button>`;
+    return `<article class="probe">
+      <span class="tag">Probe ${k+1} of ${PROBES.items.length}</span>
+      <section class="card anchor"><span class="tag">Anchor</span><p class="text">${esc(p.anchor)}</p></section>
+      <div class="opts">
+        <section class="card ${p.intended==='option_1'?'pick':''}"><span class="tag">Option 1</span><p class="text">${esc(p.option_1)}</p></section>
+        <section class="card ${p.intended==='option_2'?'pick':''}"><span class="tag">Option 2</span><p class="text">${esc(p.option_2)}</p></section>
+      </div>
+      <p class="intended"><strong>Intended: ${p.intended==='option_1'?'Option 1':'Option 2'} is the closer strategy.</strong> ${esc(p.reason)}</p>
+      <div class="answers">${vb("agree","Agree")}${vb("disagree","Disagree")}${vb("unsure","Unsure")}</div>
+      <textarea id="pn-${p.triplet_id}" data-ptid="${p.triplet_id}" placeholder="Note (optional)">${esc(r.note||"")}</textarea>
+    </article>`;
+  }).join("");
+}
+async function persistProbe(tid){
+  try { localStorage.setItem(LS+"-probes", JSON.stringify(reviews)); } catch (e) {}
+  if (!db) return;
+  const r = reviews[tid];
+  try { await db.collection("probe_review").doc(tid).set({triplet_id:tid, verdict:r.verdict||null, note:r.note||"", saved_at:new Date().toISOString(), labeling_set:"p01b-v1.1-"+MODE}); } catch (e) {}
+}
+$("probeList").addEventListener("click", e=>{
+  const b=e.target.closest("button[data-v]"); if(!b) return;
+  const tid=b.dataset.tid; reviews[tid]={...(reviews[tid]||{}), verdict:b.dataset.v};
+  b.parentElement.querySelectorAll("button").forEach(x=>x.classList.toggle("on", x===b));
+  render(); persistProbe(tid);
+});
+const probeTimers={};
+$("probeList").addEventListener("input", e=>{
+  const tid=e.target.dataset.ptid; if(!tid) return;
+  reviews[tid]={...(reviews[tid]||{}), note:e.target.value};
+  clearTimeout(probeTimers[tid]); probeTimers[tid]=setTimeout(()=>persistProbe(tid),700);
+});
+function setView(v){
+  view=v; $("labelView").hidden = v!=="label"; $("probeView").hidden = v!=="probe";
+  $("tab-label").setAttribute("aria-selected", v==="label"); $("tab-probe").setAttribute("aria-selected", v==="probe");
+  if (v==="probe") renderProbes();
+  render(); window.scrollTo({top:0});
+}
+$("tab-label").onclick=()=>setView("label");
+$("tab-probe").onclick=()=>setView("probe");
+
+$("legend").hidden = MODE==="concept";
+$("legend").innerHTML = "<strong>Diagram key</strong>" + Object.values(KIND).map(k=>`<span><i style="background:var(--${k[0]})"></i>${k[1]}</span>`).join("") + `<span><i style="background:var(--link);height:3px"></i>direct link</span><span>Floors 1–3 · no dimensions · position on screen means nothing</span>`;
+render();
+(async()=>{
+  db = window.claude ? await window.claude.use("db") : null;
+  if (!db){ render(); return; }
+  try {
+    const snap = await db.collection(MODE==="concept" ? "labels_concept" : "labels_full").get();
+    snap.docs.forEach(d=>{ const v=d.data(); if(v && v.triplet_id) labels[v.triplet_id]={answer:v.answer||undefined, note:v.note||""}; });
+    const ps = await db.collection("probe_review").get();
+    ps.docs.forEach(d=>{ const v=d.data(); if(v && v.triplet_id) reviews[v.triplet_id]={verdict:v.verdict||undefined, note:v.note||""}; });
+    if (view==="probe") renderProbes();
+    render();
+  } catch(e) {}
+})();
+</script>
