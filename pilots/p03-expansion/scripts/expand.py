@@ -13,7 +13,8 @@ Widened edits (two at most, from each run-01 seed):
   shift    one floor up or down (not gym or dining)
   link     flip one direct link
 Hard rules as in Pilot 2, plus core academic and gym never share a mass (the brief's
-three-mass reading keeps them distinct in every seed).
+three-mass reading keeps them distinct in every seed), plus custodial cannot be a mass
+of its own (stated by the architect after the Pilot 3 review).
 
 Usage (from pilots/p03-expansion):
     python scripts/expand.py
@@ -64,6 +65,8 @@ def valid(st):
                     occ.add(2)
         if not occ or sorted(occ) != list(range(1, max(occ) + 1)):
             return False
+        if [d for d in DEPTS if st["own"][d] == m] == ["D09"]:
+            return False  # architect (2026-10-28): custodial cannot be a mass of its own
     return True
 
 
@@ -182,7 +185,10 @@ def main():
                                                  "links": {"-".join(p): ok for p, ok in v["links"].items()}, "slots": v["slots"]})
                      for k, v in r.items() if k not in ("matching",)} | {"matching": r["matching"]}
     (out / "pool.json").write_text(json.dumps({"inside": len(inside), "outside": len(outside),
-                                               "groups": [{"group": g["group"], "size": g["size"], "rep": ser(g["rep"])} for g in sorted(reps, key=lambda g: (-g["size"], g["group"]))]},
+                                               "groups": [{"group": g["group"], "size": g["size"], "rep": ser(g["rep"]),
+                                                           "members": [ser(m) for m in sorted(groups[g["group"]], key=lambda r: r["key"])]}
+                                                          for g in sorted(reps, key=lambda g: (-g["size"], g["group"]))],
+                                               "inside_members": [ser(r) for r in sorted(inside, key=lambda r: r["key"])]},
                                               indent=1), encoding="utf-8")
     print(f"valid candidates within two widened edits: {len(rows)}")
     print(f"  inside a seed region: {len(inside)} | outside every region (expansion pool): {len(outside)}")

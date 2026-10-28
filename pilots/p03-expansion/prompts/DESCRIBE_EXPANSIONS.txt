@@ -1,0 +1,134 @@
+You are an architect. Below are 15 strategy-level arrangements for the same three-mass elementary school. Each lists which departments sit in which mass (Mass A, B and C are arbitrary labels), on which floors (ground = 1), and which masses are directly linked. Gym and dining always share a double-height volume.
+
+For each arrangement, write its concept: the organizing spatial idea a designer would sketch first.
+
+Rules:
+- 35-70 words.
+- Describe the roles the parts play and how they relate (for example a civic front, a learning wing, a shared heart, a support house, detached pavilions; centralized, linear, clustered, stacked, layered).
+- Name at most THREE departments or program groups, and only where they carry the idea. Do not list what is in each mass or on each floor.
+- Do not restate requirements every scheme shares (for example that gym and dining are together and double height).
+- Do not argue benefits or quality. Call the media center the media center.
+- Describe each arrangement on its own; do not compare or refer to other IDs.
+
+Return JSON only, in exactly this shape, one entry per ID:
+{"N01": "concept", "N02": "concept"}
+
+N01
+Mass A: media center (floor 2); administration and guidance (floor 1)
+Mass C: physical education (gym) (floor 1); dining and food service (floor 1)
+Mass B: core academic (floors 1-3); special education (floors 1-3); art and music (floor 1); medical (floor 1); custodial and maintenance (floor 1)
+Mass A and Mass C: directly linked
+Mass A and Mass B: directly linked
+Mass C and Mass B: directly linked
+
+N02
+Mass B: core academic (floors 1-3); media center (floor 3); administration and guidance (floor 1)
+Mass A: special education (floors 1-3); physical education (gym) (floor 1); dining and food service (floor 1)
+Mass C: art and music (floor 1); medical (floor 1); custodial and maintenance (floor 1)
+Mass B and Mass A: directly linked
+Mass B and Mass C: directly linked
+Mass A and Mass C: directly linked
+
+N03
+Mass B: media center (floor 2); medical (floor 1); custodial and maintenance (floor 1)
+Mass A: physical education (gym) (floor 1); dining and food service (floor 1); administration and guidance (floor 1)
+Mass C: core academic (floors 1-3); special education (floors 1-2); art and music (floor 1)
+Mass B and Mass A: directly linked
+Mass B and Mass C: not directly linked
+Mass A and Mass C: directly linked
+
+N04
+Mass A: special education (floors 1-2); physical education (gym) (floor 1); dining and food service (floor 1)
+Mass C: art and music (floors 1-2); media center (floor 3); medical (floor 1); administration and guidance (floor 1); custodial and maintenance (floor 1)
+Mass B: core academic (floors 1-3)
+Mass A and Mass C: directly linked
+Mass A and Mass B: not directly linked
+Mass C and Mass B: directly linked
+
+N05
+Mass C: media center (floor 2); medical (floor 1); administration and guidance (floor 1); custodial and maintenance (floor 1)
+Mass B: special education (floors 1-2); physical education (gym) (floor 1); dining and food service (floor 1)
+Mass A: core academic (floors 1-3); art and music (floor 1)
+Mass C and Mass B: directly linked
+Mass C and Mass A: not directly linked
+Mass B and Mass A: directly linked
+
+N06
+Mass A: core academic (floors 1-3); medical (floor 1); custodial and maintenance (floor 1)
+Mass B: special education (floors 1-2); physical education (gym) (floor 1); dining and food service (floor 1)
+Mass C: art and music (floor 1); media center (floor 2); administration and guidance (floor 1)
+Mass A and Mass B: not directly linked
+Mass A and Mass C: not directly linked
+Mass B and Mass C: not directly linked
+
+N07
+Mass A: core academic (floors 1-3); media center (floor 3)
+Mass C: physical education (gym) (floor 1); dining and food service (floor 1); administration and guidance (floor 1)
+Mass B: special education (floors 1-3); art and music (floor 1); medical (floor 1); custodial and maintenance (floor 1)
+Mass A and Mass C: directly linked
+Mass A and Mass B: directly linked
+Mass C and Mass B: directly linked
+
+N08
+Mass B: special education (floors 1-2); medical (floor 1); custodial and maintenance (floor 1)
+Mass C: physical education (gym) (floor 1); dining and food service (floor 1)
+Mass A: core academic (floors 1-3); art and music (floor 1); media center (floor 2); administration and guidance (floor 1)
+Mass B and Mass C: not directly linked
+Mass B and Mass A: not directly linked
+Mass C and Mass A: not directly linked
+
+N09
+Mass A: core academic (floors 1-3); media center (floor 2); medical (floor 1); administration and guidance (floor 1); custodial and maintenance (floor 1)
+Mass B: physical education (gym) (floor 1); dining and food service (floor 1)
+Mass C: special education (floors 1-2); art and music (floor 1)
+Mass A and Mass B: directly linked
+Mass A and Mass C: not directly linked
+Mass B and Mass C: directly linked
+
+N10
+Mass C: core academic (floors 1-3); special education (floors 1-2); administration and guidance (floor 1)
+Mass A: art and music (floors 1-2); media center (floor 3); medical (floor 1); custodial and maintenance (floor 1)
+Mass B: physical education (gym) (floor 1); dining and food service (floor 1)
+Mass C and Mass A: directly linked
+Mass C and Mass B: not directly linked
+Mass A and Mass B: directly linked
+
+N11
+Mass B: art and music (floor 3); physical education (gym) (floor 1); dining and food service (floor 1); administration and guidance (floor 1)
+Mass C: special education (floors 1-2); media center (floor 3); medical (floor 1)
+Mass A: core academic (floors 1-3); custodial and maintenance (floor 1)
+Mass B and Mass C: directly linked
+Mass B and Mass A: directly linked
+Mass C and Mass A: directly linked
+
+N12
+Mass B: core academic (floors 1-3); special education (floors 1-2); medical (floor 1); administration and guidance (floor 1); custodial and maintenance (floor 1)
+Mass C: physical education (gym) (floor 1); dining and food service (floor 1)
+Mass A: art and music (floor 1); media center (floor 2)
+Mass B and Mass C: not directly linked
+Mass B and Mass A: not directly linked
+Mass C and Mass A: not directly linked
+
+N13
+Mass B: special education (floors 1-2); art and music (floor 3)
+Mass C: physical education (gym) (floor 1); media center (floor 3); dining and food service (floor 1); medical (floor 1); administration and guidance (floor 1)
+Mass A: core academic (floors 1-3); custodial and maintenance (floor 1)
+Mass B and Mass C: directly linked
+Mass B and Mass A: directly linked
+Mass C and Mass A: directly linked
+
+N14
+Mass B: special education (floors 1-2); art and music (floor 3); physical education (gym) (floor 1); dining and food service (floor 1)
+Mass A: media center (floor 2); medical (floor 1); administration and guidance (floor 1)
+Mass C: core academic (floors 1-3); custodial and maintenance (floor 1)
+Mass B and Mass A: directly linked
+Mass B and Mass C: directly linked
+Mass A and Mass C: directly linked
+
+N15
+Mass B: special education (floors 1-2)
+Mass A: core academic (floors 1-3); art and music (floors 1-2); media center (floor 3); medical (floor 1); administration and guidance (floor 1); custodial and maintenance (floor 1)
+Mass C: physical education (gym) (floor 1); dining and food service (floor 1)
+Mass B and Mass A: directly linked
+Mass B and Mass C: not directly linked
+Mass A and Mass C: directly linked

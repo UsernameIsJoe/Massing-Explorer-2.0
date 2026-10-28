@@ -26,3 +26,9 @@ Page `review/review_page.html`, record `expansion`. For each new strategy: seed 
 ## Limits
 
 One reviewer; 20 of 65 groups reviewed; group membership assumes that the same defining move from the same seed means the same decision; feasibility untested.
+
+## Revision p03-v1.1 (2026-10-28, after the review)
+
+The architect noted that custodial cannot be a mass of its own; all four reviewed representatives that left custodial alone were skipped for that reason. This is a missing hard rule, not a judgment, and is added to the generator (`valid()` in `scripts/expand.py`). The pool was regenerated (1,050 candidates, 412 outside every region, 63 groups); the pre-rule pool is kept as `data/pool_before_custodial_rule.json`. Groups whose reviewed representative breaks the new rule are marked `needs_review` rather than rejected.
+
+The architect also noted that a change of administration alone, or of a link alone, is "enough change but not enough" for a new strategy: a Maybe. Administration-only groups are recorded as Maybe.
