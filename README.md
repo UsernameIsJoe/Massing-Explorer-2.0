@@ -8,6 +8,7 @@ A strategy-first architectural research project: use an existing advanced LLM to
 - [Step 02–03 development plan](docs/STEP02_03_SEMANTIC_FIRST_PLAN.md): five development tasks, research references, pilot prerequisites and unresolved mechanisms.
 - [Project memo](docs/PROJECT_MEMO.md): decision record and deferred topics.
 - [Proof-check findings](docs/STEP02_03_PROOF_CHECK_FINDINGS.md): completed measurements and their limits.
+- [Five parents and ten A/B additions](benchmarks/test-elementary-v0.1/seed_scope_cases_2026-10-27/README.md): case JSON, received responses, generation inputs and no-cross-mass rule verification.
 - [Benchmark reference](docs/BENCHMARK.md): earlier benchmark inputs and audit qualifications.
 - [Archived plans and research](docs/archive/2026-10-28/INDEX.md): superseded approaches and earlier planning snapshots.
 

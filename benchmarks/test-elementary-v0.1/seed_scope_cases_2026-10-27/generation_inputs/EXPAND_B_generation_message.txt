@@ -1,0 +1,526 @@
+[Packaging-only wrapper, ME2 proof check v1.0. The frozen EXPAND_B instruction is followed by its six inputs inline; each BEGIN/END ATTACHMENT block is that input. No other file or prior chat is required.]
+
+Attachments required: MODEL_INPUT.md, ROOM_PROGRAM.csv, CASE_FORMAT.md, case.schema.json, parent_seeds.json.
+Additional attachment: gap_targets.json.
+Use only these supplied inputs and this instruction. Do not browse, run code or request external tools.
+
+The attached parent_seeds.json is a fixed collection of abstract strategies. Preserve it as reference; do not revise, repair, rank or replace those parents in this response.
+
+Propose exactly FIVE ADDITIONAL abstract strategies to broaden the initial collection's strategic scope. Every addition needs a substantive connection to the supplied brief, such as a program-organizational intention or consequential trade-off. Merely sharing mass count is not enough.
+
+Related does not mean globally similar. Additions may be distant from every parent and differ across several dimensions. Seek missing cross-dimensional combinations and challenge assumptions shared by the parents. You may introduce a meaningful distinction absent from the parents even if the supplied record format captures it poorly; explain it in organizing_principle or unresolved_notes. Do not restrict additions to small mutations, familiar clusters or descendants of one seed.
+
+The gap_targets.json lists combinations not represented in the parents. Use these as suggestions for broadening scope, not mandatory solutions or proof of feasibility. You may challenge a target, combine several targets in one coherent case, or develop other relevant directions. Do not force a target into an incoherent or knowingly contradictory strategy just to satisfy the list.
+Use architectural reasoning to produce coherent strategies. Do not silently relax hard requirements to create diversity. Retain explicit conflicts or unresolved commitments in the record for later revision. Do not conceal a department split or invent compliance. Avoid duplicates of parents and other additions.
+
+Stay at strategy level. No dimensions, geometric realization, preference scores, or claim of verified dimensional feasibility. Preserve the supplied program and do not invent missing site conditions.
+
+Return only a JSON object conforming to CASE_FORMAT.md and case.schema.json, containing the FIVE ADDITIONS ONLY. Use E01 onward for case IDs. Give the same comparable concise detail specified in CASE_FORMAT.md. In collection_differences explain what the additions contribute beyond the parents, without assigning scores. Provide concise rationale, not a detailed reasoning transcript.
+
+===== BEGIN ATTACHMENT: MODEL_INPUT.md =====
+# A test elementary school — design information (v0.2)
+
+## Design brief
+
+3 masses, max 3 floors. length max 60 meters. gym and dining together and double height. art and music prefer on ground floor. media prefer on top floor above admin. admin have to be on ground floor. core academic and special ed width has to be 80 feet. mass ratio have to be between 2:5 and 5:8. prefer 3 floors.
+
+## Program schedule (net square feet)
+
+The supplied `ROOM_PROGRAM.csv` contains the **complete 41-line room program**. Preserve the given quantities, room types, and net areas, including any room with quantity zero. Department net areas:
+
+| Department | NFA (SF) |
+|---|---:|
+| Core academic | 14,280 |
+| Special education | 5,610 |
+| Art & music | 3,040 |
+| Health & physical education | 6,950 |
+| Media center | 2,800 |
+| Dining & food service | 6,150 |
+| Medical | 730 |
+| Administration & guidance | 2,510 |
+| Custodial & maintenance | 2,200 |
+| **Total** | **44,270** |
+
+## Mandatory department assignment
+
+Each of the nine departments must be assigned entirely to exactly one principal mass. Splitting any department across masses is prohibited, including custodial/maintenance and individual support rooms. A department may span floors only within its assigned mass, on contiguous occupied floors with at least 70 m² (approximately 753 SF) of scheduled department NFA on each occupied floor.
+
+## Planning assumptions
+
+- Dimensions in feet unless otherwise stated; areas in square feet.
+- Historical workbook display: 66,405 SF. This is reference information, not the governing design target for this study.
+- Governing GFA target: 44,270 × 1.15 × 1.50 = 76,365.75 SF, with ±3% tolerance (74,074.7775–78,656.7225 SF). Double-height voids are not additional occupied floor area.
+- Default classroom configuration: double-loaded bar, 30-ft classroom depth and 8-ft corridor.
+- Typical floor-to-floor height used for mass extrusion: 14 ft.
+- Gym: clear dimensions at least 60 × 100 ft; double height.
+- Cafeteria: clear dimensions at least 40 × 60 ft; the brief separately specifies that gym and dining are together and double height.
+- Daylight planning: preferred maximum **width** 90 ft for departments with instructional/daylit rooms.
+- If a footprint uses a residual L-shaped floor arm, minimum arm depth is 20 ft.
+- If a department spans multiple floors, those floors must be contiguous, and each floor portion of that department must contain at least **70 m² (~753 SF)**.
+- No specific site boundary, adjacent buildings, orientation, terrain, or access road geometry is supplied.
+
+The brief specifies design requirements and preferences. If a project assumption and an explicit brief item conflict, prioritize the brief and explain material uncertainties. For this study the adjusted target governs; do not substitute the workbook display. The 60-m cap applies to the long principal dimension of each mass, not the combined building extent. The ratio applies to each mass's ground footprint, short side divided by long side, nominally 0.40–0.625. The shared validator uses an absolute ratio tolerance of 0.00675, disclosed equally for all systems. Academic/special-education width means the containing bar depth, not a separate room width.
+===== END ATTACHMENT: MODEL_INPUT.md =====
+
+===== BEGIN ATTACHMENT: ROOM_PROGRAM.csv =====
+department,room,nfa_sf,quantity
+CORE ACADEMIC,Kindergarten Classroom with Toilet,1120,3
+CORE ACADEMIC,General Classroom (Grades 1-6),910,12
+SPECIAL EDUCATION,Self-Contained Special Education Classroom,1150,3
+SPECIAL EDUCATION,Self-Contained Special Education Toilet Room,70,3
+SPECIAL EDUCATION,Resource Room,650,2
+SPECIAL EDUCATION,Small Group Room,650,1
+ART & MUSIC,Art Classroom (25 seats),1200,1
+ART & MUSIC,Art Workroom with Storage and Kiln,200,1
+ART & MUSIC,Music Classroom / Large Group (25-50 seats),1400,1
+ART & MUSIC,Music Practice / Ensemble,120,2
+HEALTH & PHYSICAL EDUCATION,Gymnasium,6500,1
+HEALTH & PHYSICAL EDUCATION,Gym Storeroom,250,1
+HEALTH & PHYSICAL EDUCATION,Health Instructor's Office with Shower and Toilet,200,1
+MEDIA CENTER,Media Center / Reading Room,2800,1
+DINING & FOOD SERVICE,Cafeteria / Dining,2800,1
+DINING & FOOD SERVICE,Stage,900,1
+DINING & FOOD SERVICE,Chair / Table / Equipment Storage,400,1
+DINING & FOOD SERVICE,Kitchen,1800,1
+DINING & FOOD SERVICE,Staff Lunch Room,250,1
+MEDICAL,Medical Suite Toilet,80,1
+MEDICAL,Nurses' Office / Waiting Room,350,1
+MEDICAL,Examination Room / Resting,150,2
+ADMINISTRATION & GUIDANCE,General Office / Waiting Room with Toilet,400,1
+ADMINISTRATION & GUIDANCE,Teachers' Mail and Time Room,140,1
+ADMINISTRATION & GUIDANCE,Copy Room,180,1
+ADMINISTRATION & GUIDANCE,Records Room,140,1
+ADMINISTRATION & GUIDANCE,Principal's Office with Conference Area,420,1
+ADMINISTRATION & GUIDANCE,Principal's Secretary / Waiting,150,1
+ADMINISTRATION & GUIDANCE,Assistant Principal's Office,120,0
+ADMINISTRATION & GUIDANCE,Supervisory / Spare Office,150,1
+ADMINISTRATION & GUIDANCE,Conference Room,300,1
+ADMINISTRATION & GUIDANCE,Guidance Office,180,1
+ADMINISTRATION & GUIDANCE,Guidance Storeroom,50,1
+ADMINISTRATION & GUIDANCE,Teachers' Work Room,400,1
+CUSTODIAL & MAINTENANCE,Custodian's Office,180,1
+CUSTODIAL & MAINTENANCE,Custodian's Workshop,420,1
+CUSTODIAL & MAINTENANCE,Custodian's Storage,420,1
+CUSTODIAL & MAINTENANCE,Recycling Room / Trash,450,1
+CUSTODIAL & MAINTENANCE,Receiving and General Supply,240,1
+CUSTODIAL & MAINTENANCE,Storeroom,240,1
+CUSTODIAL & MAINTENANCE,Network / Telecom Room,250,1
+===== END ATTACHMENT: ROOM_PROGRAM.csv =====
+
+===== BEGIN ATTACHMENT: CASE_FORMAT.md =====
+# Generator case format v1.0
+
+This is an abstract strategic record, not geometry. Use supplied MODEL_INPUT.md and ROOM_PROGRAM.csv as authority. Keep room names/quantities/areas unchanged; you need not repeat all rooms in each case.
+
+Department codes:
+D01 = CORE ACADEMIC
+D02 = SPECIAL EDUCATION
+D03 = ART & MUSIC
+D04 = HEALTH & PHYSICAL EDUCATION
+D05 = MEDIA CENTER
+D06 = DINING & FOOD SERVICE
+D07 = MEDICAL
+D08 = ADMINISTRATION & GUIDANCE
+D09 = CUSTODIAL & MAINTENANCE
+
+Return one JSON object with:
+- cases: array of requested cases.
+- collection_differences: up to 120 words identifying consequential differences across the collection.
+
+Each case:
+- case_id: S01,S02,... for seeds; E01,E02,... for additions.
+- name: short descriptive label.
+- organizing_principle: 20–45 words of concise design rationale, not a detailed reasoning trace.
+- masses: array of {mass_id, label}. IDs are local arbitrary labels such as M1; they carry no ordering, height or coordinates.
+- departments: nine entries {department_id, mass_ids, occupied_floors}.
+  mass_ids: complete list of assigned mass IDs, or null if genuinely unresolved.
+  occupied_floors: complete union of proposed occupied levels (ground=1), or null if genuinely unresolved.
+  A multi-floor department is not automatically a multi-mass department.
+  If a department is proposed in more than one mass, retain the explicit list and explain the conflict; do not conceal it by calling each part a new department. The brief prohibits this assignment.
+- connections: each unordered pair of defined masses, with {mass_a, mass_b, direct_link}.
+  direct_link=true: explicitly propose a direct built connection, such as a bridge or connecting passage.
+  false: explicitly no such built connection; shared grounds or outdoor walking alone do not count.
+  null: connection genuinely unresolved. Do not invent site distances or orientation.
+- main_tradeoff: 15–35 words, naming a consequential sacrifice or tension.
+- unresolved_notes: up to four brief strings for unknowns, potential requirement conflicts or later dimensional checks; empty array permitted.
+
+Use null for unresolved information, not an invented answer. Do not use null to avoid making all strategic decisions. Explain a genuinely unresolved commitment briefly. Retain any inconsistency visibly; do not assert that all requirements are verified.
+A schema-valid JSON record is not a feasibility certificate. Detailed dimensions, geometry and preference scores are not requested.
+
+The attached case.schema.json specifies syntax. Some conflicts are deliberately representable so they can be recorded and revised; its permissiveness does not waive the brief.
+===== END ATTACHMENT: CASE_FORMAT.md =====
+
+===== BEGIN ATTACHMENT: case.schema.json =====
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ME2 abstract strategy collection v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "cases",
+    "collection_differences"
+  ],
+  "properties": {
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    },
+    "collection_differences": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "mass": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mass_id",
+        "label"
+      ],
+      "properties": {
+        "mass_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    },
+    "department": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "department_id",
+        "mass_ids",
+        "occupied_floors"
+      ],
+      "properties": {
+        "department_id": {
+          "enum": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07",
+            "D08",
+            "D09"
+          ]
+        },
+        "mass_ids": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            }
+          ]
+        },
+        "occupied_floors": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "uniqueItems": true
+            }
+          ]
+        }
+      }
+    },
+    "connection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mass_a",
+        "mass_b",
+        "direct_link"
+      ],
+      "properties": {
+        "mass_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mass_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direct_link": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "name",
+        "organizing_principle",
+        "masses",
+        "departments",
+        "connections",
+        "main_tradeoff",
+        "unresolved_notes"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string"
+        },
+        "organizing_principle": {
+          "type": "string"
+        },
+        "masses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mass"
+          }
+        },
+        "departments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/department"
+          }
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/connection"
+          }
+        },
+        "main_tradeoff": {
+          "type": "string"
+        },
+        "unresolved_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
+===== END ATTACHMENT: case.schema.json =====
+
+===== BEGIN ATTACHMENT: parent_seeds.json =====
+{
+  "cases": [
+    {
+      "case_id": "S01",
+      "name": "Civic hub between bar and commons",
+      "organizing_principle": "A single academic bar holds all classrooms, with art and music on its ground floor. A compact civic hub of administration, medical and custodial, topped by media, sits between the bar and a double-height commons.",
+      "masses": [
+        {"mass_id": "M1", "label": "Academic and arts bar"},
+        {"mass_id": "M2", "label": "Gym-dining commons"},
+        {"mass_id": "M3", "label": "Civic hub"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [2, 3]},
+        {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1, 2]},
+        {"department_id": "D03", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M3"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": false},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "All movement between classrooms and commons passes through the civic hub. This centralizes supervision but lengthens daily lunch and gym routes. The hub and commons give up the three-floor preference.",
+      "unresolved_notes": [
+        "The hub's upper floor holds only media, so its floor plates are uneven. Stack balance needs a dimensional check.",
+        "Media is on the hub's top floor (floor 2) above administration. This meets the preference only if a two-floor hub is acceptable.",
+        "Kitchen receiving depends on custodial in the hub. The service adjacency across the link needs checking.",
+        "The single-level commons footprint is likely near the length and ratio envelope."
+      ]
+    },
+    {
+      "case_id": "S02",
+      "name": "Civic-academic stack with ground enrichment wing",
+      "organizing_principle": "Core academic stacks over a ground-floor civic front, with media on the bar's top floor. Special education and art and music share an accessible one-story wing. The commons is the third mass, and all three masses are linked to each other.",
+      "masses": [
+        {"mass_id": "M1", "label": "Civic-academic bar"},
+        {"mass_id": "M2", "label": "Special education and arts wing"},
+        {"mass_id": "M3", "label": "Gym-dining commons"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [3]},
+        {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M1"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "Special education gets ground-level access and sits next to the arts, but is separated from general classrooms, which weakens inclusion. Two single-story masses give up the three-floor preference.",
+      "unresolved_notes": [
+        "The single-story wing must meet the 80-ft special-education width as well as the length and ratio limits. Needs checking.",
+        "Custodial receiving is in the academic mass, away from the kitchen. The service route through the link needs checking.",
+        "Without site geometry, it is unknown whether all three direct links can be built."
+      ]
+    },
+    {
+      "case_id": "S03",
+      "name": "Commons with arts loft",
+      "organizing_principle": "Gym and dining fill a double-height ground volume, with art and music raised onto a top-floor loft overlooking it. The classroom bar keeps special education at grade. A civic mass puts media above administration.",
+      "masses": [
+        {"mass_id": "M1", "label": "Academic bar"},
+        {"mass_id": "M2", "label": "Commons with arts loft"},
+        {"mass_id": "M3", "label": "Civic block"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [3]},
+        {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M3"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": false}
+      ],
+      "main_tradeoff": "Raising the arts over the commons gives that mass a third level and links music to the stage. It gives up the ground-floor arts preference and adds long-span structure and acoustic separation demands.",
+      "unresolved_notes": [
+        "Art and music above the double-height void leaves floor 2 of the commons unoccupied. Structural and acoustic feasibility are untested.",
+        "The civic block is two floors. Media's top-floor position holds only if the stack balances.",
+        "There is no direct link between commons and civic block, so the after-hours visitor route is unresolved."
+      ]
+    },
+    {
+      "case_id": "S04",
+      "name": "Detached campus pavilions",
+      "organizing_principle": "One consolidated learning house holds administration, medical, special education, classrooms and media. The commons and an arts-and-service pavilion stand apart. They are linked to each other and reached from the house across open ground.",
+      "masses": [
+        {"mass_id": "M1", "label": "Learning house"},
+        {"mass_id": "M2", "label": "Commons pavilion"},
+        {"mass_id": "M3", "label": "Arts and service pavilion"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [2, 3]},
+        {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D03", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [3]},
+        {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": false},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": false},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "Detaching the commons and arts makes after-hours use and phasing simpler. Students must cross open ground every day for lunch, gym and arts, which weakens supervision, weather protection and single-entry control.",
+      "unresolved_notes": [
+        "Daily outdoor crossings may conflict with admin-controlled secure entry. The brief does not address this.",
+        "All of special education plus admin and medical on the ground floor may exceed one floor plate of the bar. Stack balance needs checking.",
+        "Two single-story pavilions give up the three-floor preference."
+      ]
+    },
+    {
+      "case_id": "S05",
+      "name": "Support bar with academic spine",
+      "organizing_principle": "Special education is paired with administration, medical and media in a two-story support bar, keeping specialized services together. Core academic shares its bar with ground-floor arts and custodial, and that bar links to both other masses.",
+      "masses": [
+        {"mass_id": "M1", "label": "Academic, arts and service bar"},
+        {"mass_id": "M2", "label": "Support and civic bar"},
+        {"mass_id": "M3", "label": "Gym-dining commons"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M2"], "occupied_floors": [1, 2]},
+        {"department_id": "D03", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M2"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M1"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": false}
+      ],
+      "main_tradeoff": "Clustering special education with administrative and medical support helps services and supervision. It distances those students from grade-level peers, and the two-story support bar may be too small for its required width.",
+      "unresolved_notes": [
+        "The support bar's area may fall short of the minimum length implied by the 80-ft width and ratio limits. Needs checking.",
+        "Media is on floor 2, the support bar's top floor, so the preference is met only in a two-floor mass.",
+        "There is no direct link from administration to the commons, so event visitors route through the academic bar."
+      ]
+    }
+  ],
+  "collection_differences": "Cases differ in where art and music sit (academic bar ground floor, enrichment wing, commons loft, detached pavilion). They also differ in whether special education joins the classroom bar or a separate wing or support bar, and which mass holds administration and media (civic mass, academic bar top, or support bar). Connection layouts range from a civic hub (S01) and full triangle (S02) to an academic spine (S03, S05) and a detached campus (S04). Only S03 places program over the commons void. All keep gym and dining together in one ground-level double-height mass with admin at grade. Several give up the three-floor or ground-floor arts preferences."
+}
+===== END ATTACHMENT: parent_seeds.json =====
+
+===== BEGIN ATTACHMENT: gap_targets.json =====
+{
+  "targets": [
+    {
+      "target_id": "T01",
+      "statement": "D01 and D05 are in different masses; D05 occupies floors {3}"
+    },
+    {
+      "target_id": "T02",
+      "statement": "D03 and D04 share a mass; D02 occupies floors {1,2}"
+    },
+    {
+      "target_id": "T03",
+      "statement": "D02 and D05 share a mass; a direct built link connects masses holding D02 and D06"
+    },
+    {
+      "target_id": "T04",
+      "statement": "D02 and D08 share a mass; a direct built link connects masses holding D06 and D07"
+    },
+    {
+      "target_id": "T05",
+      "statement": "D05 occupies floors {3}; no direct built link connects masses holding D06 and D09 (or they share their only mass)"
+    },
+    {
+      "target_id": "T06",
+      "statement": "D03 occupies floors {3}; a direct built link connects masses holding D07 and D09"
+    }
+  ],
+  "caveat": "These are untested combinations, not mandatory or feasible solutions. Do not force them. You may challenge them or introduce other relevant directions."
+}
+===== END ATTACHMENT: gap_targets.json =====

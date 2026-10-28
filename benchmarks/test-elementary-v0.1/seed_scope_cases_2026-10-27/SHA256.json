@@ -1,0 +1,15 @@
+{
+  "README.md": "8d489e2587e6637a724e740bbe027e741f8951e1708968bf1d2582cc419e286c",
+  "cases/additions_A.json": "1cc7918e9e00dd1f920cfeeac0f5228018fd1e0ea2831e0090685183247e64e4",
+  "cases/additions_B.json": "88b23b0ac4431627c613f5f675b84b041ec381633da6d49756ee7155f9759805",
+  "cases/all_15_cases.json": "7fc57c36e5b4fbdbe7ec7ffb745888ef53572cfbe15ff711698c2f09f6678e66",
+  "cases/parents_05.json": "40ee0277da01226e0115beef893634d1c4b7c1184c7fea8b9f037635f998dec8",
+  "generation_inputs/EXPAND_A_generation_message.txt": "04d4e25a50b822d0e2f036d8e468f3132a2523d6b806ae5ceed6190c7ebea23d",
+  "generation_inputs/EXPAND_B_generation_message.txt": "47e220d36f0d85e7f7ab8e55ebd836914bf398feaa9d4d3cf1e8dff94675b259",
+  "generation_inputs/MODEL_INPUT.md": "ccd57fc2f1b4a135b41c885f8aa27d70d0eb18d54d7ac117209b336ff3aeb3fd",
+  "generation_inputs/P05_generation_message.txt": "4704a27e08080cac38afe194cd45b2aae50c157554841c2caa6a74d49793fdeb",
+  "input_rule_verification.json": "c0d59ab976369e21ea55d9a71c6d203d0fd6aadfc9ad2a57e4d94603233e0564",
+  "raw/additions_A_received.txt": "5bb48a3bf62496b414e6d8a3c866d8494df248012638687fe23de1e48c303c5b",
+  "raw/additions_B_received.txt": "7c2eb0416c5aeb7375a36f1d9282de719cb13a1f9320a9fe4c780a23172028b5",
+  "raw/parents_05_received.txt": "01f8b41e09345fd6fe8356234c3da7df9a21fb1ee26425a4e5c3faf71f4b44f6"
+}

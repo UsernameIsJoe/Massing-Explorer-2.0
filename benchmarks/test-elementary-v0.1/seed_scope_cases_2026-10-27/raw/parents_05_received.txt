@@ -1,0 +1,166 @@
+{
+  "cases": [
+    {
+      "case_id": "S01",
+      "name": "Civic hub between bar and commons",
+      "organizing_principle": "A single academic bar holds all classrooms, with art and music on its ground floor. A compact civic hub of administration, medical and custodial, topped by media, sits between the bar and a double-height commons.",
+      "masses": [
+        {"mass_id": "M1", "label": "Academic and arts bar"},
+        {"mass_id": "M2", "label": "Gym-dining commons"},
+        {"mass_id": "M3", "label": "Civic hub"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [2, 3]},
+        {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1, 2]},
+        {"department_id": "D03", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M3"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": false},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "All movement between classrooms and commons passes through the civic hub. This centralizes supervision but lengthens daily lunch and gym routes. The hub and commons give up the three-floor preference.",
+      "unresolved_notes": [
+        "The hub's upper floor holds only media, so its floor plates are uneven. Stack balance needs a dimensional check.",
+        "Media is on the hub's top floor (floor 2) above administration. This meets the preference only if a two-floor hub is acceptable.",
+        "Kitchen receiving depends on custodial in the hub. The service adjacency across the link needs checking.",
+        "The single-level commons footprint is likely near the length and ratio envelope."
+      ]
+    },
+    {
+      "case_id": "S02",
+      "name": "Civic-academic stack with ground enrichment wing",
+      "organizing_principle": "Core academic stacks over a ground-floor civic front, with media on the bar's top floor. Special education and art and music share an accessible one-story wing. The commons is the third mass, and all three masses are linked to each other.",
+      "masses": [
+        {"mass_id": "M1", "label": "Civic-academic bar"},
+        {"mass_id": "M2", "label": "Special education and arts wing"},
+        {"mass_id": "M3", "label": "Gym-dining commons"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [3]},
+        {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M1"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "Special education gets ground-level access and sits next to the arts, but is separated from general classrooms, which weakens inclusion. Two single-story masses give up the three-floor preference.",
+      "unresolved_notes": [
+        "The single-story wing must meet the 80-ft special-education width as well as the length and ratio limits. Needs checking.",
+        "Custodial receiving is in the academic mass, away from the kitchen. The service route through the link needs checking.",
+        "Without site geometry, it is unknown whether all three direct links can be built."
+      ]
+    },
+    {
+      "case_id": "S03",
+      "name": "Commons with arts loft",
+      "organizing_principle": "Gym and dining fill a double-height ground volume, with art and music raised onto a top-floor loft overlooking it. The classroom bar keeps special education at grade. A civic mass puts media above administration.",
+      "masses": [
+        {"mass_id": "M1", "label": "Academic bar"},
+        {"mass_id": "M2", "label": "Commons with arts loft"},
+        {"mass_id": "M3", "label": "Civic block"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [3]},
+        {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M3"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": false}
+      ],
+      "main_tradeoff": "Raising the arts over the commons gives that mass a third level and links music to the stage. It gives up the ground-floor arts preference and adds long-span structure and acoustic separation demands.",
+      "unresolved_notes": [
+        "Art and music above the double-height void leaves floor 2 of the commons unoccupied. Structural and acoustic feasibility are untested.",
+        "The civic block is two floors. Media's top-floor position holds only if the stack balances.",
+        "There is no direct link between commons and civic block, so the after-hours visitor route is unresolved."
+      ]
+    },
+    {
+      "case_id": "S04",
+      "name": "Detached campus pavilions",
+      "organizing_principle": "One consolidated learning house holds administration, medical, special education, classrooms and media. The commons and an arts-and-service pavilion stand apart. They are linked to each other and reached from the house across open ground.",
+      "masses": [
+        {"mass_id": "M1", "label": "Learning house"},
+        {"mass_id": "M2", "label": "Commons pavilion"},
+        {"mass_id": "M3", "label": "Arts and service pavilion"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [2, 3]},
+        {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D03", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [3]},
+        {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": false},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": false},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "Detaching the commons and arts makes after-hours use and phasing simpler. Students must cross open ground every day for lunch, gym and arts, which weakens supervision, weather protection and single-entry control.",
+      "unresolved_notes": [
+        "Daily outdoor crossings may conflict with admin-controlled secure entry. The brief does not address this.",
+        "All of special education plus admin and medical on the ground floor may exceed one floor plate of the bar. Stack balance needs checking.",
+        "Two single-story pavilions give up the three-floor preference."
+      ]
+    },
+    {
+      "case_id": "S05",
+      "name": "Support bar with academic spine",
+      "organizing_principle": "Special education is paired with administration, medical and media in a two-story support bar, keeping specialized services together. Core academic shares its bar with ground-floor arts and custodial, and that bar links to both other masses.",
+      "masses": [
+        {"mass_id": "M1", "label": "Academic, arts and service bar"},
+        {"mass_id": "M2", "label": "Support and civic bar"},
+        {"mass_id": "M3", "label": "Gym-dining commons"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M2"], "occupied_floors": [1, 2]},
+        {"department_id": "D03", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M2"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M1"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": false}
+      ],
+      "main_tradeoff": "Clustering special education with administrative and medical support helps services and supervision. It distances those students from grade-level peers, and the two-story support bar may be too small for its required width.",
+      "unresolved_notes": [
+        "The support bar's area may fall short of the minimum length implied by the 80-ft width and ratio limits. Needs checking.",
+        "Media is on floor 2, the support bar's top floor, so the preference is met only in a two-floor mass.",
+        "There is no direct link from administration to the commons, so event visitors route through the academic bar."
+      ]
+    }
+  ],
+  "collection_differences": "Cases differ in where art and music sit (academic bar ground floor, enrichment wing, commons loft, detached pavilion). They also differ in whether special education joins the classroom bar or a separate wing or support bar, and which mass holds administration and media (civic mass, academic bar top, or support bar). Connection layouts range from a civic hub (S01) and full triangle (S02) to an academic spine (S03, S05) and a detached campus (S04). Only S03 places program over the commons void. All keep gym and dining together in one ground-level double-height mass with admin at grade. Several give up the three-floor or ground-floor arts preferences."
+}

@@ -1,0 +1,171 @@
+```json
+{
+  "cases": [
+    {
+      "case_id": "E01",
+      "name": "Culture tower beside an inclusive learning bar",
+      "organizing_principle": "A three-floor civic tower stacks administration and medical at grade, art and music above, and media on top. Classrooms and special education share one learning bar. Custodial joins the commons to serve the kitchen directly.",
+      "masses": [
+        {"mass_id": "M1", "label": "Civic-culture tower"},
+        {"mass_id": "M2", "label": "Inclusive learning bar"},
+        {"mass_id": "M3", "label": "Gym-dining commons with service"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M2"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M2"], "occupied_floors": [1, 2]},
+        {"department_id": "D03", "mass_ids": ["M1"], "occupied_floors": [2]},
+        {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [3]},
+        {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": false},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "Moving art and music to floor 2 gives up their ground-floor preference. In return the civic stack is balanced across three floors and has a community culture front. Event visitors reach the commons only through the learning bar.",
+      "unresolved_notes": [
+        "The kiln, music acoustics and instrument movement on floor 2 need checking.",
+        "Custodial in the commons adds footprint to a mass that is likely near the length and ratio envelope.",
+        "Special education on floors 1–2 needs at least 753 SF per floor and elevator access. Needs a dimensional check.",
+        "A three-floor learning bar at 80-ft depth must stay within the ratio band. Needs a dimensional check."
+      ]
+    },
+    {
+      "case_id": "E02",
+      "name": "Performance commons as school hub",
+      "organizing_principle": "Art and music join gym, dining and stage in one ground-level performance commons that also serves as the circulation hub. The learning bar holds classrooms, special education and custodial. Administration and medical sit below media in a civic pavilion.",
+      "masses": [
+        {"mass_id": "M1", "label": "Learning and service bar"},
+        {"mass_id": "M2", "label": "Performance commons"},
+        {"mass_id": "M3", "label": "Civic pavilion"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1, 2]},
+        {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M3"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M1"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": false},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "The arts get ground-floor access, stage adjacency and after-hours use. The cost is a larger commons footprint, no direct link between administration and classrooms, and a civic pavilion that gives up the three-floor preference.",
+      "unresolved_notes": [
+        "Adding art and music to the gym-dining footprint may exceed the 60-m length and ratio limits. This is the highest-priority dimensional check.",
+        "Administration reaches classrooms only through the commons. Supervision of entry versus classroom access is unresolved.",
+        "Custodial receiving is in the learning bar, away from the kitchen. Kitchen deliveries may need a service point the program does not define.",
+        "Music and gym noise in one mass need acoustic separation."
+      ]
+    },
+    {
+      "case_id": "E03",
+      "name": "Welcome house with rooftop arts studio",
+      "organizing_principle": "Special education, the nurse and administration share an accessible ground-floor welcome house, with media above. Classrooms fill two bar floors, topped by a third-floor art and music studio. Custodial serves the kitchen from inside the commons.",
+      "masses": [
+        {"mass_id": "M1", "label": "Welcome house"},
+        {"mass_id": "M2", "label": "Classroom bar with roof studio"},
+        {"mass_id": "M3", "label": "Gym-dining commons with service"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M2"], "occupied_floors": [1, 2]},
+        {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [3]},
+        {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "Special education gets grade access beside the nurse and office but sits apart from grade-level classrooms. Art and music give up the ground floor for a top-lit roof studio over classrooms.",
+      "unresolved_notes": [
+        "Media is alone on the welcome house's floor 2. It meets the preference only in a two-floor mass, and its upper floor plate is partial.",
+        "Music over classrooms needs acoustic separation. Kiln and instrument access on floor 3 need checking.",
+        "The welcome house must provide the 80-ft special-education depth within the length and ratio limits. Needs a dimensional check.",
+        "The studio fills only part of floor 3. It is uncertain whether this counts toward the three-floor preference."
+      ]
+    },
+    {
+      "case_id": "E04",
+      "name": "Front-of-house commons",
+      "organizing_principle": "Administration and medical join gym and dining in one front-of-house mass that controls daily and event entry, with media above administration. A three-floor learning bar holds all classrooms. An arts-and-service pavilion supports kitchen receiving.",
+      "masses": [
+        {"mass_id": "M1", "label": "Front-of-house commons"},
+        {"mass_id": "M2", "label": "Learning bar"},
+        {"mass_id": "M3", "label": "Arts and service pavilion"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M2"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D03", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "Combining civic and assembly program simplifies after-hours control and supervision. It pushes the commons footprint toward the 60-m and ratio limits and separates the office from classrooms.",
+      "unresolved_notes": [
+        "Commons plus administration and medical on one ground footprint may exceed the length and ratio envelope. This is the governing dimensional check.",
+        "Media on floor 2 is the top floor only because the mass has no third occupied level. The double-height volume sets the height.",
+        "Media needs acoustic separation from the adjacent gym and dining.",
+        "The single-story arts pavilion gives up the three-floor preference."
+      ]
+    },
+    {
+      "case_id": "E05",
+      "name": "Library heart with civic-arts front",
+      "organizing_principle": "Media moves to the middle floor of the learning bar as a shared daily heart for every grade, above ground-floor special education. A one-story civic-arts front pairs administration and medical with art and music for community use.",
+      "masses": [
+        {"mass_id": "M1", "label": "Learning bar with library heart"},
+        {"mass_id": "M2", "label": "Civic-arts front"},
+        {"mass_id": "M3", "label": "Gym-dining commons with service"}
+      ],
+      "departments": [
+        {"department_id": "D01", "mass_ids": ["M1"], "occupied_floors": [1, 2, 3]},
+        {"department_id": "D02", "mass_ids": ["M1"], "occupied_floors": [1]},
+        {"department_id": "D03", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D04", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D05", "mass_ids": ["M1"], "occupied_floors": [2]},
+        {"department_id": "D06", "mass_ids": ["M3"], "occupied_floors": [1]},
+        {"department_id": "D07", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D08", "mass_ids": ["M2"], "occupied_floors": [1]},
+        {"department_id": "D09", "mass_ids": ["M3"], "occupied_floors": [1]}
+      ],
+      "connections": [
+        {"mass_a": "M1", "mass_b": "M2", "direct_link": true},
+        {"mass_a": "M1", "mass_b": "M3", "direct_link": true},
+        {"mass_a": "M2", "mass_b": "M3", "direct_link": true}
+      ],
+      "main_tradeoff": "This case gives up the media-above-administration preference to make media reachable daily from classrooms. The civic-arts front also gives up the three-floor preference.",
+      "unresolved_notes": [
+        "This is the only addition that does not meet the media preference. It is kept deliberately for comparison and is not a compliance claim.",
+        "Floor 3 of the learning bar is lighter than floors 1 and 2. Stack balance needs checking.",
+        "The single-story civic-arts front needs a length and ratio check."
+      ]
+    }
+  ],
+  "collection_differences": "The additions take media out of a two-floor civic mass. E01 puts it on floor 3 of a three-level civic tower, E04 puts it in the commons mass, and E05 puts it on the learning bar's middle floor, deliberately relaxing the preference. Art and music move into the commons (E02), to floor 2 of a civic stack (E01), and to a roof studio on the classroom bar (E03). Special education joins administration and medical at grade (E03). Custodial moves beside the kitchen in E01, E03 and E05. E02 uses the commons as the circulation hub, a topology absent from the parents. E04 alone puts administration in the assembly mass. Several additions concentrate footprint risk in the commons. T03 was not pursued."
+}
+```

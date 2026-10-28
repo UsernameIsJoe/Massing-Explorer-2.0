@@ -1,0 +1,23 @@
+{
+  "generation_message_checks": [
+    {
+      "message": "P05_generation_message.txt",
+      "explicit_no_cross_mass_rule_present": true,
+      "matches_frozen_MODEL_INPUT": true
+    },
+    {
+      "message": "EXPAND_A_generation_message.txt",
+      "explicit_no_cross_mass_rule_present": true,
+      "matches_frozen_MODEL_INPUT": true
+    },
+    {
+      "message": "EXPAND_B_generation_message.txt",
+      "explicit_no_cross_mass_rule_present": true,
+      "matches_frozen_MODEL_INPUT": true
+    }
+  ],
+  "cases": 15,
+  "department_assignments_checked": 135,
+  "all_recorded_department_mass_lists_have_exactly_one_mass": true,
+  "limitation": "Generation messages establish what was packaged for the runs; no independent Claude session export is available. Single-mass records do not prove dimensional feasibility or room-level realization compliance."
+}

@@ -1,0 +1,322 @@
+[Packaging-only wrapper, ME2 proof check v1.0, packaging 1.0.1. The experimental instruction below is unchanged. Each attachment it lists is embedded verbatim after it, between BEGIN/END ATTACHMENT markers; treat each embedded block as that attachment.]
+
+Attachments required: MODEL_INPUT.md, ROOM_PROGRAM.csv, CASE_FORMAT.md, case.schema.json.
+
+Use only these supplied inputs and this instruction. Do not browse, run code or request external tools.
+
+Propose exactly 5 abstract architectural strategies for the supplied school brief. Develop coherent alternatives that respond to the requirements, limitations and preferences. They should differ in consequential organizational commitments and trade-offs, not only names, prose, or renumbered masses.
+
+Use your architectural reasoning to choose the distinctions. No fixed family list is prescribed. Within this collection seek different responses to the brief's tensions; do not force every case to be equally different on every property. Do not rank the cases or select a winner.
+
+Follow the hard requirements as design intentions. Do not silently relax them to create diversity. A seed is not guaranteed feasible: if a commitment is unresolved or conflicts with the brief, preserve and disclose it for later testing/revision instead of fabricating compliance.
+
+Stay at strategy level: department grouping, occupied floors and proposed direct connections. Do not produce dimensions, floor areas by mass, geometric realization, preference scores or a claim that dimensional feasibility has been verified. Preserve the given program. No particular site geometry, orientation or access arrangement is supplied; do not invent it.
+
+Return only one JSON object conforming to the attached format/schema. Use S01 onward for case IDs. Include all nine departments in every case. Give comparable concise detail per case, following the word guidance in CASE_FORMAT.md. In collection_differences, state the consequential distinctions succinctly. Use null for genuinely unresolved fields and mention their uncertainty. Provide concise rationale, not a detailed reasoning transcript.
+
+===== BEGIN ATTACHMENT: MODEL_INPUT.md =====
+# A test elementary school — design information (v0.2)
+
+## Design brief
+
+3 masses, max 3 floors. length max 60 meters. gym and dining together and double height. art and music prefer on ground floor. media prefer on top floor above admin. admin have to be on ground floor. core academic and special ed width has to be 80 feet. mass ratio have to be between 2:5 and 5:8. prefer 3 floors.
+
+## Program schedule (net square feet)
+
+The supplied `ROOM_PROGRAM.csv` contains the **complete 41-line room program**. Preserve the given quantities, room types, and net areas, including any room with quantity zero. Department net areas:
+
+| Department | NFA (SF) |
+|---|---:|
+| Core academic | 14,280 |
+| Special education | 5,610 |
+| Art & music | 3,040 |
+| Health & physical education | 6,950 |
+| Media center | 2,800 |
+| Dining & food service | 6,150 |
+| Medical | 730 |
+| Administration & guidance | 2,510 |
+| Custodial & maintenance | 2,200 |
+| **Total** | **44,270** |
+
+## Mandatory department assignment
+
+Each of the nine departments must be assigned entirely to exactly one principal mass. Splitting any department across masses is prohibited, including custodial/maintenance and individual support rooms. A department may span floors only within its assigned mass, on contiguous occupied floors with at least 70 m² (approximately 753 SF) of scheduled department NFA on each occupied floor.
+
+## Planning assumptions
+
+- Dimensions in feet unless otherwise stated; areas in square feet.
+- Historical workbook display: 66,405 SF. This is reference information, not the governing design target for this study.
+- Governing GFA target: 44,270 × 1.15 × 1.50 = 76,365.75 SF, with ±3% tolerance (74,074.7775–78,656.7225 SF). Double-height voids are not additional occupied floor area.
+- Default classroom configuration: double-loaded bar, 30-ft classroom depth and 8-ft corridor.
+- Typical floor-to-floor height used for mass extrusion: 14 ft.
+- Gym: clear dimensions at least 60 × 100 ft; double height.
+- Cafeteria: clear dimensions at least 40 × 60 ft; the brief separately specifies that gym and dining are together and double height.
+- Daylight planning: preferred maximum **width** 90 ft for departments with instructional/daylit rooms.
+- If a footprint uses a residual L-shaped floor arm, minimum arm depth is 20 ft.
+- If a department spans multiple floors, those floors must be contiguous, and each floor portion of that department must contain at least **70 m² (~753 SF)**.
+- No specific site boundary, adjacent buildings, orientation, terrain, or access road geometry is supplied.
+
+The brief specifies design requirements and preferences. If a project assumption and an explicit brief item conflict, prioritize the brief and explain material uncertainties. For this study the adjusted target governs; do not substitute the workbook display. The 60-m cap applies to the long principal dimension of each mass, not the combined building extent. The ratio applies to each mass's ground footprint, short side divided by long side, nominally 0.40–0.625. The shared validator uses an absolute ratio tolerance of 0.00675, disclosed equally for all systems. Academic/special-education width means the containing bar depth, not a separate room width.
+===== END ATTACHMENT: MODEL_INPUT.md =====
+
+===== BEGIN ATTACHMENT: ROOM_PROGRAM.csv =====
+department,room,nfa_sf,quantity
+CORE ACADEMIC,Kindergarten Classroom with Toilet,1120,3
+CORE ACADEMIC,General Classroom (Grades 1-6),910,12
+SPECIAL EDUCATION,Self-Contained Special Education Classroom,1150,3
+SPECIAL EDUCATION,Self-Contained Special Education Toilet Room,70,3
+SPECIAL EDUCATION,Resource Room,650,2
+SPECIAL EDUCATION,Small Group Room,650,1
+ART & MUSIC,Art Classroom (25 seats),1200,1
+ART & MUSIC,Art Workroom with Storage and Kiln,200,1
+ART & MUSIC,Music Classroom / Large Group (25-50 seats),1400,1
+ART & MUSIC,Music Practice / Ensemble,120,2
+HEALTH & PHYSICAL EDUCATION,Gymnasium,6500,1
+HEALTH & PHYSICAL EDUCATION,Gym Storeroom,250,1
+HEALTH & PHYSICAL EDUCATION,Health Instructor's Office with Shower and Toilet,200,1
+MEDIA CENTER,Media Center / Reading Room,2800,1
+DINING & FOOD SERVICE,Cafeteria / Dining,2800,1
+DINING & FOOD SERVICE,Stage,900,1
+DINING & FOOD SERVICE,Chair / Table / Equipment Storage,400,1
+DINING & FOOD SERVICE,Kitchen,1800,1
+DINING & FOOD SERVICE,Staff Lunch Room,250,1
+MEDICAL,Medical Suite Toilet,80,1
+MEDICAL,Nurses' Office / Waiting Room,350,1
+MEDICAL,Examination Room / Resting,150,2
+ADMINISTRATION & GUIDANCE,General Office / Waiting Room with Toilet,400,1
+ADMINISTRATION & GUIDANCE,Teachers' Mail and Time Room,140,1
+ADMINISTRATION & GUIDANCE,Copy Room,180,1
+ADMINISTRATION & GUIDANCE,Records Room,140,1
+ADMINISTRATION & GUIDANCE,Principal's Office with Conference Area,420,1
+ADMINISTRATION & GUIDANCE,Principal's Secretary / Waiting,150,1
+ADMINISTRATION & GUIDANCE,Assistant Principal's Office,120,0
+ADMINISTRATION & GUIDANCE,Supervisory / Spare Office,150,1
+ADMINISTRATION & GUIDANCE,Conference Room,300,1
+ADMINISTRATION & GUIDANCE,Guidance Office,180,1
+ADMINISTRATION & GUIDANCE,Guidance Storeroom,50,1
+ADMINISTRATION & GUIDANCE,Teachers' Work Room,400,1
+CUSTODIAL & MAINTENANCE,Custodian's Office,180,1
+CUSTODIAL & MAINTENANCE,Custodian's Workshop,420,1
+CUSTODIAL & MAINTENANCE,Custodian's Storage,420,1
+CUSTODIAL & MAINTENANCE,Recycling Room / Trash,450,1
+CUSTODIAL & MAINTENANCE,Receiving and General Supply,240,1
+CUSTODIAL & MAINTENANCE,Storeroom,240,1
+CUSTODIAL & MAINTENANCE,Network / Telecom Room,250,1
+===== END ATTACHMENT: ROOM_PROGRAM.csv =====
+
+===== BEGIN ATTACHMENT: CASE_FORMAT.md =====
+# Generator case format v1.0
+
+This is an abstract strategic record, not geometry. Use supplied MODEL_INPUT.md and ROOM_PROGRAM.csv as authority. Keep room names/quantities/areas unchanged; you need not repeat all rooms in each case.
+
+Department codes:
+D01 = CORE ACADEMIC
+D02 = SPECIAL EDUCATION
+D03 = ART & MUSIC
+D04 = HEALTH & PHYSICAL EDUCATION
+D05 = MEDIA CENTER
+D06 = DINING & FOOD SERVICE
+D07 = MEDICAL
+D08 = ADMINISTRATION & GUIDANCE
+D09 = CUSTODIAL & MAINTENANCE
+
+Return one JSON object with:
+- cases: array of requested cases.
+- collection_differences: up to 120 words identifying consequential differences across the collection.
+
+Each case:
+- case_id: S01,S02,... for seeds; E01,E02,... for additions.
+- name: short descriptive label.
+- organizing_principle: 20–45 words of concise design rationale, not a detailed reasoning trace.
+- masses: array of {mass_id, label}. IDs are local arbitrary labels such as M1; they carry no ordering, height or coordinates.
+- departments: nine entries {department_id, mass_ids, occupied_floors}.
+  mass_ids: complete list of assigned mass IDs, or null if genuinely unresolved.
+  occupied_floors: complete union of proposed occupied levels (ground=1), or null if genuinely unresolved.
+  A multi-floor department is not automatically a multi-mass department.
+  If a department is proposed in more than one mass, retain the explicit list and explain the conflict; do not conceal it by calling each part a new department. The brief prohibits this assignment.
+- connections: each unordered pair of defined masses, with {mass_a, mass_b, direct_link}.
+  direct_link=true: explicitly propose a direct built connection, such as a bridge or connecting passage.
+  false: explicitly no such built connection; shared grounds or outdoor walking alone do not count.
+  null: connection genuinely unresolved. Do not invent site distances or orientation.
+- main_tradeoff: 15–35 words, naming a consequential sacrifice or tension.
+- unresolved_notes: up to four brief strings for unknowns, potential requirement conflicts or later dimensional checks; empty array permitted.
+
+Use null for unresolved information, not an invented answer. Do not use null to avoid making all strategic decisions. Explain a genuinely unresolved commitment briefly. Retain any inconsistency visibly; do not assert that all requirements are verified.
+A schema-valid JSON record is not a feasibility certificate. Detailed dimensions, geometry and preference scores are not requested.
+
+The attached case.schema.json specifies syntax. Some conflicts are deliberately representable so they can be recorded and revised; its permissiveness does not waive the brief.
+===== END ATTACHMENT: CASE_FORMAT.md =====
+
+===== BEGIN ATTACHMENT: case.schema.json =====
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ME2 abstract strategy collection v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "cases",
+    "collection_differences"
+  ],
+  "properties": {
+    "cases": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    },
+    "collection_differences": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "mass": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mass_id",
+        "label"
+      ],
+      "properties": {
+        "mass_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "label": {
+          "type": "string"
+        }
+      }
+    },
+    "department": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "department_id",
+        "mass_ids",
+        "occupied_floors"
+      ],
+      "properties": {
+        "department_id": {
+          "enum": [
+            "D01",
+            "D02",
+            "D03",
+            "D04",
+            "D05",
+            "D06",
+            "D07",
+            "D08",
+            "D09"
+          ]
+        },
+        "mass_ids": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              },
+              "uniqueItems": true
+            }
+          ]
+        },
+        "occupied_floors": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              },
+              "uniqueItems": true
+            }
+          ]
+        }
+      }
+    },
+    "connection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mass_a",
+        "mass_b",
+        "direct_link"
+      ],
+      "properties": {
+        "mass_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mass_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direct_link": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      }
+    },
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "name",
+        "organizing_principle",
+        "masses",
+        "departments",
+        "connections",
+        "main_tradeoff",
+        "unresolved_notes"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string"
+        },
+        "organizing_principle": {
+          "type": "string"
+        },
+        "masses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/mass"
+          }
+        },
+        "departments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/department"
+          }
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/connection"
+          }
+        },
+        "main_tradeoff": {
+          "type": "string"
+        },
+        "unresolved_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
+===== END ATTACHMENT: case.schema.json =====
