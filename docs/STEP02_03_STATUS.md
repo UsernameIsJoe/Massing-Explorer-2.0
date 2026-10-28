@@ -15,6 +15,10 @@ Nothing downstream (membership, region, shortlist) is proposed or used while a t
 
 Origin of the rule: after Pilot 3, a structure-only region was built and a shortlist was proposed while Tasks 1–4 were still open.
 
+## Asking the architect (2026-10-28)
+
+The architect's time and attention are the scarcest input; too many asks lower the quality of the answers. Ask only for input that changes a decision, batch the asks, state in one line why each matters, and settle anything that has a sensible default without asking.
+
 ## Status
 
 | Task | Done | Open | Evidence |
