@@ -1,0 +1,1896 @@
+{
+ "extraction": "axes-v1",
+ "spec": "docs/AXIS_RECORDS_SPEC.md",
+ "cases": {
+  "R1-S01": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 1,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 0,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 0,
+     "D02-D06": 0,
+     "D02-D07": 0,
+     "D02-D08": 0,
+     "D02-D09": 0,
+     "D03-D04": 0,
+     "D03-D05": 1,
+     "D03-D06": 0,
+     "D03-D07": 1,
+     "D03-D08": 1,
+     "D03-D09": 1,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 1,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 1,
+     "D08-D09": 1
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.5507,
+    "status": "derived",
+    "detail": {
+     "C": 19890,
+     "T": 11280,
+     "G": 13100
+    }
+   },
+   "topology": {
+    "value": "chain through T",
+    "status": "derived",
+    "detail": [
+     "CT",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.6667,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "T": 3,
+     "G": 2
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1,
+      2
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R1-S02": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 0,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 1,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 1,
+     "D02-D06": 0,
+     "D02-D07": 1,
+     "D02-D08": 1,
+     "D02-D09": 0,
+     "D03-D04": 1,
+     "D03-D05": 0,
+     "D03-D06": 1,
+     "D03-D07": 0,
+     "D03-D08": 0,
+     "D03-D09": 0,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 0,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.6277,
+    "status": "derived",
+    "detail": {
+     "G": 16140,
+     "T": 11650,
+     "C": 16480
+    }
+   },
+   "topology": {
+    "value": "all linked",
+    "status": "derived",
+    "detail": [
+     "CG",
+     "CT",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 3.0,
+    "status": "derived",
+    "detail": {
+     "G": 3,
+     "T": 3,
+     "C": 3
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 0,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      3
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R1-S03": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 1,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 1,
+     "D01-D08": 0,
+     "D01-D09": 1,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 0,
+     "D02-D06": 0,
+     "D02-D07": 1,
+     "D02-D08": 0,
+     "D02-D09": 1,
+     "D03-D04": 0,
+     "D03-D05": 1,
+     "D03-D06": 0,
+     "D03-D07": 0,
+     "D03-D08": 1,
+     "D03-D09": 0,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 0,
+     "D05-D08": 1,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 0,
+     "D07-D09": 1,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.4845,
+    "status": "derived",
+    "detail": {
+     "C": 22820,
+     "G": 13100,
+     "T": 8350
+    }
+   },
+   "topology": {
+    "value": "detached",
+    "status": "derived",
+    "detail": []
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.3333,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "G": 2,
+     "T": 2
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R1-S04": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 1,
+     "D01-D03": 1,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 0,
+     "D02-D03": 1,
+     "D02-D04": 0,
+     "D02-D05": 0,
+     "D02-D06": 0,
+     "D02-D07": 0,
+     "D02-D08": 0,
+     "D02-D09": 0,
+     "D03-D04": 0,
+     "D03-D05": 0,
+     "D03-D06": 0,
+     "D03-D07": 0,
+     "D03-D08": 0,
+     "D03-D09": 0,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 1,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 1,
+     "D08-D09": 1
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.482,
+    "status": "derived",
+    "detail": {
+     "T": 8240,
+     "G": 13100,
+     "C": 22930
+    }
+   },
+   "topology": {
+    "value": "chain through G",
+    "status": "derived",
+    "detail": [
+     "CG",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.3333,
+    "status": "derived",
+    "detail": {
+     "T": 2,
+     "G": 2,
+     "C": 3
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R1-S05": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 0,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 1,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 1,
+     "D01-D09": 0,
+     "D02-D03": 1,
+     "D02-D04": 0,
+     "D02-D05": 0,
+     "D02-D06": 0,
+     "D02-D07": 1,
+     "D02-D08": 0,
+     "D02-D09": 1,
+     "D03-D04": 0,
+     "D03-D05": 0,
+     "D03-D06": 0,
+     "D03-D07": 1,
+     "D03-D08": 0,
+     "D03-D09": 1,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 0,
+     "D05-D08": 1,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 0,
+     "D07-D09": 1,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.5575,
+    "status": "derived",
+    "detail": {
+     "C": 19590,
+     "G": 13100,
+     "T": 11580
+    }
+   },
+   "topology": {
+    "value": "all linked",
+    "status": "derived",
+    "detail": [
+     "CG",
+     "CT",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.6667,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "G": 2,
+     "T": 3
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2,
+      3
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R2-S01": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 1,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 0,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 0,
+     "D02-D06": 0,
+     "D02-D07": 0,
+     "D02-D08": 0,
+     "D02-D09": 0,
+     "D03-D04": 0,
+     "D03-D05": 1,
+     "D03-D06": 0,
+     "D03-D07": 1,
+     "D03-D08": 1,
+     "D03-D09": 1,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 1,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 1,
+     "D08-D09": 1
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.5507,
+    "status": "derived",
+    "detail": {
+     "C": 19890,
+     "T": 11280,
+     "G": 13100
+    }
+   },
+   "topology": {
+    "value": "chain through T",
+    "status": "derived",
+    "detail": [
+     "CT",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.3333,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "T": 2,
+     "G": 2
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R2-S02": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 0,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 1,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 1,
+     "D02-D06": 0,
+     "D02-D07": 1,
+     "D02-D08": 1,
+     "D02-D09": 0,
+     "D03-D04": 1,
+     "D03-D05": 0,
+     "D03-D06": 1,
+     "D03-D07": 0,
+     "D03-D08": 0,
+     "D03-D09": 0,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 0,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.6277,
+    "status": "derived",
+    "detail": {
+     "C": 16480,
+     "T": 11650,
+     "G": 16140
+    }
+   },
+   "topology": {
+    "value": "chain through G",
+    "status": "derived",
+    "detail": [
+     "CG",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 3.0,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "T": 3,
+     "G": 3
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 0,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      3
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R2-S03": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 1,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 1,
+     "D01-D06": 0,
+     "D01-D07": 1,
+     "D01-D08": 1,
+     "D01-D09": 0,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 1,
+     "D02-D06": 0,
+     "D02-D07": 1,
+     "D02-D08": 1,
+     "D02-D09": 0,
+     "D03-D04": 0,
+     "D03-D05": 0,
+     "D03-D06": 0,
+     "D03-D07": 0,
+     "D03-D08": 0,
+     "D03-D09": 1,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 0,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.4143,
+    "status": "derived",
+    "detail": {
+     "C": 25930,
+     "T": 5240,
+     "G": 13100
+    }
+   },
+   "topology": {
+    "value": "detached",
+    "status": "derived",
+    "detail": []
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.3333,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "T": 2,
+     "G": 2
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      2,
+      3
+     ],
+     "D02": [
+      1
+     ],
+     "D03": [
+      1,
+      2
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R2-S04": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 1,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 0,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 0,
+     "D02-D06": 0,
+     "D02-D07": 0,
+     "D02-D08": 0,
+     "D02-D09": 0,
+     "D03-D04": 0,
+     "D03-D05": 0,
+     "D03-D06": 0,
+     "D03-D07": 1,
+     "D03-D08": 1,
+     "D03-D09": 1,
+     "D04-D05": 1,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 1,
+     "D05-D07": 0,
+     "D05-D08": 0,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 1,
+     "D08-D09": 1
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.5507,
+    "status": "derived",
+    "detail": {
+     "C": 19890,
+     "T": 8480,
+     "G": 15900
+    }
+   },
+   "topology": {
+    "value": "all linked",
+    "status": "derived",
+    "detail": [
+     "CG",
+     "CT",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.3333,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "T": 1,
+     "G": 3
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 2,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R2-S05": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 0,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 1,
+     "D02-D03": 1,
+     "D02-D04": 0,
+     "D02-D05": 1,
+     "D02-D06": 0,
+     "D02-D07": 1,
+     "D02-D08": 1,
+     "D02-D09": 0,
+     "D03-D04": 0,
+     "D03-D05": 1,
+     "D03-D06": 0,
+     "D03-D07": 1,
+     "D03-D08": 1,
+     "D03-D09": 0,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 0,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.6277,
+    "status": "derived",
+    "detail": {
+     "C": 16480,
+     "T": 14690,
+     "G": 13100
+    }
+   },
+   "topology": {
+    "value": "chain through C",
+    "status": "derived",
+    "detail": [
+     "CG",
+     "CT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.3333,
+    "status": "derived",
+    "detail": {
+     "C": 2,
+     "T": 3,
+     "G": 2
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2
+     ],
+     "D02": [
+      2
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R3-S01": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 1,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 1,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 0,
+     "D02-D06": 0,
+     "D02-D07": 0,
+     "D02-D08": 0,
+     "D02-D09": 1,
+     "D03-D04": 0,
+     "D03-D05": 1,
+     "D03-D06": 0,
+     "D03-D07": 1,
+     "D03-D08": 1,
+     "D03-D09": 0,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 0,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.501,
+    "status": "derived",
+    "detail": {
+     "C": 22090,
+     "T": 9080,
+     "G": 13100
+    }
+   },
+   "topology": {
+    "value": "chain through T",
+    "status": "derived",
+    "detail": [
+     "CT",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.6667,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "T": 3,
+     "G": 2
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2,
+      3
+     ],
+     "D03": [
+      1,
+      2
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R3-S02": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 1,
+     "D01-D03": 1,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 0,
+     "D02-D03": 1,
+     "D02-D04": 0,
+     "D02-D05": 0,
+     "D02-D06": 0,
+     "D02-D07": 0,
+     "D02-D08": 0,
+     "D02-D09": 0,
+     "D03-D04": 0,
+     "D03-D05": 0,
+     "D03-D06": 0,
+     "D03-D07": 0,
+     "D03-D08": 0,
+     "D03-D09": 0,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 1,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 1,
+     "D08-D09": 1
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.482,
+    "status": "derived",
+    "detail": {
+     "G": 13100,
+     "C": 22930,
+     "T": 8240
+    }
+   },
+   "topology": {
+    "value": "chain through G",
+    "status": "derived",
+    "detail": [
+     "CG",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.3333,
+    "status": "derived",
+    "detail": {
+     "G": 2,
+     "C": 3,
+     "T": 2
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2,
+      3
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      2
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R3-S03": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 0,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 0,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 1,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 1,
+     "D02-D06": 0,
+     "D02-D07": 1,
+     "D02-D08": 1,
+     "D02-D09": 0,
+     "D03-D04": 1,
+     "D03-D05": 0,
+     "D03-D06": 1,
+     "D03-D07": 0,
+     "D03-D08": 0,
+     "D03-D09": 0,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 0,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.6277,
+    "status": "derived",
+    "detail": {
+     "G": 16140,
+     "C": 16480,
+     "T": 11650
+    }
+   },
+   "topology": {
+    "value": "all linked",
+    "status": "derived",
+    "detail": [
+     "CG",
+     "CT",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 3.0,
+    "status": "derived",
+    "detail": {
+     "G": 3,
+     "C": 3,
+     "T": 3
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 0,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2
+     ],
+     "D03": [
+      2,
+      3
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R3-S04": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 0,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 1,
+     "D01-D06": 0,
+     "D01-D07": 0,
+     "D01-D08": 0,
+     "D01-D09": 1,
+     "D02-D03": 1,
+     "D02-D04": 0,
+     "D02-D05": 0,
+     "D02-D06": 0,
+     "D02-D07": 1,
+     "D02-D08": 1,
+     "D02-D09": 0,
+     "D03-D04": 0,
+     "D03-D05": 0,
+     "D03-D06": 0,
+     "D03-D07": 1,
+     "D03-D08": 1,
+     "D03-D09": 0,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 0,
+     "D05-D08": 0,
+     "D05-D09": 1,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 0,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.5645,
+    "status": "derived",
+    "detail": {
+     "C": 19280,
+     "T": 11890,
+     "G": 13100
+    }
+   },
+   "topology": {
+    "value": "single link CT",
+    "status": "derived",
+    "detail": [
+     "CT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.6667,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "T": 3,
+     "G": 2
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 1,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2,
+      3
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  },
+  "R3-S05": {
+   "extraction": "axes-v1",
+   "program_organization": {
+    "value": {
+     "D01-D02": 1,
+     "D01-D03": 0,
+     "D01-D04": 0,
+     "D01-D05": 1,
+     "D01-D06": 0,
+     "D01-D07": 1,
+     "D01-D08": 1,
+     "D01-D09": 0,
+     "D02-D03": 0,
+     "D02-D04": 0,
+     "D02-D05": 1,
+     "D02-D06": 0,
+     "D02-D07": 1,
+     "D02-D08": 1,
+     "D02-D09": 0,
+     "D03-D04": 0,
+     "D03-D05": 0,
+     "D03-D06": 0,
+     "D03-D07": 0,
+     "D03-D08": 0,
+     "D03-D09": 1,
+     "D04-D05": 0,
+     "D04-D06": 1,
+     "D04-D07": 0,
+     "D04-D08": 0,
+     "D04-D09": 0,
+     "D05-D06": 0,
+     "D05-D07": 1,
+     "D05-D08": 1,
+     "D05-D09": 0,
+     "D06-D07": 0,
+     "D06-D08": 0,
+     "D06-D09": 0,
+     "D07-D08": 1,
+     "D07-D09": 0,
+     "D08-D09": 0
+    },
+    "status": "derived"
+   },
+   "mass_count": {
+    "value": 3,
+    "status": "derived",
+    "note": "fixed at 3 by the brief; does not separate cases"
+   },
+   "distribution_balance": {
+    "value": 0.4143,
+    "status": "derived",
+    "detail": {
+     "C": 25930,
+     "T": 5240,
+     "G": 13100
+    }
+   },
+   "topology": {
+    "value": "chain through T",
+    "status": "derived",
+    "detail": [
+     "CT",
+     "GT"
+    ]
+   },
+   "loading": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization"
+   },
+   "mean_height": {
+    "value": 2.0,
+    "status": "derived",
+    "detail": {
+     "C": 3,
+     "T": 1,
+     "G": 2
+    },
+    "note": "program height (top occupied floor), not built height"
+   },
+   "height_articulation": {
+    "value": 2,
+    "status": "derived"
+   },
+   "vertical_organization": {
+    "value": {
+     "D01": [
+      1,
+      2,
+      3
+     ],
+     "D02": [
+      1,
+      2,
+      3
+     ],
+     "D03": [
+      1
+     ],
+     "D04": [
+      1
+     ],
+     "D05": [
+      3
+     ],
+     "D06": [
+      1
+     ],
+     "D07": [
+      1
+     ],
+     "D08": [
+      1
+     ],
+     "D09": [
+      1
+     ]
+    },
+    "status": "derived"
+   },
+   "geometric_character": {
+    "value": null,
+    "status": "unknown",
+    "reason": "needs geometry; recorded at realization",
+    "note": "includes the bar arrangement (legacy topology meaning)"
+   }
+  }
+ }
+}

@@ -1,0 +1,1800 @@
+{
+ "extraction": "axes-v1",
+ "cases": {
+  "R1-S01": {
+   "intent": "Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Civic hinge as front door",
+     "serves": "Makes the middle mass the public face that holds arrival, the office, care and the library.",
+     "axes": {
+      "program_organization": {
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D05",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Serial links through the hinge",
+     "serves": "Ensures every passage between learning and commons crosses the hinge.",
+     "axes": {
+      "topology": [
+       "CT+",
+       "GT+",
+       "CG-"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Arts at the hinge base",
+     "serves": "Puts the arts in the public face of the school, starting at ground level.",
+     "axes": {
+      "vertical_organization": {
+       "D03": [
+        1,
+        2
+       ]
+      },
+      "distribution_balance": [
+       "D03"
+      ]
+     }
+    },
+    {
+     "move_id": "K4",
+     "move": "Single learning bar at the end",
+     "serves": "Keeps all classroom departments together at the quiet end of the chain.",
+     "axes": {
+      "program_organization": {
+       "D01-D02": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D02": [
+        1,
+        2
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D02"
+      ],
+      "mean_height / height_articulation": [
+       "D01"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 6,
+    "of_departments": 9,
+    "pair_bits_fixed": 4,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": [
+     "D04",
+     "D06",
+     "D09"
+    ]
+   }
+  },
+  "R1-S02": {
+   "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Arts loft on the commons roof",
+     "serves": "Forms the single cultural block by stacking the arts over the commons volume.",
+     "axes": {
+      "program_organization": {
+       "D03-D04": 1,
+       "D03-D06": 1,
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D03": [
+        3
+       ],
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D03",
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D03"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Civic block with library crown",
+     "serves": "Crowns the civic block with the library over the office and keeps specialized learning beside care and leadership.",
+     "axes": {
+      "program_organization": {
+       "D02-D05": 1,
+       "D02-D07": 1,
+       "D02-D08": 1,
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D02": [
+        1,
+        2
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D02",
+       "D05",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Closed triangle of links",
+     "serves": "Joins each mass to both others so the cluster works as one indoor building.",
+     "axes": {
+      "topology": [
+       "GT+",
+       "CT+",
+       "CG+"
+      ]
+     }
+    },
+    {
+     "move_id": "K4",
+     "move": "Plain academic bar",
+     "serves": "Completes the triangle with a dedicated three-floor classroom bar.",
+     "axes": {
+      "program_organization": {
+       "D01-D09": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D01"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R1-S03": {
+   "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "No built links",
+     "serves": "Keeps the three pavilions free-standing on shared grounds.",
+     "axes": {
+      "topology": [
+       "CG-",
+       "GT-",
+       "CT-"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Self-sufficient learning pavilion",
+     "serves": "Keeps classrooms, the nurse and building service together so students rarely need to leave.",
+     "axes": {
+      "program_organization": {
+       "D01-D02": 1,
+       "D01-D07": 1,
+       "D01-D09": 1,
+       "D02-D07": 1,
+       "D02-D09": 1,
+       "D07-D09": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D02": [
+        1,
+        2
+       ],
+       "D07": [
+        1
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D02",
+       "D07",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D01"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Independent community pavilion",
+     "serves": "Isolates athletics and dining so they can open on their own.",
+     "axes": {
+      "program_organization": {
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D04",
+       "D06"
+      ]
+     }
+    },
+    {
+     "move_id": "K4",
+     "move": "Low civic-arts pavilion",
+     "serves": "Forms the arrival pavilion with the library directly above the office.",
+     "axes": {
+      "program_organization": {
+       "D03-D05": 1,
+       "D03-D08": 1,
+       "D05-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D03": [
+        1
+       ],
+       "D05": [
+        2
+       ]
+      },
+      "distribution_balance": [
+       "D03",
+       "D05",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R1-S04": {
+   "intent": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Heart links front and wing",
+     "serves": "Makes the commons the only connection between the civic front and the learning wing.",
+     "axes": {
+      "topology": [
+       "GT+",
+       "CG+",
+       "CT-"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Arts within the learning wing",
+     "serves": "Folds the arts into daily teaching beyond the heart, at ground level.",
+     "axes": {
+      "program_organization": {
+       "D01-D02": 1,
+       "D01-D03": 1,
+       "D02-D03": 1
+      },
+      "vertical_organization": {
+       "D03": [
+        1
+       ],
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D02": [
+        1,
+        2
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D02",
+       "D03"
+      ],
+      "mean_height / height_articulation": [
+       "D01"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Two-floor civic front",
+     "serves": "Gives arrival a compact front with the library over the office.",
+     "axes": {
+      "program_organization": {
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D05-D09": 1,
+       "D07-D08": 1,
+       "D07-D09": 1,
+       "D08-D09": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D09": [
+        1
+       ],
+       "D05": [
+        2
+       ]
+      },
+      "distribution_balance": [
+       "D05",
+       "D07",
+       "D08",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K4",
+     "move": "Commons as central heart",
+     "serves": "Places the shared volume at the centre of the three-part sequence.",
+     "axes": {
+      "program_organization": {
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D04",
+       "D06"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R1-S05": {
+   "intent": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Office and library in the academy",
+     "serves": "Stacks classrooms over the office in the academy, with the library at its crown.",
+     "axes": {
+      "program_organization": {
+       "D01-D05": 1,
+       "D01-D08": 1,
+       "D05-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D05",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D01",
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Care-and-making house",
+     "serves": "Pairs specialized learning with the nurse and arts in their own house.",
+     "axes": {
+      "program_organization": {
+       "D02-D03": 1,
+       "D02-D07": 1,
+       "D03-D07": 1
+      },
+      "vertical_organization": {
+       "D02": [
+        1,
+        2,
+        3
+       ],
+       "D07": [
+        1
+       ],
+       "D03": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D02",
+       "D03",
+       "D07"
+      ],
+      "mean_height / height_articulation": [
+       "D02"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Closed loop of links",
+     "serves": "Joins each mass to the other two so the loop around the court is continuous.",
+     "axes": {
+      "topology": [
+       "CG+",
+       "GT+",
+       "CT+"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 6,
+    "of_departments": 9,
+    "pair_bits_fixed": 6,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": [
+     "D04",
+     "D06",
+     "D09"
+    ]
+   }
+  },
+  "R2-S01": {
+   "intent": "Aims to give staff a single supervised threshold controlling access to both classrooms and hall, and to let evening visitors reach the hall and arts without entering classroom corridors.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "School front and reading room in the gateway",
+     "serves": "Puts supervision, the nurse and the reading room at the threshold everyone passes through.",
+     "axes": {
+      "program_organization": {
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D05": [
+        2
+       ]
+      },
+      "distribution_balance": [
+       "D05",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Gateway as the only connector",
+     "serves": "Makes the gateway the sole enclosed route between the learning bar and the hall.",
+     "axes": {
+      "topology": [
+       "CT+",
+       "GT+",
+       "CG-"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Arts and service on the hall side",
+     "serves": "Lets the hall, art and music, and kitchen receiving work as an after-hours cluster away from classrooms.",
+     "axes": {
+      "program_organization": {
+       "D03-D04": 0,
+       "D03-D06": 0,
+       "D03-D09": 1,
+       "D04-D06": 1,
+       "D04-D09": 0,
+       "D06-D09": 0
+      },
+      "vertical_organization": {
+       "D03": [
+        1
+       ],
+       "D09": [
+        1
+       ],
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D03",
+       "D04",
+       "D06",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D04",
+       "D06"
+      ]
+     }
+    },
+    {
+     "move_id": "K4",
+     "move": "One compact learning bar",
+     "serves": "Keeps every classroom and special education room together behind the gateway.",
+     "axes": {
+      "program_organization": {
+       "D01-D02": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D02": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D02"
+      ],
+      "mean_height / height_articulation": [
+       "D01"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R2-S02": {
+   "intent": "Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Heart as the only connector",
+     "serves": "Routes every movement between the two wings through the shared heart.",
+     "axes": {
+      "topology": [
+       "CG+",
+       "GT+",
+       "CT-"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Studio loft over the hall",
+     "serves": "Concentrates all communal and performing life in the heart, with arts linked to the stage below.",
+     "axes": {
+      "program_organization": {
+       "D03-D04": 1,
+       "D03-D06": 1,
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ],
+       "D03": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D03",
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D03"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Front wing with inclusive support",
+     "serves": "Pairs special education with the office and nurse, beneath a reading room above administration.",
+     "axes": {
+      "program_organization": {
+       "D02-D05": 1,
+       "D02-D07": 1,
+       "D02-D08": 1,
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D02": [
+        1,
+        2
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D02",
+       "D05",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K4",
+     "move": "Classroom wing over a service base",
+     "serves": "Keeps the classroom wing instructional, with custodial at its ground floor reaching the kitchen through the heart.",
+     "axes": {
+      "program_organization": {
+       "D01-D09": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D01"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R2-S03": {
+   "intent": "Aims to let the hall and workshop open to the community and be phased independently, while keeping the instructional day secure inside a single enclosed bar.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Stack the whole school day",
+     "serves": "Places supervision, support, classrooms and the reading crown in one enclosure, with media above administration.",
+     "axes": {
+      "program_organization": {
+       "D01-D02": 1,
+       "D01-D05": 1,
+       "D01-D07": 1,
+       "D01-D08": 1,
+       "D02-D05": 1,
+       "D02-D07": 1,
+       "D02-D08": 1,
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D02": [
+        1
+       ],
+       "D01": [
+        2,
+        3
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D02",
+       "D05",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D01",
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Freestanding community hall",
+     "serves": "Lets the hall stand alone for independent community use and phasing.",
+     "axes": {
+      "program_organization": {
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D04",
+       "D06"
+      ],
+      "topology": [
+       "CG-",
+       "GT-"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Shared making-and-maintenance workshop",
+     "serves": "Groups art, music and custodial in a separate workshop pavilion on the grounds.",
+     "axes": {
+      "program_organization": {
+       "D03-D09": 1
+      },
+      "vertical_organization": {
+       "D03": [
+        1,
+        2
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D03",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D03"
+      ],
+      "topology": [
+       "CT-"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 12,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R2-S04": {
+   "intent": "Seeks a protected outdoor room that every part of the school opens onto, with indoor circulation around it, and places reading at the social centre above shared dining.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Closed loop around the court",
+     "serves": "Links every range to both others so circulation rings the courtyard.",
+     "axes": {
+      "topology": [
+       "CT+",
+       "GT+",
+       "CG+"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Reading loft over the commons",
+     "serves": "Puts the library above the hall as the court's social centre.",
+     "axes": {
+      "program_organization": {
+       "D04-D05": 1,
+       "D04-D06": 1,
+       "D05-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D04",
+       "D05",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Low civic and arts front",
+     "serves": "Keeps the front range single-storey so the court stays open to light on that side.",
+     "axes": {
+      "program_organization": {
+       "D03-D07": 1,
+       "D03-D08": 1,
+       "D03-D09": 1,
+       "D07-D08": 1,
+       "D07-D09": 1,
+       "D08-D09": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D03": [
+        1
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D03",
+       "D07",
+       "D08",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D03",
+       "D07",
+       "D08",
+       "D09"
+      ]
+     }
+    },
+    {
+     "move_id": "K4",
+     "move": "Tall learning range",
+     "serves": "Concentrates all classrooms and special education in the range that rises over the court.",
+     "axes": {
+      "program_organization": {
+       "D01-D02": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D02": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D02"
+      ],
+      "mean_height / height_articulation": [
+       "D01"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R2-S05": {
+   "intent": "Aims to keep every classroom within one stair of the ground and close to the hall, while giving the school a clear civic address and grouping supervision, nursing and special education support.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Two-storey classroom bar",
+     "serves": "Holds all core classrooms to the two lowest floors.",
+     "axes": {
+      "vertical_organization": {
+       "D01": [
+        1,
+        2
+       ]
+      },
+      "distribution_balance": [
+       "D01"
+      ],
+      "mean_height / height_articulation": [
+       "D01"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Stacked civic tower",
+     "serves": "Gives the school its vertical marker, with media crowning administration and arts at grade.",
+     "axes": {
+      "program_organization": {
+       "D02-D03": 1,
+       "D02-D05": 1,
+       "D02-D07": 1,
+       "D02-D08": 1,
+       "D03-D05": 1,
+       "D03-D07": 1,
+       "D03-D08": 1,
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D03": [
+        1
+       ],
+       "D02": [
+        2
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D02",
+       "D03",
+       "D05",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Learning bar as the connector",
+     "serves": "Joins hall and tower only through the classroom bar, with custodial at the bar's hall end.",
+     "axes": {
+      "program_organization": {
+       "D04-D06": 1,
+       "D04-D09": 0,
+       "D06-D09": 0
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D04",
+       "D06",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D04",
+       "D06"
+      ],
+      "topology": [
+       "CG+",
+       "CT+",
+       "GT-"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 13,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R3-S01": {
+   "intent": "Aims to give visitors one supervised arrival point at the middle of the school, buffer classrooms from hall noise, and let arts and library programs anchor community use next to the hall.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Stack the cultural hinge",
+     "serves": "Makes the middle mass the front door and cultural core, with arts and library stacked over the office.",
+     "axes": {
+      "program_organization": {
+       "D03-D05": 1,
+       "D03-D07": 1,
+       "D03-D08": 1,
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D03": [
+        1,
+        2
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D03",
+       "D05",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Linear sequence linked only through the hinge",
+     "serves": "Places the hall and the learning bar at opposite ends so all movement between them passes through the hinge.",
+     "axes": {
+      "program_organization": {
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D04",
+       "D06"
+      ],
+      "topology": [
+       "CT+",
+       "GT+",
+       "CG-"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Consolidate all classrooms in one bar",
+     "serves": "Creates the quiet learning end, with general and special education together and building service at its base.",
+     "axes": {
+      "program_organization": {
+       "D01-D02": 1,
+       "D01-D09": 1,
+       "D02-D09": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D02": [
+        1,
+        2,
+        3
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D02",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D01",
+       "D02"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R3-S02": {
+   "intent": "Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Hall as the only connector",
+     "serves": "Makes the hall the central heart through which the two wings meet.",
+     "axes": {
+      "program_organization": {
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D04",
+       "D06"
+      ],
+      "topology": [
+       "CG+",
+       "GT+",
+       "CT-"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Self-contained learning house",
+     "serves": "Carries the learning wing as a complete teaching building with classrooms, special education and arts together.",
+     "axes": {
+      "program_organization": {
+       "D01-D02": 1,
+       "D01-D03": 1,
+       "D02-D03": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D02": [
+        1,
+        2,
+        3
+       ],
+       "D03": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D02",
+       "D03"
+      ],
+      "mean_height / height_articulation": [
+       "D01",
+       "D02"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Compact front-of-house wing",
+     "serves": "Gives the opposite wing a small public role with the office, support and service, and the library above.",
+     "axes": {
+      "program_organization": {
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D05-D09": 1,
+       "D07-D08": 1,
+       "D07-D09": 1,
+       "D08-D09": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D09": [
+        1
+       ],
+       "D05": [
+        2
+       ]
+      },
+      "distribution_balance": [
+       "D05",
+       "D07",
+       "D08",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R3-S03": {
+   "intent": "Aims to bring every mass to three floors, allow indoor movement between any two parts, and join arts with the hall into one performance and community venue.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Arts loft over the hall",
+     "serves": "Turns the hall into a full-height performance block with arts above its service side.",
+     "axes": {
+      "program_organization": {
+       "D03-D04": 1,
+       "D03-D06": 1,
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ],
+       "D03": [
+        2,
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D03",
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D03"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Close the ring",
+     "serves": "Links all three masses to each other to form the compact cluster around the courtyard.",
+     "axes": {
+      "topology": [
+       "CG+",
+       "CT+",
+       "GT+"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Civic house with supported learning",
+     "serves": "Keeps special education beside the office and nurse, with the library crowning the civic house.",
+     "axes": {
+      "program_organization": {
+       "D02-D05": 1,
+       "D02-D07": 1,
+       "D02-D08": 1,
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D02": [
+        1,
+        2
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D02",
+       "D05",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K4",
+     "move": "Dedicated classroom bar",
+     "serves": "Completes the ring with a bar for general classrooms and building service.",
+     "axes": {
+      "program_organization": {
+       "D01-D09": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D01"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R3-S04": {
+   "intent": "Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Detach the hall",
+     "serves": "Makes the hall a freestanding community building without built links to the school bars.",
+     "axes": {
+      "program_organization": {
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D04",
+       "D06"
+      ],
+      "topology": [
+       "CG-",
+       "GT-"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Join the twin bars",
+     "serves": "Forms the school proper from two linked parallel bars.",
+     "axes": {
+      "topology": [
+       "CT+"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Library crown on the classroom bar",
+     "serves": "Places the library at the top of the classroom house, with building service at its base.",
+     "axes": {
+      "program_organization": {
+       "D01-D05": 1,
+       "D01-D09": 1,
+       "D05-D09": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D05": [
+        3
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D05",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D01",
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K4",
+     "move": "Front and inclusion house",
+     "serves": "Pairs the office with specialized learning in the second bar, with nurse and arts at ground.",
+     "axes": {
+      "program_organization": {
+       "D02-D03": 1,
+       "D02-D07": 1,
+       "D02-D08": 1,
+       "D03-D07": 1,
+       "D03-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D02": [
+        1,
+        2,
+        3
+       ],
+       "D03": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D02",
+       "D03",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D02"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 10,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  },
+  "R3-S05": {
+   "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+   "moves": [
+    {
+     "move_id": "K1",
+     "move": "Concentrate the school day in one block",
+     "serves": "Carries the single learning block with front door at the base and library at the crown.",
+     "axes": {
+      "program_organization": {
+       "D01-D02": 1,
+       "D01-D05": 1,
+       "D01-D07": 1,
+       "D01-D08": 1,
+       "D02-D05": 1,
+       "D02-D07": 1,
+       "D02-D08": 1,
+       "D05-D07": 1,
+       "D05-D08": 1,
+       "D07-D08": 1
+      },
+      "vertical_organization": {
+       "D01": [
+        1,
+        2,
+        3
+       ],
+       "D02": [
+        1,
+        2,
+        3
+       ],
+       "D08": [
+        1
+       ],
+       "D07": [
+        1
+       ],
+       "D05": [
+        3
+       ]
+      },
+      "distribution_balance": [
+       "D01",
+       "D02",
+       "D05",
+       "D07",
+       "D08"
+      ],
+      "mean_height / height_articulation": [
+       "D01",
+       "D02",
+       "D05"
+      ]
+     }
+    },
+    {
+     "move_id": "K2",
+     "move": "Low workshop pavilion",
+     "serves": "Gives arts and building service their own single-storey ground-level pavilion.",
+     "axes": {
+      "program_organization": {
+       "D03-D09": 1
+      },
+      "vertical_organization": {
+       "D03": [
+        1
+       ],
+       "D09": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D03",
+       "D09"
+      ],
+      "mean_height / height_articulation": [
+       "D03",
+       "D09"
+      ]
+     }
+    },
+    {
+     "move_id": "K3",
+     "move": "Hall reached through the workshop",
+     "serves": "Makes the workshop pavilion the hinge between the learning block and the hall.",
+     "axes": {
+      "program_organization": {
+       "D04-D06": 1
+      },
+      "vertical_organization": {
+       "D04": [
+        1
+       ],
+       "D06": [
+        1
+       ]
+      },
+      "distribution_balance": [
+       "D04",
+       "D06"
+      ],
+      "mean_height / height_articulation": [
+       "D04",
+       "D06"
+      ],
+      "topology": [
+       "CT+",
+       "GT+",
+       "CG-"
+      ]
+     }
+    }
+   ],
+   "locked": {
+    "departments_placed": 9,
+    "of_departments": 9,
+    "pair_bits_fixed": 12,
+    "of_pair_bits": 36,
+    "links_fixed": 3,
+    "of_links": 3,
+    "departments_not_named": []
+   }
+  }
+ }
+}

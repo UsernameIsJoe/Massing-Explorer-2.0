@@ -19,9 +19,9 @@ Origin of the rule: after Pilot 3, a structure-only region was built and a short
 
 | Task | Done | Open | Evidence |
 |---|---|---|---|
-| 1. Comparable records | Explicit decisions. Semantic description: concept, intent, key moves, brief response, unresolved (seed spec v2.0). Key moves reference placements. | **Nine-axis descriptors with versioned extraction rules.** Not started. | `docs/SEED_RECORD_SPEC.md`, `seeds_v2/` |
+| 1. Comparable records | Explicit decisions. Semantic description: concept, intent, key moves, brief response, unresolved (seed spec v2.0). Key moves reference placements. | Nine-axis records done for all 15 seeds (axes-v1, `docs/AXIS_RECORDS_SPEC.md`); loading and geometric_character unknown until realization. | `seeds_v2/axes/axes_v1.json` |
 | 2. Embedding representation | Paraphrase robustness passes (bge-m3, concept and intent). | It is unknown whether the embedding carries meaning beyond structure. No trusted judge exists: human labeling is too costly and unreliable, and the LLM judges lean on structure. Aspect-conditioned descriptions have not been tested. | Pilots 01, 01b, 01c |
-| 3. Intention → decisions → axes links | Intention → decisions, through key moves. | Decisions → axes. Depends on Task 1. | seeds_v2 |
+| 3. Intention → decisions → axes links | Intention → decisions → axes. | Done for 15 seeds: `seeds_v2/axes/move_axis_links_v1.json`. Key moves name all 9 departments in 13 of 15 seeds and all 3 links in every seed; pairs named together in one move fix about 10 of 36 co-location bits. | seeds_v2 |
 | 4. Joint membership | Architect's decision weights (department, floor and link). | **The rule.** It must cover unseen strategies, and an unseen strategy has no authored semantics (Pilot 3 addendum). Semantic lock vs implementation lock is not decided. | Pilots 02, 03 |
 | 5. Generator | Structural edit generator with hard rules, including the custodial rule; a pool of 1,050 valid strategies. | Introducing a new organizing concept needs an LLM or the architect. | Pilot 3 |
 
