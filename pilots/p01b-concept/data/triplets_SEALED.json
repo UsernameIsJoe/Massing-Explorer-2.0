@@ -1,0 +1,316 @@
+{
+ "seed": 20261028,
+ "presentation_order": [
+  "C15",
+  "C03",
+  "C16",
+  "C12",
+  "C06",
+  "C02",
+  "C11",
+  "C09",
+  "C04",
+  "C13",
+  "C07",
+  "C14",
+  "C08",
+  "C01",
+  "C05",
+  "C10"
+ ],
+ "triplets": [
+  {
+   "kind": "cross_run",
+   "anchor": "R1-S04",
+   "options": [
+    "R3-S02",
+    "R2-S02"
+   ],
+   "selection": {
+    "twin": "R3-S02",
+    "twin_distance": 0.0123,
+    "wording_closer_non_twin": "R2-S02",
+    "wording_cos": 0.1105
+   },
+   "triplet_id": "C01",
+   "shown_order": [
+    "R3-S02",
+    "R2-S02"
+   ]
+  },
+  {
+   "kind": "cross_run",
+   "anchor": "R1-S02",
+   "options": [
+    "R3-S03",
+    "R3-S05"
+   ],
+   "selection": {
+    "twin": "R3-S03",
+    "twin_distance": 0.0185,
+    "wording_closer_non_twin": "R3-S05",
+    "wording_cos": 0.1094
+   },
+   "triplet_id": "C02",
+   "shown_order": [
+    "R3-S03",
+    "R3-S05"
+   ]
+  },
+  {
+   "kind": "cross_run",
+   "anchor": "R1-S01",
+   "options": [
+    "R3-S01",
+    "R3-S05"
+   ],
+   "selection": {
+    "twin": "R3-S01",
+    "twin_distance": 0.0679,
+    "wording_closer_non_twin": "R3-S05",
+    "wording_cos": 0.1411
+   },
+   "triplet_id": "C03",
+   "shown_order": [
+    "R3-S01",
+    "R3-S05"
+   ]
+  },
+  {
+   "kind": "cross_run",
+   "anchor": "R2-S01",
+   "options": [
+    "R1-S01",
+    "R2-S05"
+   ],
+   "selection": {
+    "twin": "R1-S01",
+    "twin_distance": 0.0741,
+    "wording_closer_non_twin": "R2-S05",
+    "wording_cos": 0.1213
+   },
+   "triplet_id": "C04",
+   "shown_order": [
+    "R1-S01",
+    "R2-S05"
+   ]
+  },
+  {
+   "kind": "disagree",
+   "anchor": "R3-S05",
+   "options": [
+    "R2-S04",
+    "R1-S03"
+   ],
+   "selection": {
+    "struct_closer": "R2-S04",
+    "wording_closer": "R1-S03",
+    "margin": 0.1173
+   },
+   "triplet_id": "C05",
+   "shown_order": [
+    "R2-S04",
+    "R1-S03"
+   ]
+  },
+  {
+   "kind": "disagree",
+   "anchor": "R1-S05",
+   "options": [
+    "R1-S02",
+    "R3-S04"
+   ],
+   "selection": {
+    "struct_closer": "R1-S02",
+    "wording_closer": "R3-S04",
+    "margin": 0.1106
+   },
+   "triplet_id": "C06",
+   "shown_order": [
+    "R1-S02",
+    "R3-S04"
+   ]
+  },
+  {
+   "kind": "disagree",
+   "anchor": "R1-S03",
+   "options": [
+    "R3-S04",
+    "R3-S05"
+   ],
+   "selection": {
+    "struct_closer": "R3-S04",
+    "wording_closer": "R3-S05",
+    "margin": 0.0935
+   },
+   "triplet_id": "C07",
+   "shown_order": [
+    "R3-S04",
+    "R3-S05"
+   ]
+  },
+  {
+   "kind": "disagree",
+   "anchor": "R3-S04",
+   "options": [
+    "R3-S05",
+    "R1-S05"
+   ],
+   "selection": {
+    "struct_closer": "R3-S05",
+    "wording_closer": "R1-S05",
+    "margin": 0.0926
+   },
+   "triplet_id": "C08",
+   "shown_order": [
+    "R1-S05",
+    "R3-S05"
+   ]
+  },
+  {
+   "kind": "disagree",
+   "anchor": "R3-S01",
+   "options": [
+    "R3-S04",
+    "R2-S02"
+   ],
+   "selection": {
+    "struct_closer": "R3-S04",
+    "wording_closer": "R2-S02",
+    "margin": 0.0867
+   },
+   "triplet_id": "C09",
+   "shown_order": [
+    "R3-S04",
+    "R2-S02"
+   ]
+  },
+  {
+   "kind": "disagree",
+   "anchor": "R2-S02",
+   "options": [
+    "R1-S02",
+    "R3-S02"
+   ],
+   "selection": {
+    "struct_closer": "R1-S02",
+    "wording_closer": "R3-S02",
+    "margin": 0.0864
+   },
+   "triplet_id": "C10",
+   "shown_order": [
+    "R3-S02",
+    "R1-S02"
+   ]
+  },
+  {
+   "kind": "disagree",
+   "anchor": "R3-S03",
+   "options": [
+    "R2-S02",
+    "R3-S05"
+   ],
+   "selection": {
+    "struct_closer": "R2-S02",
+    "wording_closer": "R3-S05",
+    "margin": 0.0749
+   },
+   "triplet_id": "C11",
+   "shown_order": [
+    "R2-S02",
+    "R3-S05"
+   ]
+  },
+  {
+   "kind": "disagree",
+   "anchor": "R3-S02",
+   "options": [
+    "R2-S05",
+    "R3-S04"
+   ],
+   "selection": {
+    "struct_closer": "R2-S05",
+    "wording_closer": "R3-S04",
+    "margin": 0.0741
+   },
+   "triplet_id": "C12",
+   "shown_order": [
+    "R2-S05",
+    "R3-S04"
+   ]
+  },
+  {
+   "kind": "control",
+   "anchor": "R2-S04",
+   "options": [
+    "R1-S05",
+    "R1-S03"
+   ],
+   "selection": {
+    "struct_and_wording_closer": "R1-S05",
+    "margin": 0.1597
+   },
+   "triplet_id": "C13",
+   "shown_order": [
+    "R1-S03",
+    "R1-S05"
+   ]
+  },
+  {
+   "kind": "control",
+   "anchor": "R2-S03",
+   "options": [
+    "R3-S05",
+    "R3-S03"
+   ],
+   "selection": {
+    "struct_and_wording_closer": "R3-S05",
+    "margin": 0.1395
+   },
+   "triplet_id": "C14",
+   "shown_order": [
+    "R3-S03",
+    "R3-S05"
+   ]
+  },
+  {
+   "kind": "disagree",
+   "anchor": "R3-S05",
+   "options": [
+    "R2-S04",
+    "R1-S03"
+   ],
+   "selection": {
+    "struct_closer": "R2-S04",
+    "wording_closer": "R1-S03",
+    "margin": 0.1173
+   },
+   "triplet_id": "C15",
+   "shown_order": [
+    "R1-S03",
+    "R2-S04"
+   ],
+   "repeat_of": "C05"
+  },
+  {
+   "kind": "cross_run",
+   "anchor": "R1-S04",
+   "options": [
+    "R3-S02",
+    "R2-S02"
+   ],
+   "selection": {
+    "twin": "R3-S02",
+    "twin_distance": 0.0123,
+    "wording_closer_non_twin": "R2-S02",
+    "wording_cos": 0.1105
+   },
+   "triplet_id": "C16",
+   "shown_order": [
+    "R2-S02",
+    "R3-S02"
+   ],
+   "repeat_of": "C01"
+  }
+ ]
+}

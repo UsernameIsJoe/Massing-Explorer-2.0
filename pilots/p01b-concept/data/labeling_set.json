@@ -1,0 +1,315 @@
+{
+ "question": "Which option is the closer architectural strategy to the anchor?",
+ "answers": [
+  "option_1",
+  "option_2",
+  "about_equal",
+  "cannot_judge"
+ ],
+ "items": [
+  {
+   "item": 1,
+   "triplet_id": "C15",
+   "anchor": {
+    "text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+    "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, custodial 1 | Direct links: classroom-third, commons-third"
+   },
+   "option_1": {
+    "text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+    "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-2, medical 1, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, media 2, admin 1 | Direct links: none"
+   },
+   "option_2": {
+    "text": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court.",
+    "intent": "Seeks a protected outdoor room that every part of the school opens onto, with indoor circulation around it, and places reading at the social centre above shared dining.",
+    "structure": "Classroom mass: academic 1-3, SPED 1 | Commons mass: gym 1, media 3, dining 1 | Third mass: art/music 1, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   }
+  },
+  {
+   "item": 2,
+   "triplet_id": "C03",
+   "anchor": {
+    "text": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.",
+    "intent": "Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-2 | Commons mass: gym 1, dining 1 | Third mass: art/music 1-2, media 3, medical 1, admin 1, custodial 1 | Direct links: classroom-third, commons-third"
+   },
+   "option_1": {
+    "text": "A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school.",
+    "intent": "Aims to give visitors one supervised arrival point at the middle of the school, buffer classrooms from hall noise, and let arts and library programs anchor community use next to the hall.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1-2, media 3, medical 1, admin 1 | Direct links: classroom-third, commons-third"
+   },
+   "option_2": {
+    "text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+    "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, custodial 1 | Direct links: classroom-third, commons-third"
+   }
+  },
+  {
+   "item": 3,
+   "triplet_id": "C16",
+   "anchor": {
+    "text": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.",
+    "intent": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-2, art/music 1 | Commons mass: gym 1, dining 1 | Third mass: media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, commons-third"
+   },
+   "option_1": {
+    "text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it.",
+    "intent": "Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, commons-third"
+   },
+   "option_2": {
+    "text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly.",
+    "intent": "Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, art/music 1 | Commons mass: gym 1, dining 1 | Third mass: media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, commons-third"
+   }
+  },
+  {
+   "item": 4,
+   "triplet_id": "C12",
+   "anchor": {
+    "text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly.",
+    "intent": "Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, art/music 1 | Commons mass: gym 1, dining 1 | Third mass: media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, commons-third"
+   },
+   "option_1": {
+    "text": "Classrooms stay low and close to the ground in a two-storey learning bar, flanked by the hall on one side and, on the other, a compact three-storey civic tower that stacks the school's front, its specialist support and a library crown as the building's vertical marker.",
+    "intent": "Aims to keep every classroom within one stair of the ground and close to the hall, while giving the school a clear civic address and grouping supervision, nursing and special education support.",
+    "structure": "Classroom mass: academic 1-2, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 2, art/music 1, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third"
+   },
+   "option_2": {
+    "text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning.",
+    "intent": "Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.",
+    "structure": "Classroom mass: academic 1-3, media 3, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, admin 1 | Direct links: classroom-third"
+   }
+  },
+  {
+   "item": 5,
+   "triplet_id": "C06",
+   "anchor": {
+    "text": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+    "intent": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.",
+    "structure": "Classroom mass: academic 1-3, media 3, admin 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, custodial 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   },
+   "option_1": {
+    "text": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+    "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   },
+   "option_2": {
+    "text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning.",
+    "intent": "Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.",
+    "structure": "Classroom mass: academic 1-3, media 3, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, admin 1 | Direct links: classroom-third"
+   }
+  },
+  {
+   "item": 6,
+   "triplet_id": "C02",
+   "anchor": {
+    "text": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+    "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   },
+   "option_1": {
+    "text": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse.",
+    "intent": "Aims to bring every mass to three floors, allow indoor movement between any two parts, and join arts with the hall into one performance and community venue.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 2-3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   },
+   "option_2": {
+    "text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+    "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, custodial 1 | Direct links: classroom-third, commons-third"
+   }
+  },
+  {
+   "item": 7,
+   "triplet_id": "C11",
+   "anchor": {
+    "text": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse.",
+    "intent": "Aims to bring every mass to three floors, allow indoor movement between any two parts, and join arts with the hall into one performance and community venue.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 2-3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   },
+   "option_1": {
+    "text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it.",
+    "intent": "Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, commons-third"
+   },
+   "option_2": {
+    "text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+    "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, custodial 1 | Direct links: classroom-third, commons-third"
+   }
+  },
+  {
+   "item": 8,
+   "triplet_id": "C09",
+   "anchor": {
+    "text": "A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school.",
+    "intent": "Aims to give visitors one supervised arrival point at the middle of the school, buffer classrooms from hall noise, and let arts and library programs anchor community use next to the hall.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1-2, media 3, medical 1, admin 1 | Direct links: classroom-third, commons-third"
+   },
+   "option_1": {
+    "text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning.",
+    "intent": "Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.",
+    "structure": "Classroom mass: academic 1-3, media 3, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, admin 1 | Direct links: classroom-third"
+   },
+   "option_2": {
+    "text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it.",
+    "intent": "Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, commons-third"
+   }
+  },
+  {
+   "item": 9,
+   "triplet_id": "C04",
+   "anchor": {
+    "text": "A low civic gateway stands between a three-storey learning bar and a community hall and forms the only enclosed passage between them. Everyone arrives through the gateway, where the school's front and its making and reading spaces meet visitors; classrooms extend behind it on one side and the shared hall on the other.",
+    "intent": "Aims to give staff a single supervised threshold controlling access to both classrooms and hall, and to let evening visitors reach the hall and arts without entering classroom corridors.",
+    "structure": "Classroom mass: academic 1-3, SPED 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-third, commons-third"
+   },
+   "option_1": {
+    "text": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.",
+    "intent": "Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-2 | Commons mass: gym 1, dining 1 | Third mass: art/music 1-2, media 3, medical 1, admin 1, custodial 1 | Direct links: classroom-third, commons-third"
+   },
+   "option_2": {
+    "text": "Classrooms stay low and close to the ground in a two-storey learning bar, flanked by the hall on one side and, on the other, a compact three-storey civic tower that stacks the school's front, its specialist support and a library crown as the building's vertical marker.",
+    "intent": "Aims to keep every classroom within one stair of the ground and close to the hall, while giving the school a clear civic address and grouping supervision, nursing and special education support.",
+    "structure": "Classroom mass: academic 1-2, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 2, art/music 1, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third"
+   }
+  },
+  {
+   "item": 10,
+   "triplet_id": "C13",
+   "anchor": {
+    "text": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court.",
+    "intent": "Seeks a protected outdoor room that every part of the school opens onto, with indoor circulation around it, and places reading at the social centre above shared dining.",
+    "structure": "Classroom mass: academic 1-3, SPED 1 | Commons mass: gym 1, media 3, dining 1 | Third mass: art/music 1, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   },
+   "option_1": {
+    "text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+    "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-2, medical 1, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, media 2, admin 1 | Direct links: none"
+   },
+   "option_2": {
+    "text": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+    "intent": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.",
+    "structure": "Classroom mass: academic 1-3, media 3, admin 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, custodial 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   }
+  },
+  {
+   "item": 11,
+   "triplet_id": "C07",
+   "anchor": {
+    "text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+    "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-2, medical 1, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, media 2, admin 1 | Direct links: none"
+   },
+   "option_1": {
+    "text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning.",
+    "intent": "Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.",
+    "structure": "Classroom mass: academic 1-3, media 3, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, admin 1 | Direct links: classroom-third"
+   },
+   "option_2": {
+    "text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+    "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, custodial 1 | Direct links: classroom-third, commons-third"
+   }
+  },
+  {
+   "item": 12,
+   "triplet_id": "C14",
+   "anchor": {
+    "text": "One self-contained school bar carries the whole teaching day, rising from the front office and specialist support at its foot through classrooms to a reading crown. Two freestanding pavilions, a community hall and a making-and-maintenance workshop, stand apart on shared grounds and are reached outdoors.",
+    "intent": "Aims to let the hall and workshop open to the community and be phased independently, while keeping the instructional day secure inside a single enclosed bar.",
+    "structure": "Classroom mass: academic 2-3, SPED 1, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1-2, custodial 1 | Direct links: none"
+   },
+   "option_1": {
+    "text": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse.",
+    "intent": "Aims to bring every mass to three floors, allow indoor movement between any two parts, and join arts with the hall into one performance and community venue.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 2-3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   },
+   "option_2": {
+    "text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+    "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, custodial 1 | Direct links: classroom-third, commons-third"
+   }
+  },
+  {
+   "item": 13,
+   "triplet_id": "C08",
+   "anchor": {
+    "text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning.",
+    "intent": "Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.",
+    "structure": "Classroom mass: academic 1-3, media 3, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, admin 1 | Direct links: classroom-third"
+   },
+   "option_1": {
+    "text": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+    "intent": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.",
+    "structure": "Classroom mass: academic 1-3, media 3, admin 1 | Commons mass: gym 1, dining 1 | Third mass: SPED 1-3, art/music 1, medical 1, custodial 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   },
+   "option_2": {
+    "text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+    "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, custodial 1 | Direct links: classroom-third, commons-third"
+   }
+  },
+  {
+   "item": 14,
+   "triplet_id": "C01",
+   "anchor": {
+    "text": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.",
+    "intent": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-2, art/music 1 | Commons mass: gym 1, dining 1 | Third mass: media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, commons-third"
+   },
+   "option_1": {
+    "text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly.",
+    "intent": "Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, art/music 1 | Commons mass: gym 1, dining 1 | Third mass: media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, commons-third"
+   },
+   "option_2": {
+    "text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it.",
+    "intent": "Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, commons-third"
+   }
+  },
+  {
+   "item": 15,
+   "triplet_id": "C05",
+   "anchor": {
+    "text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+    "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, media 3, medical 1, admin 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, custodial 1 | Direct links: classroom-third, commons-third"
+   },
+   "option_1": {
+    "text": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court.",
+    "intent": "Seeks a protected outdoor room that every part of the school opens onto, with indoor circulation around it, and places reading at the social centre above shared dining.",
+    "structure": "Classroom mass: academic 1-3, SPED 1 | Commons mass: gym 1, media 3, dining 1 | Third mass: art/music 1, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   },
+   "option_2": {
+    "text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+    "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-2, medical 1, custodial 1 | Commons mass: gym 1, dining 1 | Third mass: art/music 1, media 2, admin 1 | Direct links: none"
+   }
+  },
+  {
+   "item": 16,
+   "triplet_id": "C10",
+   "anchor": {
+    "text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it.",
+    "intent": "Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, commons-third"
+   },
+   "option_1": {
+    "text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly.",
+    "intent": "Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms.",
+    "structure": "Classroom mass: academic 1-3, SPED 1-3, art/music 1 | Commons mass: gym 1, dining 1 | Third mass: media 2, medical 1, admin 1, custodial 1 | Direct links: classroom-commons, commons-third"
+   },
+   "option_2": {
+    "text": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+    "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.",
+    "structure": "Classroom mass: academic 1-3, custodial 1 | Commons mass: art/music 3, gym 1, dining 1 | Third mass: SPED 1-2, media 3, medical 1, admin 1 | Direct links: classroom-commons, classroom-third, commons-third"
+   }
+  }
+ ]
+}
