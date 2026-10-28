@@ -1,0 +1,18 @@
+{
+"C01": {"answer": "option_1"},
+"C02": {"answer": "option_1"},
+"C03": {"answer": "option_1"},
+"C04": {"answer": "option_1"},
+"C05": {"answer": "option_1"},
+"C06": {"answer": "option_2"},
+"C07": {"answer": "option_1"},
+"C08": {"answer": "option_1"},
+"C09": {"answer": "option_2"},
+"C10": {"answer": "option_2"},
+"C11": {"answer": "option_1"},
+"C12": {"answer": "option_1"},
+"C13": {"answer": "option_2"},
+"C14": {"answer": "option_2"},
+"C15": {"answer": "option_2"},
+"C16": {"answer": "option_2"}
+}
