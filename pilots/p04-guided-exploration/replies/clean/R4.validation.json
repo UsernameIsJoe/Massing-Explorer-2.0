@@ -1,0 +1,53 @@
+{
+ "file": "R4.json",
+ "parse_error": null,
+ "collection_errors": [],
+ "cases": [
+  {
+   "case_id": "C01",
+   "name": "Learning Spine Between Two Pavilions",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C02",
+   "name": "Academy Bridge to Shared Forum",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor"
+   ]
+  },
+  {
+   "case_id": "C03",
+   "name": "Three Houses Around Learning Exchange",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": []
+  },
+  {
+   "case_id": "C04",
+   "name": "Cultural Threshold Between Separate Worlds",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": []
+  },
+  {
+   "case_id": "C05",
+   "name": "Commons Passage With Learning Retreat",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  }
+ ]
+}
