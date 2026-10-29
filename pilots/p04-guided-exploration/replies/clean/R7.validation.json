@@ -1,0 +1,56 @@
+{
+ "file": "R7.json",
+ "parse_error": null,
+ "collection_errors": [],
+ "cases": [
+  {
+   "case_id": "C01",
+   "name": "Paired Academies With Civic Spine",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": []
+  },
+  {
+   "case_id": "C02",
+   "name": "Library Bridge Between Separate Realms",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C03",
+   "name": "Quiet Core With Activity Satellites",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C04",
+   "name": "Independent Commons With Twin Schools",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C05",
+   "name": "Cultural Threshold And Learning Pair",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "media_top_above_admin",
+    "three_floors"
+   ]
+  }
+ ]
+}
