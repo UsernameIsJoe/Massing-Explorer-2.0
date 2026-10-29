@@ -1,0 +1,371 @@
+{
+ "seed": 20261029,
+ "occupied_cells": 10,
+ "candidate_gaps": 35,
+ "silhouette_k": 6,
+ "clusters": {
+  "1": [
+   "R1-S01",
+   "R1-S04",
+   "R2-S02",
+   "R3-S01",
+   "R3-S02"
+  ],
+  "2": [
+   "R1-S02",
+   "R3-S03"
+  ],
+  "5": [
+   "R1-S03"
+  ],
+  "3": [
+   "R1-S05",
+   "R2-S04"
+  ],
+  "6": [
+   "R2-S01"
+  ],
+  "4": [
+   "R2-S03",
+   "R2-S05",
+   "R3-S04",
+   "R3-S05"
+  ]
+ },
+ "A": [
+  {
+   "gap": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "mixed"
+   ],
+   "words": "masses connected in a chain through the third mass; special education sits with the commons; the masses differ in height"
+  },
+  {
+   "gap": [
+    [
+     "CL",
+     "CX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "words": "masses connected in a chain through the commons (gym and dining); special education is in the third mass; the masses differ in height"
+  },
+  {
+   "gap": [
+    [
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "words": "only the learning mass and the third mass directly connected; special education shares the learning mass; most masses stay low (one or two storeys)"
+  },
+  {
+   "gap": [
+    [],
+    "X",
+    "mixed"
+   ],
+   "words": "no built connections between the three masses; special education is in the third mass; the masses differ in height"
+  },
+  {
+   "gap": [
+    [
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "words": "only the commons and the third mass directly connected; special education shares the learning mass; the masses differ in height"
+  },
+  {
+   "gap": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "words": "masses connected in a chain through the learning mass (core academic); special education shares the learning mass; most masses stay low (one or two storeys)"
+  },
+  {
+   "gap": [
+    [
+     "CL"
+    ],
+    "X",
+    "all3"
+   ],
+   "words": "only the learning mass and the commons directly connected; special education is in the third mass; all three masses rise to three storeys"
+  },
+  {
+   "gap": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "all3"
+   ],
+   "words": "all three masses directly connected to each other; special education shares the learning mass; all three masses rise to three storeys"
+  },
+  {
+   "gap": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "all3"
+   ],
+   "words": "masses connected in a chain through the third mass; special education sits with the commons; all three masses rise to three storeys"
+  },
+  {
+   "gap": [
+    [
+     "CL",
+     "CX"
+    ],
+    "C",
+    "low"
+   ],
+   "words": "masses connected in a chain through the commons (gym and dining); special education sits with the commons; most masses stay low (one or two storeys)"
+  }
+ ],
+ "S": [
+  {
+   "type": "away",
+   "seeds": [
+    "R1-S01",
+    "R1-S04",
+    "R2-S02",
+    "R3-S01",
+    "R3-S02"
+   ]
+  },
+  {
+   "type": "away",
+   "seeds": [
+    "R2-S03",
+    "R2-S05",
+    "R3-S04",
+    "R3-S05"
+   ]
+  },
+  {
+   "type": "away",
+   "seeds": [
+    "R1-S02",
+    "R3-S03"
+   ]
+  },
+  {
+   "type": "away",
+   "seeds": [
+    "R1-S05",
+    "R2-S04"
+   ]
+  },
+  {
+   "type": "bridge",
+   "intent_of": "R1-S05",
+   "organization_of": "R2-S01"
+  },
+  {
+   "type": "bridge",
+   "intent_of": "R1-S03",
+   "organization_of": "R3-S03"
+  },
+  {
+   "type": "bridge",
+   "intent_of": "R1-S02",
+   "organization_of": "R2-S03"
+  },
+  {
+   "type": "develop",
+   "seed": "R1-S03"
+  },
+  {
+   "type": "develop",
+   "seed": "R2-S01"
+  },
+  {
+   "type": "develop",
+   "seed": "R1-S02"
+  }
+ ],
+ "J": [
+  {
+   "gap": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "mixed"
+   ],
+   "words": "masses connected in a chain through the third mass; special education sits with the commons; the masses differ in height",
+   "structural_nearest": "R1-S01",
+   "do_not_rephrase": [
+    "R1-S01",
+    "R3-S01"
+   ],
+   "may_borrow_intent_of": "R2-S03"
+  },
+  {
+   "gap": [
+    [
+     "CL",
+     "CX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "words": "masses connected in a chain through the commons (gym and dining); special education is in the third mass; the masses differ in height",
+   "structural_nearest": "R1-S04",
+   "do_not_rephrase": [
+    "R1-S04",
+    "R2-S02"
+   ],
+   "may_borrow_intent_of": "R2-S03"
+  },
+  {
+   "gap": [
+    [
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "words": "only the learning mass and the third mass directly connected; special education shares the learning mass; most masses stay low (one or two storeys)",
+   "structural_nearest": "R3-S05",
+   "do_not_rephrase": [
+    "R3-S05",
+    "R2-S03"
+   ],
+   "may_borrow_intent_of": "R2-S04"
+  },
+  {
+   "gap": [
+    [],
+    "X",
+    "mixed"
+   ],
+   "words": "no built connections between the three masses; special education is in the third mass; the masses differ in height",
+   "structural_nearest": "R1-S03",
+   "do_not_rephrase": [
+    "R1-S03",
+    "R2-S03"
+   ],
+   "may_borrow_intent_of": "R3-S03"
+  },
+  {
+   "gap": [
+    [
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "words": "only the commons and the third mass directly connected; special education shares the learning mass; the masses differ in height",
+   "structural_nearest": "R1-S01",
+   "do_not_rephrase": [
+    "R1-S01",
+    "R3-S01"
+   ],
+   "may_borrow_intent_of": "R2-S03"
+  },
+  {
+   "gap": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "words": "masses connected in a chain through the learning mass (core academic); special education shares the learning mass; most masses stay low (one or two storeys)",
+   "structural_nearest": "R2-S04",
+   "do_not_rephrase": [
+    "R2-S04",
+    "R1-S05"
+   ],
+   "may_borrow_intent_of": "R3-S05"
+  },
+  {
+   "gap": [
+    [
+     "CL"
+    ],
+    "X",
+    "all3"
+   ],
+   "words": "only the learning mass and the commons directly connected; special education is in the third mass; all three masses rise to three storeys",
+   "structural_nearest": "R2-S02",
+   "do_not_rephrase": [
+    "R2-S02",
+    "R3-S02"
+   ],
+   "may_borrow_intent_of": "R2-S01"
+  },
+  {
+   "gap": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "all3"
+   ],
+   "words": "all three masses directly connected to each other; special education shares the learning mass; all three masses rise to three storeys",
+   "structural_nearest": "R1-S02",
+   "do_not_rephrase": [
+    "R1-S02",
+    "R3-S03"
+   ],
+   "may_borrow_intent_of": "R2-S03"
+  },
+  {
+   "gap": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "all3"
+   ],
+   "words": "masses connected in a chain through the third mass; special education sits with the commons; all three masses rise to three storeys",
+   "structural_nearest": "R1-S01",
+   "do_not_rephrase": [
+    "R1-S01",
+    "R3-S01"
+   ],
+   "may_borrow_intent_of": "R2-S03"
+  },
+  {
+   "gap": [
+    [
+     "CL",
+     "CX"
+    ],
+    "C",
+    "low"
+   ],
+   "words": "masses connected in a chain through the commons (gym and dining); special education sits with the commons; most masses stay low (one or two storeys)",
+   "structural_nearest": "R1-S04",
+   "do_not_rephrase": [
+    "R1-S04",
+    "R2-S02"
+   ],
+   "may_borrow_intent_of": "R2-S03"
+  }
+ ]
+}

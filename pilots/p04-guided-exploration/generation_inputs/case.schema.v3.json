@@ -1,0 +1,321 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ME2 strategy case collection v3.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "cases"
+  ],
+  "properties": {
+    "format": {
+      "const": "v3"
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    }
+  },
+  "$defs": {
+    "placement_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "department_id",
+        "mass_id",
+        "floors"
+      ],
+      "properties": {
+        "type": {
+          "const": "placement"
+        },
+        "department_id": {
+          "$ref": "#/$defs/dept_id"
+        },
+        "mass_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "floors": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "link_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "mass_a",
+        "mass_b",
+        "direct_link"
+      ],
+      "properties": {
+        "type": {
+          "const": "link"
+        },
+        "mass_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mass_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direct_link": {
+          "type": "boolean"
+        }
+      }
+    },
+    "dept_id": {
+      "enum": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09"
+      ]
+    },
+    "key_move": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "move_id",
+        "move",
+        "serves",
+        "decisions"
+      ],
+      "properties": {
+        "move_id": {
+          "type": "string",
+          "pattern": "^K[0-9]+$"
+        },
+        "move": {
+          "type": "string",
+          "minLength": 1
+        },
+        "serves": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decisions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/placement_ref"
+              },
+              {
+                "$ref": "#/$defs/link_ref"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "masses",
+        "departments",
+        "connections"
+      ],
+      "properties": {
+        "masses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "mass_id",
+              "role"
+            ],
+            "properties": {
+              "mass_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "role": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "departments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "department_id",
+              "mass_ids",
+              "occupied_floors"
+            ],
+            "properties": {
+              "department_id": {
+                "$ref": "#/$defs/dept_id"
+              },
+              "mass_ids": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "uniqueItems": true
+                  }
+                ]
+              },
+              "occupied_floors": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "uniqueItems": true
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "mass_a",
+              "mass_b",
+              "direct_link"
+            ],
+            "properties": {
+              "mass_a": {
+                "type": "string",
+                "minLength": 1
+              },
+              "mass_b": {
+                "type": "string",
+                "minLength": 1
+              },
+              "direct_link": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "name",
+        "concept",
+        "intent",
+        "section_intent",
+        "program_stance",
+        "key_moves",
+        "structure",
+        "brief_response",
+        "unresolved",
+        "direction_response"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string"
+        },
+        "concept": {
+          "type": "string"
+        },
+        "intent": {
+          "type": "string"
+        },
+        "section_intent": {
+          "type": "string"
+        },
+        "program_stance": {
+          "type": "string"
+        },
+        "key_moves": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/key_move"
+          }
+        },
+        "structure": {
+          "$ref": "#/$defs/structure"
+        },
+        "brief_response": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "main_tradeoff",
+            "preferences_given_up"
+          ],
+          "properties": {
+            "main_tradeoff": {
+              "type": "string"
+            },
+            "preferences_given_up": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "arts_ground_floor",
+                  "media_top_above_admin",
+                  "three_floors"
+                ]
+              }
+            }
+          }
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 4
+        },
+        "direction_response": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
