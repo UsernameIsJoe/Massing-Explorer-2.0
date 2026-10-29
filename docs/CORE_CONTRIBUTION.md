@@ -12,6 +12,30 @@ Ground the semantic meaning of a strategy or concept in a firm strategy axis sys
 
 Making the two systems work together is the research. Surveys, labeling and human judgment are minor supports. They are never the mechanism.
 
+## How the three work together (architect, 2026-10-29)
+
+**The embedding steers the LLM in words, and the structured record anchors every proposal to the axes exactly.** Over iterations, the LLM does not explore blindly; it explores with a map.
+
+| Part | Role | Nature of its link |
+|---|---|---|
+| LLM | Proposes ideas in language: concept, intent, key moves and a structured record | – |
+| Embedding | Shows how ideas relate in meaning. It decides what the LLM is shown: contrasts, combinations, underexplored directions. It also flags rephrasings | Statistical, measured |
+| Axis system | Locates every proposal concretely. Computed by code from the structured record | Exact |
+
+A gap can be found on either side:
+- **A sparse meaning region:** the LLM is asked, in words, for an idea in that direction, and the axes show whether the result is concretely new.
+- **An empty axis region:** the LLM is asked for a meaningful idea that produces that structure, and the embedding shows whether the result is a real idea or a forced one.
+
+Every result is located in both spaces and checked for agreement. A vector is never decoded directly into an idea.
+
+## How an idea takes shape
+
+The idea goes through three representations; the axis record is computed from the strategy record at each point.
+
+1. **Concept and intent:** the idea, written by the LLM.
+2. **Strategy:** key moves, locked decisions, and the structured record (program by mass, floors, links).
+3. **Scheme:** realized dimensions and GSF, produced by the realization engine for selected strategies.
+
 ## What this rules out
 
 - Dropping the semantic side when an embedding test is weak. A weak result locates what still needs grounding; it does not remove the semantic side.
