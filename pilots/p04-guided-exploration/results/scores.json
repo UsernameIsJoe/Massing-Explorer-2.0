@@ -17,6 +17,12 @@
    "median": 0.2387,
    "n": 15,
    "paraphrase_own_nearest": "10/15"
+  },
+  "qwen3-embedding:4b": {
+   "threshold": 0.3426,
+   "median": 0.2767,
+   "n": 15,
+   "paraphrase_own_nearest": "11/15"
   }
  },
  "summary": {
@@ -29,6 +35,8 @@
    "new_structure": 3,
    "new_meaning_idea": 0,
    "new_meaning_concept": 0,
+   "new_strategy_secondary_judge": 0,
+   "new_strategy_three_judges": 0,
    "validity": {
     "valid": 10
    },
@@ -60,6 +68,8 @@
    "new_structure": 3,
    "new_meaning_idea": 0,
    "new_meaning_concept": 0,
+   "new_strategy_secondary_judge": 0,
+   "new_strategy_three_judges": 0,
    "validity": {
     "valid": 10
    },
@@ -91,6 +101,8 @@
    "new_structure": 5,
    "new_meaning_idea": 0,
    "new_meaning_concept": 0,
+   "new_strategy_secondary_judge": 0,
+   "new_strategy_three_judges": 0,
    "validity": {
     "valid": 8,
     "declared": 2
@@ -123,6 +135,8 @@
    "new_structure": 5,
    "new_meaning_idea": 0,
    "new_meaning_concept": 0,
+   "new_strategy_secondary_judge": 0,
+   "new_strategy_three_judges": 0,
    "validity": {
     "valid": 10
    },
@@ -354,6 +368,48 @@
       "R3-S04": 0.3078,
       "R3-S05": 0.3412
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.3108,
+     "all": {
+      "R1-S01": 0.3108,
+      "R1-S02": 0.4435,
+      "R1-S03": 0.3764,
+      "R1-S04": 0.3111,
+      "R1-S05": 0.3507,
+      "R2-S01": 0.354,
+      "R2-S02": 0.3619,
+      "R2-S03": 0.388,
+      "R2-S04": 0.3837,
+      "R2-S05": 0.368,
+      "R3-S01": 0.3309,
+      "R3-S02": 0.3153,
+      "R3-S03": 0.3845,
+      "R3-S04": 0.3393,
+      "R3-S05": 0.3983
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.3194,
+     "all": {
+      "R1-S01": 0.3194,
+      "R1-S02": 0.4891,
+      "R1-S03": 0.4101,
+      "R1-S04": 0.3235,
+      "R1-S05": 0.3686,
+      "R2-S01": 0.3458,
+      "R2-S02": 0.3884,
+      "R2-S03": 0.4252,
+      "R2-S04": 0.4478,
+      "R2-S05": 0.4311,
+      "R3-S01": 0.3541,
+      "R3-S02": 0.3797,
+      "R3-S03": 0.3772,
+      "R3-S04": 0.3481,
+      "R3-S05": 0.4375
+     }
     }
    },
    "agreement_v3text": {
@@ -382,6 +438,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -533,6 +592,48 @@
       "R3-S04": 0.2761,
       "R3-S05": 0.3478
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2424,
+     "all": {
+      "R1-S01": 0.2982,
+      "R1-S02": 0.3376,
+      "R1-S03": 0.2884,
+      "R1-S04": 0.2424,
+      "R1-S05": 0.3355,
+      "R2-S01": 0.2511,
+      "R2-S02": 0.3429,
+      "R2-S03": 0.2773,
+      "R2-S04": 0.3431,
+      "R2-S05": 0.3849,
+      "R3-S01": 0.2629,
+      "R3-S02": 0.3303,
+      "R3-S03": 0.3798,
+      "R3-S04": 0.2673,
+      "R3-S05": 0.3738
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2413,
+     "all": {
+      "R1-S01": 0.3092,
+      "R1-S02": 0.3527,
+      "R1-S03": 0.3243,
+      "R1-S04": 0.2942,
+      "R1-S05": 0.2997,
+      "R2-S01": 0.2413,
+      "R2-S02": 0.3382,
+      "R2-S03": 0.2908,
+      "R2-S04": 0.4234,
+      "R2-S05": 0.3867,
+      "R3-S01": 0.2795,
+      "R3-S02": 0.4259,
+      "R3-S03": 0.3628,
+      "R3-S04": 0.2721,
+      "R3-S05": 0.3831
+     }
     }
    },
    "agreement_v3text": {
@@ -561,6 +662,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -714,6 +818,48 @@
       "R3-S04": 0.3463,
       "R3-S05": 0.3983
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S03",
+     "dist": 0.3481,
+     "all": {
+      "R1-S01": 0.3614,
+      "R1-S02": 0.3967,
+      "R1-S03": 0.3652,
+      "R1-S04": 0.3526,
+      "R1-S05": 0.364,
+      "R2-S01": 0.3886,
+      "R2-S02": 0.3928,
+      "R2-S03": 0.4655,
+      "R2-S04": 0.3541,
+      "R2-S05": 0.4629,
+      "R3-S01": 0.3712,
+      "R3-S02": 0.364,
+      "R3-S03": 0.3481,
+      "R3-S04": 0.4018,
+      "R3-S05": 0.4676
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.3458,
+     "all": {
+      "R1-S01": 0.4134,
+      "R1-S02": 0.4193,
+      "R1-S03": 0.3893,
+      "R1-S04": 0.3965,
+      "R1-S05": 0.3458,
+      "R2-S01": 0.4434,
+      "R2-S02": 0.4293,
+      "R2-S03": 0.5068,
+      "R2-S04": 0.3948,
+      "R2-S05": 0.5683,
+      "R3-S01": 0.4286,
+      "R3-S02": 0.4397,
+      "R3-S03": 0.3815,
+      "R3-S04": 0.4349,
+      "R3-S05": 0.5628
+     }
     }
    },
    "agreement_v3text": {
@@ -742,6 +888,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -893,6 +1042,48 @@
       "R3-S04": 0.2965,
       "R3-S05": 0.346
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.2763,
+     "all": {
+      "R1-S01": 0.4304,
+      "R1-S02": 0.489,
+      "R1-S03": 0.345,
+      "R1-S04": 0.3762,
+      "R1-S05": 0.2763,
+      "R2-S01": 0.413,
+      "R2-S02": 0.3862,
+      "R2-S03": 0.3227,
+      "R2-S04": 0.413,
+      "R2-S05": 0.368,
+      "R3-S01": 0.3751,
+      "R3-S02": 0.3169,
+      "R3-S03": 0.4051,
+      "R3-S04": 0.2994,
+      "R3-S05": 0.3817
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.3002,
+     "all": {
+      "R1-S01": 0.4746,
+      "R1-S02": 0.5334,
+      "R1-S03": 0.4021,
+      "R1-S04": 0.4256,
+      "R1-S05": 0.3412,
+      "R2-S01": 0.431,
+      "R2-S02": 0.3981,
+      "R2-S03": 0.3386,
+      "R2-S04": 0.5285,
+      "R2-S05": 0.4476,
+      "R3-S01": 0.4244,
+      "R3-S02": 0.4147,
+      "R3-S03": 0.409,
+      "R3-S04": 0.3002,
+      "R3-S05": 0.4436
+     }
     }
    },
    "agreement_v3text": {
@@ -921,6 +1112,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -1073,6 +1267,48 @@
       "R3-S04": 0.2612,
       "R3-S05": 0.3341
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2902,
+     "all": {
+      "R1-S01": 0.3323,
+      "R1-S02": 0.4813,
+      "R1-S03": 0.4064,
+      "R1-S04": 0.3762,
+      "R1-S05": 0.3028,
+      "R2-S01": 0.3582,
+      "R2-S02": 0.3746,
+      "R2-S03": 0.368,
+      "R2-S04": 0.4031,
+      "R2-S05": 0.3701,
+      "R3-S01": 0.2902,
+      "R3-S02": 0.3635,
+      "R3-S03": 0.4318,
+      "R3-S04": 0.3364,
+      "R3-S05": 0.4006
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.3064,
+     "all": {
+      "R1-S01": 0.3563,
+      "R1-S02": 0.5141,
+      "R1-S03": 0.4411,
+      "R1-S04": 0.4196,
+      "R1-S05": 0.3405,
+      "R2-S01": 0.3771,
+      "R2-S02": 0.3953,
+      "R2-S03": 0.3908,
+      "R2-S04": 0.5025,
+      "R2-S05": 0.4407,
+      "R3-S01": 0.3064,
+      "R3-S02": 0.4655,
+      "R3-S03": 0.435,
+      "R3-S04": 0.3341,
+      "R3-S05": 0.4353
+     }
     }
    },
    "agreement_v3text": {
@@ -1101,6 +1337,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -1253,6 +1492,48 @@
       "R3-S04": 0.2853,
       "R3-S05": 0.3558
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2782,
+     "all": {
+      "R1-S01": 0.3201,
+      "R1-S02": 0.3879,
+      "R1-S03": 0.3411,
+      "R1-S04": 0.3347,
+      "R1-S05": 0.3024,
+      "R2-S01": 0.3053,
+      "R2-S02": 0.2786,
+      "R2-S03": 0.3303,
+      "R2-S04": 0.3617,
+      "R2-S05": 0.3169,
+      "R3-S01": 0.2782,
+      "R3-S02": 0.3153,
+      "R3-S03": 0.3434,
+      "R3-S04": 0.2857,
+      "R3-S05": 0.3521
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R2-S02",
+     "dist": 0.2729,
+     "all": {
+      "R1-S01": 0.3486,
+      "R1-S02": 0.4099,
+      "R1-S03": 0.3702,
+      "R1-S04": 0.3722,
+      "R1-S05": 0.2979,
+      "R2-S01": 0.3051,
+      "R2-S02": 0.2729,
+      "R2-S03": 0.3304,
+      "R2-S04": 0.4453,
+      "R2-S05": 0.371,
+      "R3-S01": 0.2992,
+      "R3-S02": 0.4095,
+      "R3-S03": 0.3434,
+      "R3-S04": 0.2951,
+      "R3-S05": 0.3822
+     }
     }
    },
    "agreement_v3text": {
@@ -1295,6 +1576,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -1447,6 +1731,48 @@
       "R3-S04": 0.2577,
       "R3-S05": 0.3794
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2555,
+     "all": {
+      "R1-S01": 0.338,
+      "R1-S02": 0.4267,
+      "R1-S03": 0.3494,
+      "R1-S04": 0.3102,
+      "R1-S05": 0.2944,
+      "R2-S01": 0.326,
+      "R2-S02": 0.2942,
+      "R2-S03": 0.3208,
+      "R2-S04": 0.3614,
+      "R2-S05": 0.3462,
+      "R3-S01": 0.3253,
+      "R3-S02": 0.2851,
+      "R3-S03": 0.4091,
+      "R3-S04": 0.2555,
+      "R3-S05": 0.4012
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.24,
+     "all": {
+      "R1-S01": 0.3292,
+      "R1-S02": 0.4587,
+      "R1-S03": 0.3765,
+      "R1-S04": 0.3371,
+      "R1-S05": 0.3005,
+      "R2-S01": 0.2975,
+      "R2-S02": 0.3126,
+      "R2-S03": 0.3292,
+      "R2-S04": 0.4647,
+      "R2-S05": 0.3744,
+      "R3-S01": 0.3252,
+      "R3-S02": 0.3822,
+      "R3-S03": 0.4133,
+      "R3-S04": 0.24,
+      "R3-S05": 0.4274
+     }
     }
    },
    "agreement_v3text": {
@@ -1489,6 +1815,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -1640,6 +1969,48 @@
       "R3-S04": 0.2475,
       "R3-S05": 0.3113
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2475,
+     "all": {
+      "R1-S01": 0.3284,
+      "R1-S02": 0.4309,
+      "R1-S03": 0.2911,
+      "R1-S04": 0.3307,
+      "R1-S05": 0.2762,
+      "R2-S01": 0.3036,
+      "R2-S02": 0.3086,
+      "R2-S03": 0.2898,
+      "R2-S04": 0.322,
+      "R2-S05": 0.2676,
+      "R3-S01": 0.2851,
+      "R3-S02": 0.2864,
+      "R3-S03": 0.3472,
+      "R3-S04": 0.2475,
+      "R3-S05": 0.2845
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2424,
+     "all": {
+      "R1-S01": 0.3367,
+      "R1-S02": 0.4604,
+      "R1-S03": 0.3256,
+      "R1-S04": 0.3562,
+      "R1-S05": 0.2772,
+      "R2-S01": 0.2883,
+      "R2-S02": 0.3054,
+      "R2-S03": 0.2923,
+      "R2-S04": 0.4341,
+      "R2-S05": 0.3311,
+      "R3-S01": 0.2822,
+      "R3-S02": 0.3883,
+      "R3-S03": 0.3268,
+      "R3-S04": 0.2424,
+      "R3-S05": 0.3202
+     }
     }
    },
    "agreement_v3text": {
@@ -1681,6 +2052,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -1830,6 +2204,48 @@
       "R3-S04": 0.2696,
       "R3-S05": 0.3132
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2417,
+     "all": {
+      "R1-S01": 0.3541,
+      "R1-S02": 0.4578,
+      "R1-S03": 0.2417,
+      "R1-S04": 0.3862,
+      "R1-S05": 0.2706,
+      "R2-S01": 0.3896,
+      "R2-S02": 0.3684,
+      "R2-S03": 0.292,
+      "R2-S04": 0.3708,
+      "R2-S05": 0.3445,
+      "R3-S01": 0.3342,
+      "R3-S02": 0.324,
+      "R3-S03": 0.3675,
+      "R3-S04": 0.2523,
+      "R3-S05": 0.387
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2485,
+     "all": {
+      "R1-S01": 0.3668,
+      "R1-S02": 0.4769,
+      "R1-S03": 0.2658,
+      "R1-S04": 0.4163,
+      "R1-S05": 0.2646,
+      "R2-S01": 0.3684,
+      "R2-S02": 0.3483,
+      "R2-S03": 0.2942,
+      "R2-S04": 0.4614,
+      "R2-S05": 0.378,
+      "R3-S01": 0.3339,
+      "R3-S02": 0.4368,
+      "R3-S03": 0.3629,
+      "R3-S04": 0.2485,
+      "R3-S05": 0.4004
+     }
     }
    },
    "agreement_v3text": {
@@ -1869,6 +2285,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -2020,6 +2439,48 @@
       "R3-S04": 0.2545,
       "R3-S05": 0.3344
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2608,
+     "all": {
+      "R1-S01": 0.3145,
+      "R1-S02": 0.435,
+      "R1-S03": 0.323,
+      "R1-S04": 0.3096,
+      "R1-S05": 0.3548,
+      "R2-S01": 0.3264,
+      "R2-S02": 0.3435,
+      "R2-S03": 0.2996,
+      "R2-S04": 0.3883,
+      "R2-S05": 0.375,
+      "R3-S01": 0.2608,
+      "R3-S02": 0.3312,
+      "R3-S03": 0.4056,
+      "R3-S04": 0.277,
+      "R3-S05": 0.3751
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2749,
+     "all": {
+      "R1-S01": 0.3176,
+      "R1-S02": 0.4602,
+      "R1-S03": 0.3474,
+      "R1-S04": 0.3476,
+      "R1-S05": 0.3558,
+      "R2-S01": 0.3168,
+      "R2-S02": 0.3487,
+      "R2-S03": 0.3244,
+      "R2-S04": 0.4907,
+      "R2-S05": 0.3955,
+      "R3-S01": 0.2749,
+      "R3-S02": 0.4249,
+      "R3-S03": 0.4014,
+      "R3-S04": 0.2762,
+      "R3-S05": 0.3952
+     }
     }
    },
    "agreement_v3text": {
@@ -2061,6 +2522,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -2218,6 +2682,48 @@
       "R3-S04": 0.3004,
       "R3-S05": 0.3753
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2736,
+     "all": {
+      "R1-S01": 0.3318,
+      "R1-S02": 0.4136,
+      "R1-S03": 0.3576,
+      "R1-S04": 0.3651,
+      "R1-S05": 0.351,
+      "R2-S01": 0.3403,
+      "R2-S02": 0.3413,
+      "R2-S03": 0.317,
+      "R2-S04": 0.335,
+      "R2-S05": 0.354,
+      "R3-S01": 0.3152,
+      "R3-S02": 0.3665,
+      "R3-S03": 0.4023,
+      "R3-S04": 0.2736,
+      "R3-S05": 0.4054
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2842,
+     "all": {
+      "R1-S01": 0.3684,
+      "R1-S02": 0.4413,
+      "R1-S03": 0.4153,
+      "R1-S04": 0.4234,
+      "R1-S05": 0.3619,
+      "R2-S01": 0.3729,
+      "R2-S02": 0.3665,
+      "R2-S03": 0.3555,
+      "R2-S04": 0.4189,
+      "R2-S05": 0.4128,
+      "R3-S01": 0.3564,
+      "R3-S02": 0.4758,
+      "R3-S03": 0.4239,
+      "R3-S04": 0.2842,
+      "R3-S05": 0.464
+     }
     }
    },
    "agreement_v3text": {
@@ -2263,6 +2769,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -2420,6 +2929,48 @@
       "R3-S04": 0.2558,
       "R3-S05": 0.3473
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2366,
+     "all": {
+      "R1-S01": 0.3158,
+      "R1-S02": 0.4366,
+      "R1-S03": 0.3241,
+      "R1-S04": 0.2906,
+      "R1-S05": 0.3166,
+      "R2-S01": 0.2366,
+      "R2-S02": 0.3338,
+      "R2-S03": 0.3091,
+      "R2-S04": 0.3608,
+      "R2-S05": 0.3426,
+      "R3-S01": 0.2936,
+      "R3-S02": 0.34,
+      "R3-S03": 0.3982,
+      "R3-S04": 0.2836,
+      "R3-S05": 0.3646
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2913,
+     "all": {
+      "R1-S01": 0.3697,
+      "R1-S02": 0.4943,
+      "R1-S03": 0.3643,
+      "R1-S04": 0.3589,
+      "R1-S05": 0.2992,
+      "R2-S01": 0.2913,
+      "R2-S02": 0.335,
+      "R2-S03": 0.3191,
+      "R2-S04": 0.4741,
+      "R2-S05": 0.4172,
+      "R3-S01": 0.3434,
+      "R3-S02": 0.4309,
+      "R3-S03": 0.402,
+      "R3-S04": 0.2971,
+      "R3-S05": 0.4045
+     }
     }
    },
    "agreement_v3text": {
@@ -2462,6 +3013,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -2613,6 +3167,48 @@
       "R3-S04": 0.1842,
       "R3-S05": 0.2963
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2234,
+     "all": {
+      "R1-S01": 0.3706,
+      "R1-S02": 0.4635,
+      "R1-S03": 0.2825,
+      "R1-S04": 0.3083,
+      "R1-S05": 0.2675,
+      "R2-S01": 0.3654,
+      "R2-S02": 0.3677,
+      "R2-S03": 0.283,
+      "R2-S04": 0.3528,
+      "R2-S05": 0.3501,
+      "R3-S01": 0.346,
+      "R3-S02": 0.3169,
+      "R3-S03": 0.3995,
+      "R3-S04": 0.2234,
+      "R3-S05": 0.4159
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2149,
+     "all": {
+      "R1-S01": 0.4081,
+      "R1-S02": 0.4956,
+      "R1-S03": 0.3189,
+      "R1-S04": 0.3566,
+      "R1-S05": 0.2594,
+      "R2-S01": 0.3795,
+      "R2-S02": 0.3744,
+      "R2-S03": 0.2878,
+      "R2-S04": 0.4472,
+      "R2-S05": 0.4072,
+      "R3-S01": 0.3805,
+      "R3-S02": 0.4194,
+      "R3-S03": 0.3765,
+      "R3-S04": 0.2149,
+      "R3-S05": 0.4454
+     }
     }
    },
    "agreement_v3text": {
@@ -2658,6 +3254,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -2807,6 +3406,48 @@
       "R3-S04": 0.287,
       "R3-S05": 0.3446
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.2684,
+     "all": {
+      "R1-S01": 0.3757,
+      "R1-S02": 0.4104,
+      "R1-S03": 0.3055,
+      "R1-S04": 0.3565,
+      "R1-S05": 0.3044,
+      "R2-S01": 0.4097,
+      "R2-S02": 0.3368,
+      "R2-S03": 0.2684,
+      "R2-S04": 0.4056,
+      "R2-S05": 0.3823,
+      "R3-S01": 0.3162,
+      "R3-S02": 0.2878,
+      "R3-S03": 0.3901,
+      "R3-S04": 0.2862,
+      "R3-S05": 0.3512
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.2863,
+     "all": {
+      "R1-S01": 0.401,
+      "R1-S02": 0.4194,
+      "R1-S03": 0.3569,
+      "R1-S04": 0.3874,
+      "R1-S05": 0.3215,
+      "R2-S01": 0.4306,
+      "R2-S02": 0.3527,
+      "R2-S03": 0.2863,
+      "R2-S04": 0.5115,
+      "R2-S05": 0.4257,
+      "R3-S01": 0.3367,
+      "R3-S02": 0.4128,
+      "R3-S03": 0.3992,
+      "R3-S04": 0.2933,
+      "R3-S05": 0.3995
+     }
     }
    },
    "agreement_v3text": {
@@ -2850,6 +3491,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -3002,6 +3646,48 @@
       "R3-S04": 0.3138,
       "R3-S05": 0.386
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2971,
+     "all": {
+      "R1-S01": 0.3735,
+      "R1-S02": 0.3494,
+      "R1-S03": 0.367,
+      "R1-S04": 0.3587,
+      "R1-S05": 0.3597,
+      "R2-S01": 0.3779,
+      "R2-S02": 0.3484,
+      "R2-S03": 0.3465,
+      "R2-S04": 0.3905,
+      "R2-S05": 0.4007,
+      "R3-S01": 0.2971,
+      "R3-S02": 0.3251,
+      "R3-S03": 0.3519,
+      "R3-S04": 0.3031,
+      "R3-S05": 0.3795
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.3215,
+     "all": {
+      "R1-S01": 0.4023,
+      "R1-S02": 0.3626,
+      "R1-S03": 0.4005,
+      "R1-S04": 0.4027,
+      "R1-S05": 0.3606,
+      "R2-S01": 0.3991,
+      "R2-S02": 0.3589,
+      "R2-S03": 0.3655,
+      "R2-S04": 0.5066,
+      "R2-S05": 0.4427,
+      "R3-S01": 0.3333,
+      "R3-S02": 0.4135,
+      "R3-S03": 0.3733,
+      "R3-S04": 0.3215,
+      "R3-S05": 0.4425
+     }
     }
    },
    "agreement_v3text": {
@@ -3044,6 +3730,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -3196,6 +3885,48 @@
       "R3-S04": 0.3301,
       "R3-S05": 0.3277
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2944,
+     "all": {
+      "R1-S01": 0.3196,
+      "R1-S02": 0.4365,
+      "R1-S03": 0.2944,
+      "R1-S04": 0.3476,
+      "R1-S05": 0.3687,
+      "R2-S01": 0.3562,
+      "R2-S02": 0.3419,
+      "R2-S03": 0.3331,
+      "R2-S04": 0.3762,
+      "R2-S05": 0.3585,
+      "R3-S01": 0.2958,
+      "R3-S02": 0.3026,
+      "R3-S03": 0.3889,
+      "R3-S04": 0.3189,
+      "R3-S05": 0.3445
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.3193,
+     "all": {
+      "R1-S01": 0.3861,
+      "R1-S02": 0.4529,
+      "R1-S03": 0.3193,
+      "R1-S04": 0.3791,
+      "R1-S05": 0.4162,
+      "R2-S01": 0.4245,
+      "R2-S02": 0.4243,
+      "R2-S03": 0.4182,
+      "R2-S04": 0.4527,
+      "R2-S05": 0.4537,
+      "R3-S01": 0.3711,
+      "R3-S02": 0.3785,
+      "R3-S03": 0.4085,
+      "R3-S04": 0.3821,
+      "R3-S05": 0.4365
+     }
     }
    },
    "agreement_v3text": {
@@ -3238,6 +3969,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -3389,6 +4123,48 @@
       "R3-S04": 0.2625,
       "R3-S05": 0.3623
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2401,
+     "all": {
+      "R1-S01": 0.3707,
+      "R1-S02": 0.419,
+      "R1-S03": 0.2875,
+      "R1-S04": 0.3774,
+      "R1-S05": 0.2489,
+      "R2-S01": 0.3684,
+      "R2-S02": 0.3465,
+      "R2-S03": 0.297,
+      "R2-S04": 0.387,
+      "R2-S05": 0.3254,
+      "R3-S01": 0.3229,
+      "R3-S02": 0.3304,
+      "R3-S03": 0.3729,
+      "R3-S04": 0.2401,
+      "R3-S05": 0.3746
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2435,
+     "all": {
+      "R1-S01": 0.391,
+      "R1-S02": 0.445,
+      "R1-S03": 0.3304,
+      "R1-S04": 0.4309,
+      "R1-S05": 0.2542,
+      "R2-S01": 0.3706,
+      "R2-S02": 0.3556,
+      "R2-S03": 0.3269,
+      "R2-S04": 0.509,
+      "R2-S05": 0.3871,
+      "R3-S01": 0.3426,
+      "R3-S02": 0.4356,
+      "R3-S03": 0.3992,
+      "R3-S04": 0.2435,
+      "R3-S05": 0.4298
+     }
     }
    },
    "agreement_v3text": {
@@ -3430,6 +4206,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -3583,6 +4362,48 @@
       "R3-S04": 0.2843,
       "R3-S05": 0.3461
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S03",
+     "dist": 0.2551,
+     "all": {
+      "R1-S01": 0.3453,
+      "R1-S02": 0.3383,
+      "R1-S03": 0.3486,
+      "R1-S04": 0.3803,
+      "R1-S05": 0.3201,
+      "R2-S01": 0.3977,
+      "R2-S02": 0.3677,
+      "R2-S03": 0.406,
+      "R2-S04": 0.388,
+      "R2-S05": 0.3921,
+      "R3-S01": 0.3581,
+      "R3-S02": 0.3481,
+      "R3-S03": 0.2551,
+      "R3-S04": 0.3547,
+      "R3-S05": 0.4123
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S03",
+     "dist": 0.2659,
+     "all": {
+      "R1-S01": 0.4004,
+      "R1-S02": 0.3493,
+      "R1-S03": 0.3785,
+      "R1-S04": 0.4115,
+      "R1-S05": 0.3393,
+      "R2-S01": 0.4599,
+      "R2-S02": 0.448,
+      "R2-S03": 0.4989,
+      "R2-S04": 0.4552,
+      "R2-S05": 0.5448,
+      "R3-S01": 0.4442,
+      "R3-S02": 0.4473,
+      "R3-S03": 0.2659,
+      "R3-S04": 0.4144,
+      "R3-S05": 0.5234
+     }
     }
    },
    "agreement_v3text": {
@@ -3626,6 +4447,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -3778,6 +4602,48 @@
       "R3-S04": 0.3588,
       "R3-S05": 0.4382
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.3437,
+     "all": {
+      "R1-S01": 0.4094,
+      "R1-S02": 0.376,
+      "R1-S03": 0.4059,
+      "R1-S04": 0.4009,
+      "R1-S05": 0.3616,
+      "R2-S01": 0.3534,
+      "R2-S02": 0.4127,
+      "R2-S03": 0.4031,
+      "R2-S04": 0.4468,
+      "R2-S05": 0.4263,
+      "R3-S01": 0.3437,
+      "R3-S02": 0.4181,
+      "R3-S03": 0.3735,
+      "R3-S04": 0.3629,
+      "R3-S05": 0.4467
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.3886,
+     "all": {
+      "R1-S01": 0.4395,
+      "R1-S02": 0.3983,
+      "R1-S03": 0.4471,
+      "R1-S04": 0.4456,
+      "R1-S05": 0.3886,
+      "R2-S01": 0.4317,
+      "R2-S02": 0.4729,
+      "R2-S03": 0.4833,
+      "R2-S04": 0.5095,
+      "R2-S05": 0.5251,
+      "R3-S01": 0.4207,
+      "R3-S02": 0.5081,
+      "R3-S03": 0.4227,
+      "R3-S04": 0.4154,
+      "R3-S05": 0.5332
+     }
     }
    },
    "agreement_v3text": {
@@ -3820,6 +4686,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": true,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -3972,6 +4841,48 @@
       "R3-S04": 0.3592,
       "R3-S05": 0.4286
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.3343,
+     "all": {
+      "R1-S01": 0.3741,
+      "R1-S02": 0.3425,
+      "R1-S03": 0.3668,
+      "R1-S04": 0.3343,
+      "R1-S05": 0.3642,
+      "R2-S01": 0.4009,
+      "R2-S02": 0.3481,
+      "R2-S03": 0.3996,
+      "R2-S04": 0.3661,
+      "R2-S05": 0.3567,
+      "R3-S01": 0.3474,
+      "R3-S02": 0.4146,
+      "R3-S03": 0.3596,
+      "R3-S04": 0.3814,
+      "R3-S05": 0.415
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.3386,
+     "all": {
+      "R1-S01": 0.3867,
+      "R1-S02": 0.3421,
+      "R1-S03": 0.3655,
+      "R1-S04": 0.3386,
+      "R1-S05": 0.3395,
+      "R2-S01": 0.3952,
+      "R2-S02": 0.3695,
+      "R2-S03": 0.4252,
+      "R2-S04": 0.4272,
+      "R2-S05": 0.4202,
+      "R3-S01": 0.3729,
+      "R3-S02": 0.4972,
+      "R3-S03": 0.3403,
+      "R3-S04": 0.3887,
+      "R3-S05": 0.4809
+     }
     }
    },
    "agreement_v3text": {
@@ -4014,6 +4925,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -4166,6 +5080,48 @@
       "R3-S04": 0.2763,
       "R3-S05": 0.3587
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2969,
+     "all": {
+      "R1-S01": 0.3394,
+      "R1-S02": 0.4825,
+      "R1-S03": 0.3791,
+      "R1-S04": 0.3872,
+      "R1-S05": 0.321,
+      "R2-S01": 0.3611,
+      "R2-S02": 0.3431,
+      "R2-S03": 0.3785,
+      "R2-S04": 0.3862,
+      "R2-S05": 0.3613,
+      "R3-S01": 0.2969,
+      "R3-S02": 0.3646,
+      "R3-S03": 0.4021,
+      "R3-S04": 0.3504,
+      "R3-S05": 0.4201
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.3122,
+     "all": {
+      "R1-S01": 0.3466,
+      "R1-S02": 0.5035,
+      "R1-S03": 0.3993,
+      "R1-S04": 0.4242,
+      "R1-S05": 0.3303,
+      "R2-S01": 0.3729,
+      "R2-S02": 0.3582,
+      "R2-S03": 0.3938,
+      "R2-S04": 0.4763,
+      "R2-S05": 0.4585,
+      "R3-S01": 0.3122,
+      "R3-S02": 0.45,
+      "R3-S03": 0.3939,
+      "R3-S04": 0.3479,
+      "R3-S05": 0.4587
+     }
     }
    },
    "agreement_v3text": {
@@ -4208,6 +5164,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -4360,6 +5319,48 @@
       "R3-S04": 0.2463,
       "R3-S05": 0.3278
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.2539,
+     "all": {
+      "R1-S01": 0.3663,
+      "R1-S02": 0.429,
+      "R1-S03": 0.355,
+      "R1-S04": 0.3331,
+      "R1-S05": 0.2539,
+      "R2-S01": 0.3728,
+      "R2-S02": 0.3031,
+      "R2-S03": 0.3164,
+      "R2-S04": 0.3719,
+      "R2-S05": 0.3267,
+      "R3-S01": 0.3311,
+      "R3-S02": 0.3166,
+      "R3-S03": 0.4161,
+      "R3-S04": 0.2732,
+      "R3-S05": 0.3645
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2649,
+     "all": {
+      "R1-S01": 0.3881,
+      "R1-S02": 0.4536,
+      "R1-S03": 0.3992,
+      "R1-S04": 0.3737,
+      "R1-S05": 0.2653,
+      "R2-S01": 0.3732,
+      "R2-S02": 0.307,
+      "R2-S03": 0.3129,
+      "R2-S04": 0.4819,
+      "R2-S05": 0.371,
+      "R3-S01": 0.3367,
+      "R3-S02": 0.4162,
+      "R3-S03": 0.4305,
+      "R3-S04": 0.2649,
+      "R3-S05": 0.3968
+     }
     }
    },
    "agreement_v3text": {
@@ -4402,6 +5403,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -4553,6 +5557,48 @@
       "R3-S04": 0.2825,
       "R3-S05": 0.3494
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.2788,
+     "all": {
+      "R1-S01": 0.3687,
+      "R1-S02": 0.4109,
+      "R1-S03": 0.3178,
+      "R1-S04": 0.3374,
+      "R1-S05": 0.3351,
+      "R2-S01": 0.3354,
+      "R2-S02": 0.3493,
+      "R2-S03": 0.3225,
+      "R2-S04": 0.2788,
+      "R2-S05": 0.3626,
+      "R3-S01": 0.3139,
+      "R3-S02": 0.3065,
+      "R3-S03": 0.3512,
+      "R3-S04": 0.2805,
+      "R3-S05": 0.3574
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.289,
+     "all": {
+      "R1-S01": 0.3957,
+      "R1-S02": 0.4371,
+      "R1-S03": 0.3761,
+      "R1-S04": 0.3667,
+      "R1-S05": 0.3211,
+      "R2-S01": 0.3462,
+      "R2-S02": 0.3553,
+      "R2-S03": 0.3528,
+      "R2-S04": 0.3395,
+      "R2-S05": 0.418,
+      "R3-S01": 0.3388,
+      "R3-S02": 0.3929,
+      "R3-S03": 0.348,
+      "R3-S04": 0.289,
+      "R3-S05": 0.3885
+     }
     }
    },
    "agreement_v3text": {
@@ -4594,6 +5640,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -4743,6 +5792,48 @@
       "R3-S04": 0.2858,
       "R3-S05": 0.3657
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2954,
+     "all": {
+      "R1-S01": 0.3492,
+      "R1-S02": 0.4317,
+      "R1-S03": 0.2955,
+      "R1-S04": 0.3756,
+      "R1-S05": 0.3515,
+      "R2-S01": 0.339,
+      "R2-S02": 0.3405,
+      "R2-S03": 0.3021,
+      "R2-S04": 0.3359,
+      "R2-S05": 0.3833,
+      "R3-S01": 0.3264,
+      "R3-S02": 0.3477,
+      "R3-S03": 0.3796,
+      "R3-S04": 0.2954,
+      "R3-S05": 0.4027
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.3154,
+     "all": {
+      "R1-S01": 0.3691,
+      "R1-S02": 0.4438,
+      "R1-S03": 0.3185,
+      "R1-S04": 0.4031,
+      "R1-S05": 0.3154,
+      "R2-S01": 0.343,
+      "R2-S02": 0.3402,
+      "R2-S03": 0.326,
+      "R2-S04": 0.4398,
+      "R2-S05": 0.4461,
+      "R3-S01": 0.3501,
+      "R3-S02": 0.4518,
+      "R3-S03": 0.3781,
+      "R3-S04": 0.326,
+      "R3-S05": 0.4394
+     }
     }
    },
    "agreement_v3text": {
@@ -4782,6 +5873,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -4933,6 +6027,48 @@
       "R3-S04": 0.2894,
       "R3-S05": 0.3694
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2631,
+     "all": {
+      "R1-S01": 0.3711,
+      "R1-S02": 0.3943,
+      "R1-S03": 0.293,
+      "R1-S04": 0.3271,
+      "R1-S05": 0.2739,
+      "R2-S01": 0.3389,
+      "R2-S02": 0.3086,
+      "R2-S03": 0.2745,
+      "R2-S04": 0.3416,
+      "R2-S05": 0.3366,
+      "R3-S01": 0.3017,
+      "R3-S02": 0.315,
+      "R3-S03": 0.3868,
+      "R3-S04": 0.2631,
+      "R3-S05": 0.3429
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.2863,
+     "all": {
+      "R1-S01": 0.398,
+      "R1-S02": 0.4286,
+      "R1-S03": 0.3451,
+      "R1-S04": 0.3758,
+      "R1-S05": 0.2863,
+      "R2-S01": 0.3502,
+      "R2-S02": 0.332,
+      "R2-S03": 0.3108,
+      "R2-S04": 0.4546,
+      "R2-S05": 0.3855,
+      "R3-S01": 0.3229,
+      "R3-S02": 0.4574,
+      "R3-S03": 0.4217,
+      "R3-S04": 0.2955,
+      "R3-S05": 0.411
+     }
     }
    },
    "agreement_v3text": {
@@ -4974,6 +6110,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -5126,6 +6265,48 @@
       "R3-S04": 0.2863,
       "R3-S05": 0.3288
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2449,
+     "all": {
+      "R1-S01": 0.3014,
+      "R1-S02": 0.3883,
+      "R1-S03": 0.3534,
+      "R1-S04": 0.3129,
+      "R1-S05": 0.3257,
+      "R2-S01": 0.3155,
+      "R2-S02": 0.297,
+      "R2-S03": 0.3407,
+      "R2-S04": 0.3326,
+      "R2-S05": 0.3668,
+      "R3-S01": 0.2449,
+      "R3-S02": 0.3173,
+      "R3-S03": 0.3691,
+      "R3-S04": 0.2982,
+      "R3-S05": 0.3435
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.274,
+     "all": {
+      "R1-S01": 0.3093,
+      "R1-S02": 0.4295,
+      "R1-S03": 0.3816,
+      "R1-S04": 0.3263,
+      "R1-S05": 0.3332,
+      "R2-S01": 0.2986,
+      "R2-S02": 0.3401,
+      "R2-S03": 0.3779,
+      "R2-S04": 0.3949,
+      "R2-S05": 0.4141,
+      "R3-S01": 0.274,
+      "R3-S02": 0.3983,
+      "R3-S03": 0.3814,
+      "R3-S04": 0.3166,
+      "R3-S05": 0.3886
+     }
     }
    },
    "agreement_v3text": {
@@ -5168,6 +6349,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -5319,6 +6503,48 @@
       "R3-S04": 0.23,
       "R3-S05": 0.319
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2422,
+     "all": {
+      "R1-S01": 0.4297,
+      "R1-S02": 0.4937,
+      "R1-S03": 0.3348,
+      "R1-S04": 0.4087,
+      "R1-S05": 0.2689,
+      "R2-S01": 0.4291,
+      "R2-S02": 0.3362,
+      "R2-S03": 0.3048,
+      "R2-S04": 0.4154,
+      "R2-S05": 0.3449,
+      "R3-S01": 0.3697,
+      "R3-S02": 0.3221,
+      "R3-S03": 0.4286,
+      "R3-S04": 0.2422,
+      "R3-S05": 0.3811
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2101,
+     "all": {
+      "R1-S01": 0.4335,
+      "R1-S02": 0.4847,
+      "R1-S03": 0.3675,
+      "R1-S04": 0.4331,
+      "R1-S05": 0.2907,
+      "R2-S01": 0.4182,
+      "R2-S02": 0.318,
+      "R2-S03": 0.3038,
+      "R2-S04": 0.5244,
+      "R2-S05": 0.3793,
+      "R3-S01": 0.3583,
+      "R3-S02": 0.4124,
+      "R3-S03": 0.4001,
+      "R3-S04": 0.2101,
+      "R3-S05": 0.3989
+     }
     }
    },
    "agreement_v3text": {
@@ -5360,6 +6586,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -5513,6 +6742,48 @@
       "R3-S04": 0.3003,
       "R3-S05": 0.3356
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R2-S02",
+     "dist": 0.3025,
+     "all": {
+      "R1-S01": 0.3722,
+      "R1-S02": 0.4616,
+      "R1-S03": 0.353,
+      "R1-S04": 0.4071,
+      "R1-S05": 0.3739,
+      "R2-S01": 0.3746,
+      "R2-S02": 0.3025,
+      "R2-S03": 0.3673,
+      "R2-S04": 0.3846,
+      "R2-S05": 0.3849,
+      "R3-S01": 0.3105,
+      "R3-S02": 0.325,
+      "R3-S03": 0.3863,
+      "R3-S04": 0.3535,
+      "R3-S05": 0.3655
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.313,
+     "all": {
+      "R1-S01": 0.4109,
+      "R1-S02": 0.5,
+      "R1-S03": 0.3786,
+      "R1-S04": 0.4457,
+      "R1-S05": 0.3644,
+      "R2-S01": 0.3897,
+      "R2-S02": 0.318,
+      "R2-S03": 0.3738,
+      "R2-S04": 0.4667,
+      "R2-S05": 0.4562,
+      "R3-S01": 0.313,
+      "R3-S02": 0.4158,
+      "R3-S03": 0.4423,
+      "R3-S04": 0.3682,
+      "R3-S05": 0.435
+     }
     }
    },
    "agreement_v3text": {
@@ -5556,6 +6827,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -5708,6 +6982,48 @@
       "R3-S04": 0.322,
       "R3-S05": 0.3619
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2855,
+     "all": {
+      "R1-S01": 0.3432,
+      "R1-S02": 0.3939,
+      "R1-S03": 0.3661,
+      "R1-S04": 0.3561,
+      "R1-S05": 0.3278,
+      "R2-S01": 0.3105,
+      "R2-S02": 0.3587,
+      "R2-S03": 0.3362,
+      "R2-S04": 0.3851,
+      "R2-S05": 0.3141,
+      "R3-S01": 0.3091,
+      "R3-S02": 0.3355,
+      "R3-S03": 0.359,
+      "R3-S04": 0.2855,
+      "R3-S05": 0.3698
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.3208,
+     "all": {
+      "R1-S01": 0.3841,
+      "R1-S02": 0.4085,
+      "R1-S03": 0.4304,
+      "R1-S04": 0.4052,
+      "R1-S05": 0.3433,
+      "R2-S01": 0.3628,
+      "R2-S02": 0.3862,
+      "R2-S03": 0.3921,
+      "R2-S04": 0.4879,
+      "R2-S05": 0.3736,
+      "R3-S01": 0.3434,
+      "R3-S02": 0.4467,
+      "R3-S03": 0.3691,
+      "R3-S04": 0.3208,
+      "R3-S05": 0.4239
+     }
     }
    },
    "agreement_v3text": {
@@ -5750,6 +7066,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -5902,6 +7221,48 @@
       "R3-S04": 0.2936,
       "R3-S05": 0.337
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2878,
+     "all": {
+      "R1-S01": 0.3388,
+      "R1-S02": 0.3829,
+      "R1-S03": 0.3938,
+      "R1-S04": 0.2878,
+      "R1-S05": 0.3457,
+      "R2-S01": 0.3298,
+      "R2-S02": 0.2927,
+      "R2-S03": 0.3589,
+      "R2-S04": 0.3859,
+      "R2-S05": 0.3927,
+      "R3-S01": 0.3379,
+      "R3-S02": 0.3769,
+      "R3-S03": 0.4284,
+      "R3-S04": 0.3475,
+      "R3-S05": 0.4194
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R2-S02",
+     "dist": 0.3074,
+     "all": {
+      "R1-S01": 0.3541,
+      "R1-S02": 0.4214,
+      "R1-S03": 0.432,
+      "R1-S04": 0.3361,
+      "R1-S05": 0.3599,
+      "R2-S01": 0.3574,
+      "R2-S02": 0.3074,
+      "R2-S03": 0.37,
+      "R2-S04": 0.5099,
+      "R2-S05": 0.4608,
+      "R3-S01": 0.3775,
+      "R3-S02": 0.5031,
+      "R3-S03": 0.4492,
+      "R3-S04": 0.3441,
+      "R3-S05": 0.4397
+     }
     }
    },
    "agreement_v3text": {
@@ -5944,6 +7305,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -6096,6 +7460,48 @@
       "R3-S04": 0.2812,
       "R3-S05": 0.3839
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2644,
+     "all": {
+      "R1-S01": 0.3271,
+      "R1-S02": 0.4633,
+      "R1-S03": 0.3432,
+      "R1-S04": 0.3246,
+      "R1-S05": 0.2686,
+      "R2-S01": 0.3655,
+      "R2-S02": 0.3413,
+      "R2-S03": 0.3632,
+      "R2-S04": 0.3936,
+      "R2-S05": 0.3469,
+      "R3-S01": 0.327,
+      "R3-S02": 0.2816,
+      "R3-S03": 0.379,
+      "R3-S04": 0.2644,
+      "R3-S05": 0.3986
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2743,
+     "all": {
+      "R1-S01": 0.358,
+      "R1-S02": 0.5008,
+      "R1-S03": 0.3849,
+      "R1-S04": 0.3737,
+      "R1-S05": 0.304,
+      "R2-S01": 0.3987,
+      "R2-S02": 0.3701,
+      "R2-S03": 0.3869,
+      "R2-S04": 0.4899,
+      "R2-S05": 0.4046,
+      "R3-S01": 0.3524,
+      "R3-S02": 0.3819,
+      "R3-S03": 0.3814,
+      "R3-S04": 0.2743,
+      "R3-S05": 0.4565
+     }
     }
    },
    "agreement_v3text": {
@@ -6124,6 +7530,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -6276,6 +7685,48 @@
       "R3-S04": 0.2619,
       "R3-S05": 0.3573
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2886,
+     "all": {
+      "R1-S01": 0.3563,
+      "R1-S02": 0.3716,
+      "R1-S03": 0.3819,
+      "R1-S04": 0.3727,
+      "R1-S05": 0.3518,
+      "R2-S01": 0.3601,
+      "R2-S02": 0.3551,
+      "R2-S03": 0.3523,
+      "R2-S04": 0.3227,
+      "R2-S05": 0.3853,
+      "R3-S01": 0.2886,
+      "R3-S02": 0.3529,
+      "R3-S03": 0.4169,
+      "R3-S04": 0.2984,
+      "R3-S05": 0.4029
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.3189,
+     "all": {
+      "R1-S01": 0.3872,
+      "R1-S02": 0.3975,
+      "R1-S03": 0.4031,
+      "R1-S04": 0.4149,
+      "R1-S05": 0.3455,
+      "R2-S01": 0.3676,
+      "R2-S02": 0.3821,
+      "R2-S03": 0.3543,
+      "R2-S04": 0.4373,
+      "R2-S05": 0.4085,
+      "R3-S01": 0.3265,
+      "R3-S02": 0.4331,
+      "R3-S03": 0.4424,
+      "R3-S04": 0.3189,
+      "R3-S05": 0.4392
+     }
     }
    },
    "agreement_v3text": {
@@ -6304,6 +7755,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -6456,6 +7910,48 @@
       "R3-S04": 0.3436,
       "R3-S05": 0.3751
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.3121,
+     "all": {
+      "R1-S01": 0.4377,
+      "R1-S02": 0.425,
+      "R1-S03": 0.3626,
+      "R1-S04": 0.3578,
+      "R1-S05": 0.3332,
+      "R2-S01": 0.4485,
+      "R2-S02": 0.3562,
+      "R2-S03": 0.3966,
+      "R2-S04": 0.428,
+      "R2-S05": 0.4684,
+      "R3-S01": 0.378,
+      "R3-S02": 0.3121,
+      "R3-S03": 0.3811,
+      "R3-S04": 0.3724,
+      "R3-S05": 0.4227
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.3634,
+     "all": {
+      "R1-S01": 0.4678,
+      "R1-S02": 0.4611,
+      "R1-S03": 0.3905,
+      "R1-S04": 0.3816,
+      "R1-S05": 0.3634,
+      "R2-S01": 0.4783,
+      "R2-S02": 0.3729,
+      "R2-S03": 0.4376,
+      "R2-S04": 0.5079,
+      "R2-S05": 0.538,
+      "R3-S01": 0.4115,
+      "R3-S02": 0.3786,
+      "R3-S03": 0.4042,
+      "R3-S04": 0.3942,
+      "R3-S05": 0.4782
+     }
     }
    },
    "agreement_v3text": {
@@ -6484,6 +7980,9 @@
    "new_meaning_idea_vs_archive_only": true,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": true,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -6636,6 +8135,48 @@
       "R3-S04": 0.2824,
       "R3-S05": 0.3476
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2627,
+     "all": {
+      "R1-S01": 0.367,
+      "R1-S02": 0.4663,
+      "R1-S03": 0.3557,
+      "R1-S04": 0.3664,
+      "R1-S05": 0.2828,
+      "R2-S01": 0.4041,
+      "R2-S02": 0.3394,
+      "R2-S03": 0.3464,
+      "R2-S04": 0.3924,
+      "R2-S05": 0.3661,
+      "R3-S01": 0.3273,
+      "R3-S02": 0.2699,
+      "R3-S03": 0.3781,
+      "R3-S04": 0.2627,
+      "R3-S05": 0.3676
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2522,
+     "all": {
+      "R1-S01": 0.396,
+      "R1-S02": 0.4824,
+      "R1-S03": 0.3888,
+      "R1-S04": 0.3984,
+      "R1-S05": 0.2961,
+      "R2-S01": 0.4079,
+      "R2-S02": 0.354,
+      "R2-S03": 0.3556,
+      "R2-S04": 0.4957,
+      "R2-S05": 0.4352,
+      "R3-S01": 0.3521,
+      "R3-S02": 0.3764,
+      "R3-S03": 0.3808,
+      "R3-S04": 0.2522,
+      "R3-S05": 0.4222
+     }
     }
    },
    "agreement_v3text": {
@@ -6664,6 +8205,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -6816,6 +8360,48 @@
       "R3-S04": 0.3261,
       "R3-S05": 0.375
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2831,
+     "all": {
+      "R1-S01": 0.3597,
+      "R1-S02": 0.4487,
+      "R1-S03": 0.4022,
+      "R1-S04": 0.3648,
+      "R1-S05": 0.3914,
+      "R2-S01": 0.2831,
+      "R2-S02": 0.3989,
+      "R2-S03": 0.3868,
+      "R2-S04": 0.4391,
+      "R2-S05": 0.4147,
+      "R3-S01": 0.2979,
+      "R3-S02": 0.3854,
+      "R3-S03": 0.4485,
+      "R3-S04": 0.3412,
+      "R3-S05": 0.4187
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.3337,
+     "all": {
+      "R1-S01": 0.3874,
+      "R1-S02": 0.4935,
+      "R1-S03": 0.4533,
+      "R1-S04": 0.418,
+      "R1-S05": 0.4301,
+      "R2-S01": 0.3389,
+      "R2-S02": 0.4257,
+      "R2-S03": 0.4346,
+      "R2-S04": 0.5507,
+      "R2-S05": 0.4817,
+      "R3-S01": 0.3337,
+      "R3-S02": 0.4843,
+      "R3-S03": 0.4864,
+      "R3-S04": 0.3794,
+      "R3-S05": 0.4726
+     }
     }
    },
    "agreement_v3text": {
@@ -6844,6 +8430,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -6997,6 +8586,48 @@
       "R3-S04": 0.3009,
       "R3-S05": 0.393
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.306,
+     "all": {
+      "R1-S01": 0.3545,
+      "R1-S02": 0.3879,
+      "R1-S03": 0.3416,
+      "R1-S04": 0.3766,
+      "R1-S05": 0.3233,
+      "R2-S01": 0.399,
+      "R2-S02": 0.3548,
+      "R2-S03": 0.3834,
+      "R2-S04": 0.3885,
+      "R2-S05": 0.4189,
+      "R3-S01": 0.3421,
+      "R3-S02": 0.3338,
+      "R3-S03": 0.3401,
+      "R3-S04": 0.306,
+      "R3-S05": 0.4187
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.3432,
+     "all": {
+      "R1-S01": 0.4097,
+      "R1-S02": 0.4275,
+      "R1-S03": 0.383,
+      "R1-S04": 0.4488,
+      "R1-S05": 0.3432,
+      "R2-S01": 0.4697,
+      "R2-S02": 0.4211,
+      "R2-S03": 0.4396,
+      "R2-S04": 0.4714,
+      "R2-S05": 0.5286,
+      "R3-S01": 0.4221,
+      "R3-S02": 0.4353,
+      "R3-S03": 0.3987,
+      "R3-S04": 0.3589,
+      "R3-S05": 0.5369
+     }
     }
    },
    "agreement_v3text": {
@@ -7045,6 +8676,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -7197,6 +8831,48 @@
       "R3-S04": 0.2977,
       "R3-S05": 0.3475
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2804,
+     "all": {
+      "R1-S01": 0.3416,
+      "R1-S02": 0.4161,
+      "R1-S03": 0.3807,
+      "R1-S04": 0.3706,
+      "R1-S05": 0.2999,
+      "R2-S01": 0.2804,
+      "R2-S02": 0.3163,
+      "R2-S03": 0.3357,
+      "R2-S04": 0.4088,
+      "R2-S05": 0.3161,
+      "R3-S01": 0.3115,
+      "R3-S02": 0.3606,
+      "R3-S03": 0.3973,
+      "R3-S04": 0.3269,
+      "R3-S05": 0.361
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2942,
+     "all": {
+      "R1-S01": 0.3523,
+      "R1-S02": 0.4491,
+      "R1-S03": 0.4229,
+      "R1-S04": 0.4049,
+      "R1-S05": 0.32,
+      "R2-S01": 0.2942,
+      "R2-S02": 0.3408,
+      "R2-S03": 0.3747,
+      "R2-S04": 0.5069,
+      "R2-S05": 0.3992,
+      "R3-S01": 0.3533,
+      "R3-S02": 0.4584,
+      "R3-S03": 0.388,
+      "R3-S04": 0.3506,
+      "R3-S05": 0.4069
+     }
     }
    },
    "agreement_v3text": {
@@ -7240,6 +8916,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -7391,6 +9070,48 @@
       "R3-S04": 0.2491,
       "R3-S05": 0.32
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.188,
+     "all": {
+      "R1-S01": 0.3741,
+      "R1-S02": 0.4137,
+      "R1-S03": 0.188,
+      "R1-S04": 0.3905,
+      "R1-S05": 0.3018,
+      "R2-S01": 0.3929,
+      "R2-S02": 0.3559,
+      "R2-S03": 0.2707,
+      "R2-S04": 0.3737,
+      "R2-S05": 0.4,
+      "R3-S01": 0.3397,
+      "R3-S02": 0.3229,
+      "R3-S03": 0.3584,
+      "R3-S04": 0.262,
+      "R3-S05": 0.3703
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2304,
+     "all": {
+      "R1-S01": 0.4124,
+      "R1-S02": 0.4459,
+      "R1-S03": 0.2304,
+      "R1-S04": 0.4442,
+      "R1-S05": 0.2951,
+      "R2-S01": 0.4167,
+      "R2-S02": 0.3848,
+      "R2-S03": 0.2887,
+      "R2-S04": 0.4834,
+      "R2-S05": 0.4595,
+      "R3-S01": 0.3923,
+      "R3-S02": 0.4488,
+      "R3-S03": 0.3868,
+      "R3-S04": 0.2703,
+      "R3-S05": 0.4344
+     }
     }
    },
    "agreement_v3text": {
@@ -7433,6 +9154,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -7586,6 +9310,48 @@
       "R3-S04": 0.2828,
       "R3-S05": 0.3403
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.2455,
+     "all": {
+      "R1-S01": 0.3656,
+      "R1-S02": 0.4136,
+      "R1-S03": 0.3417,
+      "R1-S04": 0.3673,
+      "R1-S05": 0.2455,
+      "R2-S01": 0.4113,
+      "R2-S02": 0.3682,
+      "R2-S03": 0.3316,
+      "R2-S04": 0.3844,
+      "R2-S05": 0.3847,
+      "R3-S01": 0.3108,
+      "R3-S02": 0.3187,
+      "R3-S03": 0.3569,
+      "R3-S04": 0.3003,
+      "R3-S05": 0.3892
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.2552,
+     "all": {
+      "R1-S01": 0.3953,
+      "R1-S02": 0.4156,
+      "R1-S03": 0.357,
+      "R1-S04": 0.3992,
+      "R1-S05": 0.2552,
+      "R2-S01": 0.425,
+      "R2-S02": 0.3673,
+      "R2-S03": 0.3434,
+      "R2-S04": 0.4654,
+      "R2-S05": 0.4621,
+      "R3-S01": 0.3334,
+      "R3-S02": 0.432,
+      "R3-S03": 0.351,
+      "R3-S04": 0.3108,
+      "R3-S05": 0.4256
+     }
     }
    },
    "agreement_v3text": {
@@ -7633,6 +9399,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
@@ -7784,6 +9553,48 @@
       "R3-S04": 0.2661,
       "R3-S05": 0.3402
      }
+    },
+    "qwen3-embedding:4b|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2565,
+     "all": {
+      "R1-S01": 0.434,
+      "R1-S02": 0.4452,
+      "R1-S03": 0.2565,
+      "R1-S04": 0.4345,
+      "R1-S05": 0.3555,
+      "R2-S01": 0.4677,
+      "R2-S02": 0.4327,
+      "R2-S03": 0.3549,
+      "R2-S04": 0.3568,
+      "R2-S05": 0.4854,
+      "R3-S01": 0.3982,
+      "R3-S02": 0.3887,
+      "R3-S03": 0.36,
+      "R3-S04": 0.3695,
+      "R3-S05": 0.4546
+     }
+    },
+    "qwen3-embedding:4b|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.3038,
+     "all": {
+      "R1-S01": 0.4851,
+      "R1-S02": 0.4593,
+      "R1-S03": 0.3038,
+      "R1-S04": 0.4572,
+      "R1-S05": 0.328,
+      "R2-S01": 0.4862,
+      "R2-S02": 0.4621,
+      "R2-S03": 0.4136,
+      "R2-S04": 0.4066,
+      "R2-S05": 0.5634,
+      "R3-S01": 0.4443,
+      "R3-S02": 0.4604,
+      "R3-S03": 0.3733,
+      "R3-S04": 0.4119,
+      "R3-S05": 0.5199
+     }
     }
    },
    "agreement_v3text": {
@@ -7827,6 +9638,9 @@
    "new_meaning_idea_vs_archive_only": false,
    "new_meaning_concept": false,
    "new_meaning_concept_vs_archive_only": false,
+   "new_meaning_secondary": false,
+   "new_strategy_secondary_judge": false,
+   "new_strategy_three_judges": false,
    "new_strategy": false,
    "new_strategy_incl_declared": false,
    "new_strategy_concept_view": false,
