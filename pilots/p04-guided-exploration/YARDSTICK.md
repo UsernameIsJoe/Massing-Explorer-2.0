@@ -58,3 +58,23 @@ The concept view is used throughout, because the calibration texts are concepts.
 - If none passes, whole-concept embeddings are taken to resolve neighbourhoods only, and the axes judge novelty.
 
 Restating can also blur real differences, making seeds look alike; criterion (b) tests exactly that.
+
+### Attempt 2 result (`scripts/yardstick2.py`, `results/yardstick2.json`)
+
+**No judge passes. Restating made it worse.**
+
+| Correction | Judge | Rewrite nearest own original | Seeds distinct | Paraphrase median | Seed spacing median |
+|---|---|---:|---:|---:|---:|
+| raw | mxbai | 5 | 0 | 0.095 | 0.076 |
+| raw | nomic | 5 | 0 | 0.056 | 0.040 |
+| raw | qwen3 4b | 4 | 0 | 0.187 | 0.139 |
+| centred | mxbai | 9 | 0 | 0.701 | 0.756 |
+| centred | nomic | 8 | 0 | 0.772 | 0.796 |
+| centred | qwen3 4b | 4 | 1 | 0.790 | 0.744 |
+
+- The plain restatements wash out what distinguishes one strategy from another: seeds collapse together, and rewrites no longer find their own originals.
+- Execution note: llama prefixed every restatement with "Here are the three sentences:". A shared prefix adds a near-constant component that centring largely removes, and the centred rows fail just the same. So the conclusion does not depend on it.
+
+## Conclusion of both attempts (as declared)
+
+On this corpus, whole-concept embeddings resolve **neighbourhoods of meaning, not individual strategies**. This holds raw, centred, or style-normalised, and under all three judges. Novelty is therefore judged by the axes (structure), and the embedding's role is the coarse map: steering toward or away from regions, plus cross-checks.
