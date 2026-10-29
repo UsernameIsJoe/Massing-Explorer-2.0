@@ -1,0 +1,122 @@
+{
+ "seed": 20261029,
+ "archive_ids": {
+  "R2-S05": "E01",
+  "R1-S02": "E02",
+  "R1-S01": "E03",
+  "R3-S05": "E04",
+  "R3-S03": "E05",
+  "R2-S02": "E06",
+  "R3-S02": "E07",
+  "R1-S03": "E08",
+  "R1-S05": "E09",
+  "R3-S04": "E10",
+  "R2-S01": "E11",
+  "R3-S01": "E12",
+  "R1-S04": "E13",
+  "R2-S03": "E14",
+  "R2-S04": "E15"
+ },
+ "prompts": [
+  {
+   "file": "P1.txt",
+   "arm": "U",
+   "chat": 1,
+   "directions": null,
+   "sha256": "ff3573d248306cf9f34e504b5aa4eb84edf749f3bc17ba72c0804e23f6cfdee4",
+   "words": 3158
+  },
+  {
+   "file": "P2.txt",
+   "arm": "A",
+   "chat": 1,
+   "directions": [
+    "An organization that ends up with masses connected in a chain through the third mass; special education sits with the commons; the masses differ in height.",
+    "An organization that ends up with masses connected in a chain through the commons (gym and dining); special education is in the third mass; the masses differ in height.",
+    "An organization that ends up with only the learning mass and the third mass directly connected; special education shares the learning mass; most masses stay low (one or two storeys).",
+    "An organization that ends up with no built connections between the three masses; special education is in the third mass; the masses differ in height.",
+    "An organization that ends up with only the commons and the third mass directly connected; special education shares the learning mass; the masses differ in height."
+   ],
+   "sha256": "9ffaa42388a2b7292af387629440fc55c038e7add765491294208794fcdd940c",
+   "words": 3317
+  },
+  {
+   "file": "P3.txt",
+   "arm": "S",
+   "chat": 2,
+   "directions": [
+    "An idea unlike all of these existing cases: E02 \"Arts Loft Over the Commons\", E05 \"Courtyard Cluster with Arts Loft\". It must not be a variation of any of them.",
+    "A different idea in the spirit of E11 \"Civic gateway between learning and hall\"; not a variation of it.",
+    "An idea unlike all of these existing cases: E09 \"Academy Tower With Care House\", E15 \"Courtyard ring with reading loft\". It must not be a variation of any of them.",
+    "An idea that combines the intent of E02 \"Arts Loft Over the Commons\" with the organization of E14 \"Self-contained school bar, freestanding pavilions\", reinterpreted as a new strategy rather than a mix of the two.",
+    "A different idea in the spirit of E02 \"Arts Loft Over the Commons\"; not a variation of it."
+   ],
+   "sha256": "d2f3944221e6720a650fb859a7d93140a61c7fa537366081e4462e84c671f5f6",
+   "words": 3295
+  },
+  {
+   "file": "P4.txt",
+   "arm": "J",
+   "chat": 2,
+   "directions": [
+    "An organization that ends up with masses connected in a chain through the learning mass (core academic); special education shares the learning mass; most masses stay low (one or two storeys). Existing cases closest in meaning: E15 \"Courtyard ring with reading loft\" and E09 \"Academy Tower With Care House\"; do not rephrase them. You may borrow the intent of E04 \"One Learning Block, Workshop Link\".",
+    "An organization that ends up with only the learning mass and the commons directly connected; special education is in the third mass; all three masses rise to three storeys. Existing cases closest in meaning: E06 \"Shared heart with two wings\" and E07 \"Shared Hall as Central Heart\"; do not rephrase them. You may borrow the intent of E11 \"Civic gateway between learning and hall\".",
+    "An organization that ends up with all three masses directly connected to each other; special education shares the learning mass; all three masses rise to three storeys. Existing cases closest in meaning: E02 \"Arts Loft Over the Commons\" and E05 \"Courtyard Cluster with Arts Loft\"; do not rephrase them. You may borrow the intent of E14 \"Self-contained school bar, freestanding pavilions\".",
+    "An organization that ends up with masses connected in a chain through the third mass; special education sits with the commons; all three masses rise to three storeys. Existing cases closest in meaning: E03 \"Civic Hinge Linear Chain\" and E12 \"Civic Hinge Between Learning and Hall\"; do not rephrase them. You may borrow the intent of E14 \"Self-contained school bar, freestanding pavilions\".",
+    "An organization that ends up with masses connected in a chain through the commons (gym and dining); special education sits with the commons; most masses stay low (one or two storeys). Existing cases closest in meaning: E13 \"Commons Heart Between Front and Learning\" and E06 \"Shared heart with two wings\"; do not rephrase them. You may borrow the intent of E14 \"Self-contained school bar, freestanding pavilions\"."
+   ],
+   "sha256": "c56dc7768a427c6b2f5cc630bfa80026e33e8d843ce8b64401356cf2f28009e7",
+   "words": 3510
+  },
+  {
+   "file": "P5.txt",
+   "arm": "J",
+   "chat": 1,
+   "directions": [
+    "An organization that ends up with masses connected in a chain through the third mass; special education sits with the commons; the masses differ in height. Existing cases closest in meaning: E03 \"Civic Hinge Linear Chain\" and E12 \"Civic Hinge Between Learning and Hall\"; do not rephrase them. You may borrow the intent of E14 \"Self-contained school bar, freestanding pavilions\".",
+    "An organization that ends up with masses connected in a chain through the commons (gym and dining); special education is in the third mass; the masses differ in height. Existing cases closest in meaning: E13 \"Commons Heart Between Front and Learning\" and E06 \"Shared heart with two wings\"; do not rephrase them. You may borrow the intent of E14 \"Self-contained school bar, freestanding pavilions\".",
+    "An organization that ends up with only the learning mass and the third mass directly connected; special education shares the learning mass; most masses stay low (one or two storeys). Existing cases closest in meaning: E04 \"One Learning Block, Workshop Link\" and E14 \"Self-contained school bar, freestanding pavilions\"; do not rephrase them. You may borrow the intent of E15 \"Courtyard ring with reading loft\".",
+    "An organization that ends up with no built connections between the three masses; special education is in the third mass; the masses differ in height. Existing cases closest in meaning: E08 \"Detached Campus Pavilions\" and E14 \"Self-contained school bar, freestanding pavilions\"; do not rephrase them. You may borrow the intent of E05 \"Courtyard Cluster with Arts Loft\".",
+    "An organization that ends up with only the commons and the third mass directly connected; special education shares the learning mass; the masses differ in height. Existing cases closest in meaning: E03 \"Civic Hinge Linear Chain\" and E12 \"Civic Hinge Between Learning and Hall\"; do not rephrase them. You may borrow the intent of E14 \"Self-contained school bar, freestanding pavilions\"."
+   ],
+   "sha256": "9abf18f7af7eca8a7c220594df353f01648e79f0ab9b800611cd354ab632e868",
+   "words": 3497
+  },
+  {
+   "file": "P6.txt",
+   "arm": "A",
+   "chat": 2,
+   "directions": [
+    "An organization that ends up with masses connected in a chain through the learning mass (core academic); special education shares the learning mass; most masses stay low (one or two storeys).",
+    "An organization that ends up with only the learning mass and the commons directly connected; special education is in the third mass; all three masses rise to three storeys.",
+    "An organization that ends up with all three masses directly connected to each other; special education shares the learning mass; all three masses rise to three storeys.",
+    "An organization that ends up with masses connected in a chain through the third mass; special education sits with the commons; all three masses rise to three storeys.",
+    "An organization that ends up with masses connected in a chain through the commons (gym and dining); special education sits with the commons; most masses stay low (one or two storeys)."
+   ],
+   "sha256": "9d8bea367aec4392e06f0c044cfdd184950683bb1cf8b4b6dc84659a70d9a1a7",
+   "words": 3327
+  },
+  {
+   "file": "P7.txt",
+   "arm": "U",
+   "chat": 2,
+   "directions": null,
+   "sha256": "ff3573d248306cf9f34e504b5aa4eb84edf749f3bc17ba72c0804e23f6cfdee4",
+   "words": 3158
+  },
+  {
+   "file": "P8.txt",
+   "arm": "S",
+   "chat": 1,
+   "directions": [
+    "An idea unlike all of these existing cases: E03 \"Civic Hinge Linear Chain\", E13 \"Commons Heart Between Front and Learning\", E06 \"Shared heart with two wings\", E12 \"Civic Hinge Between Learning and Hall\", E07 \"Shared Hall as Central Heart\". It must not be a variation of any of them.",
+    "An idea that combines the intent of E09 \"Academy Tower With Care House\" with the organization of E11 \"Civic gateway between learning and hall\", reinterpreted as a new strategy rather than a mix of the two.",
+    "A different idea in the spirit of E08 \"Detached Campus Pavilions\"; not a variation of it.",
+    "An idea unlike all of these existing cases: E14 \"Self-contained school bar, freestanding pavilions\", E01 \"Low classrooms beside civic tower\", E10 \"Twin Bars and Freestanding Hall\", E04 \"One Learning Block, Workshop Link\". It must not be a variation of any of them.",
+    "An idea that combines the intent of E08 \"Detached Campus Pavilions\" with the organization of E05 \"Courtyard Cluster with Arts Loft\", reinterpreted as a new strategy rather than a mix of the two."
+   ],
+   "sha256": "adf19f8b2e5d298784585bf8eec821b960afabc4fa54e44971bd153879d5c959",
+   "words": 3339
+  }
+ ]
+}

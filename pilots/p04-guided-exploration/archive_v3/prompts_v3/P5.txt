@@ -1,0 +1,534 @@
+[Strategy generation v3.0. Each attachment listed below is embedded verbatim after this instruction, between BEGIN/END ATTACHMENT markers; treat each embedded block as that attachment.]
+
+Attachments: MODEL_INPUT.md, ROOM_PROGRAM.csv, CASE_FORMAT_v3.md, case.schema.v3.json.
+
+Use only these supplied inputs and this instruction. Do not browse, run code or request external tools.
+
+You are proposing new architectural strategies for the supplied elementary school brief. Each strategy starts from an organizing idea; develop the idea first, then make the program, floor and connection decisions that implement it.
+
+## Existing cases
+
+These strategies already exist. Their names and concepts are listed so that you know what has been proposed.
+
+- E01 "Low classrooms beside civic tower": Classrooms stay low and close to the ground in a two-storey learning bar, flanked by the hall on one side and, on the other, a compact three-storey civic tower that stacks the school's front, its specialist support and a library crown as the building's vertical marker.
+- E02 "Arts Loft Over the Commons": A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.
+- E03 "Civic Hinge Linear Chain": A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.
+- E04 "One Learning Block, Workshop Link": One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.
+- E05 "Courtyard Cluster with Arts Loft": A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse.
+- E06 "Shared heart with two wings": A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it.
+- E07 "Shared Hall as Central Heart": A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly.
+- E08 "Detached Campus Pavilions": Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.
+- E09 "Academy Tower With Care House": A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.
+- E10 "Twin Bars and Freestanding Hall": Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning.
+- E11 "Civic gateway between learning and hall": A low civic gateway stands between a three-storey learning bar and a community hall and forms the only enclosed passage between them. Everyone arrives through the gateway, where the school's front and its making and reading spaces meet visitors; classrooms extend behind it on one side and the shared hall on the other.
+- E12 "Civic Hinge Between Learning and Hall": A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school.
+- E13 "Commons Heart Between Front and Learning": The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.
+- E14 "Self-contained school bar, freestanding pavilions": One self-contained school bar carries the whole teaching day, rising from the front office and specialist support at its foot through classrooms to a reading crown. Two freestanding pavilions, a community hall and a making-and-maintenance workshop, stand apart on shared grounds and are reached outdoors.
+- E15 "Courtyard ring with reading loft": Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court.
+
+## Your task
+
+Propose exactly 5 new strategies, one per direction below, in order: C01 answers direction 1, C02 direction 2, and so on. Each direction describes where a strategy's organization should end up, together with existing ideas to stay clear of and one whose intent you may borrow. Find a meaningful architectural idea that leads there; the arrangement must follow from the idea, not be forced to fit. Each case must also differ from all the existing cases, not only in names or wording.
+
+1. An organization that ends up with masses connected in a chain through the third mass; special education sits with the commons; the masses differ in height. Existing cases closest in meaning: E03 "Civic Hinge Linear Chain" and E12 "Civic Hinge Between Learning and Hall"; do not rephrase them. You may borrow the intent of E14 "Self-contained school bar, freestanding pavilions".
+2. An organization that ends up with masses connected in a chain through the commons (gym and dining); special education is in the third mass; the masses differ in height. Existing cases closest in meaning: E13 "Commons Heart Between Front and Learning" and E06 "Shared heart with two wings"; do not rephrase them. You may borrow the intent of E14 "Self-contained school bar, freestanding pavilions".
+3. An organization that ends up with only the learning mass and the third mass directly connected; special education shares the learning mass; most masses stay low (one or two storeys). Existing cases closest in meaning: E04 "One Learning Block, Workshop Link" and E14 "Self-contained school bar, freestanding pavilions"; do not rephrase them. You may borrow the intent of E15 "Courtyard ring with reading loft".
+4. An organization that ends up with no built connections between the three masses; special education is in the third mass; the masses differ in height. Existing cases closest in meaning: E08 "Detached Campus Pavilions" and E14 "Self-contained school bar, freestanding pavilions"; do not rephrase them. You may borrow the intent of E05 "Courtyard Cluster with Arts Loft".
+5. An organization that ends up with only the commons and the third mass directly connected; special education shares the learning mass; the masses differ in height. Existing cases closest in meaning: E03 "Civic Hinge Linear Chain" and E12 "Civic Hinge Between Learning and Hall"; do not rephrase them. You may borrow the intent of E14 "Self-contained school bar, freestanding pavilions".
+
+## Rules for every case
+
+- The hard rules in CASE_FORMAT_v3.md apply without exception. If a direction cannot be met without breaking a hard rule, keep the hard rule, follow the direction as far as possible, and say so in `direction_response` and `unresolved`.
+- Coherence matters more than novelty. Within each case, every field must describe the same scheme. Before returning, check every case and fix it if any item fails:
+  1. Every key move's decisions match the structure exactly.
+  2. The concept does not state a relationship the structure contradicts.
+  3. `section_intent` matches the structure's floors: which masses rise, and what sits at grade and at the top.
+  4. `program_stance` matches where core academic, special education, administration and the commons actually sit.
+  5. The intent follows from the concept and is not a generic benefit any scheme could claim.
+  6. `preferences_given_up` matches what the structure does.
+  7. The concept does not list departments by mass or floor.
+- Stay at strategy level: no dimensions, areas by mass, geometry or scores. Preserve the given program. Do not invent site geometry or access.
+
+Return only one JSON object conforming to CASE_FORMAT_v3.md and case.schema.v3.json, with case IDs C01 to C05.
+
+===== BEGIN ATTACHMENT: MODEL_INPUT.md =====
+# A test elementary school — design information (v0.2)
+
+## Design brief
+
+3 masses, max 3 floors. length max 60 meters. gym and dining together and double height. art and music prefer on ground floor. media prefer on top floor above admin. admin have to be on ground floor. core academic and special ed width has to be 80 feet. mass ratio have to be between 2:5 and 5:8. prefer 3 floors.
+
+## Program schedule (net square feet)
+
+The supplied `ROOM_PROGRAM.csv` contains the **complete 41-line room program**. Preserve the given quantities, room types, and net areas, including any room with quantity zero. Department net areas:
+
+| Department | NFA (SF) |
+|---|---:|
+| Core academic | 14,280 |
+| Special education | 5,610 |
+| Art & music | 3,040 |
+| Health & physical education | 6,950 |
+| Media center | 2,800 |
+| Dining & food service | 6,150 |
+| Medical | 730 |
+| Administration & guidance | 2,510 |
+| Custodial & maintenance | 2,200 |
+| **Total** | **44,270** |
+
+## Mandatory department assignment
+
+Each of the nine departments must be assigned entirely to exactly one principal mass. Splitting any department across masses is prohibited, including custodial/maintenance and individual support rooms. A department may span floors only within its assigned mass, on contiguous occupied floors with at least 70 m² (approximately 753 SF) of scheduled department NFA on each occupied floor.
+
+## Planning assumptions
+
+- Dimensions in feet unless otherwise stated; areas in square feet.
+- Historical workbook display: 66,405 SF. This is reference information, not the governing design target for this study.
+- Governing GFA target: 44,270 × 1.15 × 1.50 = 76,365.75 SF, with ±3% tolerance (74,074.7775–78,656.7225 SF). Double-height voids are not additional occupied floor area.
+- Default classroom configuration: double-loaded bar, 30-ft classroom depth and 8-ft corridor.
+- Typical floor-to-floor height used for mass extrusion: 14 ft.
+- Gym: clear dimensions at least 60 × 100 ft; double height.
+- Cafeteria: clear dimensions at least 40 × 60 ft; the brief separately specifies that gym and dining are together and double height.
+- Daylight planning: preferred maximum **width** 90 ft for departments with instructional/daylit rooms.
+- If a footprint uses a residual L-shaped floor arm, minimum arm depth is 20 ft.
+- If a department spans multiple floors, those floors must be contiguous, and each floor portion of that department must contain at least **70 m² (~753 SF)**.
+- No specific site boundary, adjacent buildings, orientation, terrain, or access road geometry is supplied.
+
+The brief specifies design requirements and preferences. If a project assumption and an explicit brief item conflict, prioritize the brief and explain material uncertainties. For this study the adjusted target governs; do not substitute the workbook display. The 60-m cap applies to the long principal dimension of each mass, not the combined building extent. The ratio applies to each mass's ground footprint, short side divided by long side, nominally 0.40–0.625. The shared validator uses an absolute ratio tolerance of 0.00675, disclosed equally for all systems. Academic/special-education width means the containing bar depth, not a separate room width.
+===== END ATTACHMENT: MODEL_INPUT.md =====
+
+===== BEGIN ATTACHMENT: ROOM_PROGRAM.csv =====
+department,room,nfa_sf,quantity
+CORE ACADEMIC,Kindergarten Classroom with Toilet,1120,3
+CORE ACADEMIC,General Classroom (Grades 1-6),910,12
+SPECIAL EDUCATION,Self-Contained Special Education Classroom,1150,3
+SPECIAL EDUCATION,Self-Contained Special Education Toilet Room,70,3
+SPECIAL EDUCATION,Resource Room,650,2
+SPECIAL EDUCATION,Small Group Room,650,1
+ART & MUSIC,Art Classroom (25 seats),1200,1
+ART & MUSIC,Art Workroom with Storage and Kiln,200,1
+ART & MUSIC,Music Classroom / Large Group (25-50 seats),1400,1
+ART & MUSIC,Music Practice / Ensemble,120,2
+HEALTH & PHYSICAL EDUCATION,Gymnasium,6500,1
+HEALTH & PHYSICAL EDUCATION,Gym Storeroom,250,1
+HEALTH & PHYSICAL EDUCATION,Health Instructor's Office with Shower and Toilet,200,1
+MEDIA CENTER,Media Center / Reading Room,2800,1
+DINING & FOOD SERVICE,Cafeteria / Dining,2800,1
+DINING & FOOD SERVICE,Stage,900,1
+DINING & FOOD SERVICE,Chair / Table / Equipment Storage,400,1
+DINING & FOOD SERVICE,Kitchen,1800,1
+DINING & FOOD SERVICE,Staff Lunch Room,250,1
+MEDICAL,Medical Suite Toilet,80,1
+MEDICAL,Nurses' Office / Waiting Room,350,1
+MEDICAL,Examination Room / Resting,150,2
+ADMINISTRATION & GUIDANCE,General Office / Waiting Room with Toilet,400,1
+ADMINISTRATION & GUIDANCE,Teachers' Mail and Time Room,140,1
+ADMINISTRATION & GUIDANCE,Copy Room,180,1
+ADMINISTRATION & GUIDANCE,Records Room,140,1
+ADMINISTRATION & GUIDANCE,Principal's Office with Conference Area,420,1
+ADMINISTRATION & GUIDANCE,Principal's Secretary / Waiting,150,1
+ADMINISTRATION & GUIDANCE,Assistant Principal's Office,120,0
+ADMINISTRATION & GUIDANCE,Supervisory / Spare Office,150,1
+ADMINISTRATION & GUIDANCE,Conference Room,300,1
+ADMINISTRATION & GUIDANCE,Guidance Office,180,1
+ADMINISTRATION & GUIDANCE,Guidance Storeroom,50,1
+ADMINISTRATION & GUIDANCE,Teachers' Work Room,400,1
+CUSTODIAL & MAINTENANCE,Custodian's Office,180,1
+CUSTODIAL & MAINTENANCE,Custodian's Workshop,420,1
+CUSTODIAL & MAINTENANCE,Custodian's Storage,420,1
+CUSTODIAL & MAINTENANCE,Recycling Room / Trash,450,1
+CUSTODIAL & MAINTENANCE,Receiving and General Supply,240,1
+CUSTODIAL & MAINTENANCE,Storeroom,240,1
+CUSTODIAL & MAINTENANCE,Network / Telecom Room,250,1
+===== END ATTACHMENT: ROOM_PROGRAM.csv =====
+
+===== BEGIN ATTACHMENT: CASE_FORMAT_v3.md =====
+# Case format v3.0
+
+Each case is one coherent architectural strategy for the supplied brief, at strategy level: no dimensions, areas by mass, geometry or scores. MODEL_INPUT.md and ROOM_PROGRAM.csv are the authority for the brief and program.
+
+**Write each case in the field order below: decide the idea in words first, then commit to the structure.** Every field must describe the same scheme.
+
+Department codes:
+- D01 core academic
+- D02 special education
+- D03 art and music
+- D04 health and physical education (gym)
+- D05 media center
+- D06 dining and food service
+- D07 medical
+- D08 administration and guidance
+- D09 custodial and maintenance
+
+## Fields per case
+
+1. **case_id**: C01 to C05.
+2. **name**: 3–7 words.
+3. **concept**: 35–70 words. The organizing spatial idea a designer would sketch first: the roles the parts play and how they relate (for example centralized, linear, clustered, stacked, layered, detached).
+   - Name program groups only where they carry the idea.
+   - Do **not** list departments by mass or floor.
+   - Do **not** restate requirements every scheme shares.
+   - Do not argue benefits.
+4. **intent**: 20–40 words. What the scheme aims to achieve for students, staff, community use or operations, written as aims ("seeks to"), not results.
+5. **section_intent**: 20–40 words, in words. The vertical idea: which masses rise and which stay low, what sits at grade and what sits at the top, and why.
+6. **program_stance**: 20–40 words, in words. Where core academic, special education, administration and the commons (gym and dining) sit **relative to each other**, and why. State relations; do not list mass by mass.
+7. **key_moves**: 2–4 moves. Each move has:
+   - `move_id` (K1, …);
+   - `move`: a short phrase;
+   - `serves`: one sentence on what part of the concept or intent it carries;
+   - `decisions`: 1–6 exact references to `structure`. Each is either `{"type": "placement", "department_id", "mass_id", "floors"}`, with `floors` equal to that department's full `occupied_floors`, or `{"type": "link", "mass_a", "mass_b", "direct_link"}`.
+8. **structure**:
+   - `masses`: `{mass_id, role}` for as many masses as the brief requires (this brief: three). IDs (M1, M2, M3) are arbitrary. `role` is 2–6 words naming what the mass is in the concept.
+   - `departments`: all nine `{department_id, mass_ids: [one mass], occupied_floors}`. Ground = 1; floors contiguous.
+   - `connections`: every pair of masses `{mass_a, mass_b, direct_link}`. `true` means a built connection (bridge, connecting passage, shared enclosed edge); shared grounds do not count.
+9. **brief_response**:
+   - `main_tradeoff`: 15–35 words.
+   - `preferences_given_up`: from exactly these ids:
+     - `arts_ground_floor`: art and music do not occupy floor 1;
+     - `media_top_above_admin`: media is not on the top occupied floor of administration's mass, above it;
+     - `three_floors`: at least one mass does not reach floor 3 (a double-height gym/dining volume on floor 1 counts as floors 1–2).
+10. **unresolved**: up to four short strings. Name real unknowns or possible conflicts specific to this case, not generic checks.
+11. **direction_response**: one sentence on how this case answers the direction it was given.
+
+## Hard rules
+
+These come from the brief, plus two rules the architect added.
+
+- Each department is entirely in exactly one mass.
+- Administration is on the ground floor.
+- Gym and dining are in the same mass, double height from the ground floor.
+- At most three floors.
+- A department spans floors only on contiguous floors, with at least 753 SF of its program on each.
+- Every mass stands from the ground.
+- **Core academic and gym/dining are in different masses.**
+- **Custodial is never a mass of its own.**
+
+Intentions are hypotheses. Do not claim anything is verified or feasible. If a requirement cannot be met by the idea, keep the conflict visible in `unresolved`.
+
+## Output
+
+Return **only** one JSON object, `{"format": "v3", "cases": [five cases]}`, conforming to case.schema.v3.json. Write no text outside the JSON.
+===== END ATTACHMENT: CASE_FORMAT_v3.md =====
+
+===== BEGIN ATTACHMENT: case.schema.v3.json =====
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ME2 strategy case collection v3.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "format",
+    "cases"
+  ],
+  "properties": {
+    "format": {
+      "const": "v3"
+    },
+    "cases": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "$ref": "#/$defs/case"
+      }
+    }
+  },
+  "$defs": {
+    "placement_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "department_id",
+        "mass_id",
+        "floors"
+      ],
+      "properties": {
+        "type": {
+          "const": "placement"
+        },
+        "department_id": {
+          "$ref": "#/$defs/dept_id"
+        },
+        "mass_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "floors": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "link_ref": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "mass_a",
+        "mass_b",
+        "direct_link"
+      ],
+      "properties": {
+        "type": {
+          "const": "link"
+        },
+        "mass_a": {
+          "type": "string",
+          "minLength": 1
+        },
+        "mass_b": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direct_link": {
+          "type": "boolean"
+        }
+      }
+    },
+    "dept_id": {
+      "enum": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06",
+        "D07",
+        "D08",
+        "D09"
+      ]
+    },
+    "key_move": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "move_id",
+        "move",
+        "serves",
+        "decisions"
+      ],
+      "properties": {
+        "move_id": {
+          "type": "string",
+          "pattern": "^K[0-9]+$"
+        },
+        "move": {
+          "type": "string",
+          "minLength": 1
+        },
+        "serves": {
+          "type": "string",
+          "minLength": 1
+        },
+        "decisions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 6,
+          "items": {
+            "oneOf": [
+              {
+                "$ref": "#/$defs/placement_ref"
+              },
+              {
+                "$ref": "#/$defs/link_ref"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "masses",
+        "departments",
+        "connections"
+      ],
+      "properties": {
+        "masses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "mass_id",
+              "role"
+            ],
+            "properties": {
+              "mass_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "role": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        },
+        "departments": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "department_id",
+              "mass_ids",
+              "occupied_floors"
+            ],
+            "properties": {
+              "department_id": {
+                "$ref": "#/$defs/dept_id"
+              },
+              "mass_ids": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "uniqueItems": true
+                  }
+                ]
+              },
+              "occupied_floors": {
+                "anyOf": [
+                  {
+                    "type": "null"
+                  },
+                  {
+                    "type": "array",
+                    "items": {
+                      "type": "integer"
+                    },
+                    "uniqueItems": true
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "connections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "mass_a",
+              "mass_b",
+              "direct_link"
+            ],
+            "properties": {
+              "mass_a": {
+                "type": "string",
+                "minLength": 1
+              },
+              "mass_b": {
+                "type": "string",
+                "minLength": 1
+              },
+              "direct_link": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "case": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "case_id",
+        "name",
+        "concept",
+        "intent",
+        "section_intent",
+        "program_stance",
+        "key_moves",
+        "structure",
+        "brief_response",
+        "unresolved",
+        "direction_response"
+      ],
+      "properties": {
+        "case_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string"
+        },
+        "concept": {
+          "type": "string"
+        },
+        "intent": {
+          "type": "string"
+        },
+        "section_intent": {
+          "type": "string"
+        },
+        "program_stance": {
+          "type": "string"
+        },
+        "key_moves": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/key_move"
+          }
+        },
+        "structure": {
+          "$ref": "#/$defs/structure"
+        },
+        "brief_response": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "main_tradeoff",
+            "preferences_given_up"
+          ],
+          "properties": {
+            "main_tradeoff": {
+              "type": "string"
+            },
+            "preferences_given_up": {
+              "type": "array",
+              "uniqueItems": true,
+              "items": {
+                "enum": [
+                  "arts_ground_floor",
+                  "media_top_above_admin",
+                  "three_floors"
+                ]
+              }
+            }
+          }
+        },
+        "unresolved": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 4
+        },
+        "direction_response": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
+===== END ATTACHMENT: case.schema.v3.json =====

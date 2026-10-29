@@ -24,6 +24,10 @@ def parse(text):
     return json.loads(t)
 
 
+def s_depts(c):
+    return (c.get("structure") or {}).get("departments", [])
+
+
 def check_v3(c):
     E, W, derived = check_case(c, use_commitments=False)
     for f, (lo, hi) in V3_WORDS.items():
@@ -34,6 +38,9 @@ def check_v3(c):
             W.append(f"{f} has {n} words (expected {lo}-{hi})")
     if not (c.get("direction_response") or "").strip():
         E.append("direction_response missing")
+    for d in s_depts(c):
+        if d.get("department_id") in ("D04", "D06") and sorted(d.get("occupied_floors") or []) == [1, 2]:
+            W.append(f"{d['department_id']} written as floors [1, 2]; v3.1 convention is [1] (normalized in scoring)")
     if "commitments" in c:
         W.append("commitments module present (removed in v3)")
     s = c.get("structure") or {}

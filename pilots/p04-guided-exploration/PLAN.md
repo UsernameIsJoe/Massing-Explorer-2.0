@@ -72,7 +72,9 @@ Two embedding models measure meaning: mxbai and nomic. The embedding that steers
 
 A mass with program on floors 1 and 3 and nothing on floor 2 is **not acceptable** ("weird"). It stays a hard-rule failure. The locked prompts did not state this rule, which is a prompt gap: 9 of the first 15 cases did it, mostly a library crown over ground-floor administration.
 
-**Decision: continue with the locked prompts, without a restart.** The gap applies equally to all four arms, so the comparison stays fair. Scoring is declared now, before replies R4–R8:
+**First decision (superseded): continue with the locked prompts.** The architect then pointed out how many cases this affects (9 of 15). **Final decision: restart with format v3.1.** The v3 run (R1–R3) is archived in `archive_v3/` as evidence of the format gap, not as pilot data. Format v3.1 adds the rule, a gym/dining floor convention, and no nulls; arms, directions and run order are unchanged. Re-locked 2026-10-29.
+
+*Former text:* The gap applies equally to all four arms, so the comparison stays fair. Scoring is declared now, before replies R4–R8:
 
 - **Primary:** strict validity, with this failure counted.
 - **Sensitivity:** the same primary measure with this one failure type set aside. It is reported alongside the primary, and never replaces it.

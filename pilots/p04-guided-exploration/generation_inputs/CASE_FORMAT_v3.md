@@ -1,4 +1,4 @@
-# Case format v3.0
+# Case format v3.1
 
 Each case is one coherent architectural strategy for the supplied brief, at strategy level: no dimensions, areas by mass, geometry or scores. MODEL_INPUT.md and ROOM_PROGRAM.csv are the authority for the brief and program.
 
@@ -34,7 +34,7 @@ Department codes:
    - `decisions`: 1–6 exact references to `structure`. Each is either `{"type": "placement", "department_id", "mass_id", "floors"}`, with `floors` equal to that department's full `occupied_floors`, or `{"type": "link", "mass_a", "mass_b", "direct_link"}`.
 8. **structure**:
    - `masses`: `{mass_id, role}` for as many masses as the brief requires (this brief: three). IDs (M1, M2, M3) are arbitrary. `role` is 2–6 words naming what the mass is in the concept.
-   - `departments`: all nine `{department_id, mass_ids: [one mass], occupied_floors}`. Ground = 1; floors contiguous.
+   - `departments`: all nine `{department_id, mass_ids: [one mass], occupied_floors}`. Ground = 1; floors contiguous. Write gym (D04) and dining (D06) as `occupied_floors: [1]`: their double-height volume spans floors 1–2, so do not list floor 2.
    - `connections`: every pair of masses `{mass_a, mass_b, direct_link}`. `true` means a built connection (bridge, connecting passage, shared enclosed edge); shared grounds do not count.
 9. **brief_response**:
    - `main_tradeoff`: 15–35 words.
@@ -54,9 +54,11 @@ These come from the brief, plus two rules the architect added.
 - Gym and dining are in the same mass, double height from the ground floor.
 - At most three floors.
 - A department spans floors only on contiguous floors, with at least 753 SF of its program on each.
-- Every mass stands from the ground.
+- Every mass is occupied continuously from the ground floor up, with **no empty floor between occupied floors**. For example, a library on floor 3 needs program on floor 2 of the same mass. In the gym and dining mass, the double-height volume counts as floors 1–2.
 - **Core academic and gym/dining are in different masses.**
 - **Custodial is never a mass of its own.**
+
+Decide every value: do not use null anywhere in `structure`.
 
 Intentions are hypotheses. Do not claim anything is verified or feasible. If a requirement cannot be met by the idea, keep the conflict visible in `unresolved`.
 

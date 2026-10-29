@@ -15,7 +15,7 @@ SEED = 20261029
 RUNS = [("R1", "seeds.json"), ("R2", "run02_seeds.json"), ("R3", "run03_seeds.json")]
 ATTACH = ["MODEL_INPUT.md", "ROOM_PROGRAM.csv", "CASE_FORMAT_v3.md", "case.schema.v3.json"]
 
-COMMON_HEAD = """[Strategy generation v3.0. Each attachment listed below is embedded verbatim after this instruction, between BEGIN/END ATTACHMENT markers; treat each embedded block as that attachment.]
+COMMON_HEAD = """[Strategy generation v3.1. Each attachment listed below is embedded verbatim after this instruction, between BEGIN/END ATTACHMENT markers; treat each embedded block as that attachment.]
 
 Attachments: MODEL_INPUT.md, ROOM_PROGRAM.csv, CASE_FORMAT_v3.md, case.schema.v3.json.
 
@@ -44,6 +44,8 @@ These strategies already exist. Their names and concepts are listed so that you 
   5. The intent follows from the concept and is not a generic benefit any scheme could claim.
   6. `preferences_given_up` matches what the structure does.
   7. The concept does not list departments by mass or floor.
+  8. Every mass is occupied from the ground up, with no empty floor between occupied floors; gym and dining are written as floor [1].
+  9. No null values anywhere in `structure`.
 - Stay at strategy level: no dimensions, areas by mass, geometry or scores. Preserve the given program. Do not invent site geometry or access.
 
 Return only one JSON object conforming to CASE_FORMAT_v3.md and case.schema.v3.json, with case IDs C01 to C05."""
