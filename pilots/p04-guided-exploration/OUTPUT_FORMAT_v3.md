@@ -66,3 +66,7 @@ See [EMBEDDING_VIEWS.md](EMBEDDING_VIEWS.md).
 ## Mass count
 
 Taken from the brief. Format v3 does not fix it at 3, but axes-v1 and the gap cells still assume 3 (see EMBEDDING_VIEWS.md, last section).
+
+## v3.1 (for runs after Pilot 4)
+
+Add to the hard rules: every mass is occupied continuously from the ground floor up, with no empty intermediate floor. For example, a library on floor 3 needs program on floor 2 of the same mass. Architect, 2026-10-29.

@@ -68,6 +68,17 @@ Two embedding models measure meaning: mxbai and nomic. The embedding that steers
 | Axis coverage | New coarse cells reached | Diagnostic; favours A and J by design, so never primary |
 | Forced or real | Architect, blind, 12 cases (3 per arm) plus 2 repeated cases, rated 1–5 for "a real architectural idea" vs "forced". Agreed 2026-10-29 | **Veto only, weighted lightly** (see below) |
 
+## Empty intermediate floors (architect, 2026-10-29, after replies R1–R3)
+
+A mass with program on floors 1 and 3 and nothing on floor 2 is **not acceptable** ("weird"). It stays a hard-rule failure. The locked prompts did not state this rule, which is a prompt gap: 9 of the first 15 cases did it, mostly a library crown over ground-floor administration.
+
+**Decision: continue with the locked prompts, without a restart.** The gap applies equally to all four arms, so the comparison stays fair. Scoring is declared now, before replies R4–R8:
+
+- **Primary:** strict validity, with this failure counted.
+- **Sensitivity:** the same primary measure with this one failure type set aside. It is reported alongside the primary, and never replaces it.
+
+Format v3.1 states the rule for all future runs.
+
 ## How the blind check is used
 
 The architect asked that the method not over-rely on this rating: a single reviewer can be tired, rushed or subjective. So the rating is used as follows:
