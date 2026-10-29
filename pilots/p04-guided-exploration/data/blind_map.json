@@ -1,0 +1,162 @@
+{
+ "Q20": {
+  "reply": "R1",
+  "case_id": "C01"
+ },
+ "Q33": {
+  "reply": "R1",
+  "case_id": "C02"
+ },
+ "Q16": {
+  "reply": "R1",
+  "case_id": "C03"
+ },
+ "Q32": {
+  "reply": "R1",
+  "case_id": "C04"
+ },
+ "Q21": {
+  "reply": "R1",
+  "case_id": "C05"
+ },
+ "Q19": {
+  "reply": "R2",
+  "case_id": "C01"
+ },
+ "Q09": {
+  "reply": "R2",
+  "case_id": "C02"
+ },
+ "Q31": {
+  "reply": "R2",
+  "case_id": "C03"
+ },
+ "Q23": {
+  "reply": "R2",
+  "case_id": "C04"
+ },
+ "Q13": {
+  "reply": "R2",
+  "case_id": "C05"
+ },
+ "Q07": {
+  "reply": "R3",
+  "case_id": "C01"
+ },
+ "Q24": {
+  "reply": "R3",
+  "case_id": "C02"
+ },
+ "Q08": {
+  "reply": "R3",
+  "case_id": "C03"
+ },
+ "Q26": {
+  "reply": "R3",
+  "case_id": "C04"
+ },
+ "Q02": {
+  "reply": "R3",
+  "case_id": "C05"
+ },
+ "Q30": {
+  "reply": "R4",
+  "case_id": "C01"
+ },
+ "Q28": {
+  "reply": "R4",
+  "case_id": "C02"
+ },
+ "Q39": {
+  "reply": "R4",
+  "case_id": "C03"
+ },
+ "Q12": {
+  "reply": "R4",
+  "case_id": "C04"
+ },
+ "Q25": {
+  "reply": "R4",
+  "case_id": "C05"
+ },
+ "Q29": {
+  "reply": "R5",
+  "case_id": "C01"
+ },
+ "Q01": {
+  "reply": "R5",
+  "case_id": "C02"
+ },
+ "Q40": {
+  "reply": "R5",
+  "case_id": "C03"
+ },
+ "Q06": {
+  "reply": "R5",
+  "case_id": "C04"
+ },
+ "Q38": {
+  "reply": "R5",
+  "case_id": "C05"
+ },
+ "Q37": {
+  "reply": "R6",
+  "case_id": "C01"
+ },
+ "Q05": {
+  "reply": "R6",
+  "case_id": "C02"
+ },
+ "Q14": {
+  "reply": "R6",
+  "case_id": "C03"
+ },
+ "Q10": {
+  "reply": "R6",
+  "case_id": "C04"
+ },
+ "Q11": {
+  "reply": "R6",
+  "case_id": "C05"
+ },
+ "Q04": {
+  "reply": "R7",
+  "case_id": "C01"
+ },
+ "Q18": {
+  "reply": "R7",
+  "case_id": "C02"
+ },
+ "Q17": {
+  "reply": "R7",
+  "case_id": "C03"
+ },
+ "Q34": {
+  "reply": "R7",
+  "case_id": "C04"
+ },
+ "Q03": {
+  "reply": "R7",
+  "case_id": "C05"
+ },
+ "Q27": {
+  "reply": "R8",
+  "case_id": "C01"
+ },
+ "Q22": {
+  "reply": "R8",
+  "case_id": "C02"
+ },
+ "Q36": {
+  "reply": "R8",
+  "case_id": "C03"
+ },
+ "Q15": {
+  "reply": "R8",
+  "case_id": "C04"
+ },
+ "Q35": {
+  "reply": "R8",
+  "case_id": "C05"
+ }
+}
