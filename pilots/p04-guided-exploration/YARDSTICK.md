@@ -26,3 +26,21 @@ The concept view is used throughout, because the calibration texts are concepts.
 **Choice:** the first correction in the order above at which at least one judge passes. Every judge that passes at that correction is used, and a case counts as new in meaning only if every passing judge says so. If nothing passes, the yardstick stays unfixed and the 40 cases are not re-scored on meaning.
 
 **Re-score.** New in meaning means farther than the threshold from every archive seed and every earlier same-arm case, under the chosen correction. New in structure, validity and the primary definition are unchanged from SCORING.md.
+
+## Result (computed after the declaration above; `scripts/yardstick.py`, `results/yardstick.json`)
+
+**No correction passes, under any judge.** The yardstick stays unfixed and the 40 cases are **not** re-scored on meaning.
+
+| Correction | Judge | Rewrite nearest own original (bar 12) | Seeds distinct from each other (bar 12) | Paraphrase median | Seed spacing median |
+|---|---|---:|---:|---:|---:|
+| raw | mxbai | 8 | 1 | 0.183 | 0.169 |
+| raw | nomic | 7 | 0 | 0.131 | 0.094 |
+| raw | qwen3 4b | 11 | 0 | 0.277 | 0.246 |
+| centred | mxbai | **12** | 4 | 0.691 | 0.761 |
+| centred | nomic | 9 | 2 | 0.785 | 0.723 |
+| centred | qwen3 4b | 11 | 2 | 0.709 | 0.695 |
+| centred + PC1 | mxbai | 10 | 2 | 0.731 | 0.836 |
+| centred + PC1 | nomic | 9 | 0 | 0.803 | 0.823 |
+| centred + PC1 | qwen3 4b | 8 | 2 | 0.800 | 0.784 |
+
+**Reading.** Removing the writer/format offset makes the *ranking* usable: centred mxbai passes the paraphrase test. But the *gap* never opens. Even after correction, a rewording moves a concept about as far as switching to a different accepted strategy does. On this corpus, whole-concept embeddings resolve meaning neighbourhoods, not individual strategies. This is a limit of the semantic representation's resolution, not of the threshold rule.

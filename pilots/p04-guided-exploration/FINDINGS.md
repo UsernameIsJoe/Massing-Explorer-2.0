@@ -74,7 +74,11 @@ Text–record agreement uses the llama3.1:8b extractor, the modal answer of 3 sa
 2. **The steering half is still untested.** The embedding was never shown to fail. The pilot showed that the judge was miscalibrated.
 3. **The blind check is not needed now.** It could only veto a win, and there is no primary win to veto.
 
-## Next steps (proposed, not started)
+## Follow-up: the yardstick fix failed (same day)
+
+The fix declared in [YARDSTICK.md](YARDSTICK.md) used batch centring and principal-component removal, on data already in hand. Nothing passed under any judge: after correction, a rewording still moves a concept about as far as a different accepted strategy does. Whole-concept embeddings on this corpus resolve **neighbourhoods of meaning, not individual strategies**. The 40 cases are not re-scored on meaning.
+
+## Next steps (original proposal, superseded by the follow-up above)
 
 1. **Fix the meaning yardstick before any further steering pilot.** Candidate judges, to be checked on data already in hand, so the architect's time is not needed:
    - *rank-based:* is a case's nearest neighbour an archive case or a same-batch case, relative to paraphrases;
