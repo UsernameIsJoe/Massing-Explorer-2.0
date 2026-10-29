@@ -1,5 +1,7 @@
 # Pilot 01b findings — concept embeddings
 
+> **Status (2026-10-29):** historical evidence. It tested embeddings as a judge of similarity, which is not their role in the current direction ([pilots/README.md](../../README.md)).
+
 Date: 2026-10-28. Protocol: p01b-v1.1. Scores: `results/scores_user_labels_full.json` (Pass B, decides the gate) and `results/scores_user_labels_concept.json` (Pass A, diagnostic only).
 
 ## Result in one line

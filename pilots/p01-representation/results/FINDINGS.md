@@ -1,5 +1,7 @@
 # Pilot 01 findings — representation
 
+> **Status (2026-10-29):** historical evidence. It tested embeddings as a judge of similarity, which is not their role in the current direction ([pilots/README.md](../../README.md)).
+
 Date: 2026-10-28. Protocol: p01-v1.3. Scores: `results/scores.json` (from `scripts/score_triplets.py`).
 
 ## Result in one line

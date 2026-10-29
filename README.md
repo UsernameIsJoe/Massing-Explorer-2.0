@@ -2,6 +2,18 @@
 
 A strategy-first architectural research project: use an existing advanced LLM to generate brief-responsive seeds, then construct a focused, flexible semantic possibility space containing additional strategies before dimensional realization.
 
+## Project map (2026-10-29)
+
+- **Direction:** [core contribution](docs/CORE_CONTRIBUTION.md), [project review](docs/PROJECT_REVIEW_2026-10-29.md), [task status](docs/STEP02_03_STATUS.md).
+- **Active:**
+  - `benchmarks/test-elementary-v0.1/seeds_v2/` (seed format, seeds, axis records);
+  - `grounding/` (grounding map experiments);
+  - `pilots/p03-expansion/scripts/expand.py` (structural generator);
+  - `pilots/p02-region/data/decision_weights.json`;
+  - `reports/` and `research_notes/`.
+- **Evidence, historical role:** `pilots/` (status in [pilots/README.md](pilots/README.md)).
+- **Retired:** `archive/2026-10-29/` and `docs/archive/2026-10-28/`.
+
 ## Start here
 
 - [Current backbone](docs/CURRENT_BACKBONE.md): purpose, settled decisions and broad workflow.

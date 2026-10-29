@@ -2,6 +2,8 @@
 
 Date: 2026-10-28. Protocol: p03-v1.1. Decisions: `labels/user_expansion.json`. Region: `region/region_candidate_structural.json` (built by `scripts/build_region.py`).
 
+> **Status (2026-10-29):** partly active. The generator (`scripts/expand.py`) and the pool (`data/pool.json`) are in use; see [pilots/README.md](../../README.md).
+>
 > **Status (2026-10-28, later):** the architect's decisions, the custodial rule, the generator and the pool stand as evidence. The inside/outside split, the region file and the inferred statuses are a **structure-only candidate**, not the region: backbone tasks 1-4 (nine-axis records, embedding role, intention-decision-axis links, joint membership) are unresolved. "Region v1" below means this candidate.
 
 ## Result in one line

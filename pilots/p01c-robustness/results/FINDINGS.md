@@ -1,5 +1,7 @@
 # Pilot 01c findings — robustness checks
 
+> **Status (2026-10-29):** evidence. Paraphrase robustness (bge-m3) still informs encoder choice ([pilots/README.md](../../README.md)).
+
 Date: 2026-10-28. Protocol: `PILOT_01C_PROTOCOL.md`. Scores: `results/scores.json`. Outside model: ChatGPT, temporary chats, medium effort (model name to be recorded).
 
 ## Result in one line

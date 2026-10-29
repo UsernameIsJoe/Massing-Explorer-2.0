@@ -1,5 +1,7 @@
 # Pilot 2 findings — membership rule
 
+> **Status (2026-10-29):** partly active. The architect's weights (`data/decision_weights.json`) stay as user configuration of distance. The membership rules here are superseded ([pilots/README.md](../../README.md)).
+
 Date: 2026-10-28. Protocol: p02-v1.1 (graded 1–5 rating). Scores: `results/scores.json`.
 
 ## Result in one line
