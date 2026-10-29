@@ -31,3 +31,7 @@ Links between masses are part of topology. Department floors are part of vertica
 ## Coverage
 
 From the current seed records, 6 axes are derived and 1 is constant (mass_count). Loading and geometric_character stay unknown until realization.
+
+## Known limitation (2026-10-29)
+
+The C/G/T role names and topology patterns assume exactly 3 masses (this brief). Future briefs may allow a range of mass counts (architect). Before another brief is used, generalize: masses are identified by what they hold, topology becomes a link graph over any number of masses, and mass_count becomes a live axis.

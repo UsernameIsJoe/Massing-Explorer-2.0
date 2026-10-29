@@ -23,7 +23,7 @@ Text comes before structure: decide the idea in words, then commit to the record
 | 5 | `section_intent` | 20–40 words; **in words**, the vertical idea: which masses rise and which stay low, what is at grade and what is at the top, and why | **New** |
 | 6 | `program_stance` | 20–40 words; **in words**, where the defining programs sit *relative to each other* and why: core academic, special education, administration, and the commons (gym and dining). Relations, not a mass-by-mass list | **New** |
 | 7 | `key_moves` | 2–4 moves; each with `move_id`, `move`, `serves`, and 1–6 `decisions` that exactly reference `structure` | – |
-| 8 | `structure` | 3 masses `{mass_id, role}`; all 9 departments `{department_id, mass_ids: [one], occupied_floors}`; all 3 connections `{mass_a, mass_b, direct_link}` | – |
+| 8 | `structure` | masses `{mass_id, role}`, as many as the brief allows (3 in this brief); all 9 departments `{department_id, mass_ids: [one], occupied_floors}`; all 3 connections `{mass_a, mass_b, direct_link}` | – |
 | 9 | `brief_response` | `main_tradeoff` (15–35 words), `preferences_given_up` from the 3 fixed ids | – |
 | 10 | `unresolved` | Up to 4 short strings | – |
 | 11 | `direction_response` | One sentence: how this case answers the direction it was given, or for unguided runs, how it differs from the existing cases | **New**; never embedded, hidden in any blind review |
@@ -55,3 +55,14 @@ Text comes before structure: decide the idea in words, then commit to the record
 6. **Text–record agreement** (extractor from Experiment 1, llama3.1:8b): `section_intent` against computed storeys and levels; `program_stance` against computed placement of the defining programs; `concept` against computed topology. Each is reported as agreement per trait.
 
 Invalid cases are kept and counted, never silently fixed: validity is a pilot outcome.
+
+## What is embedded
+
+See [EMBEDDING_VIEWS.md](EMBEDDING_VIEWS.md).
+- **Embedded:** idea (`concept` + `intent`); moves (each `move` + `serves`); tensions (`main_tradeoff` + each `unresolved` item).
+- **Read by extraction, not embedded:** `section_intent` and `program_stance`.
+- **Never embedded:** `direction_response` and `name`.
+
+## Mass count
+
+Taken from the brief. Format v3 does not fix it at 3, but axes-v1 and the gap cells still assume 3 (see EMBEDDING_VIEWS.md, last section).
