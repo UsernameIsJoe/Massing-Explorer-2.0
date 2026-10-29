@@ -1,0 +1,50 @@
+{
+ "nomic-embed-text|idea": {
+  "rho": 0.103,
+  "p": 0.2339
+ },
+ "nomic-embed-text|move": {
+  "rho": 0.369,
+  "p": 0.0003
+ },
+ "nomic-embed-text|move_cross_seed": {
+  "rho": 0.39,
+  "p": 0.0003
+ },
+ "mxbai-embed-large|idea": {
+  "rho": 0.096,
+  "p": 0.2676
+ },
+ "mxbai-embed-large|move": {
+  "rho": 0.372,
+  "p": 0.0003
+ },
+ "mxbai-embed-large|move_cross_seed": {
+  "rho": 0.386,
+  "p": 0.0003
+ },
+ "bge-m3|idea": {
+  "rho": 0.367,
+  "p": 0.0002
+ },
+ "bge-m3|move": {
+  "rho": 0.37,
+  "p": 0.0003
+ },
+ "bge-m3|move_cross_seed": {
+  "rho": 0.39,
+  "p": 0.0003
+ },
+ "qwen3-embedding:0.6b|idea": {
+  "rho": 0.072,
+  "p": 0.267
+ },
+ "qwen3-embedding:0.6b|move": {
+  "rho": 0.452,
+  "p": 0.0003
+ },
+ "qwen3-embedding:0.6b|move_cross_seed": {
+  "rho": 0.469,
+  "p": 0.0003
+ }
+}
