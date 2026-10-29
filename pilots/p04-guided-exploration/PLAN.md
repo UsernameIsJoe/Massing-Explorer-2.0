@@ -1,6 +1,6 @@
 # Pilot 4: does embedding guidance improve LLM exploration?
 
-Status: **draft for architect review**, 2026-10-29. Nothing has run. The prompts are built but **not locked**; they are locked (hashes recorded) only after the architect approves format v3 and gives the go. Agreement in force: no mass case generation while piloting.
+Status: **draft for architect review**, 2026-10-29. Nothing has run. Format v3 approved by the architect; prompts **locked** 2026-10-29 (`data/PROMPT_LOCK.json`). The 8 chats wait for the architect's go. Agreement in force: no mass case generation while piloting.
 
 ## Question
 

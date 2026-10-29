@@ -1,0 +1,10 @@
+Pilot 4: 8 chats. Run them in order P1 to P8.
+
+For each file:
+1. Open a NEW ChatGPT temporary chat (thinking effort: medium).
+2. Open P<n>.txt, select all, copy, paste into the chat, send.
+3. When the reply is complete, copy the whole reply.
+4. Save it as R<n>.txt in the replies folder (P1 -> R1.txt, P2 -> R2.txt, ...).
+
+Use a new chat for every file. Do not edit the prompts or the replies.
+If a reply is cut off or is not JSON, save it anyway and tell Claude.
