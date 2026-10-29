@@ -41,6 +41,10 @@ Written 2026-10-29, after all 8 replies were in and validated, and before the lo
   - Idea, concept, intent, each move (move + serves) and each unresolved item are embedded for every case.
   - The within-arm nearest-neighbour distance per view is analysis only; it plays no part in the decision rule.
 
+## Secondary judge (added 2026-10-29, before the local run)
+
+qwen3-embedding:4b is embedded alongside the others. It is reported as a secondary judge only and never changes the primary measure. Its own paraphrase test (own original nearest, out of 15, against Pilot 01c's bar of 12) comes from the same run. Two sensitivities use it: the new-strategy count with it as the only meaning judge, and with all three judges required.
+
 ## Not changed
 
 The arms, decision rule, the bge-m3 exclusion from outcome measures, and the blind-check rules in PLAN.md.

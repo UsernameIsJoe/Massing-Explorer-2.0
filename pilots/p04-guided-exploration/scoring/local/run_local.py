@@ -1,6 +1,7 @@
 """Pilot 4 local scoring run (architect's PC, local Ollama; standard library only).
 
-1. Embeds texts.json with three encoders (settings frozen as in Pilots 01/01b, config p01-enc-v1).
+1. Embeds texts.json with four encoders (settings frozen as in Pilots 01/01b, config p01-enc-v1;
+   qwen3-embedding:4b added 2026-10-29 as a secondary judge, no prefix as for its 0.6b sibling).
 2. Extracts the trait questionnaire from items.json with llama3.1:8b (as in Experiment 1):
    prompt 1 of Experiment 1, 3 samples, temperature 0.7.
 Outputs embeddings.jsonl and extraction.jsonl. Resumable: finished work is skipped.
@@ -14,7 +15,7 @@ from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 OLLAMA = "http://localhost:11434"
-ENCODERS = {"mxbai-embed-large": "", "nomic-embed-text": "clustering: ", "bge-m3": ""}
+ENCODERS = {"mxbai-embed-large": "", "nomic-embed-text": "clustering: ", "bge-m3": "", "qwen3-embedding:4b": ""}
 MODEL = "llama3.1:8b"
 SAMPLES = 3
 TEMPERATURE = 0.7

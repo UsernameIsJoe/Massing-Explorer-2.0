@@ -27,6 +27,7 @@ from directions import cell  # noqa: E402
 LOCAL = HERE / "scoring/local"
 MEASURE = ["mxbai-embed-large", "nomic-embed-text"]
 STEER = "bge-m3"
+SECONDARY = "qwen3-embedding:4b"  # added before scoring, secondary judge only
 PCTL = 95
 TH = expand.TH  # 1.0, the architect's "different strategy" bar
 ARMS = ["U", "A", "S", "J"]
@@ -59,7 +60,9 @@ def thresholds(E):
     out = {}
     for enc in E:
         d = [dist(E[enc][f"p01c:{p}::rewrite"], E[enc][f"p01c:{c}::original"]) for p, c in key.items()]
-        out[enc] = {"threshold": round(float(np.percentile(d, PCTL)), 4), "median": round(float(np.median(d)), 4), "n": len(d)}
+        own = sum(min(key.values(), key=lambda c: dist(E[enc][f"p01c:{p}::rewrite"], E[enc][f"p01c:{c}::original"])) == c for p, c in key.items())
+        out[enc] = {"threshold": round(float(np.percentile(d, PCTL)), 4), "median": round(float(np.median(d)), 4), "n": len(d),
+                    "paraphrase_own_nearest": f"{own}/{len(key)}"}
     return out
 
 
@@ -138,7 +141,7 @@ def per_case(cases, E, TH_E, arch, arch_states, AG):
         r = {"q": q, "reply": c["reply"], "case_id": c["case_id"], "name": c["case"]["name"], "validity": cat, "declaration_audit": audit,
              "cell": [list(x) if isinstance(x, tuple) else x for x in cell(st)], "struct_change_to_archive": ch[near_struct],
              "struct_nearest_archive": near_struct, "meaning": {}}
-        for enc in MEASURE + [STEER]:
+        for enc in [e for e in MEASURE + [STEER, SECONDARY] if e in E]:
             for view in ("idea", "concept"):
                 dv = {k: dist(E[enc][f"case:{q}::{view}"], E[enc][f"archive:{k}::{view}"]) for k in arch}
                 nk = min(dv, key=dv.get)
@@ -216,6 +219,12 @@ def unblind(P, cases, E, TH_E, arch_states):
                     ok_arch &= da > TH_E[enc]["threshold"]
                 r[f"new_meaning_{view}"] = bool(ok)
                 r[f"new_meaning_{view}_vs_archive_only"] = bool(ok_arch)
+            if SECONDARY in E:
+                da = r["meaning"][f"{SECONDARY}|idea"]["dist"]
+                dp = min([dist(E[SECONDARY][f"case:{q}::idea"], E[SECONDARY][f"case:{p}::idea"]) for p in prev], default=9.0)
+                r["new_meaning_secondary"] = bool(min(da, dp) > TH_E[SECONDARY]["threshold"])
+                r["new_strategy_secondary_judge"] = r["validity"] == "valid" and r["new_meaning_secondary"] and r["new_structure"]
+                r["new_strategy_three_judges"] = r["validity"] == "valid" and r["new_meaning_idea"] and r["new_meaning_secondary"] and r["new_structure"]
             r["new_strategy"] = r["validity"] == "valid" and r["new_meaning_idea"] and r["new_structure"]
             r["new_strategy_incl_declared"] = r["validity"] in ("valid", "declared") and r["new_meaning_idea"] and r["new_structure"]
             r["new_strategy_concept_view"] = r["validity"] == "valid" and r["new_meaning_concept"] and r["new_structure"]
@@ -248,8 +257,9 @@ def summarize(P, by_arm, arch_cells):
             continue
         s = {"n": len(rs)}
         for k in ("new_strategy", "new_strategy_incl_declared", "new_strategy_concept_view", "new_strategy_vs_archive_only",
-                  "new_structure", "new_meaning_idea", "new_meaning_concept"):
-            s[k] = sum(bool(r[k]) for r in rs)
+                  "new_structure", "new_meaning_idea", "new_meaning_concept", "new_strategy_secondary_judge", "new_strategy_three_judges"):
+            if k in rs[0]:
+                s[k] = sum(bool(r[k]) for r in rs)
         s["validity"] = dict(collections.Counter(r["validity"] for r in rs))
         for view in ("v3text", "idea"):
             vals = [r[f"agreement_{view}"] for r in rs if f"agreement_{view}" in r]
@@ -300,7 +310,7 @@ def main():
            "per_case": P}
     (HERE / "results").mkdir(exist_ok=True)
     (HERE / "results/scores.json").write_text(json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
-    print("thresholds:", {k: v["threshold"] for k, v in TH_E.items()})
+    print("thresholds:", {k: (v["threshold"], v["paraphrase_own_nearest"]) for k, v in TH_E.items()})
     for arm, s in S.items():
         print(arm, {k: v for k, v in s.items() if k != "agreement_idea"})
     for line in out["decision"]:
