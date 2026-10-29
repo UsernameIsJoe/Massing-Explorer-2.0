@@ -24,6 +24,10 @@ This is the central untested claim ([CORE_CONTRIBUTION.md](../../docs/CORE_CONTR
 - The same archive shown to the model: the 15 existing seeds' names and concepts. Every arm sees the same information about what exists; only the direction differs.
 - The same output format v3, model, effort setting and number of cases.
 
+## Steering view (architect, 2026-10-29)
+
+Semantic guidance in S and J uses the **idea view** only (`concept` + `intent`). The move and tension views are embedded for every output and analysed as exploration. Steering by them is left for a later pilot, once it is known how much steering by the idea view does. See [EMBEDDING_VIEWS.md](EMBEDDING_VIEWS.md).
+
 ## Directions: code-generated and deterministic, locked before running
 
 1. **Axis gaps (A, J).**
