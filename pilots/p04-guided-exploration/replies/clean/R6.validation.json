@@ -1,0 +1,53 @@
+{
+ "file": "R6.json",
+ "parse_error": null,
+ "collection_errors": [],
+ "cases": [
+  {
+   "case_id": "C01",
+   "name": "Learning Street Between Two Destinations",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C02",
+   "name": "Independent Inclusion House",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": []
+  },
+  {
+   "case_id": "C03",
+   "name": "Three Routes One School",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor"
+   ]
+  },
+  {
+   "case_id": "C04",
+   "name": "Protected Learning Through Civic Filter",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": []
+  },
+  {
+   "case_id": "C05",
+   "name": "Inclusive Commons As Shared Threshold",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  }
+ ]
+}
