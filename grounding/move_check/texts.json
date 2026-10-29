@@ -1,0 +1,2588 @@
+[
+ {
+  "text_id": "R1-S01::idea",
+  "case": "R1-S01",
+  "kind": "idea",
+  "text": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it. Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S01::K1",
+  "case": "R1-S01",
+  "kind": "move",
+  "text": "Civic hinge as front door: Makes the middle mass the public face that holds arrival, the office, care and the library.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S01::K2",
+  "case": "R1-S01",
+  "kind": "move",
+  "text": "Serial links through the hinge: Ensures every passage between learning and commons crosses the hinge.",
+  "sig": [
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S01::K3",
+  "case": "R1-S01",
+  "kind": "move",
+  "text": "Arts at the hinge base: Puts the arts in the public face of the school, starting at ground level.",
+  "sig": [
+   [
+    "P",
+    "D03",
+    "X",
+    "ground and upper"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S01::K4",
+  "case": "R1-S01",
+  "kind": "move",
+  "text": "Single learning bar at the end: Keeps all classroom departments together at the quiet end of the chain.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S02::idea",
+  "case": "R1-S02",
+  "kind": "idea",
+  "text": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others. Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "C",
+    "upper only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S02::K1",
+  "case": "R1-S02",
+  "kind": "move",
+  "text": "Arts loft on the commons roof: Forms the single cultural block by stacking the arts over the commons volume.",
+  "sig": [
+   [
+    "P",
+    "D03",
+    "C",
+    "upper only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S02::K2",
+  "case": "R1-S02",
+  "kind": "move",
+  "text": "Civic block with library crown: Crowns the civic block with the library over the office and keeps specialized learning beside care and leadership.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S02::K3",
+  "case": "R1-S02",
+  "kind": "move",
+  "text": "Closed triangle of links: Joins each mass to both others so the cluster works as one indoor building.",
+  "sig": [
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S02::K4",
+  "case": "R1-S02",
+  "kind": "move",
+  "text": "Plain academic bar: Completes the triangle with a dedicated three-floor classroom bar.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S03::idea",
+  "case": "R1-S03",
+  "kind": "idea",
+  "text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors. Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ],
+   [
+    "K",
+    "CX",
+    "not linked"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S03::K1",
+  "case": "R1-S03",
+  "kind": "move",
+  "text": "No built links: Keeps the three pavilions free-standing on shared grounds.",
+  "sig": [
+   [
+    "K",
+    "CL",
+    "not linked"
+   ],
+   [
+    "K",
+    "CX",
+    "not linked"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S03::K2",
+  "case": "R1-S03",
+  "kind": "move",
+  "text": "Self-sufficient learning pavilion: Keeps classrooms, the nurse and building service together so students rarely need to leave.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D07",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S03::K3",
+  "case": "R1-S03",
+  "kind": "move",
+  "text": "Independent community pavilion: Isolates athletics and dining so they can open on their own.",
+  "sig": [
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S03::K4",
+  "case": "R1-S03",
+  "kind": "move",
+  "text": "Low civic-arts pavilion: Forms the arrival pavilion with the library directly above the office.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S04::idea",
+  "case": "R1-S04",
+  "kind": "idea",
+  "text": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching. Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S04::K1",
+  "case": "R1-S04",
+  "kind": "move",
+  "text": "Heart links front and wing: Makes the commons the only connection between the civic front and the learning wing.",
+  "sig": [
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S04::K2",
+  "case": "R1-S04",
+  "kind": "move",
+  "text": "Arts within the learning wing: Folds the arts into daily teaching beyond the heart, at ground level.",
+  "sig": [
+   [
+    "P",
+    "D03",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S04::K3",
+  "case": "R1-S04",
+  "kind": "move",
+  "text": "Two-floor civic front: Gives arrival a compact front with the library over the office.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S04::K4",
+  "case": "R1-S04",
+  "kind": "move",
+  "text": "Commons as central heart: Places the shared volume at the centre of the three-part sequence.",
+  "sig": [
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S05::idea",
+  "case": "R1-S05",
+  "kind": "idea",
+  "text": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two. Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "L",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S05::K1",
+  "case": "R1-S05",
+  "kind": "move",
+  "text": "Office and library in the academy: Stacks classrooms over the office in the academy, with the library at its crown.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D05",
+    "L",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S05::K2",
+  "case": "R1-S05",
+  "kind": "move",
+  "text": "Care-and-making house: Pairs specialized learning with the nurse and arts in their own house.",
+  "sig": [
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R1-S05::K3",
+  "case": "R1-S05",
+  "kind": "move",
+  "text": "Closed loop of links: Joins each mass to the other two so the loop around the court is continuous.",
+  "sig": [
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S01::idea",
+  "case": "R2-S01",
+  "kind": "idea",
+  "text": "A low civic gateway stands between a three-storey learning bar and a community hall and forms the only enclosed passage between them. Everyone arrives through the gateway, where the school's front and its making and reading spaces meet visitors; classrooms extend behind it on one side and the shared hall on the other. Aims to give staff a single supervised threshold controlling access to both classrooms and hall, and to let evening visitors reach the hall and arts without entering classroom corridors.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S01::K1",
+  "case": "R2-S01",
+  "kind": "move",
+  "text": "School front and reading room in the gateway: Puts supervision, the nurse and the reading room at the threshold everyone passes through.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S01::K2",
+  "case": "R2-S01",
+  "kind": "move",
+  "text": "Gateway as the only connector: Makes the gateway the sole enclosed route between the learning bar and the hall.",
+  "sig": [
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S01::K3",
+  "case": "R2-S01",
+  "kind": "move",
+  "text": "Arts and service on the hall side: Lets the hall, art and music, and kitchen receiving work as an after-hours cluster away from classrooms.",
+  "sig": [
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S01::K4",
+  "case": "R2-S01",
+  "kind": "move",
+  "text": "One compact learning bar: Keeps every classroom and special education room together behind the gateway.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S02::idea",
+  "case": "R2-S02",
+  "kind": "idea",
+  "text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it. Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "C",
+    "upper only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S02::K1",
+  "case": "R2-S02",
+  "kind": "move",
+  "text": "Heart as the only connector: Routes every movement between the two wings through the shared heart.",
+  "sig": [
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S02::K2",
+  "case": "R2-S02",
+  "kind": "move",
+  "text": "Studio loft over the hall: Concentrates all communal and performing life in the heart, with arts linked to the stage below.",
+  "sig": [
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "C",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S02::K3",
+  "case": "R2-S02",
+  "kind": "move",
+  "text": "Front wing with inclusive support: Pairs special education with the office and nurse, beneath a reading room above administration.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S02::K4",
+  "case": "R2-S02",
+  "kind": "move",
+  "text": "Classroom wing over a service base: Keeps the classroom wing instructional, with custodial at its ground floor reaching the kitchen through the heart.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S03::idea",
+  "case": "R2-S03",
+  "kind": "idea",
+  "text": "One self-contained school bar carries the whole teaching day, rising from the front office and specialist support at its foot through classrooms to a reading crown. Two freestanding pavilions, a community hall and a making-and-maintenance workshop, stand apart on shared grounds and are reached outdoors. Aims to let the hall and workshop open to the community and be phased independently, while keeping the instructional day secure inside a single enclosed bar.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "upper only"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "L",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ],
+   [
+    "K",
+    "CX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S03::K1",
+  "case": "R2-S03",
+  "kind": "move",
+  "text": "Stack the whole school day: Places supervision, support, classrooms and the reading crown in one enclosure, with media above administration.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D01",
+    "L",
+    "upper only"
+   ],
+   [
+    "P",
+    "D05",
+    "L",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S03::K2",
+  "case": "R2-S03",
+  "kind": "move",
+  "text": "Freestanding community hall: Lets the hall stand alone for independent community use and phasing.",
+  "sig": [
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ],
+   [
+    "K",
+    "CX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S03::K3",
+  "case": "R2-S03",
+  "kind": "move",
+  "text": "Shared making-and-maintenance workshop: Groups art, music and custodial in a separate workshop pavilion on the grounds.",
+  "sig": [
+   [
+    "P",
+    "D03",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S04::idea",
+  "case": "R2-S04",
+  "kind": "idea",
+  "text": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court. Seeks a protected outdoor room that every part of the school opens onto, with indoor circulation around it, and places reading at the social centre above shared dining.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "C",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S04::K1",
+  "case": "R2-S04",
+  "kind": "move",
+  "text": "Closed loop around the court: Links every range to both others so circulation rings the courtyard.",
+  "sig": [
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S04::K2",
+  "case": "R2-S04",
+  "kind": "move",
+  "text": "Reading loft over the commons: Puts the library above the hall as the court's social centre.",
+  "sig": [
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "C",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S04::K3",
+  "case": "R2-S04",
+  "kind": "move",
+  "text": "Low civic and arts front: Keeps the front range single-storey so the court stays open to light on that side.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S04::K4",
+  "case": "R2-S04",
+  "kind": "move",
+  "text": "Tall learning range: Concentrates all classrooms and special education in the range that rises over the court.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S05::idea",
+  "case": "R2-S05",
+  "kind": "idea",
+  "text": "Classrooms stay low and close to the ground in a two-storey learning bar, flanked by the hall on one side and, on the other, a compact three-storey civic tower that stacks the school's front, its specialist support and a library crown as the building's vertical marker. Aims to keep every classroom within one stair of the ground and close to the hall, while giving the school a clear civic address and grouping supervision, nursing and special education support.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S05::K1",
+  "case": "R2-S05",
+  "kind": "move",
+  "text": "Two-storey classroom bar: Holds all core classrooms to the two lowest floors.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S05::K2",
+  "case": "R2-S05",
+  "kind": "move",
+  "text": "Stacked civic tower: Gives the school its vertical marker, with media crowning administration and arts at grade.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R2-S05::K3",
+  "case": "R2-S05",
+  "kind": "move",
+  "text": "Learning bar as the connector: Joins hall and tower only through the classroom bar, with custodial at the bar's hall end.",
+  "sig": [
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "not linked"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S01::idea",
+  "case": "R3-S01",
+  "kind": "idea",
+  "text": "A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school. Aims to give visitors one supervised arrival point at the middle of the school, buffer classrooms from hall noise, and let arts and library programs anchor community use next to the hall.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S01::K1",
+  "case": "R3-S01",
+  "kind": "move",
+  "text": "Stack the cultural hinge: Makes the middle mass the front door and cultural core, with arts and library stacked over the office.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S01::K2",
+  "case": "R3-S01",
+  "kind": "move",
+  "text": "Linear sequence linked only through the hinge: Places the hall and the learning bar at opposite ends so all movement between them passes through the hinge.",
+  "sig": [
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S01::K3",
+  "case": "R3-S01",
+  "kind": "move",
+  "text": "Consolidate all classrooms in one bar: Creates the quiet learning end, with general and special education together and building service at its base.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S02::idea",
+  "case": "R3-S02",
+  "kind": "idea",
+  "text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly. Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S02::K1",
+  "case": "R3-S02",
+  "kind": "move",
+  "text": "Hall as the only connector: Makes the hall the central heart through which the two wings meet.",
+  "sig": [
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S02::K2",
+  "case": "R3-S02",
+  "kind": "move",
+  "text": "Self-contained learning house: Carries the learning wing as a complete teaching building with classrooms, special education and arts together.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S02::K3",
+  "case": "R3-S02",
+  "kind": "move",
+  "text": "Compact front-of-house wing: Gives the opposite wing a small public role with the office, support and service, and the library above.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S03::idea",
+  "case": "R3-S03",
+  "kind": "idea",
+  "text": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse. Aims to bring every mass to three floors, allow indoor movement between any two parts, and join arts with the hall into one performance and community venue.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "C",
+    "upper only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ],
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S03::K1",
+  "case": "R3-S03",
+  "kind": "move",
+  "text": "Arts loft over the hall: Turns the hall into a full-height performance block with arts above its service side.",
+  "sig": [
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D03",
+    "C",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S03::K2",
+  "case": "R3-S03",
+  "kind": "move",
+  "text": "Close the ring: Links all three masses to each other to form the compact cluster around the courtyard.",
+  "sig": [
+   [
+    "K",
+    "CL",
+    "linked"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S03::K3",
+  "case": "R3-S03",
+  "kind": "move",
+  "text": "Civic house with supported learning: Keeps special education beside the office and nurse, with the library crowning the civic house.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D05",
+    "X",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S03::K4",
+  "case": "R3-S03",
+  "kind": "move",
+  "text": "Dedicated classroom bar: Completes the ring with a bar for general classrooms and building service.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S04::idea",
+  "case": "R3-S04",
+  "kind": "idea",
+  "text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning. Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "L",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ],
+   [
+    "K",
+    "CX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S04::K1",
+  "case": "R3-S04",
+  "kind": "move",
+  "text": "Detach the hall: Makes the hall a freestanding community building without built links to the school bars.",
+  "sig": [
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ],
+   [
+    "K",
+    "CX",
+    "not linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S04::K2",
+  "case": "R3-S04",
+  "kind": "move",
+  "text": "Join the twin bars: Forms the school proper from two linked parallel bars.",
+  "sig": [
+   [
+    "K",
+    "LX",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S04::K3",
+  "case": "R3-S04",
+  "kind": "move",
+  "text": "Library crown on the classroom bar: Places the library at the top of the classroom house, with building service at its base.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D05",
+    "L",
+    "upper only"
+   ],
+   [
+    "P",
+    "D09",
+    "L",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S04::K4",
+  "case": "R3-S04",
+  "kind": "move",
+  "text": "Front and inclusion house: Pairs the office with specialized learning in the second bar, with nurse and arts at ground.",
+  "sig": [
+   [
+    "P",
+    "D08",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D02",
+    "X",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S05::idea",
+  "case": "R3-S05",
+  "kind": "idea",
+  "text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly. Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "L",
+    "upper only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D08",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S05::K1",
+  "case": "R3-S05",
+  "kind": "move",
+  "text": "Concentrate the school day in one block: Carries the single learning block with front door at the base and library at the crown.",
+  "sig": [
+   [
+    "P",
+    "D01",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D02",
+    "L",
+    "ground and upper"
+   ],
+   [
+    "P",
+    "D08",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D07",
+    "L",
+    "ground only"
+   ],
+   [
+    "P",
+    "D05",
+    "L",
+    "upper only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S05::K2",
+  "case": "R3-S05",
+  "kind": "move",
+  "text": "Low workshop pavilion: Gives arts and building service their own single-storey ground-level pavilion.",
+  "sig": [
+   [
+    "P",
+    "D03",
+    "X",
+    "ground only"
+   ],
+   [
+    "P",
+    "D09",
+    "X",
+    "ground only"
+   ]
+  ]
+ },
+ {
+  "text_id": "R3-S05::K3",
+  "case": "R3-S05",
+  "kind": "move",
+  "text": "Hall reached through the workshop: Makes the workshop pavilion the hinge between the learning block and the hall.",
+  "sig": [
+   [
+    "P",
+    "D04",
+    "C",
+    "ground only"
+   ],
+   [
+    "P",
+    "D06",
+    "C",
+    "ground only"
+   ],
+   [
+    "K",
+    "LX",
+    "linked"
+   ],
+   [
+    "K",
+    "CX",
+    "linked"
+   ],
+   [
+    "K",
+    "CL",
+    "not linked"
+   ]
+  ]
+ }
+]

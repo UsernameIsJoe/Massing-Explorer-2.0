@@ -59,7 +59,7 @@ Invalid cases are kept and counted, never silently fixed: validity is a pilot ou
 ## What is embedded
 
 See [EMBEDDING_VIEWS.md](EMBEDDING_VIEWS.md).
-- **Embedded:** idea (`concept` + `intent`); moves (each `move` + `serves`); tensions (`main_tradeoff` + each `unresolved` item).
+- **Embedded:** idea (`concept` + `intent`); moves (each `move` + `serves`); unresolved (each `unresolved` item).
 - **Read by extraction, not embedded:** `section_intent` and `program_stance`.
 - **Never embedded:** `direction_response` and `name`.
 
