@@ -20,7 +20,7 @@ A strategy-first architectural research project: use an existing advanced LLM to
 4. Define joint membership and provisional boundary expansion.
 5. Establish a minimal generator of unseen complete or partial strategies.
 
-The proposed boundary is primarily semantic, with the consistent nine-axis framework supplying grounding and cross-checks. Representation, thresholds, fixed/free commitments and generation mechanisms remain to be tested. Later workflow details remain open.
+**Joint boundary (architect, 2026-10-29):** the axes locate and bound strategies exactly. The embedding supplies meaning relations, steering and novelty checks, and cross-checks the traits it carries. Membership requires both. The LLM brainstorms in language; it does not explore the axis space naturally. Code finds axis gaps, and the LLM is asked in words for meaningful ideas there. See [CORE_CONTRIBUTION](docs/CORE_CONTRIBUTION.md). Representation, thresholds, fixed/free commitments and generation mechanisms remain to be tested. Later workflow details remain open.
 
 Advanced-model work must function through manual chat batches. Prefer code/local models for repeatable operations where appropriate. No new LLM is being developed.
 

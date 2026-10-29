@@ -28,6 +28,12 @@ A gap can be found on either side:
 
 Every result is located in both spaces and checked for agreement. A vector is never decoded directly into an idea.
 
+**Who explores what.**
+- **The LLM brainstorms in language.** It does not explore the axis space naturally: unguided runs repeat a few ideas, it never offered the 400 valid variants that code found, and forcing explicit targets or rigid formats is known to degrade its outputs.
+- **Code explores the axis space systematically.** The LLM is brought into an axis gap only by being asked, in words, for a meaningful idea there.
+
+**Joint boundary.** The axes locate and bound strategies exactly. The embedding supplies meaning relations, steering and novelty checks, and cross-checks the traits it carries. Membership requires both.
+
 ## How an idea takes shape
 
 The idea goes through three representations; the axis record is computed from the strategy record at each point.

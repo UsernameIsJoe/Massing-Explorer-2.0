@@ -19,7 +19,7 @@ The latest change moves the proposed boundary primarily to semantic embedding sp
 | Seeds | Coherent brief-responsive strategies; no optimal count required now. Five existing parents are a pilot continuity choice. |
 | Partial strategies | Promising option welcomed by the user; blank scope/completion rules still require research. |
 | Nine axes | Keep consistent; defer evolution until a concrete failure warrants discussion. |
-| Boundary | Primarily semantic embedding, supported by axes; exact construction and joint membership open. |
+| Boundary | Joint (2026-10-29): the axes locate and bound exactly; the embedding supplies meaning relations, steering, novelty checks and cross-checks on carried traits; membership requires both. Replaces "primarily semantic". |
 | Expansion | Provisional admission of explainable brief-relevant outside possibilities; no prior superiority/physical-feasibility proof required. |
 | Fixed/free choices | Investigate retained commitments and flexible alternatives/ranges; lock semantics and confidence meanings unresolved. |
 | Model access | Manual advanced-model chat batches; code/local models for suitable repeatable work. |

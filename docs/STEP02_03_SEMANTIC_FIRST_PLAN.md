@@ -7,7 +7,7 @@ Status: current research direction and pilot prerequisites; no embedding model, 
 
 Construct a focused but flexible space of architectural strategies from a small set of brief-responsive LLM seeds. The region must include uninstantiated possibilities; it is not the seed archive or a plot of observed cases. Later exploration is intended to operate primarily within this region. Restriction is the mechanism, not a defect to dismiss by invoking a global optimum. Boundary refinement and reopening remain possible.
 
-The user's new direction is to define the boundary primarily through semantic embeddings of strategic descriptions, with the nine-axis framework helping ground, audit and strengthen it. This supersedes an axis-envelope-first constructor as the immediate direction. It does not establish that embedding distances already capture architectural meaning or creativity.
+> **Superseded 2026-10-29:** the boundary is joint. The axes locate and bound exactly; the embedding supplies meaning relations, steering, novelty checks and cross-checks on carried traits; membership requires both. See [CORE_CONTRIBUTION](CORE_CONTRIBUTION.md). Earlier wording: the user's direction was to define the boundary primarily through semantic embeddings of strategic descriptions, with the nine-axis framework helping ground, audit and strengthen it. This supersedes an axis-envelope-first constructor as the immediate direction. It does not establish that embedding distances already capture architectural meaning or creativity.
 
 Preserve ME's strategic representations, benchmark, realization/checking experience and experimental history. Develop a method/tool for existing LLMs; do not build a new LLM or claim access to its internal reasoning/latent space.
 

@@ -22,7 +22,7 @@ Only Steps 02 and 03 are being specified now. The [semantic-first development pl
 4. Tested joint membership and provisional expansion rules.
 5. Minimal generation of unseen complete or partial strategies.
 
-The region is proposed to be primarily semantic; axes provide grounding, controls and cross-checks. A region is not merely an archive, plot, descriptor envelope or a collection of good-sounding labels. Embedding proximity is not quality or feasibility; membership rules do not themselves generate candidates.
+**Joint boundary (architect, 2026-10-29):** the axes locate and bound strategies exactly. The embedding supplies meaning relations, steering and novelty checks, and cross-checks the traits it carries. Membership requires both. The LLM brainstorms in language; it does not explore the axis space naturally. Code finds axis gaps, and the LLM is asked in words for meaningful ideas there. See [CORE_CONTRIBUTION](CORE_CONTRIBUTION.md). A region is not merely an archive, plot, descriptor envelope or a collection of good-sounding labels. Embedding proximity is not quality or feasibility; membership rules do not themselves generate candidates.
 
 ## Settled directions
 
