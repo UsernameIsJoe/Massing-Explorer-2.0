@@ -1,0 +1,61 @@
+{
+ "file": "R8.json",
+ "parse_error": null,
+ "collection_errors": [],
+ "cases": [
+  {
+   "case_id": "C01",
+   "name": "Parallel Learning and Community Streets",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor",
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C02",
+   "name": "Learning Tower and Care Threshold",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor",
+    "media_top_above_admin",
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C03",
+   "name": "Linked Islands Under Separate Roofs",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor",
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C04",
+   "name": "Three Houses Around Shared Learning",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C05",
+   "name": "Open Courtyard Cultural Constellation",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  }
+ ]
+}

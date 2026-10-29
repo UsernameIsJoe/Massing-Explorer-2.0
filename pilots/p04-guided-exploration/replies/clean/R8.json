@@ -1,0 +1,1320 @@
+{
+  "format": "v3",
+  "cases": [
+    {
+      "case_id": "C01",
+      "name": "Parallel Learning and Community Streets",
+      "concept": "Three distinct masses form a pair of parallel institutional streets rather than a centralized hub or sequential chain. A classroom house and a shared activity house establish separate daily territories, while a narrower cultural house connects them at two points. The connections create alternative internal routes without making any single mass an obligatory crossroads.",
+      "intent": "The scheme seeks to separate concentrated learning from collective activity while allowing students and staff to circulate through different routes and encounter shared cultural spaces without compulsory passage through assembly areas.",
+      "section_intent": "The classroom house rises three floors, with teaching distributed upward. The cultural house also reaches three floors, placing administration at grade, arts on the middle level and reading at the top. The double-height commons remains low.",
+      "program_stance": "Core academic and special education share the tall classroom house, while administration occupies the adjoining cultural house. Gym and dining stay together in the parallel activity house, accessible without crossing the classrooms.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Consolidate the learning territory",
+          "serves": "The combined classroom and specialist teaching house establishes a distinct daily learning environment.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M1",
+              "floors": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M1",
+              "floors": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Create a parallel activity territory",
+          "serves": "The collective functions operate as a distinct destination rather than the school's mandatory circulation center.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Install a layered cultural connector",
+          "serves": "The third mass joins academic and communal territories while retaining its own educational identity.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M3",
+              "floors": [
+                2
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M3",
+              "floors": [
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K4",
+          "move": "Preserve two alternative connections",
+          "serves": "A closed circulation loop prevents the cultural house or commons from becoming a compulsory passage.",
+          "decisions": [
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": true
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "Tall learning street"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Collective activity street"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Layered cultural connector"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1,
+              2
+            ]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              2
+            ]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              3
+            ]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": true
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "The circulation loop reduces dependence on one central gathering space but introduces multiple enclosed connections and moves art and music away from their preferred ground-floor position.",
+        "preferences_given_up": [
+          "arts_ground_floor",
+          "three_floors"
+        ]
+      },
+      "unresolved": [
+        "The compact upper cultural floors may require substantial shared circulation or non-program area to achieve a compliant building envelope.",
+        "The three direct connections must be reconciled with the intended parallel-street organization.",
+        "The extent of usable floor area above the double-height commons remains to be tested."
+      ],
+      "direction_response": "This strategy rejects both the central-heart and civic-hinge chain models by establishing parallel functional territories connected through a complete loop with alternative circulation routes."
+    },
+    {
+      "case_id": "C02",
+      "name": "Learning Tower and Care Threshold",
+      "concept": "A vertical academy anchors one end of the school, while a compact care-oriented threshold mediates its relationship with the community hall. Unlike a conventional gateway devoted primarily to public arrival, this middle house is an inhabited support environment. Its specialist spaces establish a transition from the concentrated teaching tower to the collective activities beyond.",
+      "intent": "The scheme seeks to give the school a recognizable vertical academic identity while making inclusive support part of everyday transitions between classrooms, school services and communal activities.",
+      "section_intent": "The academy rises three floors, with classrooms above its ground-level teaching base and reading at its crown. The care threshold reaches three floors from administration and medical support to arts above. The double-height hall stays low.",
+      "program_stance": "Core academic occupies the academy, directly connected to administration and special education in the care threshold. The commons lies beyond that threshold, separating collective activity from the academic tower without isolating specialist support.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Give the academy a reading crown",
+          "serves": "The classroom tower becomes the primary vertical landmark and a complete academic destination.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M1",
+              "floors": [
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Inhabit the threshold with care",
+          "serves": "Daily support rather than an empty circulation gateway defines the intermediate building.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M2",
+              "floors": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M2",
+              "floors": [
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Make the commons the far destination",
+          "serves": "The assembly functions remain beyond the care threshold instead of becoming the organizing heart.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K4",
+          "move": "Connect through the support threshold",
+          "serves": "The intermediate care building is the only enclosed route linking academy and commons.",
+          "decisions": [
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": false
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "Vertical academy and reading"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Inhabited care threshold"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Community assembly house"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1,
+              2
+            ]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              3
+            ]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              3
+            ]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": false
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": true
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "The care threshold strengthens the relationship between specialized support and daily movement, but makes commons access dependent on one building and places the arts above grade.",
+        "preferences_given_up": [
+          "arts_ground_floor",
+          "media_top_above_admin",
+          "three_floors"
+        ]
+      },
+      "unresolved": [
+        "The academy's upper-level classroom and library distribution requires floor-area and circulation testing.",
+        "The care threshold's simultaneous role as support environment and main passage may create acoustic and privacy conflicts.",
+        "The low commons may require additional non-program area to satisfy the governing GFA target."
+      ],
+      "direction_response": "This case combines E09's vertical academic identity and dedicated inclusive support with E11's single intermediate connection, transforming the gateway into an inhabited care threshold."
+    },
+    {
+      "case_id": "C03",
+      "name": "Linked Islands Under Separate Roofs",
+      "concept": "Three independently legible schoolhouses occupy a shared campus, but a single enclosed connection joins the teaching and cultural houses into a small daily-learning pair. The collective activity house remains freestanding. Instead of treating every pavilion as equally detached, the organization establishes two scales of independence: a connected educational pair and a separate community destination.",
+      "intent": "The scheme seeks to preserve the informal experience of a pavilion campus while allowing students to move between regular classrooms and cultural activities indoors, with community functions operating independently.",
+      "section_intent": "The teaching and cultural houses each rise three floors. Classrooms and specialist teaching extend upward in the first; administration sits at the second's base, arts occupy its middle and reading crowns it. The freestanding commons is double height.",
+      "program_stance": "Core academic and special education remain together in one teaching pavilion, connected directly to administration in the cultural pavilion. The gym and dining pavilion stands apart, requiring outdoor movement from either educational building.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Create a complete teaching island",
+          "serves": "The primary educational house contains both regular and specialized classroom activity.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M1",
+              "floors": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M1",
+              "floors": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Make a compact cultural island",
+          "serves": "The second educational building provides a vertical sequence from school administration to making and reading.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M2",
+              "floors": [
+                2
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M2",
+              "floors": [
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Give assembly its own island",
+          "serves": "The freestanding commons accommodates shared activity and its operational support without enclosing circulation from the teaching houses.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K4",
+          "move": "Connect only the educational pair",
+          "serves": "A selective enclosed link distinguishes the paired schoolhouses from the independent commons pavilion.",
+          "decisions": [
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": false
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": false
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "Combined teaching island"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Connected cultural island"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Independent gathering island"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1,
+              2
+            ]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              2
+            ]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              3
+            ]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": false
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": false
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "The partial connection retains pavilion independence but exposes movement to gym and dining to outdoor conditions and sacrifices the preferred ground-floor location of art and music.",
+        "preferences_given_up": [
+          "arts_ground_floor",
+          "three_floors"
+        ]
+      },
+      "unresolved": [
+        "Outdoor travel between the teaching pair and commons needs a weather and accessibility strategy.",
+        "The relatively small cultural island may require an enlarged circulation and service allowance to meet its footprint constraints.",
+        "The two educational houses need an access-management approach that maintains the cultural pavilion's administrative role."
+      ],
+      "direction_response": "This reinterprets E08's detached campus as an asymmetrical pavilion system, connecting only the two educational islands while leaving the community commons freestanding."
+    },
+    {
+      "case_id": "C04",
+      "name": "Three Houses Around Shared Learning",
+      "concept": "A teaching house, a specialist cultural house and a collective activity house form a three-part academic neighborhood. None is subordinated to a dominant school bar or a small workshop hinge. All three connect directly, allowing daily school life to circulate among complementary destinations while keeping large assembly activities outside the main teaching house.",
+      "intent": "The scheme seeks to create a balanced set of learning destinations, giving specialized teaching an identifiable place without separating it from general classrooms, administrative care or collective school activities.",
+      "section_intent": "The teaching and specialist houses rise three floors. Classrooms fill the teaching house; special education and arts occupy the specialist house below its upper reading spaces. The commons remains a low double-height destination with support at grade.",
+      "program_stance": "Core academic forms one teaching house, while special education sits alongside administration in a directly connected specialist house. Gym and dining share the third mass, linked directly to both learning environments.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Make general teaching an independent house",
+          "serves": "The regular classroom environment retains its own identity without absorbing the school's other departments.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [
+                1,
+                2,
+                3
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Combine inclusion with culture and care",
+          "serves": "The specialist house becomes a substantial teaching destination rather than an auxiliary service wing.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M2",
+              "floors": [
+                1,
+                2
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M2",
+              "floors": [
+                3
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Keep collective functions together",
+          "serves": "The activity house remains operationally coherent while staying distinct from both teaching houses.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K4",
+          "move": "Join every house directly",
+          "serves": "The three-way network gives each educational and communal destination direct access to the other two.",
+          "decisions": [
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": true
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "General teaching house"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Specialist cultural learning house"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Collective activity house"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1,
+              2
+            ]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              3
+            ]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": true
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "The balanced three-house organization provides direct circulation options but concentrates many ground-floor activities in the specialist house, creating potential pressure on its footprint and internal separation.",
+        "preferences_given_up": [
+          "three_floors"
+        ]
+      },
+      "unresolved": [
+        "The specialist house's ground-level administration, arts, medical and special education requirements may challenge its allowed footprint proportions.",
+        "The general teaching house may need substantial non-program floor area to reach the governing GFA target.",
+        "Acoustic separation between ground-floor arts and adjacent specialist support remains unresolved."
+      ],
+      "direction_response": "This strategy replaces the dominant bar, civic tower, twin-bar arrangement and workshop hinge with three interconnected and independently meaningful houses organized as an academic neighborhood."
+    },
+    {
+      "case_id": "C05",
+      "name": "Open Courtyard Cultural Constellation",
+      "concept": "Three pavilion-like houses establish an open courtyard as the shared outdoor room, with one deliberate built connection and two gaps between the buildings. A teaching house, a cultural front house and a collective activity house retain separate identities. The cultural house joins directly to the activity house, while the teaching house engages the courtyard without joining either indoors.",
+      "intent": "The scheme seeks to combine the social identity of a courtyard school with the operational independence of detached pavilions, emphasizing an outdoor common ground rather than a continuous internal corridor.",
+      "section_intent": "Teaching rises three floors in its independent house. The cultural front rises three floors from administration and arts at grade through intermediate support to a reading crown. The activity house remains a low double-height volume.",
+      "program_stance": "Core academic and special education share the detached teaching house. Administration occupies the cultural front across the courtyard; that house alone connects indoors to the gym and dining pavilion for supervised communal use.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Frame the courtyard with teaching",
+          "serves": "The academic house addresses the outdoor common ground while retaining its own independent circulation.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M1",
+              "floors": [
+                1,
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Give the cultural front a reading crown",
+          "serves": "The arrival-oriented pavilion provides a vertical cultural counterpart to the classroom house.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M2",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M2",
+              "floors": [
+                3
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M2",
+              "floors": [
+                2
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Keep the activity pavilion autonomous",
+          "serves": "The commons forms a distinct courtyard edge with its collective and operational functions together.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M3",
+              "floors": [
+                1
+              ]
+            }
+          ]
+        },
+        {
+          "move_id": "K4",
+          "move": "Join the public pair only",
+          "serves": "A single enclosed connection supports coordinated cultural and community functions while preserving open gaps around the teaching house.",
+          "decisions": [
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": false
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": false
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": true
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "Independent courtyard teaching house"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Cultural courtyard front"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Connected community pavilion"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": [
+              "M1"
+            ],
+            "occupied_floors": [
+              1,
+              2
+            ]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              3
+            ]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              2
+            ]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": [
+              "M2"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": [
+              "M3"
+            ],
+            "occupied_floors": [
+              1
+            ]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": false
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": false
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": true
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "The open courtyard maintains pavilion independence and supports selective community access, but requires outdoor travel from the teaching house and places medical care outside its immediate interior.",
+        "preferences_given_up": [
+          "three_floors"
+        ]
+      },
+      "unresolved": [
+        "Medical care on the cultural house's intermediate floor creates accessibility and response-time concerns.",
+        "The cultural house requires adequate intermediate-floor program or circulation to support its reading crown.",
+        "The courtyard's usable character depends on unspecified site conditions and weather exposure.",
+        "The detached academic house requires a clear supervised route to administration and communal activities."
+      ],
+      "direction_response": "This strategy combines E08's independent campus buildings with E05's courtyard-centered social organization, replacing the enclosed three-way courtyard ring with one connected public pair and an independent teaching pavilion."
+    }
+  ]
+}
