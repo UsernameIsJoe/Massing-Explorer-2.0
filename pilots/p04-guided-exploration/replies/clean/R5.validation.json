@@ -1,0 +1,66 @@
+{
+ "file": "R5.json",
+ "parse_error": null,
+ "collection_errors": [],
+ "cases": [
+  {
+   "case_id": "C01",
+   "name": "Learning Street Through Care Commons",
+   "valid": true,
+   "errors": [],
+   "warnings": [
+    "preferences_given_up ['media_top_above_admin', 'three_floors'] differs from structure ['three_floors']"
+   ],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C02",
+   "name": "Assembly Crossing Between Two Schools",
+   "valid": true,
+   "errors": [],
+   "warnings": [
+    "preferences_given_up ['media_top_above_admin', 'three_floors'] differs from structure ['three_floors']"
+   ],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C03",
+   "name": "Learning Cloister and Separate Hall",
+   "valid": true,
+   "errors": [],
+   "warnings": [
+    "preferences_given_up ['media_top_above_admin', 'three_floors'] differs from structure ['three_floors']"
+   ],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C04",
+   "name": "Three Houses Around an Outdoor Forum",
+   "valid": true,
+   "errors": [],
+   "warnings": [
+    "preferences_given_up ['media_top_above_admin', 'three_floors'] differs from structure ['three_floors']"
+   ],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C05",
+   "name": "Inclusive Academy With Detached Civic Pair",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor",
+    "three_floors"
+   ]
+  }
+ ]
+}
