@@ -1,0 +1,7836 @@
+{
+ "thresholds": {
+  "mxbai-embed-large": {
+   "threshold": 0.2026,
+   "median": 0.183,
+   "n": 15,
+   "paraphrase_own_nearest": "8/15"
+  },
+  "nomic-embed-text": {
+   "threshold": 0.1605,
+   "median": 0.131,
+   "n": 15,
+   "paraphrase_own_nearest": "7/15"
+  },
+  "bge-m3": {
+   "threshold": 0.2886,
+   "median": 0.2387,
+   "n": 15,
+   "paraphrase_own_nearest": "10/15"
+  }
+ },
+ "summary": {
+  "U": {
+   "n": 10,
+   "new_strategy": 0,
+   "new_strategy_incl_declared": 0,
+   "new_strategy_concept_view": 0,
+   "new_strategy_vs_archive_only": 1,
+   "new_structure": 3,
+   "new_meaning_idea": 0,
+   "new_meaning_concept": 0,
+   "validity": {
+    "valid": 10
+   },
+   "agreement_v3text": {
+    "all": 0.616,
+    "special_education": 0.8,
+    "placement": 0.5,
+    "links": 0.6,
+    "heights": 0.734,
+    "vertical": 0.628
+   },
+   "agreement_idea": {
+    "all": 0.274,
+    "special_education": 0.3,
+    "placement": 0.1,
+    "links": 0.6,
+    "heights": 0.366,
+    "vertical": 0.214
+   },
+   "steer_hits": null,
+   "new_cells_reached": 4
+  },
+  "A": {
+   "n": 10,
+   "new_strategy": 0,
+   "new_strategy_incl_declared": 0,
+   "new_strategy_concept_view": 0,
+   "new_strategy_vs_archive_only": 0,
+   "new_structure": 3,
+   "new_meaning_idea": 0,
+   "new_meaning_concept": 0,
+   "validity": {
+    "valid": 10
+   },
+   "agreement_v3text": {
+    "all": 0.49,
+    "special_education": 0.8,
+    "placement": 0.2,
+    "links": 0.533,
+    "heights": 0.833,
+    "vertical": 0.486
+   },
+   "agreement_idea": {
+    "all": 0.184,
+    "special_education": 0.1,
+    "placement": 0.0,
+    "links": 0.367,
+    "heights": 0.333,
+    "vertical": 0.186
+   },
+   "steer_hits": "10/10",
+   "new_cells_reached": 10
+  },
+  "S": {
+   "n": 10,
+   "new_strategy": 0,
+   "new_strategy_incl_declared": 0,
+   "new_strategy_concept_view": 0,
+   "new_strategy_vs_archive_only": 0,
+   "new_structure": 5,
+   "new_meaning_idea": 0,
+   "new_meaning_concept": 0,
+   "validity": {
+    "valid": 8,
+    "declared": 2
+   },
+   "agreement_v3text": {
+    "all": 0.537,
+    "special_education": 0.8,
+    "placement": 0.26,
+    "links": 0.733,
+    "heights": 0.834,
+    "vertical": 0.486
+   },
+   "agreement_idea": {
+    "all": 0.205,
+    "special_education": 0.1,
+    "placement": 0.02,
+    "links": 0.567,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "steer_hits": "3/10",
+   "new_cells_reached": 4
+  },
+  "J": {
+   "n": 10,
+   "new_strategy": 0,
+   "new_strategy_incl_declared": 0,
+   "new_strategy_concept_view": 0,
+   "new_strategy_vs_archive_only": 0,
+   "new_structure": 5,
+   "new_meaning_idea": 0,
+   "new_meaning_concept": 0,
+   "validity": {
+    "valid": 10
+   },
+   "agreement_v3text": {
+    "all": 0.61,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.8,
+    "heights": 0.967,
+    "vertical": 0.472
+   },
+   "agreement_idea": {
+    "all": 0.232,
+    "special_education": 0.2,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.367,
+    "vertical": 0.157
+   },
+   "steer_hits": "9/10",
+   "new_cells_reached": 10
+  }
+ },
+ "decision": [
+  "No pre-registered pattern matched exactly (J 0, A 0, S 0, U 0)",
+  "GUARDRAIL: a guided arm loses >= 2 cases on validity vs U"
+ ],
+ "view_diversity": {
+  "U|mxbai-embed-large|idea": 0.1362,
+  "U|mxbai-embed-large|concept": 0.1668,
+  "U|mxbai-embed-large|intent": 0.1733,
+  "U|mxbai-embed-large|move": 0.239,
+  "U|mxbai-embed-large|unresolved": 0.2139,
+  "U|nomic-embed-text|idea": 0.1016,
+  "U|nomic-embed-text|concept": 0.1116,
+  "U|nomic-embed-text|intent": 0.0914,
+  "U|nomic-embed-text|move": 0.1326,
+  "U|nomic-embed-text|unresolved": 0.1349,
+  "A|mxbai-embed-large|idea": 0.0948,
+  "A|mxbai-embed-large|concept": 0.1235,
+  "A|mxbai-embed-large|intent": 0.1672,
+  "A|mxbai-embed-large|move": 0.2135,
+  "A|mxbai-embed-large|unresolved": 0.219,
+  "A|nomic-embed-text|idea": 0.0656,
+  "A|nomic-embed-text|concept": 0.0723,
+  "A|nomic-embed-text|intent": 0.0839,
+  "A|nomic-embed-text|move": 0.1232,
+  "A|nomic-embed-text|unresolved": 0.1338,
+  "S|mxbai-embed-large|idea": 0.1035,
+  "S|mxbai-embed-large|concept": 0.1369,
+  "S|mxbai-embed-large|intent": 0.1726,
+  "S|mxbai-embed-large|move": 0.2423,
+  "S|mxbai-embed-large|unresolved": 0.2752,
+  "S|nomic-embed-text|idea": 0.0842,
+  "S|nomic-embed-text|concept": 0.0947,
+  "S|nomic-embed-text|intent": 0.0924,
+  "S|nomic-embed-text|move": 0.1272,
+  "S|nomic-embed-text|unresolved": 0.1482,
+  "J|mxbai-embed-large|idea": 0.1087,
+  "J|mxbai-embed-large|concept": 0.1438,
+  "J|mxbai-embed-large|intent": 0.1684,
+  "J|mxbai-embed-large|move": 0.2438,
+  "J|mxbai-embed-large|unresolved": 0.2457,
+  "J|nomic-embed-text|idea": 0.0828,
+  "J|nomic-embed-text|concept": 0.0975,
+  "J|nomic-embed-text|intent": 0.0776,
+  "J|nomic-embed-text|move": 0.1414,
+  "J|nomic-embed-text|unresolved": 0.1382
+ },
+ "declaration_audit": {
+  "Q07": [
+   {
+    "error": "mass M3 does not stand from the ground: occupied floors [1, 3]",
+    "declared_by": "The support house needs a viable second-floor allocation without splitting departments or introducing an unoccupied intermediate level."
+   }
+  ],
+  "Q24": [
+   {
+    "error": "mass M3 does not stand from the ground: occupied floors [1, 3]",
+    "declared_by": "The arrival house lacks a scheduled second-floor department between ground-floor services and the reading crown."
+   }
+  ]
+ },
+ "per_case": {
+  "Q20": {
+   "q": "Q20",
+   "reply": "R1",
+   "case_id": "C01",
+   "name": "Learning Spine Between Two Destinations",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R1-S02",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1601,
+     "all": {
+      "R1-S01": 0.1601,
+      "R1-S02": 0.2484,
+      "R1-S03": 0.2642,
+      "R1-S04": 0.2087,
+      "R1-S05": 0.2304,
+      "R2-S01": 0.2502,
+      "R2-S02": 0.2874,
+      "R2-S03": 0.2344,
+      "R2-S04": 0.2819,
+      "R2-S05": 0.2397,
+      "R3-S01": 0.1885,
+      "R3-S02": 0.2075,
+      "R3-S03": 0.2437,
+      "R3-S04": 0.1898,
+      "R3-S05": 0.2162
+     },
+     "dist_prev": null
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1929,
+     "all": {
+      "R1-S01": 0.1929,
+      "R1-S02": 0.3186,
+      "R1-S03": 0.3107,
+      "R1-S04": 0.2217,
+      "R1-S05": 0.2765,
+      "R2-S01": 0.2664,
+      "R2-S02": 0.3049,
+      "R2-S03": 0.3409,
+      "R2-S04": 0.3285,
+      "R2-S05": 0.3476,
+      "R3-S01": 0.2196,
+      "R3-S02": 0.2181,
+      "R3-S03": 0.255,
+      "R3-S04": 0.2402,
+      "R3-S05": 0.2831
+     },
+     "dist_prev": null
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S05",
+     "dist": 0.0976,
+     "all": {
+      "R1-S01": 0.1189,
+      "R1-S02": 0.1772,
+      "R1-S03": 0.184,
+      "R1-S04": 0.1406,
+      "R1-S05": 0.1305,
+      "R2-S01": 0.1374,
+      "R2-S02": 0.1967,
+      "R2-S03": 0.1418,
+      "R2-S04": 0.1488,
+      "R2-S05": 0.0976,
+      "R3-S01": 0.1127,
+      "R3-S02": 0.1132,
+      "R3-S03": 0.1722,
+      "R3-S04": 0.1248,
+      "R3-S05": 0.1217
+     },
+     "dist_prev": null
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S05",
+     "dist": 0.1172,
+     "all": {
+      "R1-S01": 0.1212,
+      "R1-S02": 0.1721,
+      "R1-S03": 0.1997,
+      "R1-S04": 0.1282,
+      "R1-S05": 0.1372,
+      "R2-S01": 0.1267,
+      "R2-S02": 0.1909,
+      "R2-S03": 0.1646,
+      "R2-S04": 0.1695,
+      "R2-S05": 0.1172,
+      "R3-S01": 0.1216,
+      "R3-S02": 0.1515,
+      "R3-S03": 0.1561,
+      "R3-S04": 0.1271,
+      "R3-S05": 0.1349
+     },
+     "dist_prev": null
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2416,
+     "all": {
+      "R1-S01": 0.2457,
+      "R1-S02": 0.3111,
+      "R1-S03": 0.3015,
+      "R1-S04": 0.2416,
+      "R1-S05": 0.3399,
+      "R2-S01": 0.2875,
+      "R2-S02": 0.3053,
+      "R2-S03": 0.3201,
+      "R2-S04": 0.3059,
+      "R2-S05": 0.2925,
+      "R3-S01": 0.2536,
+      "R3-S02": 0.2755,
+      "R3-S03": 0.3011,
+      "R3-S04": 0.2828,
+      "R3-S05": 0.2951
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2582,
+     "all": {
+      "R1-S01": 0.2737,
+      "R1-S02": 0.3518,
+      "R1-S03": 0.3399,
+      "R1-S04": 0.2582,
+      "R1-S05": 0.3893,
+      "R2-S01": 0.2908,
+      "R2-S02": 0.3379,
+      "R2-S03": 0.3639,
+      "R2-S04": 0.3521,
+      "R2-S05": 0.3358,
+      "R3-S01": 0.2793,
+      "R3-S02": 0.3226,
+      "R3-S03": 0.3352,
+      "R3-S04": 0.3078,
+      "R3-S05": 0.3412
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.684,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.143
+   },
+   "arm": "U",
+   "chat": 1,
+   "order": 0,
+   "struct_change_to_prev": null,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q33": {
+   "q": "Q33",
+   "reply": "R1",
+   "case_id": "C02",
+   "name": "Cultural Gate With Detached Commons",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R1-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.146,
+     "all": {
+      "R1-S01": 0.146,
+      "R1-S02": 0.2229,
+      "R1-S03": 0.2244,
+      "R1-S04": 0.1657,
+      "R1-S05": 0.2309,
+      "R2-S01": 0.1902,
+      "R2-S02": 0.2404,
+      "R2-S03": 0.2242,
+      "R2-S04": 0.2385,
+      "R2-S05": 0.2796,
+      "R3-S01": 0.1614,
+      "R3-S02": 0.213,
+      "R3-S03": 0.2675,
+      "R3-S04": 0.1823,
+      "R3-S05": 0.2113
+     },
+     "dist_prev": 0.1725
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1521,
+     "all": {
+      "R1-S01": 0.1521,
+      "R1-S02": 0.2256,
+      "R1-S03": 0.2511,
+      "R1-S04": 0.1709,
+      "R1-S05": 0.2101,
+      "R2-S01": 0.1983,
+      "R2-S02": 0.2102,
+      "R2-S03": 0.2578,
+      "R2-S04": 0.2889,
+      "R2-S05": 0.3143,
+      "R3-S01": 0.1876,
+      "R3-S02": 0.225,
+      "R3-S03": 0.2494,
+      "R3-S04": 0.1916,
+      "R3-S05": 0.2256
+     },
+     "dist_prev": 0.1911
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.0821,
+     "all": {
+      "R1-S01": 0.1095,
+      "R1-S02": 0.1357,
+      "R1-S03": 0.1695,
+      "R1-S04": 0.0821,
+      "R1-S05": 0.1529,
+      "R2-S01": 0.0953,
+      "R2-S02": 0.1837,
+      "R2-S03": 0.1398,
+      "R2-S04": 0.155,
+      "R2-S05": 0.1484,
+      "R3-S01": 0.1111,
+      "R3-S02": 0.1709,
+      "R3-S03": 0.1675,
+      "R3-S04": 0.1521,
+      "R3-S05": 0.1574
+     },
+     "dist_prev": 0.1412
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.0927,
+     "all": {
+      "R1-S01": 0.116,
+      "R1-S02": 0.1375,
+      "R1-S03": 0.1733,
+      "R1-S04": 0.0927,
+      "R1-S05": 0.1385,
+      "R2-S01": 0.1,
+      "R2-S02": 0.1704,
+      "R2-S03": 0.1399,
+      "R2-S04": 0.1767,
+      "R2-S05": 0.1513,
+      "R3-S01": 0.129,
+      "R3-S02": 0.2013,
+      "R3-S03": 0.1527,
+      "R3-S04": 0.1512,
+      "R3-S05": 0.1544
+     },
+     "dist_prev": 0.1329
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2121,
+     "all": {
+      "R1-S01": 0.2526,
+      "R1-S02": 0.2284,
+      "R1-S03": 0.2884,
+      "R1-S04": 0.2243,
+      "R1-S05": 0.3161,
+      "R2-S01": 0.2121,
+      "R2-S02": 0.299,
+      "R2-S03": 0.2949,
+      "R2-S04": 0.2671,
+      "R2-S05": 0.3054,
+      "R3-S01": 0.2605,
+      "R3-S02": 0.3016,
+      "R3-S03": 0.2908,
+      "R3-S04": 0.2725,
+      "R3-S05": 0.322
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2104,
+     "all": {
+      "R1-S01": 0.2676,
+      "R1-S02": 0.2412,
+      "R1-S03": 0.3001,
+      "R1-S04": 0.2318,
+      "R1-S05": 0.3436,
+      "R2-S01": 0.2104,
+      "R2-S02": 0.2914,
+      "R2-S03": 0.3149,
+      "R2-S04": 0.2882,
+      "R2-S05": 0.3081,
+      "R3-S01": 0.2739,
+      "R3-S02": 0.3241,
+      "R3-S03": 0.3075,
+      "R3-S04": 0.2761,
+      "R3-S05": 0.3478
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.286
+   },
+   "arm": "U",
+   "chat": 1,
+   "order": 1,
+   "struct_change_to_prev": 2.2,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q16": {
+   "q": "Q16",
+   "reply": "R1",
+   "case_id": "C03",
+   "name": "Parallel Public and Pupil Routes",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R3-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.177,
+     "all": {
+      "R1-S01": 0.177,
+      "R1-S02": 0.2799,
+      "R1-S03": 0.2466,
+      "R1-S04": 0.2184,
+      "R1-S05": 0.2575,
+      "R2-S01": 0.2188,
+      "R2-S02": 0.2741,
+      "R2-S03": 0.2654,
+      "R2-S04": 0.2364,
+      "R2-S05": 0.3146,
+      "R3-S01": 0.2241,
+      "R3-S02": 0.2274,
+      "R3-S03": 0.2842,
+      "R3-S04": 0.2469,
+      "R3-S05": 0.2801
+     },
+     "dist_prev": 0.162
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1815,
+     "all": {
+      "R1-S01": 0.1815,
+      "R1-S02": 0.3078,
+      "R1-S03": 0.2781,
+      "R1-S04": 0.2515,
+      "R1-S05": 0.2465,
+      "R2-S01": 0.2564,
+      "R2-S02": 0.2929,
+      "R2-S03": 0.3127,
+      "R2-S04": 0.2924,
+      "R2-S05": 0.4068,
+      "R3-S01": 0.2592,
+      "R3-S02": 0.2573,
+      "R3-S03": 0.2695,
+      "R3-S04": 0.2794,
+      "R3-S05": 0.3471
+     },
+     "dist_prev": 0.1843
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1277,
+     "all": {
+      "R1-S01": 0.1277,
+      "R1-S02": 0.1672,
+      "R1-S03": 0.197,
+      "R1-S04": 0.141,
+      "R1-S05": 0.164,
+      "R2-S01": 0.1393,
+      "R2-S02": 0.1861,
+      "R2-S03": 0.1885,
+      "R2-S04": 0.1682,
+      "R2-S05": 0.1749,
+      "R3-S01": 0.145,
+      "R3-S02": 0.1439,
+      "R3-S03": 0.1691,
+      "R3-S04": 0.1745,
+      "R3-S05": 0.1715
+     },
+     "dist_prev": 0.1209
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.131,
+     "all": {
+      "R1-S01": 0.131,
+      "R1-S02": 0.1567,
+      "R1-S03": 0.2043,
+      "R1-S04": 0.1421,
+      "R1-S05": 0.1532,
+      "R2-S01": 0.1411,
+      "R2-S02": 0.1984,
+      "R2-S03": 0.2023,
+      "R2-S04": 0.1795,
+      "R2-S05": 0.1975,
+      "R3-S01": 0.1515,
+      "R3-S02": 0.1532,
+      "R3-S03": 0.1469,
+      "R3-S04": 0.1783,
+      "R3-S05": 0.1875
+     },
+     "dist_prev": 0.1263
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2235,
+     "all": {
+      "R1-S01": 0.2235,
+      "R1-S02": 0.2533,
+      "R1-S03": 0.2598,
+      "R1-S04": 0.2332,
+      "R1-S05": 0.294,
+      "R2-S01": 0.2829,
+      "R2-S02": 0.297,
+      "R2-S03": 0.3442,
+      "R2-S04": 0.2537,
+      "R2-S05": 0.3265,
+      "R3-S01": 0.2541,
+      "R3-S02": 0.2947,
+      "R3-S03": 0.2721,
+      "R3-S04": 0.3126,
+      "R3-S05": 0.3354
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2337,
+     "all": {
+      "R1-S01": 0.2337,
+      "R1-S02": 0.2723,
+      "R1-S03": 0.3054,
+      "R1-S04": 0.248,
+      "R1-S05": 0.325,
+      "R2-S01": 0.3131,
+      "R2-S02": 0.3289,
+      "R2-S03": 0.3896,
+      "R2-S04": 0.2758,
+      "R2-S05": 0.3817,
+      "R3-S01": 0.2772,
+      "R3-S02": 0.3329,
+      "R3-S03": 0.2965,
+      "R3-S04": 0.3463,
+      "R3-S05": 0.3983
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.316,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.333,
+    "vertical": 0.286
+   },
+   "arm": "U",
+   "chat": 1,
+   "order": 2,
+   "struct_change_to_prev": 2.1,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q32": {
+   "q": "Q32",
+   "reply": "R1",
+   "case_id": "C04",
+   "name": "Independent Specialist Learning Retreat",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R1-S05",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.2463,
+     "all": {
+      "R1-S01": 0.322,
+      "R1-S02": 0.3823,
+      "R1-S03": 0.3062,
+      "R1-S04": 0.2965,
+      "R1-S05": 0.2958,
+      "R2-S01": 0.3283,
+      "R2-S02": 0.3181,
+      "R2-S03": 0.287,
+      "R2-S04": 0.3364,
+      "R2-S05": 0.3254,
+      "R3-S01": 0.315,
+      "R3-S02": 0.2463,
+      "R3-S03": 0.3439,
+      "R3-S04": 0.2909,
+      "R3-S05": 0.2744
+     },
+     "dist_prev": 0.224
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.2905,
+     "all": {
+      "R1-S01": 0.3368,
+      "R1-S02": 0.4079,
+      "R1-S03": 0.3452,
+      "R1-S04": 0.3275,
+      "R1-S05": 0.3266,
+      "R2-S01": 0.3405,
+      "R2-S02": 0.2959,
+      "R2-S03": 0.3188,
+      "R2-S04": 0.4157,
+      "R2-S05": 0.4004,
+      "R3-S01": 0.3317,
+      "R3-S02": 0.2905,
+      "R3-S03": 0.3227,
+      "R3-S04": 0.2922,
+      "R3-S05": 0.3122
+     },
+     "dist_prev": 0.2401
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.1439,
+     "all": {
+      "R1-S01": 0.1899,
+      "R1-S02": 0.2339,
+      "R1-S03": 0.1976,
+      "R1-S04": 0.1763,
+      "R1-S05": 0.1488,
+      "R2-S01": 0.1753,
+      "R2-S02": 0.1916,
+      "R2-S03": 0.1439,
+      "R2-S04": 0.1687,
+      "R2-S05": 0.1484,
+      "R3-S01": 0.163,
+      "R3-S02": 0.1582,
+      "R3-S03": 0.1961,
+      "R3-S04": 0.1691,
+      "R3-S05": 0.1629
+     },
+     "dist_prev": 0.1332
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.1495,
+     "all": {
+      "R1-S01": 0.2097,
+      "R1-S02": 0.2287,
+      "R1-S03": 0.2108,
+      "R1-S04": 0.1839,
+      "R1-S05": 0.1589,
+      "R2-S01": 0.1734,
+      "R2-S02": 0.183,
+      "R2-S03": 0.1495,
+      "R2-S04": 0.2109,
+      "R2-S05": 0.1627,
+      "R3-S01": 0.1773,
+      "R3-S02": 0.1942,
+      "R3-S03": 0.1745,
+      "R3-S04": 0.1699,
+      "R3-S05": 0.1766
+     },
+     "dist_prev": 0.1412
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2835,
+     "all": {
+      "R1-S01": 0.3428,
+      "R1-S02": 0.3387,
+      "R1-S03": 0.3334,
+      "R1-S04": 0.2946,
+      "R1-S05": 0.3246,
+      "R2-S01": 0.3593,
+      "R2-S02": 0.3379,
+      "R2-S03": 0.3293,
+      "R2-S04": 0.3207,
+      "R2-S05": 0.3317,
+      "R3-S01": 0.3434,
+      "R3-S02": 0.3019,
+      "R3-S03": 0.3548,
+      "R3-S04": 0.2835,
+      "R3-S05": 0.3084
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2965,
+     "all": {
+      "R1-S01": 0.3799,
+      "R1-S02": 0.392,
+      "R1-S03": 0.3741,
+      "R1-S04": 0.3337,
+      "R1-S05": 0.4012,
+      "R2-S01": 0.3864,
+      "R2-S02": 0.3465,
+      "R2-S03": 0.3525,
+      "R2-S04": 0.381,
+      "R2-S05": 0.3684,
+      "R3-S01": 0.3737,
+      "R3-S02": 0.345,
+      "R3-S03": 0.3902,
+      "R3-S04": 0.2965,
+      "R3-S05": 0.346
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 1.0,
+    "heights": 0.333,
+    "vertical": 0.286
+   },
+   "arm": "U",
+   "chat": 1,
+   "order": 3,
+   "struct_change_to_prev": 2.7,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q21": {
+   "q": "Q21",
+   "reply": "R1",
+   "case_id": "C05",
+   "name": "Inclusive Threshold to Community Commons",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.9,
+   "struct_nearest_archive": "R1-S05",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.224,
+     "all": {
+      "R1-S01": 0.224,
+      "R1-S02": 0.3184,
+      "R1-S03": 0.3214,
+      "R1-S04": 0.2679,
+      "R1-S05": 0.2438,
+      "R2-S01": 0.3118,
+      "R2-S02": 0.2809,
+      "R2-S03": 0.2948,
+      "R2-S04": 0.3314,
+      "R2-S05": 0.297,
+      "R3-S01": 0.2592,
+      "R3-S02": 0.2555,
+      "R3-S03": 0.3004,
+      "R3-S04": 0.2646,
+      "R3-S05": 0.2735
+     },
+     "dist_prev": 0.1859
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2089,
+     "all": {
+      "R1-S01": 0.2089,
+      "R1-S02": 0.3391,
+      "R1-S03": 0.3315,
+      "R1-S04": 0.2851,
+      "R1-S05": 0.2626,
+      "R2-S01": 0.2838,
+      "R2-S02": 0.2625,
+      "R2-S03": 0.3215,
+      "R2-S04": 0.3542,
+      "R2-S05": 0.356,
+      "R3-S01": 0.2347,
+      "R3-S02": 0.2977,
+      "R3-S03": 0.291,
+      "R3-S04": 0.2476,
+      "R3-S05": 0.3043
+     },
+     "dist_prev": 0.202
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1192,
+     "all": {
+      "R1-S01": 0.1376,
+      "R1-S02": 0.1966,
+      "R1-S03": 0.2017,
+      "R1-S04": 0.1736,
+      "R1-S05": 0.1315,
+      "R2-S01": 0.1727,
+      "R2-S02": 0.1605,
+      "R2-S03": 0.1621,
+      "R2-S04": 0.1872,
+      "R2-S05": 0.1563,
+      "R3-S01": 0.1192,
+      "R3-S02": 0.1578,
+      "R3-S03": 0.2022,
+      "R3-S04": 0.1554,
+      "R3-S05": 0.1577
+     },
+     "dist_prev": 0.118
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1149,
+     "all": {
+      "R1-S01": 0.1421,
+      "R1-S02": 0.1786,
+      "R1-S03": 0.2048,
+      "R1-S04": 0.1644,
+      "R1-S05": 0.1367,
+      "R2-S01": 0.1636,
+      "R2-S02": 0.1554,
+      "R2-S03": 0.1661,
+      "R2-S04": 0.2112,
+      "R2-S05": 0.1698,
+      "R3-S01": 0.1149,
+      "R3-S02": 0.2045,
+      "R3-S03": 0.1736,
+      "R3-S04": 0.145,
+      "R3-S05": 0.161
+     },
+     "dist_prev": 0.1247
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2201,
+     "all": {
+      "R1-S01": 0.2201,
+      "R1-S02": 0.3024,
+      "R1-S03": 0.3095,
+      "R1-S04": 0.281,
+      "R1-S05": 0.2873,
+      "R2-S01": 0.2624,
+      "R2-S02": 0.3083,
+      "R2-S03": 0.32,
+      "R2-S04": 0.2688,
+      "R2-S05": 0.2931,
+      "R3-S01": 0.2229,
+      "R3-S02": 0.2872,
+      "R3-S03": 0.3108,
+      "R3-S04": 0.2562,
+      "R3-S05": 0.2975
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2288,
+     "all": {
+      "R1-S01": 0.2326,
+      "R1-S02": 0.3324,
+      "R1-S03": 0.3542,
+      "R1-S04": 0.3003,
+      "R1-S05": 0.336,
+      "R2-S01": 0.2818,
+      "R2-S02": 0.3247,
+      "R2-S03": 0.3557,
+      "R2-S04": 0.2998,
+      "R2-S05": 0.337,
+      "R3-S01": 0.2288,
+      "R3-S02": 0.3378,
+      "R3-S03": 0.3293,
+      "R3-S04": 0.2612,
+      "R3-S05": 0.3341
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.684,
+    "special_education": 1.0,
+    "placement": 0.8,
+    "links": 0.333,
+    "heights": 1.0,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.368,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.286
+   },
+   "arm": "U",
+   "chat": 1,
+   "order": 4,
+   "struct_change_to_prev": 1.75,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q19": {
+   "q": "Q19",
+   "reply": "R2",
+   "case_id": "C01",
+   "name": "Care Terrace Beyond Civic Gallery",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.0,
+   "struct_nearest_archive": "R2-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1576,
+     "all": {
+      "R1-S01": 0.1576,
+      "R1-S02": 0.2406,
+      "R1-S03": 0.2414,
+      "R1-S04": 0.1654,
+      "R1-S05": 0.1819,
+      "R2-S01": 0.2669,
+      "R2-S02": 0.189,
+      "R2-S03": 0.2303,
+      "R2-S04": 0.2559,
+      "R2-S05": 0.2191,
+      "R3-S01": 0.1751,
+      "R3-S02": 0.1738,
+      "R3-S03": 0.2276,
+      "R3-S04": 0.1809,
+      "R3-S05": 0.1871
+     },
+     "dist_prev": null
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R2-S02",
+     "dist": 0.1626,
+     "all": {
+      "R1-S01": 0.1677,
+      "R1-S02": 0.2429,
+      "R1-S03": 0.2577,
+      "R1-S04": 0.2043,
+      "R1-S05": 0.1804,
+      "R2-S01": 0.2023,
+      "R2-S02": 0.1626,
+      "R2-S03": 0.2414,
+      "R2-S04": 0.294,
+      "R2-S05": 0.282,
+      "R3-S01": 0.1692,
+      "R3-S02": 0.2238,
+      "R3-S03": 0.2122,
+      "R3-S04": 0.1872,
+      "R3-S05": 0.22
+     },
+     "dist_prev": null
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S05",
+     "dist": 0.109,
+     "all": {
+      "R1-S01": 0.1194,
+      "R1-S02": 0.175,
+      "R1-S03": 0.1709,
+      "R1-S04": 0.138,
+      "R1-S05": 0.1103,
+      "R2-S01": 0.1374,
+      "R2-S02": 0.1479,
+      "R2-S03": 0.1408,
+      "R2-S04": 0.1444,
+      "R2-S05": 0.109,
+      "R3-S01": 0.1117,
+      "R3-S02": 0.1245,
+      "R3-S03": 0.1696,
+      "R3-S04": 0.1365,
+      "R3-S05": 0.1258
+     },
+     "dist_prev": null
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.0991,
+     "all": {
+      "R1-S01": 0.128,
+      "R1-S02": 0.1611,
+      "R1-S03": 0.1831,
+      "R1-S04": 0.1331,
+      "R1-S05": 0.0991,
+      "R2-S01": 0.1187,
+      "R2-S02": 0.1282,
+      "R2-S03": 0.1387,
+      "R2-S04": 0.1678,
+      "R2-S05": 0.1208,
+      "R3-S01": 0.1127,
+      "R3-S02": 0.1653,
+      "R3-S03": 0.1399,
+      "R3-S04": 0.1324,
+      "R3-S05": 0.137
+     },
+     "dist_prev": null
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.254,
+     "all": {
+      "R1-S01": 0.2913,
+      "R1-S02": 0.254,
+      "R1-S03": 0.3109,
+      "R1-S04": 0.2575,
+      "R1-S05": 0.2599,
+      "R2-S01": 0.2665,
+      "R2-S02": 0.2917,
+      "R2-S03": 0.305,
+      "R2-S04": 0.2739,
+      "R2-S05": 0.2576,
+      "R3-S01": 0.2966,
+      "R3-S02": 0.3049,
+      "R3-S03": 0.2675,
+      "R3-S04": 0.2574,
+      "R3-S05": 0.3114
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2743,
+     "all": {
+      "R1-S01": 0.3036,
+      "R1-S02": 0.2743,
+      "R1-S03": 0.3538,
+      "R1-S04": 0.2789,
+      "R1-S05": 0.3062,
+      "R2-S01": 0.293,
+      "R2-S02": 0.301,
+      "R2-S03": 0.3286,
+      "R2-S04": 0.3078,
+      "R2-S05": 0.3061,
+      "R3-S01": 0.3119,
+      "R3-S02": 0.3711,
+      "R3-S03": 0.2866,
+      "R3-S04": 0.2853,
+      "R3-S05": 0.3558
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.333,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.105,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "A",
+   "chat": 1,
+   "order": 0,
+   "steer": {
+    "target_cell": [
+     [
+      "CX",
+      "LX"
+     ],
+     "C",
+     "mixed"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": null,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q09": {
+   "q": "Q09",
+   "reply": "R2",
+   "case_id": "C02",
+   "name": "Assembly Crossing Between Two Schools",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.95,
+   "struct_nearest_archive": "R2-S02",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1624,
+     "all": {
+      "R1-S01": 0.1624,
+      "R1-S02": 0.2655,
+      "R1-S03": 0.2411,
+      "R1-S04": 0.1875,
+      "R1-S05": 0.2228,
+      "R2-S01": 0.2607,
+      "R2-S02": 0.1941,
+      "R2-S03": 0.2658,
+      "R2-S04": 0.2598,
+      "R2-S05": 0.279,
+      "R3-S01": 0.2046,
+      "R3-S02": 0.1939,
+      "R3-S03": 0.2769,
+      "R3-S04": 0.1841,
+      "R3-S05": 0.2539
+     },
+     "dist_prev": 0.106
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.167,
+     "all": {
+      "R1-S01": 0.167,
+      "R1-S02": 0.2994,
+      "R1-S03": 0.2772,
+      "R1-S04": 0.2134,
+      "R1-S05": 0.2308,
+      "R2-S01": 0.2295,
+      "R2-S02": 0.2046,
+      "R2-S03": 0.3,
+      "R2-S04": 0.3251,
+      "R2-S05": 0.328,
+      "R3-S01": 0.2,
+      "R3-S02": 0.2407,
+      "R3-S03": 0.2746,
+      "R3-S04": 0.1957,
+      "R3-S05": 0.2842
+     },
+     "dist_prev": 0.1314
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.1355,
+     "all": {
+      "R1-S01": 0.1359,
+      "R1-S02": 0.1996,
+      "R1-S03": 0.1922,
+      "R1-S04": 0.1816,
+      "R1-S05": 0.1542,
+      "R2-S01": 0.1611,
+      "R2-S02": 0.1406,
+      "R2-S03": 0.1621,
+      "R2-S04": 0.1687,
+      "R2-S05": 0.1532,
+      "R3-S01": 0.1367,
+      "R3-S02": 0.1355,
+      "R3-S03": 0.2015,
+      "R3-S04": 0.1386,
+      "R3-S05": 0.1745
+     },
+     "dist_prev": 0.0886
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1247,
+     "all": {
+      "R1-S01": 0.1286,
+      "R1-S02": 0.1778,
+      "R1-S03": 0.1938,
+      "R1-S04": 0.1629,
+      "R1-S05": 0.1343,
+      "R2-S01": 0.1366,
+      "R2-S02": 0.1358,
+      "R2-S03": 0.1567,
+      "R2-S04": 0.1925,
+      "R2-S05": 0.159,
+      "R3-S01": 0.1247,
+      "R3-S02": 0.1734,
+      "R3-S03": 0.1778,
+      "R3-S04": 0.1315,
+      "R3-S05": 0.1721
+     },
+     "dist_prev": 0.0903
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2322,
+     "all": {
+      "R1-S01": 0.2579,
+      "R1-S02": 0.3027,
+      "R1-S03": 0.3232,
+      "R1-S04": 0.2322,
+      "R1-S05": 0.2985,
+      "R2-S01": 0.2809,
+      "R2-S02": 0.2562,
+      "R2-S03": 0.3165,
+      "R2-S04": 0.2977,
+      "R2-S05": 0.3,
+      "R3-S01": 0.3054,
+      "R3-S02": 0.287,
+      "R3-S03": 0.3245,
+      "R3-S04": 0.2426,
+      "R3-S05": 0.3512
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2577,
+     "all": {
+      "R1-S01": 0.2739,
+      "R1-S02": 0.3292,
+      "R1-S03": 0.3784,
+      "R1-S04": 0.2595,
+      "R1-S05": 0.3611,
+      "R2-S01": 0.2966,
+      "R2-S02": 0.2824,
+      "R2-S03": 0.3444,
+      "R2-S04": 0.3616,
+      "R2-S05": 0.3311,
+      "R3-S01": 0.3192,
+      "R3-S02": 0.3488,
+      "R3-S03": 0.3553,
+      "R3-S04": 0.2577,
+      "R3-S05": 0.3794
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.421,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.0,
+    "heights": 1.0,
+    "vertical": 0.286
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "A",
+   "chat": 1,
+   "order": 1,
+   "steer": {
+    "target_cell": [
+     [
+      "CL",
+      "CX"
+     ],
+     "X",
+     "mixed"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 2.0,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q31": {
+   "q": "Q31",
+   "reply": "R2",
+   "case_id": "C03",
+   "name": "Low Learning Cloister With Civic Porch",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "struct_change_to_archive": 0.95,
+   "struct_nearest_archive": "R1-S03",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1626,
+     "all": {
+      "R1-S01": 0.1636,
+      "R1-S02": 0.2489,
+      "R1-S03": 0.2197,
+      "R1-S04": 0.1842,
+      "R1-S05": 0.189,
+      "R2-S01": 0.2721,
+      "R2-S02": 0.2274,
+      "R2-S03": 0.2134,
+      "R2-S04": 0.2143,
+      "R2-S05": 0.2074,
+      "R3-S01": 0.1833,
+      "R3-S02": 0.1678,
+      "R3-S03": 0.2594,
+      "R3-S04": 0.1626,
+      "R3-S05": 0.1786
+     },
+     "dist_prev": 0.093
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1802,
+     "all": {
+      "R1-S01": 0.1995,
+      "R1-S02": 0.276,
+      "R1-S03": 0.2526,
+      "R1-S04": 0.23,
+      "R1-S05": 0.2039,
+      "R2-S01": 0.2356,
+      "R2-S02": 0.2108,
+      "R2-S03": 0.2445,
+      "R2-S04": 0.3068,
+      "R2-S05": 0.252,
+      "R3-S01": 0.1967,
+      "R3-S02": 0.2311,
+      "R3-S03": 0.2609,
+      "R3-S04": 0.1802,
+      "R3-S05": 0.2074
+     },
+     "dist_prev": 0.1237
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S05",
+     "dist": 0.1155,
+     "all": {
+      "R1-S01": 0.1224,
+      "R1-S02": 0.1872,
+      "R1-S03": 0.1457,
+      "R1-S04": 0.1516,
+      "R1-S05": 0.1293,
+      "R2-S01": 0.1506,
+      "R2-S02": 0.1387,
+      "R2-S03": 0.1223,
+      "R2-S04": 0.1289,
+      "R2-S05": 0.1155,
+      "R3-S01": 0.1181,
+      "R3-S02": 0.1175,
+      "R3-S03": 0.1825,
+      "R3-S04": 0.1334,
+      "R3-S05": 0.1222
+     },
+     "dist_prev": 0.0628
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.1173,
+     "all": {
+      "R1-S01": 0.1479,
+      "R1-S02": 0.1813,
+      "R1-S03": 0.1611,
+      "R1-S04": 0.151,
+      "R1-S05": 0.1229,
+      "R2-S01": 0.1351,
+      "R2-S02": 0.1237,
+      "R2-S03": 0.1173,
+      "R2-S04": 0.1783,
+      "R2-S05": 0.1263,
+      "R3-S01": 0.1266,
+      "R3-S02": 0.1882,
+      "R3-S03": 0.1599,
+      "R3-S04": 0.1299,
+      "R3-S05": 0.1256
+     },
+     "dist_prev": 0.0728
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2259,
+     "all": {
+      "R1-S01": 0.2726,
+      "R1-S02": 0.2766,
+      "R1-S03": 0.2555,
+      "R1-S04": 0.2638,
+      "R1-S05": 0.3069,
+      "R2-S01": 0.2728,
+      "R2-S02": 0.2815,
+      "R2-S03": 0.2496,
+      "R2-S04": 0.2824,
+      "R2-S05": 0.2299,
+      "R3-S01": 0.2935,
+      "R3-S02": 0.2684,
+      "R3-S03": 0.2803,
+      "R3-S04": 0.2259,
+      "R3-S05": 0.2897
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2475,
+     "all": {
+      "R1-S01": 0.2905,
+      "R1-S02": 0.3119,
+      "R1-S03": 0.2963,
+      "R1-S04": 0.2964,
+      "R1-S05": 0.3729,
+      "R2-S01": 0.2698,
+      "R2-S02": 0.2821,
+      "R2-S03": 0.3022,
+      "R2-S04": 0.3325,
+      "R2-S05": 0.2711,
+      "R3-S01": 0.3004,
+      "R3-S02": 0.3322,
+      "R3-S03": 0.3166,
+      "R3-S04": 0.2475,
+      "R3-S05": 0.3113
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.667,
+    "vertical": 0.286
+   },
+   "arm": "A",
+   "chat": 1,
+   "order": 2,
+   "steer": {
+    "target_cell": [
+     [
+      "LX"
+     ],
+     "L",
+     "low"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 2.3,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q23": {
+   "q": "Q23",
+   "reply": "R2",
+   "case_id": "C04",
+   "name": "Three Independent Neighborhood Houses",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.35,
+   "struct_nearest_archive": "R2-S05",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1858,
+     "all": {
+      "R1-S01": 0.1858,
+      "R1-S02": 0.2761,
+      "R1-S03": 0.2039,
+      "R1-S04": 0.2149,
+      "R1-S05": 0.1962,
+      "R2-S01": 0.3128,
+      "R2-S02": 0.2398,
+      "R2-S03": 0.2334,
+      "R2-S04": 0.256,
+      "R2-S05": 0.2548,
+      "R3-S01": 0.223,
+      "R3-S02": 0.2078,
+      "R3-S03": 0.2517,
+      "R3-S04": 0.1967,
+      "R3-S05": 0.2376
+     },
+     "dist_prev": 0.0727
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.1725,
+     "all": {
+      "R1-S01": 0.1943,
+      "R1-S02": 0.3115,
+      "R1-S03": 0.1887,
+      "R1-S04": 0.2491,
+      "R1-S05": 0.1725,
+      "R2-S01": 0.2653,
+      "R2-S02": 0.2146,
+      "R2-S03": 0.2335,
+      "R2-S04": 0.3,
+      "R2-S05": 0.2994,
+      "R3-S01": 0.2143,
+      "R3-S02": 0.2428,
+      "R3-S03": 0.2317,
+      "R3-S04": 0.2068,
+      "R3-S05": 0.2514
+     },
+     "dist_prev": 0.103
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.127,
+     "all": {
+      "R1-S01": 0.1369,
+      "R1-S02": 0.2059,
+      "R1-S03": 0.1703,
+      "R1-S04": 0.192,
+      "R1-S05": 0.1375,
+      "R2-S01": 0.1856,
+      "R2-S02": 0.1486,
+      "R2-S03": 0.1433,
+      "R2-S04": 0.1541,
+      "R2-S05": 0.1324,
+      "R3-S01": 0.134,
+      "R3-S02": 0.127,
+      "R3-S03": 0.1994,
+      "R3-S04": 0.1385,
+      "R3-S05": 0.1482
+     },
+     "dist_prev": 0.0362
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1275,
+     "all": {
+      "R1-S01": 0.1523,
+      "R1-S02": 0.1927,
+      "R1-S03": 0.1742,
+      "R1-S04": 0.1787,
+      "R1-S05": 0.1288,
+      "R2-S01": 0.1635,
+      "R2-S02": 0.1283,
+      "R2-S03": 0.131,
+      "R2-S04": 0.1863,
+      "R2-S05": 0.138,
+      "R3-S01": 0.1282,
+      "R3-S02": 0.1811,
+      "R3-S03": 0.1711,
+      "R3-S04": 0.1275,
+      "R3-S05": 0.1437
+     },
+     "dist_prev": 0.045
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2303,
+     "all": {
+      "R1-S01": 0.292,
+      "R1-S02": 0.3144,
+      "R1-S03": 0.2303,
+      "R1-S04": 0.3122,
+      "R1-S05": 0.2753,
+      "R2-S01": 0.3041,
+      "R2-S02": 0.3134,
+      "R2-S03": 0.2435,
+      "R2-S04": 0.2598,
+      "R2-S05": 0.2437,
+      "R3-S01": 0.3178,
+      "R3-S02": 0.2758,
+      "R3-S03": 0.2904,
+      "R3-S04": 0.2491,
+      "R3-S05": 0.2982
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2513,
+     "all": {
+      "R1-S01": 0.3007,
+      "R1-S02": 0.3351,
+      "R1-S03": 0.2513,
+      "R1-S04": 0.3186,
+      "R1-S05": 0.3339,
+      "R2-S01": 0.3031,
+      "R2-S02": 0.31,
+      "R2-S03": 0.2914,
+      "R2-S04": 0.2962,
+      "R2-S05": 0.291,
+      "R3-S01": 0.3145,
+      "R3-S02": 0.338,
+      "R3-S03": 0.3036,
+      "R3-S04": 0.2696,
+      "R3-S05": 0.3132
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.143
+   },
+   "agreement_idea": {
+    "all": 0.368,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.333,
+    "vertical": 0.286
+   },
+   "arm": "A",
+   "chat": 1,
+   "order": 3,
+   "steer": {
+    "target_cell": [
+     [],
+     "X",
+     "mixed"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 0.8,
+   "new_structure": false,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q13": {
+   "q": "Q13",
+   "reply": "R2",
+   "case_id": "C05",
+   "name": "Public Dock Beside Learning Island",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R1-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.167,
+     "all": {
+      "R1-S01": 0.167,
+      "R1-S02": 0.2627,
+      "R1-S03": 0.2073,
+      "R1-S04": 0.179,
+      "R1-S05": 0.2473,
+      "R2-S01": 0.2538,
+      "R2-S02": 0.2306,
+      "R2-S03": 0.201,
+      "R2-S04": 0.2612,
+      "R2-S05": 0.2581,
+      "R3-S01": 0.1894,
+      "R3-S02": 0.2127,
+      "R3-S03": 0.2704,
+      "R3-S04": 0.1731,
+      "R3-S05": 0.2192
+     },
+     "dist_prev": 0.1277
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1952,
+     "all": {
+      "R1-S01": 0.2072,
+      "R1-S02": 0.3255,
+      "R1-S03": 0.2512,
+      "R1-S04": 0.2333,
+      "R1-S05": 0.2487,
+      "R2-S01": 0.2723,
+      "R2-S02": 0.2335,
+      "R2-S03": 0.2573,
+      "R2-S04": 0.3623,
+      "R2-S05": 0.3428,
+      "R3-S01": 0.2336,
+      "R3-S02": 0.2723,
+      "R3-S03": 0.2902,
+      "R3-S04": 0.1952,
+      "R3-S05": 0.2615
+     },
+     "dist_prev": 0.1459
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1251,
+     "all": {
+      "R1-S01": 0.1278,
+      "R1-S02": 0.182,
+      "R1-S03": 0.1657,
+      "R1-S04": 0.1448,
+      "R1-S05": 0.1513,
+      "R2-S01": 0.1463,
+      "R2-S02": 0.1633,
+      "R2-S03": 0.1308,
+      "R2-S04": 0.1652,
+      "R2-S05": 0.1393,
+      "R3-S01": 0.1251,
+      "R3-S02": 0.1583,
+      "R3-S03": 0.1939,
+      "R3-S04": 0.1428,
+      "R3-S05": 0.1465
+     },
+     "dist_prev": 0.0712
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.1323,
+     "all": {
+      "R1-S01": 0.1424,
+      "R1-S02": 0.1864,
+      "R1-S03": 0.1877,
+      "R1-S04": 0.147,
+      "R1-S05": 0.1323,
+      "R2-S01": 0.1437,
+      "R2-S02": 0.1574,
+      "R2-S03": 0.1393,
+      "R2-S04": 0.2058,
+      "R2-S05": 0.1516,
+      "R3-S01": 0.1438,
+      "R3-S02": 0.2153,
+      "R3-S03": 0.1932,
+      "R3-S04": 0.1431,
+      "R3-S05": 0.1482
+     },
+     "dist_prev": 0.075
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2563,
+     "all": {
+      "R1-S01": 0.2934,
+      "R1-S02": 0.2826,
+      "R1-S03": 0.2717,
+      "R1-S04": 0.2563,
+      "R1-S05": 0.3392,
+      "R2-S01": 0.322,
+      "R2-S02": 0.2819,
+      "R2-S03": 0.2637,
+      "R2-S04": 0.3015,
+      "R2-S05": 0.3043,
+      "R3-S01": 0.3042,
+      "R3-S02": 0.3097,
+      "R3-S03": 0.328,
+      "R3-S04": 0.2584,
+      "R3-S05": 0.3082
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2545,
+     "all": {
+      "R1-S01": 0.3189,
+      "R1-S02": 0.3189,
+      "R1-S03": 0.2981,
+      "R1-S04": 0.2788,
+      "R1-S05": 0.3817,
+      "R2-S01": 0.3222,
+      "R2-S02": 0.2842,
+      "R2-S03": 0.284,
+      "R2-S04": 0.3572,
+      "R2-S05": 0.3272,
+      "R3-S01": 0.3198,
+      "R3-S02": 0.3506,
+      "R3-S03": 0.3565,
+      "R3-S04": 0.2545,
+      "R3-S05": 0.3344
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.368,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.333,
+    "heights": 0.667,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.286
+   },
+   "arm": "A",
+   "chat": 1,
+   "order": 4,
+   "steer": {
+    "target_cell": [
+     [
+      "CX"
+     ],
+     "L",
+     "mixed"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 1.75,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q07": {
+   "q": "Q07",
+   "reply": "R3",
+   "case_id": "C01",
+   "name": "Parallel Learning and Cultural Streets",
+   "validity": "declared",
+   "declaration_audit": [
+    {
+     "error": "mass M3 does not stand from the ground: occupied floors [1, 3]",
+     "declared_by": "The support house needs a viable second-floor allocation without splitting departments or introducing an unoccupied intermediate level."
+    }
+   ],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R1-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1569,
+     "all": {
+      "R1-S01": 0.1569,
+      "R1-S02": 0.2499,
+      "R1-S03": 0.2117,
+      "R1-S04": 0.2044,
+      "R1-S05": 0.2535,
+      "R2-S01": 0.2108,
+      "R2-S02": 0.241,
+      "R2-S03": 0.2123,
+      "R2-S04": 0.2165,
+      "R2-S05": 0.2463,
+      "R3-S01": 0.1803,
+      "R3-S02": 0.2188,
+      "R3-S03": 0.271,
+      "R3-S04": 0.2015,
+      "R3-S05": 0.2246
+     },
+     "dist_prev": 0.1386
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1904,
+     "all": {
+      "R1-S01": 0.1904,
+      "R1-S02": 0.2643,
+      "R1-S03": 0.2569,
+      "R1-S04": 0.2396,
+      "R1-S05": 0.2435,
+      "R2-S01": 0.233,
+      "R2-S02": 0.2295,
+      "R2-S03": 0.2348,
+      "R2-S04": 0.2704,
+      "R2-S05": 0.2896,
+      "R3-S01": 0.2022,
+      "R3-S02": 0.2727,
+      "R3-S03": 0.2558,
+      "R3-S04": 0.2074,
+      "R3-S05": 0.2558
+     },
+     "dist_prev": 0.1529
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.1149,
+     "all": {
+      "R1-S01": 0.125,
+      "R1-S02": 0.1869,
+      "R1-S03": 0.1751,
+      "R1-S04": 0.1763,
+      "R1-S05": 0.1631,
+      "R2-S01": 0.1595,
+      "R2-S02": 0.1775,
+      "R2-S03": 0.134,
+      "R2-S04": 0.1149,
+      "R2-S05": 0.1401,
+      "R3-S01": 0.1333,
+      "R3-S02": 0.1685,
+      "R3-S03": 0.1822,
+      "R3-S04": 0.1457,
+      "R3-S05": 0.1432
+     },
+     "dist_prev": 0.0982
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.1237,
+     "all": {
+      "R1-S01": 0.1418,
+      "R1-S02": 0.1738,
+      "R1-S03": 0.185,
+      "R1-S04": 0.1833,
+      "R1-S05": 0.1496,
+      "R2-S01": 0.1637,
+      "R2-S02": 0.1827,
+      "R2-S03": 0.1383,
+      "R2-S04": 0.1237,
+      "R2-S05": 0.1534,
+      "R3-S01": 0.146,
+      "R3-S02": 0.2105,
+      "R3-S03": 0.1573,
+      "R3-S04": 0.1538,
+      "R3-S05": 0.1469
+     },
+     "dist_prev": 0.1062
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.2125,
+     "all": {
+      "R1-S01": 0.277,
+      "R1-S02": 0.2597,
+      "R1-S03": 0.3227,
+      "R1-S04": 0.2953,
+      "R1-S05": 0.3206,
+      "R2-S01": 0.3352,
+      "R2-S02": 0.3049,
+      "R2-S03": 0.3109,
+      "R2-S04": 0.2125,
+      "R2-S05": 0.3345,
+      "R3-S01": 0.309,
+      "R3-S02": 0.3261,
+      "R3-S03": 0.3077,
+      "R3-S04": 0.2905,
+      "R3-S05": 0.3261
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.2552,
+     "all": {
+      "R1-S01": 0.2964,
+      "R1-S02": 0.2779,
+      "R1-S03": 0.3751,
+      "R1-S04": 0.3154,
+      "R1-S05": 0.3544,
+      "R2-S01": 0.3526,
+      "R2-S02": 0.3222,
+      "R2-S03": 0.3573,
+      "R2-S04": 0.2552,
+      "R2-S05": 0.3723,
+      "R3-S01": 0.3296,
+      "R3-S02": 0.3753,
+      "R3-S03": 0.3277,
+      "R3-S04": 0.3004,
+      "R3-S05": 0.3753
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.421,
+    "special_education": 0.0,
+    "placement": 0.2,
+    "links": 0.333,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.105,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 2,
+   "order": 5,
+   "steer": {
+    "direction": {
+     "type": "away",
+     "seeds": [
+      "R1-S02",
+      "R3-S03"
+     ]
+    },
+    "hit": true,
+    "nearest5": [
+     "R2-S04",
+     "R1-S02",
+     "R1-S01",
+     "R3-S04",
+     "R1-S04"
+    ]
+   },
+   "struct_change_to_prev": 0.8,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q24": {
+   "q": "Q24",
+   "reply": "R3",
+   "case_id": "C02",
+   "name": "Learning Threshold and Community Porch",
+   "validity": "declared",
+   "declaration_audit": [
+    {
+     "error": "mass M3 does not stand from the ground: occupied floors [1, 3]",
+     "declared_by": "The arrival house lacks a scheduled second-floor department between ground-floor services and the reading crown."
+    }
+   ],
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.25,
+   "struct_nearest_archive": "R1-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1277,
+     "all": {
+      "R1-S01": 0.1277,
+      "R1-S02": 0.2641,
+      "R1-S03": 0.173,
+      "R1-S04": 0.1384,
+      "R1-S05": 0.1965,
+      "R2-S01": 0.1898,
+      "R2-S02": 0.2224,
+      "R2-S03": 0.2065,
+      "R2-S04": 0.2386,
+      "R2-S05": 0.2144,
+      "R3-S01": 0.1586,
+      "R3-S02": 0.1847,
+      "R3-S03": 0.2726,
+      "R3-S04": 0.1714,
+      "R3-S05": 0.2011
+     },
+     "dist_prev": 0.1026
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1966,
+     "all": {
+      "R1-S01": 0.1966,
+      "R1-S02": 0.3043,
+      "R1-S03": 0.23,
+      "R1-S04": 0.2137,
+      "R1-S05": 0.201,
+      "R2-S01": 0.2379,
+      "R2-S02": 0.2126,
+      "R2-S03": 0.2559,
+      "R2-S04": 0.3467,
+      "R2-S05": 0.3139,
+      "R3-S01": 0.2152,
+      "R3-S02": 0.2249,
+      "R3-S03": 0.2452,
+      "R3-S04": 0.2006,
+      "R3-S05": 0.2665
+     },
+     "dist_prev": 0.1521
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.0891,
+     "all": {
+      "R1-S01": 0.0955,
+      "R1-S02": 0.1608,
+      "R1-S03": 0.1364,
+      "R1-S04": 0.0891,
+      "R1-S05": 0.1334,
+      "R2-S01": 0.1022,
+      "R2-S02": 0.1539,
+      "R2-S03": 0.124,
+      "R2-S04": 0.1492,
+      "R2-S05": 0.1139,
+      "R3-S01": 0.1054,
+      "R3-S02": 0.1329,
+      "R3-S03": 0.1753,
+      "R3-S04": 0.1322,
+      "R3-S05": 0.1444
+     },
+     "dist_prev": 0.1051
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.0977,
+     "all": {
+      "R1-S01": 0.1223,
+      "R1-S02": 0.1671,
+      "R1-S03": 0.1418,
+      "R1-S04": 0.0977,
+      "R1-S05": 0.12,
+      "R2-S01": 0.1161,
+      "R2-S02": 0.1436,
+      "R2-S03": 0.1323,
+      "R2-S04": 0.1792,
+      "R2-S05": 0.1401,
+      "R3-S01": 0.1283,
+      "R3-S02": 0.1552,
+      "R3-S03": 0.1489,
+      "R3-S04": 0.134,
+      "R3-S05": 0.1484
+     },
+     "dist_prev": 0.1037
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2,
+     "all": {
+      "R1-S01": 0.2432,
+      "R1-S02": 0.2844,
+      "R1-S03": 0.2624,
+      "R1-S04": 0.2102,
+      "R1-S05": 0.2985,
+      "R2-S01": 0.2,
+      "R2-S02": 0.2735,
+      "R2-S03": 0.2823,
+      "R2-S04": 0.2684,
+      "R2-S05": 0.2391,
+      "R3-S01": 0.2727,
+      "R3-S02": 0.2863,
+      "R3-S03": 0.2903,
+      "R3-S04": 0.2472,
+      "R3-S05": 0.3135
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2366,
+     "all": {
+      "R1-S01": 0.2861,
+      "R1-S02": 0.3284,
+      "R1-S03": 0.2977,
+      "R1-S04": 0.2394,
+      "R1-S05": 0.3467,
+      "R2-S01": 0.2366,
+      "R2-S02": 0.2909,
+      "R2-S03": 0.3167,
+      "R2-S04": 0.322,
+      "R2-S05": 0.2837,
+      "R3-S01": 0.2986,
+      "R3-S02": 0.307,
+      "R3-S03": 0.3212,
+      "R3-S04": 0.2558,
+      "R3-S05": 0.3473
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.0,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 2,
+   "order": 6,
+   "steer": {
+    "direction": {
+     "type": "develop",
+     "seed": "R2-S01"
+    },
+    "hit": false,
+    "nearest5": [
+     "R2-S01",
+     "R1-S04",
+     "R2-S05",
+     "R1-S01",
+     "R3-S04"
+    ]
+   },
+   "struct_change_to_prev": 1.2,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q08": {
+   "q": "Q08",
+   "reply": "R3",
+   "case_id": "C03",
+   "name": "Separated Learning Houses and Commons",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.25,
+   "struct_nearest_archive": "R1-S02",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1288,
+     "all": {
+      "R1-S01": 0.1682,
+      "R1-S02": 0.2779,
+      "R1-S03": 0.2034,
+      "R1-S04": 0.1769,
+      "R1-S05": 0.2113,
+      "R2-S01": 0.2579,
+      "R2-S02": 0.245,
+      "R2-S03": 0.1798,
+      "R2-S04": 0.2535,
+      "R2-S05": 0.2341,
+      "R3-S01": 0.2068,
+      "R3-S02": 0.1824,
+      "R3-S03": 0.2701,
+      "R3-S04": 0.1288,
+      "R3-S05": 0.2113
+     },
+     "dist_prev": 0.1055
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.143,
+     "all": {
+      "R1-S01": 0.1936,
+      "R1-S02": 0.306,
+      "R1-S03": 0.2491,
+      "R1-S04": 0.215,
+      "R1-S05": 0.2021,
+      "R2-S01": 0.2596,
+      "R2-S02": 0.2108,
+      "R2-S03": 0.2152,
+      "R2-S04": 0.3082,
+      "R2-S05": 0.2987,
+      "R3-S01": 0.2139,
+      "R3-S02": 0.2254,
+      "R3-S03": 0.2408,
+      "R3-S04": 0.143,
+      "R3-S05": 0.2411
+     },
+     "dist_prev": 0.113
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.1049,
+     "all": {
+      "R1-S01": 0.1294,
+      "R1-S02": 0.1634,
+      "R1-S03": 0.1646,
+      "R1-S04": 0.1049,
+      "R1-S05": 0.1361,
+      "R2-S01": 0.1498,
+      "R2-S02": 0.1723,
+      "R2-S03": 0.1317,
+      "R2-S04": 0.156,
+      "R2-S05": 0.134,
+      "R3-S01": 0.1352,
+      "R3-S02": 0.1422,
+      "R3-S03": 0.1856,
+      "R3-S04": 0.1222,
+      "R3-S05": 0.1614
+     },
+     "dist_prev": 0.0552
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.1184,
+     "all": {
+      "R1-S01": 0.1552,
+      "R1-S02": 0.1748,
+      "R1-S03": 0.1755,
+      "R1-S04": 0.1184,
+      "R1-S05": 0.1249,
+      "R2-S01": 0.1417,
+      "R2-S02": 0.1537,
+      "R2-S03": 0.136,
+      "R2-S04": 0.1882,
+      "R2-S05": 0.1428,
+      "R3-S01": 0.1502,
+      "R3-S02": 0.1859,
+      "R3-S03": 0.1617,
+      "R3-S04": 0.1206,
+      "R3-S05": 0.1594
+     },
+     "dist_prev": 0.0623
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1843,
+     "all": {
+      "R1-S01": 0.2299,
+      "R1-S02": 0.2802,
+      "R1-S03": 0.2583,
+      "R1-S04": 0.2114,
+      "R1-S05": 0.2758,
+      "R2-S01": 0.288,
+      "R2-S02": 0.2745,
+      "R2-S03": 0.2627,
+      "R2-S04": 0.2683,
+      "R2-S05": 0.2794,
+      "R3-S01": 0.2727,
+      "R3-S02": 0.2739,
+      "R3-S03": 0.297,
+      "R3-S04": 0.1843,
+      "R3-S05": 0.2932
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1842,
+     "all": {
+      "R1-S01": 0.2552,
+      "R1-S02": 0.3118,
+      "R1-S03": 0.2965,
+      "R1-S04": 0.2275,
+      "R1-S05": 0.3245,
+      "R2-S01": 0.3042,
+      "R2-S02": 0.2643,
+      "R2-S03": 0.269,
+      "R2-S04": 0.2898,
+      "R2-S05": 0.2913,
+      "R3-S01": 0.2827,
+      "R3-S02": 0.3122,
+      "R3-S03": 0.3204,
+      "R3-S04": 0.1842,
+      "R3-S05": 0.2963
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 0.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 2,
+   "order": 7,
+   "steer": {
+    "direction": {
+     "type": "away",
+     "seeds": [
+      "R1-S05",
+      "R2-S04"
+     ]
+    },
+    "hit": true,
+    "nearest5": [
+     "R3-S04",
+     "R1-S04",
+     "R1-S01",
+     "R1-S03",
+     "R2-S03"
+    ]
+   },
+   "struct_change_to_prev": 1.2,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q26": {
+   "q": "Q26",
+   "reply": "R3",
+   "case_id": "C04",
+   "name": "School Spine and Cultural Satellite",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [],
+    "L",
+    "low"
+   ],
+   "struct_change_to_archive": 1.2,
+   "struct_nearest_archive": "R2-S03",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R3-S05",
+     "dist": 0.1733,
+     "all": {
+      "R1-S01": 0.1885,
+      "R1-S02": 0.1962,
+      "R1-S03": 0.2403,
+      "R1-S04": 0.2231,
+      "R1-S05": 0.2156,
+      "R2-S01": 0.2876,
+      "R2-S02": 0.2375,
+      "R2-S03": 0.2078,
+      "R2-S04": 0.2822,
+      "R2-S05": 0.2476,
+      "R3-S01": 0.2035,
+      "R3-S02": 0.1909,
+      "R3-S03": 0.2289,
+      "R3-S04": 0.1812,
+      "R3-S05": 0.1733
+     },
+     "dist_prev": 0.1169
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1851,
+     "all": {
+      "R1-S01": 0.2014,
+      "R1-S02": 0.2119,
+      "R1-S03": 0.2491,
+      "R1-S04": 0.2294,
+      "R1-S05": 0.2056,
+      "R2-S01": 0.2856,
+      "R2-S02": 0.2112,
+      "R2-S03": 0.2357,
+      "R2-S04": 0.3123,
+      "R2-S05": 0.281,
+      "R3-S01": 0.2166,
+      "R3-S02": 0.232,
+      "R3-S03": 0.2315,
+      "R3-S04": 0.1851,
+      "R3-S05": 0.2232
+     },
+     "dist_prev": 0.1298
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S05",
+     "dist": 0.1217,
+     "all": {
+      "R1-S01": 0.147,
+      "R1-S02": 0.1585,
+      "R1-S03": 0.1739,
+      "R1-S04": 0.1765,
+      "R1-S05": 0.1288,
+      "R2-S01": 0.1767,
+      "R2-S02": 0.1538,
+      "R2-S03": 0.1314,
+      "R2-S04": 0.1703,
+      "R2-S05": 0.1269,
+      "R3-S01": 0.1304,
+      "R3-S02": 0.1252,
+      "R3-S03": 0.1814,
+      "R3-S04": 0.1366,
+      "R3-S05": 0.1217
+     },
+     "dist_prev": 0.0898
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.1257,
+     "all": {
+      "R1-S01": 0.1569,
+      "R1-S02": 0.1424,
+      "R1-S03": 0.1831,
+      "R1-S04": 0.1691,
+      "R1-S05": 0.1257,
+      "R2-S01": 0.1703,
+      "R2-S02": 0.1476,
+      "R2-S03": 0.1336,
+      "R2-S04": 0.2011,
+      "R2-S05": 0.13,
+      "R3-S01": 0.1391,
+      "R3-S02": 0.1722,
+      "R3-S03": 0.1706,
+      "R3-S04": 0.1398,
+      "R3-S05": 0.1354
+     },
+     "dist_prev": 0.1076
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2611,
+     "all": {
+      "R1-S01": 0.2992,
+      "R1-S02": 0.2611,
+      "R1-S03": 0.2889,
+      "R1-S04": 0.3143,
+      "R1-S05": 0.3323,
+      "R2-S01": 0.3418,
+      "R2-S02": 0.2784,
+      "R2-S03": 0.2723,
+      "R2-S04": 0.3119,
+      "R2-S05": 0.2918,
+      "R3-S01": 0.2777,
+      "R3-S02": 0.2745,
+      "R3-S03": 0.2792,
+      "R3-S04": 0.2782,
+      "R3-S05": 0.2924
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2793,
+     "all": {
+      "R1-S01": 0.3247,
+      "R1-S02": 0.2793,
+      "R1-S03": 0.327,
+      "R1-S04": 0.3356,
+      "R1-S05": 0.3733,
+      "R2-S01": 0.3633,
+      "R2-S02": 0.2873,
+      "R2-S03": 0.2912,
+      "R2-S04": 0.3526,
+      "R2-S05": 0.3105,
+      "R3-S01": 0.3028,
+      "R3-S02": 0.3312,
+      "R3-S03": 0.301,
+      "R3-S04": 0.287,
+      "R3-S05": 0.3446
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 0.0,
+    "heights": 1.0,
+    "vertical": 0.714
+   },
+   "agreement_idea": {
+    "all": 0.158,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.667,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 2,
+   "order": 8,
+   "steer": {
+    "direction": {
+     "type": "bridge",
+     "intent_of": "R1-S02",
+     "organization_of": "R2-S03"
+    },
+    "hit": true,
+    "nearest5": [
+     "R1-S02",
+     "R2-S03",
+     "R3-S02",
+     "R3-S01",
+     "R3-S04"
+    ]
+   },
+   "struct_change_to_prev": 1.45,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q02": {
+   "q": "Q02",
+   "reply": "R3",
+   "case_id": "C05",
+   "name": "Cultural Bridge Between Two Houses",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.65,
+   "struct_nearest_archive": "R1-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2041,
+     "all": {
+      "R1-S01": 0.2198,
+      "R1-S02": 0.2041,
+      "R1-S03": 0.2705,
+      "R1-S04": 0.2327,
+      "R1-S05": 0.245,
+      "R2-S01": 0.2981,
+      "R2-S02": 0.2447,
+      "R2-S03": 0.259,
+      "R2-S04": 0.2857,
+      "R2-S05": 0.2865,
+      "R3-S01": 0.2303,
+      "R3-S02": 0.2149,
+      "R3-S03": 0.2359,
+      "R3-S04": 0.2158,
+      "R3-S05": 0.2382
+     },
+     "dist_prev": 0.1124
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2279,
+     "all": {
+      "R1-S01": 0.2564,
+      "R1-S02": 0.2279,
+      "R1-S03": 0.2967,
+      "R1-S04": 0.2458,
+      "R1-S05": 0.2733,
+      "R2-S01": 0.3214,
+      "R2-S02": 0.2483,
+      "R2-S03": 0.325,
+      "R2-S04": 0.3736,
+      "R2-S05": 0.3535,
+      "R3-S01": 0.2775,
+      "R3-S02": 0.2587,
+      "R3-S03": 0.2552,
+      "R3-S04": 0.2758,
+      "R3-S05": 0.335
+     },
+     "dist_prev": 0.1561
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1329,
+     "all": {
+      "R1-S01": 0.1716,
+      "R1-S02": 0.154,
+      "R1-S03": 0.21,
+      "R1-S04": 0.1798,
+      "R1-S05": 0.1592,
+      "R2-S01": 0.1705,
+      "R2-S02": 0.1732,
+      "R2-S03": 0.1707,
+      "R2-S04": 0.1833,
+      "R2-S05": 0.1531,
+      "R3-S01": 0.1329,
+      "R3-S02": 0.1482,
+      "R3-S03": 0.176,
+      "R3-S04": 0.1645,
+      "R3-S05": 0.1524
+     },
+     "dist_prev": 0.0918
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.1386,
+     "all": {
+      "R1-S01": 0.174,
+      "R1-S02": 0.1386,
+      "R1-S03": 0.2099,
+      "R1-S04": 0.1772,
+      "R1-S05": 0.1603,
+      "R2-S01": 0.1742,
+      "R2-S02": 0.1679,
+      "R2-S03": 0.1786,
+      "R2-S04": 0.2117,
+      "R2-S05": 0.1571,
+      "R3-S01": 0.1469,
+      "R3-S02": 0.163,
+      "R3-S03": 0.1605,
+      "R3-S04": 0.1712,
+      "R3-S05": 0.1846
+     },
+     "dist_prev": 0.1043
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2042,
+     "all": {
+      "R1-S01": 0.2917,
+      "R1-S02": 0.2042,
+      "R1-S03": 0.3178,
+      "R1-S04": 0.296,
+      "R1-S05": 0.2848,
+      "R2-S01": 0.2811,
+      "R2-S02": 0.2704,
+      "R2-S03": 0.32,
+      "R2-S04": 0.2948,
+      "R2-S05": 0.2874,
+      "R3-S01": 0.2778,
+      "R3-S02": 0.2808,
+      "R3-S03": 0.2331,
+      "R3-S04": 0.2708,
+      "R3-S05": 0.2953
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2388,
+     "all": {
+      "R1-S01": 0.3291,
+      "R1-S02": 0.2388,
+      "R1-S03": 0.3576,
+      "R1-S04": 0.3354,
+      "R1-S05": 0.3508,
+      "R2-S01": 0.3248,
+      "R2-S02": 0.3044,
+      "R2-S03": 0.3846,
+      "R2-S04": 0.3464,
+      "R2-S05": 0.3324,
+      "R3-S01": 0.3301,
+      "R3-S02": 0.3214,
+      "R3-S03": 0.276,
+      "R3-S04": 0.3138,
+      "R3-S05": 0.386
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 2,
+   "order": 9,
+   "steer": {
+    "direction": {
+     "type": "develop",
+     "seed": "R1-S02"
+    },
+    "hit": false,
+    "nearest5": [
+     "R1-S02",
+     "R3-S03",
+     "R2-S02",
+     "R3-S04",
+     "R3-S01"
+    ]
+   },
+   "struct_change_to_prev": 0.4,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q30": {
+   "q": "Q30",
+   "reply": "R4",
+   "case_id": "C01",
+   "name": "Learning Spine Between Two Pavilions",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "struct_change_to_archive": 1.35,
+   "struct_nearest_archive": "R1-S03",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2203,
+     "all": {
+      "R1-S01": 0.2203,
+      "R1-S02": 0.3046,
+      "R1-S03": 0.295,
+      "R1-S04": 0.2684,
+      "R1-S05": 0.2888,
+      "R2-S01": 0.3346,
+      "R2-S02": 0.2832,
+      "R2-S03": 0.2661,
+      "R2-S04": 0.3492,
+      "R2-S05": 0.3241,
+      "R3-S01": 0.2599,
+      "R3-S02": 0.2332,
+      "R3-S03": 0.3149,
+      "R3-S04": 0.2444,
+      "R3-S05": 0.2756
+     },
+     "dist_prev": 0.1814
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2543,
+     "all": {
+      "R1-S01": 0.2543,
+      "R1-S02": 0.3344,
+      "R1-S03": 0.3147,
+      "R1-S04": 0.2747,
+      "R1-S05": 0.3122,
+      "R2-S01": 0.3459,
+      "R2-S02": 0.3249,
+      "R2-S03": 0.3612,
+      "R2-S04": 0.3658,
+      "R2-S05": 0.4129,
+      "R3-S01": 0.2909,
+      "R3-S02": 0.27,
+      "R3-S03": 0.3089,
+      "R3-S04": 0.2761,
+      "R3-S05": 0.3386
+     },
+     "dist_prev": 0.2475
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1349,
+     "all": {
+      "R1-S01": 0.1349,
+      "R1-S02": 0.1781,
+      "R1-S03": 0.1719,
+      "R1-S04": 0.1782,
+      "R1-S05": 0.1614,
+      "R2-S01": 0.1752,
+      "R2-S02": 0.1963,
+      "R2-S03": 0.1675,
+      "R2-S04": 0.1994,
+      "R2-S05": 0.1452,
+      "R3-S01": 0.1366,
+      "R3-S02": 0.149,
+      "R3-S03": 0.2024,
+      "R3-S04": 0.1554,
+      "R3-S05": 0.1539
+     },
+     "dist_prev": 0.1226
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1528,
+     "all": {
+      "R1-S01": 0.1528,
+      "R1-S02": 0.1655,
+      "R1-S03": 0.1777,
+      "R1-S04": 0.1718,
+      "R1-S05": 0.1705,
+      "R2-S01": 0.1816,
+      "R2-S02": 0.2278,
+      "R2-S03": 0.1982,
+      "R2-S04": 0.2034,
+      "R2-S05": 0.177,
+      "R3-S01": 0.1562,
+      "R3-S02": 0.1927,
+      "R3-S03": 0.1892,
+      "R3-S04": 0.1656,
+      "R3-S05": 0.1732
+     },
+     "dist_prev": 0.1529
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2465,
+     "all": {
+      "R1-S01": 0.2465,
+      "R1-S02": 0.3156,
+      "R1-S03": 0.2485,
+      "R1-S04": 0.2773,
+      "R1-S05": 0.3627,
+      "R2-S01": 0.3337,
+      "R2-S02": 0.3232,
+      "R2-S03": 0.3,
+      "R2-S04": 0.3018,
+      "R2-S05": 0.304,
+      "R3-S01": 0.258,
+      "R3-S02": 0.3197,
+      "R3-S03": 0.3151,
+      "R3-S04": 0.3092,
+      "R3-S05": 0.2869
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2838,
+     "all": {
+      "R1-S01": 0.2838,
+      "R1-S02": 0.3542,
+      "R1-S03": 0.2863,
+      "R1-S04": 0.2976,
+      "R1-S05": 0.4218,
+      "R2-S01": 0.3499,
+      "R2-S02": 0.3762,
+      "R2-S03": 0.3433,
+      "R2-S04": 0.336,
+      "R2-S05": 0.3411,
+      "R3-S01": 0.2848,
+      "R3-S02": 0.3842,
+      "R3-S03": 0.3497,
+      "R3-S04": 0.3301,
+      "R3-S05": 0.3277
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.333,
+    "heights": 0.667,
+    "vertical": 0.143
+   },
+   "arm": "J",
+   "chat": 2,
+   "order": 5,
+   "steer": {
+    "target_cell": [
+     [
+      "CL",
+      "LX"
+     ],
+     "L",
+     "low"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 0.4,
+   "new_structure": false,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q28": {
+   "q": "Q28",
+   "reply": "R4",
+   "case_id": "C02",
+   "name": "Academy Bridge to Shared Forum",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL"
+    ],
+    "X",
+    "all3"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R1-S02",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1791,
+     "all": {
+      "R1-S01": 0.1791,
+      "R1-S02": 0.2585,
+      "R1-S03": 0.2117,
+      "R1-S04": 0.2066,
+      "R1-S05": 0.1878,
+      "R2-S01": 0.2544,
+      "R2-S02": 0.214,
+      "R2-S03": 0.2248,
+      "R2-S04": 0.2591,
+      "R2-S05": 0.2488,
+      "R3-S01": 0.204,
+      "R3-S02": 0.1996,
+      "R3-S03": 0.2367,
+      "R3-S04": 0.1833,
+      "R3-S05": 0.2283
+     },
+     "dist_prev": 0.1209
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1888,
+     "all": {
+      "R1-S01": 0.1888,
+      "R1-S02": 0.294,
+      "R1-S03": 0.2416,
+      "R1-S04": 0.2488,
+      "R1-S05": 0.1925,
+      "R2-S01": 0.242,
+      "R2-S02": 0.2142,
+      "R2-S03": 0.2529,
+      "R2-S04": 0.3214,
+      "R2-S05": 0.3078,
+      "R3-S01": 0.2172,
+      "R3-S02": 0.2411,
+      "R3-S03": 0.2445,
+      "R3-S04": 0.2014,
+      "R3-S05": 0.2829
+     },
+     "dist_prev": 0.1255
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.1183,
+     "all": {
+      "R1-S01": 0.1348,
+      "R1-S02": 0.172,
+      "R1-S03": 0.1583,
+      "R1-S04": 0.1617,
+      "R1-S05": 0.1183,
+      "R2-S01": 0.1449,
+      "R2-S02": 0.1561,
+      "R2-S03": 0.1369,
+      "R2-S04": 0.1612,
+      "R2-S05": 0.1309,
+      "R3-S01": 0.13,
+      "R3-S02": 0.1312,
+      "R3-S03": 0.167,
+      "R3-S04": 0.1277,
+      "R3-S05": 0.1446
+     },
+     "dist_prev": 0.0757
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.1107,
+     "all": {
+      "R1-S01": 0.1442,
+      "R1-S02": 0.1671,
+      "R1-S03": 0.169,
+      "R1-S04": 0.1666,
+      "R1-S05": 0.1107,
+      "R2-S01": 0.1353,
+      "R2-S02": 0.143,
+      "R2-S03": 0.1416,
+      "R2-S04": 0.1919,
+      "R2-S05": 0.1349,
+      "R3-S01": 0.1358,
+      "R3-S02": 0.1632,
+      "R3-S03": 0.1589,
+      "R3-S04": 0.1226,
+      "R3-S05": 0.1642
+     },
+     "dist_prev": 0.0678
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2529,
+     "all": {
+      "R1-S01": 0.2931,
+      "R1-S02": 0.2818,
+      "R1-S03": 0.272,
+      "R1-S04": 0.288,
+      "R1-S05": 0.263,
+      "R2-S01": 0.3199,
+      "R2-S02": 0.2872,
+      "R2-S03": 0.2945,
+      "R2-S04": 0.2924,
+      "R2-S05": 0.282,
+      "R3-S01": 0.3265,
+      "R3-S02": 0.2818,
+      "R3-S03": 0.301,
+      "R3-S04": 0.2529,
+      "R3-S05": 0.3172
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2625,
+     "all": {
+      "R1-S01": 0.2977,
+      "R1-S02": 0.2998,
+      "R1-S03": 0.2998,
+      "R1-S04": 0.3051,
+      "R1-S05": 0.3158,
+      "R2-S01": 0.3248,
+      "R2-S02": 0.2971,
+      "R2-S03": 0.3277,
+      "R2-S04": 0.3299,
+      "R2-S05": 0.3138,
+      "R3-S01": 0.3278,
+      "R3-S02": 0.32,
+      "R3-S03": 0.3319,
+      "R3-S04": 0.2625,
+      "R3-S05": 0.3623
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.789,
+    "special_education": 1.0,
+    "placement": 0.8,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.0,
+    "vertical": 0.143
+   },
+   "arm": "J",
+   "chat": 2,
+   "order": 6,
+   "steer": {
+    "target_cell": [
+     [
+      "CL"
+     ],
+     "X",
+     "all3"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 1.0,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q39": {
+   "q": "Q39",
+   "reply": "R4",
+   "case_id": "C03",
+   "name": "Three Houses Around Learning Exchange",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "all3"
+   ],
+   "struct_change_to_archive": 1.05,
+   "struct_nearest_archive": "R3-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1996,
+     "all": {
+      "R1-S01": 0.1996,
+      "R1-S02": 0.2185,
+      "R1-S03": 0.2561,
+      "R1-S04": 0.2433,
+      "R1-S05": 0.2221,
+      "R2-S01": 0.3108,
+      "R2-S02": 0.2533,
+      "R2-S03": 0.2752,
+      "R2-S04": 0.2639,
+      "R2-S05": 0.2928,
+      "R3-S01": 0.2404,
+      "R3-S02": 0.2073,
+      "R3-S03": 0.224,
+      "R3-S04": 0.2123,
+      "R3-S05": 0.25
+     },
+     "dist_prev": 0.0985
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S03",
+     "dist": 0.2015,
+     "all": {
+      "R1-S01": 0.2321,
+      "R1-S02": 0.2073,
+      "R1-S03": 0.268,
+      "R1-S04": 0.2631,
+      "R1-S05": 0.2503,
+      "R2-S01": 0.3207,
+      "R2-S02": 0.2881,
+      "R2-S03": 0.3475,
+      "R2-S04": 0.3051,
+      "R2-S05": 0.4025,
+      "R3-S01": 0.2977,
+      "R3-S02": 0.2583,
+      "R3-S03": 0.2015,
+      "R3-S04": 0.2755,
+      "R3-S05": 0.3493
+     },
+     "dist_prev": 0.1594
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.1163,
+     "all": {
+      "R1-S01": 0.1458,
+      "R1-S02": 0.1586,
+      "R1-S03": 0.1954,
+      "R1-S04": 0.1871,
+      "R1-S05": 0.1427,
+      "R2-S01": 0.1695,
+      "R2-S02": 0.171,
+      "R2-S03": 0.1689,
+      "R2-S04": 0.1467,
+      "R2-S05": 0.1328,
+      "R3-S01": 0.1318,
+      "R3-S02": 0.1163,
+      "R3-S03": 0.1446,
+      "R3-S04": 0.1388,
+      "R3-S05": 0.1516
+     },
+     "dist_prev": 0.062
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S03",
+     "dist": 0.1098,
+     "all": {
+      "R1-S01": 0.1671,
+      "R1-S02": 0.1235,
+      "R1-S03": 0.2063,
+      "R1-S04": 0.1841,
+      "R1-S05": 0.1567,
+      "R2-S01": 0.1757,
+      "R2-S02": 0.1844,
+      "R2-S03": 0.2011,
+      "R2-S04": 0.1777,
+      "R2-S05": 0.1796,
+      "R3-S01": 0.1586,
+      "R3-S02": 0.1449,
+      "R3-S03": 0.1098,
+      "R3-S04": 0.1641,
+      "R3-S05": 0.1862
+     },
+     "dist_prev": 0.0875
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R3-S03",
+     "dist": 0.1928,
+     "all": {
+      "R1-S01": 0.2422,
+      "R1-S02": 0.213,
+      "R1-S03": 0.2629,
+      "R1-S04": 0.2643,
+      "R1-S05": 0.2722,
+      "R2-S01": 0.2894,
+      "R2-S02": 0.278,
+      "R2-S03": 0.3035,
+      "R2-S04": 0.257,
+      "R2-S05": 0.2544,
+      "R3-S01": 0.2486,
+      "R3-S02": 0.2432,
+      "R3-S03": 0.1928,
+      "R3-S04": 0.2503,
+      "R3-S05": 0.2921
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S03",
+     "dist": 0.2125,
+     "all": {
+      "R1-S01": 0.2598,
+      "R1-S02": 0.2152,
+      "R1-S03": 0.2844,
+      "R1-S04": 0.2743,
+      "R1-S05": 0.3281,
+      "R2-S01": 0.309,
+      "R2-S02": 0.301,
+      "R2-S03": 0.3519,
+      "R2-S04": 0.2865,
+      "R2-S05": 0.3119,
+      "R3-S01": 0.2663,
+      "R3-S02": 0.2897,
+      "R3-S03": 0.2125,
+      "R3-S04": 0.2843,
+      "R3-S05": 0.3461
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.286
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.0,
+    "vertical": 0.143
+   },
+   "arm": "J",
+   "chat": 2,
+   "order": 7,
+   "steer": {
+    "target_cell": [
+     [
+      "CL",
+      "CX",
+      "LX"
+     ],
+     "L",
+     "all3"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 1.45,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q12": {
+   "q": "Q12",
+   "reply": "R4",
+   "case_id": "C04",
+   "name": "Cultural Threshold Between Separate Worlds",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "all3"
+   ],
+   "struct_change_to_archive": 1.625,
+   "struct_nearest_archive": "R1-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1884,
+     "all": {
+      "R1-S01": 0.1884,
+      "R1-S02": 0.2078,
+      "R1-S03": 0.2737,
+      "R1-S04": 0.2269,
+      "R1-S05": 0.2461,
+      "R2-S01": 0.2312,
+      "R2-S02": 0.2482,
+      "R2-S03": 0.265,
+      "R2-S04": 0.2877,
+      "R2-S05": 0.2914,
+      "R3-S01": 0.1932,
+      "R3-S02": 0.2334,
+      "R3-S03": 0.2408,
+      "R3-S04": 0.2338,
+      "R3-S05": 0.2398
+     },
+     "dist_prev": 0.1057
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2429,
+     "all": {
+      "R1-S01": 0.2489,
+      "R1-S02": 0.246,
+      "R1-S03": 0.3228,
+      "R1-S04": 0.2429,
+      "R1-S05": 0.2946,
+      "R2-S01": 0.2937,
+      "R2-S02": 0.2914,
+      "R2-S03": 0.3724,
+      "R2-S04": 0.3514,
+      "R2-S05": 0.4059,
+      "R3-S01": 0.2677,
+      "R3-S02": 0.2749,
+      "R3-S03": 0.2747,
+      "R3-S04": 0.2926,
+      "R3-S05": 0.3499
+     },
+     "dist_prev": 0.1725
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1413,
+     "all": {
+      "R1-S01": 0.1714,
+      "R1-S02": 0.1894,
+      "R1-S03": 0.238,
+      "R1-S04": 0.2022,
+      "R1-S05": 0.1747,
+      "R2-S01": 0.1574,
+      "R2-S02": 0.2006,
+      "R2-S03": 0.1899,
+      "R2-S04": 0.2007,
+      "R2-S05": 0.1773,
+      "R3-S01": 0.1413,
+      "R3-S02": 0.2047,
+      "R3-S03": 0.2038,
+      "R3-S04": 0.1945,
+      "R3-S05": 0.1951
+     },
+     "dist_prev": 0.1265
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1766,
+     "all": {
+      "R1-S01": 0.2009,
+      "R1-S02": 0.1784,
+      "R1-S03": 0.2488,
+      "R1-S04": 0.2171,
+      "R1-S05": 0.1927,
+      "R2-S01": 0.2136,
+      "R2-S02": 0.2259,
+      "R2-S03": 0.2271,
+      "R2-S04": 0.2314,
+      "R2-S05": 0.2218,
+      "R3-S01": 0.1766,
+      "R3-S02": 0.2352,
+      "R3-S03": 0.2022,
+      "R3-S04": 0.2284,
+      "R3-S05": 0.243
+     },
+     "dist_prev": 0.1672
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2626,
+     "all": {
+      "R1-S01": 0.3021,
+      "R1-S02": 0.2626,
+      "R1-S03": 0.3508,
+      "R1-S04": 0.3294,
+      "R1-S05": 0.2727,
+      "R2-S01": 0.2659,
+      "R2-S02": 0.3153,
+      "R2-S03": 0.3657,
+      "R2-S04": 0.307,
+      "R2-S05": 0.3187,
+      "R3-S01": 0.3119,
+      "R3-S02": 0.3314,
+      "R3-S03": 0.2741,
+      "R3-S04": 0.3209,
+      "R3-S05": 0.3541
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.299,
+     "all": {
+      "R1-S01": 0.3309,
+      "R1-S02": 0.299,
+      "R1-S03": 0.3731,
+      "R1-S04": 0.3619,
+      "R1-S05": 0.32,
+      "R2-S01": 0.3186,
+      "R2-S02": 0.3556,
+      "R2-S03": 0.4283,
+      "R2-S04": 0.3421,
+      "R2-S05": 0.3787,
+      "R3-S01": 0.3467,
+      "R3-S02": 0.3788,
+      "R3-S03": 0.3143,
+      "R3-S04": 0.3588,
+      "R3-S05": 0.4382
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.684,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "J",
+   "chat": 2,
+   "order": 8,
+   "steer": {
+    "target_cell": [
+     [
+      "CX",
+      "LX"
+     ],
+     "C",
+     "all3"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 1.4,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": true,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q25": {
+   "q": "Q25",
+   "reply": "R4",
+   "case_id": "C05",
+   "name": "Commons Passage With Learning Retreat",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "C",
+    "low"
+   ],
+   "struct_change_to_archive": 2.35,
+   "struct_nearest_archive": "R1-S04",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1938,
+     "all": {
+      "R1-S01": 0.1938,
+      "R1-S02": 0.2181,
+      "R1-S03": 0.2441,
+      "R1-S04": 0.2239,
+      "R1-S05": 0.266,
+      "R2-S01": 0.3148,
+      "R2-S02": 0.2543,
+      "R2-S03": 0.313,
+      "R2-S04": 0.2806,
+      "R2-S05": 0.2973,
+      "R3-S01": 0.244,
+      "R3-S02": 0.2706,
+      "R3-S03": 0.2649,
+      "R3-S04": 0.2365,
+      "R3-S05": 0.2785
+     },
+     "dist_prev": 0.1402
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2089,
+     "all": {
+      "R1-S01": 0.2089,
+      "R1-S02": 0.2238,
+      "R1-S03": 0.2289,
+      "R1-S04": 0.2195,
+      "R1-S05": 0.2811,
+      "R2-S01": 0.3135,
+      "R2-S02": 0.2938,
+      "R2-S03": 0.3725,
+      "R2-S04": 0.2943,
+      "R2-S05": 0.3645,
+      "R3-S01": 0.2768,
+      "R3-S02": 0.2847,
+      "R3-S03": 0.2624,
+      "R3-S04": 0.279,
+      "R3-S05": 0.3642
+     },
+     "dist_prev": 0.163
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1297,
+     "all": {
+      "R1-S01": 0.1323,
+      "R1-S02": 0.1502,
+      "R1-S03": 0.162,
+      "R1-S04": 0.1316,
+      "R1-S05": 0.1636,
+      "R2-S01": 0.1517,
+      "R2-S02": 0.1759,
+      "R2-S03": 0.1843,
+      "R2-S04": 0.1655,
+      "R2-S05": 0.1451,
+      "R3-S01": 0.1297,
+      "R3-S02": 0.1572,
+      "R3-S03": 0.1625,
+      "R3-S04": 0.1607,
+      "R3-S05": 0.1738
+     },
+     "dist_prev": 0.0916
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.1373,
+     "all": {
+      "R1-S01": 0.1464,
+      "R1-S02": 0.1459,
+      "R1-S03": 0.1647,
+      "R1-S04": 0.1373,
+      "R1-S05": 0.163,
+      "R2-S01": 0.175,
+      "R2-S02": 0.1992,
+      "R2-S03": 0.2112,
+      "R2-S04": 0.1743,
+      "R2-S05": 0.1752,
+      "R3-S01": 0.1557,
+      "R3-S02": 0.1831,
+      "R3-S03": 0.1502,
+      "R3-S04": 0.1835,
+      "R3-S05": 0.2045
+     },
+     "dist_prev": 0.118
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2411,
+     "all": {
+      "R1-S01": 0.2503,
+      "R1-S02": 0.2411,
+      "R1-S03": 0.2815,
+      "R1-S04": 0.2849,
+      "R1-S05": 0.3249,
+      "R2-S01": 0.2466,
+      "R2-S02": 0.3163,
+      "R2-S03": 0.3759,
+      "R2-S04": 0.268,
+      "R2-S05": 0.2977,
+      "R3-S01": 0.2523,
+      "R3-S02": 0.3515,
+      "R3-S03": 0.2728,
+      "R3-S04": 0.3157,
+      "R3-S05": 0.3473
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2601,
+     "all": {
+      "R1-S01": 0.2799,
+      "R1-S02": 0.2826,
+      "R1-S03": 0.3093,
+      "R1-S04": 0.2954,
+      "R1-S05": 0.3693,
+      "R2-S01": 0.2601,
+      "R2-S02": 0.3784,
+      "R2-S03": 0.4456,
+      "R2-S04": 0.3182,
+      "R2-S05": 0.3463,
+      "R3-S01": 0.2661,
+      "R3-S02": 0.3993,
+      "R3-S03": 0.302,
+      "R3-S04": 0.3592,
+      "R3-S05": 0.4286
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.158,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.667,
+    "vertical": 0.143
+   },
+   "arm": "J",
+   "chat": 2,
+   "order": 9,
+   "steer": {
+    "target_cell": [
+     [
+      "CL",
+      "CX"
+     ],
+     "C",
+     "low"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 1.9,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q29": {
+   "q": "Q29",
+   "reply": "R5",
+   "case_id": "C01",
+   "name": "Learning Street Through Care Commons",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.05,
+   "struct_nearest_archive": "R1-S02",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1629,
+     "all": {
+      "R1-S01": 0.1629,
+      "R1-S02": 0.2689,
+      "R1-S03": 0.2505,
+      "R1-S04": 0.2033,
+      "R1-S05": 0.2319,
+      "R2-S01": 0.2691,
+      "R2-S02": 0.2302,
+      "R2-S03": 0.2523,
+      "R2-S04": 0.2705,
+      "R2-S05": 0.2517,
+      "R3-S01": 0.1893,
+      "R3-S02": 0.1978,
+      "R3-S03": 0.261,
+      "R3-S04": 0.2136,
+      "R3-S05": 0.2206
+     },
+     "dist_prev": null
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1837,
+     "all": {
+      "R1-S01": 0.1837,
+      "R1-S02": 0.3012,
+      "R1-S03": 0.2666,
+      "R1-S04": 0.2298,
+      "R1-S05": 0.2322,
+      "R2-S01": 0.2509,
+      "R2-S02": 0.2194,
+      "R2-S03": 0.288,
+      "R2-S04": 0.3289,
+      "R2-S05": 0.3177,
+      "R3-S01": 0.1988,
+      "R3-S02": 0.2463,
+      "R3-S03": 0.241,
+      "R3-S04": 0.2254,
+      "R3-S05": 0.2687
+     },
+     "dist_prev": null
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1186,
+     "all": {
+      "R1-S01": 0.1287,
+      "R1-S02": 0.1959,
+      "R1-S03": 0.1919,
+      "R1-S04": 0.1701,
+      "R1-S05": 0.1406,
+      "R2-S01": 0.1509,
+      "R2-S02": 0.1369,
+      "R2-S03": 0.1417,
+      "R2-S04": 0.1625,
+      "R2-S05": 0.1333,
+      "R3-S01": 0.1186,
+      "R3-S02": 0.1457,
+      "R3-S03": 0.1758,
+      "R3-S04": 0.1448,
+      "R3-S05": 0.1432
+     },
+     "dist_prev": null
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1215,
+     "all": {
+      "R1-S01": 0.1404,
+      "R1-S02": 0.1831,
+      "R1-S03": 0.2034,
+      "R1-S04": 0.167,
+      "R1-S05": 0.1338,
+      "R2-S01": 0.1354,
+      "R2-S02": 0.129,
+      "R2-S03": 0.137,
+      "R2-S04": 0.2062,
+      "R2-S05": 0.148,
+      "R3-S01": 0.1215,
+      "R3-S02": 0.1877,
+      "R3-S03": 0.1487,
+      "R3-S04": 0.141,
+      "R3-S05": 0.1581
+     },
+     "dist_prev": null
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2447,
+     "all": {
+      "R1-S01": 0.2523,
+      "R1-S02": 0.2922,
+      "R1-S03": 0.307,
+      "R1-S04": 0.2447,
+      "R1-S05": 0.3123,
+      "R2-S01": 0.2674,
+      "R2-S02": 0.2502,
+      "R2-S03": 0.3096,
+      "R2-S04": 0.2484,
+      "R2-S05": 0.2949,
+      "R3-S01": 0.2609,
+      "R3-S02": 0.2642,
+      "R3-S03": 0.2638,
+      "R3-S04": 0.2623,
+      "R3-S05": 0.3074
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R2-S02",
+     "dist": 0.2573,
+     "all": {
+      "R1-S01": 0.2589,
+      "R1-S02": 0.3206,
+      "R1-S03": 0.3314,
+      "R1-S04": 0.2703,
+      "R1-S05": 0.3541,
+      "R2-S01": 0.2579,
+      "R2-S02": 0.2573,
+      "R2-S03": 0.3483,
+      "R2-S04": 0.3004,
+      "R2-S05": 0.335,
+      "R3-S01": 0.2621,
+      "R3-S02": 0.3149,
+      "R3-S03": 0.2949,
+      "R3-S04": 0.2763,
+      "R3-S05": 0.3587
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "J",
+   "chat": 1,
+   "order": 0,
+   "steer": {
+    "target_cell": [
+     [
+      "CX",
+      "LX"
+     ],
+     "C",
+     "mixed"
+    ],
+    "hit": false,
+    "links_hit": true,
+    "sped_hit": false,
+    "height_hit": true
+   },
+   "struct_change_to_prev": null,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q01": {
+   "q": "Q01",
+   "reply": "R5",
+   "case_id": "C02",
+   "name": "Assembly Crossing Between Two Schools",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.65,
+   "struct_nearest_archive": "R2-S02",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.1443,
+     "all": {
+      "R1-S01": 0.1561,
+      "R1-S02": 0.2439,
+      "R1-S03": 0.2368,
+      "R1-S04": 0.1443,
+      "R1-S05": 0.1931,
+      "R2-S01": 0.2302,
+      "R2-S02": 0.192,
+      "R2-S03": 0.2189,
+      "R2-S04": 0.2343,
+      "R2-S05": 0.2571,
+      "R3-S01": 0.183,
+      "R3-S02": 0.1804,
+      "R3-S03": 0.2656,
+      "R3-S04": 0.1794,
+      "R3-S05": 0.202
+     },
+     "dist_prev": 0.0972
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1515,
+     "all": {
+      "R1-S01": 0.1515,
+      "R1-S02": 0.2592,
+      "R1-S03": 0.2707,
+      "R1-S04": 0.1633,
+      "R1-S05": 0.1926,
+      "R2-S01": 0.2104,
+      "R2-S02": 0.1689,
+      "R2-S03": 0.2342,
+      "R2-S04": 0.3063,
+      "R2-S05": 0.3065,
+      "R3-S01": 0.183,
+      "R3-S02": 0.2126,
+      "R3-S03": 0.2654,
+      "R3-S04": 0.1635,
+      "R3-S05": 0.2406
+     },
+     "dist_prev": 0.1204
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.1038,
+     "all": {
+      "R1-S01": 0.1107,
+      "R1-S02": 0.1508,
+      "R1-S03": 0.1498,
+      "R1-S04": 0.1125,
+      "R1-S05": 0.1038,
+      "R2-S01": 0.1345,
+      "R2-S02": 0.1188,
+      "R2-S03": 0.1101,
+      "R2-S04": 0.1251,
+      "R2-S05": 0.119,
+      "R3-S01": 0.1098,
+      "R3-S02": 0.1138,
+      "R3-S03": 0.1661,
+      "R3-S04": 0.1195,
+      "R3-S05": 0.1133
+     },
+     "dist_prev": 0.0787
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.0952,
+     "all": {
+      "R1-S01": 0.1162,
+      "R1-S02": 0.1456,
+      "R1-S03": 0.1632,
+      "R1-S04": 0.1113,
+      "R1-S05": 0.0952,
+      "R2-S01": 0.1271,
+      "R2-S02": 0.1078,
+      "R2-S03": 0.1042,
+      "R2-S04": 0.1739,
+      "R2-S05": 0.1264,
+      "R3-S01": 0.1098,
+      "R3-S02": 0.1607,
+      "R3-S03": 0.1572,
+      "R3-S04": 0.1128,
+      "R3-S05": 0.1208
+     },
+     "dist_prev": 0.0883
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2303,
+     "all": {
+      "R1-S01": 0.2543,
+      "R1-S02": 0.2554,
+      "R1-S03": 0.2822,
+      "R1-S04": 0.2303,
+      "R1-S05": 0.2716,
+      "R2-S01": 0.3086,
+      "R2-S02": 0.231,
+      "R2-S03": 0.2881,
+      "R2-S04": 0.2658,
+      "R2-S05": 0.2943,
+      "R3-S01": 0.2894,
+      "R3-S02": 0.2593,
+      "R3-S03": 0.3097,
+      "R3-S04": 0.245,
+      "R3-S05": 0.2992
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2463,
+     "all": {
+      "R1-S01": 0.2634,
+      "R1-S02": 0.2979,
+      "R1-S03": 0.3288,
+      "R1-S04": 0.2507,
+      "R1-S05": 0.3185,
+      "R2-S01": 0.3222,
+      "R2-S02": 0.2473,
+      "R2-S03": 0.3047,
+      "R2-S04": 0.3184,
+      "R2-S05": 0.3239,
+      "R3-S01": 0.3024,
+      "R3-S02": 0.3009,
+      "R3-S03": 0.3515,
+      "R3-S04": 0.2463,
+      "R3-S05": 0.3278
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "J",
+   "chat": 1,
+   "order": 1,
+   "steer": {
+    "target_cell": [
+     [
+      "CL",
+      "CX"
+     ],
+     "X",
+     "mixed"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 0.8,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q40": {
+   "q": "Q40",
+   "reply": "R5",
+   "case_id": "C03",
+   "name": "Learning Cloister and Separate Hall",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "struct_change_to_archive": 0.95,
+   "struct_nearest_archive": "R1-S03",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1775,
+     "all": {
+      "R1-S01": 0.1894,
+      "R1-S02": 0.222,
+      "R1-S03": 0.222,
+      "R1-S04": 0.2114,
+      "R1-S05": 0.2367,
+      "R2-S01": 0.2472,
+      "R2-S02": 0.2664,
+      "R2-S03": 0.2227,
+      "R2-S04": 0.2102,
+      "R2-S05": 0.2156,
+      "R3-S01": 0.2041,
+      "R3-S02": 0.2051,
+      "R3-S03": 0.2294,
+      "R3-S04": 0.1775,
+      "R3-S05": 0.2065
+     },
+     "dist_prev": 0.135
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.19,
+     "all": {
+      "R1-S01": 0.233,
+      "R1-S02": 0.2592,
+      "R1-S03": 0.2476,
+      "R1-S04": 0.2539,
+      "R1-S05": 0.2307,
+      "R2-S01": 0.2516,
+      "R2-S02": 0.229,
+      "R2-S03": 0.2517,
+      "R2-S04": 0.2453,
+      "R2-S05": 0.2552,
+      "R3-S01": 0.2221,
+      "R3-S02": 0.2437,
+      "R3-S03": 0.236,
+      "R3-S04": 0.19,
+      "R3-S05": 0.2469
+     },
+     "dist_prev": 0.1541
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.113,
+     "all": {
+      "R1-S01": 0.1424,
+      "R1-S02": 0.1908,
+      "R1-S03": 0.1752,
+      "R1-S04": 0.1602,
+      "R1-S05": 0.1563,
+      "R2-S01": 0.1573,
+      "R2-S02": 0.189,
+      "R2-S03": 0.144,
+      "R2-S04": 0.113,
+      "R2-S05": 0.1214,
+      "R3-S01": 0.1425,
+      "R3-S02": 0.1527,
+      "R3-S03": 0.1674,
+      "R3-S04": 0.1496,
+      "R3-S05": 0.1307
+     },
+     "dist_prev": 0.1039
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.1259,
+     "all": {
+      "R1-S01": 0.1573,
+      "R1-S02": 0.185,
+      "R1-S03": 0.1953,
+      "R1-S04": 0.166,
+      "R1-S05": 0.1447,
+      "R2-S01": 0.1601,
+      "R2-S02": 0.1761,
+      "R2-S03": 0.1474,
+      "R2-S04": 0.1259,
+      "R2-S05": 0.1318,
+      "R3-S01": 0.1459,
+      "R3-S02": 0.1862,
+      "R3-S03": 0.153,
+      "R3-S04": 0.1457,
+      "R3-S05": 0.1375
+     },
+     "dist_prev": 0.1151
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.2167,
+     "all": {
+      "R1-S01": 0.2865,
+      "R1-S02": 0.2898,
+      "R1-S03": 0.2816,
+      "R1-S04": 0.3275,
+      "R1-S05": 0.3364,
+      "R2-S01": 0.2885,
+      "R2-S02": 0.3148,
+      "R2-S03": 0.2841,
+      "R2-S04": 0.2167,
+      "R2-S05": 0.29,
+      "R3-S01": 0.3109,
+      "R3-S02": 0.3214,
+      "R3-S03": 0.3097,
+      "R3-S04": 0.2684,
+      "R3-S05": 0.322
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.2609,
+     "all": {
+      "R1-S01": 0.31,
+      "R1-S02": 0.3179,
+      "R1-S03": 0.3194,
+      "R1-S04": 0.3484,
+      "R1-S05": 0.3754,
+      "R2-S01": 0.3118,
+      "R2-S02": 0.3246,
+      "R2-S03": 0.3112,
+      "R2-S04": 0.2609,
+      "R2-S05": 0.3309,
+      "R3-S01": 0.3222,
+      "R3-S02": 0.3555,
+      "R3-S03": 0.3345,
+      "R3-S04": 0.2825,
+      "R3-S05": 0.3494
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.333,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.316,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.286
+   },
+   "arm": "J",
+   "chat": 1,
+   "order": 2,
+   "steer": {
+    "target_cell": [
+     [
+      "LX"
+     ],
+     "L",
+     "low"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 2.3,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q06": {
+   "q": "Q06",
+   "reply": "R5",
+   "case_id": "C04",
+   "name": "Three Houses Around an Outdoor Forum",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.35,
+   "struct_nearest_archive": "R3-S04",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1998,
+     "all": {
+      "R1-S01": 0.1998,
+      "R1-S02": 0.2796,
+      "R1-S03": 0.2417,
+      "R1-S04": 0.2475,
+      "R1-S05": 0.286,
+      "R2-S01": 0.2808,
+      "R2-S02": 0.2531,
+      "R2-S03": 0.2369,
+      "R2-S04": 0.2587,
+      "R2-S05": 0.2954,
+      "R3-S01": 0.2526,
+      "R3-S02": 0.2523,
+      "R3-S03": 0.2706,
+      "R3-S04": 0.249,
+      "R3-S05": 0.2916
+     },
+     "dist_prev": 0.1404
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2222,
+     "all": {
+      "R1-S01": 0.2222,
+      "R1-S02": 0.2858,
+      "R1-S03": 0.2377,
+      "R1-S04": 0.2905,
+      "R1-S05": 0.2349,
+      "R2-S01": 0.2616,
+      "R2-S02": 0.249,
+      "R2-S03": 0.2492,
+      "R2-S04": 0.2974,
+      "R2-S05": 0.3434,
+      "R3-S01": 0.2495,
+      "R3-S02": 0.2847,
+      "R3-S03": 0.2343,
+      "R3-S04": 0.2543,
+      "R3-S05": 0.3178
+     },
+     "dist_prev": 0.149
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.1254,
+     "all": {
+      "R1-S01": 0.1364,
+      "R1-S02": 0.1854,
+      "R1-S03": 0.1651,
+      "R1-S04": 0.1692,
+      "R1-S05": 0.1579,
+      "R2-S01": 0.1644,
+      "R2-S02": 0.1496,
+      "R2-S03": 0.1254,
+      "R2-S04": 0.133,
+      "R2-S05": 0.1405,
+      "R3-S01": 0.1404,
+      "R3-S02": 0.1409,
+      "R3-S03": 0.1704,
+      "R3-S04": 0.145,
+      "R3-S05": 0.1541
+     },
+     "dist_prev": 0.0778
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.122,
+     "all": {
+      "R1-S01": 0.1407,
+      "R1-S02": 0.154,
+      "R1-S03": 0.164,
+      "R1-S04": 0.1608,
+      "R1-S05": 0.1295,
+      "R2-S01": 0.1458,
+      "R2-S02": 0.1392,
+      "R2-S03": 0.122,
+      "R2-S04": 0.1534,
+      "R2-S05": 0.133,
+      "R3-S01": 0.1279,
+      "R3-S02": 0.1583,
+      "R3-S03": 0.1305,
+      "R3-S04": 0.1328,
+      "R3-S05": 0.1523
+     },
+     "dist_prev": 0.0783
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.2614,
+     "all": {
+      "R1-S01": 0.2943,
+      "R1-S02": 0.2833,
+      "R1-S03": 0.2625,
+      "R1-S04": 0.3205,
+      "R1-S05": 0.3292,
+      "R2-S01": 0.327,
+      "R2-S02": 0.3081,
+      "R2-S03": 0.2788,
+      "R2-S04": 0.2614,
+      "R2-S05": 0.3007,
+      "R3-S01": 0.3082,
+      "R3-S02": 0.302,
+      "R3-S03": 0.2856,
+      "R3-S04": 0.2699,
+      "R3-S05": 0.3361
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2797,
+     "all": {
+      "R1-S01": 0.3086,
+      "R1-S02": 0.2897,
+      "R1-S03": 0.2797,
+      "R1-S04": 0.341,
+      "R1-S05": 0.352,
+      "R2-S01": 0.3336,
+      "R2-S02": 0.3098,
+      "R2-S03": 0.3096,
+      "R2-S04": 0.3063,
+      "R2-S05": 0.319,
+      "R3-S01": 0.316,
+      "R3-S02": 0.3322,
+      "R3-S03": 0.2984,
+      "R3-S04": 0.2858,
+      "R3-S05": 0.3657
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.684,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "J",
+   "chat": 1,
+   "order": 3,
+   "steer": {
+    "target_cell": [
+     [],
+     "X",
+     "mixed"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 0.8,
+   "new_structure": false,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q38": {
+   "q": "Q38",
+   "reply": "R5",
+   "case_id": "C05",
+   "name": "Inclusive Academy With Detached Civic Pair",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.05,
+   "struct_nearest_archive": "R3-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.166,
+     "all": {
+      "R1-S01": 0.166,
+      "R1-S02": 0.2529,
+      "R1-S03": 0.2273,
+      "R1-S04": 0.1678,
+      "R1-S05": 0.1824,
+      "R2-S01": 0.241,
+      "R2-S02": 0.1954,
+      "R2-S03": 0.1992,
+      "R2-S04": 0.2244,
+      "R2-S05": 0.2348,
+      "R3-S01": 0.172,
+      "R3-S02": 0.1721,
+      "R3-S03": 0.2541,
+      "R3-S04": 0.1827,
+      "R3-S05": 0.1819
+     },
+     "dist_prev": 0.0679
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1675,
+     "all": {
+      "R1-S01": 0.1757,
+      "R1-S02": 0.2766,
+      "R1-S03": 0.2644,
+      "R1-S04": 0.1965,
+      "R1-S05": 0.2051,
+      "R2-S01": 0.228,
+      "R2-S02": 0.1774,
+      "R2-S03": 0.2266,
+      "R2-S04": 0.2997,
+      "R2-S05": 0.3027,
+      "R3-S01": 0.1675,
+      "R3-S02": 0.2396,
+      "R3-S03": 0.2699,
+      "R3-S04": 0.1799,
+      "R3-S05": 0.2336
+     },
+     "dist_prev": 0.0834
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.1021,
+     "all": {
+      "R1-S01": 0.1169,
+      "R1-S02": 0.1597,
+      "R1-S03": 0.1451,
+      "R1-S04": 0.1293,
+      "R1-S05": 0.1021,
+      "R2-S01": 0.1328,
+      "R2-S02": 0.1274,
+      "R2-S03": 0.1112,
+      "R2-S04": 0.1262,
+      "R2-S05": 0.119,
+      "R3-S01": 0.1101,
+      "R3-S02": 0.1281,
+      "R3-S03": 0.1691,
+      "R3-S04": 0.1211,
+      "R3-S05": 0.1259
+     },
+     "dist_prev": 0.0516
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.102,
+     "all": {
+      "R1-S01": 0.1352,
+      "R1-S02": 0.1646,
+      "R1-S03": 0.1703,
+      "R1-S04": 0.1462,
+      "R1-S05": 0.102,
+      "R2-S01": 0.1355,
+      "R2-S02": 0.1162,
+      "R2-S03": 0.1155,
+      "R2-S04": 0.1739,
+      "R2-S05": 0.1372,
+      "R3-S01": 0.1176,
+      "R3-S02": 0.1914,
+      "R3-S03": 0.1712,
+      "R3-S04": 0.1228,
+      "R3-S05": 0.1381
+     },
+     "dist_prev": 0.0566
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2434,
+     "all": {
+      "R1-S01": 0.2776,
+      "R1-S02": 0.2592,
+      "R1-S03": 0.2954,
+      "R1-S04": 0.2434,
+      "R1-S05": 0.2989,
+      "R2-S01": 0.3391,
+      "R2-S02": 0.2699,
+      "R2-S03": 0.2876,
+      "R2-S04": 0.2679,
+      "R2-S05": 0.304,
+      "R3-S01": 0.2872,
+      "R3-S02": 0.2872,
+      "R3-S03": 0.3001,
+      "R3-S04": 0.2867,
+      "R3-S05": 0.3329
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2508,
+     "all": {
+      "R1-S01": 0.284,
+      "R1-S02": 0.2799,
+      "R1-S03": 0.3223,
+      "R1-S04": 0.2508,
+      "R1-S05": 0.3423,
+      "R2-S01": 0.3497,
+      "R2-S02": 0.2703,
+      "R2-S03": 0.3228,
+      "R2-S04": 0.3034,
+      "R2-S05": 0.339,
+      "R3-S01": 0.2953,
+      "R3-S02": 0.3494,
+      "R3-S03": 0.3367,
+      "R3-S04": 0.2894,
+      "R3-S05": 0.3694
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "J",
+   "chat": 1,
+   "order": 4,
+   "steer": {
+    "target_cell": [
+     [
+      "CX"
+     ],
+     "L",
+     "mixed"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 2.2,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q37": {
+   "q": "Q37",
+   "reply": "R6",
+   "case_id": "C01",
+   "name": "Learning Street Between Two Destinations",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "struct_change_to_archive": 1.25,
+   "struct_nearest_archive": "R2-S05",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1617,
+     "all": {
+      "R1-S01": 0.1617,
+      "R1-S02": 0.2409,
+      "R1-S03": 0.2604,
+      "R1-S04": 0.2036,
+      "R1-S05": 0.2423,
+      "R2-S01": 0.2818,
+      "R2-S02": 0.2385,
+      "R2-S03": 0.2309,
+      "R2-S04": 0.2344,
+      "R2-S05": 0.2734,
+      "R3-S01": 0.1835,
+      "R3-S02": 0.1985,
+      "R3-S03": 0.2533,
+      "R3-S04": 0.2045,
+      "R3-S05": 0.2261
+     },
+     "dist_prev": 0.1189
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1658,
+     "all": {
+      "R1-S01": 0.1658,
+      "R1-S02": 0.2805,
+      "R1-S03": 0.2701,
+      "R1-S04": 0.1937,
+      "R1-S05": 0.2311,
+      "R2-S01": 0.2625,
+      "R2-S02": 0.278,
+      "R2-S03": 0.2529,
+      "R2-S04": 0.2708,
+      "R2-S05": 0.3259,
+      "R3-S01": 0.2164,
+      "R3-S02": 0.2213,
+      "R3-S03": 0.2546,
+      "R3-S04": 0.2029,
+      "R3-S05": 0.2688
+     },
+     "dist_prev": 0.1812
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.123,
+     "all": {
+      "R1-S01": 0.123,
+      "R1-S02": 0.167,
+      "R1-S03": 0.1985,
+      "R1-S04": 0.1629,
+      "R1-S05": 0.164,
+      "R2-S01": 0.1678,
+      "R2-S02": 0.1592,
+      "R2-S03": 0.1631,
+      "R2-S04": 0.1758,
+      "R2-S05": 0.1591,
+      "R3-S01": 0.1242,
+      "R3-S02": 0.151,
+      "R3-S03": 0.1849,
+      "R3-S04": 0.1488,
+      "R3-S05": 0.1498
+     },
+     "dist_prev": 0.0969
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1278,
+     "all": {
+      "R1-S01": 0.1278,
+      "R1-S02": 0.1746,
+      "R1-S03": 0.1949,
+      "R1-S04": 0.1462,
+      "R1-S05": 0.1626,
+      "R2-S01": 0.1479,
+      "R2-S02": 0.1802,
+      "R2-S03": 0.1568,
+      "R2-S04": 0.1933,
+      "R2-S05": 0.1612,
+      "R3-S01": 0.1322,
+      "R3-S02": 0.193,
+      "R3-S03": 0.1749,
+      "R3-S04": 0.1352,
+      "R3-S05": 0.1494
+     },
+     "dist_prev": 0.1113
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2281,
+     "all": {
+      "R1-S01": 0.2391,
+      "R1-S02": 0.2623,
+      "R1-S03": 0.2961,
+      "R1-S04": 0.2281,
+      "R1-S05": 0.3177,
+      "R2-S01": 0.3001,
+      "R2-S02": 0.2602,
+      "R2-S03": 0.322,
+      "R2-S04": 0.2727,
+      "R2-S05": 0.31,
+      "R3-S01": 0.2362,
+      "R3-S02": 0.2755,
+      "R3-S03": 0.2884,
+      "R3-S04": 0.2712,
+      "R3-S05": 0.2855
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2482,
+     "all": {
+      "R1-S01": 0.2586,
+      "R1-S02": 0.3036,
+      "R1-S03": 0.3117,
+      "R1-S04": 0.2482,
+      "R1-S05": 0.3807,
+      "R2-S01": 0.3019,
+      "R2-S02": 0.2997,
+      "R2-S03": 0.3383,
+      "R2-S04": 0.3088,
+      "R2-S05": 0.329,
+      "R3-S01": 0.2496,
+      "R3-S02": 0.3348,
+      "R3-S03": 0.3318,
+      "R3-S04": 0.2863,
+      "R3-S05": 0.3288
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.333,
+    "heights": 0.667,
+    "vertical": 0.143
+   },
+   "arm": "A",
+   "chat": 2,
+   "order": 5,
+   "steer": {
+    "target_cell": [
+     [
+      "CL",
+      "LX"
+     ],
+     "L",
+     "low"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 0.85,
+   "new_structure": false,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q05": {
+   "q": "Q05",
+   "reply": "R6",
+   "case_id": "C02",
+   "name": "Independent Inclusion House",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL"
+    ],
+    "X",
+    "all3"
+   ],
+   "struct_change_to_archive": 2.6,
+   "struct_nearest_archive": "R1-S05",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1774,
+     "all": {
+      "R1-S01": 0.2056,
+      "R1-S02": 0.2838,
+      "R1-S03": 0.2327,
+      "R1-S04": 0.2313,
+      "R1-S05": 0.1946,
+      "R2-S01": 0.2995,
+      "R2-S02": 0.1912,
+      "R2-S03": 0.2217,
+      "R2-S04": 0.2879,
+      "R2-S05": 0.2596,
+      "R3-S01": 0.2277,
+      "R3-S02": 0.181,
+      "R3-S03": 0.279,
+      "R3-S04": 0.1774,
+      "R3-S05": 0.2023
+     },
+     "dist_prev": 0.0854
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1796,
+     "all": {
+      "R1-S01": 0.2144,
+      "R1-S02": 0.3106,
+      "R1-S03": 0.2667,
+      "R1-S04": 0.2671,
+      "R1-S05": 0.2219,
+      "R2-S01": 0.2963,
+      "R2-S02": 0.1829,
+      "R2-S03": 0.2553,
+      "R2-S04": 0.3582,
+      "R2-S05": 0.3197,
+      "R3-S01": 0.2305,
+      "R3-S02": 0.2385,
+      "R3-S03": 0.2707,
+      "R3-S04": 0.1796,
+      "R3-S05": 0.2431
+     },
+     "dist_prev": 0.1
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.1115,
+     "all": {
+      "R1-S01": 0.1472,
+      "R1-S02": 0.1959,
+      "R1-S03": 0.1699,
+      "R1-S04": 0.1815,
+      "R1-S05": 0.1202,
+      "R2-S01": 0.179,
+      "R2-S02": 0.1229,
+      "R2-S03": 0.1211,
+      "R2-S04": 0.1568,
+      "R2-S05": 0.1325,
+      "R3-S01": 0.1386,
+      "R3-S02": 0.1115,
+      "R3-S03": 0.184,
+      "R3-S04": 0.1189,
+      "R3-S05": 0.1264
+     },
+     "dist_prev": 0.0501
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S02",
+     "dist": 0.1131,
+     "all": {
+      "R1-S01": 0.1639,
+      "R1-S02": 0.1837,
+      "R1-S03": 0.1995,
+      "R1-S04": 0.1822,
+      "R1-S05": 0.1227,
+      "R2-S01": 0.1762,
+      "R2-S02": 0.1131,
+      "R2-S03": 0.1278,
+      "R2-S04": 0.2186,
+      "R2-S05": 0.1561,
+      "R3-S01": 0.1425,
+      "R3-S02": 0.1758,
+      "R3-S03": 0.1737,
+      "R3-S04": 0.1186,
+      "R3-S05": 0.1394
+     },
+     "dist_prev": 0.0477
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2312,
+     "all": {
+      "R1-S01": 0.2971,
+      "R1-S02": 0.3045,
+      "R1-S03": 0.2804,
+      "R1-S04": 0.2867,
+      "R1-S05": 0.2951,
+      "R2-S01": 0.3512,
+      "R2-S02": 0.2666,
+      "R2-S03": 0.2707,
+      "R2-S04": 0.27,
+      "R2-S05": 0.292,
+      "R3-S01": 0.3215,
+      "R3-S02": 0.2553,
+      "R3-S03": 0.3009,
+      "R3-S04": 0.2312,
+      "R3-S05": 0.294
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.23,
+     "all": {
+      "R1-S01": 0.3013,
+      "R1-S02": 0.3364,
+      "R1-S03": 0.3266,
+      "R1-S04": 0.3137,
+      "R1-S05": 0.3439,
+      "R2-S01": 0.3508,
+      "R2-S02": 0.2742,
+      "R2-S03": 0.309,
+      "R2-S04": 0.319,
+      "R2-S05": 0.3221,
+      "R3-S01": 0.3272,
+      "R3-S02": 0.3024,
+      "R3-S03": 0.3265,
+      "R3-S04": 0.23,
+      "R3-S05": 0.319
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.053,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.0,
+    "vertical": 0.143
+   },
+   "arm": "A",
+   "chat": 2,
+   "order": 6,
+   "steer": {
+    "target_cell": [
+     [
+      "CL"
+     ],
+     "X",
+     "all3"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 2.7,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q14": {
+   "q": "Q14",
+   "reply": "R6",
+   "case_id": "C03",
+   "name": "Three Routes One School",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "all3"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R3-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1711,
+     "all": {
+      "R1-S01": 0.1711,
+      "R1-S02": 0.2585,
+      "R1-S03": 0.243,
+      "R1-S04": 0.23,
+      "R1-S05": 0.2389,
+      "R2-S01": 0.2884,
+      "R2-S02": 0.217,
+      "R2-S03": 0.228,
+      "R2-S04": 0.2734,
+      "R2-S05": 0.2949,
+      "R3-S01": 0.2131,
+      "R3-S02": 0.1987,
+      "R3-S03": 0.258,
+      "R3-S04": 0.2215,
+      "R3-S05": 0.2196
+     },
+     "dist_prev": 0.0925
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.168,
+     "all": {
+      "R1-S01": 0.168,
+      "R1-S02": 0.2689,
+      "R1-S03": 0.2683,
+      "R1-S04": 0.2405,
+      "R1-S05": 0.2173,
+      "R2-S01": 0.2738,
+      "R2-S02": 0.1995,
+      "R2-S03": 0.2364,
+      "R2-S04": 0.2984,
+      "R2-S05": 0.339,
+      "R3-S01": 0.1955,
+      "R3-S02": 0.2452,
+      "R3-S03": 0.2354,
+      "R3-S04": 0.2155,
+      "R3-S05": 0.2378
+     },
+     "dist_prev": 0.1197
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.112,
+     "all": {
+      "R1-S01": 0.1211,
+      "R1-S02": 0.1789,
+      "R1-S03": 0.1879,
+      "R1-S04": 0.1697,
+      "R1-S05": 0.1592,
+      "R2-S01": 0.1602,
+      "R2-S02": 0.1292,
+      "R2-S03": 0.1375,
+      "R2-S04": 0.1628,
+      "R2-S05": 0.1526,
+      "R3-S01": 0.1228,
+      "R3-S02": 0.112,
+      "R3-S03": 0.1684,
+      "R3-S04": 0.1431,
+      "R3-S05": 0.1299
+     },
+     "dist_prev": 0.0717
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1099,
+     "all": {
+      "R1-S01": 0.1309,
+      "R1-S02": 0.1657,
+      "R1-S03": 0.2009,
+      "R1-S04": 0.1665,
+      "R1-S05": 0.1446,
+      "R2-S01": 0.1565,
+      "R2-S02": 0.1257,
+      "R2-S03": 0.1356,
+      "R2-S04": 0.1889,
+      "R2-S05": 0.1642,
+      "R3-S01": 0.1099,
+      "R3-S02": 0.1586,
+      "R3-S03": 0.1515,
+      "R3-S04": 0.1347,
+      "R3-S05": 0.1377
+     },
+     "dist_prev": 0.0714
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2514,
+     "all": {
+      "R1-S01": 0.2514,
+      "R1-S02": 0.327,
+      "R1-S03": 0.2666,
+      "R1-S04": 0.289,
+      "R1-S05": 0.3371,
+      "R2-S01": 0.3215,
+      "R2-S02": 0.2749,
+      "R2-S03": 0.3002,
+      "R2-S04": 0.274,
+      "R2-S05": 0.3467,
+      "R3-S01": 0.2752,
+      "R3-S02": 0.287,
+      "R3-S03": 0.3292,
+      "R3-S04": 0.2938,
+      "R3-S05": 0.3068
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.263,
+     "all": {
+      "R1-S01": 0.263,
+      "R1-S02": 0.3479,
+      "R1-S03": 0.322,
+      "R1-S04": 0.2964,
+      "R1-S05": 0.3677,
+      "R2-S01": 0.3376,
+      "R2-S02": 0.2954,
+      "R2-S03": 0.3269,
+      "R2-S04": 0.3029,
+      "R2-S05": 0.3756,
+      "R3-S01": 0.2722,
+      "R3-S02": 0.3193,
+      "R3-S03": 0.346,
+      "R3-S04": 0.3003,
+      "R3-S05": 0.3356
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.789,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.714
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.0,
+    "vertical": 0.143
+   },
+   "arm": "A",
+   "chat": 2,
+   "order": 7,
+   "steer": {
+    "target_cell": [
+     [
+      "CL",
+      "CX",
+      "LX"
+     ],
+     "L",
+     "all3"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 1.825,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q10": {
+   "q": "Q10",
+   "reply": "R6",
+   "case_id": "C04",
+   "name": "Protected Learning Through Civic Filter",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "all3"
+   ],
+   "struct_change_to_archive": 1.425,
+   "struct_nearest_archive": "R1-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2054,
+     "all": {
+      "R1-S01": 0.2054,
+      "R1-S02": 0.2438,
+      "R1-S03": 0.2885,
+      "R1-S04": 0.2315,
+      "R1-S05": 0.2489,
+      "R2-S01": 0.2687,
+      "R2-S02": 0.2825,
+      "R2-S03": 0.2424,
+      "R2-S04": 0.2981,
+      "R2-S05": 0.2664,
+      "R3-S01": 0.2424,
+      "R3-S02": 0.2367,
+      "R3-S03": 0.2655,
+      "R3-S04": 0.221,
+      "R3-S05": 0.2556
+     },
+     "dist_prev": 0.1049
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.209,
+     "all": {
+      "R1-S01": 0.209,
+      "R1-S02": 0.2444,
+      "R1-S03": 0.3295,
+      "R1-S04": 0.2281,
+      "R1-S05": 0.2361,
+      "R2-S01": 0.3018,
+      "R2-S02": 0.2417,
+      "R2-S03": 0.2742,
+      "R2-S04": 0.3285,
+      "R2-S05": 0.3164,
+      "R3-S01": 0.2457,
+      "R3-S02": 0.2642,
+      "R3-S03": 0.2484,
+      "R3-S04": 0.2283,
+      "R3-S05": 0.2768
+     },
+     "dist_prev": 0.1285
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S05",
+     "dist": 0.1228,
+     "all": {
+      "R1-S01": 0.1365,
+      "R1-S02": 0.1825,
+      "R1-S03": 0.1992,
+      "R1-S04": 0.1775,
+      "R1-S05": 0.1462,
+      "R2-S01": 0.1486,
+      "R2-S02": 0.1847,
+      "R2-S03": 0.1405,
+      "R2-S04": 0.1653,
+      "R2-S05": 0.1228,
+      "R3-S01": 0.1304,
+      "R3-S02": 0.1523,
+      "R3-S03": 0.1891,
+      "R3-S04": 0.1413,
+      "R3-S05": 0.1494
+     },
+     "dist_prev": 0.0784
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.133,
+     "all": {
+      "R1-S01": 0.1475,
+      "R1-S02": 0.1626,
+      "R1-S03": 0.2274,
+      "R1-S04": 0.174,
+      "R1-S05": 0.143,
+      "R2-S01": 0.1607,
+      "R2-S02": 0.1733,
+      "R2-S03": 0.1489,
+      "R2-S04": 0.1913,
+      "R2-S05": 0.1389,
+      "R3-S01": 0.133,
+      "R3-S02": 0.2009,
+      "R3-S03": 0.1704,
+      "R3-S04": 0.1417,
+      "R3-S05": 0.158
+     },
+     "dist_prev": 0.0851
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R2-S05",
+     "dist": 0.2537,
+     "all": {
+      "R1-S01": 0.2794,
+      "R1-S02": 0.2651,
+      "R1-S03": 0.344,
+      "R1-S04": 0.2781,
+      "R1-S05": 0.2988,
+      "R2-S01": 0.2904,
+      "R2-S02": 0.3164,
+      "R2-S03": 0.3075,
+      "R2-S04": 0.2973,
+      "R2-S05": 0.2537,
+      "R3-S01": 0.3074,
+      "R3-S02": 0.3034,
+      "R3-S03": 0.2893,
+      "R3-S04": 0.2863,
+      "R3-S05": 0.3046
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2985,
+     "all": {
+      "R1-S01": 0.3094,
+      "R1-S02": 0.2985,
+      "R1-S03": 0.3972,
+      "R1-S04": 0.3069,
+      "R1-S05": 0.366,
+      "R2-S01": 0.333,
+      "R2-S02": 0.3341,
+      "R2-S03": 0.3708,
+      "R2-S04": 0.3513,
+      "R2-S05": 0.3042,
+      "R3-S01": 0.3258,
+      "R3-S02": 0.3478,
+      "R3-S03": 0.3179,
+      "R3-S04": 0.322,
+      "R3-S05": 0.3619
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.474,
+    "special_education": 0.0,
+    "placement": 0.2,
+    "links": 0.0,
+    "heights": 1.0,
+    "vertical": 0.714
+   },
+   "agreement_idea": {
+    "all": 0.053,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.0,
+    "vertical": 0.143
+   },
+   "arm": "A",
+   "chat": 2,
+   "order": 8,
+   "steer": {
+    "target_cell": [
+     [
+      "CX",
+      "LX"
+     ],
+     "C",
+     "all3"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 0.625,
+   "new_structure": false,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q11": {
+   "q": "Q11",
+   "reply": "R6",
+   "case_id": "C05",
+   "name": "Inclusive Commons As Shared Threshold",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "C",
+    "low"
+   ],
+   "struct_change_to_archive": 1.9,
+   "struct_nearest_archive": "R1-S04",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.1786,
+     "all": {
+      "R1-S01": 0.2046,
+      "R1-S02": 0.2706,
+      "R1-S03": 0.3132,
+      "R1-S04": 0.1786,
+      "R1-S05": 0.2676,
+      "R2-S01": 0.2849,
+      "R2-S02": 0.2127,
+      "R2-S03": 0.2504,
+      "R2-S04": 0.3046,
+      "R2-S05": 0.2992,
+      "R3-S01": 0.246,
+      "R3-S02": 0.26,
+      "R3-S03": 0.3008,
+      "R3-S04": 0.2384,
+      "R3-S05": 0.2737
+     },
+     "dist_prev": 0.1082
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1837,
+     "all": {
+      "R1-S01": 0.1837,
+      "R1-S02": 0.2834,
+      "R1-S03": 0.3265,
+      "R1-S04": 0.1903,
+      "R1-S05": 0.25,
+      "R2-S01": 0.2606,
+      "R2-S02": 0.198,
+      "R2-S03": 0.2581,
+      "R2-S04": 0.3591,
+      "R2-S05": 0.335,
+      "R3-S01": 0.2284,
+      "R3-S02": 0.3041,
+      "R3-S03": 0.2829,
+      "R3-S04": 0.2182,
+      "R3-S05": 0.2783
+     },
+     "dist_prev": 0.1399
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.113,
+     "all": {
+      "R1-S01": 0.1314,
+      "R1-S02": 0.178,
+      "R1-S03": 0.1713,
+      "R1-S04": 0.113,
+      "R1-S05": 0.134,
+      "R2-S01": 0.1445,
+      "R2-S02": 0.1459,
+      "R2-S03": 0.1289,
+      "R2-S04": 0.176,
+      "R2-S05": 0.1481,
+      "R3-S01": 0.1485,
+      "R3-S02": 0.1785,
+      "R3-S03": 0.1971,
+      "R3-S04": 0.1565,
+      "R3-S05": 0.1599
+     },
+     "dist_prev": 0.0845
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.1212,
+     "all": {
+      "R1-S01": 0.1562,
+      "R1-S02": 0.1802,
+      "R1-S03": 0.1817,
+      "R1-S04": 0.1213,
+      "R1-S05": 0.1302,
+      "R2-S01": 0.1504,
+      "R2-S02": 0.1431,
+      "R2-S03": 0.1212,
+      "R2-S04": 0.2245,
+      "R2-S05": 0.1651,
+      "R3-S01": 0.1639,
+      "R3-S02": 0.2415,
+      "R3-S03": 0.1829,
+      "R3-S04": 0.1564,
+      "R3-S05": 0.1528
+     },
+     "dist_prev": 0.1032
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2228,
+     "all": {
+      "R1-S01": 0.2729,
+      "R1-S02": 0.2807,
+      "R1-S03": 0.3221,
+      "R1-S04": 0.2228,
+      "R1-S05": 0.3141,
+      "R2-S01": 0.2761,
+      "R2-S02": 0.2339,
+      "R2-S03": 0.2879,
+      "R2-S04": 0.2439,
+      "R2-S05": 0.2856,
+      "R3-S01": 0.2919,
+      "R3-S02": 0.2994,
+      "R3-S03": 0.312,
+      "R3-S04": 0.2758,
+      "R3-S05": 0.3187
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R2-S02",
+     "dist": 0.2427,
+     "all": {
+      "R1-S01": 0.2948,
+      "R1-S02": 0.3048,
+      "R1-S03": 0.3629,
+      "R1-S04": 0.2552,
+      "R1-S05": 0.354,
+      "R2-S01": 0.3205,
+      "R2-S02": 0.2427,
+      "R2-S03": 0.3025,
+      "R2-S04": 0.309,
+      "R2-S05": 0.3258,
+      "R3-S01": 0.3064,
+      "R3-S02": 0.3616,
+      "R3-S03": 0.3286,
+      "R3-S04": 0.2936,
+      "R3-S05": 0.337
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.421,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.333,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.158,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.667,
+    "vertical": 0.143
+   },
+   "arm": "A",
+   "chat": 2,
+   "order": 9,
+   "steer": {
+    "target_cell": [
+     [
+      "CL",
+      "CX"
+     ],
+     "C",
+     "low"
+    ],
+    "hit": true,
+    "links_hit": true,
+    "sped_hit": true,
+    "height_hit": true
+   },
+   "struct_change_to_prev": 1.7,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q04": {
+   "q": "Q04",
+   "reply": "R7",
+   "case_id": "C01",
+   "name": "Paired Academies With Civic Spine",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "X",
+    "all3"
+   ],
+   "struct_change_to_archive": 1.85,
+   "struct_nearest_archive": "R1-S05",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1791,
+     "all": {
+      "R1-S01": 0.1934,
+      "R1-S02": 0.2899,
+      "R1-S03": 0.2712,
+      "R1-S04": 0.2268,
+      "R1-S05": 0.2122,
+      "R2-S01": 0.2834,
+      "R2-S02": 0.2581,
+      "R2-S03": 0.2405,
+      "R2-S04": 0.2853,
+      "R2-S05": 0.2576,
+      "R3-S01": 0.2373,
+      "R3-S02": 0.2223,
+      "R3-S03": 0.2767,
+      "R3-S04": 0.1791,
+      "R3-S05": 0.2443
+     },
+     "dist_prev": 0.0925
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1857,
+     "all": {
+      "R1-S01": 0.2108,
+      "R1-S02": 0.3273,
+      "R1-S03": 0.2896,
+      "R1-S04": 0.2577,
+      "R1-S05": 0.2197,
+      "R2-S01": 0.2938,
+      "R2-S02": 0.2444,
+      "R2-S03": 0.2737,
+      "R2-S04": 0.3412,
+      "R2-S05": 0.3258,
+      "R3-S01": 0.2501,
+      "R3-S02": 0.25,
+      "R3-S03": 0.264,
+      "R3-S04": 0.1857,
+      "R3-S05": 0.279
+     },
+     "dist_prev": 0.14
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1148,
+     "all": {
+      "R1-S01": 0.1267,
+      "R1-S02": 0.183,
+      "R1-S03": 0.1893,
+      "R1-S04": 0.1687,
+      "R1-S05": 0.1216,
+      "R2-S01": 0.1485,
+      "R2-S02": 0.1648,
+      "R2-S03": 0.141,
+      "R2-S04": 0.1661,
+      "R2-S05": 0.1152,
+      "R3-S01": 0.1281,
+      "R3-S02": 0.1328,
+      "R3-S03": 0.1873,
+      "R3-S04": 0.1148,
+      "R3-S05": 0.1542
+     },
+     "dist_prev": 0.0595
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.11,
+     "all": {
+      "R1-S01": 0.1385,
+      "R1-S02": 0.1706,
+      "R1-S03": 0.2023,
+      "R1-S04": 0.1538,
+      "R1-S05": 0.1184,
+      "R2-S01": 0.1391,
+      "R2-S02": 0.1522,
+      "R2-S03": 0.1385,
+      "R2-S04": 0.1867,
+      "R2-S05": 0.1227,
+      "R3-S01": 0.1288,
+      "R3-S02": 0.1704,
+      "R3-S03": 0.1681,
+      "R3-S04": 0.11,
+      "R3-S05": 0.1607
+     },
+     "dist_prev": 0.0618
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2572,
+     "all": {
+      "R1-S01": 0.2725,
+      "R1-S02": 0.3133,
+      "R1-S03": 0.3171,
+      "R1-S04": 0.2805,
+      "R1-S05": 0.2958,
+      "R2-S01": 0.324,
+      "R2-S02": 0.3196,
+      "R2-S03": 0.3268,
+      "R2-S04": 0.3071,
+      "R2-S05": 0.2814,
+      "R3-S01": 0.3067,
+      "R3-S02": 0.2848,
+      "R3-S03": 0.2889,
+      "R3-S04": 0.2572,
+      "R3-S05": 0.3529
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2812,
+     "all": {
+      "R1-S01": 0.2945,
+      "R1-S02": 0.339,
+      "R1-S03": 0.3413,
+      "R1-S04": 0.2895,
+      "R1-S05": 0.3471,
+      "R2-S01": 0.3341,
+      "R2-S02": 0.3264,
+      "R2-S03": 0.3395,
+      "R2-S04": 0.3385,
+      "R2-S05": 0.3176,
+      "R3-S01": 0.3188,
+      "R3-S02": 0.3423,
+      "R3-S03": 0.3003,
+      "R3-S04": 0.2812,
+      "R3-S05": 0.3839
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.333,
+    "heights": 0.667,
+    "vertical": 0.714
+   },
+   "agreement_idea": {
+    "all": 0.053,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.0,
+    "vertical": 0.143
+   },
+   "arm": "U",
+   "chat": 2,
+   "order": 5,
+   "struct_change_to_prev": 1.8,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q18": {
+   "q": "Q18",
+   "reply": "R7",
+   "case_id": "C02",
+   "name": "Library Bridge Between Separate Realms",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R1-S02",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1805,
+     "all": {
+      "R1-S01": 0.1805,
+      "R1-S02": 0.2649,
+      "R1-S03": 0.2748,
+      "R1-S04": 0.2212,
+      "R1-S05": 0.239,
+      "R2-S01": 0.2576,
+      "R2-S02": 0.2395,
+      "R2-S03": 0.2551,
+      "R2-S04": 0.2387,
+      "R2-S05": 0.2765,
+      "R3-S01": 0.2071,
+      "R3-S02": 0.2389,
+      "R3-S03": 0.3157,
+      "R3-S04": 0.2054,
+      "R3-S05": 0.259
+     },
+     "dist_prev": 0.1455
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.191,
+     "all": {
+      "R1-S01": 0.191,
+      "R1-S02": 0.2815,
+      "R1-S03": 0.3006,
+      "R1-S04": 0.2469,
+      "R1-S05": 0.2391,
+      "R2-S01": 0.2463,
+      "R2-S02": 0.2409,
+      "R2-S03": 0.2655,
+      "R2-S04": 0.3379,
+      "R2-S05": 0.306,
+      "R3-S01": 0.2237,
+      "R3-S02": 0.2757,
+      "R3-S03": 0.3241,
+      "R3-S04": 0.2194,
+      "R3-S05": 0.2813
+     },
+     "dist_prev": 0.1613
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1235,
+     "all": {
+      "R1-S01": 0.1403,
+      "R1-S02": 0.1756,
+      "R1-S03": 0.2127,
+      "R1-S04": 0.177,
+      "R1-S05": 0.1676,
+      "R2-S01": 0.1483,
+      "R2-S02": 0.1867,
+      "R2-S03": 0.1701,
+      "R2-S04": 0.1686,
+      "R2-S05": 0.1479,
+      "R3-S01": 0.1235,
+      "R3-S02": 0.1721,
+      "R3-S03": 0.2159,
+      "R3-S04": 0.1499,
+      "R3-S05": 0.168
+     },
+     "dist_prev": 0.1248
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1267,
+     "all": {
+      "R1-S01": 0.1352,
+      "R1-S02": 0.1641,
+      "R1-S03": 0.2169,
+      "R1-S04": 0.1697,
+      "R1-S05": 0.1559,
+      "R2-S01": 0.1471,
+      "R2-S02": 0.1841,
+      "R2-S03": 0.162,
+      "R2-S04": 0.2081,
+      "R2-S05": 0.1434,
+      "R3-S01": 0.1267,
+      "R3-S02": 0.1977,
+      "R3-S03": 0.2117,
+      "R3-S04": 0.1433,
+      "R3-S05": 0.1683
+     },
+     "dist_prev": 0.1197
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S04",
+     "dist": 0.2497,
+     "all": {
+      "R1-S01": 0.2701,
+      "R1-S02": 0.2565,
+      "R1-S03": 0.3156,
+      "R1-S04": 0.2497,
+      "R1-S05": 0.2992,
+      "R2-S01": 0.2789,
+      "R2-S02": 0.2826,
+      "R2-S03": 0.3318,
+      "R2-S04": 0.2959,
+      "R2-S05": 0.2932,
+      "R3-S01": 0.2837,
+      "R3-S02": 0.3184,
+      "R3-S03": 0.3416,
+      "R3-S04": 0.2504,
+      "R3-S05": 0.334
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2619,
+     "all": {
+      "R1-S01": 0.2808,
+      "R1-S02": 0.2899,
+      "R1-S03": 0.3314,
+      "R1-S04": 0.265,
+      "R1-S05": 0.3492,
+      "R2-S01": 0.3044,
+      "R2-S02": 0.3125,
+      "R2-S03": 0.3299,
+      "R2-S04": 0.331,
+      "R2-S05": 0.3027,
+      "R3-S01": 0.3045,
+      "R3-S02": 0.3522,
+      "R3-S03": 0.38,
+      "R3-S04": 0.2619,
+      "R3-S05": 0.3573
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.632,
+    "special_education": 0.0,
+    "placement": 0.6,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.714
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "U",
+   "chat": 2,
+   "order": 6,
+   "struct_change_to_prev": 1.2,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q17": {
+   "q": "Q17",
+   "reply": "R7",
+   "case_id": "C03",
+   "name": "Quiet Core With Activity Satellites",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "struct_change_to_archive": 1.45,
+   "struct_nearest_archive": "R1-S05",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2165,
+     "all": {
+      "R1-S01": 0.2165,
+      "R1-S02": 0.2178,
+      "R1-S03": 0.2722,
+      "R1-S04": 0.2515,
+      "R1-S05": 0.2699,
+      "R2-S01": 0.2969,
+      "R2-S02": 0.2787,
+      "R2-S03": 0.2822,
+      "R2-S04": 0.3245,
+      "R2-S05": 0.3318,
+      "R3-S01": 0.2655,
+      "R3-S02": 0.2537,
+      "R3-S03": 0.2727,
+      "R3-S04": 0.2351,
+      "R3-S05": 0.2878
+     },
+     "dist_prev": 0.1668
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2441,
+     "all": {
+      "R1-S01": 0.2441,
+      "R1-S02": 0.2941,
+      "R1-S03": 0.3007,
+      "R1-S04": 0.2662,
+      "R1-S05": 0.2822,
+      "R2-S01": 0.368,
+      "R2-S02": 0.2823,
+      "R2-S03": 0.3503,
+      "R2-S04": 0.3741,
+      "R2-S05": 0.3995,
+      "R3-S01": 0.3062,
+      "R3-S02": 0.2708,
+      "R3-S03": 0.2979,
+      "R3-S04": 0.2694,
+      "R3-S05": 0.328
+     },
+     "dist_prev": 0.2192
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.1686,
+     "all": {
+      "R1-S01": 0.1816,
+      "R1-S02": 0.1787,
+      "R1-S03": 0.2245,
+      "R1-S04": 0.2088,
+      "R1-S05": 0.1814,
+      "R2-S01": 0.2215,
+      "R2-S02": 0.1955,
+      "R2-S03": 0.1941,
+      "R2-S04": 0.2349,
+      "R2-S05": 0.1996,
+      "R3-S01": 0.185,
+      "R3-S02": 0.1686,
+      "R3-S03": 0.2037,
+      "R3-S04": 0.1773,
+      "R3-S05": 0.1955
+     },
+     "dist_prev": 0.1289
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1777,
+     "all": {
+      "R1-S01": 0.1826,
+      "R1-S02": 0.1832,
+      "R1-S03": 0.2419,
+      "R1-S04": 0.1887,
+      "R1-S05": 0.1805,
+      "R2-S01": 0.2143,
+      "R2-S02": 0.1964,
+      "R2-S03": 0.2057,
+      "R2-S04": 0.2501,
+      "R2-S05": 0.2101,
+      "R3-S01": 0.1875,
+      "R3-S02": 0.2076,
+      "R3-S03": 0.2106,
+      "R3-S04": 0.1777,
+      "R3-S05": 0.1896
+     },
+     "dist_prev": 0.1454
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.289,
+     "all": {
+      "R1-S01": 0.3596,
+      "R1-S02": 0.3151,
+      "R1-S03": 0.3348,
+      "R1-S04": 0.3317,
+      "R1-S05": 0.3685,
+      "R2-S01": 0.3783,
+      "R2-S02": 0.3188,
+      "R2-S03": 0.337,
+      "R2-S04": 0.3499,
+      "R2-S05": 0.3586,
+      "R3-S01": 0.3427,
+      "R3-S02": 0.289,
+      "R3-S03": 0.3224,
+      "R3-S04": 0.3284,
+      "R3-S05": 0.3655
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S02",
+     "dist": 0.319,
+     "all": {
+      "R1-S01": 0.3747,
+      "R1-S02": 0.3368,
+      "R1-S03": 0.364,
+      "R1-S04": 0.3424,
+      "R1-S05": 0.4047,
+      "R2-S01": 0.3827,
+      "R2-S02": 0.3211,
+      "R2-S03": 0.3798,
+      "R2-S04": 0.3887,
+      "R2-S05": 0.3915,
+      "R3-S01": 0.3515,
+      "R3-S02": 0.319,
+      "R3-S03": 0.3389,
+      "R3-S04": 0.3436,
+      "R3-S05": 0.3751
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.737,
+    "special_education": 1.0,
+    "placement": 0.8,
+    "links": 0.333,
+    "heights": 1.0,
+    "vertical": 0.714
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.333,
+    "heights": 0.667,
+    "vertical": 0.143
+   },
+   "arm": "U",
+   "chat": 2,
+   "order": 7,
+   "struct_change_to_prev": 1.4,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": true,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": true,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": true
+  },
+  "Q34": {
+   "q": "Q34",
+   "reply": "R7",
+   "case_id": "C04",
+   "name": "Independent Commons With Twin Schools",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.05,
+   "struct_nearest_archive": "R3-S05",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2033,
+     "all": {
+      "R1-S01": 0.2261,
+      "R1-S02": 0.2496,
+      "R1-S03": 0.3012,
+      "R1-S04": 0.2507,
+      "R1-S05": 0.2262,
+      "R2-S01": 0.3223,
+      "R2-S02": 0.2466,
+      "R2-S03": 0.2647,
+      "R2-S04": 0.3176,
+      "R2-S05": 0.3055,
+      "R3-S01": 0.2686,
+      "R3-S02": 0.2254,
+      "R3-S03": 0.2687,
+      "R3-S04": 0.2033,
+      "R3-S05": 0.2635
+     },
+     "dist_prev": 0.1161
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1964,
+     "all": {
+      "R1-S01": 0.2066,
+      "R1-S02": 0.2563,
+      "R1-S03": 0.311,
+      "R1-S04": 0.2452,
+      "R1-S05": 0.2093,
+      "R2-S01": 0.299,
+      "R2-S02": 0.2146,
+      "R2-S03": 0.2934,
+      "R2-S04": 0.3374,
+      "R2-S05": 0.3439,
+      "R3-S01": 0.252,
+      "R3-S02": 0.2483,
+      "R3-S03": 0.2409,
+      "R3-S04": 0.1964,
+      "R3-S05": 0.2958
+     },
+     "dist_prev": 0.1379
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.1429,
+     "all": {
+      "R1-S01": 0.1578,
+      "R1-S02": 0.1985,
+      "R1-S03": 0.2085,
+      "R1-S04": 0.2135,
+      "R1-S05": 0.1629,
+      "R2-S01": 0.205,
+      "R2-S02": 0.1823,
+      "R2-S03": 0.1541,
+      "R2-S04": 0.194,
+      "R2-S05": 0.1709,
+      "R3-S01": 0.1641,
+      "R3-S02": 0.1533,
+      "R3-S03": 0.1931,
+      "R3-S04": 0.1429,
+      "R3-S05": 0.1608
+     },
+     "dist_prev": 0.0923
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.142,
+     "all": {
+      "R1-S01": 0.1609,
+      "R1-S02": 0.1826,
+      "R1-S03": 0.2201,
+      "R1-S04": 0.1977,
+      "R1-S05": 0.142,
+      "R2-S01": 0.1923,
+      "R2-S02": 0.155,
+      "R2-S03": 0.1484,
+      "R2-S04": 0.223,
+      "R2-S05": 0.1767,
+      "R3-S01": 0.1529,
+      "R3-S02": 0.1977,
+      "R3-S03": 0.1779,
+      "R3-S04": 0.1421,
+      "R3-S05": 0.1614
+     },
+     "dist_prev": 0.0979
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.2737,
+     "all": {
+      "R1-S01": 0.275,
+      "R1-S02": 0.321,
+      "R1-S03": 0.3402,
+      "R1-S04": 0.3092,
+      "R1-S05": 0.2737,
+      "R2-S01": 0.3581,
+      "R2-S02": 0.3217,
+      "R2-S03": 0.3269,
+      "R2-S04": 0.3056,
+      "R2-S05": 0.3398,
+      "R3-S01": 0.3175,
+      "R3-S02": 0.2889,
+      "R3-S03": 0.3012,
+      "R3-S04": 0.2785,
+      "R3-S05": 0.3152
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2824,
+     "all": {
+      "R1-S01": 0.2899,
+      "R1-S02": 0.3571,
+      "R1-S03": 0.3989,
+      "R1-S04": 0.3339,
+      "R1-S05": 0.3198,
+      "R2-S01": 0.3696,
+      "R2-S02": 0.34,
+      "R2-S03": 0.3611,
+      "R2-S04": 0.3464,
+      "R2-S05": 0.3834,
+      "R3-S01": 0.3288,
+      "R3-S02": 0.3406,
+      "R3-S03": 0.3249,
+      "R3-S04": 0.2824,
+      "R3-S05": 0.3476
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.526,
+    "special_education": 0.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "U",
+   "chat": 2,
+   "order": 8,
+   "struct_change_to_prev": 0.5,
+   "new_structure": false,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q03": {
+   "q": "Q03",
+   "reply": "R7",
+   "case_id": "C05",
+   "name": "Cultural Threshold And Learning Pair",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.35,
+   "struct_nearest_archive": "R3-S05",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1827,
+     "all": {
+      "R1-S01": 0.1898,
+      "R1-S02": 0.2529,
+      "R1-S03": 0.2929,
+      "R1-S04": 0.203,
+      "R1-S05": 0.2731,
+      "R2-S01": 0.2052,
+      "R2-S02": 0.2525,
+      "R2-S03": 0.2808,
+      "R2-S04": 0.3228,
+      "R2-S05": 0.3255,
+      "R3-S01": 0.1827,
+      "R3-S02": 0.2439,
+      "R3-S03": 0.2895,
+      "R3-S04": 0.2409,
+      "R3-S05": 0.255
+     },
+     "dist_prev": 0.1156
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.2111,
+     "all": {
+      "R1-S01": 0.2377,
+      "R1-S02": 0.3068,
+      "R1-S03": 0.3453,
+      "R1-S04": 0.2399,
+      "R1-S05": 0.3243,
+      "R2-S01": 0.2272,
+      "R2-S02": 0.2649,
+      "R2-S03": 0.3497,
+      "R2-S04": 0.4016,
+      "R2-S05": 0.3888,
+      "R3-S01": 0.2111,
+      "R3-S02": 0.287,
+      "R3-S03": 0.3177,
+      "R3-S04": 0.2942,
+      "R3-S05": 0.3101
+     },
+     "dist_prev": 0.1644
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.1197,
+     "all": {
+      "R1-S01": 0.1583,
+      "R1-S02": 0.1852,
+      "R1-S03": 0.2259,
+      "R1-S04": 0.1785,
+      "R1-S05": 0.1863,
+      "R2-S01": 0.1293,
+      "R2-S02": 0.1904,
+      "R2-S03": 0.1789,
+      "R2-S04": 0.2201,
+      "R2-S05": 0.1702,
+      "R3-S01": 0.1197,
+      "R3-S02": 0.1828,
+      "R3-S03": 0.2145,
+      "R3-S04": 0.1782,
+      "R3-S05": 0.1981
+     },
+     "dist_prev": 0.101
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R3-S01",
+     "dist": 0.148,
+     "all": {
+      "R1-S01": 0.1816,
+      "R1-S02": 0.1974,
+      "R1-S03": 0.246,
+      "R1-S04": 0.1958,
+      "R1-S05": 0.1985,
+      "R2-S01": 0.1605,
+      "R2-S02": 0.1882,
+      "R2-S03": 0.1946,
+      "R2-S04": 0.2683,
+      "R2-S05": 0.1964,
+      "R3-S01": 0.148,
+      "R3-S02": 0.2392,
+      "R3-S03": 0.225,
+      "R3-S04": 0.1995,
+      "R3-S05": 0.2276
+     },
+     "dist_prev": 0.1235
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.212,
+     "all": {
+      "R1-S01": 0.2953,
+      "R1-S02": 0.3022,
+      "R1-S03": 0.3441,
+      "R1-S04": 0.2738,
+      "R1-S05": 0.3514,
+      "R2-S01": 0.212,
+      "R2-S02": 0.3008,
+      "R2-S03": 0.3451,
+      "R2-S04": 0.3366,
+      "R2-S05": 0.3053,
+      "R3-S01": 0.2607,
+      "R3-S02": 0.3073,
+      "R3-S03": 0.3274,
+      "R3-S04": 0.2874,
+      "R3-S05": 0.3195
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2778,
+     "all": {
+      "R1-S01": 0.3334,
+      "R1-S02": 0.3498,
+      "R1-S03": 0.3836,
+      "R1-S04": 0.3147,
+      "R1-S05": 0.4288,
+      "R2-S01": 0.2778,
+      "R2-S02": 0.3328,
+      "R2-S03": 0.3973,
+      "R2-S04": 0.3774,
+      "R2-S05": 0.3476,
+      "R3-S01": 0.3053,
+      "R3-S02": 0.3599,
+      "R3-S03": 0.3823,
+      "R3-S04": 0.3261,
+      "R3-S05": 0.375
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 0.0,
+    "heights": 0.667,
+    "vertical": 0.714
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.4,
+    "links": 0.0,
+    "heights": 0.333,
+    "vertical": 0.286
+   },
+   "arm": "U",
+   "chat": 2,
+   "order": 9,
+   "struct_change_to_prev": 1.2,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q27": {
+   "q": "Q27",
+   "reply": "R8",
+   "case_id": "C01",
+   "name": "Parallel Learning and Community Streets",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.05,
+   "struct_nearest_archive": "R1-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1807,
+     "all": {
+      "R1-S01": 0.1807,
+      "R1-S02": 0.2202,
+      "R1-S03": 0.2372,
+      "R1-S04": 0.2215,
+      "R1-S05": 0.235,
+      "R2-S01": 0.2631,
+      "R2-S02": 0.24,
+      "R2-S03": 0.2301,
+      "R2-S04": 0.2803,
+      "R2-S05": 0.2912,
+      "R3-S01": 0.2125,
+      "R3-S02": 0.2078,
+      "R3-S03": 0.2384,
+      "R3-S04": 0.1965,
+      "R3-S05": 0.2269
+     },
+     "dist_prev": null
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2108,
+     "all": {
+      "R1-S01": 0.2108,
+      "R1-S02": 0.275,
+      "R1-S03": 0.2927,
+      "R1-S04": 0.2527,
+      "R1-S05": 0.2761,
+      "R2-S01": 0.3349,
+      "R2-S02": 0.2865,
+      "R2-S03": 0.3213,
+      "R2-S04": 0.3329,
+      "R2-S05": 0.3956,
+      "R3-S01": 0.271,
+      "R3-S02": 0.2697,
+      "R3-S03": 0.2653,
+      "R3-S04": 0.2595,
+      "R3-S05": 0.3313
+     },
+     "dist_prev": null
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1132,
+     "all": {
+      "R1-S01": 0.1132,
+      "R1-S02": 0.1471,
+      "R1-S03": 0.2136,
+      "R1-S04": 0.1734,
+      "R1-S05": 0.1662,
+      "R2-S01": 0.1579,
+      "R2-S02": 0.1623,
+      "R2-S03": 0.1679,
+      "R2-S04": 0.1836,
+      "R2-S05": 0.1672,
+      "R3-S01": 0.1272,
+      "R3-S02": 0.1323,
+      "R3-S03": 0.1494,
+      "R3-S04": 0.1444,
+      "R3-S05": 0.1572
+     },
+     "dist_prev": null
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1209,
+     "all": {
+      "R1-S01": 0.1209,
+      "R1-S02": 0.1464,
+      "R1-S03": 0.2294,
+      "R1-S04": 0.1787,
+      "R1-S05": 0.1618,
+      "R2-S01": 0.1825,
+      "R2-S02": 0.1766,
+      "R2-S03": 0.2016,
+      "R2-S04": 0.2186,
+      "R2-S05": 0.2129,
+      "R3-S01": 0.1479,
+      "R3-S02": 0.1648,
+      "R3-S03": 0.1565,
+      "R3-S04": 0.1807,
+      "R3-S05": 0.2058
+     },
+     "dist_prev": null
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2199,
+     "all": {
+      "R1-S01": 0.2199,
+      "R1-S02": 0.236,
+      "R1-S03": 0.2872,
+      "R1-S04": 0.2832,
+      "R1-S05": 0.2737,
+      "R2-S01": 0.3191,
+      "R2-S02": 0.312,
+      "R2-S03": 0.3376,
+      "R2-S04": 0.2916,
+      "R2-S05": 0.352,
+      "R3-S01": 0.2572,
+      "R3-S02": 0.2668,
+      "R3-S03": 0.2409,
+      "R3-S04": 0.2796,
+      "R3-S05": 0.3275
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.2248,
+     "all": {
+      "R1-S01": 0.2248,
+      "R1-S02": 0.2705,
+      "R1-S03": 0.314,
+      "R1-S04": 0.294,
+      "R1-S05": 0.3236,
+      "R2-S01": 0.3475,
+      "R2-S02": 0.3505,
+      "R2-S03": 0.3853,
+      "R2-S04": 0.3239,
+      "R2-S05": 0.3885,
+      "R3-S01": 0.2689,
+      "R3-S02": 0.3157,
+      "R3-S03": 0.2866,
+      "R3-S04": 0.3009,
+      "R3-S05": 0.393
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 1,
+   "order": 0,
+   "steer": {
+    "direction": {
+     "type": "away",
+     "seeds": [
+      "R1-S01",
+      "R1-S04",
+      "R2-S02",
+      "R3-S01",
+      "R3-S02"
+     ]
+    },
+    "hit": false,
+    "nearest5": [
+     "R1-S01",
+     "R1-S02",
+     "R3-S03",
+     "R3-S01",
+     "R3-S02"
+    ]
+   },
+   "struct_change_to_prev": null,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q22": {
+   "q": "Q22",
+   "reply": "R8",
+   "case_id": "C02",
+   "name": "Learning Tower and Care Threshold",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 1.15,
+   "struct_nearest_archive": "R3-S04",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1773,
+     "all": {
+      "R1-S01": 0.1773,
+      "R1-S02": 0.2481,
+      "R1-S03": 0.2596,
+      "R1-S04": 0.2238,
+      "R1-S05": 0.1917,
+      "R2-S01": 0.2237,
+      "R2-S02": 0.2412,
+      "R2-S03": 0.2546,
+      "R2-S04": 0.2735,
+      "R2-S05": 0.2159,
+      "R3-S01": 0.1948,
+      "R3-S02": 0.2198,
+      "R3-S03": 0.2519,
+      "R3-S04": 0.2147,
+      "R3-S05": 0.2283
+     },
+     "dist_prev": 0.1677
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1922,
+     "all": {
+      "R1-S01": 0.1922,
+      "R1-S02": 0.2717,
+      "R1-S03": 0.283,
+      "R1-S04": 0.2366,
+      "R1-S05": 0.216,
+      "R2-S01": 0.2018,
+      "R2-S02": 0.2177,
+      "R2-S03": 0.2835,
+      "R2-S04": 0.3208,
+      "R2-S05": 0.2854,
+      "R3-S01": 0.1992,
+      "R3-S02": 0.2403,
+      "R3-S03": 0.213,
+      "R3-S04": 0.2251,
+      "R3-S05": 0.2639
+     },
+     "dist_prev": 0.2297
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S05",
+     "dist": 0.1122,
+     "all": {
+      "R1-S01": 0.1429,
+      "R1-S02": 0.1978,
+      "R1-S03": 0.1805,
+      "R1-S04": 0.1835,
+      "R1-S05": 0.1124,
+      "R2-S01": 0.1385,
+      "R2-S02": 0.1648,
+      "R2-S03": 0.1395,
+      "R2-S04": 0.1788,
+      "R2-S05": 0.1122,
+      "R3-S01": 0.1261,
+      "R3-S02": 0.1677,
+      "R3-S03": 0.1937,
+      "R3-S04": 0.1481,
+      "R3-S05": 0.1535
+     },
+     "dist_prev": 0.1575
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S05",
+     "dist": 0.1135,
+     "all": {
+      "R1-S01": 0.1563,
+      "R1-S02": 0.1806,
+      "R1-S03": 0.1889,
+      "R1-S04": 0.1729,
+      "R1-S05": 0.1135,
+      "R2-S01": 0.1357,
+      "R2-S02": 0.1666,
+      "R2-S03": 0.1366,
+      "R2-S04": 0.2023,
+      "R2-S05": 0.1304,
+      "R3-S01": 0.1435,
+      "R3-S02": 0.2012,
+      "R3-S03": 0.1539,
+      "R3-S04": 0.1472,
+      "R3-S05": 0.1601
+     },
+     "dist_prev": 0.1811
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.237,
+     "all": {
+      "R1-S01": 0.3057,
+      "R1-S02": 0.2746,
+      "R1-S03": 0.3399,
+      "R1-S04": 0.2861,
+      "R1-S05": 0.2939,
+      "R2-S01": 0.237,
+      "R2-S02": 0.2847,
+      "R2-S03": 0.3194,
+      "R2-S04": 0.2922,
+      "R2-S05": 0.2372,
+      "R3-S01": 0.2989,
+      "R3-S02": 0.2881,
+      "R3-S03": 0.2865,
+      "R3-S04": 0.2854,
+      "R3-S05": 0.3098
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R2-S01",
+     "dist": 0.2595,
+     "all": {
+      "R1-S01": 0.3363,
+      "R1-S02": 0.3033,
+      "R1-S03": 0.3906,
+      "R1-S04": 0.3106,
+      "R1-S05": 0.3067,
+      "R2-S01": 0.2595,
+      "R2-S02": 0.2987,
+      "R2-S03": 0.3525,
+      "R2-S04": 0.3287,
+      "R2-S05": 0.2758,
+      "R3-S01": 0.3327,
+      "R3-S02": 0.3169,
+      "R3-S03": 0.2975,
+      "R3-S04": 0.2977,
+      "R3-S05": 0.3475
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.474,
+    "special_education": 0.0,
+    "placement": 0.2,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.105,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 1,
+   "order": 1,
+   "steer": {
+    "direction": {
+     "type": "bridge",
+     "intent_of": "R1-S05",
+     "organization_of": "R2-S01"
+    },
+    "hit": false,
+    "nearest5": [
+     "R2-S01",
+     "R2-S05",
+     "R1-S02",
+     "R2-S02",
+     "R3-S04"
+    ]
+   },
+   "struct_change_to_prev": 2.4,
+   "new_structure": true,
+   "new_structure_vs_archive_only": true,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q36": {
+   "q": "Q36",
+   "reply": "R8",
+   "case_id": "C03",
+   "name": "Linked Islands Under Separate Roofs",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R1-S03",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.173,
+     "all": {
+      "R1-S01": 0.1763,
+      "R1-S02": 0.2359,
+      "R1-S03": 0.173,
+      "R1-S04": 0.2372,
+      "R1-S05": 0.223,
+      "R2-S01": 0.2656,
+      "R2-S02": 0.2462,
+      "R2-S03": 0.2061,
+      "R2-S04": 0.2681,
+      "R2-S05": 0.2753,
+      "R3-S01": 0.202,
+      "R3-S02": 0.22,
+      "R3-S03": 0.2411,
+      "R3-S04": 0.1838,
+      "R3-S05": 0.2305
+     },
+     "dist_prev": 0.0768
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.1865,
+     "all": {
+      "R1-S01": 0.2083,
+      "R1-S02": 0.2813,
+      "R1-S03": 0.1865,
+      "R1-S04": 0.265,
+      "R1-S05": 0.2231,
+      "R2-S01": 0.3006,
+      "R2-S02": 0.2446,
+      "R2-S03": 0.257,
+      "R2-S04": 0.3295,
+      "R2-S05": 0.3602,
+      "R3-S01": 0.2636,
+      "R3-S02": 0.2713,
+      "R3-S03": 0.2471,
+      "R3-S04": 0.2268,
+      "R3-S05": 0.3004
+     },
+     "dist_prev": 0.1352
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.1117,
+     "all": {
+      "R1-S01": 0.163,
+      "R1-S02": 0.1749,
+      "R1-S03": 0.1117,
+      "R1-S04": 0.1764,
+      "R1-S05": 0.1548,
+      "R2-S01": 0.1784,
+      "R2-S02": 0.1612,
+      "R2-S03": 0.1217,
+      "R2-S04": 0.1664,
+      "R2-S05": 0.1685,
+      "R3-S01": 0.1453,
+      "R3-S02": 0.1319,
+      "R3-S03": 0.1789,
+      "R3-S04": 0.1397,
+      "R3-S05": 0.1346
+     },
+     "dist_prev": 0.0985
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.133,
+     "all": {
+      "R1-S01": 0.1691,
+      "R1-S02": 0.1693,
+      "R1-S03": 0.1372,
+      "R1-S04": 0.1735,
+      "R1-S05": 0.1421,
+      "R2-S01": 0.1844,
+      "R2-S02": 0.1521,
+      "R2-S03": 0.133,
+      "R2-S04": 0.1886,
+      "R2-S05": 0.1812,
+      "R3-S01": 0.156,
+      "R3-S02": 0.171,
+      "R3-S03": 0.1666,
+      "R3-S04": 0.1477,
+      "R3-S05": 0.148
+     },
+     "dist_prev": 0.1093
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.1624,
+     "all": {
+      "R1-S01": 0.2783,
+      "R1-S02": 0.2781,
+      "R1-S03": 0.1624,
+      "R1-S04": 0.3209,
+      "R1-S05": 0.329,
+      "R2-S01": 0.3097,
+      "R2-S02": 0.3091,
+      "R2-S03": 0.2438,
+      "R2-S04": 0.2868,
+      "R2-S05": 0.3135,
+      "R3-S01": 0.2897,
+      "R3-S02": 0.301,
+      "R3-S03": 0.3022,
+      "R3-S04": 0.2561,
+      "R3-S05": 0.285
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.1856,
+     "all": {
+      "R1-S01": 0.2899,
+      "R1-S02": 0.2925,
+      "R1-S03": 0.1856,
+      "R1-S04": 0.3317,
+      "R1-S05": 0.3581,
+      "R2-S01": 0.3215,
+      "R2-S02": 0.3095,
+      "R2-S03": 0.2629,
+      "R2-S04": 0.312,
+      "R2-S05": 0.3163,
+      "R3-S01": 0.3026,
+      "R3-S02": 0.3303,
+      "R3-S03": 0.3156,
+      "R3-S04": 0.2491,
+      "R3-S05": 0.32
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.211,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 1,
+   "order": 2,
+   "steer": {
+    "direction": {
+     "type": "develop",
+     "seed": "R1-S03"
+    },
+    "hit": false,
+    "nearest5": [
+     "R1-S03",
+     "R2-S03",
+     "R3-S04",
+     "R1-S02",
+     "R1-S01"
+    ]
+   },
+   "struct_change_to_prev": 0.8,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q15": {
+   "q": "Q15",
+   "reply": "R8",
+   "case_id": "C04",
+   "name": "Three Houses Around Shared Learning",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.45,
+   "struct_nearest_archive": "R1-S02",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1872,
+     "all": {
+      "R1-S01": 0.1872,
+      "R1-S02": 0.246,
+      "R1-S03": 0.2501,
+      "R1-S04": 0.2175,
+      "R1-S05": 0.209,
+      "R2-S01": 0.287,
+      "R2-S02": 0.2555,
+      "R2-S03": 0.2129,
+      "R2-S04": 0.2409,
+      "R2-S05": 0.2376,
+      "R3-S01": 0.2078,
+      "R3-S02": 0.1952,
+      "R3-S03": 0.2235,
+      "R3-S04": 0.1902,
+      "R3-S05": 0.2169
+     },
+     "dist_prev": 0.0879
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S01",
+     "dist": 0.1793,
+     "all": {
+      "R1-S01": 0.1793,
+      "R1-S02": 0.2613,
+      "R1-S03": 0.2541,
+      "R1-S04": 0.2315,
+      "R1-S05": 0.1926,
+      "R2-S01": 0.2729,
+      "R2-S02": 0.2198,
+      "R2-S03": 0.2269,
+      "R2-S04": 0.2706,
+      "R2-S05": 0.3033,
+      "R3-S01": 0.1962,
+      "R3-S02": 0.2383,
+      "R3-S03": 0.1936,
+      "R3-S04": 0.1928,
+      "R3-S05": 0.2564
+     },
+     "dist_prev": 0.1362
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.1172,
+     "all": {
+      "R1-S01": 0.1492,
+      "R1-S02": 0.1881,
+      "R1-S03": 0.1901,
+      "R1-S04": 0.1904,
+      "R1-S05": 0.1371,
+      "R2-S01": 0.1792,
+      "R2-S02": 0.1742,
+      "R2-S03": 0.1172,
+      "R2-S04": 0.1502,
+      "R2-S05": 0.137,
+      "R3-S01": 0.1221,
+      "R3-S02": 0.1294,
+      "R3-S03": 0.1834,
+      "R3-S04": 0.1282,
+      "R3-S05": 0.1312
+     },
+     "dist_prev": 0.0891
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R2-S03",
+     "dist": 0.1128,
+     "all": {
+      "R1-S01": 0.1565,
+      "R1-S02": 0.1657,
+      "R1-S03": 0.1994,
+      "R1-S04": 0.1817,
+      "R1-S05": 0.1361,
+      "R2-S01": 0.1721,
+      "R2-S02": 0.1637,
+      "R2-S03": 0.1128,
+      "R2-S04": 0.182,
+      "R2-S05": 0.1534,
+      "R3-S01": 0.1284,
+      "R3-S02": 0.1889,
+      "R3-S03": 0.1613,
+      "R3-S04": 0.1257,
+      "R3-S05": 0.1441
+     },
+     "dist_prev": 0.0927
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R3-S04",
+     "dist": 0.2497,
+     "all": {
+      "R1-S01": 0.2866,
+      "R1-S02": 0.2596,
+      "R1-S03": 0.2854,
+      "R1-S04": 0.2851,
+      "R1-S05": 0.2657,
+      "R2-S01": 0.3106,
+      "R2-S02": 0.3012,
+      "R2-S03": 0.2897,
+      "R2-S04": 0.2952,
+      "R2-S05": 0.2982,
+      "R3-S01": 0.2813,
+      "R3-S02": 0.2731,
+      "R3-S03": 0.2641,
+      "R3-S04": 0.2497,
+      "R3-S05": 0.306
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S02",
+     "dist": 0.2723,
+     "all": {
+      "R1-S01": 0.2874,
+      "R1-S02": 0.2723,
+      "R1-S03": 0.3045,
+      "R1-S04": 0.2984,
+      "R1-S05": 0.303,
+      "R2-S01": 0.3377,
+      "R2-S02": 0.304,
+      "R2-S03": 0.3192,
+      "R2-S04": 0.3218,
+      "R2-S05": 0.3357,
+      "R3-S01": 0.2727,
+      "R3-S02": 0.3273,
+      "R3-S03": 0.2842,
+      "R3-S04": 0.2828,
+      "R3-S05": 0.3403
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 1,
+   "order": 3,
+   "steer": {
+    "direction": {
+     "type": "away",
+     "seeds": [
+      "R2-S03",
+      "R2-S05",
+      "R3-S04",
+      "R3-S05"
+     ]
+    },
+    "hit": false,
+    "nearest5": [
+     "R3-S04",
+     "R1-S02",
+     "R3-S03",
+     "R1-S05",
+     "R3-S02"
+    ]
+   },
+   "struct_change_to_prev": 1.0,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  },
+  "Q35": {
+   "q": "Q35",
+   "reply": "R8",
+   "case_id": "C05",
+   "name": "Open Courtyard Cultural Constellation",
+   "validity": "valid",
+   "declaration_audit": [],
+   "cell": [
+    [
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "struct_change_to_archive": 0.85,
+   "struct_nearest_archive": "R1-S01",
+   "meaning": {
+    "mxbai-embed-large|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2144,
+     "all": {
+      "R1-S01": 0.2306,
+      "R1-S02": 0.2594,
+      "R1-S03": 0.2144,
+      "R1-S04": 0.2681,
+      "R1-S05": 0.2895,
+      "R2-S01": 0.2938,
+      "R2-S02": 0.2763,
+      "R2-S03": 0.2695,
+      "R2-S04": 0.2502,
+      "R2-S05": 0.3186,
+      "R3-S01": 0.2509,
+      "R3-S02": 0.2389,
+      "R3-S03": 0.2592,
+      "R3-S04": 0.2485,
+      "R3-S05": 0.2588
+     },
+     "dist_prev": 0.1157
+    },
+    "mxbai-embed-large|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2175,
+     "all": {
+      "R1-S01": 0.2844,
+      "R1-S02": 0.2722,
+      "R1-S03": 0.2175,
+      "R1-S04": 0.2725,
+      "R1-S05": 0.2962,
+      "R2-S01": 0.3156,
+      "R2-S02": 0.2857,
+      "R2-S03": 0.3222,
+      "R2-S04": 0.2932,
+      "R2-S05": 0.4093,
+      "R3-S01": 0.2908,
+      "R3-S02": 0.2699,
+      "R3-S03": 0.245,
+      "R3-S04": 0.2888,
+      "R3-S05": 0.3338
+     },
+     "dist_prev": 0.149
+    },
+    "nomic-embed-text|idea": {
+     "nearest_archive": "R2-S04",
+     "dist": 0.1362,
+     "all": {
+      "R1-S01": 0.1978,
+      "R1-S02": 0.2019,
+      "R1-S03": 0.1379,
+      "R1-S04": 0.1919,
+      "R1-S05": 0.1828,
+      "R2-S01": 0.191,
+      "R2-S02": 0.1955,
+      "R2-S03": 0.1598,
+      "R2-S04": 0.1362,
+      "R2-S05": 0.1923,
+      "R3-S01": 0.1695,
+      "R3-S02": 0.1653,
+      "R3-S03": 0.1799,
+      "R3-S04": 0.1842,
+      "R3-S05": 0.1627
+     },
+     "dist_prev": 0.0775
+    },
+    "nomic-embed-text|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.1496,
+     "all": {
+      "R1-S01": 0.2164,
+      "R1-S02": 0.1943,
+      "R1-S03": 0.1496,
+      "R1-S04": 0.1966,
+      "R1-S05": 0.1878,
+      "R2-S01": 0.2131,
+      "R2-S02": 0.2006,
+      "R2-S03": 0.1782,
+      "R2-S04": 0.1598,
+      "R2-S05": 0.2119,
+      "R3-S01": 0.1876,
+      "R3-S02": 0.1788,
+      "R3-S03": 0.1705,
+      "R3-S04": 0.1861,
+      "R3-S05": 0.1921
+     },
+     "dist_prev": 0.0966
+    },
+    "bge-m3|idea": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2099,
+     "all": {
+      "R1-S01": 0.2762,
+      "R1-S02": 0.2835,
+      "R1-S03": 0.2099,
+      "R1-S04": 0.3044,
+      "R1-S05": 0.3008,
+      "R2-S01": 0.3243,
+      "R2-S02": 0.3201,
+      "R2-S03": 0.2868,
+      "R2-S04": 0.2382,
+      "R2-S05": 0.3203,
+      "R3-S01": 0.2821,
+      "R3-S02": 0.3022,
+      "R3-S03": 0.2844,
+      "R3-S04": 0.2506,
+      "R3-S05": 0.3173
+     }
+    },
+    "bge-m3|concept": {
+     "nearest_archive": "R1-S03",
+     "dist": 0.2162,
+     "all": {
+      "R1-S01": 0.287,
+      "R1-S02": 0.2848,
+      "R1-S03": 0.2162,
+      "R1-S04": 0.2986,
+      "R1-S05": 0.304,
+      "R2-S01": 0.3346,
+      "R2-S02": 0.3182,
+      "R2-S03": 0.3169,
+      "R2-S04": 0.2472,
+      "R2-S05": 0.3361,
+      "R3-S01": 0.2894,
+      "R3-S02": 0.3209,
+      "R3-S03": 0.2822,
+      "R3-S04": 0.2661,
+      "R3-S05": 0.3402
+     }
+    }
+   },
+   "agreement_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "agreement_idea": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.333,
+    "vertical": 0.143
+   },
+   "arm": "S",
+   "chat": 1,
+   "order": 4,
+   "steer": {
+    "direction": {
+     "type": "bridge",
+     "intent_of": "R1-S03",
+     "organization_of": "R3-S03"
+    },
+    "hit": false,
+    "nearest5": [
+     "R1-S03",
+     "R2-S04",
+     "R3-S04",
+     "R1-S01",
+     "R3-S01"
+    ]
+   },
+   "struct_change_to_prev": 1.4,
+   "new_structure": false,
+   "new_structure_vs_archive_only": false,
+   "new_meaning_idea": false,
+   "new_meaning_idea_vs_archive_only": false,
+   "new_meaning_concept": false,
+   "new_meaning_concept_vs_archive_only": false,
+   "new_strategy": false,
+   "new_strategy_incl_declared": false,
+   "new_strategy_concept_view": false,
+   "new_strategy_vs_archive_only": false
+  }
+ }
+}
