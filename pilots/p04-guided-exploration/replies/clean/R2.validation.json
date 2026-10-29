@@ -1,0 +1,57 @@
+{
+ "file": "R2.json",
+ "parse_error": null,
+ "collection_errors": [],
+ "cases": [
+  {
+   "case_id": "C01",
+   "name": "Care Terrace Beyond Civic Gallery",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C02",
+   "name": "Assembly Crossing Between Two Schools",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C03",
+   "name": "Low Learning Cloister With Civic Porch",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C04",
+   "name": "Three Independent Neighborhood Houses",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C05",
+   "name": "Public Dock Beside Learning Island",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  }
+ ]
+}
