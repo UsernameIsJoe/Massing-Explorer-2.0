@@ -81,6 +81,14 @@ A mass with program on floors 1 and 3 and nothing on floor 2 is **not acceptable
 
 Format v3.1 states the rule for all future runs.
 
+## Validity categories (architect, 2026-10-29, declared after replies R1–R3 of v3.1 and before any scoring)
+
+1. **Valid:** passes every hard rule. Only these count toward the primary measure.
+2. **Declared violation:** breaks a hard rule, but the case names that conflict in `unresolved`. Excluded from the primary measure. Reported per arm, with a secondary count that includes these cases.
+3. **Undeclared violation:** breaks a hard rule without naming it. Excluded and reported.
+
+Why: a declared violation is a conscious trade-off, for example preferring "media on top above admin" over the empty-floor rule, not an unseen error. Counting it as valid could hide the cost of forced directions. It is still worth separating, because a declared conflict is the natural input to a later one-round repair step. Matching a violation to its declaration is done by code, checking whether a case breaking the rule has an `unresolved` item that names the same issue, and every match is listed for audit.
+
 ## How the blind check is used
 
 The architect asked that the method not over-rely on this rating: a single reviewer can be tired, rushed or subjective. So the rating is used as follows:
