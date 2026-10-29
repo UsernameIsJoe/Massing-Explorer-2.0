@@ -1,0 +1,61 @@
+{
+ "file": "R1.json",
+ "parse_error": null,
+ "collection_errors": [],
+ "cases": [
+  {
+   "case_id": "C01",
+   "name": "Learning Spine With Commons Branch",
+   "valid": false,
+   "errors": [
+    "mass M2 does not stand from the ground: occupied floors [1, 3]"
+   ],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C02",
+   "name": "Parallel Houses With Civic Crosslink",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C03",
+   "name": "Civic Front With Split Learning",
+   "valid": true,
+   "errors": [],
+   "warnings": [
+    "preferences_given_up [] differs from structure ['three_floors']"
+   ],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C04",
+   "name": "Teaching Pair With Service Satellite",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C05",
+   "name": "Academic Bridge to Civic Commons",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  }
+ ]
+}

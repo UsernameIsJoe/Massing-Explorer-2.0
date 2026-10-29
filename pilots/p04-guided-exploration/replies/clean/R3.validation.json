@@ -1,0 +1,66 @@
+{
+ "file": "R3.json",
+ "parse_error": null,
+ "collection_errors": [],
+ "cases": [
+  {
+   "case_id": "C01",
+   "name": "Learning Spine with Parallel Satellites",
+   "valid": false,
+   "errors": [
+    "mass M3 does not stand from the ground: occupied floors [1, 3]"
+   ],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C02",
+   "name": "Civic Porch with Internal Bypass",
+   "valid": false,
+   "errors": [
+    "mass M3 does not stand from the ground: occupied floors [1, 3]"
+   ],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C03",
+   "name": "Learning Confluence with Two Branches",
+   "valid": true,
+   "errors": [],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  },
+  {
+   "case_id": "C04",
+   "name": "Independent Cultural Commons Campus",
+   "valid": false,
+   "errors": [
+    "mass M3 does not stand from the ground: occupied floors [1, 3]"
+   ],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "arts_ground_floor",
+    "media_top_above_admin"
+   ]
+  },
+  {
+   "case_id": "C05",
+   "name": "Ground Level Cultural Exchange",
+   "valid": false,
+   "errors": [
+    "mass M3 does not stand from the ground: occupied floors [1, 3]"
+   ],
+   "warnings": [],
+   "derived_preferences_given_up": [
+    "three_floors"
+   ]
+  }
+ ]
+}

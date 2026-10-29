@@ -1,0 +1,975 @@
+{
+  "format": "v3",
+  "cases": [
+    {
+      "case_id": "C01",
+      "name": "Learning Spine With Commons Branch",
+      "concept": "A continuous learning spine establishes the primary internal route, while two secondary masses attach at different points along its length. One attachment forms a compact care and administration porch near the beginning of the school day; the other forms a larger communal branch farther along the route. The two branches do not connect directly, making the learning spine the shared organizing element.",
+      "intent": "Seeks to make classroom circulation the school's principal point of orientation while distributing daily care and collective activities along that route rather than concentrating them at one central crossroads.",
+      "section_intent": "The learning spine rises three storeys, with classrooms extending from grade to upper levels. The care porch also rises three storeys, placing administration below a reading crown. The commons branch remains double height.",
+      "program_stance": "Core academic and special education share the principal learning spine. Administration occupies the attached care porch, while gym and dining occupy a separate branch reached directly from the learning spine rather than through administration.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Establish a continuous teaching spine",
+          "serves": "Makes the academic route the central spatial element and keeps general and specialized learning within one connected teaching environment.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [1, 2, 3]
+            },
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M1",
+              "floors": [1, 2, 3]
+            },
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M1",
+              "floors": [1]
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Attach a care and reading porch",
+          "serves": "Creates an identifiable administrative threshold without making it the obligatory route between teaching and collective activities.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M2",
+              "floors": [3]
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": true
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Branch the shared commons from learning",
+          "serves": "Allows the communal volume to be accessed from the principal teaching route without passing through the care porch.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": false
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "Continuous learning spine"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Care and reading porch"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Communal activity branch"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": ["M1"],
+            "occupied_floors": [1, 2, 3]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": ["M1"],
+            "occupied_floors": [1, 2, 3]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": ["M1"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": ["M2"],
+            "occupied_floors": [3]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": false
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "Making the learning spine the circulation backbone reduces the independence of communal access and places substantial movement alongside classrooms, requiring careful acoustic and security planning.",
+        "preferences_given_up": ["three_floors"]
+      },
+      "unresolved": [
+        "Whether the combined core academic and special education program can occupy a shared 80-foot-deep teaching spine within the footprint ratio and length limits.",
+        "Whether the low commons branch can satisfy the governing total GFA without excessive footprint expansion.",
+        "How community access to the commons can be separated from classroom circulation without creating an additional direct mass connection.",
+        "Whether the care porch can accommodate a usable second level below its reading crown."
+      ],
+      "direction_response": "Unlike the existing heart, hinge, chain and courtyard schemes, this strategy makes the academic circulation spine itself the connector for two independently attached branches."
+    },
+    {
+      "case_id": "C02",
+      "name": "Parallel Houses With Civic Crosslink",
+      "concept": "Two distinct teaching houses run as parallel institutional strands, one devoted to general learning and the other to specialized learning and care. A third mass forms a communal crosslink between them, establishing a connected three-part arrangement with two points of access to shared activities. The teaching houses remain separate rather than merging into a single academic volume or a continuous perimeter.",
+      "intent": "Seeks to give specialized learning a legible institutional identity while maintaining shared access to gathering spaces, and to offer two independently organized academic environments within one school.",
+      "section_intent": "Both teaching houses rise three storeys, with administration at the base of the specialized house and media at its crown. The commons crosslink stays double height, with dining and gym at grade.",
+      "program_stance": "Core academic occupies one teaching house, and special education shares the other with ground-floor administration and care. The gym and dining crosslink joins both houses, becoming their common destination without a direct teaching-house connection.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Separate general and specialized learning",
+          "serves": "Establishes two distinct teaching environments rather than distributing specialized provision throughout a single academic bar.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [1, 2, 3]
+            },
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M2",
+              "floors": [1, 2]
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Make specialized learning a care house",
+          "serves": "Pairs specialized instruction with administration, medical support and a reading crown within an independently recognizable teaching strand.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M2",
+              "floors": [3]
+            },
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M2",
+              "floors": [1]
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Use the commons as a crosslink",
+          "serves": "Gives both teaching houses direct access to a shared communal destination without requiring a direct enclosed link between the houses.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": false
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "General teaching house"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Specialized teaching and care house"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Shared communal crosslink"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": ["M1"],
+            "occupied_floors": [1, 2, 3]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1, 2]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": ["M2"],
+            "occupied_floors": [3]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": false
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": true
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "Independent teaching houses may strengthen program identity but concentrate inter-house movement through communal space, potentially conflicting with quiet learning, supervision and event-related security.",
+        "preferences_given_up": ["three_floors"]
+      },
+      "unresolved": [
+        "Whether the general teaching house alone can accommodate the required core academic program within its 80-foot width and the mass proportion limits.",
+        "Whether the specialized house has sufficient floor area for its combined ground-floor care, arts and administration functions.",
+        "How the crosslink can support daily circulation while maintaining a secure boundary during community use.",
+        "Whether two tall teaching houses and a low commons crosslink can satisfy the governing GFA range."
+      ],
+      "direction_response": "Unlike existing commons-heart arrangements, this scheme separates general and specialized teaching into parallel houses and uses the shared communal mass specifically as their crosslink."
+    },
+    {
+      "case_id": "C03",
+      "name": "Civic Front With Split Learning",
+      "concept": "The school is organized as a paired academic front and back, linked through a distinct civic house. One teaching mass establishes the general classroom territory; a second creates a quieter specialized learning territory. The civic house acts as a shared front-facing point of encounter, but the two academic territories also connect directly, allowing everyday teaching movement to bypass the public-facing component.",
+      "intent": "Seeks to separate public-facing encounters from routine exchanges between learning environments, while keeping specialized support visible and accessible without making communal events the school's primary circulation mechanism.",
+      "section_intent": "The general and specialized learning masses both reach three storeys. Administration remains at grade in the civic house, with media at its upper level; gym and dining occupy its double-height base.",
+      "program_stance": "Core academic and special education occupy adjacent but separate teaching masses with a direct connection. Administration sits in the civic house, which also gathers gym and dining and connects directly to both academic territories.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Give learning two directly connected territories",
+          "serves": "Separates general and specialized academic identities while permitting teaching-related movement without a compulsory passage through communal functions.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [1, 2, 3]
+            },
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M2",
+              "floors": [1, 2]
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": true
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Collect public functions in a civic house",
+          "serves": "Makes administration, gathering and dining part of a shared civic address rather than dispersing public functions among teaching masses.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M3",
+              "floors": [3]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M3",
+              "floors": [1]
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Complete a connected circulation triangle",
+          "serves": "Provides a choice between a direct academic connection and routes through the shared civic house.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": true
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "General academic territory"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Specialized academic territory"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Shared civic house"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": ["M1"],
+            "occupied_floors": [1, 2, 3]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1, 2]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": ["M3"],
+            "occupied_floors": [3]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": true
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "Combining the civic front, gym, dining and elevated media creates concentrated public activity and complex vertical relationships, increasing the challenge of acoustic separation and controlled access.",
+        "preferences_given_up": []
+      },
+      "unresolved": [
+        "Whether the civic house can accommodate a double-height gym and dining volume together with administration and a third-floor media center.",
+        "Whether its remaining occupiable upper-floor area is sufficient to support the three-storey massing intent.",
+        "Whether direct connections among all three masses can be organized without interfering with public access controls.",
+        "Whether the specialist learning territory can meet the footprint ratio and overall GFA requirements."
+      ],
+      "direction_response": "Unlike existing courtyard triangles with separate civic and commons ranges, this scheme combines public administration and the double-height commons in one civic mass while directly linking two separate academic territories."
+    },
+    {
+      "case_id": "C04",
+      "name": "Teaching Pair With Service Satellite",
+      "concept": "Two connected teaching-oriented masses form the school's enclosed institutional core, while a third mass operates as a separate communal satellite on shared grounds. The academic pair is differentiated by general learning and a broader civic-specialist role, with reading located above the administrative front. The detached satellite concentrates assembly and food activity without becoming part of the school's enclosed circulation system.",
+      "intent": "Seeks to distinguish the controlled daily school environment from collective activities and to allow the teaching pair to maintain its own internal identity while communal functions operate separately.",
+      "section_intent": "Both members of the teaching pair rise three storeys. Administration occupies the base of the civic-specialist member, with media at its crown. The detached commons remains double height above its ground-level activity and dining spaces.",
+      "program_stance": "Core academic occupies the principal teaching mass, directly linked to a second mass containing special education and administration. Gym and dining remain together in a detached satellite, accessed across shared grounds.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Construct a self-contained teaching pair",
+          "serves": "Places general academic work beside a directly connected specialist and civic environment without forcing daily movement through the commons.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [1, 2, 3]
+            },
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M2",
+              "floors": [1, 2]
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": true
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Build a civic and specialist counterpart",
+          "serves": "Integrates care, arts and specialist learning beside the general classrooms while making reading the upper-level destination.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M2",
+              "floors": [3]
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Detach communal activity and service",
+          "serves": "Creates an operationally distinct communal satellite without a built circulation connection to the teaching pair.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": false
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": false
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "General academic house"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Civic and specialist house"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Detached communal service satellite"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": ["M1"],
+            "occupied_floors": [1, 2, 3]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1, 2]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": ["M2"],
+            "occupied_floors": [3]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": false
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": false
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "Separating the commons from the enclosed teaching pair supports independent communal operation but requires outdoor travel for routine dining and physical education, including during adverse weather.",
+        "preferences_given_up": ["three_floors"]
+      },
+      "unresolved": [
+        "Whether the teaching pair can accommodate all academic, specialist and civic program while meeting both the width requirement and mass proportions.",
+        "How supervised, accessible movement between teaching and detached dining can operate without an enclosed connection.",
+        "Whether the two-storey specialist allocation provides enough usable area while retaining a reading crown on floor three.",
+        "Whether the proposed detached commons arrangement can meet the total GFA target."
+      ],
+      "direction_response": "Unlike the existing detached campus or twin-bar schemes, this strategy forms one connected general-and-specialist teaching pair with a single fully detached communal and maintenance satellite."
+    },
+    {
+      "case_id": "C05",
+      "name": "Academic Bridge to Civic Commons",
+      "concept": "A civic-learning house and a communal house establish two distinct destinations, joined by an academic connector that is itself an occupied teaching mass rather than a neutral passage. General learning forms the bridge between the school's administrative and reading address and its shared activity destination. The endpoint houses remain unconnected directly, giving the academic component an explicit mediating role.",
+      "intent": "Seeks to integrate transitions between the administrative, academic and communal realms into teaching territory, while establishing a recognizable progression from the civic front toward collective school activities.",
+      "section_intent": "The academic connector and civic-learning house rise three storeys, with administration at the base and media at the top of the civic house. The terminal commons remains double height above ground-level gym and dining.",
+      "program_stance": "Core academic occupies the connecting mass between special education and administration in the civic-learning house and gym and dining in the commons house. The civic and communal endpoints have no direct enclosed connection.",
+      "key_moves": [
+        {
+          "move_id": "K1",
+          "move": "Make core learning the inhabited connector",
+          "serves": "Turns the central part of the school into an occupied academic transition between civic support and shared activities.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D01",
+              "mass_id": "M1",
+              "floors": [1, 2, 3]
+            },
+            {
+              "type": "placement",
+              "department_id": "D03",
+              "mass_id": "M1",
+              "floors": [1]
+            }
+          ]
+        },
+        {
+          "move_id": "K2",
+          "move": "Pair the civic address with specialist support",
+          "serves": "Concentrates administration and specialized learning at one endpoint, with an upper reading destination above the public-facing level.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D02",
+              "mass_id": "M2",
+              "floors": [1, 2]
+            },
+            {
+              "type": "placement",
+              "department_id": "D08",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D07",
+              "mass_id": "M2",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D05",
+              "mass_id": "M2",
+              "floors": [3]
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M2",
+              "direct_link": true
+            }
+          ]
+        },
+        {
+          "move_id": "K3",
+          "move": "Terminate the route at the commons",
+          "serves": "Creates a distinct collective destination reached through the academic connector instead of directly from the civic endpoint.",
+          "decisions": [
+            {
+              "type": "placement",
+              "department_id": "D04",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D06",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "placement",
+              "department_id": "D09",
+              "mass_id": "M3",
+              "floors": [1]
+            },
+            {
+              "type": "link",
+              "mass_a": "M1",
+              "mass_b": "M3",
+              "direct_link": true
+            },
+            {
+              "type": "link",
+              "mass_a": "M2",
+              "mass_b": "M3",
+              "direct_link": false
+            }
+          ]
+        }
+      ],
+      "structure": {
+        "masses": [
+          {
+            "mass_id": "M1",
+            "role": "Inhabited academic connector"
+          },
+          {
+            "mass_id": "M2",
+            "role": "Civic and specialist endpoint"
+          },
+          {
+            "mass_id": "M3",
+            "role": "Communal destination house"
+          }
+        ],
+        "departments": [
+          {
+            "department_id": "D01",
+            "mass_ids": ["M1"],
+            "occupied_floors": [1, 2, 3]
+          },
+          {
+            "department_id": "D02",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1, 2]
+          },
+          {
+            "department_id": "D03",
+            "mass_ids": ["M1"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D04",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D05",
+            "mass_ids": ["M2"],
+            "occupied_floors": [3]
+          },
+          {
+            "department_id": "D06",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D07",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D08",
+            "mass_ids": ["M2"],
+            "occupied_floors": [1]
+          },
+          {
+            "department_id": "D09",
+            "mass_ids": ["M3"],
+            "occupied_floors": [1]
+          }
+        ],
+        "connections": [
+          {
+            "mass_a": "M1",
+            "mass_b": "M2",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M1",
+            "mass_b": "M3",
+            "direct_link": true
+          },
+          {
+            "mass_a": "M2",
+            "mass_b": "M3",
+            "direct_link": false
+          }
+        ]
+      },
+      "brief_response": {
+        "main_tradeoff": "Using core academic space as the compulsory link between civic and communal functions risks introducing event-related traffic into teaching areas and limits independently secured access to the commons.",
+        "preferences_given_up": ["three_floors"]
+      },
+      "unresolved": [
+        "Whether the academic connector can serve as both an 80-foot-deep teaching mass and a supervised circulation route without compromising instructional space.",
+        "How communal use outside school hours could occur without passing through the academic connector.",
+        "Whether the civic-specialist endpoint can satisfy footprint proportions with its concentrated ground-floor functions.",
+        "Whether the low terminal commons allows the three masses collectively to achieve the governing GFA."
+      ],
+      "direction_response": "Unlike existing linear chains that use a civic hinge or workshop as the intermediary, this case places the occupied core academic mass between the civic-specialist endpoint and the communal destination."
+    }
+  ]
+}
