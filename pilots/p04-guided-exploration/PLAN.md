@@ -66,7 +66,15 @@ Two embedding models measure meaning: mxbai and nomic. The embedding that steers
 | Text–record agreement | Extractor agreement per trait (format v3 validation step 6) | Guardrail; also checks format v3 |
 | Steerability | A and J: did the case land in its target gap? S: did it move in the requested meaning direction (bge-m3, as a manipulation check only) | Diagnostic |
 | Axis coverage | New coarse cells reached | Diagnostic; favours A and J by design, so never primary |
-| Forced or real (optional) | Architect, blind, 12 cases (3 per arm), rated 1–5 for "a real architectural idea" vs "forced" | Optional |
+| Forced or real | Architect, blind, 12 cases (3 per arm) plus 2 repeated cases, rated 1–5 for "a real architectural idea" vs "forced". Agreed 2026-10-29 | **Veto only, weighted lightly** (see below) |
+
+## How the blind check is used
+
+The architect asked that the method not over-rely on this rating: a single reviewer can be tired, rushed or subjective. So the rating is used as follows:
+
+- **It can only veto, never decide.** It never creates a "win".
+- **A veto needs a clear signal.** The winning arm's mean must be at least 1.5 points below the comparison arm's, **and** the 2 repeated cases must be rated within 1 point of themselves. If the repeats disagree, the check is reported but not used.
+- **The architect's free-text impressions** are recorded as qualitative notes, not scores.
 
 ## Decision rules, fixed before any reply
 
