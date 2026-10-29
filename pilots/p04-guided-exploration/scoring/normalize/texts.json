@@ -1,0 +1,342 @@
+[
+{
+"text_id": "archive:R1-S01::concept",
+"text": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it."
+},
+{
+"text_id": "archive:R1-S02::concept",
+"text": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others."
+},
+{
+"text_id": "archive:R1-S03::concept",
+"text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors."
+},
+{
+"text_id": "archive:R1-S04::concept",
+"text": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching."
+},
+{
+"text_id": "archive:R1-S05::concept",
+"text": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two."
+},
+{
+"text_id": "archive:R2-S01::concept",
+"text": "A low civic gateway stands between a three-storey learning bar and a community hall and forms the only enclosed passage between them. Everyone arrives through the gateway, where the school's front and its making and reading spaces meet visitors; classrooms extend behind it on one side and the shared hall on the other."
+},
+{
+"text_id": "archive:R2-S02::concept",
+"text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it."
+},
+{
+"text_id": "archive:R2-S03::concept",
+"text": "One self-contained school bar carries the whole teaching day, rising from the front office and specialist support at its foot through classrooms to a reading crown. Two freestanding pavilions, a community hall and a making-and-maintenance workshop, stand apart on shared grounds and are reached outdoors."
+},
+{
+"text_id": "archive:R2-S04::concept",
+"text": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court."
+},
+{
+"text_id": "archive:R2-S05::concept",
+"text": "Classrooms stay low and close to the ground in a two-storey learning bar, flanked by the hall on one side and, on the other, a compact three-storey civic tower that stacks the school's front, its specialist support and a library crown as the building's vertical marker."
+},
+{
+"text_id": "archive:R3-S01::concept",
+"text": "A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school."
+},
+{
+"text_id": "archive:R3-S02::concept",
+"text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly."
+},
+{
+"text_id": "archive:R3-S03::concept",
+"text": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse."
+},
+{
+"text_id": "archive:R3-S04::concept",
+"text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning."
+},
+{
+"text_id": "archive:R3-S05::concept",
+"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."
+},
+{
+"text_id": "case:Q01::concept",
+"text": "The school is conceived as two distinct daily environments joined by a shared assembly crossing. One is a vertical academic house for ordinary teaching; the other is a smaller care and cultural house for focused support, making, and reading. The commons between them is a destination in its own right, with a defined passage across its perimeter linking the two houses."
+},
+{
+"text_id": "case:Q02::concept",
+"text": "A raised cultural house acts as an inhabited bridge between a teaching house and a communal base. Unlike a compact triangular cluster, the school is organized as two separated destinations connected by a third elevated cultural layer. The bridge provides a distinct shared destination while the hall remains an independent double-height volume below its own roof, not the supporting base for an arts loft."
+},
+{
+"text_id": "case:Q03::concept",
+"text": "A dedicated cultural threshold stands between two sharply different destinations: a consolidated academic house and a communal assembly hall. Unlike a conventional civic gateway, the threshold is primarily a place of making, student care and reading, while the school's administrative front remains embedded within the academic house. This separates the symbolic cultural entrance from the operational point of school oversight."
+},
+{
+"text_id": "case:Q04::concept",
+"text": "Two distinct teaching houses stand alongside a third, shared civic spine. Rather than treating specialized learning as an appendage of general classrooms, the houses are peers, each directly connected to the spine but not to one another. The spine combines the school's public threshold and collective gathering spaces, making a common institutional address for two different learning environments."
+},
+{
+"text_id": "case:Q05::concept",
+"text": "The school is conceived as a paired everyday teaching and assembly building alongside a separate, vertically organized inclusion house. The attached pair establishes the collective school routine, while the independent house offers another scale of occupation for focused support and small-group learning. Their relationship is that of neighboring institutions on shared grounds, not an enclosed three-part circulation network."
+},
+{
+"text_id": "case:Q06::concept",
+"text": "Three independent school houses face a common outdoor forum, making the open ground the organizing centre rather than an enclosed corridor. A taller teaching house establishes one edge, a separate support and cultural house forms another, and the communal hall completes the constellation. Each building keeps its own threshold, so relationships occur through the shared exterior rather than constructed links."
+},
+{
+"text_id": "case:Q07::concept",
+"text": "Two parallel inhabited ranges establish separate but complementary school streets. One is a continuous teaching environment; the other combines arrival, cultural activity and community gathering into a layered public range. A smaller support house connects the two at one end, creating a sheltered circulation circuit without enclosing a courtyard. The assembly volume anchors the public range rather than occupying an independent central block."
+},
+{
+"text_id": "case:Q08::concept",
+"text": "Two teaching-related houses form a paired educational precinct, while the commons stands apart as a separate community destination. The principal classroom house establishes the daily academic center. A neighboring inclusion and civic house accommodates more individualized learning and public-facing support. The freestanding hall belongs to the same school grounds but is not part of an enclosed circulation loop or courtyard perimeter."
+},
+{
+"text_id": "case:Q09::concept",
+"text": "A communal crossing separates two complementary educational territories: a general learning house and a specialized learning house. The gym and dining volume occupies the crossing, becoming the only enclosed route between the two. Both educational houses rise above a lower communal middle, giving the school a paired identity rather than one dominant academic center. The specialized house also establishes the school's civic face."
+},
+{
+"text_id": "case:Q10::concept",
+"text": "A layered school is organized around a controlled civic filter separating a concentrated teaching house from a tall shared-activity house. The middle building is conceived as a sequence of thresholds rather than simply a connector: it mediates between protected daily learning and collective events. Above the gathering volumes, specialist teaching forms a distinct upper setting within the communal house."
+},
+{
+"text_id": "case:Q11::concept",
+"text": "The school revolves around an inclusive commons conceived as a shared threshold rather than a conventional assembly hall. Everyday teaching approaches it from one side, and the school's civic and cultural activities approach from the other. Specialist support is embedded in this collective middle ground, allowing the commons to act as a carefully managed meeting place between academic and community routines."
+},
+{
+"text_id": "case:Q12::concept",
+"text": "A three-storey cultural threshold separates two different institutional worlds: a concentrated academy and a communal house that combines gathering with specialized care. The threshold is the only built passage between them, conceived as a sequence of creative and reading environments rather than a conventional administrative crossroads. Its layered activities give the intermediate building an inhabited identity of its own."
+},
+{
+"text_id": "case:Q13::concept",
+"text": "The school separates into a quieter learning island and a connected public dock. The learning island contains the everyday educational community, including specialized instruction, but remains physically independent. The public dock is a paired composition: a large gathering hall directly attached to a taller cultural and administrative house. Shared grounds connect these two realms without an enclosed route between school teaching and civic activities."
+},
+{
+"text_id": "case:Q14::concept",
+"text": "Three equally developed building parts form an interconnected school with several ways to move between daily teaching, shared cultural life and assembly. Rather than organizing circulation around one obligatory crossroads or courtyard, the scheme uses direct links between every pair to create alternative internal routes. Each part maintains its own identity while participating in a continuous network of school life."
+},
+{
+"text_id": "case:Q15::concept",
+"text": "A teaching house, a specialist cultural house and a collective activity house form a three-part academic neighborhood. None is subordinated to a dominant school bar or a small workshop hinge. All three connect directly, allowing daily school life to circulate among complementary destinations while keeping large assembly activities outside the main teaching house."
+},
+{
+"text_id": "case:Q16::concept",
+"text": "Three connected houses form a circulation triangle organized around route choice rather than a courtyard or shared central room. The learning house and the civic-arts house each connect directly to the commons, while a third enclosed connection joins them independently. The resulting network offers a pupil route, a public route and a cross-school route without assigning any single house the role of compulsory passage."
+},
+{
+"text_id": "case:Q17::concept",
+"text": "A consolidated learning core is paired with two different activity satellites: one dedicated to making and student care, the other to large collective gatherings. The satellites connect independently to the core but not to each other. Rather than organizing movement through a hall or civic hinge, the academic core becomes the sole enclosed interchange between specialized activity environments."
+},
+{
+"text_id": "case:Q18::concept",
+"text": "A reading bridge establishes the school's principal shared connection above ground, joining a classroom tower to a cultural house. Below it, the classroom and cultural realms remain distinct, while a separate commons building connects directly to the cultural house. The resulting arrangement makes the elevated library the academic crossing and the cultural house the transition toward assembly."
+},
+{
+"text_id": "case:Q19::concept",
+"text": "The school unfolds as a sequence of increasingly collective territories. A tall learning house leads into a lower civic gallery, which acts as a shared threshold before reaching an assembly house. Rather than separating inclusive support from communal activity, the assembly house develops an upper care terrace above its gathering volumes. The gallery remains the only built connection between the two taller houses."
+},
+{
+"text_id": "case:Q20::concept",
+"text": "The learning house becomes the spatial hinge rather than the civic front or the assembly hall. A taller teaching spine connects directly to two distinct destinations: a quieter civic and support house and a broad community commons. Those destinations remain disconnected from each other, making the learning spine the only enclosed route between them."
+},
+{
+"text_id": "case:Q21::concept",
+"text": "A linear school sequence is organized around an inclusive teaching threshold rather than a civic gateway or workshop pavilion. The principal academic house connects to a smaller specialist house that serves as a transition toward communal activities. Beyond that threshold stands the hall. Special education, creative learning and care occupy the intermediate realm, making it an educational destination as well as the passage to the commons."
+},
+{
+"text_id": "case:Q22::concept",
+"text": "A vertical academy anchors one end of the school, while a compact care-oriented threshold mediates its relationship with the community hall. Unlike a conventional gateway devoted primarily to public arrival, this middle house is an inhabited support environment. Its specialist spaces establish a transition from the concentrated teaching tower to the collective activities beyond."
+},
+{
+"text_id": "case:Q23::concept",
+"text": "The school is organized as three independent neighborhood houses rather than one enclosed institution. A tall general learning house establishes the everyday classroom identity; a separate care and civic house serves as a specialized educational destination; a low assembly pavilion accommodates collective events. Each house stands on shared grounds without a built link, treating outdoor movement as the relationship between distinct educational settings."
+},
+{
+"text_id": "case:Q24::concept",
+"text": "The school is organized as a teaching house with a community porch attached to its side, rather than as a sequence of buildings connected by a civic gateway. A compact arrival and care house sits beside the teaching house and shares its internal circulation. The commons connects directly to the teaching house but remains separate from the arrival house, giving the campus two distinct internal thresholds."
+},
+{
+"text_id": "case:Q25::concept",
+"text": "A low campus sequence treats the shared commons as an inhabited passage between a compact civic house and a quieter learning retreat. The communal building becomes the crossing point between two contrasting environments, with supervised support attached to the rhythm of gathering and dining. The three parts connect in sequence, and their lower profiles emphasize a horizontal progression rather than a vertically stacked institution."
+},
+{
+"text_id": "case:Q26::concept",
+"text": "A self-contained school spine holds daily teaching, care, administration and reading within one connected vertical institution. Beyond it, two detached communal satellites form a complementary public realm: a double-height assembly building and a separate cultural workshop house. The cultural house gathers creative learning and building operations, allowing shared activity to develop outside the academic spine without occupying a loft over the hall."
+},
+{
+"text_id": "case:Q27::concept",
+"text": "Three distinct masses form a pair of parallel institutional streets rather than a centralized hub or sequential chain. A classroom house and a shared activity house establish separate daily territories, while a narrower cultural house connects them at two points. The connections create alternative internal routes without making any single mass an obligatory crossroads."
+},
+{
+"text_id": "case:Q28::concept",
+"text": "Two vertically developed buildings form the school's primary connected pair: a teaching academy and a communal forum. A third building operates as a separate care and cultural house, occupying the same campus but remaining outside the enclosed circulation network. The academy-to-forum connection establishes the principal institutional relationship, while the detached house creates a parallel destination rather than another intermediate gateway."
+},
+{
+"text_id": "case:Q29::concept",
+"text": "A school street unfolds as a sequence of three distinct places: an academic house, an inhabited care passage, and a collective activity hall. The middle place is conceived as a quieter social threshold rather than a conventional civic foyer. Its connection to the hall allows support spaces to participate in communal life while the learning house retains a separate identity."
+},
+{
+"text_id": "case:Q30::concept",
+"text": "A continuous learning spine becomes the inhabited connector between two otherwise separate pavilions. One pavilion presents a civic and cultural face, while the other contains the larger shared activities. The spine is not merely a corridor: teaching neighborhoods occupy its length, and its opposite ends establish distinct transitions to the two pavilions. The arrangement remains predominantly low and horizontally organized."
+},
+{
+"text_id": "case:Q31::concept",
+"text": "The school is conceived as a compact, low educational cloister formed by a learning house and an attached civic porch. The learning house combines ordinary and specialized classrooms into one teaching community; the porch provides a contrasting setting for making, reading and school administration. A separate gathering pavilion sits beyond this paired institution, connected through shared outdoor school life rather than an enclosed passage."
+},
+{
+"text_id": "case:Q32::concept",
+"text": "A principal school house connects directly to the communal hall, while a separate specialist learning retreat stands apart on the same grounds. The specialist retreat is a complete vertical destination for supported teaching and creative activity rather than an annex linked through the main building. The principal house retains the everyday academic and civic functions, with communal activity attached to it."
+},
+{
+"text_id": "case:Q33::concept",
+"text": "A compact cultural gate and a taller learning house form one connected school, while the community commons stands independently on shared grounds. The cultural gate is not merely an entrance: its lower and middle levels accommodate making and school stewardship, culminating in an elevated reading room. The detached commons operates as a separate destination rather than extending the indoor circulation system."
+},
+{
+"text_id": "case:Q34::concept",
+"text": "A school-within-a-school arrangement separates general and specialized learning into two directly joined teaching houses, forming a continuous academic partnership. A third mass accommodates collective assembly as an independent community destination, connected only to the general learning house. The resulting hierarchy places everyday collaboration within the teaching pair rather than making the hall the mediator of their relationship."
+},
+{
+"text_id": "case:Q35::concept",
+"text": "Three pavilion-like houses establish an open courtyard as the shared outdoor room, with one deliberate built connection and two gaps between the buildings. A teaching house, a cultural front house and a collective activity house retain separate identities. The cultural house joins directly to the activity house, while the teaching house engages the courtyard without joining either indoors."
+},
+{
+"text_id": "case:Q36::concept",
+"text": "Three independently legible schoolhouses occupy a shared campus, but a single enclosed connection joins the teaching and cultural houses into a small daily-learning pair. The collective activity house remains freestanding. Instead of treating every pavilion as equally detached, the organization establishes two scales of independence: a connected educational pair and a separate community destination."
+},
+{
+"text_id": "case:Q37::concept",
+"text": "A continuous learning street becomes the building's central connector rather than an isolated classroom destination. Its two ends lead to contrasting shared places: a quieter cultural porch for arrival and reading, and an active gathering house for communal events. The three parts form a sequential route, with everyday academic circulation serving as the link between the two destinations."
+},
+{
+"text_id": "case:Q38::concept",
+"text": "The school is divided into two architectural territories: a self-contained inclusive academy and a paired civic precinct. The academy is deliberately complete as a daily learning environment, while a separate commons and cultural house form one connected ensemble for gathering, making and reading. Outdoor movement between the territories becomes a legible change from academic routine to collective school life."
+},
+{
+"text_id": "case:Q39::concept",
+"text": "Three vertically developed houses form a mutually connected cluster organized by an exchange of everyday activities rather than by a single central hall. The learning house acts as the stable academic anchor; a civic house provides a distinct arrival and cultural address; and a communal house accommodates collective events. Direct connections between every pair allow several internal paths through the cluster."
+},
+{
+"text_id": "case:Q40::concept",
+"text": "A learning cloister is formed by a pair of directly joined low ranges, one devoted to sustained teaching and the other to the school's cultural and administrative life. The joined ranges establish an inward-facing academic precinct without requiring a complete enclosed courtyard. A separate communal hall remains an independent pavilion, approached across shared outdoor ground rather than through an internal school corridor."
+},
+{
+"text_id": "p01c:R1-S01::original",
+"text": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it."
+},
+{
+"text_id": "p01c:R1-S02::original",
+"text": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others."
+},
+{
+"text_id": "p01c:R1-S03::original",
+"text": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors."
+},
+{
+"text_id": "p01c:R1-S04::original",
+"text": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching."
+},
+{
+"text_id": "p01c:R1-S05::original",
+"text": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two."
+},
+{
+"text_id": "p01c:R2-S01::original",
+"text": "A low civic gateway stands between a three-storey learning bar and a community hall and forms the only enclosed passage between them. Everyone arrives through the gateway, where the school's front and its making and reading spaces meet visitors; classrooms extend behind it on one side and the shared hall on the other."
+},
+{
+"text_id": "p01c:R2-S02::original",
+"text": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it."
+},
+{
+"text_id": "p01c:R2-S03::original",
+"text": "One self-contained school bar carries the whole teaching day, rising from the front office and specialist support at its foot through classrooms to a reading crown. Two freestanding pavilions, a community hall and a making-and-maintenance workshop, stand apart on shared grounds and are reached outdoors."
+},
+{
+"text_id": "p01c:R2-S04::original",
+"text": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court."
+},
+{
+"text_id": "p01c:R2-S05::original",
+"text": "Classrooms stay low and close to the ground in a two-storey learning bar, flanked by the hall on one side and, on the other, a compact three-storey civic tower that stacks the school's front, its specialist support and a library crown as the building's vertical marker."
+},
+{
+"text_id": "p01c:R3-S01::original",
+"text": "A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school."
+},
+{
+"text_id": "p01c:R3-S02::original",
+"text": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly."
+},
+{
+"text_id": "p01c:R3-S03::original",
+"text": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse."
+},
+{
+"text_id": "p01c:R3-S04::original",
+"text": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning."
+},
+{
+"text_id": "p01c:R3-S05::original",
+"text": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly."
+},
+{
+"text_id": "p01c:P01::rewrite",
+"text": "Teaching spaces occupy a modest two-level structure that maintains a strong connection to the site. An assembly facility borders one side, while the opposite side meets a concentrated three-level public building. This taller element places reception functions below educational assistance facilities and a top-floor library, giving the composition its most prominent upward expression."
+},
+{
+"text_id": "p01c:P02::rewrite",
+"text": "Three mutually connected buildings create a tightly arranged triangular configuration. One combines communal activities at ground level with creative studios directly overhead, accommodating social events, presentations and practical artistic work. Another contains administrative and public functions beneath an uppermost library, while a straightforward classroom structure provides the third component. Direct internal links connect every pair of buildings."
+},
+{
+"text_id": "p01c:P03::rewrite",
+"text": "The school is arranged as three consecutive structures along a single route. Classroom accommodation occupies one extremity and communal facilities the other. Between them, a central administrative and cultural building contains reception, offices, creative teaching rooms and the library. It provides the main entrance and principal circulation junction, requiring anyone moving between the two outer buildings to pass through this middle section."
+},
+{
+"text_id": "p01c:P04::rewrite",
+"text": "Nearly all routine educational activities take place within one substantial teaching building, which accommodates the main entrance on its lowest level and the library at its highest. An adjacent single-level structure provides practical creative workspaces and operational facilities. Positioned between the teaching building and assembly hall, this smaller element establishes their connection while concentrating fabrication activities and building services at that intermediate point."
+},
+{
+"text_id": "p01c:P05::rewrite",
+"text": "Three buildings of equal three-level height form a closely connected arrangement surrounding an outdoor court, with direct connections between all three. The assembly facilities occupy a building of the same vertical extent as its neighbors, incorporating upper-level creative studios over the utility area with views toward the performance platform. The remaining buildings accommodate classrooms and administration, with additional educational assistance rooms adjacent to the office and health facilities."
+},
+{
+"text_id": "p01c:P06::rewrite",
+"text": "Communal activities occupy the principal connecting structure, containing spaces for recreation, meals and schoolwide events, with visual and performing arts studios situated overhead. A classroom building and a separate entrance-and-assistance building extend from this shared facility. Neither outer building connects directly to the other, making the communal structure the necessary route for movement between instructional accommodation and administrative or inclusive services."
+},
+{
+"text_id": "p01c:P07::rewrite",
+"text": "An assembly and activity building occupies the middle of the composition, receiving two separate extensions from opposing directions. One contains a full range of classroom facilities together with dedicated creative teaching rooms. The smaller extension houses reception and administration on its lower level and the library upstairs. No direct connection exists between these extensions; circulation from one to the other must traverse the central gathering facility."
+},
+{
+"text_id": "p01c:P08::rewrite",
+"text": "The school operates as three distinct buildings distributed across a common site, without enclosed corridors linking them. One independently functioning teaching building includes routine student welfare provision. A second accommodates sport and meals and can operate separately for neighborhood use. The third is a shorter administration-and-creative-education building located at the entrance, placing the library over the offices. All transfers between buildings take place outside."
+},
+{
+"text_id": "p01c:P09::rewrite",
+"text": "Three directly interconnected structures surround a common open-air space. The tallest accommodates teaching rooms on floors above the administrative entrance facilities, with the library occupying its uppermost level. A neighboring building combines additional educational assistance, healthcare and creative instruction. The communal building provides the remaining side, completing a continuous enclosed circulation arrangement in which each structure connects independently with both others."
+},
+{
+"text_id": "p01c:P10::rewrite",
+"text": "The principal school consists of two neighboring elongated teaching buildings running alongside one another and connected directly. The first accommodates general classrooms and places the library on its highest level. The second combines reception and administrative functions with additional inclusive educational provision. A separate assembly and community facility occupies the same grounds without a built connection to either teaching building."
+},
+{
+"text_id": "p01c:P11::rewrite",
+"text": "A short administrative and cultural building occupies the space between a three-level classroom structure and a communal assembly facility. This intermediate section provides their sole internal connection and accommodates the school's principal entrance. Reception, practical creative activities and library provision are concentrated where visitors enter, with teaching accommodation extending in one direction and the shared gathering facility in the other."
+},
+{
+"text_id": "p01c:P12::rewrite",
+"text": "Three buildings follow a straight progression from a relatively secluded classroom structure to a communal assembly facility. Between these endpoints stands a concentrated entrance building containing administration at its lowest level and creative instruction and library accommodation above. This middle section serves as the main public arrival point and obligatory internal route between teaching areas and the assembly facility."
+},
+{
+"text_id": "p01c:P13::rewrite",
+"text": "A communal building occupies the midpoint of the school, connecting an entrance-and-administration section on one side with classroom accommodation on the other. The two outer sections have no direct link. Visitors first enter the common activity space before reaching the teaching section beyond, separating classrooms from immediate public access. Creative subjects are incorporated into the classroom section alongside regular instruction."
+},
+{
+"text_id": "p01c:P14::rewrite",
+"text": "The complete daily instructional program occupies a single independently functioning elongated building. Administrative reception and additional educational services occupy its lowest portion, classrooms rise above them, and the library completes the uppermost level. Elsewhere on the same property stand two physically separate structures: one for communal assemblies and another for practical creative work and upkeep operations. Access between all three requires outdoor travel."
+},
+{
+"text_id": "p01c:P15::rewrite",
+"text": "Three connected building sections surround an open-air quadrangle, with enclosed links at each junction providing an uninterrupted circulation circuit. The classroom section rises higher than the others, while a shorter entrance section accommodates administration and creative instruction. The third section contains communal gathering facilities, with an elevated library space above the assembly area oriented toward the interior outdoor space."
+}
+]

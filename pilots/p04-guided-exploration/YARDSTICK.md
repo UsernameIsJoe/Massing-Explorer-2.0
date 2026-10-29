@@ -44,3 +44,17 @@ The concept view is used throughout, because the calibration texts are concepts.
 | centred + PC1 | qwen3 4b | 8 | 2 | 0.800 | 0.784 |
 
 **Reading.** Removing the writer/format offset makes the *ranking* usable: centred mxbai passes the paraphrase test. But the *gap* never opens. Even after correction, a rewording moves a concept about as far as switching to a different accepted strategy does. On this corpus, whole-concept embeddings resolve meaning neighbourhoods, not individual strategies. This is a limit of the semantic representation's resolution, not of the threshold rule.
+
+## Attempt 2: style-normalised restatement (declared before running, 2026-10-29)
+
+**Idea:** remove the writer by having one writer restate everything.
+- llama3.1:8b restates each of the 85 concept texts (O, W, A, C) in one fixed three-sentence plain template, at temperature 0 with a fixed seed: `scoring/normalize/run_normalize.py`.
+- The restatements are then embedded with the same three judges.
+
+**Corrections, in order:** raw distance on the restatements, then batch-centred.
+**Thresholds, pass criteria and choice rule:** identical to attempt 1.
+**Possible outcomes:**
+- If a judge passes, the 40 cases are re-scored on meaning with it.
+- If none passes, whole-concept embeddings are taken to resolve neighbourhoods only, and the axes judge novelty.
+
+Restating can also blur real differences, making seeds look alike; criterion (b) tests exactly that.
