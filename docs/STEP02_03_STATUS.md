@@ -38,7 +38,7 @@ Pilot 3's region file is a structure-only candidate, not the region. The Pilot 3
 ## Agreed plan (architect, 2026-10-28)
 
 1. Experiment 1 (per-axis grounding map) on the current 15 seeds: a cheap check of which traits the concept text carries.
-2. Adjust the seed-generation prompt from that result, then generate 100–150 cases across 2–3 LLMs with diversity rules.
+2. Adjust the seed-generation prompt from that result. **Revised 2026-10-29 (architect):** no mass generation while piloting. The next LLM cases come from a small pilot of embedding-guided exploration, compared with unguided and axis-only guidance. The 100–150-case grounding corpus waits until that pilot shows the guided format works.
 3. Rerun Experiment 1 on the full set, then Experiments 2–5 (`reports/Joint semantic axis search space.md`).
 
 ## Options noted, not prioritized
