@@ -1,0 +1,182 @@
+[
+ {
+  "text_id": "archive:R1-S01::intent",
+  "text": "Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use."
+ },
+ {
+  "text_id": "archive:R1-S02::intent",
+  "text": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered."
+ },
+ {
+  "text_id": "archive:R1-S03::intent",
+  "text": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion."
+ },
+ {
+  "text_id": "archive:R1-S04::intent",
+  "text": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic."
+ },
+ {
+  "text_id": "archive:R1-S05::intent",
+  "text": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms."
+ },
+ {
+  "text_id": "archive:R2-S01::intent",
+  "text": "Aims to give staff a single supervised threshold controlling access to both classrooms and hall, and to let evening visitors reach the hall and arts without entering classroom corridors."
+ },
+ {
+  "text_id": "archive:R2-S02::intent",
+  "text": "Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination."
+ },
+ {
+  "text_id": "archive:R2-S03::intent",
+  "text": "Aims to let the hall and workshop open to the community and be phased independently, while keeping the instructional day secure inside a single enclosed bar."
+ },
+ {
+  "text_id": "archive:R2-S04::intent",
+  "text": "Seeks a protected outdoor room that every part of the school opens onto, with indoor circulation around it, and places reading at the social centre above shared dining."
+ },
+ {
+  "text_id": "archive:R2-S05::intent",
+  "text": "Aims to keep every classroom within one stair of the ground and close to the hall, while giving the school a clear civic address and grouping supervision, nursing and special education support."
+ },
+ {
+  "text_id": "archive:R3-S01::intent",
+  "text": "Aims to give visitors one supervised arrival point at the middle of the school, buffer classrooms from hall noise, and let arts and library programs anchor community use next to the hall."
+ },
+ {
+  "text_id": "archive:R3-S02::intent",
+  "text": "Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms."
+ },
+ {
+  "text_id": "archive:R3-S03::intent",
+  "text": "Aims to bring every mass to three floors, allow indoor movement between any two parts, and join arts with the hall into one performance and community venue."
+ },
+ {
+  "text_id": "archive:R3-S04::intent",
+  "text": "Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn."
+ },
+ {
+  "text_id": "archive:R3-S05::intent",
+  "text": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen."
+ },
+ {
+  "text_id": "p06:P01::intent_rewrite",
+  "text": "Seeks to locate all teaching rooms no more than one flight above grade and near the assembly space, establish a recognizable public identity, and place administrative oversight, health services and specialized learning assistance together."
+ },
+ {
+  "text_id": "p06:P02::intent_rewrite",
+  "text": "Intends to establish a prominent cultural gathering place for residents by arranging creative and theatrical facilities alongside shared spaces, while connecting all three volumes internally to minimize everyday travel distances and exposure to weather."
+ },
+ {
+  "text_id": "p06:P03::intent_rewrite",
+  "text": "Seeks to establish a readily understood principal entrance shared by guests, caregivers and pupils during regular circulation, position teaching spaces at the quieter extremity of the connected buildings, and provide public access to communal facilities."
+ },
+ {
+  "text_id": "p06:P04::intent_rewrite",
+  "text": "Intends to accommodate the majority of pupils and employees within one structure with limited travel between levels, while allocating separate street-level accommodation for disruptive creative activities and maintenance functions adjoining the assembly space and food preparation area."
+ },
+ {
+  "text_id": "p06:P05::intent_rewrite",
+  "text": "Seeks to arrange each of the three building volumes across three storeys, provide enclosed connections allowing travel between every pair, and combine creative facilities with the assembly space for performances and gatherings involving local residents."
+ },
+ {
+  "text_id": "p06:P06::intent_rewrite",
+  "text": "Intends to encourage regular interaction between pupils from the two classroom sections through shared central routes leading to meals, group gatherings and creative activities, while establishing a common place for the wider public to gather."
+ },
+ {
+  "text_id": "p06:P07::intent_rewrite",
+  "text": "Aims to use meals, whole-school gatherings and physical education as recurring opportunities for interaction across the school population, while organizing academic accommodation as an independently functioning instructional structure with creative facilities adjacent to teaching rooms."
+ },
+ {
+  "text_id": "p06:P08::intent_rewrite",
+  "text": "Seeks to enable public activities in the communal building outside teaching hours without granting access to other school areas, while accommodating pupils' everyday requirements, including healthcare provision, within the academic building."
+ },
+ {
+  "text_id": "p06:P09::intent_rewrite",
+  "text": "Intends to accommodate administrative decision-makers and book collections within the principal teaching structure, while establishing separate accommodation for pupils requiring additional educational assistance, positioned near healthcare facilities and practical creative workspaces."
+ },
+ {
+  "text_id": "p06:P10::intent_rewrite",
+  "text": "Aims to permit separate public access to the assembly facility, centralize access protection within the connected linear buildings, and locate the book collection on the highest level of the structure accommodating most pupils' teaching activities."
+ },
+ {
+  "text_id": "p06:P11::intent_rewrite",
+  "text": "Seeks to establish one monitored access point through which personnel can regulate entry to teaching areas and the assembly facility, while providing nighttime public access to gatherings and creative activities without passage through instructional circulation routes."
+ },
+ {
+  "text_id": "p06:P12::intent_rewrite",
+  "text": "Intends to establish a centrally located, monitored reception for guests, separate teaching accommodation acoustically from assembly activities, and position creative and book-related facilities alongside the gathering space to support public participation."
+ },
+ {
+  "text_id": "p06:P13::intent_rewrite",
+  "text": "Aims to position shared gathering facilities as the primary setting for school interaction and public arrival, while separating the instructional section and its creative workrooms from circulation associated with outside guests."
+ },
+ {
+  "text_id": "p06:P14::intent_rewrite",
+  "text": "Seeks to enable public access to the assembly space and practical workroom, allow their construction in separate stages, and maintain controlled teaching operations within one continuous, internally connected building section."
+ },
+ {
+  "text_id": "p06:P15::intent_rewrite",
+  "text": "Intends to create a sheltered exterior gathering space accessible from all three school volumes, arrange enclosed movement routes around its perimeter, and locate facilities for books and reading at the main gathering area above communal eating accommodation."
+ },
+ {
+  "text_id": "p06:P01::idea_rewrite",
+  "text": "Teaching spaces occupy a modest two-level structure that maintains a strong connection to the site. An assembly facility borders one side, while the opposite side meets a concentrated three-level public building. This taller element places reception functions below educational assistance facilities and a top-floor library, giving the composition its most prominent upward expression. Seeks to locate all teaching rooms no more than one flight above grade and near the assembly space, establish a recognizable public identity, and place administrative oversight, health services and specialized learning assistance together."
+ },
+ {
+  "text_id": "p06:P02::idea_rewrite",
+  "text": "Three mutually connected buildings create a tightly arranged triangular configuration. One combines communal activities at ground level with creative studios directly overhead, accommodating social events, presentations and practical artistic work. Another contains administrative and public functions beneath an uppermost library, while a straightforward classroom structure provides the third component. Direct internal links connect every pair of buildings. Intends to establish a prominent cultural gathering place for residents by arranging creative and theatrical facilities alongside shared spaces, while connecting all three volumes internally to minimize everyday travel distances and exposure to weather."
+ },
+ {
+  "text_id": "p06:P03::idea_rewrite",
+  "text": "The school is arranged as three consecutive structures along a single route. Classroom accommodation occupies one extremity and communal facilities the other. Between them, a central administrative and cultural building contains reception, offices, creative teaching rooms and the library. It provides the main entrance and principal circulation junction, requiring anyone moving between the two outer buildings to pass through this middle section. Seeks to establish a readily understood principal entrance shared by guests, caregivers and pupils during regular circulation, position teaching spaces at the quieter extremity of the connected buildings, and provide public access to communal facilities."
+ },
+ {
+  "text_id": "p06:P04::idea_rewrite",
+  "text": "Nearly all routine educational activities take place within one substantial teaching building, which accommodates the main entrance on its lowest level and the library at its highest. An adjacent single-level structure provides practical creative workspaces and operational facilities. Positioned between the teaching building and assembly hall, this smaller element establishes their connection while concentrating fabrication activities and building services at that intermediate point. Intends to accommodate the majority of pupils and employees within one structure with limited travel between levels, while allocating separate street-level accommodation for disruptive creative activities and maintenance functions adjoining the assembly space and food preparation area."
+ },
+ {
+  "text_id": "p06:P05::idea_rewrite",
+  "text": "Three buildings of equal three-level height form a closely connected arrangement surrounding an outdoor court, with direct connections between all three. The assembly facilities occupy a building of the same vertical extent as its neighbors, incorporating upper-level creative studios over the utility area with views toward the performance platform. The remaining buildings accommodate classrooms and administration, with additional educational assistance rooms adjacent to the office and health facilities. Seeks to arrange each of the three building volumes across three storeys, provide enclosed connections allowing travel between every pair, and combine creative facilities with the assembly space for performances and gatherings involving local residents."
+ },
+ {
+  "text_id": "p06:P06::idea_rewrite",
+  "text": "Communal activities occupy the principal connecting structure, containing spaces for recreation, meals and schoolwide events, with visual and performing arts studios situated overhead. A classroom building and a separate entrance-and-assistance building extend from this shared facility. Neither outer building connects directly to the other, making the communal structure the necessary route for movement between instructional accommodation and administrative or inclusive services. Intends to encourage regular interaction between pupils from the two classroom sections through shared central routes leading to meals, group gatherings and creative activities, while establishing a common place for the wider public to gather."
+ },
+ {
+  "text_id": "p06:P07::idea_rewrite",
+  "text": "An assembly and activity building occupies the middle of the composition, receiving two separate extensions from opposing directions. One contains a full range of classroom facilities together with dedicated creative teaching rooms. The smaller extension houses reception and administration on its lower level and the library upstairs. No direct connection exists between these extensions; circulation from one to the other must traverse the central gathering facility. Aims to use meals, whole-school gatherings and physical education as recurring opportunities for interaction across the school population, while organizing academic accommodation as an independently functioning instructional structure with creative facilities adjacent to teaching rooms."
+ },
+ {
+  "text_id": "p06:P08::idea_rewrite",
+  "text": "The school operates as three distinct buildings distributed across a common site, without enclosed corridors linking them. One independently functioning teaching building includes routine student welfare provision. A second accommodates sport and meals and can operate separately for neighborhood use. The third is a shorter administration-and-creative-education building located at the entrance, placing the library over the offices. All transfers between buildings take place outside. Seeks to enable public activities in the communal building outside teaching hours without granting access to other school areas, while accommodating pupils' everyday requirements, including healthcare provision, within the academic building."
+ },
+ {
+  "text_id": "p06:P09::idea_rewrite",
+  "text": "Three directly interconnected structures surround a common open-air space. The tallest accommodates teaching rooms on floors above the administrative entrance facilities, with the library occupying its uppermost level. A neighboring building combines additional educational assistance, healthcare and creative instruction. The communal building provides the remaining side, completing a continuous enclosed circulation arrangement in which each structure connects independently with both others. Intends to accommodate administrative decision-makers and book collections within the principal teaching structure, while establishing separate accommodation for pupils requiring additional educational assistance, positioned near healthcare facilities and practical creative workspaces."
+ },
+ {
+  "text_id": "p06:P10::idea_rewrite",
+  "text": "The principal school consists of two neighboring elongated teaching buildings running alongside one another and connected directly. The first accommodates general classrooms and places the library on its highest level. The second combines reception and administrative functions with additional inclusive educational provision. A separate assembly and community facility occupies the same grounds without a built connection to either teaching building. Aims to permit separate public access to the assembly facility, centralize access protection within the connected linear buildings, and locate the book collection on the highest level of the structure accommodating most pupils' teaching activities."
+ },
+ {
+  "text_id": "p06:P11::idea_rewrite",
+  "text": "A short administrative and cultural building occupies the space between a three-level classroom structure and a communal assembly facility. This intermediate section provides their sole internal connection and accommodates the school's principal entrance. Reception, practical creative activities and library provision are concentrated where visitors enter, with teaching accommodation extending in one direction and the shared gathering facility in the other. Seeks to establish one monitored access point through which personnel can regulate entry to teaching areas and the assembly facility, while providing nighttime public access to gatherings and creative activities without passage through instructional circulation routes."
+ },
+ {
+  "text_id": "p06:P12::idea_rewrite",
+  "text": "Three buildings follow a straight progression from a relatively secluded classroom structure to a communal assembly facility. Between these endpoints stands a concentrated entrance building containing administration at its lowest level and creative instruction and library accommodation above. This middle section serves as the main public arrival point and obligatory internal route between teaching areas and the assembly facility. Intends to establish a centrally located, monitored reception for guests, separate teaching accommodation acoustically from assembly activities, and position creative and book-related facilities alongside the gathering space to support public participation."
+ },
+ {
+  "text_id": "p06:P13::idea_rewrite",
+  "text": "A communal building occupies the midpoint of the school, connecting an entrance-and-administration section on one side with classroom accommodation on the other. The two outer sections have no direct link. Visitors first enter the common activity space before reaching the teaching section beyond, separating classrooms from immediate public access. Creative subjects are incorporated into the classroom section alongside regular instruction. Aims to position shared gathering facilities as the primary setting for school interaction and public arrival, while separating the instructional section and its creative workrooms from circulation associated with outside guests."
+ },
+ {
+  "text_id": "p06:P14::idea_rewrite",
+  "text": "The complete daily instructional program occupies a single independently functioning elongated building. Administrative reception and additional educational services occupy its lowest portion, classrooms rise above them, and the library completes the uppermost level. Elsewhere on the same property stand two physically separate structures: one for communal assemblies and another for practical creative work and upkeep operations. Access between all three requires outdoor travel. Seeks to enable public access to the assembly space and practical workroom, allow their construction in separate stages, and maintain controlled teaching operations within one continuous, internally connected building section."
+ },
+ {
+  "text_id": "p06:P15::idea_rewrite",
+  "text": "Three connected building sections surround an open-air quadrangle, with enclosed links at each junction providing an uninterrupted circulation circuit. The classroom section rises higher than the others, while a shorter entrance section accommodates administration and creative instruction. The third section contains communal gathering facilities, with an elevated library space above the assembly area oriented toward the interior outdoor space. Intends to create a sheltered exterior gathering space accessible from all three school volumes, arrange enclosed movement routes around its perimeter, and locate facilities for books and reading at the main gathering area above communal eating accommodation."
+ }
+]
