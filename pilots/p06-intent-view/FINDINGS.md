@@ -73,3 +73,21 @@ Date: 2026-11-03.
 - The purpose reference was not blind to the idea families.
 - One intent-paraphrase batch from one model.
 - Q3 measures independence, not usefulness.
+
+## Post hoc: embedded separately, used together (2026-11-03, after the declared results)
+
+The architect chose "combined", and asked whether that means one joint embedding or two separate ones used together. The tested idea view is the **joint** one: one text, one vector. The **separate** version was scored afterwards on vectors already in hand (`posthoc/separate_vs_joint.py`, `posthoc/separate_vs_joint.json`):
+- concept and intent are each centred and normalised;
+- they are concatenated and scaled by 1/√2, so similarity is the equal-weight mean of the concept and intent similarities;
+- the method is the same as above, and nothing here is part of the declared rules.
+
+| Encoder | Joint: Q1 / idea / purpose / ρ | Separate, used together: Q1 / idea / purpose / ρ |
+|---|---|---|
+| qwen3 4b | 13 / **0.77** / **0.72** / 0.30 | **15** / 0.59 / 0.53 / 0.29 |
+| mxbai | 14 / 0.51 / 0.46 / 0.30 | **15** / 0.48 / 0.41 / 0.35 |
+| nomic | 12 / 0.29 / 0.31 / 0.17 (fails) | 13 / 0.51 / 0.46 / 0.29 (**passes**) |
+| bge-m3 | 15 / 0.59 / 0.53 / 0.42 | 15 / 0.62 / 0.56 / 0.44 |
+
+- **Joint:** the sharpest grouping on the best encoder, and it qualifies in 3 of 4 encoders.
+- **Separate:** perfectly stable to paraphrase in 3 encoders, and it qualifies on **both** references in **all 4** encoders, but matches less sharply on qwen3.
+- Neither is less tied to the axes than concept alone.
