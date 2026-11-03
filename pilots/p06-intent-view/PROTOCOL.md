@@ -38,7 +38,7 @@ So intent might add more of what the axes lack, which is the condition under whi
 | # | Question | Measure | Bar |
 |---|---|---|---|
 | Q1 | Stable? | Rewrites assigned to their original's neighbourhood (archive views) | ≥ 12 of 15 |
-| Q2 | Meaningful? | ARI against a reference. concept: the Pilot 5 idea families (architect-accepted). intent: the purpose families (`reference/purpose_families_claude_v1.json`, after architect review). idea: both reported | ARI ≥ 0.40, permutation p < 0.05 (10,000 shuffles, seed 20261103) |
+| Q2 | Meaningful? | ARI against a reference. concept: the Pilot 5 idea families (architect-accepted). intent: the purpose families (`reference/purpose_families_claude_v1.json`, architect-approved 2026-11-03, no changes). idea: both reported | ARI ≥ 0.40, permutation p < 0.05 (10,000 shuffles, seed 20261103) |
 | Q3 | Independent of the axes? | Mantel: Spearman ρ between the view's cosine distance and the weighted structural change, with an item-permutation p (9,999). Archive (15) primary; Pilot 4 cases (40; one writer and format) secondary | No bar. Compared between views: lower ρ means more information the axes lack |
 | Q4 | Discriminating? | silhouette k; the share of items in the largest neighbourhood | Reported. "Collapsed" if k = 3 and the largest neighbourhood holds ≥ 60% |
 | Q5 | Do concept and intent disagree? | ARI between the concept and intent neighbourhoods (archive; and the 40 cases) | Reported |
@@ -55,4 +55,4 @@ A view **qualifies** as an address if it passes Q1 and Q2 and is not collapsed (
 | Intent fails Q1 or Q2, or collapses | Purpose is too unstable or too shared | **Concept stays the coordinate**; intent is used only as the wording of guidance |
 | idea qualifies and beats both singles on Q2 with no worse Q3 | Embedding them together is enough | One combined coordinate |
 
-Limits: 15 seeds; the intent reference is an LLM grouping until the architect reviews it, and it is not blind to the concept families. Q3 measures independence, not usefulness; a view could be independent of the axes because it is noisy, which Q1, Q2 and Q4 guard against.
+Limits: 15 seeds; the intent reference is an LLM grouping (approved by the architect without changes), not blind to the concept families. Q3 measures independence, not usefulness; a view could be independent of the axes because it is noisy, which Q1, Q2 and Q4 guard against.
