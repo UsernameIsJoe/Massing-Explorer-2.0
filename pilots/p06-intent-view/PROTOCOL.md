@@ -43,6 +43,8 @@ So intent might add more of what the axes lack, which is the condition under whi
 | Q4 | Discriminating? | silhouette k; the share of items in the largest neighbourhood | Reported. "Collapsed" if k = 3 and the largest neighbourhood holds ≥ 60% |
 | Q5 | Do concept and intent disagree? | ARI between the concept and intent neighbourhoods (archive; and the 40 cases) | Reported |
 
+**Cross-check (reported, not gated; added 2026-11-03 after a dry run on stand-in data, before any intent embedding):** every view is also scored against the other reference. This shows whether intent tracks purpose better than concept does: a dry run showed concept neighbourhoods already match the purpose families moderately.
+
 A view **qualifies** as an address if it passes Q1 and Q2 and is not collapsed (Q4).
 
 ## Readings, fixed now
