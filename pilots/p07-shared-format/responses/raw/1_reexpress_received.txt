@@ -1,0 +1,96 @@
+```
+
+{
+  "E01": {
+    "concept": "A low two-storey learning bar sits between a shared hall and a compact three-storey civic tower. The bar acts as the sole connector, with no direct link between hall and tower. The tower concentrates the school's public face, specialist support and arts beneath a library crown, while classrooms remain in the lower horizontal range.",
+    "intent": "Seeks to keep every classroom within one stair of the ground and close to the hall, establish a clear civic address, and group supervision, nursing and special education support.",
+    "section_intent": "The learning bar stays at two storeys, keeping classrooms near grade, while the civic tower rises three storeys with administration, medical care and arts at its base, special education above and the library at the top.",
+    "program_stance": "Core academic rooms occupy the low bar beside the commons, while special education sits above administration and medical care in the civic tower. The learning bar alone connects the commons to the tower."
+  },
+  "E02": {
+    "concept": "A compact triangular cluster joins three distinct masses through direct links on every side. A cultural block layers an arts loft over the shared commons, while a civic block gathers leadership, care and specialized learning beneath a library crown. A dedicated academic bar completes the closed triangle, establishing an interconnected arrangement of teaching, civic and communal spaces.",
+    "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, while providing direct indoor connections between all three masses for short, sheltered daily movement.",
+    "section_intent": "The academic and civic blocks rise three storeys, with the library crowning the civic block. The commons places gym and dining at grade beneath an upper arts loft, vertically combining communal and cultural activities.",
+    "program_stance": "Core academic classrooms occupy a dedicated bar, while special education is grouped with administration and medical care in the civic block. The commons and arts form a separate cultural block directly connected to both."
+  },
+  "E03": {
+    "concept": "Three masses form a linear chain, with a learning bar at one end, a community commons at the other and a civic hinge between them. The hinge concentrates arrival, administration, care, arts and the library into the school's public crossroads. Each end connects only to the hinge, making it the required passage between classrooms and commons.",
+    "intent": "Seeks to establish one legible front where visitors, families and daily student movement converge, keep classrooms quiet at the far end of the chain, and maintain access to the commons for community use.",
+    "section_intent": "The learning bar rises three storeys for classrooms, while the civic hinge places administration, medical care and building service at grade, arts across its lower two floors and the library at its crown. The commons stays at grade.",
+    "program_stance": "Core academic and special education rooms share the learning end, separated from the gym and dining by the civic hinge. Administration occupies the middle, controlling the only enclosed connection between learning and commons."
+  },
+  "E04": {
+    "concept": "A consolidated learning block holds most of the school day, with the public entrance at its base and the library at its crown. A low workshop pavilion containing arts and building service connects this main block to a separate assembly hall. The three masses form a linear arrangement in which the workshop is the only link between learning and assembly.",
+    "intent": "Seeks to keep most students and staff within one building with short vertical trips, while giving noisy, messy arts work and building service a separate ground-level setting beside the hall and kitchen.",
+    "section_intent": "The consolidated learning block rises three storeys, with administration and medical care at grade, classrooms and special education throughout, and the library at the top. The workshop and hall remain single-storey, keeping arts and service at ground level.",
+    "program_stance": "Core academic and special education share the main block with administration and medical care. Gym and dining occupy the separate hall, accessible from teaching spaces only through the intervening arts and maintenance workshop."
+  },
+  "E05": {
+    "concept": "Three three-storey masses form a compact courtyard cluster, with direct indoor links completing a continuous ring. A full-height performance block combines the hall with an arts loft above its service side overlooking the stage. A dedicated classroom bar and a civic house complete the arrangement, with specialized learning grouped around care and leadership.",
+    "intent": "Seeks to bring all three masses to three storeys, allow direct indoor movement between any two parts, and combine arts and the hall into one performance and community venue.",
+    "section_intent": "All three masses rise three storeys. The performance block places gym and dining at grade with arts above, while the civic house places administration and medical care below specialized learning and a library crown.",
+    "program_stance": "Core academic classrooms occupy a dedicated bar, while special education is paired with administration and medical care in the civic house. Gym and dining anchor the performance block, directly linked to both teaching and civic spaces."
+  },
+  "E06": {
+    "concept": "A central shared heart gathers the school's communal functions and links two otherwise disconnected wings. The heart combines the hall, dining and an upper arts loft connected to performance below. One wing concentrates classrooms and building service; the other forms the civic front with administration, care and inclusive support beneath a library crown. All movement between wings crosses the heart.",
+    "intent": "Seeks to make crossings through the heart a daily social routine, bringing students from both wings together for lunch, assembly and arts while giving the community one focal destination.",
+    "section_intent": "Both wings rise three storeys, with classrooms extending vertically in one and administration, care and support below a library crown in the other. The central heart places gym and dining at grade beneath an upper arts loft.",
+    "program_stance": "Core academic rooms occupy one wing, while special education is grouped with administration and medical care in the opposite wing. Gym and dining form the central commons, serving as the only connection between them."
+  },
+  "E07": {
+    "concept": "A centralized arrangement places the shared hall between two wings attached from opposite sides. One wing forms a self-contained learning house containing classrooms, special education and arts. The other is a compact front-of-house block for administration, care, service and the library. The wings have no direct connection; all movement between them passes through the hall.",
+    "intent": "Seeks to make lunch, assemblies and physical education the daily crossroads of the school community, while allowing the learning house to operate as a self-contained teaching building with arts beside classrooms.",
+    "section_intent": "The learning house rises three storeys, carrying classrooms and special education throughout with arts at grade. The smaller civic wing places administration, care and service below a second-floor library, while gym and dining remain at ground level.",
+    "program_stance": "Core academic and special education occupy the same learning house, with arts integrated at its base. Administration sits across the central commons, where gym and dining provide the only indoor link between the wings."
+  },
+  "E08": {
+    "concept": "Three detached pavilions form a small campus on shared grounds, without enclosed links between buildings. A self-sufficient learning pavilion combines classrooms, specialized learning and daily care. An independent community pavilion contains athletics and dining, while a lower civic-arts pavilion marks arrival with the library above administration. All movement between pavilions occurs outdoors.",
+    "intent": "Seeks to allow the community pavilion to operate independently after hours without opening the rest of the school, while keeping students' daily needs, including medical care, within the learning pavilion.",
+    "section_intent": "The learning pavilion rises three storeys, keeping classrooms and special education together with medical care at grade. The civic-arts pavilion remains two storeys, with a library above ground-floor administration and arts, while the community pavilion stays single-storey.",
+    "program_stance": "Core academic and special education share a self-sufficient pavilion with medical care. Administration occupies a separate arrival pavilion, while gym and dining form an independent community building. No enclosed connections link the three."
+  },
+  "E09": {
+    "concept": "Three masses form a closed loop around a shared court, each directly connected to the other two. A tall academy combines classrooms with the school's front office and a library crown. Beside it, a dedicated care-and-making house pairs specialized learning with nursing and arts. A separate commons completes the courtyard ring.",
+    "intent": "Seeks to integrate leadership and the library into the main learning building, while providing students with special needs a dedicated house with nearby medical care and hands-on arts rooms.",
+    "section_intent": "The academy rises three storeys, with administration at grade and the library crowning its classrooms. The care-and-making house also extends through three floors, with arts and nursing at grade. Gym and dining occupy the low commons.",
+    "program_stance": "Core academic rooms share the academy with administration, while special education occupies a distinct care-and-making house with medical and arts support. The commons connects directly to both houses, completing the continuous courtyard loop."
+  },
+  "E10": {
+    "concept": "Two parallel, directly linked bars form the enclosed school proper, while a community hall stands independently on the shared grounds. One bar concentrates classrooms beneath a library crown; the other pairs the civic front with specialized learning, medical care and arts. No built connection joins the freestanding hall to either school bar.",
+    "intent": "Seeks to allow independent community use of the hall, concentrate school security within the joined bars, and place the library at the top of the classroom house where most students learn.",
+    "section_intent": "Both school bars rise three storeys, with classrooms and a library crown in one and administration, care and arts at the base of the special education bar. The detached hall remains at grade.",
+    "program_stance": "Core academic classrooms occupy one bar, while special education shares the parallel bar with administration and medical care. The bars connect directly, but the gym and dining remain in a separate, unconnected community hall."
+  },
+  "E11": {
+    "concept": "A low civic gateway sits between a three-storey learning bar and a community hall, forming their only enclosed connection. The gateway combines arrival, supervision, care, arts and reading into a shared threshold. Classrooms and special education extend behind it on one side, while the hall and dining occupy the opposite end of the linear arrangement.",
+    "intent": "Seeks to establish a single supervised threshold controlling access to classrooms and hall, while allowing evening visitors to reach the hall and arts without entering classroom corridors.",
+    "section_intent": "The learning bar rises three storeys, with special education at grade alongside classrooms. The gateway stays two storeys, placing administration, care, arts and service below the library. Gym and dining remain at ground level in the hall.",
+    "program_stance": "Core academic and special education are consolidated in the learning bar behind the gateway. Administration and medical care occupy the intervening threshold, while gym and dining lie beyond, reached only through the gateway."
+  },
+  "E12": {
+    "concept": "A linear sequence places a quiet learning bar at one end, an assembly hall at the other and a compact civic-cultural hinge between them. The hinge forms the school's front door, combining administration, care, arts and a library crown. It is the sole enclosed connector between learning and hall, separating the instructional and communal ends.",
+    "intent": "Seeks to provide one supervised arrival point at the school's centre, buffer classrooms from hall noise, and allow arts and library programs to anchor community use beside the hall.",
+    "section_intent": "The learning bar rises three storeys with classrooms and special education throughout and building service at grade. The civic hinge also rises three storeys, with administration and care below arts and a library crown. The hall remains at grade.",
+    "program_stance": "Core academic and special education share the quiet learning bar, while administration and medical care occupy the central civic hinge. Gym and dining sit beyond the hinge, without a direct link to classrooms."
+  },
+  "E13": {
+    "concept": "A central commons heart connects a compact civic front to a learning wing beyond, forming a three-part sequence. Arrival passes from the public front through the shared volume before reaching classrooms. The learning wing brings arts into everyday teaching, while the civic front combines administration and care beneath the library. No direct link bypasses the commons.",
+    "intent": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.",
+    "section_intent": "The learning wing rises three storeys, with special education across its lower floors and arts at grade. The civic front stays two storeys, placing the library over administration and care. Gym and dining remain at ground level in the heart.",
+    "program_stance": "Core academic, special education and arts share the learning wing beyond the commons. Administration and medical care occupy the civic front, while gym and dining form the only enclosed connection between civic arrival and learning."
+  },
+  "E14": {
+    "concept": "A self-contained school bar consolidates the instructional day into one vertical enclosure, rising from administration and specialist support to classrooms and a reading crown. Two freestanding pavilions occupy the shared grounds: a community hall and a making-and-maintenance workshop. No enclosed links join the three masses, and movement between them occurs outdoors.",
+    "intent": "Seeks to allow the hall and workshop to open for community use and be phased independently, while keeping the instructional day secure within one enclosed school bar.",
+    "section_intent": "The school bar rises three storeys, placing administration, care and special education at grade, with classrooms above and the library at the top. The workshop rises two storeys for arts, while the separate hall stays at grade.",
+    "program_stance": "Core academic classrooms occupy the upper school bar above special education, administration and medical care. Gym and dining form a detached hall, while arts and building service occupy another pavilion, with no enclosed links."
+  },
+  "E15": {
+    "concept": "Three ranges enclose a courtyard and connect at every corner to form a continuous indoor circulation loop. A tall learning range defines one side, while a single-storey civic-arts front keeps another side low. The commons range combines a ground-level hall with an elevated reading loft overlooking the court, placing the library within the shared communal composition.",
+    "intent": "Seeks to create a protected outdoor room that every school range opens onto, maintain continuous indoor circulation around it, and position reading at the social centre above shared dining.",
+    "section_intent": "The learning range rises three storeys, with special education at grade. The civic-arts front remains single-storey to admit light to the court. The commons places gym and dining at grade beneath a third-floor library loft.",
+    "program_stance": "Core academic and special education share the tall learning range, while administration, care and arts occupy the low civic front. Gym and dining occupy the commons, directly connected to both other ranges around the courtyard."
+  }
+}
+
+```
