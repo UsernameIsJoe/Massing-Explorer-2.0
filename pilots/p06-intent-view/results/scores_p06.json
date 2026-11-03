@@ -1,0 +1,1419 @@
+{
+ "primary_encoder": "qwen3-embedding:4b",
+ "primary_correction": "centred",
+ "results": {
+  "centred": {
+   "qwen3-embedding:4b": {
+    "concept": {
+     "k": 6,
+     "neighbourhoods": {
+      "0": [
+       "E02",
+       "E05",
+       "E09",
+       "E15"
+      ],
+      "1": [
+       "E03",
+       "E11",
+       "E12"
+      ],
+      "2": [
+       "E01",
+       "E10"
+      ],
+      "3": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "4": [
+       "E04"
+      ],
+      "5": [
+       "E08",
+       "E14"
+      ]
+     },
+     "Q1_rewrites_stay_home": 14,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.88,
+       "p": 0.0001,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.505,
+       "p": 0.0006,
+       "pass": true
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.295,
+      "p": 0.0005
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.144,
+      "p": 0.0002
+     },
+     "Q4_largest_share": 0.27,
+     "Q4_collapsed": false,
+     "qualifies": true
+    },
+    "intent": {
+     "k": 5,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E09",
+       "E15"
+      ],
+      "1": [
+       "E08",
+       "E10",
+       "E11",
+       "E14"
+      ],
+      "2": [
+       "E02",
+       "E04",
+       "E05"
+      ],
+      "3": [
+       "E06",
+       "E07"
+      ],
+      "4": [
+       "E03",
+       "E12",
+       "E13"
+      ]
+     },
+     "Q1_rewrites_stay_home": 14,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.357,
+       "p": 0.0057,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.378,
+       "p": 0.0036,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.196,
+      "p": 0.0162
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.161,
+      "p": 0.0001
+     },
+     "Q4_largest_share": 0.27,
+     "Q4_collapsed": false,
+     "qualifies": false
+    },
+    "idea": {
+     "k": 5,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E04",
+       "E09"
+      ],
+      "1": [
+       "E03",
+       "E11",
+       "E12"
+      ],
+      "2": [
+       "E02",
+       "E05",
+       "E15"
+      ],
+      "3": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "4": [
+       "E08",
+       "E10",
+       "E14"
+      ]
+     },
+     "Q1_rewrites_stay_home": 13,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.767,
+       "p": 0.0001,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.72,
+       "p": 0.0001,
+       "pass": true
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.303,
+      "p": 0.0009
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.173,
+      "p": 0.0001
+     },
+     "Q4_largest_share": 0.2,
+     "Q4_collapsed": false,
+     "qualifies": true
+    }
+   },
+   "mxbai-embed-large": {
+    "concept": {
+     "k": 4,
+     "neighbourhoods": {
+      "0": [
+       "E02",
+       "E05",
+       "E08",
+       "E09",
+       "E15"
+      ],
+      "1": [
+       "E01",
+       "E04",
+       "E10",
+       "E14"
+      ],
+      "2": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "3": [
+       "E03",
+       "E11",
+       "E12"
+      ]
+     },
+     "Q1_rewrites_stay_home": 13,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.642,
+       "p": 0.0001,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.336,
+       "p": 0.006,
+       "pass": false
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.281,
+      "p": 0.0013
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.12,
+      "p": 0.0004
+     },
+     "Q4_largest_share": 0.33,
+     "Q4_collapsed": false,
+     "qualifies": true
+    },
+    "intent": {
+     "k": 6,
+     "neighbourhoods": {
+      "0": [
+       "E08",
+       "E10",
+       "E11",
+       "E14"
+      ],
+      "1": [
+       "E09",
+       "E15"
+      ],
+      "2": [
+       "E01",
+       "E04"
+      ],
+      "3": [
+       "E03",
+       "E12",
+       "E13"
+      ],
+      "4": [
+       "E02",
+       "E05"
+      ],
+      "5": [
+       "E06",
+       "E07"
+      ]
+     },
+     "Q1_rewrites_stay_home": 13,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.424,
+       "p": 0.0012,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.363,
+       "p": 0.0048,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.243,
+      "p": 0.0072
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.104,
+      "p": 0.0012
+     },
+     "Q4_largest_share": 0.27,
+     "Q4_collapsed": false,
+     "qualifies": false
+    },
+    "idea": {
+     "k": 5,
+     "neighbourhoods": {
+      "0": [
+       "E08",
+       "E09",
+       "E15"
+      ],
+      "1": [
+       "E01",
+       "E04",
+       "E10",
+       "E14"
+      ],
+      "2": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "3": [
+       "E02",
+       "E05"
+      ],
+      "4": [
+       "E03",
+       "E11",
+       "E12"
+      ]
+     },
+     "Q1_rewrites_stay_home": 14,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.508,
+       "p": 0.0001,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.456,
+       "p": 0.0012,
+       "pass": true
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.297,
+      "p": 0.0009
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.16,
+      "p": 0.0002
+     },
+     "Q4_largest_share": 0.27,
+     "Q4_collapsed": false,
+     "qualifies": true
+    }
+   },
+   "nomic-embed-text": {
+    "concept": {
+     "k": 6,
+     "neighbourhoods": {
+      "0": [
+       "E09",
+       "E15"
+      ],
+      "1": [
+       "E01",
+       "E04",
+       "E10",
+       "E14"
+      ],
+      "2": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "3": [
+       "E03",
+       "E11",
+       "E12"
+      ],
+      "4": [
+       "E08"
+      ],
+      "5": [
+       "E02",
+       "E05"
+      ]
+     },
+     "Q1_rewrites_stay_home": 10,
+     "Q1_pass": false,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.56,
+       "p": 0.0003,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.505,
+       "p": 0.0006,
+       "pass": true
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.236,
+      "p": 0.0038
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.122,
+      "p": 0.0009
+     },
+     "Q4_largest_share": 0.27,
+     "Q4_collapsed": false,
+     "qualifies": false
+    },
+    "intent": {
+     "k": 6,
+     "neighbourhoods": {
+      "0": [
+       "E08",
+       "E10",
+       "E14"
+      ],
+      "1": [
+       "E01",
+       "E09"
+      ],
+      "2": [
+       "E03",
+       "E13",
+       "E15"
+      ],
+      "3": [
+       "E02",
+       "E04",
+       "E05"
+      ],
+      "4": [
+       "E11",
+       "E12"
+      ],
+      "5": [
+       "E06",
+       "E07"
+      ]
+     },
+     "Q1_rewrites_stay_home": 10,
+     "Q1_pass": false,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.364,
+       "p": 0.0049,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.561,
+       "p": 0.0002,
+       "pass": true
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.204,
+      "p": 0.016
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.132,
+      "p": 0.0001
+     },
+     "Q4_largest_share": 0.2,
+     "Q4_collapsed": false,
+     "qualifies": false
+    },
+    "idea": {
+     "k": 4,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E04",
+       "E08",
+       "E09",
+       "E10",
+       "E14",
+       "E15"
+      ],
+      "1": [
+       "E02",
+       "E05",
+       "E13"
+      ],
+      "2": [
+       "E03",
+       "E11",
+       "E12"
+      ],
+      "3": [
+       "E06",
+       "E07"
+      ]
+     },
+     "Q1_rewrites_stay_home": 12,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.286,
+       "p": 0.0064,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.305,
+       "p": 0.0049,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.174,
+      "p": 0.0312
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.124,
+      "p": 0.0005
+     },
+     "Q4_largest_share": 0.47,
+     "Q4_collapsed": false,
+     "qualifies": false
+    }
+   },
+   "bge-m3": {
+    "concept": {
+     "k": 4,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E04",
+       "E08",
+       "E10",
+       "E11",
+       "E14"
+      ],
+      "1": [
+       "E02",
+       "E05",
+       "E09",
+       "E15"
+      ],
+      "2": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "3": [
+       "E03",
+       "E12"
+      ]
+     },
+     "Q1_rewrites_stay_home": 14,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.574,
+       "p": 0.0001,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.289,
+       "p": 0.0125,
+       "pass": false
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.426,
+      "p": 0.0001
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.121,
+      "p": 0.0004
+     },
+     "Q4_largest_share": 0.4,
+     "Q4_collapsed": false,
+     "qualifies": true
+    },
+    "intent": {
+     "k": 7,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E09"
+      ],
+      "1": [
+       "E08",
+       "E14"
+      ],
+      "2": [
+       "E04",
+       "E11",
+       "E12"
+      ],
+      "3": [
+       "E03",
+       "E13"
+      ],
+      "4": [
+       "E06",
+       "E07"
+      ],
+      "5": [
+       "E02",
+       "E05"
+      ],
+      "6": [
+       "E10",
+       "E15"
+      ]
+     },
+     "Q1_rewrites_stay_home": 15,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.253,
+       "p": 0.0295,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.369,
+       "p": 0.0037,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.291,
+      "p": 0.0005
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.045,
+      "p": 0.0905
+     },
+     "Q4_largest_share": 0.2,
+     "Q4_collapsed": false,
+     "qualifies": false
+    },
+    "idea": {
+     "k": 6,
+     "neighbourhoods": {
+      "0": [
+       "E04",
+       "E08",
+       "E10",
+       "E14"
+      ],
+      "1": [
+       "E01",
+       "E11"
+      ],
+      "2": [
+       "E09",
+       "E15"
+      ],
+      "3": [
+       "E03",
+       "E12"
+      ],
+      "4": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "5": [
+       "E02",
+       "E05"
+      ]
+     },
+     "Q1_rewrites_stay_home": 15,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.588,
+       "p": 0.0002,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.533,
+       "p": 0.0005,
+       "pass": true
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.42,
+      "p": 0.0001
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.116,
+      "p": 0.0003
+     },
+     "Q4_largest_share": 0.27,
+     "Q4_collapsed": false,
+     "qualifies": true
+    }
+   }
+  },
+  "raw": {
+   "qwen3-embedding:4b": {
+    "concept": {
+     "k": 7,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E09",
+       "E10",
+       "E14"
+      ],
+      "1": [
+       "E02",
+       "E05"
+      ],
+      "2": [
+       "E03",
+       "E11",
+       "E12"
+      ],
+      "3": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "4": [
+       "E15"
+      ],
+      "5": [
+       "E08"
+      ],
+      "6": [
+       "E04"
+      ]
+     },
+     "Q1_rewrites_stay_home": 10,
+     "Q1_pass": false,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.506,
+       "p": 0.0008,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.618,
+       "p": 0.0002,
+       "pass": true
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.2,
+      "p": 0.0627
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.168,
+      "p": 0.0064
+     },
+     "Q4_largest_share": 0.27,
+     "Q4_collapsed": false,
+     "qualifies": false
+    },
+    "intent": {
+     "k": 5,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E04",
+       "E09"
+      ],
+      "1": [
+       "E06",
+       "E07"
+      ],
+      "2": [
+       "E03",
+       "E08",
+       "E10",
+       "E11",
+       "E12",
+       "E13",
+       "E14"
+      ],
+      "3": [
+       "E15"
+      ],
+      "4": [
+       "E02",
+       "E05"
+      ]
+     },
+     "Q1_rewrites_stay_home": 15,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.255,
+       "p": 0.0151,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.335,
+       "p": 0.0022,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.174,
+      "p": 0.0945
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.106,
+      "p": 0.0591
+     },
+     "Q4_largest_share": 0.47,
+     "Q4_collapsed": false,
+     "qualifies": false
+    },
+    "idea": {
+     "k": 8,
+     "neighbourhoods": {
+      "0": [
+       "E08",
+       "E10",
+       "E14"
+      ],
+      "1": [
+       "E03",
+       "E11",
+       "E12"
+      ],
+      "2": [
+       "E04"
+      ],
+      "3": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "4": [
+       "E01"
+      ],
+      "5": [
+       "E15"
+      ],
+      "6": [
+       "E09"
+      ],
+      "7": [
+       "E02",
+       "E05"
+      ]
+     },
+     "Q1_rewrites_stay_home": 13,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.774,
+       "p": 0.0001,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.812,
+       "p": 0.0001,
+       "pass": true
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.181,
+      "p": 0.0856
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.22,
+      "p": 0.0002
+     },
+     "Q4_largest_share": 0.2,
+     "Q4_collapsed": false,
+     "qualifies": true
+    }
+   },
+   "mxbai-embed-large": {
+    "concept": {
+     "k": 4,
+     "neighbourhoods": {
+      "0": [
+       "E02",
+       "E05",
+       "E09",
+       "E15"
+      ],
+      "1": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "2": [
+       "E01",
+       "E03",
+       "E04",
+       "E10",
+       "E11",
+       "E12",
+       "E14"
+      ],
+      "3": [
+       "E08"
+      ]
+     },
+     "Q1_rewrites_stay_home": 12,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.478,
+       "p": 0.0002,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.222,
+       "p": 0.0275,
+       "pass": false
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.309,
+      "p": 0.0125
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.172,
+      "p": 0.0126
+     },
+     "Q4_largest_share": 0.47,
+     "Q4_collapsed": false,
+     "qualifies": true
+    },
+    "intent": {
+     "k": 3,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E03",
+       "E04",
+       "E08",
+       "E09",
+       "E10",
+       "E11",
+       "E12",
+       "E13",
+       "E14",
+       "E15"
+      ],
+      "1": [
+       "E02",
+       "E05"
+      ],
+      "2": [
+       "E06",
+       "E07"
+      ]
+     },
+     "Q1_rewrites_stay_home": 15,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.031,
+       "p": 0.3349,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.086,
+       "p": 0.1164,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.252,
+      "p": 0.036
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.013,
+      "p": 0.416
+     },
+     "Q4_largest_share": 0.73,
+     "Q4_collapsed": true,
+     "qualifies": false
+    },
+    "idea": {
+     "k": 5,
+     "neighbourhoods": {
+      "0": [
+       "E08",
+       "E09"
+      ],
+      "1": [
+       "E01",
+       "E03",
+       "E04",
+       "E10",
+       "E11",
+       "E12",
+       "E13",
+       "E14"
+      ],
+      "2": [
+       "E06",
+       "E07"
+      ],
+      "3": [
+       "E02",
+       "E05"
+      ],
+      "4": [
+       "E15"
+      ]
+     },
+     "Q1_rewrites_stay_home": 11,
+     "Q1_pass": false,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.085,
+       "p": 0.2127,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.102,
+       "p": 0.1563,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.198,
+      "p": 0.0806
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.186,
+      "p": 0.0065
+     },
+     "Q4_largest_share": 0.53,
+     "Q4_collapsed": false,
+     "qualifies": false
+    }
+   },
+   "nomic-embed-text": {
+    "concept": {
+     "k": 3,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E02",
+       "E03",
+       "E04",
+       "E05",
+       "E09",
+       "E10",
+       "E11",
+       "E12",
+       "E13",
+       "E14",
+       "E15"
+      ],
+      "1": [
+       "E08"
+      ],
+      "2": [
+       "E06",
+       "E07"
+      ]
+     },
+     "Q1_rewrites_stay_home": 12,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.045,
+       "p": 0.2407,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": -0.03,
+       "p": 0.863,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.231,
+      "p": 0.0546
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.137,
+      "p": 0.0378
+     },
+     "Q4_largest_share": 0.8,
+     "Q4_collapsed": true,
+     "qualifies": false
+    },
+    "intent": {
+     "k": 3,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E03",
+       "E04",
+       "E07",
+       "E08",
+       "E09",
+       "E10",
+       "E11",
+       "E12",
+       "E13",
+       "E14",
+       "E15"
+      ],
+      "1": [
+       "E06"
+      ],
+      "2": [
+       "E02",
+       "E05"
+      ]
+     },
+     "Q1_rewrites_stay_home": 14,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": -0.018,
+       "p": 0.6827,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.065,
+       "p": 0.1419,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.211,
+      "p": 0.0734
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.108,
+      "p": 0.0581
+     },
+     "Q4_largest_share": 0.8,
+     "Q4_collapsed": true,
+     "qualifies": false
+    },
+    "idea": {
+     "k": 4,
+     "neighbourhoods": {
+      "0": [
+       "E02",
+       "E05",
+       "E13"
+      ],
+      "1": [
+       "E01",
+       "E03",
+       "E04",
+       "E09",
+       "E10",
+       "E11",
+       "E12",
+       "E14",
+       "E15"
+      ],
+      "2": [
+       "E06",
+       "E07"
+      ],
+      "3": [
+       "E08"
+      ]
+     },
+     "Q1_rewrites_stay_home": 10,
+     "Q1_pass": false,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.059,
+       "p": 0.2719,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.077,
+       "p": 0.2057,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.172,
+      "p": 0.1092
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.116,
+      "p": 0.06
+     },
+     "Q4_largest_share": 0.6,
+     "Q4_collapsed": false,
+     "qualifies": false
+    }
+   },
+   "bge-m3": {
+    "concept": {
+     "k": 7,
+     "neighbourhoods": {
+      "0": [
+       "E01",
+       "E04",
+       "E10",
+       "E14"
+      ],
+      "1": [
+       "E09",
+       "E15"
+      ],
+      "2": [
+       "E02",
+       "E05"
+      ],
+      "3": [
+       "E08"
+      ],
+      "4": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "5": [
+       "E11"
+      ],
+      "6": [
+       "E03",
+       "E12"
+      ]
+     },
+     "Q1_rewrites_stay_home": 11,
+     "Q1_pass": false,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.448,
+       "p": 0.0017,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.386,
+       "p": 0.0018,
+       "pass": false
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.479,
+      "p": 0.0001
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.205,
+      "p": 0.0011
+     },
+     "Q4_largest_share": 0.27,
+     "Q4_collapsed": false,
+     "qualifies": false
+    },
+    "intent": {
+     "k": 4,
+     "neighbourhoods": {
+      "0": [
+       "E08",
+       "E10",
+       "E14"
+      ],
+      "1": [
+       "E01",
+       "E02",
+       "E03",
+       "E04",
+       "E05",
+       "E09",
+       "E11",
+       "E12",
+       "E13"
+      ],
+      "2": [
+       "E06",
+       "E07"
+      ],
+      "3": [
+       "E15"
+      ]
+     },
+     "Q1_rewrites_stay_home": 11,
+     "Q1_pass": false,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.197,
+       "p": 0.0177,
+       "pass": false
+      },
+      "purpose_families": {
+       "ari": 0.169,
+       "p": 0.0299,
+       "pass": false
+      }
+     },
+     "Q2_pass": false,
+     "Q3_mantel_archive": {
+      "rho": 0.322,
+      "p": 0.004
+     },
+     "Q3_mantel_cases": {
+      "rho": -0.005,
+      "p": 0.5205
+     },
+     "Q4_largest_share": 0.6,
+     "Q4_collapsed": false,
+     "qualifies": false
+    },
+    "idea": {
+     "k": 7,
+     "neighbourhoods": {
+      "0": [
+       "E09",
+       "E15"
+      ],
+      "1": [
+       "E01",
+       "E04",
+       "E10",
+       "E14"
+      ],
+      "2": [
+       "E02",
+       "E05"
+      ],
+      "3": [
+       "E06",
+       "E07",
+       "E13"
+      ],
+      "4": [
+       "E08"
+      ],
+      "5": [
+       "E11"
+      ],
+      "6": [
+       "E03",
+       "E12"
+      ]
+     },
+     "Q1_rewrites_stay_home": 12,
+     "Q1_pass": true,
+     "Q2": {
+      "idea_families": {
+       "ari": 0.448,
+       "p": 0.0014,
+       "pass": true
+      },
+      "purpose_families": {
+       "ari": 0.386,
+       "p": 0.0035,
+       "pass": false
+      }
+     },
+     "Q2_pass": true,
+     "Q3_mantel_archive": {
+      "rho": 0.479,
+      "p": 0.0001
+     },
+     "Q3_mantel_cases": {
+      "rho": 0.199,
+      "p": 0.0008
+     },
+     "Q4_largest_share": 0.27,
+     "Q4_collapsed": false,
+     "qualifies": true
+    }
+   }
+  }
+ },
+ "concept_vs_intent": {
+  "centred": {
+   "qwen3-embedding:4b": {
+    "Q5_ari_archive": 0.223,
+    "Q5_ari_cases": 0.029
+   },
+   "mxbai-embed-large": {
+    "Q5_ari_archive": 0.222,
+    "Q5_ari_cases": 0.1
+   },
+   "nomic-embed-text": {
+    "Q5_ari_archive": 0.211,
+    "Q5_ari_cases": -0.025
+   },
+   "bge-m3": {
+    "Q5_ari_archive": 0.125,
+    "Q5_ari_cases": 0.024
+   }
+  },
+  "raw": {
+   "qwen3-embedding:4b": {
+    "Q5_ari_archive": 0.232,
+    "Q5_ari_cases": 0.124
+   },
+   "mxbai-embed-large": {
+    "Q5_ari_archive": 0.283,
+    "Q5_ari_cases": -0.067
+   },
+   "nomic-embed-text": {
+    "Q5_ari_archive": 0.134,
+    "Q5_ari_cases": 0.265
+   },
+   "bge-m3": {
+    "Q5_ari_archive": 0.02,
+    "Q5_ari_cases": -0.051
+   }
+  }
+ },
+ "readings": [
+  "intent fails or collapses: concept stays the coordinate; intent as wording only"
+ ]
+}
