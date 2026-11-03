@@ -1,0 +1,39 @@
+{
+  "version": "purpose_claude_v1",
+  "date": "2026-11-03",
+  "author": "Claude (Opus 5.5), at the architect's request; awaiting architect review",
+  "basis": "Purpose read from the 15 archive intent texts (seeds_v2), grouped by what each scheme is trying to achieve, not by its diagram. Drafted before any intent-only embedding existed. Caveat: Claude knows the concept texts and the Pilot 5 idea families, so this grouping is not blind to them.",
+  "families": {
+    "PF1_separate_community_from_school_day": {
+      "members": ["E08", "E10", "E14"],
+      "purpose": "Let the hall (and other community parts) open and operate on their own, while the school day stays secure and self-contained."
+    },
+    "PF2_one_supervised_public_front": {
+      "members": ["E03", "E11", "E12"],
+      "purpose": "One legible, supervised arrival point where visitors, families and students meet, with classrooms kept quiet behind it."
+    },
+    "PF3_commons_as_social_centre": {
+      "members": ["E06", "E07", "E13", "E15"],
+      "purpose": "Make a shared centre (the commons, or a court around which everything opens) the school's daily social routine and community focus."
+    },
+    "PF4_arts_and_hall_as_one_venue": {
+      "members": ["E02", "E05"],
+      "purpose": "Join arts and performance with the hall into one community venue, with short sheltered movement between all parts."
+    },
+    "PF5_care_and_inclusion_grouped": {
+      "members": ["E01", "E09"],
+      "purpose": "Group supervision, nursing and special-education support into a dedicated, well-supported place."
+    },
+    "PF6_one_building_short_trips": {
+      "members": ["E04"],
+      "purpose": "Keep most students and staff in one building with short vertical trips, giving messy and service work its own ground-level place."
+    }
+  },
+  "borderline": {
+    "E15": "Placed in PF3 (reading at the social centre above dining); its 'protected outdoor room' could be a purpose of its own.",
+    "E13": "Placed in PF3; it also names 'community entry point', which leans toward PF2.",
+    "E01": "Placed in PF5 for grouped support; its first aim (classrooms within one stair of the ground, close to the hall) is a different purpose.",
+    "E02": "Placed in PF4; its second aim (a direct indoor link for every mass) is shared with E05 but also with any linked cluster."
+  },
+  "note": "These purpose families partly mirror the Pilot 5 idea families (PF1 = F4, PF2 = F2), because each seed's intent was written together with its concept. Where they differ (F3 split into PF3/PF4; E09 moving to PF5 with E01) is where intent may add information."
+}

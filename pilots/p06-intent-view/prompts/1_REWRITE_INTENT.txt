@@ -1,0 +1,27 @@
+You are an architect. Below are 15 short intent statements for different strategies for the same three-mass elementary school. Each says what its strategy is trying to achieve. Rewrite each one so that it states exactly the same aims, for the same people and uses, but in completely different words.
+
+Rules:
+- Keep the meaning. Do not add, remove or change any aim, any group of people it serves, or any program it names.
+- Avoid the original's distinctive words and phrases (for example, if it says "threshold", "heart", "crossroads", "after hours", "phased" or "secure", find other ways to say it). Ordinary words like "school", "the" or "and" are fine.
+- Write intentions, not claimed outcomes ("aims to", "seeks to", not "achieves").
+- 20-40 words each.
+- Judge each one on its own; do not compare them.
+
+Return JSON only, in exactly this shape, one entry per ID:
+{"P01": "rewritten intent", "P02": "rewritten intent"}
+
+P01: Aims to keep every classroom within one stair of the ground and close to the hall, while giving the school a clear civic address and grouping supervision, nursing and special education support.
+P02: Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.
+P03: Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.
+P04: Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.
+P05: Aims to bring every mass to three floors, allow indoor movement between any two parts, and join arts with the hall into one performance and community venue.
+P06: Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination.
+P07: Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms.
+P08: Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.
+P09: Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.
+P10: Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.
+P11: Aims to give staff a single supervised threshold controlling access to both classrooms and hall, and to let evening visitors reach the hall and arts without entering classroom corridors.
+P12: Aims to give visitors one supervised arrival point at the middle of the school, buffer classrooms from hall noise, and let arts and library programs anchor community use next to the hall.
+P13: Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.
+P14: Aims to let the hall and workshop open to the community and be phased independently, while keeping the instructional day secure inside a single enclosed bar.
+P15: Seeks a protected outdoor room that every part of the school opens onto, with indoor circulation around it, and places reading at the social centre above shared dining.
