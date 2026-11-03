@@ -1,0 +1,3413 @@
+{
+ "version": "v0",
+ "date": "2026-11-03",
+ "encoder": "qwen3-embedding:4b",
+ "k": 12,
+ "silhouette": {
+  "3": 0.05417870307617233,
+  "4": 0.058129604994224884,
+  "5": 0.05745875392685943,
+  "6": 0.06198733112933416,
+  "7": 0.06360504675569124,
+  "8": 0.06792802386742824,
+  "9": 0.06270011477328781,
+  "10": 0.06509462151570208,
+  "11": 0.06749459974639652,
+  "12": 0.07308188938174366
+ },
+ "checks": {
+  "archive_ari": {
+   "idea_families": 0.413,
+   "purpose_families": 0.438
+  },
+  "batch_mixing": {
+   "N1": {
+    "seeds": 2,
+    "cases": 7
+   },
+   "N2": {
+    "seeds": 4,
+    "cases": 4
+   },
+   "N3": {
+    "seeds": 2,
+    "cases": 5
+   },
+   "N4": {
+    "seeds": 1,
+    "cases": 5
+   },
+   "N5": {
+    "seeds": 2,
+    "cases": 2
+   },
+   "N6": {
+    "seeds": 1,
+    "cases": 3
+   },
+   "N7": {
+    "seeds": 1,
+    "cases": 3
+   },
+   "N8": {
+    "seeds": 0,
+    "cases": 4
+   },
+   "N9": {
+    "seeds": 0,
+    "cases": 3
+   },
+   "N10": {
+    "seeds": 0,
+    "cases": 3
+   },
+   "N11": {
+    "seeds": 2,
+    "cases": 0
+   },
+   "N12": {
+    "seeds": 0,
+    "cases": 1
+   }
+  },
+  "neighbourhoods_mixing_both_batches": 7,
+  "uncentred_contrast": {
+   "k": 3,
+   "neighbourhoods_mixing_both_batches": 1
+  },
+  "encoder_agreement_ari": {
+   "mxbai-embed-large": 0.332,
+   "nomic-embed-text": 0.315,
+   "bge-m3": 0.34
+  },
+  "joint_vector_agreement_ari": 0.346
+ },
+ "footprints": {
+  "N1": {
+   "n": 9,
+   "traits": {
+    "links": {
+     "status": "free",
+     "modal": "CL+CX+LX",
+     "share": 0.56,
+     "values": {
+      "none": 2,
+      "CL+CX+LX": 5,
+      "CX": 1,
+      "LX": 1
+     }
+    },
+    "sped": {
+     "status": "fixed",
+     "modal": "L",
+     "share": 0.89,
+     "values": {
+      "L": 8,
+      "X": 1
+     }
+    },
+    "height": {
+     "status": "free",
+     "modal": "mixed",
+     "share": 0.78,
+     "values": {
+      "mixed": 7,
+      "all3": 2
+     }
+    },
+    "admin": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 9
+     }
+    },
+    "arts": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 0.89,
+     "values": {
+      "X": 8,
+      "C": 1
+     }
+    },
+    "media": {
+     "status": "free",
+     "modal": "X",
+     "share": 0.78,
+     "values": {
+      "X": 7,
+      "C": 1,
+      "L": 1
+     }
+    }
+   },
+   "cells": 6
+  },
+  "N2": {
+   "n": 8,
+   "traits": {
+    "links": {
+     "status": "free",
+     "modal": "CX+LX",
+     "share": 0.5,
+     "values": {
+      "CX+LX": 4,
+      "CL+CX": 1,
+      "CX": 1,
+      "CL+LX": 1,
+      "LX": 1
+     }
+    },
+    "sped": {
+     "status": "fixed",
+     "modal": "L",
+     "share": 1.0,
+     "values": {
+      "L": 8
+     }
+    },
+    "height": {
+     "status": "fixed",
+     "modal": "mixed",
+     "share": 1.0,
+     "values": {
+      "mixed": 8
+     }
+    },
+    "admin": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 8
+     }
+    },
+    "arts": {
+     "status": "free",
+     "modal": "X",
+     "share": 0.62,
+     "values": {
+      "X": 5,
+      "L": 2,
+      "C": 1
+     }
+    },
+    "media": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 8
+     }
+    }
+   },
+   "cells": 5
+  },
+  "N3": {
+   "n": 7,
+   "traits": {
+    "links": {
+     "status": "free",
+     "modal": "CL",
+     "share": 0.43,
+     "values": {
+      "none": 1,
+      "LX": 2,
+      "CL+CX": 1,
+      "CL": 3
+     }
+    },
+    "sped": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 0.86,
+     "values": {
+      "L": 1,
+      "X": 6
+     }
+    },
+    "height": {
+     "status": "free",
+     "modal": "mixed",
+     "share": 0.71,
+     "values": {
+      "mixed": 5,
+      "all3": 2
+     }
+    },
+    "admin": {
+     "status": "free",
+     "modal": "X",
+     "share": 0.57,
+     "values": {
+      "L": 2,
+      "X": 4,
+      "C": 1
+     }
+    },
+    "arts": {
+     "status": "free",
+     "modal": "X",
+     "share": 0.57,
+     "values": {
+      "X": 4,
+      "L": 2,
+      "C": 1
+     }
+    },
+    "media": {
+     "status": "free",
+     "modal": "L",
+     "share": 0.43,
+     "values": {
+      "L": 3,
+      "X": 3,
+      "C": 1
+     }
+    }
+   },
+   "cells": 5
+  },
+  "N4": {
+   "n": 6,
+   "traits": {
+    "links": {
+     "status": "free",
+     "modal": "CL+CX+LX",
+     "share": 0.33,
+     "values": {
+      "CL+CX+LX": 2,
+      "CL+CX": 2,
+      "CX+LX": 1,
+      "CL+LX": 1
+     }
+    },
+    "sped": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 6
+     }
+    },
+    "height": {
+     "status": "fixed",
+     "modal": "mixed",
+     "share": 0.83,
+     "values": {
+      "mixed": 5,
+      "all3": 1
+     }
+    },
+    "admin": {
+     "status": "free",
+     "modal": "X",
+     "share": 0.5,
+     "values": {
+      "L": 2,
+      "C": 1,
+      "X": 3
+     }
+    },
+    "arts": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 0.83,
+     "values": {
+      "X": 5,
+      "L": 1
+     }
+    },
+    "media": {
+     "status": "free",
+     "modal": "X",
+     "share": 0.5,
+     "values": {
+      "L": 2,
+      "C": 1,
+      "X": 3
+     }
+    }
+   },
+   "cells": 5
+  },
+  "N5": {
+   "n": 4,
+   "traits": {
+    "links": {
+     "status": "free",
+     "modal": "CL+CX+LX",
+     "share": 0.5,
+     "values": {
+      "CL+CX+LX": 2,
+      "CX+LX": 2
+     }
+    },
+    "sped": {
+     "status": "free",
+     "modal": "X",
+     "share": 0.75,
+     "values": {
+      "X": 3,
+      "L": 1
+     }
+    },
+    "height": {
+     "status": "free",
+     "modal": "all3",
+     "share": 0.5,
+     "values": {
+      "all3": 2,
+      "mixed": 2
+     }
+    },
+    "admin": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 4
+     }
+    },
+    "arts": {
+     "status": "free",
+     "modal": "C",
+     "share": 0.5,
+     "values": {
+      "C": 2,
+      "X": 2
+     }
+    },
+    "media": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 4
+     }
+    }
+   },
+   "cells": 3
+  },
+  "N6": {
+   "n": 4,
+   "traits": {
+    "links": {
+     "status": "free",
+     "modal": "CL+LX",
+     "share": 0.25,
+     "values": {
+      "CL+LX": 1,
+      "CX+LX": 1,
+      "none": 1,
+      "LX": 1
+     }
+    },
+    "sped": {
+     "status": "free",
+     "modal": "X",
+     "share": 0.5,
+     "values": {
+      "X": 2,
+      "C": 1,
+      "L": 1
+     }
+    },
+    "height": {
+     "status": "free",
+     "modal": "mixed",
+     "share": 0.75,
+     "values": {
+      "mixed": 3,
+      "low": 1
+     }
+    },
+    "admin": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 4
+     }
+    },
+    "arts": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 4
+     }
+    },
+    "media": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 4
+     }
+    }
+   },
+   "cells": 4
+  },
+  "N7": {
+   "n": 4,
+   "traits": {
+    "links": {
+     "status": "free",
+     "modal": "CX+LX",
+     "share": 0.25,
+     "values": {
+      "CX+LX": 1,
+      "none": 1,
+      "CX": 1,
+      "LX": 1
+     }
+    },
+    "sped": {
+     "status": "fixed",
+     "modal": "L",
+     "share": 1.0,
+     "values": {
+      "L": 4
+     }
+    },
+    "height": {
+     "status": "free",
+     "modal": "low",
+     "share": 0.75,
+     "values": {
+      "low": 3,
+      "mixed": 1
+     }
+    },
+    "admin": {
+     "status": "free",
+     "modal": "L",
+     "share": 0.5,
+     "values": {
+      "L": 2,
+      "X": 2
+     }
+    },
+    "arts": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 4
+     }
+    },
+    "media": {
+     "status": "free",
+     "modal": "L",
+     "share": 0.5,
+     "values": {
+      "L": 2,
+      "X": 2
+     }
+    }
+   },
+   "cells": 4
+  },
+  "N8": {
+   "n": 4,
+   "traits": {
+    "links": {
+     "status": "free",
+     "modal": "CL+CX",
+     "share": 0.5,
+     "values": {
+      "CL+CX": 2,
+      "CX+LX": 2
+     }
+    },
+    "sped": {
+     "status": "free",
+     "modal": "C",
+     "share": 0.5,
+     "values": {
+      "C": 2,
+      "X": 2
+     }
+    },
+    "height": {
+     "status": "free",
+     "modal": "low",
+     "share": 0.5,
+     "values": {
+      "low": 2,
+      "mixed": 2
+     }
+    },
+    "admin": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 4
+     }
+    },
+    "arts": {
+     "status": "fixed",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 4
+     }
+    },
+    "media": {
+     "status": "free",
+     "modal": "X",
+     "share": 0.75,
+     "values": {
+      "X": 3,
+      "L": 1
+     }
+    }
+   },
+   "cells": 2
+  },
+  "N9": {
+   "n": 3,
+   "traits": {
+    "links": {
+     "status": "too few",
+     "modal": "CX+LX",
+     "share": 1.0,
+     "values": {
+      "CX+LX": 3
+     }
+    },
+    "sped": {
+     "status": "too few",
+     "modal": "C",
+     "share": 0.67,
+     "values": {
+      "L": 1,
+      "C": 2
+     }
+    },
+    "height": {
+     "status": "too few",
+     "modal": "all3",
+     "share": 0.67,
+     "values": {
+      "mixed": 1,
+      "all3": 2
+     }
+    },
+    "admin": {
+     "status": "too few",
+     "modal": "X",
+     "share": 0.67,
+     "values": {
+      "L": 1,
+      "X": 2
+     }
+    },
+    "arts": {
+     "status": "too few",
+     "modal": "X",
+     "share": 0.67,
+     "values": {
+      "X": 2,
+      "L": 1
+     }
+    },
+    "media": {
+     "status": "too few",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 3
+     }
+    }
+   },
+   "cells": 2
+  },
+  "N10": {
+   "n": 3,
+   "traits": {
+    "links": {
+     "status": "too few",
+     "modal": "CL+LX",
+     "share": 1.0,
+     "values": {
+      "CL+LX": 3
+     }
+    },
+    "sped": {
+     "status": "too few",
+     "modal": "L",
+     "share": 0.67,
+     "values": {
+      "X": 1,
+      "L": 2
+     }
+    },
+    "height": {
+     "status": "too few",
+     "modal": "low",
+     "share": 0.67,
+     "values": {
+      "mixed": 1,
+      "low": 2
+     }
+    },
+    "admin": {
+     "status": "too few",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 3
+     }
+    },
+    "arts": {
+     "status": "too few",
+     "modal": "X",
+     "share": 0.67,
+     "values": {
+      "L": 1,
+      "X": 2
+     }
+    },
+    "media": {
+     "status": "too few",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 3
+     }
+    }
+   },
+   "cells": 2
+  },
+  "N11": {
+   "n": 2,
+   "traits": {
+    "links": {
+     "status": "too few",
+     "modal": "CL+CX",
+     "share": 1.0,
+     "values": {
+      "CL+CX": 2
+     }
+    },
+    "sped": {
+     "status": "too few",
+     "modal": "X",
+     "share": 0.5,
+     "values": {
+      "X": 1,
+      "L": 1
+     }
+    },
+    "height": {
+     "status": "too few",
+     "modal": "all3",
+     "share": 0.5,
+     "values": {
+      "all3": 1,
+      "mixed": 1
+     }
+    },
+    "admin": {
+     "status": "too few",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 2
+     }
+    },
+    "arts": {
+     "status": "too few",
+     "modal": "C",
+     "share": 0.5,
+     "values": {
+      "C": 1,
+      "L": 1
+     }
+    },
+    "media": {
+     "status": "too few",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 2
+     }
+    }
+   },
+   "cells": 2
+  },
+  "N12": {
+   "n": 1,
+   "traits": {
+    "links": {
+     "status": "too few",
+     "modal": "CL+LX",
+     "share": 1.0,
+     "values": {
+      "CL+LX": 1
+     }
+    },
+    "sped": {
+     "status": "too few",
+     "modal": "L",
+     "share": 1.0,
+     "values": {
+      "L": 1
+     }
+    },
+    "height": {
+     "status": "too few",
+     "modal": "low",
+     "share": 1.0,
+     "values": {
+      "low": 1
+     }
+    },
+    "admin": {
+     "status": "too few",
+     "modal": "L",
+     "share": 1.0,
+     "values": {
+      "L": 1
+     }
+    },
+    "arts": {
+     "status": "too few",
+     "modal": "X",
+     "share": 1.0,
+     "values": {
+      "X": 1
+     }
+    },
+    "media": {
+     "status": "too few",
+     "modal": "L",
+     "share": 1.0,
+     "values": {
+      "L": 1
+     }
+    }
+   },
+   "cells": 1
+  }
+ },
+ "colocation": {
+  "N2": {
+   "[[\"CX\", \"LX\"], \"L\", \"mixed\"]": 4,
+   "[[\"CL\", \"CX\"], \"L\", \"mixed\"]": 1,
+   "[[\"CX\"], \"L\", \"mixed\"]": 1,
+   "[[\"CL\", \"LX\"], \"L\", \"mixed\"]": 1,
+   "[[\"LX\"], \"L\", \"mixed\"]": 1
+  },
+  "N5": {
+   "[[\"CL\", \"CX\", \"LX\"], \"X\", \"all3\"]": 2,
+   "[[\"CX\", \"LX\"], \"L\", \"mixed\"]": 1,
+   "[[\"CX\", \"LX\"], \"X\", \"mixed\"]": 1
+  },
+  "N1": {
+   "[[], \"L\", \"mixed\"]": 1,
+   "[[\"CL\", \"CX\", \"LX\"], \"L\", \"mixed\"]": 3,
+   "[[], \"X\", \"mixed\"]": 1,
+   "[[\"CL\", \"CX\", \"LX\"], \"L\", \"all3\"]": 2,
+   "[[\"CX\"], \"L\", \"mixed\"]": 1,
+   "[[\"LX\"], \"L\", \"mixed\"]": 1
+  },
+  "N4": {
+   "[[\"CL\", \"CX\", \"LX\"], \"X\", \"mixed\"]": 2,
+   "[[\"CL\", \"CX\"], \"X\", \"all3\"]": 1,
+   "[[\"CL\", \"CX\"], \"X\", \"mixed\"]": 1,
+   "[[\"CX\", \"LX\"], \"X\", \"mixed\"]": 1,
+   "[[\"CL\", \"LX\"], \"X\", \"mixed\"]": 1
+  },
+  "N11": {
+   "[[\"CL\", \"CX\"], \"X\", \"all3\"]": 1,
+   "[[\"CL\", \"CX\"], \"L\", \"mixed\"]": 1
+  },
+  "N3": {
+   "[[], \"L\", \"mixed\"]": 1,
+   "[[\"LX\"], \"X\", \"mixed\"]": 2,
+   "[[\"CL\", \"CX\"], \"X\", \"mixed\"]": 1,
+   "[[\"CL\"], \"X\", \"all3\"]": 2,
+   "[[\"CL\"], \"X\", \"mixed\"]": 1
+  },
+  "N6": {
+   "[[\"CL\", \"LX\"], \"X\", \"mixed\"]": 1,
+   "[[\"CX\", \"LX\"], \"C\", \"mixed\"]": 1,
+   "[[], \"X\", \"mixed\"]": 1,
+   "[[\"LX\"], \"L\", \"low\"]": 1
+  },
+  "N7": {
+   "[[\"CX\", \"LX\"], \"L\", \"low\"]": 1,
+   "[[], \"L\", \"low\"]": 1,
+   "[[\"CX\"], \"L\", \"mixed\"]": 1,
+   "[[\"LX\"], \"L\", \"low\"]": 1
+  },
+  "N9": {
+   "[[\"CX\", \"LX\"], \"L\", \"mixed\"]": 1,
+   "[[\"CX\", \"LX\"], \"C\", \"all3\"]": 2
+  },
+  "N8": {
+   "[[\"CL\", \"CX\"], \"C\", \"low\"]": 2,
+   "[[\"CX\", \"LX\"], \"X\", \"mixed\"]": 2
+  },
+  "N12": {
+   "[[\"CL\", \"LX\"], \"L\", \"low\"]": 1
+  },
+  "N10": {
+   "[[\"CL\", \"LX\"], \"X\", \"mixed\"]": 1,
+   "[[\"CL\", \"LX\"], \"L\", \"low\"]": 2
+  }
+ },
+ "gaps": {
+  "cells_with_valid_structures_no_texted_idea": [
+   [
+    [
+     "CL",
+     "CX"
+    ],
+    "L",
+    "low",
+    38
+   ],
+   [
+    [
+     "CL"
+    ],
+    "L",
+    "mixed",
+    26
+   ],
+   [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "C",
+    "mixed",
+    22
+   ],
+   [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "low",
+    14
+   ],
+   [
+    [],
+    "C",
+    "mixed",
+    14
+   ],
+   [
+    [
+     "CL",
+     "CX"
+    ],
+    "C",
+    "mixed",
+    14
+   ],
+   [
+    [
+     "CX",
+     "LX"
+    ],
+    "X",
+    "all3",
+    11
+   ],
+   [
+    [
+     "CL",
+     "LX"
+    ],
+    "X",
+    "all3",
+    11
+   ],
+   [
+    [
+     "CX"
+    ],
+    "L",
+    "low",
+    6
+   ],
+   [
+    [
+     "CL"
+    ],
+    "L",
+    "low",
+    6
+   ],
+   [
+    [
+     "CX"
+    ],
+    "X",
+    "mixed",
+    6
+   ],
+   [
+    [],
+    "C",
+    "low",
+    4
+   ],
+   [
+    [
+     "CX"
+    ],
+    "C",
+    "mixed",
+    3
+   ],
+   [
+    [
+     "LX"
+    ],
+    "C",
+    "mixed",
+    2
+   ],
+   [
+    [
+     "CL"
+    ],
+    "C",
+    "mixed",
+    2
+   ],
+   [
+    [
+     "CL",
+     "LX"
+    ],
+    "C",
+    "mixed",
+    2
+   ],
+   [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "all3",
+    1
+   ],
+   [
+    [
+     "CX"
+    ],
+    "X",
+    "all3",
+    1
+   ],
+   [
+    [
+     "LX"
+    ],
+    "X",
+    "all3",
+    1
+   ],
+   [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "C",
+    "all3",
+    1
+   ]
+  ],
+  "cells_reached_by_one_neighbourhood_only": [
+   [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed",
+    "N1",
+    3
+   ],
+   [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "X",
+    "all3",
+    "N5",
+    2
+   ],
+   [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed",
+    "N4",
+    2
+   ],
+   [
+    [
+     "LX"
+    ],
+    "X",
+    "mixed",
+    "N3",
+    2
+   ],
+   [
+    [
+     "CL"
+    ],
+    "X",
+    "all3",
+    "N3",
+    2
+   ],
+   [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "all3",
+    "N9",
+    2
+   ],
+   [
+    [
+     "CL",
+     "CX"
+    ],
+    "C",
+    "low",
+    "N8",
+    2
+   ],
+   [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "all3",
+    "N1",
+    2
+   ],
+   [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "low",
+    "N7",
+    1
+   ],
+   [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "mixed",
+    "N6",
+    1
+   ],
+   [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "mixed",
+    "N2",
+    1
+   ],
+   [
+    [],
+    "L",
+    "low",
+    "N7",
+    1
+   ],
+   [
+    [
+     "CL"
+    ],
+    "X",
+    "mixed",
+    "N3",
+    1
+   ]
+  ],
+  "neighbourhoods_in_one_cell_only": [
+   "N12"
+  ],
+  "n_cells_total": 72,
+  "n_cells_with_valid_pool_structures": 45,
+  "n_cells_texted": 25
+ },
+ "pairs": {
+  "same_idea_different_purpose": [
+   [
+    "Q03",
+    "Q12",
+    0.646
+   ],
+   [
+    "E05",
+    "Q39",
+    0.552
+   ],
+   [
+    "E02",
+    "Q39",
+    0.482
+   ],
+   [
+    "Q23",
+    "Q36",
+    0.471
+   ],
+   [
+    "Q04",
+    "Q20",
+    0.463
+   ],
+   [
+    "E13",
+    "E07",
+    0.434
+   ],
+   [
+    "Q05",
+    "Q31",
+    0.428
+   ],
+   [
+    "E10",
+    "Q05",
+    0.423
+   ],
+   [
+    "Q35",
+    "Q39",
+    0.421
+   ],
+   [
+    "Q05",
+    "Q08",
+    0.404
+   ],
+   [
+    "Q07",
+    "Q37",
+    0.4
+   ],
+   [
+    "Q04",
+    "Q30",
+    0.397
+   ],
+   [
+    "Q01",
+    "Q38",
+    0.387
+   ],
+   [
+    "Q28",
+    "Q36",
+    0.383
+   ],
+   [
+    "E07",
+    "Q17",
+    0.379
+   ],
+   [
+    "Q05",
+    "Q23",
+    0.373
+   ],
+   [
+    "E15",
+    "Q16",
+    0.37
+   ],
+   [
+    "E15",
+    "E05",
+    0.367
+   ],
+   [
+    "Q24",
+    "Q31",
+    0.367
+   ],
+   [
+    "Q25",
+    "Q37",
+    0.358
+   ],
+   [
+    "Q05",
+    "Q34",
+    0.351
+   ],
+   [
+    "Q13",
+    "Q31",
+    0.351
+   ],
+   [
+    "Q27",
+    "Q29",
+    0.348
+   ],
+   [
+    "E01",
+    "E10",
+    0.347
+   ],
+   [
+    "E11",
+    "Q03",
+    0.344
+   ],
+   [
+    "Q12",
+    "Q22",
+    0.344
+   ],
+   [
+    "E12",
+    "Q21",
+    0.337
+   ],
+   [
+    "Q05",
+    "Q19",
+    0.309
+   ],
+   [
+    "Q08",
+    "Q32",
+    0.306
+   ],
+   [
+    "Q08",
+    "Q36",
+    0.303
+   ],
+   [
+    "E05",
+    "Q25",
+    0.301
+   ],
+   [
+    "E02",
+    "Q25",
+    0.3
+   ],
+   [
+    "Q29",
+    "Q37",
+    0.294
+   ],
+   [
+    "Q11",
+    "Q38",
+    0.291
+   ],
+   [
+    "E07",
+    "Q04",
+    0.29
+   ],
+   [
+    "Q15",
+    "Q35",
+    0.287
+   ],
+   [
+    "E02",
+    "Q16",
+    0.269
+   ],
+   [
+    "Q03",
+    "Q33",
+    0.268
+   ],
+   [
+    "E02",
+    "Q27",
+    0.257
+   ],
+   [
+    "Q26",
+    "Q33",
+    0.256
+   ],
+   [
+    "Q17",
+    "Q26",
+    0.255
+   ],
+   [
+    "E12",
+    "Q14",
+    0.235
+   ],
+   [
+    "Q03",
+    "Q22",
+    0.234
+   ],
+   [
+    "Q23",
+    "Q35",
+    0.221
+   ],
+   [
+    "Q01",
+    "Q07",
+    0.208
+   ],
+   [
+    "E10",
+    "Q09",
+    0.206
+   ],
+   [
+    "E11",
+    "Q37",
+    0.198
+   ],
+   [
+    "Q14",
+    "Q28",
+    0.192
+   ],
+   [
+    "Q10",
+    "Q21",
+    0.186
+   ]
+  ],
+  "same_purpose_different_idea": [
+   [
+    "Q12",
+    "Q13",
+    0.626
+   ],
+   [
+    "Q09",
+    "Q15",
+    0.564
+   ],
+   [
+    "Q07",
+    "Q24",
+    0.492
+   ],
+   [
+    "Q28",
+    "Q31",
+    0.424
+   ],
+   [
+    "Q33",
+    "Q35",
+    0.421
+   ],
+   [
+    "Q07",
+    "Q16",
+    0.39
+   ],
+   [
+    "E07",
+    "Q23",
+    0.374
+   ],
+   [
+    "Q01",
+    "Q32",
+    0.372
+   ],
+   [
+    "E05",
+    "E04",
+    0.368
+   ],
+   [
+    "Q05",
+    "Q29",
+    0.364
+   ],
+   [
+    "E04",
+    "Q27",
+    0.352
+   ],
+   [
+    "Q01",
+    "Q29",
+    0.347
+   ],
+   [
+    "Q25",
+    "Q28",
+    0.346
+   ],
+   [
+    "E11",
+    "Q16",
+    0.342
+   ],
+   [
+    "Q31",
+    "Q39",
+    0.34
+   ],
+   [
+    "E11",
+    "Q27",
+    0.33
+   ],
+   [
+    "Q13",
+    "Q37",
+    0.328
+   ],
+   [
+    "Q03",
+    "Q34",
+    0.327
+   ],
+   [
+    "Q24",
+    "Q26",
+    0.325
+   ],
+   [
+    "Q05",
+    "Q17",
+    0.321
+   ],
+   [
+    "Q35",
+    "Q40",
+    0.319
+   ],
+   [
+    "Q05",
+    "Q25",
+    0.315
+   ],
+   [
+    "Q05",
+    "Q22",
+    0.314
+   ],
+   [
+    "Q30",
+    "Q38",
+    0.306
+   ],
+   [
+    "Q02",
+    "Q08",
+    0.303
+   ],
+   [
+    "E01",
+    "Q15",
+    0.3
+   ],
+   [
+    "Q29",
+    "Q32",
+    0.3
+   ],
+   [
+    "Q16",
+    "Q30",
+    0.289
+   ],
+   [
+    "E05",
+    "Q14",
+    0.288
+   ],
+   [
+    "E06",
+    "Q30",
+    0.287
+   ],
+   [
+    "Q06",
+    "Q13",
+    0.282
+   ],
+   [
+    "Q06",
+    "Q40",
+    0.266
+   ],
+   [
+    "Q36",
+    "Q38",
+    0.266
+   ],
+   [
+    "E11",
+    "Q04",
+    0.263
+   ],
+   [
+    "E09",
+    "E01",
+    0.254
+   ],
+   [
+    "Q36",
+    "Q40",
+    0.253
+   ],
+   [
+    "Q19",
+    "Q28",
+    0.25
+   ],
+   [
+    "E01",
+    "Q29",
+    0.24
+   ],
+   [
+    "E07",
+    "Q21",
+    0.239
+   ],
+   [
+    "Q20",
+    "Q40",
+    0.231
+   ],
+   [
+    "Q17",
+    "Q22",
+    0.225
+   ],
+   [
+    "Q07",
+    "Q28",
+    0.224
+   ],
+   [
+    "Q01",
+    "Q10",
+    0.223
+   ],
+   [
+    "Q08",
+    "Q39",
+    0.209
+   ],
+   [
+    "Q20",
+    "Q25",
+    0.204
+   ],
+   [
+    "E09",
+    "Q19",
+    0.188
+   ],
+   [
+    "E07",
+    "Q29",
+    0.177
+   ]
+  ]
+ },
+ "pilot4_reread": {
+  "U": {
+   "n": 10,
+   "neighbourhoods_reached": 8,
+   "cases_in_neighbourhoods_without_seeds": 3,
+   "new_cells_vs_seeds": 4,
+   "valid": 10,
+   "mean_consistency_v3text": 0.62
+  },
+  "A": {
+   "n": 10,
+   "neighbourhoods_reached": 8,
+   "cases_in_neighbourhoods_without_seeds": 3,
+   "new_cells_vs_seeds": 10,
+   "valid": 10,
+   "mean_consistency_v3text": 0.49
+  },
+  "S": {
+   "n": 10,
+   "neighbourhoods_reached": 7,
+   "cases_in_neighbourhoods_without_seeds": 1,
+   "new_cells_vs_seeds": 5,
+   "valid": 8,
+   "mean_consistency_v3text": 0.54
+  },
+  "J": {
+   "n": 10,
+   "neighbourhoods_reached": 6,
+   "cases_in_neighbourhoods_without_seeds": 4,
+   "new_cells_vs_seeds": 10,
+   "valid": 10,
+   "mean_consistency_v3text": 0.61
+  }
+ },
+ "items": [
+  {
+   "id": "E03",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Civic Hinge Linear Chain",
+   "concept": "A linear chain of three masses: a learning bar at one end, a community commons at the other, and a civic hinge between them. The hinge gathers the school's public face (arrival, the office, the arts and the library) and acts as front door and crossroads, so every passage between learning and commons crosses it.",
+   "intent": "Aims to give the school one legible front where visitors, families and daily student movement meet, while keeping classrooms quiet at the far end of the chain and the commons reachable for community use.",
+   "neighbourhood": "N2",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E02",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Arts Loft Over the Commons",
+   "concept": "A compact closed cluster in which the shared realm is layered vertically: the commons volume forms the base and an arts loft rides on its roof, making one cultural block for gathering, performance and making. A civic block crowned by the library and a plain academic bar complete a triangle, each mass joined to both others.",
+   "intent": "Seeks to make arts and performance a visible community destination stacked with the commons, and to give every mass a direct indoor link so daily movement stays short and sheltered.",
+   "neighbourhood": "N5",
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "X",
+    "all3"
+   ],
+   "traits": {
+    "links": "CL+CX+LX",
+    "height": "all3",
+    "sped": "X",
+    "admin": "X",
+    "arts": "C",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E08",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Detached Campus Pavilions",
+   "concept": "Three free-standing pavilions on shared grounds with no built connections, read as a small campus. A self-sufficient learning pavilion also holds daily care. A community pavilion for athletics and dining can open on its own. A low civic-arts pavilion sits at arrival with the library above the office. Movement between the pavilions is outdoors.",
+   "intent": "Aims to let the community pavilion operate after hours without opening the rest of the school, and to keep students' daily needs, including the nurse, inside the learning pavilion.",
+   "neighbourhood": "N1",
+   "cell": [
+    [],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "none",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E13",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Commons Heart Between Front and Learning",
+   "concept": "The commons is the central heart, with a civic front on one side and a learning wing on the other, each joined only through the heart. Arrival leads into the shared volume, and the learning wing lies beyond it, buffered from public entry. The arts move into the learning wing as part of daily teaching.",
+   "intent": "Seeks to make the commons the school's social centre and community entry point, while keeping the learning wing and its arts studios away from visitor traffic.",
+   "neighbourhood": "N2",
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+CX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "L",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E09",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Academy Tower With Care House",
+   "concept": "A tall academy holds classrooms over the front office with the library at its crown. Beside it, a care-and-making house pairs specialized learning with the nurse and the arts. Together with the commons, the three masses close a loop around a shared court, each joined directly to the other two.",
+   "intent": "Aims to put leadership and the library inside the main learning building, and to give students with special needs a dedicated house with nearby medical care and hands-on arts rooms.",
+   "neighbourhood": "N4",
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+CX+LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "L",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "E11",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Civic gateway between learning and hall",
+   "concept": "A low civic gateway stands between a three-storey learning bar and a community hall and forms the only enclosed passage between them. Everyone arrives through the gateway, where the school's front and its making and reading spaces meet visitors; classrooms extend behind it on one side and the shared hall on the other.",
+   "intent": "Aims to give staff a single supervised threshold controlling access to both classrooms and hall, and to let evening visitors reach the hall and arts without entering classroom corridors.",
+   "neighbourhood": "N2",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E06",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Shared heart with two wings",
+   "concept": "A shared heart gathers the school's communal life: the hall for play, dining and assembly, crowned by a studio loft for art and music. Two wings, one of classrooms and one forming the school's front with its inclusive support, attach only to the heart, so all movement between them passes through it.",
+   "intent": "Seeks to make daily crossings through the heart a social routine that brings students from both wings together at lunch, assembly and arts, and to give the community one focal destination.",
+   "neighbourhood": "N11",
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "X",
+    "all3"
+   ],
+   "traits": {
+    "links": "CL+CX",
+    "height": "all3",
+    "sped": "X",
+    "admin": "X",
+    "arts": "C",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E14",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Self-contained school bar, freestanding pavilions",
+   "concept": "One self-contained school bar carries the whole teaching day, rising from the front office and specialist support at its foot through classrooms to a reading crown. Two freestanding pavilions, a community hall and a making-and-maintenance workshop, stand apart on shared grounds and are reached outdoors.",
+   "intent": "Aims to let the hall and workshop open to the community and be phased independently, while keeping the instructional day secure inside a single enclosed bar.",
+   "neighbourhood": "N3",
+   "cell": [
+    [],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "none",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "L",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "E15",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Courtyard ring with reading loft",
+   "concept": "Three ranges close around a courtyard and join at every corner into a continuous indoor loop: a tall learning range, a low civic and arts front, and a commons range whose hall is crowned by a reading loft that looks down into the court.",
+   "intent": "Seeks a protected outdoor room that every part of the school opens onto, with indoor circulation around it, and places reading at the social centre above shared dining.",
+   "neighbourhood": "N1",
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+CX+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "C"
+   }
+  },
+  {
+   "id": "E01",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Low classrooms beside civic tower",
+   "concept": "Classrooms stay low and close to the ground in a two-storey learning bar, flanked by the hall on one side and, on the other, a compact three-storey civic tower that stacks the school's front, its specialist support and a library crown as the building's vertical marker.",
+   "intent": "Aims to keep every classroom within one stair of the ground and close to the hall, while giving the school a clear civic address and grouping supervision, nursing and special education support.",
+   "neighbourhood": "N6",
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E12",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Civic Hinge Between Learning and Hall",
+   "concept": "A linear sequence of three parts: a quiet learning bar at one end, an assembly hall at the other, and a compact civic hinge between them. The hinge is the front door and the school's cultural core, stacking arts and the library over the front office, so every passage between classrooms and the hall crosses the public centre of the school.",
+   "intent": "Aims to give visitors one supervised arrival point at the middle of the school, buffer classrooms from hall noise, and let arts and library programs anchor community use next to the hall.",
+   "neighbourhood": "N2",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E07",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Shared Hall as Central Heart",
+   "concept": "A centralized plan: the hall is the heart, and two wings plug into it from opposite sides. One wing is a complete learning house with its own arts rooms; the other is a small front-of-house wing carrying the office with the library above. The wings meet only through the heart, never directly.",
+   "intent": "Seeks to make lunch, assemblies and PE the daily crossroads of the school community while letting the learning house run as a self-contained teaching building with arts beside classrooms.",
+   "neighbourhood": "N11",
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+CX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "L",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E05",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Courtyard Cluster with Arts Loft",
+   "concept": "A compact cluster: three three-storey masses linked to one another around a shared courtyard. The hall is not a low shed but a full-height block, crowned by an arts loft above its service side looking onto the stage. A learning bar and a civic house complete the ring, the civic house keeping specialized learning close to the office and nurse.",
+   "intent": "Aims to bring every mass to three floors, allow indoor movement between any two parts, and join arts with the hall into one performance and community venue.",
+   "neighbourhood": "N5",
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "X",
+    "all3"
+   ],
+   "traits": {
+    "links": "CL+CX+LX",
+    "height": "all3",
+    "sped": "X",
+    "admin": "X",
+    "arts": "C",
+    "media": "X"
+   }
+  },
+  {
+   "id": "E10",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "Twin Bars and Freestanding Hall",
+   "concept": "Two parallel learning bars joined to each other form the school proper, the library crowning the classroom bar. The hall stands apart as a freestanding community building on shared grounds. One bar is the classroom house; the other is a front and inclusion house that pairs the office with specialized learning.",
+   "intent": "Seeks to let the hall open independently for community use, concentrate school security in the joined bars, and put the library at the top of the classroom house where most students learn.",
+   "neighbourhood": "N3",
+   "cell": [
+    [
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "E04",
+   "source": "seed",
+   "batch": "archive_v2",
+   "name": "One Learning Block, Workshop Link",
+   "concept": "One large learning block holds almost the whole school day, with the front door at its base and the library at its crown. A low, single-storey workshop pavilion for making and building service is the hinge to the hall, so hands-on work and service sit between learning and assembly.",
+   "intent": "Aims to keep most students and staff in one building with short vertical trips, while giving messy, noisy arts work and building service their own ground-level place beside the hall and kitchen.",
+   "neighbourhood": "N7",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "low",
+    "sped": "L",
+    "admin": "L",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "Q01",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Assembly Crossing Between Two Schools",
+   "concept": "The school is conceived as two distinct daily environments joined by a shared assembly crossing. One is a vertical academic house for ordinary teaching; the other is a smaller care and cultural house for focused support, making, and reading. The commons between them is a destination in its own right, with a defined passage across its perimeter linking the two houses.",
+   "intent": "The scheme seeks to make communal activity a deliberate transition between different learning environments while allowing specialized support to retain an identifiable and quieter home.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N3",
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+CX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q02",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "Cultural Bridge Between Two Houses",
+   "concept": "A raised cultural house acts as an inhabited bridge between a teaching house and a communal base. Unlike a compact triangular cluster, the school is organized as two separated destinations connected by a third elevated cultural layer. The bridge provides a distinct shared destination while the hall remains an independent double-height volume below its own roof, not the supporting base for an arts loft.",
+   "intent": "Seeks to make creative and reading activities a visible connection between learning and assembly, encouraging shared cultural use while distinguishing public gatherings from the quieter daily teaching environment.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N5",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q03",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Cultural Threshold And Learning Pair",
+   "concept": "A dedicated cultural threshold stands between two sharply different destinations: a consolidated academic house and a communal assembly hall. Unlike a conventional civic gateway, the threshold is primarily a place of making, student care and reading, while the school's administrative front remains embedded within the academic house. This separates the symbolic cultural entrance from the operational point of school oversight.",
+   "intent": "The scheme seeks to give creative learning a recognizable shared address while allowing administration to remain closely tied to classrooms and placing community assembly beyond a cultural transition.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 0.0,
+    "heights": 0.667,
+    "vertical": 0.714
+   },
+   "neighbourhood": "N9",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "L",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q04",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Paired Academies With Civic Spine",
+   "concept": "Two distinct teaching houses stand alongside a third, shared civic spine. Rather than treating specialized learning as an appendage of general classrooms, the houses are peers, each directly connected to the spine but not to one another. The spine combines the school's public threshold and collective gathering spaces, making a common institutional address for two different learning environments.",
+   "intent": "The scheme seeks to establish equivalent identities for general and specialized learning while concentrating shared services and community activities at a common, supervised point of access.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.333,
+    "heights": 0.667,
+    "vertical": 0.714
+   },
+   "neighbourhood": "N4",
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "X",
+    "all3"
+   ],
+   "traits": {
+    "links": "CL+CX",
+    "height": "all3",
+    "sped": "X",
+    "admin": "C",
+    "arts": "X",
+    "media": "C"
+   }
+  },
+  {
+   "id": "Q05",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Independent Inclusion House",
+   "concept": "The school is conceived as a paired everyday teaching and assembly building alongside a separate, vertically organized inclusion house. The attached pair establishes the collective school routine, while the independent house offers another scale of occupation for focused support and small-group learning. Their relationship is that of neighboring institutions on shared grounds, not an enclosed three-part circulation network.",
+   "intent": "The scheme seeks to provide a distinct setting for intensive support while retaining direct academic access to communal activities and allowing the separate house to establish its own daily rhythm.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N3",
+   "cell": [
+    [
+     "CL"
+    ],
+    "X",
+    "all3"
+   ],
+   "traits": {
+    "links": "CL",
+    "height": "all3",
+    "sped": "X",
+    "admin": "C",
+    "arts": "L",
+    "media": "C"
+   }
+  },
+  {
+   "id": "Q06",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Three Houses Around an Outdoor Forum",
+   "concept": "Three independent school houses face a common outdoor forum, making the open ground the organizing centre rather than an enclosed corridor. A taller teaching house establishes one edge, a separate support and cultural house forms another, and the communal hall completes the constellation. Each building keeps its own threshold, so relationships occur through the shared exterior rather than constructed links.",
+   "intent": "The scheme seeks to encourage outdoor encounters among different school communities while maintaining independent identities and operational boundaries for teaching, support and collective events.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.684,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N1",
+   "cell": [
+    [],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "none",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q07",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "Parallel Learning and Cultural Streets",
+   "concept": "Two parallel inhabited ranges establish separate but complementary school streets. One is a continuous teaching environment; the other combines arrival, cultural activity and community gathering into a layered public range. A smaller support house connects the two at one end, creating a sheltered circulation circuit without enclosing a courtyard. The assembly volume anchors the public range rather than occupying an independent central block.",
+   "intent": "Seeks to distinguish everyday teaching circulation from community activity while retaining an enclosed route between them, with a support house providing a controlled transition for students and visitors.",
+   "validity": "declared",
+   "consistency_v3text": {
+    "all": 0.421,
+    "special_education": 0.0,
+    "placement": 0.2,
+    "links": 0.333,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N2",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "C",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q08",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "Separated Learning Houses and Commons",
+   "concept": "Two teaching-related houses form a paired educational precinct, while the commons stands apart as a separate community destination. The principal classroom house establishes the daily academic center. A neighboring inclusion and civic house accommodates more individualized learning and public-facing support. The freestanding hall belongs to the same school grounds but is not part of an enclosed circulation loop or courtyard perimeter.",
+   "intent": "Seeks to establish distinguishable learning environments for general and individualized teaching, while allowing the community commons to operate as a separate destination without occupying the center of school circulation.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N3",
+   "cell": [
+    [
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "L",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q09",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Assembly Crossing Between Two Schools",
+   "concept": "A communal crossing separates two complementary educational territories: a general learning house and a specialized learning house. The gym and dining volume occupies the crossing, becoming the only enclosed route between the two. Both educational houses rise above a lower communal middle, giving the school a paired identity rather than one dominant academic center. The specialized house also establishes the school's civic face.",
+   "intent": "The scheme seeks to make shared activity an intentional meeting point between general and specialized education while allowing each teaching territory to retain a distinct internal organization and atmosphere.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.421,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.0,
+    "heights": 1.0,
+    "vertical": 0.286
+   },
+   "neighbourhood": "N4",
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+CX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q10",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Protected Learning Through Civic Filter",
+   "concept": "A layered school is organized around a controlled civic filter separating a concentrated teaching house from a tall shared-activity house. The middle building is conceived as a sequence of thresholds rather than simply a connector: it mediates between protected daily learning and collective events. Above the gathering volumes, specialist teaching forms a distinct upper setting within the communal house.",
+   "intent": "The scheme seeks to maintain a clear administrative threshold between teaching and community activity while placing specialist support within reach of communal learning and shared facilities.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.474,
+    "special_education": 0.0,
+    "placement": 0.2,
+    "links": 0.0,
+    "heights": 1.0,
+    "vertical": 0.714
+   },
+   "neighbourhood": "N9",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "all3"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "all3",
+    "sped": "C",
+    "admin": "X",
+    "arts": "L",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q11",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Inclusive Commons As Shared Threshold",
+   "concept": "The school revolves around an inclusive commons conceived as a shared threshold rather than a conventional assembly hall. Everyday teaching approaches it from one side, and the school's civic and cultural activities approach from the other. Specialist support is embedded in this collective middle ground, allowing the commons to act as a carefully managed meeting place between academic and community routines.",
+   "intent": "The scheme seeks to make supported participation in collective school life central to the educational experience while retaining distinct academic and civic domains on either side of the shared threshold.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.421,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.333,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N8",
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "C",
+    "low"
+   ],
+   "traits": {
+    "links": "CL+CX",
+    "height": "low",
+    "sped": "C",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q12",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Cultural Threshold Between Separate Worlds",
+   "concept": "A three-storey cultural threshold separates two different institutional worlds: a concentrated academy and a communal house that combines gathering with specialized care. The threshold is the only built passage between them, conceived as a sequence of creative and reading environments rather than a conventional administrative crossroads. Its layered activities give the intermediate building an inhabited identity of its own.",
+   "intent": "The scheme seeks to buffer general classrooms from large communal events while making cultural activities a shared destination and keeping specialized support close to collective school life.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.684,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N9",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "all3"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "all3",
+    "sped": "C",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q13",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Public Dock Beside Learning Island",
+   "concept": "The school separates into a quieter learning island and a connected public dock. The learning island contains the everyday educational community, including specialized instruction, but remains physically independent. The public dock is a paired composition: a large gathering hall directly attached to a taller cultural and administrative house. Shared grounds connect these two realms without an enclosed route between school teaching and civic activities.",
+   "intent": "The scheme seeks to establish a strong communal destination for cultural events and school gathering while protecting the teaching environment from the circulation and activity associated with larger public functions.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.368,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.333,
+    "heights": 0.667,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N2",
+   "cell": [
+    [
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q14",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Three Routes One School",
+   "concept": "Three equally developed building parts form an interconnected school with several ways to move between daily teaching, shared cultural life and assembly. Rather than organizing circulation around one obligatory crossroads or courtyard, the scheme uses direct links between every pair to create alternative internal routes. Each part maintains its own identity while participating in a continuous network of school life.",
+   "intent": "The scheme seeks to distribute movement across multiple connections, give staff alternative routes between activities and reduce dependence on a single communal passage during daily transitions.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.789,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.714
+   },
+   "neighbourhood": "N1",
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "all3"
+   ],
+   "traits": {
+    "links": "CL+CX+LX",
+    "height": "all3",
+    "sped": "L",
+    "admin": "X",
+    "arts": "C",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q15",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "Three Houses Around Shared Learning",
+   "concept": "A teaching house, a specialist cultural house and a collective activity house form a three-part academic neighborhood. None is subordinated to a dominant school bar or a small workshop hinge. All three connect directly, allowing daily school life to circulate among complementary destinations while keeping large assembly activities outside the main teaching house.",
+   "intent": "The scheme seeks to create a balanced set of learning destinations, giving specialized teaching an identifiable place without separating it from general classrooms, administrative care or collective school activities.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N4",
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+CX+LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q16",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Parallel Public and Pupil Routes",
+   "concept": "Three connected houses form a circulation triangle organized around route choice rather than a courtyard or shared central room. The learning house and the civic-arts house each connect directly to the commons, while a third enclosed connection joins them independently. The resulting network offers a pupil route, a public route and a cross-school route without assigning any single house the role of compulsory passage.",
+   "intent": "The scheme seeks to separate everyday pupil circulation from visitor movement while retaining direct connections between teaching, administration and communal activities.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N1",
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+CX+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "Q17",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Quiet Core With Activity Satellites",
+   "concept": "A consolidated learning core is paired with two different activity satellites: one dedicated to making and student care, the other to large collective gatherings. The satellites connect independently to the core but not to each other. Rather than organizing movement through a hall or civic hinge, the academic core becomes the sole enclosed interchange between specialized activity environments.",
+   "intent": "The scheme seeks to protect an identifiable academic center while allowing creative support and large-group activity to operate as distinct destinations with separate operational identities.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.737,
+    "special_education": 1.0,
+    "placement": 0.8,
+    "links": 0.333,
+    "heights": 1.0,
+    "vertical": 0.714
+   },
+   "neighbourhood": "N12",
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "traits": {
+    "links": "CL+LX",
+    "height": "low",
+    "sped": "L",
+    "admin": "L",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "Q18",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Library Bridge Between Separate Realms",
+   "concept": "A reading bridge establishes the school's principal shared connection above ground, joining a classroom tower to a cultural house. Below it, the classroom and cultural realms remain distinct, while a separate commons building connects directly to the cultural house. The resulting arrangement makes the elevated library the academic crossing and the cultural house the transition toward assembly.",
+   "intent": "The scheme seeks to make reading a visible shared destination while distinguishing the quieter academic environment from communal assembly and allowing cultural activities to mediate between them.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.632,
+    "special_education": 0.0,
+    "placement": 0.6,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.714
+   },
+   "neighbourhood": "N5",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q19",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Care Terrace Beyond Civic Gallery",
+   "concept": "The school unfolds as a sequence of increasingly collective territories. A tall learning house leads into a lower civic gallery, which acts as a shared threshold before reaching an assembly house. Rather than separating inclusive support from communal activity, the assembly house develops an upper care terrace above its gathering volumes. The gallery remains the only built connection between the two taller houses.",
+   "intent": "The strategy seeks to give specialized learners a recognizable place within communal school life while using the intermediate civic gallery to mediate movement, supervision and transitions between teaching and assembly.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.263,
+    "special_education": 0.0,
+    "placement": 0.0,
+    "links": 0.0,
+    "heights": 0.333,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N6",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "C",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "C",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q20",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Learning Spine Between Two Destinations",
+   "concept": "The learning house becomes the spatial hinge rather than the civic front or the assembly hall. A taller teaching spine connects directly to two distinct destinations: a quieter civic and support house and a broad community commons. Those destinations remain disconnected from each other, making the learning spine the only enclosed route between them.",
+   "intent": "The scheme seeks to make everyday teaching space the organizing reference for students while allowing civic support and shared activities to remain distinct destinations.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.684,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N10",
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "L",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q21",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Inclusive Threshold to Community Commons",
+   "concept": "A linear school sequence is organized around an inclusive teaching threshold rather than a civic gateway or workshop pavilion. The principal academic house connects to a smaller specialist house that serves as a transition toward communal activities. Beyond that threshold stands the hall. Special education, creative learning and care occupy the intermediate realm, making it an educational destination as well as the passage to the commons.",
+   "intent": "The scheme seeks to make specialized learning and creative activity visible within everyday school movement while retaining a clear progression from general teaching toward communal activities.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.684,
+    "special_education": 1.0,
+    "placement": 0.8,
+    "links": 0.333,
+    "heights": 1.0,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N4",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "L",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "Q22",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "Learning Tower and Care Threshold",
+   "concept": "A vertical academy anchors one end of the school, while a compact care-oriented threshold mediates its relationship with the community hall. Unlike a conventional gateway devoted primarily to public arrival, this middle house is an inhabited support environment. Its specialist spaces establish a transition from the concentrated teaching tower to the collective activities beyond.",
+   "intent": "The scheme seeks to give the school a recognizable vertical academic identity while making inclusive support part of everyday transitions between classrooms, school services and communal activities.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.474,
+    "special_education": 0.0,
+    "placement": 0.2,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N8",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "Q23",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Three Independent Neighborhood Houses",
+   "concept": "The school is organized as three independent neighborhood houses rather than one enclosed institution. A tall general learning house establishes the everyday classroom identity; a separate care and civic house serves as a specialized educational destination; a low assembly pavilion accommodates collective events. Each house stands on shared grounds without a built link, treating outdoor movement as the relationship between distinct educational settings.",
+   "intent": "This strategy seeks to make specialized education a recognizable, self-contained school community while giving ordinary teaching and larger gatherings independent identities and potentially different operating patterns.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.143
+   },
+   "neighbourhood": "N6",
+   "cell": [
+    [],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "none",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q24",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "Learning Threshold and Community Porch",
+   "concept": "The school is organized as a teaching house with a community porch attached to its side, rather than as a sequence of buildings connected by a civic gateway. A compact arrival and care house sits beside the teaching house and shares its internal circulation. The commons connects directly to the teaching house but remains separate from the arrival house, giving the campus two distinct internal thresholds.",
+   "intent": "Seeks to provide a recognizable civic threshold while preventing all classroom-to-commons movement from passing through reception, enabling school-day circulation and supervised community access to operate differently.",
+   "validity": "declared",
+   "consistency_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N2",
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "L",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q25",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Commons Passage With Learning Retreat",
+   "concept": "A low campus sequence treats the shared commons as an inhabited passage between a compact civic house and a quieter learning retreat. The communal building becomes the crossing point between two contrasting environments, with supervised support attached to the rhythm of gathering and dining. The three parts connect in sequence, and their lower profiles emphasize a horizontal progression rather than a vertically stacked institution.",
+   "intent": "The proposal seeks to link student support with everyday communal routines while giving general classrooms a quieter destination beyond shared activity and maintaining a distinct civic front.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N8",
+   "cell": [
+    [
+     "CL",
+     "CX"
+    ],
+    "C",
+    "low"
+   ],
+   "traits": {
+    "links": "CL+CX",
+    "height": "low",
+    "sped": "C",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q26",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "School Spine and Cultural Satellite",
+   "concept": "A self-contained school spine holds daily teaching, care, administration and reading within one connected vertical institution. Beyond it, two detached communal satellites form a complementary public realm: a double-height assembly building and a separate cultural workshop house. The cultural house gathers creative learning and building operations, allowing shared activity to develop outside the academic spine without occupying a loft over the hall.",
+   "intent": "Seeks to keep essential daily educational functions in one school building while presenting creative activity and community assembly as distinct destinations that can support activities beyond regular classroom use.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 0.0,
+    "heights": 1.0,
+    "vertical": 0.714
+   },
+   "neighbourhood": "N7",
+   "cell": [
+    [],
+    "L",
+    "low"
+   ],
+   "traits": {
+    "links": "none",
+    "height": "low",
+    "sped": "L",
+    "admin": "L",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "Q27",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "Parallel Learning and Community Streets",
+   "concept": "Three distinct masses form a pair of parallel institutional streets rather than a centralized hub or sequential chain. A classroom house and a shared activity house establish separate daily territories, while a narrower cultural house connects them at two points. The connections create alternative internal routes without making any single mass an obligatory crossroads.",
+   "intent": "The scheme seeks to separate concentrated learning from collective activity while allowing students and staff to circulate through different routes and encounter shared cultural spaces without compulsory passage through assembly areas.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N1",
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+CX+LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q28",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Academy Bridge to Shared Forum",
+   "concept": "Two vertically developed buildings form the school's primary connected pair: a teaching academy and a communal forum. A third building operates as a separate care and cultural house, occupying the same campus but remaining outside the enclosed circulation network. The academy-to-forum connection establishes the principal institutional relationship, while the detached house creates a parallel destination rather than another intermediate gateway.",
+   "intent": "The strategy seeks to establish a strong relationship between teaching and gathering while giving specialized student support a more independent setting and separating its circulation from large communal events.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.789,
+    "special_education": 1.0,
+    "placement": 0.8,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N3",
+   "cell": [
+    [
+     "CL"
+    ],
+    "X",
+    "all3"
+   ],
+   "traits": {
+    "links": "CL",
+    "height": "all3",
+    "sped": "X",
+    "admin": "X",
+    "arts": "C",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q29",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Learning Street Through Care Commons",
+   "concept": "A school street unfolds as a sequence of three distinct places: an academic house, an inhabited care passage, and a collective activity hall. The middle place is conceived as a quieter social threshold rather than a conventional civic foyer. Its connection to the hall allows support spaces to participate in communal life while the learning house retains a separate identity.",
+   "intent": "The scheme seeks to make specialized support part of everyday school life while establishing a recognizable transition between concentrated learning and noisy collective activities.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N8",
+   "cell": [
+    [
+     "CX",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX+LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q30",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Learning Spine Between Two Pavilions",
+   "concept": "A continuous learning spine becomes the inhabited connector between two otherwise separate pavilions. One pavilion presents a civic and cultural face, while the other contains the larger shared activities. The spine is not merely a corridor: teaching neighborhoods occupy its length, and its opposite ends establish distinct transitions to the two pavilions. The arrangement remains predominantly low and horizontally organized.",
+   "intent": "The scheme seeks to make daily teaching the organizing center of school circulation while allowing civic activities and larger communal gatherings to retain distinct identities and operating boundaries.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N10",
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "traits": {
+    "links": "CL+LX",
+    "height": "low",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q31",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Low Learning Cloister With Civic Porch",
+   "concept": "The school is conceived as a compact, low educational cloister formed by a learning house and an attached civic porch. The learning house combines ordinary and specialized classrooms into one teaching community; the porch provides a contrasting setting for making, reading and school administration. A separate gathering pavilion sits beyond this paired institution, connected through shared outdoor school life rather than an enclosed passage.",
+   "intent": "The strategy seeks to keep general and specialized teaching close together, minimize reliance on vertical movement, and give the educational pair an everyday identity distinct from larger communal events.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N6",
+   "cell": [
+    [
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "traits": {
+    "links": "LX",
+    "height": "low",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q32",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Independent Specialist Learning Retreat",
+   "concept": "A principal school house connects directly to the communal hall, while a separate specialist learning retreat stands apart on the same grounds. The specialist retreat is a complete vertical destination for supported teaching and creative activity rather than an annex linked through the main building. The principal house retains the everyday academic and civic functions, with communal activity attached to it.",
+   "intent": "The scheme seeks to provide a distinct environment for intensive learning support and creative activities while maintaining a direct enclosed connection between general teaching and everyday communal functions.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.632,
+    "special_education": 1.0,
+    "placement": 0.6,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N3",
+   "cell": [
+    [
+     "CL"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "L",
+    "arts": "X",
+    "media": "L"
+   }
+  },
+  {
+   "id": "Q33",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Cultural Gate With Detached Commons",
+   "concept": "A compact cultural gate and a taller learning house form one connected school, while the community commons stands independently on shared grounds. The cultural gate is not merely an entrance: its lower and middle levels accommodate making and school stewardship, culminating in an elevated reading room. The detached commons operates as a separate destination rather than extending the indoor circulation system.",
+   "intent": "The scheme seeks to establish a concentrated cultural identity at the school entrance while allowing the commons to operate independently without requiring visitors to enter the academic building.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.2,
+    "links": 0.667,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N2",
+   "cell": [
+    [
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q34",
+   "source": "pilot4_U",
+   "batch": "cases_v3.1",
+   "name": "Independent Commons With Twin Schools",
+   "concept": "A school-within-a-school arrangement separates general and specialized learning into two directly joined teaching houses, forming a continuous academic partnership. A third mass accommodates collective assembly as an independent community destination, connected only to the general learning house. The resulting hierarchy places everyday collaboration within the teaching pair rather than making the hall the mediator of their relationship.",
+   "intent": "The scheme seeks to create manageable learning communities with a direct relationship between general and specialized teaching, while keeping large-group assembly peripheral to the daily academic network.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.526,
+    "special_education": 0.0,
+    "placement": 0.2,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N4",
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "X",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CL+LX",
+    "height": "mixed",
+    "sped": "X",
+    "admin": "X",
+    "arts": "L",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q35",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "Open Courtyard Cultural Constellation",
+   "concept": "Three pavilion-like houses establish an open courtyard as the shared outdoor room, with one deliberate built connection and two gaps between the buildings. A teaching house, a cultural front house and a collective activity house retain separate identities. The cultural house joins directly to the activity house, while the teaching house engages the courtyard without joining either indoors.",
+   "intent": "The scheme seeks to combine the social identity of a courtyard school with the operational independence of detached pavilions, emphasizing an outdoor common ground rather than a continuous internal corridor.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N1",
+   "cell": [
+    [
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q36",
+   "source": "pilot4_S",
+   "batch": "cases_v3.1",
+   "name": "Linked Islands Under Separate Roofs",
+   "concept": "Three independently legible schoolhouses occupy a shared campus, but a single enclosed connection joins the teaching and cultural houses into a small daily-learning pair. The collective activity house remains freestanding. Instead of treating every pavilion as equally detached, the organization establishes two scales of independence: a connected educational pair and a separate community destination.",
+   "intent": "The scheme seeks to preserve the informal experience of a pavilion campus while allowing students to move between regular classrooms and cultural activities indoors, with community functions operating independently.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 0.667,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N1",
+   "cell": [
+    [
+     "LX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "LX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q37",
+   "source": "pilot4_A",
+   "batch": "cases_v3.1",
+   "name": "Learning Street Between Two Destinations",
+   "concept": "A continuous learning street becomes the building's central connector rather than an isolated classroom destination. Its two ends lead to contrasting shared places: a quieter cultural porch for arrival and reading, and an active gathering house for communal events. The three parts form a sequential route, with everyday academic circulation serving as the link between the two destinations.",
+   "intent": "The scheme seeks to make academic life the organizing center of school movement while giving cultural activities and large gatherings distinct destinations with different levels of activity.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N10",
+   "cell": [
+    [
+     "CL",
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "traits": {
+    "links": "CL+LX",
+    "height": "low",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q38",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Inclusive Academy With Detached Civic Pair",
+   "concept": "The school is divided into two architectural territories: a self-contained inclusive academy and a paired civic precinct. The academy is deliberately complete as a daily learning environment, while a separate commons and cultural house form one connected ensemble for gathering, making and reading. Outdoor movement between the territories becomes a legible change from academic routine to collective school life.",
+   "intent": "The scheme seeks to concentrate daily teaching and care within one building while allowing cultural and community functions to operate as a distinct, directly connected precinct.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.579,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.667,
+    "heights": 1.0,
+    "vertical": 0.429
+   },
+   "neighbourhood": "N7",
+   "cell": [
+    [
+     "CX"
+    ],
+    "L",
+    "mixed"
+   ],
+   "traits": {
+    "links": "CX",
+    "height": "mixed",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q39",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Three Houses Around Learning Exchange",
+   "concept": "Three vertically developed houses form a mutually connected cluster organized by an exchange of everyday activities rather than by a single central hall. The learning house acts as the stable academic anchor; a civic house provides a distinct arrival and cultural address; and a communal house accommodates collective events. Direct connections between every pair allow several internal paths through the cluster.",
+   "intent": "The strategy seeks to offer alternative circulation paths between classrooms, shared activities and school services while maintaining a coherent academic home for both general and specialized teaching.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.474,
+    "special_education": 1.0,
+    "placement": 0.0,
+    "links": 1.0,
+    "heights": 1.0,
+    "vertical": 0.286
+   },
+   "neighbourhood": "N1",
+   "cell": [
+    [
+     "CL",
+     "CX",
+     "LX"
+    ],
+    "L",
+    "all3"
+   ],
+   "traits": {
+    "links": "CL+CX+LX",
+    "height": "all3",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  },
+  {
+   "id": "Q40",
+   "source": "pilot4_J",
+   "batch": "cases_v3.1",
+   "name": "Learning Cloister and Separate Hall",
+   "concept": "A learning cloister is formed by a pair of directly joined low ranges, one devoted to sustained teaching and the other to the school's cultural and administrative life. The joined ranges establish an inward-facing academic precinct without requiring a complete enclosed courtyard. A separate communal hall remains an independent pavilion, approached across shared outdoor ground rather than through an internal school corridor.",
+   "intent": "The scheme seeks to establish a cohesive low-rise teaching precinct, preserve a sense of collective outdoor space, and give community activities an independent identity.",
+   "validity": "valid",
+   "consistency_v3text": {
+    "all": 0.526,
+    "special_education": 1.0,
+    "placement": 0.4,
+    "links": 0.333,
+    "heights": 0.667,
+    "vertical": 0.571
+   },
+   "neighbourhood": "N7",
+   "cell": [
+    [
+     "LX"
+    ],
+    "L",
+    "low"
+   ],
+   "traits": {
+    "links": "LX",
+    "height": "low",
+    "sped": "L",
+    "admin": "X",
+    "arts": "X",
+    "media": "X"
+   }
+  }
+ ]
+}
