@@ -81,7 +81,7 @@ Neither the LLM nor the axes goes first permanently. Each round:
 - **Concept and intent are embedded separately and used together:** equal weight, each centred for writer and format. Both stay readable, so the map can say "same idea, different purpose" or the reverse ([Pilot 6](../pilots/p06-intent-view/FINDINGS.md)).
 - **Encoder:** qwen3-embedding:4b is primary. The joint (concept + intent in one text) vector is stored as a cross-check.
 - **Intent is the wording of guidance** to the LLM, and the text the architect reviews.
-- **Not gained:** neither concept nor the combination is less tied to the axes than concept alone. What the meaning side adds is purpose and grouping by idea, not independence from structure.
+- **Not gained:** the combination is no less tied to the axes than concept alone; only intent alone is. What the meaning side adds is purpose and grouping by idea, not independence from structure.
 
 ## How an idea takes shape
 
