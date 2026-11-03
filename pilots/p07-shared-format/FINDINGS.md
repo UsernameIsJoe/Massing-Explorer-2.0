@@ -27,7 +27,7 @@ Date: 2026-11-03.
 
 **1. Structural twins.** 18 of the 40 cases are structurally the same strategy as an archive seed (the architect's weighted change < 1.0). With qwen3 4b:
 - every one of the 18 is closer to some other case than to any seed;
-- its twin seed is the nearest seed for only 4 of them.
+- its twin seed is the nearest seed for only 3 of them (corrected from 4, 2026-11-03).
 
 Same strategy, same writer (ChatGPT) and same format, yet the texts are far apart. So the gap is not the ideas.
 
