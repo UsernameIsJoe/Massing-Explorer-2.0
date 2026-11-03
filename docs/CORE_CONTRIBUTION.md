@@ -34,6 +34,47 @@ Every result is located in both spaces and checked for agreement. A vector is ne
 
 **Joint boundary.** The axes locate and bound strategies exactly. The embedding supplies meaning relations, steering and novelty checks, and cross-checks the traits it carries. Membership requires both.
 
+## ⭐ Key highlights: the joint map and the exploration loop (architect, 2026-11-03)
+
+> **Do not lose these.** Agreed after Pilot 4. They answer "should LLM creativity or axis strategy go first?" and define the grounded product the contribution is about. Every later pilot should be read against them.
+
+### 1. The connecting space is a joint map, not the embedding itself
+
+The embedding alone cannot be the space where creativity and strategy meet:
+- it is coarse: it resolves neighbourhoods of ideas, not individual strategies (Pilot 4 yardstick);
+- it carries only some axes: concept text carries topology, not storeys or special-education placement unless the format makes the text state them (Experiment 1, format v3.1);
+- fusing the two into one vector space needs thousands of paired examples, and the project has dozens; a fused distance would also hide which system made a call.
+
+The connecting space is a **joint map in which every idea has two addresses**:
+- its **meaning neighbourhood** (embedding);
+- its **axis cell** (computed by code from the structured record).
+
+The two are linked case by case, because every case carries both text and a record. **That case-by-case link is the grounding, and the joint map is the grounded product.** Over time the map shows, for example, "the commons-as-heart family has only ever landed in these cells" or "this cell has been reached by three different idea families". Guidance is composed from both addresses together. The embedding is one coordinate of the meeting place, not the meeting place.
+
+Roles that follow:
+- **Novelty is judged on the axes**, the robust system.
+- **The embedding records the exploration journey**: which idea neighbourhoods have been visited and how often. The axes cannot see this, because the same idea placed in five structures counts as five new cells.
+- **The embedding chooses the words around an axis gap**: ideas to avoid (over-used), idea families never paired with that structure (to borrow), contrasts.
+- **Risk to test against:** if the guidance becomes derived only from the axes, it is axes-only with extra steps and J will equal A. The embedding earns its place only by adding what the axes lack: which *ideas* are worn out or untried.
+
+### 2. It is a loop, not an order
+
+Neither the LLM nor the axes goes first permanently. Each round:
+
+**joint map → guidance → LLM proposes → code locates the proposal (axes + meaning) → map updated → …**
+
+- **Round 0 is the LLM, freely** (the seed-first decision): creativity sets the starting ideas.
+- **From then on, the map goes first in each round:** it decides *what to ask for*. The LLM always owns *how*: the idea itself.
+- So "strategy first" means the **plan** comes first, not the axes dictating a structure; "creativity first" means the **idea** comes from the LLM every round. Both hold inside every round.
+
+### 3. Keeping creativity under a plan
+
+1. **The plan says where to end up and what to avoid, never what the idea is.** Pilot 4's prompts did this ("find a meaningful idea that leads there"), and validity held.
+2. **Give the LLM room inside the target:** a region, or a choice of 2–3 gaps, rather than one exact cell.
+3. **Alternate free and directed rounds, and let the map decide when to switch.** While free rounds keep reaching new idea neighbourhoods, let the LLM roam. When they start repeating (saturation, detected by the embedding), switch to directed rounds aimed at axis gaps. The LLM is free until the map shows it has stopped finding new ground.
+
+**Test this framing implies (proposed, not yet planned):** "free until saturation, then joint-directed" against "free until saturation, then axes-directed". Structure is judged on the axes; repetition is judged by meaning neighbourhood.
+
 ## How an idea takes shape
 
 The idea goes through three representations; the axis record is computed from the strategy record at each point.

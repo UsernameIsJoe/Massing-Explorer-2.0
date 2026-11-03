@@ -32,6 +32,8 @@ A strategy-first architectural research project: use an existing advanced LLM to
 4. Define joint membership and provisional boundary expansion.
 5. Establish a minimal generator of unseen complete or partial strategies.
 
+**⭐ Key highlights (architect, 2026-11-03): read first.** The connecting space is a **joint map** in which every idea has two addresses (meaning neighbourhood + axis cell), linked case by case. That link is the grounding and the map is the grounded product. Exploration is a **loop, not an order**: the LLM seeds freely, then each round the map decides what to ask for and the LLM decides the idea. Creativity is kept under the plan by stating where to land, never the idea; by giving room within targets; and by alternating free and directed rounds, switching when the map detects saturation. Details: [CORE_CONTRIBUTION § Key highlights](docs/CORE_CONTRIBUTION.md#-key-highlights-the-joint-map-and-the-exploration-loop-architect-2026-11-03).
+
 **Joint boundary (architect, 2026-10-29):** the axes locate and bound strategies exactly. The embedding supplies meaning relations, steering and novelty checks, and cross-checks the traits it carries. Membership requires both. The LLM brainstorms in language; it does not explore the axis space naturally. Code finds axis gaps, and the LLM is asked in words for meaningful ideas there. See [CORE_CONTRIBUTION](docs/CORE_CONTRIBUTION.md). Representation, thresholds, fixed/free commitments and generation mechanisms remain to be tested. Later workflow details remain open.
 
 Advanced-model work must function through manual chat batches. Prefer code/local models for repeatable operations where appropriate. No new LLM is being developed.
