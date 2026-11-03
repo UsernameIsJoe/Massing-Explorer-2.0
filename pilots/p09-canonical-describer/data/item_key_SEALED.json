@@ -1,0 +1,222 @@
+{
+ "X01": {
+  "kind": "case",
+  "source": "Q37"
+ },
+ "X02": {
+  "kind": "seed",
+  "source": "R3-S04"
+ },
+ "X03": {
+  "kind": "case",
+  "source": "Q40"
+ },
+ "X04": {
+  "kind": "case",
+  "source": "Q05"
+ },
+ "X05": {
+  "kind": "case",
+  "source": "Q17"
+ },
+ "X06": {
+  "kind": "case",
+  "source": "Q29"
+ },
+ "X07": {
+  "kind": "case",
+  "source": "Q16"
+ },
+ "X08": {
+  "kind": "case",
+  "source": "Q33"
+ },
+ "X09": {
+  "kind": "seed",
+  "source": "R1-S05"
+ },
+ "X10": {
+  "kind": "case",
+  "source": "Q08"
+ },
+ "X11": {
+  "kind": "case",
+  "source": "Q03"
+ },
+ "X12": {
+  "kind": "case",
+  "source": "Q09"
+ },
+ "X13": {
+  "kind": "case",
+  "source": "Q04"
+ },
+ "X14": {
+  "kind": "seed",
+  "source": "R1-S02"
+ },
+ "X15": {
+  "kind": "case",
+  "source": "Q10"
+ },
+ "X16": {
+  "kind": "case",
+  "source": "Q21"
+ },
+ "X17": {
+  "kind": "case",
+  "source": "Q24"
+ },
+ "X18": {
+  "kind": "case",
+  "source": "Q11"
+ },
+ "X19": {
+  "kind": "case",
+  "source": "Q13"
+ },
+ "X20": {
+  "kind": "case",
+  "source": "Q01"
+ },
+ "X21": {
+  "kind": "case",
+  "source": "Q12"
+ },
+ "X22": {
+  "kind": "case",
+  "source": "Q22"
+ },
+ "X23": {
+  "kind": "case",
+  "source": "Q39"
+ },
+ "X24": {
+  "kind": "seed",
+  "source": "R1-S03"
+ },
+ "X25": {
+  "kind": "seed",
+  "source": "R1-S01"
+ },
+ "X26": {
+  "kind": "case",
+  "source": "Q32"
+ },
+ "X27": {
+  "kind": "case",
+  "source": "Q30"
+ },
+ "X28": {
+  "kind": "case",
+  "source": "Q27"
+ },
+ "X29": {
+  "kind": "seed",
+  "source": "R2-S02"
+ },
+ "X30": {
+  "kind": "case",
+  "source": "Q34"
+ },
+ "X31": {
+  "kind": "seed",
+  "source": "R3-S05"
+ },
+ "X32": {
+  "kind": "case",
+  "source": "Q07"
+ },
+ "X33": {
+  "kind": "case",
+  "source": "Q15"
+ },
+ "X34": {
+  "kind": "case",
+  "source": "Q20"
+ },
+ "X35": {
+  "kind": "case",
+  "source": "Q23"
+ },
+ "X36": {
+  "kind": "case",
+  "source": "Q26"
+ },
+ "X37": {
+  "kind": "case",
+  "source": "Q28"
+ },
+ "X38": {
+  "kind": "case",
+  "source": "Q06"
+ },
+ "X39": {
+  "kind": "case",
+  "source": "Q36"
+ },
+ "X40": {
+  "kind": "case",
+  "source": "Q14"
+ },
+ "X41": {
+  "kind": "seed",
+  "source": "R3-S02"
+ },
+ "X42": {
+  "kind": "seed",
+  "source": "R2-S03"
+ },
+ "X43": {
+  "kind": "case",
+  "source": "Q18"
+ },
+ "X44": {
+  "kind": "case",
+  "source": "Q31"
+ },
+ "X45": {
+  "kind": "case",
+  "source": "Q02"
+ },
+ "X46": {
+  "kind": "case",
+  "source": "Q19"
+ },
+ "X47": {
+  "kind": "seed",
+  "source": "R1-S04"
+ },
+ "X48": {
+  "kind": "seed",
+  "source": "R2-S04"
+ },
+ "X49": {
+  "kind": "case",
+  "source": "Q35"
+ },
+ "X50": {
+  "kind": "case",
+  "source": "Q25"
+ },
+ "X51": {
+  "kind": "seed",
+  "source": "R3-S03"
+ },
+ "X52": {
+  "kind": "case",
+  "source": "Q38"
+ },
+ "X53": {
+  "kind": "seed",
+  "source": "R3-S01"
+ },
+ "X54": {
+  "kind": "seed",
+  "source": "R2-S05"
+ },
+ "X55": {
+  "kind": "seed",
+  "source": "R2-S01"
+ }
+}
