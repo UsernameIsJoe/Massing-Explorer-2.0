@@ -33,3 +33,7 @@ So the seeds (seed format v2, written by the architect's earlier advanced-model 
 ## Implication
 
 The map's meaning address is reliable **within one writer and format**. Across them, it needs either one shared format for every item on the map, or a calibrated way to bridge formats. The loop will produce format v3.1 from one model, so the cleanest fix is to re-express the archive in that same format and writer, then re-test whether cases that share an idea land with their family.
+
+## Update (Pilot 7, same day)
+
+Re-expressing the seeds in format v3.1 did not close the gap. The cause is the cases' generation register, not format or writer: shown the archive and told to differ, the LLM avoided the archive's vocabulary. See [Pilot 7 findings](../../pilots/p07-shared-format/FINDINGS.md). The map needs a canonical, archive-blind description of every item before v0.1.
