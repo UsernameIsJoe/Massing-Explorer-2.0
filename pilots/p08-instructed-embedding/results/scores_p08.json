@@ -1,0 +1,205 @@
+{
+ "encoder": "qwen3-embedding:4b",
+ "n_twins": 18,
+ "original": {
+  "T_twins_nearest_seed_is_twin": 2,
+  "C2a_cases_with_seed_nearest": 0,
+  "C2b_ari_clusters_batch": 0.595,
+  "C2b_k": 7,
+  "per_twin": {
+   "Q01": {
+    "twin": "E06",
+    "nearest_seed": "E10"
+   },
+   "Q02": {
+    "twin": "E03",
+    "nearest_seed": "E02"
+   },
+   "Q07": {
+    "twin": "E03",
+    "nearest_seed": "E13"
+   },
+   "Q09": {
+    "twin": "E06",
+    "nearest_seed": "E13"
+   },
+   "Q13": {
+    "twin": "E03",
+    "nearest_seed": "E13"
+   },
+   "Q14": {
+    "twin": "E12",
+    "nearest_seed": "E03"
+   },
+   "Q15": {
+    "twin": "E02",
+    "nearest_seed": "E09"
+   },
+   "Q16": {
+    "twin": "E12",
+    "nearest_seed": "E03"
+   },
+   "Q18": {
+    "twin": "E02",
+    "nearest_seed": "E15"
+   },
+   "Q20": {
+    "twin": "E02",
+    "nearest_seed": "E03"
+   },
+   "Q21": {
+    "twin": "E09",
+    "nearest_seed": "E03"
+   },
+   "Q28": {
+    "twin": "E02",
+    "nearest_seed": "E10"
+   },
+   "Q31": {
+    "twin": "E08",
+    "nearest_seed": "E04"
+   },
+   "Q32": {
+    "twin": "E09",
+    "nearest_seed": "E09"
+   },
+   "Q33": {
+    "twin": "E03",
+    "nearest_seed": "E13"
+   },
+   "Q35": {
+    "twin": "E03",
+    "nearest_seed": "E15"
+   },
+   "Q36": {
+    "twin": "E08",
+    "nearest_seed": "E08"
+   },
+   "Q40": {
+    "twin": "E08",
+    "nearest_seed": "E14"
+   }
+  },
+  "C1": {
+   "k": 8,
+   "ari_idea_families": 0.323,
+   "perm_p": 0.0086,
+   "pass": false,
+   "neighbourhoods": {
+    "0": [
+     "E09",
+     "E15"
+    ],
+    "1": [
+     "E03",
+     "E04",
+     "E12",
+     "E13"
+    ],
+    "2": [
+     "E10",
+     "E14"
+    ],
+    "3": [
+     "E02",
+     "E05"
+    ],
+    "4": [
+     "E01"
+    ],
+    "5": [
+     "E11"
+    ],
+    "6": [
+     "E06",
+     "E07"
+    ],
+    "7": [
+     "E08"
+    ]
+   }
+  }
+ },
+ "reexpressed": {
+  "T_twins_nearest_seed_is_twin": 1,
+  "C2a_cases_with_seed_nearest": 0,
+  "C2b_ari_clusters_batch": 0.362,
+  "C2b_k": 8,
+  "per_twin": {
+   "Q01": {
+    "twin": "E06",
+    "nearest_seed": "E12"
+   },
+   "Q02": {
+    "twin": "E03",
+    "nearest_seed": "E02"
+   },
+   "Q07": {
+    "twin": "E03",
+    "nearest_seed": "E13"
+   },
+   "Q09": {
+    "twin": "E06",
+    "nearest_seed": "E07"
+   },
+   "Q13": {
+    "twin": "E03",
+    "nearest_seed": "E12"
+   },
+   "Q14": {
+    "twin": "E12",
+    "nearest_seed": "E03"
+   },
+   "Q15": {
+    "twin": "E02",
+    "nearest_seed": "E09"
+   },
+   "Q16": {
+    "twin": "E12",
+    "nearest_seed": "E03"
+   },
+   "Q18": {
+    "twin": "E02",
+    "nearest_seed": "E13"
+   },
+   "Q20": {
+    "twin": "E02",
+    "nearest_seed": "E03"
+   },
+   "Q21": {
+    "twin": "E09",
+    "nearest_seed": "E12"
+   },
+   "Q28": {
+    "twin": "E02",
+    "nearest_seed": "E10"
+   },
+   "Q31": {
+    "twin": "E08",
+    "nearest_seed": "E04"
+   },
+   "Q32": {
+    "twin": "E09",
+    "nearest_seed": "E07"
+   },
+   "Q33": {
+    "twin": "E03",
+    "nearest_seed": "E13"
+   },
+   "Q35": {
+    "twin": "E03",
+    "nearest_seed": "E15"
+   },
+   "Q36": {
+    "twin": "E08",
+    "nearest_seed": "E08"
+   },
+   "Q40": {
+    "twin": "E08",
+    "nearest_seed": "E15"
+   }
+  }
+ },
+ "pass": false,
+ "reading": "C1 fails: do not use the instruction"
+}
