@@ -3,7 +3,7 @@
 Date: 2026-11-03.
 - Protocol: [PROTOCOL.md](PROTOCOL.md), declared and committed before computing.
 - Results: `results/neighbourhoods_claude_v1.json`, from `scripts/neighbourhoods.py`.
-- Reference families: `reference/families_claude_v1.json` (Claude's grouping, **awaiting architect review**).
+- Reference families: `reference/families_claude_v1.json` (Claude's grouping; **architect reviewed 2026-11-03: generally agrees, no changes**).
 
 ## In one line
 
@@ -83,7 +83,7 @@ For each of the 10 axis gaps shared by A and J: did the case land in the neighbo
 
 ## Limits
 
-- The reference is Claude's grouping until the architect reviews it; criterion 2 will be recomputed on any amendment.
+- The reference is Claude's grouping, reviewed and accepted by the architect without changes.
 - 15 seeds in 6 families: ARI rests on a few groups. The silhouette k varies by encoder (3–7).
 - The choice rule picked raw because it comes first. Recommending centred for the map is a reading, not the declared choice, and needs the architect's agreement.
 - The preview is post hoc under centring, covers 10 pairs, and decides nothing.

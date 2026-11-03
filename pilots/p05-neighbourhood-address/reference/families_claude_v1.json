@@ -1,31 +1,52 @@
 {
   "version": "claude_v1",
   "date": "2026-11-03",
-  "author": "Claude (Opus 5.5), at the architect's request; awaiting architect review",
+  "author": "Claude (Opus 5.5), at the architect's request",
   "basis": "Organizing idea read from the 15 archive names and concepts exactly as shown to the LLM in Pilot 4 (E01-E15). Grouped before the E-to-archive-id mapping or any neighbourhood result was looked at. Caveat: Claude had earlier seen data/directions.json, which lists bge-m3 clusters by archive id (R*-S*), but not their E numbers.",
   "families": {
     "F1_commons_heart": {
-      "members": ["E06", "E07", "E13"],
+      "members": [
+        "E06",
+        "E07",
+        "E13"
+      ],
       "idea": "The commons/hall is the hub; two wings attach only to it, so all movement passes through the shared heart."
     },
     "F2_civic_hinge_chain": {
-      "members": ["E03", "E11", "E12"],
+      "members": [
+        "E03",
+        "E11",
+        "E12"
+      ],
       "idea": "A linear chain: learning at one end, hall at the other, and a public front (civic hinge or gateway) between them that every passage crosses."
     },
     "F3_linked_cluster_around_court": {
-      "members": ["E02", "E05", "E09", "E15"],
+      "members": [
+        "E02",
+        "E05",
+        "E09",
+        "E15"
+      ],
       "idea": "Three masses each joined to both others, closing a compact triangle or ring around a court, typically with a loft over the commons."
     },
     "F4_detached_campus": {
-      "members": ["E08", "E10", "E14"],
+      "members": [
+        "E08",
+        "E10",
+        "E14"
+      ],
       "idea": "Freestanding buildings on shared grounds: the hall (and sometimes more) stands apart and is reached outdoors."
     },
     "F5_one_block_service_hinge": {
-      "members": ["E04"],
+      "members": [
+        "E04"
+      ],
       "idea": "One large learning block holds almost the whole day; a low workshop/service pavilion is the hinge to the hall."
     },
     "F6_low_learning_civic_tower": {
-      "members": ["E01"],
+      "members": [
+        "E01"
+      ],
       "idea": "Classrooms kept low beside a three-storey civic tower that stacks the front, specialist support and library as a vertical marker."
     }
   },
@@ -33,5 +54,10 @@
     "E09": "Placed in F3 for its court loop; its own emphasis (tall academy plus a care-and-making house) could make it a separate idea.",
     "E10": "Placed in F4 for its freestanding hall; its two joined bars could make it a separate idea.",
     "E04": "Placed alone; by diagram it is a chain through a hinge (like F2), and by idea it shares 'one block holds the day' with E14 (F4)."
+  },
+  "architect_review": {
+    "date": "2026-11-03",
+    "verdict": "generally agrees; no changes",
+    "note": "Architect found concept text much harder to review than intent text; whether the joint map should lean on intent is open for discussion."
   }
 }
