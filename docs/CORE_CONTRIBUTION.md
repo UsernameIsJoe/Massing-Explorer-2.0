@@ -75,6 +75,14 @@ Neither the LLM nor the axes goes first permanently. Each round:
 
 **Test this framing implies (proposed, not yet planned):** "free until saturation, then joint-directed" against "free until saturation, then axes-directed". Structure is judged on the axes; repetition is judged by meaning neighbourhood.
 
+### 4. The meaning address (decided by the architect, 2026-11-03, from Pilots 5 and 6)
+
+- **Neighbourhood level works.** The embedding is used at the level of idea neighbourhoods, never individual strategies ([Pilot 5](../pilots/p05-neighbourhood-address/FINDINGS.md)).
+- **Concept and intent are embedded separately and used together:** equal weight, each centred for writer and format. Both stay readable, so the map can say "same idea, different purpose" or the reverse ([Pilot 6](../pilots/p06-intent-view/FINDINGS.md)).
+- **Encoder:** qwen3-embedding:4b is primary. The joint (concept + intent in one text) vector is stored as a cross-check.
+- **Intent is the wording of guidance** to the LLM, and the text the architect reviews.
+- **Not gained:** neither concept nor the combination is less tied to the axes than concept alone. What the meaning side adds is purpose and grouping by idea, not independence from structure.
+
 ## How an idea takes shape
 
 The idea goes through three representations; the axis record is computed from the strategy record at each point.
