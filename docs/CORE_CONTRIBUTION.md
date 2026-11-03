@@ -34,7 +34,7 @@ Every result is located in both spaces and checked for agreement. A vector is ne
 
 **Joint boundary.** The axes locate and bound strategies exactly. The embedding supplies meaning relations, steering and novelty checks, and cross-checks the traits it carries. Membership requires both.
 
-## ⭐ Key highlights: the joint map and the exploration loop (architect, 2026-11-03)
+## Key highlights: the joint map and the exploration loop (architect, 2026-11-03)
 
 > **Do not lose these.** Agreed after Pilot 4. They answer "should LLM creativity or axis strategy go first?" and define the grounded product the contribution is about. Every later pilot should be read against them.
 
